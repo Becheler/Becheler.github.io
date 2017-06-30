@@ -9,3 +9,5 @@ If you are a scientist interested in studying how populations grow and spread in
 * Because you will surely come with your own project bringing many specificities which would be impossible for us to foresee, we wanted Quetzal to be **extensible**, so you can develop your own tools and combine them with minimal cost with Quetzal interfaces.
 
 And because this project is still in development, it is naturally modest and still focused on our specific needs. This is why Quetzal lacks of what could seem to you as basics : please feel free to contact us for feedbacks or collaboration !
+
+[Documentation](/quetzalAPI/html/index.html)

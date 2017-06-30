@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['insert',['insert',['../classquetzal_1_1coalescence_1_1_forest_aaed1e6e616684ea2adf3535751a40cbf.html#aaed1e6e616684ea2adf3535751a40cbf',1,'quetzal::coalescence::Forest::insert(Position const &amp;position, Tree const &amp;tree)'],['../classquetzal_1_1coalescence_1_1_forest_afc17afc07ea756c9ea732eadc5d677ff.html#afc17afc07ea756c9ea732eadc5d677ff',1,'quetzal::coalescence::Forest::insert(Position const &amp;position, Tree &amp;&amp;tree) noexcept'],['../classquetzal_1_1coalescence_1_1_forest_a2b25eef5fb3e0b350c98dd86dbc6189a.html#a2b25eef5fb3e0b350c98dd86dbc6189a',1,'quetzal::coalescence::Forest::insert(Position const &amp;position, std::vector&lt; Tree &gt; const &amp;trees)'],['../classquetzal_1_1coalescence_1_1_forest_a2b3d485d9f2b88f9088deaef7600c558.html#a2b3d485d9f2b88f9088deaef7600c558',1,'quetzal::coalescence::Forest::insert(Position const &amp;position, std::vector&lt; Tree &gt; &amp;&amp;trees) noexcept']]]
+];

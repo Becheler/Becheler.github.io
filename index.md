@@ -1,5 +1,3 @@
-[[https://github.com/Becheler/quetzal/blob/master/pictures/quetzal_logo.png]]
-
 QuetzalCoaTL (COALescence Template Library), or Quetzal for shorter use, is a C++ template library for simulating coalescence processes in spatially explicit landscapes with complex demography.
 
 If you are a scientist interested in studying how populations grow and spread in complex environments using Approximate Bayesian Computation (ABC), this library can offer you some usefull tools for building complex generative models of genetic data.

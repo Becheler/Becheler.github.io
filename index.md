@@ -1,69 +1,52 @@
 
 # About me
 
-Some years ago I wanted to work in landscape management : grow trees, design gardens
-projects, protect ecosystems, ever aiming at understanding how all this *mess*
-(plants, animals, flowers) could stand in so much chaos without falling apart.
+## Current position
+I began my PhD in January, 2015, under the direction of Stephane Dupas (EGCE)
+and Camille Coron (Laboratoire de Mathématiques d’Orsay), in the DEEIT research team.
 
-Disregarding of some *minor* details I totally succeeded.
+## Research interests
+I’m interested in modelling the relationship between environment, demography and
+genetics in spatial and temporally heterogeneous environments. This kind of models
+would allow to shed light on the ecology of a species (dispersal abilities, growth
+  capacities…) from observational data, genetic data, and environmental data.
 
-Well, the trees I grow are virtual, projects I design are hardly understood
-by professional gardeners, and when I speak about an ever-falling-apart mess
-I obviously refer to my dev project.
+Under such (complex) models, traditional inferantial tools are useless, because
+the likelyhood function is intractable. Thus Approximate Bayesian Computation  
+(ABC) is a natural way to tackle this kind of model. This method involves
+simulating many dataset under the model, exploring various combinations of
+parameters values. At the end of the simulation process, confronting simulations
+to real data allow to discard all the parameters set having lead to aberrant
+simulation results, while trusting in parameter values having lead to simulated
+data close enough to the real observations.
 
-Oh, wait ...
+An application of this model (still in development) is the inference of biological
+features of the Asian hornet (Vespa velutina) in France, an invasive species
+causing damages to beehives.
 
-How did this happen ?
+## C++ programming
 
-Well, planting flowers for years was **great**, really ! But I had this feeling
-that remaining in my garden I would poorly understand ecosystems functioning.
-So I decided to go to University of Bordeaux, France, to study Biology of organisms.
-
-After one year, I still *hardly* understood a thing about ecosystem complexity.
-
-So I went to University of Salamanca, Spain, to study
-more general ecology, learning stuffs about geology, pedology, climatology, botanics... After
-six months, I was fluent in Spanish, but I understood *nothing more* about ecosystems.
-For the next months, I did a bit of niche modeling in R statistics language, trying to fix all this mess
-in a quite coherent setting. Ultimately, I discovered that I knew very little about
-genetics and evolution, and that they were key concepts for understanding ecosystems.
-
-So I went to University of Montpellier, France, to study ecology and evolution.
-I quickly recognized I would never have a global understanding of all this messy
-living things. I learned to focus. I focused on studying by simulation a statistical test able
-to detect if a plant population is under natural selection. I was slowly becoming addict
-to programing. Well, R programing, but it is still programing, right ?
-
-When I went to Paris for a phD, aiming at infering ecological features of an invasive species
-from its genetic patterns, I did not imagine I would have to dive in
-C++ depths. But for having novative results, I needed novative code.
-
-So I developed QuetzalCoaTL (COALescence Template Library), shortly **Quetzal** ,
-a C++ template library for simulating coalescence processes in spatially explicit
+The need of massive simulations justify my principal activity of C++ programming.
+I developed QuetzalCoaTL (Quetzal, the COALescence Template Library), a C++
+template library for simulating coalescence processes in spatially explicit
 landscapes with complex demography.
- Let's have two words about it !
 
 # Quetzal
 
+## What it is :
 If you are a scientist interested in studying how populations grow and spread in
 complex environments using Approximate Bayesian Computation (ABC), this library
-can offer you some useful tools for building complex generative models of genetic data.
+can help you.
 
-* Because of ABC is computationally intensive, I tried to make Quetzal as **fast**
-as possible, to run millions of simulations in a minimal amount of time.
+It offers you some useful tools for building complex generative models of genetic data.
 
-* Because the set of all possible simulation models is infinite, I made Quetzal
- **modular**, so you could feel free to recombine its tools in the
-way which is most desirable for your own purpose.
+It aims at being **fast**, **modular** and **extensible** so you can use its generic
+components when facing issues not tackled by the existing coalescence programs.
 
-* Because you will surely come with your own project bringing many specificities
-which would be impossible for me to foresee, I wanted Quetzal to be **extensible**,
-so you can develop your own tools and combine them with minimal cost with Quetzal
-interfaces.
-
-And because this project is still in development, it is naturally modest and still
-focused on my specific needs. This is why Quetzal lacks of what could seem to you
-as basics : please feel free to contact me for feedbacks or collaboration !
+## What it is not :
+This is not a program, but a library, so you need some basic knowledge about C++ to use it.
+The benefit is that you can integrate the existing simulation tools with your own code
+much more efficiently.
 
 The code is avalaible on github : just check [this repository](https://github.com/Becheler/quetzal) !
 

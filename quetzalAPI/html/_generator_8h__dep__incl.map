@@ -1,11 +1,12 @@
 <map id="quetzal/coalescence/occupancy_spectrum/Generator.h" name="quetzal/coalescence/occupancy_spectrum/Generator.h">
-<area shape="rect" id="node2" href="$_generator__test_8cpp.html" title="Program for unit testing. " alt="" coords="5,109,156,165"/>
-<area shape="rect" id="node3" href="$_occupancy_spectrum_distribution_8h.html" title="quetzal/coalescence\l/occupancy_spectrum\l/OccupancySpectrumDistribution.h" alt="" coords="180,109,405,165"/>
-<area shape="rect" id="node4" href="$memoize_8h.html" title="quetzal/coalescence\l/occupancy_spectrum\l/memoize.h" alt="" coords="104,221,255,277"/>
-<area shape="rect" id="node6" href="$spectrum__creation__policy_8h.html" title="quetzal/coalescence\l/occupancy_spectrum\l/spectrum_creation_policy.h" alt="" coords="200,332,385,388"/>
-<area shape="rect" id="node10" href="$_occupancy_spectrum_distribution__test_8cpp.html" title="Program for unit testing. " alt="" coords="331,213,545,284"/>
-<area shape="rect" id="node5" href="$memoize__test_8cpp.html" title="Program for unit testing. " alt="" coords="25,332,176,388"/>
-<area shape="rect" id="node7" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="113,436,288,507"/>
-<area shape="rect" id="node8" href="$merger_8h.html" title="quetzal/coalescence\l/policies/merger.h" alt="" coords="313,451,454,492"/>
-<area shape="rect" id="node9" href="$merger__test_8cpp.html" title="Program for unit testing. " alt="" coords="299,555,467,596"/>
+<area shape="rect" id="node2" href="$_occupancy_spectrum_distribution_8h.html" title="quetzal/coalescence\l/occupancy_spectrum\l/OccupancySpectrumDistribution.h" alt="" coords="239,117,464,173"/>
+<area shape="rect" id="node11" href="$_generator__test_8cpp.html" title="quetzal/coalescence\l/occupancy_spectrum\l/test/Generator/Generator\l_test.cpp" alt="" coords="489,109,659,180"/>
+<area shape="rect" id="node3" href="$memoize_8h.html" title="quetzal/coalescence\l/occupancy_spectrum\l/memoize.h" alt="" coords="84,235,235,291"/>
+<area shape="rect" id="node5" href="$spectrum__creation__policy_8h.html" title="quetzal/coalescence\l/occupancy_spectrum\l/spectrum_creation_policy.h" alt="" coords="180,347,365,403"/>
+<area shape="rect" id="node9" href="$occupancy__spectrum_2test_2_occupancy_spectrum_distribution_2initialization__test_8cpp.html" title="quetzal/coalescence\l/occupancy_spectrum\l/test/OccupancySpectrumDistribution\l/initialization_test.cpp" alt="" coords="310,228,550,299"/>
+<area shape="rect" id="node10" href="$_occupancy_spectrum_distribution__test_8cpp.html" title="quetzal/coalescence\l/occupancy_spectrum\l/test/OccupancySpectrumDistribution\l/OccupancySpectrumDistribution_test.cpp" alt="" coords="575,228,843,299"/>
+<area shape="rect" id="node4" href="$memoize__test_8cpp.html" title="Program for unit testing. " alt="" coords="5,347,156,403"/>
+<area shape="rect" id="node6" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="93,451,268,521"/>
+<area shape="rect" id="node7" href="$merger_8h.html" title="quetzal/coalescence\l/policies/merger.h" alt="" coords="293,465,434,507"/>
+<area shape="rect" id="node8" href="$merger__test_8cpp.html" title="Program for unit testing. " alt="" coords="279,569,447,611"/>
 </map>

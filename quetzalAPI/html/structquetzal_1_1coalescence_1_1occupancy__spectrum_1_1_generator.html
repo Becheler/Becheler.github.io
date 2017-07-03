@@ -98,9 +98,12 @@ $(document).ready(function(){initNavTree('structquetzal_1_1coalescence_1_1occupa
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::coalescence::occupancy_spectrum::Generator Struct Reference</div>  </div>
+<div class="title">quetzal::coalescence::occupancy_spectrum::Generator Struct Reference<div class="ingroups"><a class="el" href="group__coalescence.html">Coalescence</a> &raquo; <a class="el" href="group__coal__spectrum.html">Occupancy Spectrum</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Generative algorithm for the occupancy spectra resulting from throwing n balls in m urns.  
+ <a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_generator_8h_source.html">Generator.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -111,11 +114,18 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abc3650e4479613777f8ae62b30404d9f"><td class="memTemplParams" colspan="2">template&lt;class Callback &gt; </td></tr>
-<tr class="memitem:abc3650e4479613777f8ae62b30404d9f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_abc3650e4479613777f8ae62b30404d9f.html#abc3650e4479613777f8ae62b30404d9f">generate</a> (unsigned int n, unsigned int m, Callback &amp;callback)</td></tr>
-<tr class="separator:abc3650e4479613777f8ae62b30404d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b187154cd2717e86328c98eb873477"><td class="memTemplParams" colspan="2">template&lt;class UnaryOperation &gt; </td></tr>
+<tr class="memitem:af4b187154cd2717e86328c98eb873477"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_af4b187154cd2717e86328c98eb873477.html#af4b187154cd2717e86328c98eb873477">generate</a> (unsigned int n, unsigned int m, UnaryOperation op)</td></tr>
+<tr class="memdesc:af4b187154cd2717e86328c98eb873477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generative algorithm.  <a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_af4b187154cd2717e86328c98eb873477.html#af4b187154cd2717e86328c98eb873477">More...</a><br /></td></tr>
+<tr class="separator:af4b187154cd2717e86328c98eb873477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Generative algorithm for the occupancy spectra resulting from throwing n balls in m urns. </p>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// std::copy</span></div><div class="line"><span class="preprocessor">#include &lt;iterator&gt;</span>  <span class="comment">// std::ostream_iterator</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a class="code" href="binary__merge__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div><div class="line">  <span class="keyword">using</span> <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator.html">quetzal::coalescence::occupancy_spectrum::Generator</a>;</div><div class="line">  <span class="keyword">using</span> spectrum_type = <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_af70ba21047208434acae994606498415.html#af70ba21047208434acae994606498415">Generator::occupancy_spectrum_type</a>;</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> spectrum_handler = [](spectrum_type &amp;&amp; M_j){</div><div class="line">    std::copy(M_j.begin(), M_j.end(), std::ostream_iterator&lt;spectrum_type::value_type&gt;(std::cout, <span class="stringliteral">&quot; &quot;</span>));</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line">  };</div><div class="line"></div><div class="line">  <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_af4b187154cd2717e86328c98eb873477.html#af4b187154cd2717e86328c98eb873477">Generator::generate</a>(5, 10, spectrum_handler);</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"><div class="line">9 0 0 0 0 1 </div><div class="line">8 1 0 0 1 0 </div><div class="line">8 0 1 1 0 0 </div><div class="line">7 2 0 1 0 0 </div><div class="line">7 1 2 0 0 0 </div><div class="line">6 3 1 0 0 0 </div><div class="line">5 5 0 0 0 0 </div></div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>quetzal/coalescence/occupancy_spectrum/<a class="el" href="_generator_8h_source.html">Generator.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -50,8 +50,6 @@ much more efficiently.
 
 The code is available on github : just check [this repository](https://github.com/Becheler/quetzal) !
 
-### Wiki
-
 You can visit our [wiki](https://github.com/Becheler/quetzal/wiki) to learn more
 about Quetzal features and potentialities through example code.
 

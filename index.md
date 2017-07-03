@@ -30,7 +30,7 @@ I developed QuetzalCoaTL (Quetzal, the COALescence Template Library), a C++
 template library for simulating coalescence processes in spatially explicit
 landscapes with complex demography.
 
-## What it is :
+### What it is :
 
 If you are a scientist interested in studying how populations grow and spread in
 complex environments using Approximate Bayesian Computation (ABC), this library
@@ -39,7 +39,7 @@ complex environments using Approximate Bayesian Computation (ABC), this library
 It aims at being **fast**, **modular** and **extensible** so you can use its generic
 components when facing issues not tackled by the existing coalescence programs.
 
-## What it is not :
+### What it is not :
 
 This is not a program, but a library, so you need some basic knowledge about C++ to use it.
 
@@ -59,6 +59,5 @@ about Quetzal features and potentialities through example code.
 
 You can see the full documentation [here](/quetzalAPI/html/index.html).
 
-### Contact
-
+# Contact
 Feel free to [contact me](http://www.egce.cnrs-gif.fr/?p=5860) !

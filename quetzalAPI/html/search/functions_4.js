@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['forest',['Forest',['../classquetzal_1_1coalescence_1_1_forest_ad7b2cfe69b17824a127812cd5ee0cb25.html#ad7b2cfe69b17824a127812cd5ee0cb25',1,'quetzal::coalescence::Forest::Forest()'],['../classquetzal_1_1coalescence_1_1_forest_a794af66102f9c811ce3e93d7e63d8713.html#a794af66102f9c811ce3e93d7e63d8713',1,'quetzal::coalescence::Forest::Forest(const Forest&lt; Position, Tree &gt; &amp;other)'],['../classquetzal_1_1coalescence_1_1_forest_adc037a05d6fae30bb171129993c637f2.html#adc037a05d6fae30bb171129993c637f2',1,'quetzal::coalescence::Forest::Forest(Forest&lt; Position, Tree &gt; &amp;&amp;other) noexcept']]]
+  ['end',['end',['../classquetzal_1_1coalescence_1_1_forest_a8df79ed64093a376c31c7d0111280a1a.html#a8df79ed64093a376c31c7d0111280a1a',1,'quetzal::coalescence::Forest::end()'],['../classquetzal_1_1coalescence_1_1_forest_adc70e407c4c91a62dcc1ac4df5eb9aae.html#adc70e407c4c91a62dcc1ac4df5eb9aae',1,'quetzal::coalescence::Forest::end() const ']]],
+  ['erase',['erase',['../classquetzal_1_1coalescence_1_1_forest_aaff44f5a3ec3bef232554782681fe75b.html#aaff44f5a3ec3bef232554782681fe75b',1,'quetzal::coalescence::Forest']]]
 ];

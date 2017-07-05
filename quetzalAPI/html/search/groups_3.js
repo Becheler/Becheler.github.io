@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['policies',['Policies',['../group__coal__policies.html',1,'']]]
+  ['occupancy_20spectrum',['Occupancy Spectrum',['../group__coal__spectrum.html',1,'']]]
 ];

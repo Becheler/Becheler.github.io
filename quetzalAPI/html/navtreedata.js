@@ -3,7 +3,8 @@ var NAVTREE =
   [ "Quetzal", "index.html", [
     [ "Introduction", "index.html#Introduction", null ],
     [ "Organisation", "index.html#Organisation", [
-      [ "Coalescence module", "index.html#ss_coal", null ]
+      [ "Coalescence module", "index.html#ss_coal", null ],
+      [ "Demography module", "index.html#ss_demo", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [

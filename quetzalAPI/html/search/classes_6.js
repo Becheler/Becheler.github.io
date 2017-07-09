@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux.html',1,'quetzal::demography']]],
-  ['populationsize',['PopulationSize',['../classquetzal_1_1demography_1_1_population_size.html',1,'quetzal::demography']]]
+  ['occupancyspectrumdistribution',['OccupancySpectrumDistribution',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html',1,'quetzal::coalescence::occupancy_spectrum']]],
+  ['on_5fthe_5ffly',['on_the_fly',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html',1,'quetzal::coalescence::occupancy_spectrum']]]
 ];

@@ -4,7 +4,8 @@ var NAVTREE =
     [ "Introduction", "index.html#Introduction", null ],
     [ "Organisation", "index.html#Organisation", [
       [ "Coalescence module", "index.html#ss_coal", null ],
-      [ "Demography module", "index.html#ss_demo", null ]
+      [ "Demography module", "index.html#ss_demo", null ],
+      [ "Random module", "index.html#ss_random", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
@@ -36,7 +37,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_forest_8h.html"
+"_discrete_distribution_8h.html",
+"random_2test_2_discrete_distribution_2initialization__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

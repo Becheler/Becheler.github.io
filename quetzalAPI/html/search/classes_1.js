@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['forest',['Forest',['../classquetzal_1_1coalescence_1_1_forest.html',1,'quetzal::coalescence']]]
+  ['discretedistribution',['DiscreteDistribution',['../classquetzal_1_1_discrete_distribution.html',1,'quetzal']]]
 ];

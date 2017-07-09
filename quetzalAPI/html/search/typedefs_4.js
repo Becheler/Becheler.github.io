@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spectrum_5ftype',['spectrum_type',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_identity_a426e508f29b883b731e3ba8b38d5cc41.html#a426e508f29b883b731e3ba8b38d5cc41',1,'quetzal::coalescence::occupancy_spectrum::Identity::spectrum_type()'],['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_retrieve_last_empty_urns_a15d0fc70ba29a4e41adc760eadcfa1a9.html#a15d0fc70ba29a4e41adc760eadcfa1a9',1,'quetzal::coalescence::occupancy_spectrum::RetrieveLastEmptyUrns::spectrum_type()']]]
+  ['result_5ftype',['result_type',['../classquetzal_1_1_discrete_distribution_ac0a6224744b2bce1b8b7beb117c0670e.html#ac0a6224744b2bce1b8b7beb117c0670e',1,'quetzal::DiscreteDistribution']]]
 ];

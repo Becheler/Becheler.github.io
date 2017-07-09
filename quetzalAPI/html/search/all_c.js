@@ -1,8 +1,9 @@
 var searchData=
 [
   ['policies',['Policies',['../group__coal__policies.html',1,'']]],
-  ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux_a74ad5d306e4cca730d53d8b5c1683efa.html#a74ad5d306e4cca730d53d8b5c1683efa',1,'quetzal::demography::PopulationFlux']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1_discrete_distribution_a18ee5b62ea0e69e59ee2d107ef621717.html#a18ee5b62ea0e69e59ee2d107ef621717',1,'quetzal::DiscreteDistribution']]],
   ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux.html',1,'quetzal::demography']]],
+  ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux_a74ad5d306e4cca730d53d8b5c1683efa.html#a74ad5d306e4cca730d53d8b5c1683efa',1,'quetzal::demography::PopulationFlux']]],
   ['populationflux_2eh',['PopulationFlux.h',['../_population_flux_8h.html',1,'']]],
   ['populationflux_5ftest_2ecpp',['PopulationFlux_test.cpp',['../_population_flux__test_8cpp.html',1,'']]],
   ['populationsize',['PopulationSize',['../classquetzal_1_1demography_1_1_population_size.html',1,'quetzal::demography']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../classquetzal_1_1demography_1_1_population_flux_a0ec4d958d6120e0b48c805523b722dae.html#a0ec4d958d6120e0b48c805523b722dae',1,'quetzal::demography::PopulationFlux::value_type()'],['../classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434',1,'quetzal::demography::PopulationSize::value_type()']]]
+  ['time_5ftype',['time_type',['../classquetzal_1_1demography_1_1_population_flux_a51e0a199fdbd497848428cc54381db06.html#a51e0a199fdbd497848428cc54381db06',1,'quetzal::demography::PopulationFlux::time_type()'],['../classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c',1,'quetzal::demography::PopulationSize::time_type()']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>quetzal::TransitionKernel&lt; Time, Distribution &gt;::add</title>
+<title>quetzal::TransitionKernel&lt; Time, Distribution &gt;::set</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a8140f0e72c228e721e20ca07ec0d4401.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_ad747987d20803c5a3e6c62bfba54dc4c.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1_transition_kernel_3_0
 </div>
 
 <div class="contents">
-<a class="anchor" id="a8140f0e72c228e721e20ca07ec0d4401"></a>
+<a class="anchor" id="ad747987d20803c5a3e6c62bfba54dc4c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -96,7 +96,7 @@ template&lt;typename Time , typename Distribution &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1_transition_kernel.html">TransitionKernel</a>&lt;Time, Distribution&gt;&amp; <a class="el" href="classquetzal_1_1_transition_kernel.html">quetzal::TransitionKernel</a>&lt; Time, Distribution &gt;::add </td>
+          <td class="memname"><a class="el" href="classquetzal_1_1_transition_kernel.html">TransitionKernel</a>&lt;Time, Distribution&gt;&amp; <a class="el" href="classquetzal_1_1_transition_kernel.html">quetzal::TransitionKernel</a>&lt; Time, Distribution &gt;::set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a327b089557d9b0a0e545c904300fdade.html#a327b089557d9b0a0e545c904300fdade">state_type</a> const &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -126,7 +126,7 @@ template&lt;typename Time , typename Distribution &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Add a probability distribution for a departure state and time. </p>
+<p>Set a probability distribution for a departure state and time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>the departure state. </td></tr>
@@ -137,9 +137,9 @@ template&lt;typename Time , typename Distribution &gt; </div>
 </dl>
 <h1><a class="anchor" id="Example"></a>
 Example</h1>
-<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a class="code" href="binary__merge__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> () {</div><div class="line"></div><div class="line">    std::mt19937 gen;</div><div class="line">    <span class="keyword">using</span> state_space = int;</div><div class="line">    <span class="keyword">using</span> time_type = std::string;</div><div class="line">    <span class="keyword">using</span> D = std::poisson_distribution&lt;state_space&gt;;</div><div class="line">    <span class="keyword">using</span> kernel_type = <a class="code" href="classquetzal_1_1_transition_kernel.html">quetzal::TransitionKernel&lt;time_type, D&gt;</a>;</div><div class="line"></div><div class="line">    kernel_type kernel;</div><div class="line">    kernel.add(0, <span class="stringliteral">&quot;2014&quot;</span>, D(5));</div><div class="line">    kernel.add(1, <span class="stringliteral">&quot;2015&quot;</span>, D(10));</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span>(kernel.has_distribution(2, <span class="stringliteral">&quot;2014&quot;</span>)){</div><div class="line">        std::cout &lt;&lt;<span class="stringliteral">&quot;kernel defined for x=2, t=2014.&quot;</span> &lt;&lt; std::endl;</div><div class="line">    }</div><div class="line"></div><div class="line">    kernel.add(2, <span class="stringliteral">&quot;2014&quot;</span>, D(3));</div><div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 10; ++i){</div><div class="line">        std::cout &lt;&lt; kernel(gen,2, <span class="stringliteral">&quot;2014&quot;</span>) &lt;&lt; std::endl;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// std::generate</span></div><div class="line"><span class="preprocessor">#include &lt;random&gt;</span>    <span class="comment">// std::mt19937</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;iterator&gt;</span>   <span class="comment">// std::ostream_iterator</span></div><div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a class="code" href="binary__merge__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> () {</div><div class="line"></div><div class="line">    <span class="keyword">using</span> deme_ID_type = int;</div><div class="line">    <span class="keyword">using</span> time_type = int;</div><div class="line">    <span class="keyword">using</span> law_type = std::discrete_distribution&lt;deme_ID_type&gt;;</div><div class="line">    <span class="keyword">using</span> kernel_type = <a class="code" href="classquetzal_1_1_transition_kernel.html">quetzal::TransitionKernel&lt;time_type, law_type&gt;</a>;</div><div class="line"></div><div class="line">    std::mt19937 gen;</div><div class="line">    law_type d({0.5,0.5});</div><div class="line">    kernel_type kernel;</div><div class="line"></div><div class="line">    <span class="comment">// Random walk</span></div><div class="line">    deme_ID_type x0 = {0};</div><div class="line">    std::cout &lt;&lt; x0;</div><div class="line">    <span class="keywordflow">for</span>(time_type t = 0; t &lt; 10; ++t){</div><div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; x0 ;</div><div class="line">        <span class="keywordflow">if</span>( ! kernel.has_distribution(x0, t)){</div><div class="line">            kernel.set(x0, t, d);</div><div class="line">        }</div><div class="line">        x0 = kernel(gen, x0, t); <span class="comment">// sample new state</span></div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
 Output</h1>
-<div class="fragment"><div class="line">3</div><div class="line">2</div><div class="line">7</div><div class="line">0</div><div class="line">3</div><div class="line">3</div><div class="line">4</div><div class="line">4</div><div class="line">4</div><div class="line">2</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">0 -&gt; 0 -&gt; 0 -&gt; 1 -&gt; 1 -&gt; 0 -&gt; 0 -&gt; 1 -&gt; 0 -&gt; 1 -&gt; 1</div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

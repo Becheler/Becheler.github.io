@@ -21,12 +21,12 @@ var group__random =
       [ "TransitionKernel", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a6533eeec53d14501ca9fac7e10340b5d.html#a6533eeec53d14501ca9fac7e10340b5d", null ],
       [ "TransitionKernel", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a4f86224a8538c22e1e896fa30464eb23.html#a4f86224a8538c22e1e896fa30464eb23", null ],
       [ "TransitionKernel", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a3d6bcafad22217294b3c06be20ecbdb9.html#a3d6bcafad22217294b3c06be20ecbdb9", null ],
-      [ "add", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_add4052d72dc82606730de97cb83d5205.html#add4052d72dc82606730de97cb83d5205", null ],
-      [ "add", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_adfb07167d586b458d87aa0f5e37e124d.html#adfb07167d586b458d87aa0f5e37e124d", null ],
       [ "has_distribution", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_af62799d9448e9f74e5a317e2dd4535c5.html#af62799d9448e9f74e5a317e2dd4535c5", null ],
       [ "operator()", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a3d91d82aba835098a3db7e2094b04b28.html#a3d91d82aba835098a3db7e2094b04b28", null ],
       [ "operator=", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a12c8bc4035d2775756e653d054a2d463.html#a12c8bc4035d2775756e653d054a2d463", null ],
-      [ "operator=", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_abf380995e9f9ac6baa2b0f0f51cca5cd.html#abf380995e9f9ac6baa2b0f0f51cca5cd", null ]
+      [ "operator=", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_abf380995e9f9ac6baa2b0f0f51cca5cd.html#abf380995e9f9ac6baa2b0f0f51cca5cd", null ],
+      [ "set", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a9372af69a6eb8b17e4ccbccad3bfba91.html#a9372af69a6eb8b17e4ccbccad3bfba91", null ],
+      [ "set", "classquetzal_1_1_transition_kernel_3_01_distribution_01_4_a7c7056ccec2885962ef19a043722f039.html#a7c7056ccec2885962ef19a043722f039", null ]
     ] ],
     [ "TransitionKernel< Time, Distribution >", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4.html", [
       [ "state_type", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a327b089557d9b0a0e545c904300fdade.html#a327b089557d9b0a0e545c904300fdade", null ],
@@ -35,11 +35,11 @@ var group__random =
       [ "TransitionKernel", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a547cf4eec916de68248355f810ab9aa6.html#a547cf4eec916de68248355f810ab9aa6", null ],
       [ "TransitionKernel", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_ace6fec34fb9802ddd0d820b192f9cf4e.html#ace6fec34fb9802ddd0d820b192f9cf4e", null ],
       [ "TransitionKernel", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_ac31bec6de54d891104f63222f94b04a8.html#ac31bec6de54d891104f63222f94b04a8", null ],
-      [ "add", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_aa8150ff4714d077189f8a287d3c1dbe1.html#aa8150ff4714d077189f8a287d3c1dbe1", null ],
-      [ "add", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a8140f0e72c228e721e20ca07ec0d4401.html#a8140f0e72c228e721e20ca07ec0d4401", null ],
       [ "has_distribution", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a6069b5fa195ae91b2bd77c8032892728.html#a6069b5fa195ae91b2bd77c8032892728", null ],
       [ "operator()", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a8e40be0e4b67ace4cdc21851d5d85ea4.html#a8e40be0e4b67ace4cdc21851d5d85ea4", null ],
       [ "operator=", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a55f04b413756713fa38f7b4cd25648a4.html#a55f04b413756713fa38f7b4cd25648a4", null ],
-      [ "operator=", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a444f9e80e154b8cb80b36ca5674d1652.html#a444f9e80e154b8cb80b36ca5674d1652", null ]
+      [ "operator=", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a444f9e80e154b8cb80b36ca5674d1652.html#a444f9e80e154b8cb80b36ca5674d1652", null ],
+      [ "set", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_a9cf9db62d3aaeda0c796c4f512a5e1f0.html#a9cf9db62d3aaeda0c796c4f512a5e1f0", null ],
+      [ "set", "classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4_ad747987d20803c5a3e6c62bfba54dc4c.html#ad747987d20803c5a3e6c62bfba54dc4c", null ]
     ] ]
 ];

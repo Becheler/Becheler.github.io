@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['simultaneous_5fmultiple_5fmerge_5ftest_2ecpp',['simultaneous_multiple_merge_test.cpp',['../simultaneous__multiple__merge__test_8cpp.html',1,'']]],
-  ['spectrum_5fcreation_5fpolicy_2eh',['spectrum_creation_policy.h',['../spectrum__creation__policy_8h.html',1,'']]],
-  ['spectrum_5fcreation_5fpolicy_5ftest_2ecpp',['spectrum_creation_policy_test.cpp',['../spectrum__creation__policy__test_8cpp.html',1,'']]]
+  ['populationflux_2eh',['PopulationFlux.h',['../_population_flux_8h.html',1,'']]],
+  ['populationflux_5ftest_2ecpp',['PopulationFlux_test.cpp',['../_population_flux__test_8cpp.html',1,'']]],
+  ['populationsize_2eh',['PopulationSize.h',['../_population_size_8h.html',1,'']]],
+  ['populationsize_5ftest_2ecpp',['PopulationSize_test.cpp',['../_population_size__test_8cpp.html',1,'']]],
+  ['pre_5forder_5fdfs_5ftest_2ecpp',['pre_order_DFS_test.cpp',['../pre__order___d_f_s__test_8cpp.html',1,'']]]
 ];

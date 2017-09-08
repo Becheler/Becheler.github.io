@@ -1,7 +1,13 @@
 var dir_7a530fcd76992b240c6a9d220f470266 =
 [
-    [ "coalescence", "dir_2077dae2de8e25327087b62d306f33f8.html", "dir_2077dae2de8e25327087b62d306f33f8" ],
-    [ "demography", "dir_8e62f7fcb593830e0aedda378530e896.html", "dir_8e62f7fcb593830e0aedda378530e896" ],
-    [ "random", "dir_ace687cfe5aee619f920d67981933224.html", "dir_ace687cfe5aee619f920d67981933224" ],
-    [ "coalescence.h", "coalescence_8h.html", null ]
+    [ "documentation", "dir_6b73199a94c34bc35836b02c35b0ca28.html", "dir_6b73199a94c34bc35836b02c35b0ca28" ],
+    [ "modules", "dir_452d8c588a01d0d9b6358ca147e46c83.html", "dir_452d8c588a01d0d9b6358ca147e46c83" ],
+    [ "abc.h", "abc_8h.html", null ],
+    [ "coalescence.h", "coalescence_8h.html", null ],
+    [ "demography.h", "demography_8h.html", null ],
+    [ "expressive.h", "expressive_8h.html", null ],
+    [ "genetics.h", "genetics_8h.html", null ],
+    [ "geography.h", "geography_8h.html", null ],
+    [ "quetzal.h", "quetzal_8h.html", null ],
+    [ "random.h", "random_8h.html", null ]
 ];

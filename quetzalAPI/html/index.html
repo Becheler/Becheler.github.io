@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Quetzal</title>
+<title>Home</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,6 +23,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_html_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -87,11 +88,13 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Quetzal </div>  </div>
+<div class="title">Home </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="Introduction"></a>
-Introduction</h1>
+<div class="textblock"><div class="image">
+<img src="quetzal_logo.png" alt="quetzal_logo.png"/>
+</div>
+<h1>Introduction</h1>
 <p>QuetzalCoaTL (COALescence Template Library), or Quetzal for shorter use, is a C++ template library for simulating coalescence processes in spatially explicit landscapes with complex demography.</p>
 <p>If you are a scientist interested in studying how populations grow and spread in complex environments using Approximate Bayesian Computation (ABC), this library can offer you some usefull tools for building complex generative models of genetic data.</p>
 <ul>
@@ -100,41 +103,13 @@ Introduction</h1>
 <li>Because you will surely come with your own project bringing many specificities which would be impossible for us to foresee, we wanted Quetzal to be <b>extensible</b>, so you can develop your own tools and combine them with minimal cost with Quetzal interfaces.</li>
 </ul>
 <p>And because this project is still in development, it is naturally modest and still focused on our specific needs. This is why Quetzal lacks of what could seem to you as basics : please feel free to contact us for feedbacks or collaboration !</p>
-<h1><a class="anchor" id="Organisation"></a>
-Organisation</h1>
-<p>The library is divided in various modules : <a class="el" href="group__coalescence.html">Coalescence</a></p>
-<h2><a class="anchor" id="ss_coal"></a>
-Coalescence module</h2>
-<p>See <a class="el" href="group__coalescence.html">Coalescence</a> .</p>
-<p>Contains various tools for simulating coalescents.</p>
-<table class="doxtable">
-<tr>
-<th>Sub-module </th><th>Description  </th></tr>
-<tr>
-<td><a class="el" href="group__coal__algorithms.html">Algorithms</a> </td><td>Template algorithms for operating coalescence operations on data sequences. </td></tr>
-<tr>
-<td><a class="el" href="group__coal__containers.html">Containers</a> </td><td>Template containers for coalescent reconstruction involving non-trivial data manipulation. </td></tr>
-<tr>
-<td><a class="el" href="group__coal__spectrum.html">Occupancy spectrum</a> </td><td>Random experience of simultaneous multiple collisions. </td></tr>
-<tr>
-<td><a class="el" href="group__coal__policies.html">Policies</a> </td><td>Components for policy-based designed algorithms or models. </td></tr>
-</table>
-<ul>
-<li>Define your own concept of coalescence with <a class="el" href="group__coal__algorithms.html">Algorithms</a> : template algorithms let you free to define the data implementation that will be the most suitable to your special case study.</li>
-<li>Use <a class="el" href="group__coal__containers.html">Containers</a> for efficient manipulation of customized genealogies when confronting non-trivial cases for which no simple data representation holds (for example when studying space-and-time distribution of coalescence events).</li>
-<li>Use <a class="el" href="group__coal__spectrum.html">Occupancy Spectrum</a> to boost your simulations ! Under some hypothesis, coalescence with simultaneous multiple collisions can lead to study what we called the occupancy spectrum (loosely a coalescence configuration). Occupancy spectrum is used as an interface in algorithms: its simulation is highly customizable and involves trade-offs between speed and memory consumption. Choose the most appropriate set of behaviors !</li>
-<li>Some algorithms make use of policies for customization. Feel free to re-use them if you need their interface in your own implementation of coalescence models.</li>
-</ul>
-<h2><a class="anchor" id="ss_demo"></a>
-Demography module</h2>
-<p>See <a class="el" href="group__demography.html">Demography</a> .</p>
-<p>Defines template classes for storage and retrieval of demographic quantities of interest such as populations size distribution across space and time, or demographic flux between demes at all times.</p>
-<p>These quantities are used in coalescence models for defining coalescence probability or backward migration probabilities of gene copies.</p>
-<h2><a class="anchor" id="ss_random"></a>
-Random module</h2>
-<p>See <a class="el" href="group__random.html">Random</a> .</p>
-<p>Defines template classes for building non-number discrete distribution and markovian transition kernels.</p>
-<p>These classes are usefull for building stochastic processes using simulated quantities as random distribution. For example, a simulated demographic flux can be converted to a markovian kernel to be used inside a spatialized coalescence algorithm as a backward transition kernel. </p>
+<h1>Overview</h1>
+<p>Most of the Quetzal modules (<a class="el" href="group__geography.html">geography</a>, <a class="el" href="group__expressive.html">expressive</a>, <a class="el" href="group__demography.html">demography</a>, <a class="el" href="group__random.html">random</a>, <a class="el" href="group__coalescence.html">coalescence</a>) will help you to implement different variants of coalescence-based models.</p>
+<p>The <a class="el" href="group__abc.html">abc</a> module helps you to efficiently embed the simulation code in an ABC framework to estimate the model parameters.</p>
+<div class="image">
+<img src="modules.png" alt="modules.png"/>
+<div class="caption">
+Environmental demo-genetic model framework, and possible modules interactions</div></div>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

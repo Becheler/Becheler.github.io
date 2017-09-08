@@ -1,26 +1,24 @@
 var NAVTREE =
 [
-  [ "Quetzal", "index.html", [
-    [ "Introduction", "index.html#Introduction", null ],
-    [ "Organisation", "index.html#Organisation", [
-      [ "Coalescence module", "index.html#ss_coal", null ],
-      [ "Demography module", "index.html#ss_demo", null ],
-      [ "Random module", "index.html#ss_random", null ]
-    ] ],
+  [ "Home", "index.html", [
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
@@ -37,8 +35,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_discrete_distribution_8h.html",
-"random_2test_2_discrete_distribution_2initialization__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4"
+"_allele_8h.html",
+"classquetzal_1_1genetics_1_1_diploid_individual_a1ff9dba64b82691603c4bff894ab112a.html#a1ff9dba64b82691603c4bff894ab112a",
+"merger__test_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

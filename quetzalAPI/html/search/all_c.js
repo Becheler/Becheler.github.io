@@ -1,17 +1,7 @@
 var searchData=
 [
-  ['policies',['Policies',['../group__coal__policies.html',1,'']]],
-  ['param_5ftype',['param_type',['../classquetzal_1_1_discrete_distribution_a18ee5b62ea0e69e59ee2d107ef621717.html#a18ee5b62ea0e69e59ee2d107ef621717',1,'quetzal::DiscreteDistribution']]],
-  ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux.html',1,'quetzal::demography']]],
-  ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux_a74ad5d306e4cca730d53d8b5c1683efa.html#a74ad5d306e4cca730d53d8b5c1683efa',1,'quetzal::demography::PopulationFlux']]],
-  ['populationflux_2eh',['PopulationFlux.h',['../_population_flux_8h.html',1,'']]],
-  ['populationflux_5ftest_2ecpp',['PopulationFlux_test.cpp',['../_population_flux__test_8cpp.html',1,'']]],
-  ['populationsize',['PopulationSize',['../classquetzal_1_1demography_1_1_population_size.html',1,'quetzal::demography']]],
-  ['populationsize',['PopulationSize',['../classquetzal_1_1demography_1_1_population_size_af4018ef08839888744f5b3dc4ceae213.html#af4018ef08839888744f5b3dc4ceae213',1,'quetzal::demography::PopulationSize']]],
-  ['populationsize_2eh',['PopulationSize.h',['../_population_size_8h.html',1,'']]],
-  ['populationsize_5ftest_2ecpp',['PopulationSize_test.cpp',['../_population_size__test_8cpp.html',1,'']]],
-  ['position_5ftype',['position_type',['../classquetzal_1_1coalescence_1_1_forest_a34a13c58c832bc0156914512b38ffdcf.html#a34a13c58c832bc0156914512b38ffdcf',1,'quetzal::coalescence::Forest']]],
-  ['positions',['positions',['../classquetzal_1_1coalescence_1_1_forest_aa9ba21ebbddde0775427fbe9f92c08ab.html#aa9ba21ebbddde0775427fbe9f92c08ab',1,'quetzal::coalescence::Forest']]],
-  ['pre_5forder_5fdfs',['pre_order_DFS',['../classquetzal_1_1coalescence_1_1_tree_a3ffb7da2ee8af2336391e8b200aa67b1.html#a3ffb7da2ee8af2336391e8b200aa67b1',1,'quetzal::coalescence::Tree']]],
-  ['pre_5forder_5fdfs_5ftest_2ecpp',['pre_order_DFS_test.cpp',['../pre__order___d_f_s__test_8cpp.html',1,'']]]
+  ['n',['n',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution_a25a9f4dadddc819c1d919b8d909f9f78.html#a25a9f4dadddc819c1d919b8d909f9f78',1,'quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution']]],
+  ['name',['name',['../classgdalcpp_1_1_layer_ac337548bbff7768a5756e79074f1a675.html#ac337548bbff7768a5756e79074f1a675',1,'gdalcpp::Layer']]],
+  ['nb_5ftrees',['nb_trees',['../classquetzal_1_1coalescence_1_1_forest_adb6c8603279331a34ab5bebef0d583e7.html#adb6c8603279331a34ab5bebef0d583e7',1,'quetzal::coalescence::Forest::nb_trees() const '],['../classquetzal_1_1coalescence_1_1_forest_a05fea2065e4719bbd436bf9144c42006.html#a05fea2065e4719bbd436bf9144c42006',1,'quetzal::coalescence::Forest::nb_trees(Position const &amp;position)']]],
+  ['ngenotypedloci',['nGenotypedLoci',['../classquetzal_1_1genetics_1_1_diploid_individual_a9182f17ad488fa8c0d61c6ffb365cfde.html#a9182f17ad488fa8c0d61c6ffb365cfde',1,'quetzal::genetics::DiploidIndividual']]]
 ];

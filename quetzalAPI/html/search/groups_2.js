@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['demography',['Demography',['../group__demography.html',1,'']]]
+  ['demography',['demography',['../group__demography.html',1,'']]]
 ];

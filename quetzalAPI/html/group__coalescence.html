@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Coalescence</title>
+<title>coalescence</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,6 +23,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_html_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -89,21 +90,21 @@ $(document).ready(function(){initNavTree('group__coalescence.html','');});
   <div class="summary">
 <a href="#groups">Modules</a>  </div>
   <div class="headertitle">
-<div class="title">Coalescence</div>  </div>
+<div class="title">coalescence</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Template algorithms for operating coalescence operations on data sequences.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for Coalescence:</div>
+Collaboration diagram for coalescence:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__coalescence.png" border="0" alt="" usemap="#group____coalescence"/>
 <map name="group____coalescence" id="group____coalescence">
-<area shape="rect" id="node2" href="group__coal__containers.html" title="Template containers for coalescent reconstruction involving non&#45;trivial data manipulation. " alt="" coords="183,5,269,32"/>
-<area shape="rect" id="node3" href="group__coal__spectrum.html" title="Occupancy spectrum simulation for coalescence with simultaneous multiple collisions. " alt="" coords="152,56,300,83"/>
-<area shape="rect" id="node4" href="group__coal__policies.html" title="Policies with common interface, made to be used when designing coalescence algorithms or models..." alt="" coords="192,107,260,133"/>
-<area shape="rect" id="node5" href="group__coal__algorithms.html" title="Template algorithms for operating coalescence operations on data sequences. " alt="" coords="184,157,268,184"/>
+<area shape="rect" id="node2" href="group__coal__containers.html" title="Template containers for coalescent reconstruction involving non&#45;trivial data manipulation. " alt="" coords="179,5,265,32"/>
+<area shape="rect" id="node3" href="group__coal__spectrum.html" title="Occupancy spectrum simulation for coalescence with simultaneous multiple collisions. " alt="" coords="148,56,296,83"/>
+<area shape="rect" id="node4" href="group__coal__policies.html" title="Policies with common interface, made to be used when designing coalescence algorithms or models..." alt="" coords="188,107,256,133"/>
+<area shape="rect" id="node5" href="group__coal__algorithms.html" title="Template algorithms for operating coalescence operations on data sequences. " alt="" coords="180,157,264,184"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -125,6 +126,24 @@ Modules</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Template algorithms for operating coalescence operations on data sequences. </p>
+<table class="doxtable">
+<tr>
+<th>Sub-module </th><th>Description  </th></tr>
+<tr>
+<td><a class="el" href="group__coal__algorithms.html">Algorithms</a> </td><td>Template algorithms for operating coalescence operations on data sequences. </td></tr>
+<tr>
+<td><a class="el" href="group__coal__containers.html">Containers</a> </td><td>Template containers for coalescent reconstruction involving non-trivial data manipulation. </td></tr>
+<tr>
+<td><a class="el" href="group__coal__spectrum.html">Occupancy spectrum</a> </td><td>Random experience of simultaneous multiple collisions. </td></tr>
+<tr>
+<td><a class="el" href="group__coal__policies.html">Policies</a> </td><td>Components for policy-based designed algorithms or models. </td></tr>
+</table>
+<ul>
+<li>Define your own concept of coalescence with <a class="el" href="group__coal__algorithms.html">Algorithms</a> : template algorithms let you free to define the data implementation that will be the most suitable to your special case study.</li>
+<li>Use <a class="el" href="group__coal__containers.html">Containers</a> for efficient manipulation of customized genealogies when confronting non-trivial cases for which no simple data representation holds (for example when studying space-and-time distribution of coalescence events).</li>
+<li>Use <a class="el" href="group__coal__spectrum.html">Occupancy Spectrum</a> to boost your simulations ! Under some hypothesis, coalescence with simultaneous multiple collisions can lead to study what we called the occupancy spectrum (loosely speaking a coalescence configuration). Occupancy spectrum is used as an interface in algorithms: its simulation is highly customizable and involves trade-offs between speed and memory consumption. Choose the most appropriate set of behaviors !</li>
+<li>Some algorithms make use of policies for customization. Feel free to re-use them if you need their interface in your own implementation of coalescence models. </li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

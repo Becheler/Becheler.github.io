@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Random</title>
+<title>random</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,6 +23,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_html_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -89,7 +90,7 @@ $(document).ready(function(){initNavTree('group__random.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Random</div>  </div>
+<div class="title">random</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -98,18 +99,19 @@ $(document).ready(function(){initNavTree('group__random.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1_discrete_distribution.html">quetzal::DiscreteDistribution&lt; State &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling (non) arithmetic values in discrete probability distribution.  <a href="classquetzal_1_1_discrete_distribution.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1random_1_1_discrete_distribution.html">quetzal::random::DiscreteDistribution&lt; State &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling (non) arithmetic values in discrete probability distribution.  <a href="classquetzal_1_1random_1_1_discrete_distribution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1_transition_kernel_3_01_distribution_01_4.html">quetzal::TransitionKernel&lt; Distribution &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_3.png"/>.  <a href="classquetzal_1_1_transition_kernel_3_01_distribution_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4.html">quetzal::random::TransitionKernel&lt; Distribution &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_3.png"/>.  <a href="classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4.html">quetzal::TransitionKernel&lt; Time, Distribution &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time-variable discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_3.png"/>.  <a href="classquetzal_1_1_transition_kernel_3_01_time_00_01_distribution_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1random_1_1_transition_kernel_3_01_time_00_01_distribution_01_4.html">quetzal::random::TransitionKernel&lt; Time, Distribution &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time-variable discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_3.png"/>.  <a href="classquetzal_1_1random_1_1_transition_kernel_3_01_time_00_01_distribution_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Template classes for building non-number discrete distribution and markovian transition kernels. </p>
+<p>These classes are usefull for building stochastic processes using simulated quantities as random distribution. For example, a simulated demographic flux can be converted to a markovian kernel to be used inside a spatialized coalescence algorithm as a backward transition kernel. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

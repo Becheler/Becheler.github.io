@@ -1,4 +1,7 @@
-<map id="quetzal/random/DiscreteDistribution.h" name="quetzal/random/DiscreteDistribution.h">
-<area shape="rect" id="node2" href="$_discrete_distribution__test_8cpp.html" title="quetzal/random/test\l/DiscreteDistribution\l/DiscreteDistribution\l_test.cpp" alt="" coords="5,80,147,151"/>
-<area shape="rect" id="node3" href="$random_2test_2_discrete_distribution_2initialization__test_8cpp.html" title="quetzal/random/test\l/DiscreteDistribution\l/initialization_test.cpp" alt="" coords="170,87,318,143"/>
+<map id="quetzal/modules/random/DiscreteDistribution.h" name="quetzal/modules/random/DiscreteDistribution.h">
+<area shape="rect" id="node2" href="$random_8h.html" title="quetzal/random.h" alt="" coords="57,109,180,136"/>
+<area shape="rect" id="node5" href="$_discrete_distribution__test_8cpp.html" title="quetzal/modules/random\l/test/DiscreteDistribution\l/DiscreteDistribution_test.cpp" alt="" coords="204,95,399,151"/>
+<area shape="rect" id="node6" href="$random_2test_2_discrete_distribution_2initialization__test_8cpp.html" title="quetzal/modules/random\l/test/DiscreteDistribution\l/initialization_test.cpp" alt="" coords="423,95,590,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="58,199,179,225"/>
+<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/example1/example1.cpp" alt="" coords="5,273,232,315"/>
 </map>

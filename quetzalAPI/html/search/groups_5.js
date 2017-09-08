@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['random',['Random',['../group__random.html',1,'']]]
+  ['occupancy_20spectrum',['Occupancy Spectrum',['../group__coal__spectrum.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['policies',['Policies',['../group__coal__policies.html',1,'']]]
+  ['geography',['geography',['../group__geography.html',1,'']]]
 ];

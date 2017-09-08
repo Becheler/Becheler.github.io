@@ -1,6 +1,9 @@
 var modules =
 [
-    [ "Coalescence", "group__coalescence.html", "group__coalescence" ],
-    [ "Demography", "group__demography.html", "group__demography" ],
-    [ "Random", "group__random.html", "group__random" ]
+    [ "geography", "group__geography.html", "group__geography" ],
+    [ "expressive", "group__expressive.html", null ],
+    [ "demography", "group__demography.html", "group__demography" ],
+    [ "random", "group__random.html", "group__random" ],
+    [ "coalescence", "group__coalescence.html", "group__coalescence" ],
+    [ "abc", "group__abc.html", null ]
 ];

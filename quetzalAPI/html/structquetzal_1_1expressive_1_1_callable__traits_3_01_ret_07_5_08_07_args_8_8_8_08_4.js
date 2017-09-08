@@ -1,0 +1,6 @@
+var structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4 =
+[
+    [ "arguments_type", "structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_aaa0ad64e3dd7d25de85dabe9c20afa95.html#aaa0ad64e3dd7d25de85dabe9c20afa95", null ],
+    [ "return_type", "structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_a7a3c760e28ebe5b3bc7148188694dbd3.html#a7a3c760e28ebe5b3bc7148188694dbd3", null ],
+    [ "arguments_count", "structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_a15d113ee8d21545a9273e08a955349d9.html#a15d113ee8d21545a9273e08a955349d9", null ]
+];

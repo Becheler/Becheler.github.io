@@ -5,9 +5,7 @@ var searchData=
   ['generator_2eh',['Generator.h',['../_generator_8h.html',1,'']]],
   ['generator_5ftest_2ecpp',['Generator_test.cpp',['../_generator__test_8cpp.html',1,'']]],
   ['genetics_2eh',['genetics.h',['../genetics_8h.html',1,'']]],
-  ['geodata_5ftest_2ecpp',['GeoData_test.cpp',['../_geo_data__test_8cpp.html',1,'']]],
   ['geographiccoordinates_2eh',['GeographicCoordinates.h',['../_geographic_coordinates_8h.html',1,'']]],
   ['geographiccoordinates_5ftest_2ecpp',['GeographicCoordinates_test.cpp',['../_geographic_coordinates__test_8cpp.html',1,'']]],
-  ['geography_2eh',['geography.h',['../geography_8h.html',1,'']]],
-  ['geoloader_2eh',['GeoLoader.h',['../_geo_loader_8h.html',1,'']]]
+  ['geography_2eh',['geography.h',['../geography_8h.html',1,'']]]
 ];

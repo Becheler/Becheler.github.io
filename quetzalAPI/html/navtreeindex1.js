@@ -1,11 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classquetzal_1_1genetics_1_1_diploid_individual_a1ff9dba64b82691603c4bff894ab112a.html#a1ff9dba64b82691603c4bff894ab112a":[2,0,2,3,1,4],
-"classquetzal_1_1genetics_1_1_diploid_individual_a29f83c0f2a2e174386c6dfcd250faf81.html#a29f83c0f2a2e174386c6dfcd250faf81":[2,0,2,3,1,11],
-"classquetzal_1_1genetics_1_1_diploid_individual_a418ca09ef36d65ff1537c9c83a41e87b.html#a418ca09ef36d65ff1537c9c83a41e87b":[2,0,2,3,1,9],
-"classquetzal_1_1genetics_1_1_diploid_individual_a42f9907129645e64e052a02de79a7622.html#a42f9907129645e64e052a02de79a7622":[2,0,2,3,1,6],
-"classquetzal_1_1genetics_1_1_diploid_individual_a42fdeb193188dc9b7e72e61d70c269d7.html#a42fdeb193188dc9b7e72e61d70c269d7":[2,0,2,3,1,1],
-"classquetzal_1_1genetics_1_1_diploid_individual_a45285663b1ad13ac7dc1795b8251f2c3.html#a45285663b1ad13ac7dc1795b8251f2c3":[2,0,2,3,1,2],
 "classquetzal_1_1genetics_1_1_diploid_individual_a532d072237ceaacd4c4a9a35192315b9.html#a532d072237ceaacd4c4a9a35192315b9":[2,0,2,3,1,8],
 "classquetzal_1_1genetics_1_1_diploid_individual_a575148c2923e8a0370f640265f7aefb3.html#a575148c2923e8a0370f640265f7aefb3":[2,0,2,3,1,7],
 "classquetzal_1_1genetics_1_1_diploid_individual_a9182f17ad488fa8c0d61c6ffb365cfde.html#a9182f17ad488fa8c0d61c6ffb365cfde":[2,0,2,3,1,12],
@@ -159,7 +153,7 @@ var NAVTREEINDEX1 =
 "files.html":[3,0],
 "functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
-"functions_0x7e.html":[2,3,0,22],
+"functions_0x7e.html":[2,3,0,24],
 "functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
 "functions_d.html":[2,3,0,3],
@@ -206,6 +200,8 @@ var NAVTREEINDEX1 =
 "functions_v.html":[2,3,0,20],
 "functions_vars.html":[2,3,2],
 "functions_w.html":[2,3,0,21],
+"functions_x.html":[2,3,0,22],
+"functions_y.html":[2,3,0,23],
 "gdalcpp_8h.html":[3,0,0,1,5,4],
 "gdalcpp_8h.html#a16ca0d44964c7c49d949d466541f17d9":[3,0,0,1,5,4,9],
 "gdalcpp_8h.html#a2b5a6d9930eaa0ddd70f732bffc3997d":[3,0,0,1,5,4,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX1 =
 "merge_8h.html":[3,0,0,1,1,0,1],
 "merge_8h.html#ga58ed2931bdac16146460718751d8647c":[3,0,0,1,1,0,1,0],
 "merge_8h.html#gac90d96d04f0434b2a32417428b2c86ce":[3,0,0,1,1,0,1,1],
-"merge_8h_source.html":[3,0,0,1,1,0,1]
+"merge_8h_source.html":[3,0,0,1,1,0,1],
+"merger_8h.html":[3,0,0,1,1,3,0],
+"merger_8h_source.html":[3,0,0,1,1,3,0],
+"merger__test_8cpp.html":[3,0,0,1,1,3,1],
+"merger__test_8cpp_abed67b55993ac64b35d5166280d327b7.html#abed67b55993ac64b35d5166280d327b7":[3,0,0,1,1,3,1,0]
 };

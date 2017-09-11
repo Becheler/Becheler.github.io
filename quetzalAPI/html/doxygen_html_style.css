@@ -12,7 +12,7 @@ div.image img[src="basc_logo.png"]{
 }
 
 div.image img[src="github_logo.png"]{
-    width:300px;
+    width:50px;
     content:url(https://github.com/Becheler/quetzal/wiki);
 }
 

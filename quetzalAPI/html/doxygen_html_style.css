@@ -14,3 +14,8 @@ div.image img[src="basc_logo.png"]{
 div.image img[src="github_logo.png"]{
     width:300px;
 }
+
+a.githublogo{
+  background: url('github_logo.png') no-repeat;
+  
+}

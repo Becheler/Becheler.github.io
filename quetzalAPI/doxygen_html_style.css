@@ -17,6 +17,6 @@ div.image img[src="github_logo.png"]{
 
 a.githublogo{
   background: url('github_logo.png') no-repeat;
-  width:100%;
-  height:100%;
+  width:100px;
+  height:100px;
 }

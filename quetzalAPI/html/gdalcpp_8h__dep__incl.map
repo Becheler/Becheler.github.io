@@ -1,11 +1,10 @@
 <map id="quetzal/modules/geography/gdalcpp.h" name="quetzal/modules/geography/gdalcpp.h">
-<area shape="rect" id="node2" href="$_environmental_quantity_8h.html" title="quetzal/modules/geography\l/EnvironmentalQuantity.h" alt="" coords="320,95,501,136"/>
-<area shape="rect" id="node10" href="$gdalcpp__test_8cpp.html" title="quetzal/modules/geography\l/gdalcpp_test.cpp" alt="" coords="525,95,707,136"/>
-<area shape="rect" id="node3" href="$_discrete_landscape_8h.html" title="quetzal/modules/geography\l/DiscreteLandscape.h" alt="" coords="217,191,399,233"/>
-<area shape="rect" id="node9" href="$_environmental_quantity__test_8cpp.html" title="quetzal/modules/geography\l/EnvironmentalQuantity\l_test.cpp" alt="" coords="423,184,604,240"/>
+<area shape="rect" id="node2" href="$_environmental_quantity_8h.html" title="quetzal/modules/geography\l/EnvironmentalQuantity.h" alt="" coords="225,95,407,136"/>
+<area shape="rect" id="node9" href="$gdalcpp__test_8cpp.html" title="quetzal/modules/geography\l/gdalcpp_test.cpp" alt="" coords="431,95,612,136"/>
+<area shape="rect" id="node3" href="$_discrete_landscape_8h.html" title="quetzal/modules/geography\l/DiscreteLandscape.h" alt="" coords="123,191,304,233"/>
+<area shape="rect" id="node8" href="$_environmental_quantity__test_8cpp.html" title="quetzal/modules/geography\l/EnvironmentalQuantity\l_test.cpp" alt="" coords="328,184,509,240"/>
 <area shape="rect" id="node4" href="$geography_8h.html" title="quetzal/geography.h" alt="" coords="49,303,188,329"/>
-<area shape="rect" id="node7" href="$_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/DiscreteLandscape_test.cpp" alt="" coords="212,295,404,337"/>
-<area shape="rect" id="node8" href="$test_2_discrete_landscape_2_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/test/DiscreteLandscape\l/DiscreteLandscape_test.cpp" alt="" coords="428,288,620,344"/>
+<area shape="rect" id="node7" href="$_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/test/DiscreteLandscape\l/DiscreteLandscape_test.cpp" alt="" coords="212,288,404,344"/>
 <area shape="rect" id="node5" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="58,392,179,419"/>
 <area shape="rect" id="node6" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/example1/example1.cpp" alt="" coords="5,467,232,508"/>
 </map>

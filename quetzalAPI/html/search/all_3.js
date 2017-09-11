@@ -20,9 +20,8 @@ var searchData=
   ['discretelandscape',['DiscreteLandscape',['../classquetzal_1_1geography_1_1_discrete_landscape.html',1,'quetzal::geography']]],
   ['discretelandscape',['DiscreteLandscape',['../classquetzal_1_1geography_1_1_discrete_landscape_ac8409e3905b9b3ed18bf7f1abf7a1650.html#ac8409e3905b9b3ed18bf7f1abf7a1650',1,'quetzal::geography::DiscreteLandscape']]],
   ['discretelandscape_2eh',['DiscreteLandscape.h',['../_discrete_landscape_8h.html',1,'']]],
-  ['discretelandscape_5ftest_2ecpp',['DiscreteLandscape_test.cpp',['../test_2_discrete_landscape_2_discrete_landscape__test_8cpp.html',1,'']]],
   ['discretelandscape_5ftest_2ecpp',['DiscreteLandscape_test.cpp',['../_discrete_landscape__test_8cpp.html',1,'']]],
-  ['driver',['Driver',['../classgdalcpp_1_1detail_1_1_driver.html',1,'gdalcpp::detail']]],
   ['driver',['driver',['../classgdalcpp_1_1gdal__error_a63bd84e670784d5fae4de5b7474b89fb.html#a63bd84e670784d5fae4de5b7474b89fb',1,'gdalcpp::gdal_error::driver()'],['../classgdalcpp_1_1detail_1_1_driver_a861d15ea071ac5aad5f292fc271e03a1.html#a861d15ea071ac5aad5f292fc271e03a1',1,'gdalcpp::detail::Driver::Driver()']]],
+  ['driver',['Driver',['../classgdalcpp_1_1detail_1_1_driver.html',1,'gdalcpp::detail']]],
   ['driver_5fname',['driver_name',['../classgdalcpp_1_1_dataset_ae8d280774e162d82d2caa8d67f50d457.html#ae8d280774e162d82d2caa8d67f50d457',1,'gdalcpp::Dataset']]]
 ];

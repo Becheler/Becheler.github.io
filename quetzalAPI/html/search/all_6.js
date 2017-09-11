@@ -17,7 +17,7 @@ var searchData=
   ['geodata_5ftest_2ecpp',['GeoData_test.cpp',['../_geo_data__test_8cpp.html',1,'']]],
   ['geographic_5fdefinition_5fspace',['geographic_definition_space',['../classquetzal_1_1geography_1_1_discrete_landscape_aaf619318ae705198cd1ab7faa181b7ef.html#aaf619318ae705198cd1ab7faa181b7ef',1,'quetzal::geography::DiscreteLandscape::geographic_definition_space()'],['../classquetzal_1_1geography_1_1_environmental_quantity_a20c986b22bd1ba957fb77724009b99d8.html#a20c986b22bd1ba957fb77724009b99d8',1,'quetzal::geography::EnvironmentalQuantity::geographic_definition_space()']]],
   ['geographiccoordinates',['GeographicCoordinates',['../classquetzal_1_1geography_1_1_geographic_coordinates.html',1,'quetzal::geography']]],
-  ['geographiccoordinates',['GeographicCoordinates',['../classquetzal_1_1geography_1_1_geographic_coordinates_aac927b4c1ece322cf9b92657d5b5ca0f.html#aac927b4c1ece322cf9b92657d5b5ca0f',1,'quetzal::geography::GeographicCoordinates::GeographicCoordinates()=default'],['../classquetzal_1_1geography_1_1_geographic_coordinates_a58b5a38c267ca549fa0ca65ed3dc4254.html#a58b5a38c267ca549fa0ca65ed3dc4254',1,'quetzal::geography::GeographicCoordinates::GeographicCoordinates(decimal_degree lat, decimal_degree lon)']]],
+  ['geographiccoordinates',['GeographicCoordinates',['../classquetzal_1_1geography_1_1_geographic_coordinates_a58b5a38c267ca549fa0ca65ed3dc4254.html#a58b5a38c267ca549fa0ca65ed3dc4254',1,'quetzal::geography::GeographicCoordinates']]],
   ['geographiccoordinates_2eh',['GeographicCoordinates.h',['../_geographic_coordinates_8h.html',1,'']]],
   ['geographiccoordinates_5ftest_2ecpp',['GeographicCoordinates_test.cpp',['../_geographic_coordinates__test_8cpp.html',1,'']]],
   ['geography',['geography',['../group__geography.html',1,'']]],

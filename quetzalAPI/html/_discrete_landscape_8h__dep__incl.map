@@ -1,7 +1,6 @@
 <map id="quetzal/modules/geography/DiscreteLandscape.h" name="quetzal/modules/geography/DiscreteLandscape.h">
 <area shape="rect" id="node2" href="$geography_8h.html" title="quetzal/geography.h" alt="" coords="49,109,188,136"/>
-<area shape="rect" id="node5" href="$_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/DiscreteLandscape_test.cpp" alt="" coords="212,102,404,143"/>
-<area shape="rect" id="node6" href="$test_2_discrete_landscape_2_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/test/DiscreteLandscape\l/DiscreteLandscape_test.cpp" alt="" coords="428,95,620,151"/>
+<area shape="rect" id="node5" href="$_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/test/DiscreteLandscape\l/DiscreteLandscape_test.cpp" alt="" coords="212,95,404,151"/>
 <area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="58,199,179,225"/>
 <area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/example1/example1.cpp" alt="" coords="5,273,232,315"/>
 </map>

@@ -37,7 +37,7 @@ var NAVTREEINDEX =
 [
 "_allele_8h.html",
 "classquetzal_1_1genetics_1_1_diploid_individual_a1ff9dba64b82691603c4bff894ab112a.html#a1ff9dba64b82691603c4bff894ab112a",
-"merger__test_8cpp.html"
+"merger_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

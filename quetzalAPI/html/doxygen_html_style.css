@@ -21,17 +21,3 @@ a.githublogo{
   width:500px;
   min-height:100px;
 }
-
-pre.fragment {
-    border: 1px solid #C4CFE5;
-    background-color: #FBFCFD;
-    padding: 4px 6px;
-    margin: 4px 8px 4px 2px;
-    overflow: auto;
-    word-wrap: break-word;
-    font-size: 9pt;
-    line-height: 125%;
-    font-family: monospace, fixed;
-    font-size: 105%;
-    display:inline
-}

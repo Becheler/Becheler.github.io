@@ -32,12 +32,12 @@ var hierarchy =
       [ "quetzal::expressive::compose_t< Outer >", "structquetzal_1_1expressive_1_1compose__t_3_01_outer_01_4.html", null ]
     ] ],
     [ "gdalcpp::Dataset", "classgdalcpp_1_1_dataset.html", [
-      [ "quetzal::geography::EnvironmentalQuantity< Time >", "classquetzal_1_1geography_1_1_environmental_quantity.html", null ]
+      [ "quetzal::EnvironmentalQuantity< Time >", "classquetzal_1_1_environmental_quantity.html", null ]
     ] ],
     [ "quetzal::genetics::DiploidIndividual< Allele >", "classquetzal_1_1genetics_1_1_diploid_individual.html", null ],
     [ "quetzal::random::DiscreteDistribution< State >", "classquetzal_1_1random_1_1_discrete_distribution.html", null ],
     [ "quetzal::geography::DiscreteLandscape< Key, Time >", "classquetzal_1_1geography_1_1_discrete_landscape.html", null ],
-    [ "quetzal::geography::Extent", "structquetzal_1_1geography_1_1_extent.html", null ],
+    [ "quetzal::Extent", "classquetzal_1_1_extent.html", null ],
     [ "gdalcpp::Feature", "classgdalcpp_1_1_feature.html", null ],
     [ "quetzal::coalescence::Forest< Position, Tree >", "classquetzal_1_1coalescence_1_1_forest.html", null ],
     [ "GenerativeModel", "class_generative_model.html", null ],
@@ -67,7 +67,7 @@ var hierarchy =
     [ "quetzal::demography::PopulationFlux< Space, Time, Value >", "classquetzal_1_1demography_1_1_population_flux.html", null ],
     [ "quetzal::demography::PopulationSize< Space, Time, Value >", "classquetzal_1_1demography_1_1_population_size.html", null ],
     [ "ReferenceTable< Cont, ParamType, DataType >", "class_reference_table.html", null ],
-    [ "quetzal::geography::Resolution", "structquetzal_1_1geography_1_1_resolution.html", null ],
+    [ "quetzal::geography::Resolution", "classquetzal_1_1geography_1_1_resolution.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::RetrieveLastEmptyUrns", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_retrieve_last_empty_urns.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::ReturnAlwaysTrue", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_return_always_true.html", null ],
     [ "runtime_error", null, [

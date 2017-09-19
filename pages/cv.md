@@ -6,6 +6,8 @@ description: Curriculum Vitae
 ---
 # Curriculum vitae
 
+**********************************
+
 ## Research experience
 
 * phD student (December 2014 - present)

@@ -11,3 +11,6 @@ Under such complex models, likelyhood-based inferential methods are useless, and
  _Approximate Bayesian Computation_ (ABC) is a natural way to tackle this
 kind of models as it makes use of simulations to estimate parameters. This need for
 massive simulations justifies my principal activity of C++ programming.
+
+I maintain Quetzal, a C++ template library easing the development of
+coalescence-based models. 

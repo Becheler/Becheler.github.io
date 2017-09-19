@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Arnaud Becheler
 tagline: phD student
 description: Arnaud Becheler research interets

@@ -9,9 +9,11 @@ description: Curriculum Vitae
 ## Research experience
 
 * phD student (December 2014 - present)
-  * Environmental demogenetic model for an invasive species
-  * Laboratoire Évolution, Génomes, Comportement et Écologie (EGCE), Gif-sur-Yvette, France
+  * [Environmental demogenetic model for an invasive species](http://www.theses.fr/s143741)
+  * [Laboratoire Évolution, Génomes, Comportement et Écologie](http://www.egce.cnrs-gif.fr/?lang=en) (EGCE), Gif-sur-Yvette, France
   * Advisors: [Stéphane Dupas](http://www.egce.cnrs-gif.fr/?p=722), [Camille Coron](https://www.math.u-psud.fr/~ccoron/)  
+
+**********************************
 
 ## Education
 
@@ -20,9 +22,13 @@ description: Curriculum Vitae
   * Erasmus program: Universidad de Salamanca, 10 months
 * BSc in Life science, Université de Bordeaux (2011)
 
+**********************************
+
 ## (Pre)publications
 
 * QUETZAL - an Open Source C++ Template Library for Coalescence. With Camille Coron and Stéphane Dupas.
+
+**********************************
 
 ## Oral communications
 
@@ -31,6 +37,8 @@ description: Curriculum Vitae
 * **Modèle de démogénétique environnementale : étude des processsus d’invasion biologique**, Rencontres doctorales Lebesgue, October 2016, Angers (France)
 * **Environmental demogenetic model for biological invasion processes**, Journée de l'école doctorale Sciences du Végétal, September 2016, Orsay (France)
 * **Modèle de démogénétique environnementale : étude des processsus d’invasion biologique**, ETEE 2015, Gif-sur-Yvette (France)
+
+**********************************
 
 ## Poster communications
 

@@ -1,8 +1,11 @@
+
 theme: jekyll-theme-cayman
 
 title : Arnaud Becheler
 description: phD student
+
 author :
   name : Arnaud Becheler
   email : Arnaud.Becheler@egce.cnrs-gif.fr
   github : becheler
+    url : https://github.com/Becheler

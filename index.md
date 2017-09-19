@@ -1,8 +1,5 @@
 ---
-layout: default
-title: Arnaud Becheler
-tagline: phD student
-description: Arnaud Becheler research interets
+layout: home
 ---
 
 I am interested in modeling the relationship between environment, demography and

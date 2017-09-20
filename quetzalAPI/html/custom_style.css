@@ -94,12 +94,10 @@ pre {
   color: #F0FFFF;
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
-  position: fixed;
-  right: 20px;
+  text-align: right;
 }
 
 .contact {
   color: #F0FFFF;
   font-size: small;
-  right: 20px;
 }

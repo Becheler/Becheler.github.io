@@ -89,9 +89,10 @@ pre {
   font-weight: normal;
 }
 
-.navpath {
+.navpath ul {
   overflow:hidden;
   color: #F0FFFF;
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
+  background-position: none;
 }

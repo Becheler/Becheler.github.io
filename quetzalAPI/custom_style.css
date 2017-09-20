@@ -37,8 +37,28 @@ pre.fragment {
 }
 
 body, table, div, p, dl {
-font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif;
-    font-size: medium;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  line-height: 1.5;
+  color: #606c71;
+}
+
+
+element {
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #159957;
+
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Ensure that <CODE> and <TT> text is as big as the <BODY> text and use a nicer font */

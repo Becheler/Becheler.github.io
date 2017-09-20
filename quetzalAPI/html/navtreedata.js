@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Quetzal", "index.html", [
+  [ "QUETZAL", "index.html", [
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],

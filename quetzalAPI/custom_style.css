@@ -97,6 +97,8 @@ pre {
 }
 
 .contact {
+  position: fixed;
+  right: 20px;
   color: #F0FFFF;
   font-size: small;
   right: 20px;

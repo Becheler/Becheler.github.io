@@ -80,6 +80,7 @@ pre {
 #projectname {
   color: #F0FFFF;
   font-size: 3.25rem;
+  font-weight: bold;
 }
 
 #projectbrief {

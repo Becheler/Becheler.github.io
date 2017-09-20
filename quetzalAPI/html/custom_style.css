@@ -89,7 +89,7 @@ pre {
   font-weight: normal;
 }
 
-#navpath {
+.navpath {
   overflow:hidden;
   color: #fff;
   background-color: #159957;

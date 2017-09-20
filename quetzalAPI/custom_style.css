@@ -79,10 +79,12 @@ pre {
 
 #projectname {
   color: #F0FFFF;
+  font-size: 3.25rem;
 }
 
 #projectbrief {
   color: #F0FFFF;
   opacity: 0.7;
   font-style: italic;
+  font-weight: normal;
 }

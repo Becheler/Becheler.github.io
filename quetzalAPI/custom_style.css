@@ -71,3 +71,9 @@ code, tt {
 pre {
     font-size: 105%;
 }
+
+.pageheader {
+    color: #fff;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}

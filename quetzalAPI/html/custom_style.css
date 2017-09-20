@@ -73,6 +73,8 @@ pre {
 }
 
 #titlearea {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
   overflow:hidden
   color: #F0FFFF;
   background-color: #159957;

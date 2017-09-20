@@ -96,11 +96,6 @@ pre {
   background-image: linear-gradient(120deg, #155799, #159957);
 }
 
-.footercontact{
-  position: fixed;
-  right: 20px;
-}
-
 .contact {
   color: #F0FFFF;
   font-size: small;

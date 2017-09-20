@@ -58,7 +58,7 @@ h1 {
 
   font-size: 2em;
   margin: 0.67em 0;
-  
+
 }
 
 /* Ensure that <CODE> and <TT> text is as big as the <BODY> text and use a nicer font */
@@ -70,4 +70,10 @@ code, tt {
 /* Need this as <PRE> makes the text look smaller due to different font */
 pre {
     font-size: 105%;
+}
+
+.footer {
+  background-color: #F2994A;  /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+  background-image: linear-gradient(to right, #F2C94C, #F2994A);
 }

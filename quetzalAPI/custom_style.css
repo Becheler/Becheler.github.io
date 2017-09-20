@@ -71,15 +71,12 @@ pre {
 }
 
 #titlearea {
-  overflow:hidden
+  overflow:hidden;
   color: #fff;
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
 }
 
-#projectname div {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: medium;
-  line-height: 1.5;
-
+#projectname {
+  color: #F0FFFF;
 }

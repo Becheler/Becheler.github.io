@@ -40,15 +40,12 @@ body, table, div, p, dl {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: medium;
   line-height: 1.5;
-  color: #159957;
-}
+  color: #606c71;
 
-
-element {
 
 }
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+h1, h2, h3, h4, h5, h6 {
 
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -58,8 +55,10 @@ element {
 }
 
 h1 {
+
   font-size: 2em;
   margin: 0.67em 0;
+  
 }
 
 /* Ensure that <CODE> and <TT> text is as big as the <BODY> text and use a nicer font */

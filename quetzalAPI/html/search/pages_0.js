@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['home',['Home',['../index.html',1,'']]]
+  ['quetzal',['Quetzal',['../index.html',1,'']]]
 ];

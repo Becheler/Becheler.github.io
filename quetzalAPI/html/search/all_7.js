@@ -6,6 +6,5 @@ var searchData=
   ['has_5fparent',['has_parent',['../classquetzal_1_1coalescence_1_1_tree_a5508fcbb723480c5153150fcc2d136af.html#a5508fcbb723480c5153150fcc2d136af',1,'quetzal::coalescence::Tree']]],
   ['hash_3c_20quetzal_3a_3ageography_3a_3ageographiccoordinates_20_3e',['hash&lt; quetzal::geography::GeographicCoordinates &gt;',['../structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html',1,'std']]],
   ['hash_5fcombine',['hash_combine',['../namespacequetzal_1_1geography_acf2ee27bd314f24ffa1452971dcc6bfc.html#acf2ee27bd314f24ffa1452971dcc6bfc',1,'quetzal::geography']]],
-  ['height',['height',['../classgdalcpp_1_1_dataset_a7b9b40099773b59fa385b95a034d9330.html#a7b9b40099773b59fa385b95a034d9330',1,'gdalcpp::Dataset']]],
-  ['home',['Home',['../index.html',1,'']]]
+  ['height',['height',['../classgdalcpp_1_1_dataset_a7b9b40099773b59fa385b95a034d9330.html#a7b9b40099773b59fa385b95a034d9330',1,'gdalcpp::Dataset']]]
 ];

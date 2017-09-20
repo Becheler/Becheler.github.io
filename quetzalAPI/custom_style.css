@@ -71,15 +71,3 @@ code, tt {
 pre {
     font-size: 105%;
 }
-
-.footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
-    font-size: 0.9rem;
-  }
-}

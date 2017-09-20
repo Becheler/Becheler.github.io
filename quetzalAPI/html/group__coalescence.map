@@ -1,6 +1,0 @@
-<map id="coalescence" name="coalescence">
-<area shape="rect" id="node2" href="$group__coal__containers.html" title="Template containers for coalescent reconstruction involving non&#45;trivial data manipulation. " alt="" coords="179,5,265,32"/>
-<area shape="rect" id="node3" href="$group__coal__spectrum.html" title="Occupancy spectrum simulation for coalescence with simultaneous multiple collisions. " alt="" coords="148,56,296,83"/>
-<area shape="rect" id="node4" href="$group__coal__policies.html" title="Policies with common interface, made to be used when designing coalescence algorithms or models..." alt="" coords="188,107,256,133"/>
-<area shape="rect" id="node5" href="$group__coal__algorithms.html" title="Template algorithms for operating coalescence operations on data sequences. " alt="" coords="180,157,264,184"/>
-</map>

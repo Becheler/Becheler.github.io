@@ -80,3 +80,9 @@ pre {
 #projectname {
   color: #F0FFFF;
 }
+
+#projectbrief {
+  color: #F0FFFF;
+  opacity: 0.7;
+  font-style: italic;
+}

@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "QUETZAL", "index.html", [
+    [ "Home", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -37,7 +38,7 @@ var NAVTREEINDEX =
 [
 "_allele_8h.html",
 "classquetzal_1_1demography_1_1_population_size_ad7476ebf16787e81fe6b665ac8174b10.html#ad7476ebf16787e81fe6b665ac8174b10",
-"merge_8h.html#gac90d96d04f0434b2a32417428b2c86ce"
+"merge_8h.html#ga58ed2931bdac16146460718751d8647c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

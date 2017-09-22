@@ -37,8 +37,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_allele_8h.html",
-"classquetzal_1_1demography_1_1_population_size_ad7476ebf16787e81fe6b665ac8174b10.html#ad7476ebf16787e81fe6b665ac8174b10",
-"merge_8h.html#ga58ed2931bdac16146460718751d8647c"
+"classquetzal_1_1genetics_1_1_diploid_individual.html",
+"group__coal__spectrum.html",
+"structquetzal_1_1expressive_1_1symetric__binop__t_aa9aa517c45b107770ae3fdc8adc20b4c.html#aa9aa517c45b107770ae3fdc8adc20b4c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -65,7 +65,6 @@ var NAVTREEINDEX0 =
 "_time_transition_kernel__test_8cpp.html":[4,0,0,1,6,0,1,1],
 "_time_transition_kernel__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,6,0,1,1,0],
 "_transition_kernel_8h.html":[4,0,0,1,6,2],
-"_transition_kernel_8h.html#af983cf3659b2aa176e09f2ac1bf1ea7d":[4,0,0,1,6,2,1],
 "_transition_kernel_8h_source.html":[4,0,0,1,6,2],
 "_transition_kernel__test_8cpp.html":[4,0,0,1,6,0,2,1],
 "_transition_kernel__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,6,0,2,1,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classquetzal_1_1genetics_1_1_allele_a00584b1e4f8a944565bb356327434518.html#a00584b1e4f8a944565bb356327434518":[3,0,2,3,0,0],
 "classquetzal_1_1genetics_1_1_allele_a4a7c5c2a0c9751877f20bb1feb20c94c.html#a4a7c5c2a0c9751877f20bb1feb20c94c":[3,0,2,3,0,2],
 "classquetzal_1_1genetics_1_1_allele_a67d06cd2984b4157096074d6a624ce6e.html#a67d06cd2984b4157096074d6a624ce6e":[3,0,2,3,0,1],
-"classquetzal_1_1genetics_1_1_allele_a7ffec0bc08f29dcab919f579464e40f2.html#a7ffec0bc08f29dcab919f579464e40f2":[3,0,2,3,0,3]
+"classquetzal_1_1genetics_1_1_allele_a7ffec0bc08f29dcab919f579464e40f2.html#a7ffec0bc08f29dcab919f579464e40f2":[3,0,2,3,0,3],
+"classquetzal_1_1genetics_1_1_diploid_individual.html":[3,0,2,3,1]
 };

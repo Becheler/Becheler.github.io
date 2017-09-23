@@ -11,7 +11,6 @@ var searchData=
   ['make_5fexpression_5ft',['make_expression_t',['../structquetzal_1_1expressive_1_1make__expression__t.html',1,'quetzal::expressive']]],
   ['make_5fexpression_5ft',['make_expression_t',['../structquetzal_1_1expressive_1_1make__expression__t_a833b6c4b96811eaa60c9f8a18c19db83.html#a833b6c4b96811eaa60c9f8a18c19db83',1,'quetzal::expressive::make_expression_t']]],
   ['make_5fprior',['make_prior',['../class_generative_model_a57b6e84da4fc64ed3a71bf2bcc8d6224.html#a57b6e84da4fc64ed3a71bf2bcc8d6224',1,'GenerativeModel']]],
-  ['make_5ftransition_5fkernel',['make_transition_kernel',['../namespacequetzal_1_1random_af983cf3659b2aa176e09f2ac1bf1ea7d.html#af983cf3659b2aa176e09f2ac1bf1ea7d',1,'quetzal::random']]],
   ['marker_5fdescriptor',['Marker_Descriptor',['../structquetzal_1_1genetics_1_1_marker___descriptor.html',1,'quetzal::genetics']]],
   ['marker_5ftraits_2eh',['marker_traits.h',['../marker__traits_8h.html',1,'']]],
   ['marker_5ftype',['marker_type',['../classquetzal_1_1genetics_1_1_loader_ae74e065faf2279647795ccf0f58a4037.html#ae74e065faf2279647795ccf0f58a4037',1,'quetzal::genetics::Loader']]],

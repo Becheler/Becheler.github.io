@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classquetzal_1_1genetics_1_1_diploid_individual.html":[3,0,2,3,1],
 "classquetzal_1_1genetics_1_1_diploid_individual_a1ced9feb3dda30b6fe4b403ca86f82f4.html#a1ced9feb3dda30b6fe4b403ca86f82f4":[3,0,2,3,1,10],
 "classquetzal_1_1genetics_1_1_diploid_individual_a1ff9dba64b82691603c4bff894ab112a.html#a1ff9dba64b82691603c4bff894ab112a":[3,0,2,3,1,4],
 "classquetzal_1_1genetics_1_1_diploid_individual_a29f83c0f2a2e174386c6dfcd250faf81.html#a29f83c0f2a2e174386c6dfcd250faf81":[3,0,2,3,1,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "group__coal__algorithms_ga58ed2931bdac16146460718751d8647c.html#ga58ed2931bdac16146460718751d8647c":[1,4,0,0],
 "group__coal__algorithms_gac90d96d04f0434b2a32417428b2c86ce.html#gac90d96d04f0434b2a32417428b2c86ce":[1,4,0,1],
 "group__coal__containers.html":[1,4,1],
-"group__coal__policies.html":[1,4,2]
+"group__coal__policies.html":[1,4,2],
+"group__coal__spectrum.html":[1,4,3]
 };

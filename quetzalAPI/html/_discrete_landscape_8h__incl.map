@@ -1,7 +1,7 @@
 <map id="quetzal/modules/geography/DiscreteLandscape.h" name="quetzal/modules/geography/DiscreteLandscape.h">
-<area shape="rect" id="node9" href="$_environmental_quantity_8h.html" title="EnvironmentalQuantity.h" alt="" coords="351,95,517,121"/>
-<area shape="rect" id="node10" href="$gdalcpp_8h.html" title="gdalcpp.h" alt="" coords="508,169,587,196"/>
-<area shape="rect" id="node18" href="$_geographic_coordinates_8h.html" title="GeographicCoordinates.h" alt="" coords="795,169,964,196"/>
-<area shape="rect" id="node21" href="$_resolution_8h.html" title="Resolution.h" alt="" coords="243,169,337,196"/>
-<area shape="rect" id="node22" href="$_extent_8h.html" title="Extent.h" alt="" coords="361,169,432,196"/>
+<area shape="rect" id="node9" href="$_environmental_quantity_8h.html" title="EnvironmentalQuantity.h" alt="" coords="453,95,619,121"/>
+<area shape="rect" id="node10" href="$gdalcpp_8h.html" title="gdalcpp.h" alt="" coords="501,169,579,196"/>
+<area shape="rect" id="node18" href="$_geographic_coordinates_8h.html" title="GeographicCoordinates.h" alt="" coords="603,169,773,196"/>
+<area shape="rect" id="node21" href="$_resolution_8h.html" title="Resolution.h" alt="" coords="797,169,891,196"/>
+<area shape="rect" id="node22" href="$_extent_8h.html" title="Extent.h" alt="" coords="915,169,986,196"/>
 </map>

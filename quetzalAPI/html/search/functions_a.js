@@ -5,7 +5,6 @@ var searchData=
   ['make_5fabc',['make_ABC',['../namespaceabc_a06d501e54eb76d637b5c00c213b2dfc5.html#a06d501e54eb76d637b5c00c213b2dfc5',1,'abc']]],
   ['make_5fexpression_5ft',['make_expression_t',['../structquetzal_1_1expressive_1_1make__expression__t_a833b6c4b96811eaa60c9f8a18c19db83.html#a833b6c4b96811eaa60c9f8a18c19db83',1,'quetzal::expressive::make_expression_t']]],
   ['make_5fprior',['make_prior',['../class_generative_model_a57b6e84da4fc64ed3a71bf2bcc8d6224.html#a57b6e84da4fc64ed3a71bf2bcc8d6224',1,'GenerativeModel']]],
-  ['make_5ftransition_5fkernel',['make_transition_kernel',['../namespacequetzal_1_1random_af983cf3659b2aa176e09f2ac1bf1ea7d.html#af983cf3659b2aa176e09f2ac1bf1ea7d',1,'quetzal::random']]],
   ['memoize_5fosd',['memoize_OSD',['../namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_ad36552c1aa47ffee02c74b125c85c7c2.html#ad36552c1aa47ffee02c74b125c85c7c2',1,'quetzal::coalescence::occupancy_spectrum::utils']]],
   ['merge',['merge',['../structquetzal_1_1coalescence_1_1_binary_merger_a6d07d6ede5dc72c331be78fb476150fa.html#a6d07d6ede5dc72c331be78fb476150fa',1,'quetzal::coalescence::BinaryMerger::merge()'],['../structquetzal_1_1coalescence_1_1_simultaneous_multiple_merger_a43b8d175306cb14174003f455f2b0c46.html#a43b8d175306cb14174003f455f2b0c46',1,'quetzal::coalescence::SimultaneousMultipleMerger::merge()']]]
 ];

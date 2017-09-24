@@ -94,9 +94,12 @@ $(document).ready(function(){initNavTree('structquetzal_1_1expressive_1_1literal
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structquetzal_1_1expressive_1_1literal__factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::expressive::literal_factory&lt; Args &gt; Struct Template Reference</div>  </div>
+<div class="title">quetzal::expressive::literal_factory&lt; Args &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__expressive.html">expressive</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Transforms <a href="https://stackoverflow.com/documentation/c%2b%2b/7836/literals#t=201709240552046831589">literals</a> into operator friendly classes.  
+ <a href="structquetzal_1_1expressive_1_1literal__factory.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="modules_2expressive_2expressive_8h_source.html">expressive.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -106,7 +109,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3adc17ef47a119fcc351c1156c4b70b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1literal__factory_ae3adc17ef47a119fcc351c1156c4b70b.html#ae3adc17ef47a119fcc351c1156c4b70b">operator()</a> (T t)</td></tr>
 <tr class="separator:ae3adc17ef47a119fcc351c1156c4b70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename... Args&gt;<br />
+struct quetzal::expressive::literal_factory&lt; Args &gt;</h3>
+
+<p>Transforms <a href="https://stackoverflow.com/documentation/c%2b%2b/7836/literals#t=201709240552046831589">literals</a> into operator friendly classes. </p>
+<p>Transforms a <a href="https://stackoverflow.com/documentation/c%2b%2b/7836/literals#t=201709240552046831589">literal</a> object into operator friendly class, allowing it to be composed into a more complex expression using mathematical operators with others expressive objects having compatible callable interface.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the literal type </td></tr>
+    <tr><td class="paramname">Args</td><td>the callable interface arguments to which the literal should be transformed</td></tr>
+  </table>
+  </dd>
+</dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>quetzal/modules/expressive/<a class="el" href="modules_2expressive_2expressive_8h_source.html">expressive.h</a></li>
 </ul>
 </div><!-- contents -->

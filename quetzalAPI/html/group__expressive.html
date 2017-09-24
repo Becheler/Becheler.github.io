@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('group__expressive.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">expressive</div>  </div>
 </div><!--header-->
@@ -97,7 +100,47 @@ $(document).ready(function(){initNavTree('group__expressive.html','');});
 
 <p>Compile-time mathematical expressions optimization.  
 <a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1literal__factory.html">quetzal::expressive::literal_factory&lt; Args &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms <a href="https://stackoverflow.com/documentation/c%2b%2b/7836/literals#t=201709240552046831589">literals</a> into operator friendly classes.  <a href="structquetzal_1_1expressive_1_1literal__factory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gacdec2cd4ec959709f7a1891702c4d5dd"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:gacdec2cd4ec959709f7a1891702c4d5dd"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expressive_gacdec2cd4ec959709f7a1891702c4d5dd.html#gacdec2cd4ec959709f7a1891702c4d5dd">quetzal::expressive::use</a> (F f)</td></tr>
+<tr class="memdesc:gacdec2cd4ec959709f7a1891702c4d5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms functions into operator friendly classes.  <a href="group__expressive_gacdec2cd4ec959709f7a1891702c4d5dd.html#gacdec2cd4ec959709f7a1891702c4d5dd">More...</a><br /></td></tr>
+<tr class="separator:gacdec2cd4ec959709f7a1891702c4d5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58c778e9b9b37d66cacf0661990d0545"><td class="memTemplParams" colspan="2">template&lt;typename... Args, typename T &gt; </td></tr>
+<tr class="memitem:ga58c778e9b9b37d66cacf0661990d0545"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expressive_ga58c778e9b9b37d66cacf0661990d0545.html#ga58c778e9b9b37d66cacf0661990d0545">quetzal::expressive::literal</a> (T t)</td></tr>
+<tr class="memdesc:ga58c778e9b9b37d66cacf0661990d0545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms <a href="https://stackoverflow.com/documentation/c%2b%2b/7836/literals#t=201709240552046831589">literals</a> into operator friendly classes.  <a href="group__expressive_ga58c778e9b9b37d66cacf0661990d0545.html#ga58c778e9b9b37d66cacf0661990d0545">More...</a><br /></td></tr>
+<tr class="separator:ga58c778e9b9b37d66cacf0661990d0545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga409b9a3537b841773d8c4f298ba7e849"><td class="memTemplParams" colspan="2">template&lt;typename F , typename... Fs&gt; </td></tr>
+<tr class="memitem:ga409b9a3537b841773d8c4f298ba7e849"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expressive_ga409b9a3537b841773d8c4f298ba7e849.html#ga409b9a3537b841773d8c4f298ba7e849">quetzal::expressive::compose</a> (F f, Fs...fs)</td></tr>
+<tr class="memdesc:ga409b9a3537b841773d8c4f298ba7e849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mathematical <a href="https://en.wikipedia.org/wiki/Function_composition">function composition</a>  <a href="group__expressive_ga409b9a3537b841773d8c4f298ba7e849.html#ga409b9a3537b841773d8c4f298ba7e849">More...</a><br /></td></tr>
+<tr class="separator:ga409b9a3537b841773d8c4f298ba7e849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94be9d80e6f5f2281e4183109879a101"><td class="memTemplParams" colspan="2">template&lt;typename Inner , typename Outer &gt; </td></tr>
+<tr class="memitem:ga94be9d80e6f5f2281e4183109879a101"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expressive_ga94be9d80e6f5f2281e4183109879a101.html#ga94be9d80e6f5f2281e4183109879a101">quetzal::expressive::operator&gt;&gt;</a> (Inner inner, Outer outer)</td></tr>
+<tr class="memdesc:ga94be9d80e6f5f2281e4183109879a101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mathematical <a href="https://en.wikipedia.org/wiki/Function_composition">function composition</a>  <a href="group__expressive_ga94be9d80e6f5f2281e4183109879a101.html#ga94be9d80e6f5f2281e4183109879a101">More...</a><br /></td></tr>
+<tr class="separator:ga94be9d80e6f5f2281e4183109879a101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92089d2dbe2fb1d9ec4b8da47930b8ec"><td class="memTemplParams" colspan="2">template&lt;typename Inner , typename Outer &gt; </td></tr>
+<tr class="memitem:ga92089d2dbe2fb1d9ec4b8da47930b8ec"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expressive_ga92089d2dbe2fb1d9ec4b8da47930b8ec.html#ga92089d2dbe2fb1d9ec4b8da47930b8ec">quetzal::expressive::operator&lt;&lt;</a> (Outer outer, Inner inner)</td></tr>
+<tr class="memdesc:ga92089d2dbe2fb1d9ec4b8da47930b8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mathematical <a href="https://en.wikipedia.org/wiki/Function_composition">function composition</a>  <a href="group__expressive_ga92089d2dbe2fb1d9ec4b8da47930b8ec.html#ga92089d2dbe2fb1d9ec4b8da47930b8ec">More...</a><br /></td></tr>
+<tr class="separator:ga92089d2dbe2fb1d9ec4b8da47930b8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5999452049e3a9bc9710b318c56ab889"><td class="memTemplParams" colspan="2">template&lt;typename F1 , typename F2 , typename... Fs&gt; </td></tr>
+<tr class="memitem:ga5999452049e3a9bc9710b318c56ab889"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expressive_ga5999452049e3a9bc9710b318c56ab889.html#ga5999452049e3a9bc9710b318c56ab889">quetzal::expressive::chain</a> (F1 f1, F2 f2, Fs...fs)</td></tr>
+<tr class="memdesc:ga5999452049e3a9bc9710b318c56ab889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mathematical <a href="https://en.wikipedia.org/wiki/Function_composition">function composition</a>  <a href="group__expressive_ga5999452049e3a9bc9710b318c56ab889.html#ga5999452049e3a9bc9710b318c56ab889">More...</a><br /></td></tr>
+<tr class="separator:ga5999452049e3a9bc9710b318c56ab889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compile-time mathematical expressions optimization. </p>
+<h2>Motivations</h2>
+<p>The impact of environmental factors on demographic processes can be assessed by setting up mathematical models linking environmental and demographic quantities together. Obviously, the details of the functions used depend on the biological context and the modeler intuition, so there is no <b>do-it-all</b> function that could be implemented once an only once and used in all possible contexts.</p>
+<p>To tackle both this multiplicity and the computational cost imposed by <a href="https://en.wikipedia.org/wiki/Approximate_Bayesian_computation">ABC</a> approaches, we integrate <a href="https://github.com/ambre-m/expressive">expressive</a> a library that allows to quickly compose mathematical expressions at compile time.</p>
+<h2>Representing environmental quantities as functions of space and time.</h2>
+<p>A major benefit of expressive is the possibility to express and compose quantities of space and time. The geography module, via the DiscreteLandscape class template, provides lightweight function objects of space and time which are callable with GeographicCoordinates and a user-defined time argument to access environmental values. These little objects can be composed into more complex expressions using expressive. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.11-->

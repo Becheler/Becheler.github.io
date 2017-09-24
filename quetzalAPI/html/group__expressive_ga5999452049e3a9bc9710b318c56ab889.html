@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::expressive::operator&lt;&lt;</title>
+<title>QUETZAL: quetzal::expressive::chain</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacequetzal_1_1expressive_a92089d2dbe2fb1d9ec4b8da47930b8ec.html','');});
+$(document).ready(function(){initNavTree('group__expressive_ga5999452049e3a9bc9710b318c56ab889.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -90,23 +90,29 @@ $(document).ready(function(){initNavTree('namespacequetzal_1_1expressive_a92089d
 </div>
 
 <div class="contents">
-<a class="anchor" id="a92089d2dbe2fb1d9ec4b8da47930b8ec"></a>
+<a class="anchor" id="ga5999452049e3a9bc9710b318c56ab889"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Inner , typename Outer &gt; </div>
+template&lt;typename F1 , typename F2 , typename... Fs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto quetzal::expressive::operator&lt;&lt; </td>
+          <td class="memname">constexpr auto quetzal::expressive::chain </td>
           <td>(</td>
-          <td class="paramtype">Outer&#160;</td>
-          <td class="paramname"><em>outer</em>, </td>
+          <td class="paramtype">F1&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Inner&#160;</td>
-          <td class="paramname"><em>inner</em>&#160;</td>
+          <td class="paramtype">F2&#160;</td>
+          <td class="paramname"><em>f2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Fs...&#160;</td>
+          <td class="paramname"><em>fs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -116,6 +122,21 @@ template&lt;typename Inner , typename Outer &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Mathematical <a href="https://en.wikipedia.org/wiki/Function_composition">function composition</a> </p>
+<p>Forms an expression in which the outputs of the inner functions become the input of the outer function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f1</td><td>the outer function </td></tr>
+    <tr><td class="paramname">f2</td><td>the inner function: its output is the input of f1 </td></tr>
+    <tr><td class="paramname">fs</td><td>the inner functions: their output are the input of f2</td></tr>
+  </table>
+  </dd>
+</dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

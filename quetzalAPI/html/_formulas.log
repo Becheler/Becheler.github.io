@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.14)  24 SEP 2017 10:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.14)  24 SEP 2017 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -72,23 +72,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 5.
-! Undefined control sequence.
-l.5 $ g : \mathds
-                 {X}^2 \rightarrow \mathds{R}$
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
+[1
+
+] [2] [3]
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 $\[
+        0,1\]$
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 $\[0,1\]
+             $
 ? X
  
 Here is how much of TeX's memory you used:
- 549 strings out of 494925
- 6606 string characters out of 6179734
+ 551 strings out of 494925
+ 6758 string characters out of 6179734
  53968 words of memory out of 5000000
  3913 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,1n,21p,218b,54s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 32i,4n,21p,218b,100s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on _formulas.dvi (3 pages, 520 bytes).

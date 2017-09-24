@@ -150,8 +150,8 @@ Functions</h2></td></tr>
 <li>It saves overhead of return call from a function.</li>
 <li>It increases <a href="https://en.wikipedia.org/wiki/Interprocedural_optimization">locality of reference</a>.</li>
 </ul>
-<hr/>
 <h2>Examples of biological interests</h2>
+<hr/>
 <h3>Representing dispersal kernels</h3>
 <p>Representation of a dispersal kernel density involves some kind of mathematical composition. In the simple case where density is only a function of the geographic distance, the details of the distance computation can be separated from the details of the kernel used by composing two independently defined functions.</p>
 <p>The inner function <img class="formulaInl" alt="$ g : X^2 \rightarrow R$" src="form_0.png"/> would be the distance computation function between two points of the geographic space <img class="formulaInl" alt="$X$" src="form_1.png"/>, and can be expressed in terms of a callable object having a <code>distance_type operator()(coord_type x, coord_type y)</code> interface.</p>

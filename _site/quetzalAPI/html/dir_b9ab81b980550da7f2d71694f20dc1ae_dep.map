@@ -1,8 +1,0 @@
-<map id="quetzal/modules/coalescence/policies" name="quetzal/modules/coalescence/policies">
-<area shape="rect" id="node1" href="dir_b9ab81b980550da7f2d71694f20dc1ae.html" title="policies" alt="" coords="80,52,152,100"/>
-<area shape="rect" id="node2" href="dir_5d08ec2029f87ad7effa1aa3a39a55c7.html" title="algorithms" alt="" coords="5,148,88,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000023_000008.html" title="1" alt="" coords="77,131,85,146"/>
-<area shape="rect" id="node3" href="dir_a2f707a36be138eb8611714132795111.html" title="occupancy_spectrum" alt="" coords="112,148,259,196"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000023_000014.html" title="1" alt="" coords="160,121,168,136"/>
-<area shape="rect" id="clust1" href="dir_6f18ad16022816a18d280c39985f7841.html" title="coalescence" alt="" coords="69,16,164,111"/>
-</map>

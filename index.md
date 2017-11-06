@@ -2,6 +2,8 @@
 layout: home
 ---
 
+![](pic.png)
+
 I am interested in modeling the relationship between environment, demography and
 genetics in spatially and temporally heterogeneous environments, using [coalescence
 approaches](https://en.wikipedia.org/wiki/Coalescent_theory). This kind of models

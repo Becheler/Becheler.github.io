@@ -2,8 +2,10 @@
 layout: home
 ---
 
+<p align="center">
+  <img src="pic.png" alt="pic" width="150">
+</p>
 
-<img src="pic.png" alt="pic" width="150">
 
 I am interested in modeling the relationship between environment, demography and
 genetics in spatially and temporally heterogeneous environments, using [coalescence

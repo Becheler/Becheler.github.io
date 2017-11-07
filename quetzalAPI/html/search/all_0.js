@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['abc',['ABC',['../classabc_1_1_a_b_c.html',1,'abc']]],
-  ['abc',['abc',['../namespaceabc.html',1,'abc'],['../classabc_1_1_a_b_c_a23c5c380698fa0e996386b232196348a.html#a23c5c380698fa0e996386b232196348a',1,'abc::ABC::ABC()'],['../group__abc.html',1,'(Global Namespace)']]],
-  ['abc_2eh',['abc.h',['../abc_8h.html',1,'']]],
+  ['abc',['ABC',['../classquetzal_1_1abc_1_1_a_b_c.html',1,'quetzal::abc']]],
+  ['abc',['ABC',['../classquetzal_1_1abc_1_1_a_b_c_a9d4920502fab5903ba20d8bf078ee623.html#a9d4920502fab5903ba20d8bf078ee623',1,'quetzal::abc::ABC::ABC()'],['../group__abc.html',1,'(Global Namespace)']]],
   ['abc_2eh',['abc.h',['../modules_2abc_2abc_8h.html',1,'']]],
+  ['abc_2eh',['abc.h',['../abc_8h.html',1,'']]],
   ['abc_5ftest_2ecpp',['abc_test.cpp',['../abc__test_8cpp.html',1,'']]],
   ['access_5fleaves_5fby_5fdfs',['access_leaves_by_DFS',['../classquetzal_1_1coalescence_1_1_tree_a535550c5096251ad317a1f067a244c95.html#a535550c5096251ad317a1f067a244c95',1,'quetzal::coalescence::Tree']]],
   ['access_5fleaves_5fby_5fdfs_5ftest_2ecpp',['access_leaves_by_DFS_test.cpp',['../access__leaves__by___d_f_s__test_8cpp.html',1,'']]],

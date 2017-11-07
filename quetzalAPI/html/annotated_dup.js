@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "abc", "namespaceabc.html", "namespaceabc" ],
     [ "gdalcpp", "namespacegdalcpp.html", "namespacegdalcpp" ],
     [ "quetzal", "namespacequetzal.html", "namespacequetzal" ],
     [ "std", "namespacestd.html", "namespacestd" ],

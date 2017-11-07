@@ -1,5 +1,6 @@
 var namespacequetzal =
 [
+    [ "abc", "namespacequetzal_1_1abc.html", "namespacequetzal_1_1abc" ],
     [ "coalescence", "namespacequetzal_1_1coalescence.html", "namespacequetzal_1_1coalescence" ],
     [ "demography", "namespacequetzal_1_1demography.html", "namespacequetzal_1_1demography" ],
     [ "expressive", "namespacequetzal_1_1expressive.html", "namespacequetzal_1_1expressive" ],

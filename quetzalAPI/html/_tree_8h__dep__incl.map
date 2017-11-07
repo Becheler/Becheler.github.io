@@ -1,9 +1,10 @@
 <map id="quetzal/modules/coalescence/containers/Tree.h" name="quetzal/modules/coalescence/containers/Tree.h">
-<area shape="rect" id="node2" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="43,109,195,136"/>
-<area shape="rect" id="node5" href="$access__leaves__by___d_f_s__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/access\l_leaves_by_DFS_test.cpp" alt="" coords="219,95,413,151"/>
-<area shape="rect" id="node6" href="$basics__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/basics\l_test.cpp" alt="" coords="437,95,632,151"/>
-<area shape="rect" id="node7" href="$coalescence_2containers_2test_2_tree_2initialization__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/initialization\l_test.cpp" alt="" coords="657,95,871,151"/>
-<area shape="rect" id="node8" href="$pre__order___d_f_s__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/pre\l_order_DFS_test.cpp" alt="" coords="896,95,1091,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="58,199,179,225"/>
-<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/example1/example1.cpp" alt="" coords="5,273,232,315"/>
+<area shape="rect" id="node2" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="159,109,311,136"/>
+<area shape="rect" id="node6" href="$access__leaves__by___d_f_s__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/access\l_leaves_by_DFS_test.cpp" alt="" coords="335,95,530,151"/>
+<area shape="rect" id="node7" href="$basics__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/basics\l_test.cpp" alt="" coords="554,95,749,151"/>
+<area shape="rect" id="node8" href="$coalescence_2containers_2test_2_tree_2initialization__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/initialization\l_test.cpp" alt="" coords="773,95,988,151"/>
+<area shape="rect" id="node9" href="$pre__order___d_f_s__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Tree/pre\l_order_DFS_test.cpp" alt="" coords="1013,95,1207,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,199,296,225"/>
+<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,281,236,322"/>
+<area shape="rect" id="node5" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,273,439,329"/>
 </map>

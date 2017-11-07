@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "abc::ABC< ModelType, ParametersJointDistributionType >", "classabc_1_1_a_b_c.html", null ],
+    [ "quetzal::abc::ABC< ModelType, ParametersJointDistributionType >", "classquetzal_1_1abc_1_1_a_b_c.html", null ],
     [ "quetzal::genetics::Allele< Value >", "classquetzal_1_1genetics_1_1_allele.html", null ],
     [ "quetzal::coalescence::BinaryMerger", "structquetzal_1_1coalescence_1_1_binary_merger.html", null ],
     [ "quetzal::expressive::Callable_traits< Callable >", "structquetzal_1_1expressive_1_1_callable__traits.html", null ],
@@ -46,7 +46,7 @@ var hierarchy =
     [ "quetzal::geography::GeographicCoordinates", "classquetzal_1_1geography_1_1_geographic_coordinates.html", null ],
     [ "std::hash< quetzal::geography::GeographicCoordinates >", "structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::Identity", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_identity.html", null ],
-    [ "abc::Identity< T >", "structabc_1_1_identity.html", null ],
+    [ "quetzal::abc::Identity< T >", "structquetzal_1_1abc_1_1_identity.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::in_memoized_distribution< UnaryPredicate, SpectrumHandler, Int, Float >", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html", null ],
     [ "gdalcpp::detail::init_library", "structgdalcpp_1_1detail_1_1init__library.html", [
       [ "gdalcpp::detail::Driver", "classgdalcpp_1_1detail_1_1_driver.html", null ]

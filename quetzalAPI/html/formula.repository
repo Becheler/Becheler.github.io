@@ -3,13 +3,14 @@
 \form#2:$f : R \rightarrow [0,1]$
 \form#3:$R$
 \form#4:$[0,1] $
-\form#5:$i$
-\form#6:$w = i/S$
-\form#7:$n$
-\form#8:$x_0$
-\form#9:$(X_k)_{k\in Z_+}$
-\form#10:$S$
-\form#11:$P(X_1=\cdot|X_0=x_0)$
-\form#12:$X_1$
-\form#13:$t$
-\form#14:$P_t(X_1=\cdot|X_0=x_0)$
+\form#5:$1/N$
+\form#6:$i$
+\form#7:$w = i/S$
+\form#8:$n$
+\form#9:$x_0$
+\form#10:$(X_k)_{k\in Z_+}$
+\form#11:$S$
+\form#12:$P(X_1=\cdot|X_0=x_0)$
+\form#13:$X_1$
+\form#14:$t$
+\form#15:$P_t(X_1=\cdot|X_0=x_0)$

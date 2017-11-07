@@ -7,7 +7,7 @@ var searchData=
   ['environmentalquantity',['EnvironmentalQuantity',['../classquetzal_1_1geography_1_1_environmental_quantity_a3ef8f6a8195abe97749824a4bacab338.html#a3ef8f6a8195abe97749824a4bacab338',1,'quetzal::geography::EnvironmentalQuantity']]],
   ['environmentalquantity_2eh',['EnvironmentalQuantity.h',['../_environmental_quantity_8h.html',1,'']]],
   ['environmentalquantity_5ftest_2ecpp',['EnvironmentalQuantity_test.cpp',['../_environmental_quantity__test_8cpp.html',1,'']]],
-  ['erase',['erase',['../classquetzal_1_1coalescence_1_1_forest_aaff44f5a3ec3bef232554782681fe75b.html#aaff44f5a3ec3bef232554782681fe75b',1,'quetzal::coalescence::Forest']]],
+  ['erase',['erase',['../classquetzal_1_1coalescence_1_1_forest_aaff44f5a3ec3bef232554782681fe75b.html#aaff44f5a3ec3bef232554782681fe75b',1,'quetzal::coalescence::Forest::erase(Position const &amp;x)'],['../classquetzal_1_1coalescence_1_1_forest_afc0cdb7e9f093cc20201015869b1ece8.html#afc0cdb7e9f093cc20201015869b1ece8',1,'quetzal::coalescence::Forest::erase(iterator first, iterator last)']]],
   ['error',['error',['../classgdalcpp_1_1gdal__error_a04f02aa04560a9496e67332e6003a2af.html#a04f02aa04560a9496e67332e6003a2af',1,'gdalcpp::gdal_error']]],
   ['example1_2ecpp',['example1.cpp',['../example1_8cpp.html',1,'']]],
   ['exec',['exec',['../classgdalcpp_1_1_dataset_aafc9026e8b84ab2c32babfcd9ec4e3e1.html#aafc9026e8b84ab2c32babfcd9ec4e3e1',1,'gdalcpp::Dataset::exec(const char *sql)'],['../classgdalcpp_1_1_dataset_a9702cf5df173764b009f4d28c37361f2.html#a9702cf5df173764b009f4d28c37361f2',1,'gdalcpp::Dataset::exec(const std::string &amp;sql)']]],

@@ -1,10 +1,11 @@
 <map id="quetzal/modules/coalescence/occupancy_spectrum/memoize.h" name="quetzal/modules/coalescence/occupancy_spectrum/memoize.h">
-<area shape="rect" id="node2" href="$spectrum__creation__policy_8h.html" title="quetzal/modules/coalescence\l/occupancy_spectrum/spectrum\l_creation_policy.h" alt="" coords="225,95,433,151"/>
-<area shape="rect" id="node9" href="$memoize__test_8cpp.html" title="Program for unit testing. " alt="" coords="458,95,665,151"/>
-<area shape="rect" id="node3" href="$merger_8h.html" title="quetzal/modules/coalescence\l/policies/merger.h" alt="" coords="120,206,315,247"/>
-<area shape="rect" id="node8" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="339,199,547,255"/>
-<area shape="rect" id="node4" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="43,310,195,337"/>
-<area shape="rect" id="node7" href="$merger__test_8cpp.html" title="Program for unit testing. " alt="" coords="219,303,413,344"/>
-<area shape="rect" id="node5" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="58,392,179,419"/>
-<area shape="rect" id="node6" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/example1/example1.cpp" alt="" coords="5,467,232,508"/>
+<area shape="rect" id="node2" href="$spectrum__creation__policy_8h.html" title="quetzal/modules/coalescence\l/occupancy_spectrum/spectrum\l_creation_policy.h" alt="" coords="342,95,550,151"/>
+<area shape="rect" id="node10" href="$memoize__test_8cpp.html" title="Program for unit testing. " alt="" coords="575,95,781,151"/>
+<area shape="rect" id="node3" href="$merger_8h.html" title="quetzal/modules/coalescence\l/policies/merger.h" alt="" coords="237,206,431,247"/>
+<area shape="rect" id="node9" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="455,199,663,255"/>
+<area shape="rect" id="node4" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="159,310,311,337"/>
+<area shape="rect" id="node8" href="$merger__test_8cpp.html" title="Program for unit testing. " alt="" coords="335,303,530,344"/>
+<area shape="rect" id="node5" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,392,296,419"/>
+<area shape="rect" id="node6" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,474,236,515"/>
+<area shape="rect" id="node7" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,467,439,523"/>
 </map>

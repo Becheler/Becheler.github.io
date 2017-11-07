@@ -110,7 +110,8 @@ Classes</h2></td></tr>
 <p>Template classes for embedding simulation model objects into an ABC framework. </p>
 <p>Defines template classes to embed simulation code into an ABC framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-ended number of important inference tasks, as the user can inject almost any kind of distance or summary statistics in the analysis of the reference table.</p>
 <p>This module relies heavily on the C++ concept of GenerativeModel, which defines the set of constraints that a simulation model object must have to interact with the ABC module.</p>
-<p>The type <code>D</code> satisfies GenerativeModel if</p><ul>
+<p>The type <code>D</code> satisfies GenerativeModel if</p>
+<ul>
 <li><code>D</code> satisfies CopyConstructible</li>
 <li><code>D</code> satisfies CopyAssignable Given</li>
 <li><code>T</code>, the type named by <code>M::return_type</code></li>
@@ -126,7 +127,7 @@ Classes</h2></td></tr>
 <tr>
 <td><code>D::result_type</code> </td><td>T </td><td>the type of the simulated data </td></tr>
 </table>
-<p><code>D::param_type</code> | T | <code>D()</code> | | creates a distribution indistinguishable from any other default-constructed <code>D</code> <code>D(p)</code> | | creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> <code>x.param()</code> | P | Returns <code>p</code> such that <code>D(p).param() == p</code> <code>d.param(p)</code> | void | Postcondition: <code>d.param() == p</code> <code>d(g)</code> | T | The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by d.param() <code>d(g,p)</code> | T | The sequence of data returned by successive invocations of this call with the same g are randomly distributed according to the distribution parametrized by p All types satisfying the requirements of the STL RandomNumberDistribution satisfy quetzal GenerativeModel concept. </p>
+<p><code>D::param_type</code> | T | <code>D()</code> | | creates a distribution indistinguishable from any other default-constructed <code>D</code> <code>D(p)</code> | | creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> <code>x.param()</code> | P | Returns <code>p</code> such that <code>D(p).param() == p</code> <code>d.param(p)</code> | void | Postcondition: <code>d.param() == p</code> <code>d(g)</code> | T | The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by d.param() <code>d(g,p)</code> | T | The sequence of data returned by successive invocations of this call with the same g are randomly distributed according to the distribution parametrized by p </p><dl class="section remark"><dt>Remarks</dt><dd>All types satisfying the requirements of the STL RandomNumberDistribution satisfy quetzal GenerativeModel concept. </dd></dl>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.11-->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::coalescence::SimultaneousMultipleMerger&lt; SpectrumCreationPolicy &gt; Struct Template Reference</title>
+<title>QUETZAL: quetzal/modules/coalescence/policies/test/BinaryMerger/test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structquetzal_1_1coalescence_1_1_simultaneous_multiple_merger.html','');});
+$(document).ready(function(){initNavTree('_binary_merger_2test_8cpp.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -91,43 +91,40 @@ $(document).ready(function(){initNavTree('structquetzal_1_1coalescence_1_1_simul
 
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="structquetzal_1_1coalescence_1_1_simultaneous_multiple_merger-members.html">List of all members</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::coalescence::SimultaneousMultipleMerger&lt; SpectrumCreationPolicy &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__coalescence.html">coalescence</a> &raquo; <a class="el" href="group__coal__policies.html">Policies</a></div></div>  </div>
+<div class="title">test.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Discrete generation simultaneous multiple merger.  
- <a href="structquetzal_1_1coalescence_1_1_simultaneous_multiple_merger.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="merger_8h_source.html">merger.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a43b8d175306cb14174003f455f2b0c46"><td class="memTemplParams" colspan="2">template&lt;class BidirectionalIterator , class T , class BinaryOperation , class Generator &gt; </td></tr>
-<tr class="memitem:a43b8d175306cb14174003f455f2b0c46"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1coalescence_1_1_simultaneous_multiple_merger_a43b8d175306cb14174003f455f2b0c46.html#a43b8d175306cb14174003f455f2b0c46">merge</a> (BidirectionalIterator first, BidirectionalIterator last, unsigned int N, T const &amp;init, BinaryOperation const &amp;binop, Generator &amp;g)</td></tr>
-<tr class="separator:a43b8d175306cb14174003f455f2b0c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &quot;<a class="el" href="merger_8h_source.html">../../merger.h</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for test.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_binary_merger_2test_8cpp__incl.png" border="0" usemap="#quetzal_2modules_2coalescence_2policies_2test_2_binary_merger_2test_8cpp" alt=""/></div>
+<map name="quetzal_2modules_2coalescence_2policies_2test_2_binary_merger_2test_8cpp" id="quetzal_2modules_2coalescence_2policies_2test_2_binary_merger_2test_8cpp">
+<area shape="rect" id="node2" href="merger_8h.html" title="../../merger.h" alt="" coords="1097,109,1194,136"/>
+<area shape="rect" id="node3" href="merge_8h.html" title="../algorithms/merge.h" alt="" coords="1018,191,1163,218"/>
+<area shape="rect" id="node7" href="spectrum__creation__policy_8h.html" title="../occupancy_spectrum\l/spectrum_creation_policy.h" alt="" coords="706,184,891,225"/>
+<area shape="rect" id="node8" href="_occupancy_spectrum_distribution_8h.html" title="OccupancySpectrumDistribution.h" alt="" coords="332,348,553,375"/>
+<area shape="rect" id="node19" href="memoize_8h.html" title="memoize.h" alt="" coords="647,273,734,300"/>
+<area shape="rect" id="node9" href="_generator_8h.html" title="Generator.h" alt="" coords="581,430,672,457"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_binary_merger_2test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Example]  <a href="_binary_merger_2test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class SpectrumCreationPolicy&gt;<br />
-struct quetzal::coalescence::SimultaneousMultipleMerger&lt; SpectrumCreationPolicy &gt;</h3>
-
-<p>Discrete generation simultaneous multiple merger. </p>
-<p>Defines a policy class to coalesce multiple nodes selected uniformely at random in a range, according to an OccupancySpectrum. Its interface makes it exchangeable with other merger policies.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">SpectrumCreationPolicy</td><td>The policy used to generate an OccupancySpectrum. </td></tr>
-  </table>
-  </dd>
-</dl>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>quetzal/modules/coalescence/policies/<a class="el" href="merger_8h_source.html">merger.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.11-->

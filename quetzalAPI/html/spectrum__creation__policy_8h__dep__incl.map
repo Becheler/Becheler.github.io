@@ -1,9 +1,10 @@
 <map id="quetzal/modules/coalescence/occupancy_spectrum/spectrum_creation_policy.h" name="quetzal/modules/coalescence/occupancy_spectrum/spectrum_creation_policy.h">
-<area shape="rect" id="node2" href="$merger_8h.html" title="quetzal/modules/coalescence\l/policies/merger.h" alt="" coords="237,117,431,158"/>
-<area shape="rect" id="node8" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="455,109,663,165"/>
-<area shape="rect" id="node3" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="159,221,311,247"/>
-<area shape="rect" id="node7" href="$merger__test_8cpp.html" title="Program for unit testing. " alt="" coords="335,213,530,255"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,303,296,329"/>
-<area shape="rect" id="node5" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,385,236,426"/>
-<area shape="rect" id="node6" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,377,439,433"/>
+<area shape="rect" id="node2" href="$merger_8h.html" title="quetzal/modules/coalescence\l/policies/merger.h" alt="" coords="335,117,530,158"/>
+<area shape="rect" id="node9" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="554,109,762,165"/>
+<area shape="rect" id="node3" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="159,228,311,255"/>
+<area shape="rect" id="node7" href="$_binary_merger_2test_8cpp.html" title="quetzal/modules/coalescence\l/policies/test/BinaryMerger\l/test.cpp" alt="" coords="335,213,530,269"/>
+<area shape="rect" id="node8" href="$_simultaneous_multiple_merger_2test_8cpp.html" title="quetzal/modules/coalescence\l/policies/test/SimultaneousMultiple\lMerger/test.cpp" alt="" coords="554,213,778,269"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,317,296,344"/>
+<area shape="rect" id="node5" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,399,236,441"/>
+<area shape="rect" id="node6" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,392,439,448"/>
 </map>

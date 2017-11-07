@@ -2,6 +2,8 @@ var NAVTREEINDEX0 =
 {
 "_allele_8h.html":[4,0,0,1,4,0],
 "_allele_8h_source.html":[4,0,0,1,4,0],
+"_binary_merger_2test_8cpp.html":[4,0,0,1,1,3,0,0,0],
+"_binary_merger_2test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,1,3,0,0,0,0],
 "_diploid_individual_8h.html":[4,0,0,1,4,1],
 "_diploid_individual_8h_source.html":[4,0,0,1,4,1],
 "_diploid_individual__test_8cpp.html":[4,0,0,1,4,2],
@@ -54,6 +56,8 @@ var NAVTREEINDEX0 =
 "_resolution_8h_source.html":[4,0,0,1,5,7],
 "_resolution__test_8cpp.html":[4,0,0,1,5,0,4,0],
 "_resolution__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,5,0,4,0,0],
+"_simultaneous_multiple_merger_2test_8cpp.html":[4,0,0,1,1,3,0,1,0],
+"_simultaneous_multiple_merger_2test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,1,3,0,1,0,0],
 "_spatial_genetic_sample_8h.html":[4,0,0,1,4,4],
 "_spatial_genetic_sample_8h_source.html":[4,0,0,1,4,4],
 "_spatial_genetic_sample__test_8cpp.html":[4,0,0,1,4,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "classquetzal_1_1demography_1_1_population_size_a63741c37476c8cd5a7fa7c55482d8a8d.html#a63741c37476c8cd5a7fa7c55482d8a8d":[1,2,1,7],
 "classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434":[1,2,1,2],
 "classquetzal_1_1demography_1_1_population_size_a6a0012bc94922437265ea756f06d11b5.html#a6a0012bc94922437265ea756f06d11b5":[1,2,1,9],
-"classquetzal_1_1demography_1_1_population_size_a7fd3eae5071ead0cc87f5547c12110fe.html#a7fd3eae5071ead0cc87f5547c12110fe":[1,2,1,10],
-"classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c":[1,2,1,1],
-"classquetzal_1_1demography_1_1_population_size_ab9c2358fe0521210283684a455374703.html#ab9c2358fe0521210283684a455374703":[1,2,1,4],
-"classquetzal_1_1demography_1_1_population_size_aca323de287215b497c29aebc71086b94.html#aca323de287215b497c29aebc71086b94":[1,2,1,13],
-"classquetzal_1_1demography_1_1_population_size_ad7476ebf16787e81fe6b665ac8174b10.html#ad7476ebf16787e81fe6b665ac8174b10":[1,2,1,14]
+"classquetzal_1_1demography_1_1_population_size_a7fd3eae5071ead0cc87f5547c12110fe.html#a7fd3eae5071ead0cc87f5547c12110fe":[1,2,1,10]
 };

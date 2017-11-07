@@ -41,12 +41,11 @@ var hierarchy =
     [ "quetzal::geography::Extent< decimal_degree >", "classquetzal_1_1geography_1_1_extent.html", null ],
     [ "gdalcpp::Feature", "classgdalcpp_1_1_feature.html", null ],
     [ "quetzal::coalescence::Forest< Position, Tree >", "classquetzal_1_1coalescence_1_1_forest.html", null ],
-    [ "GenerativeModel", "class_generative_model.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::Generator", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator.html", null ],
     [ "quetzal::geography::GeographicCoordinates", "classquetzal_1_1geography_1_1_geographic_coordinates.html", null ],
     [ "std::hash< quetzal::geography::GeographicCoordinates >", "structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::Identity", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_identity.html", null ],
-    [ "quetzal::abc::Identity< T >", "structquetzal_1_1abc_1_1_identity.html", null ],
+    [ "quetzal::abc::identity< T >", "structquetzal_1_1abc_1_1identity.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::in_memoized_distribution< UnaryPredicate, SpectrumHandler, Int, Float >", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html", null ],
     [ "gdalcpp::detail::init_library", "structgdalcpp_1_1detail_1_1init__library.html", [
       [ "gdalcpp::detail::Driver", "classgdalcpp_1_1detail_1_1_driver.html", null ]

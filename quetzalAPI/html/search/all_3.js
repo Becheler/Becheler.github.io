@@ -5,7 +5,6 @@ var searchData=
   ['dataset_5fname',['dataset_name',['../classgdalcpp_1_1_dataset_af3a7789b98fb4c384d35e3fcb6e2d2c7.html#af3a7789b98fb4c384d35e3fcb6e2d2c7',1,'gdalcpp::Dataset']]],
   ['decimal_5fdegree',['decimal_degree',['../classquetzal_1_1geography_1_1_discrete_landscape_ad9f58655f3004cf866f9ff27edb7f652.html#ad9f58655f3004cf866f9ff27edb7f652',1,'quetzal::geography::DiscreteLandscape::decimal_degree()'],['../classquetzal_1_1geography_1_1_environmental_quantity_a06fb8a24aba3823be38864b03930be51.html#a06fb8a24aba3823be38864b03930be51',1,'quetzal::geography::EnvironmentalQuantity::decimal_degree()'],['../classquetzal_1_1geography_1_1_geographic_coordinates_acb477e2851f9bd20bc02c44729b24c54.html#acb477e2851f9bd20bc02c44729b24c54',1,'quetzal::geography::GeographicCoordinates::decimal_degree()']]],
   ['definition_5fspace',['definition_space',['../classquetzal_1_1demography_1_1_population_size_ab9c2358fe0521210283684a455374703.html#ab9c2358fe0521210283684a455374703',1,'quetzal::demography::PopulationSize']]],
-  ['demographic_5fprocess',['demographic_process',['../class_generative_model_af03d0d9931ea6b3185112abf53a34891.html#af03d0d9931ea6b3185112abf53a34891',1,'GenerativeModel']]],
   ['demography',['demography',['../group__demography.html',1,'']]],
   ['demography_2eh',['demography.h',['../demography_8h.html',1,'']]],
   ['depth',['depth',['../classgdalcpp_1_1_dataset_a97e812972c857b6e0ac12d58fce5c965.html#a97e812972c857b6e0ac12d58fce5c965',1,'gdalcpp::Dataset']]],
@@ -22,7 +21,7 @@ var searchData=
   ['discretelandscape',['DiscreteLandscape',['../classquetzal_1_1geography_1_1_discrete_landscape_ac8409e3905b9b3ed18bf7f1abf7a1650.html#ac8409e3905b9b3ed18bf7f1abf7a1650',1,'quetzal::geography::DiscreteLandscape']]],
   ['discretelandscape_2eh',['DiscreteLandscape.h',['../_discrete_landscape_8h.html',1,'']]],
   ['discretelandscape_5ftest_2ecpp',['DiscreteLandscape_test.cpp',['../_discrete_landscape__test_8cpp.html',1,'']]],
-  ['driver',['Driver',['../classgdalcpp_1_1detail_1_1_driver.html',1,'gdalcpp::detail']]],
   ['driver',['driver',['../classgdalcpp_1_1gdal__error_a63bd84e670784d5fae4de5b7474b89fb.html#a63bd84e670784d5fae4de5b7474b89fb',1,'gdalcpp::gdal_error::driver()'],['../classgdalcpp_1_1detail_1_1_driver_a861d15ea071ac5aad5f292fc271e03a1.html#a861d15ea071ac5aad5f292fc271e03a1',1,'gdalcpp::detail::Driver::Driver()']]],
+  ['driver',['Driver',['../classgdalcpp_1_1detail_1_1_driver.html',1,'gdalcpp::detail']]],
   ['driver_5fname',['driver_name',['../classgdalcpp_1_1_dataset_ae8d280774e162d82d2caa8d67f50d457.html#ae8d280774e162d82d2caa8d67f50d457',1,'gdalcpp::Dataset']]]
 ];

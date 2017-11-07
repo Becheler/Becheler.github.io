@@ -1,21 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"structquetzal_1_1expressive_1_1composite__functor_a25f7f4557dc083c4d859d519aee42fcd.html#a25f7f4557dc083c4d859d519aee42fcd":[3,0,1,3,11,1],
-"structquetzal_1_1expressive_1_1composite__functor_a2fdb78fe19cf9eebbba733d3d3dee3bf.html#a2fdb78fe19cf9eebbba733d3d3dee3bf":[3,0,1,3,11,2],
-"structquetzal_1_1expressive_1_1composite__functor_a65fba31daedd58d208422d35b11ca185.html#a65fba31daedd58d208422d35b11ca185":[3,0,1,3,11,3],
-"structquetzal_1_1expressive_1_1composite__functor_aa0cd494d12f6c0c05dd64c54c8448fed.html#aa0cd494d12f6c0c05dd64c54c8448fed":[3,0,1,3,11,6],
-"structquetzal_1_1expressive_1_1composite__functor_ac0a213f20c2a6e90092b08c34a23a1eb.html#ac0a213f20c2a6e90092b08c34a23a1eb":[3,0,1,3,11,7],
-"structquetzal_1_1expressive_1_1composite__functor_ad496cf13e65e3e1e84f82e9defdadd70.html#ad496cf13e65e3e1e84f82e9defdadd70":[3,0,1,3,11,0],
-"structquetzal_1_1expressive_1_1composite__functor_aeb0f6e8cec2a250b37729288cd2167ff.html#aeb0f6e8cec2a250b37729288cd2167ff":[3,0,1,3,11,5],
-"structquetzal_1_1expressive_1_1composite__functor_af5660fbbc611a2414ec89387cfb96987.html#af5660fbbc611a2414ec89387cfb96987":[3,0,1,3,11,4],
-"structquetzal_1_1expressive_1_1literal__factory.html":[1,1,0],
-"structquetzal_1_1expressive_1_1literal__factory_ae3adc17ef47a119fcc351c1156c4b70b.html#ae3adc17ef47a119fcc351c1156c4b70b":[1,1,0,0],
-"structquetzal_1_1expressive_1_1literal__t.html":[3,0,1,3,14],
-"structquetzal_1_1expressive_1_1literal__t_a9764f46a6e6d33383120b49385cd2494.html#a9764f46a6e6d33383120b49385cd2494":[3,0,1,3,14,0],
-"structquetzal_1_1expressive_1_1literal__t_aa92504f308bbc693bb82c127440554a9.html#aa92504f308bbc693bb82c127440554a9":[3,0,1,3,14,2],
-"structquetzal_1_1expressive_1_1literal__t_adfb186e242dcfee726cfc9c025c6e8d1.html#adfb186e242dcfee726cfc9c025c6e8d1":[3,0,1,3,14,1],
-"structquetzal_1_1expressive_1_1make__expression__t.html":[3,0,1,3,15],
-"structquetzal_1_1expressive_1_1make__expression__t_a484b3efb2559f59ff97c56acf821aa94.html#a484b3efb2559f59ff97c56acf821aa94":[3,0,1,3,15,0],
 "structquetzal_1_1expressive_1_1make__expression__t_a735ffd10e4d90c099c40a9c80f8558cf.html#a735ffd10e4d90c099c40a9c80f8558cf":[3,0,1,3,15,1],
 "structquetzal_1_1expressive_1_1make__expression__t_a74ec448c4f6bd2fdf107f806e5761106.html#a74ec448c4f6bd2fdf107f806e5761106":[3,0,1,3,15,3],
 "structquetzal_1_1expressive_1_1make__expression__t_a833b6c4b96811eaa60c9f8a18c19db83.html#a833b6c4b96811eaa60c9f8a18c19db83":[3,0,1,3,15,2],
@@ -38,7 +22,5 @@ var NAVTREEINDEX3 =
 "structstd_1_1common__type_3_01std_1_1tuple_3_01_t_8_8_8_01_4_00_01std_1_1tuple_3_01_u_8_8_8_01_4_01_4.html":[3,0,2,0],
 "structstd_1_1common__type_3_01std_1_1tuple_3_01_t_8_8_8_01_4_00_01std_1_1tuple_3_01_u_8_8_8_01_4_01_4_a94d046d3258783e1e8a6930014aac73e.html#a94d046d3258783e1e8a6930014aac73e":[3,0,2,0,0],
 "structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html":[3,0,2,1],
-"structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4_af839493c9b333eb4533777875945d5fb.html#af839493c9b333eb4533777875945d5fb":[3,0,2,1,0],
-"two__demes_8cpp.html":[4,0,0,0,0,1,0],
-"two__demes_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,0,0,1,0,1]
+"structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4_af839493c9b333eb4533777875945d5fb.html#af839493c9b333eb4533777875945d5fb":[3,0,2,1,0]
 };

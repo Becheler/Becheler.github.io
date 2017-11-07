@@ -1,7 +1,7 @@
 var searchData=
 [
   ['policies',['Policies',['../group__coal__policies.html',1,'']]],
-  ['param_5ftype',['param_type',['../class_generative_model_ab13018f64aa4eacdbc5addd9ca1fde6e.html#ab13018f64aa4eacdbc5addd9ca1fde6e',1,'GenerativeModel::param_type()'],['../class_generative_model_ab13018f64aa4eacdbc5addd9ca1fde6e.html#ab13018f64aa4eacdbc5addd9ca1fde6e',1,'GenerativeModel::param_type()'],['../classquetzal_1_1random_1_1_discrete_distribution_a5329590ad808a1043495f6b5f13185d8.html#a5329590ad808a1043495f6b5f13185d8',1,'quetzal::random::DiscreteDistribution::param_type()']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1random_1_1_discrete_distribution_a5329590ad808a1043495f6b5f13185d8.html#a5329590ad808a1043495f6b5f13185d8',1,'quetzal::random::DiscreteDistribution']]],
   ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux.html',1,'quetzal::demography']]],
   ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux_a74ad5d306e4cca730d53d8b5c1683efa.html#a74ad5d306e4cca730d53d8b5c1683efa',1,'quetzal::demography::PopulationFlux']]],
   ['populationflux_2eh',['PopulationFlux.h',['../_population_flux_8h.html',1,'']]],

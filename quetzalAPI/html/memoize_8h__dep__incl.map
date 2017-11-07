@@ -1,12 +1,10 @@
 <map id="quetzal/modules/coalescence/occupancy_spectrum/memoize.h" name="quetzal/modules/coalescence/occupancy_spectrum/memoize.h">
-<area shape="rect" id="node2" href="$spectrum__creation__policy_8h.html" title="quetzal/modules/coalescence\l/occupancy_spectrum/spectrum\l_creation_policy.h" alt="" coords="441,95,649,151"/>
-<area shape="rect" id="node11" href="$memoize__test_8cpp.html" title="Program for unit testing. " alt="" coords="673,95,880,151"/>
-<area shape="rect" id="node3" href="$merger_8h.html" title="quetzal/modules/coalescence\l/policies/merger.h" alt="" coords="335,206,530,247"/>
-<area shape="rect" id="node10" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="554,199,762,255"/>
-<area shape="rect" id="node4" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="159,317,311,344"/>
-<area shape="rect" id="node8" href="$_binary_merger_2test_8cpp.html" title="quetzal/modules/coalescence\l/policies/test/BinaryMerger\l/test.cpp" alt="" coords="335,303,530,359"/>
-<area shape="rect" id="node9" href="$_simultaneous_multiple_merger_2test_8cpp.html" title="quetzal/modules/coalescence\l/policies/test/SimultaneousMultiple\lMerger/test.cpp" alt="" coords="554,303,778,359"/>
-<area shape="rect" id="node5" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,407,296,433"/>
-<area shape="rect" id="node6" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,489,236,530"/>
-<area shape="rect" id="node7" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,481,439,537"/>
+<area shape="rect" id="node2" href="$spectrum__creation__policy_8h.html" title="quetzal/modules/coalescence\l/occupancy_spectrum/spectrum\l_creation_policy.h" alt="" coords="287,95,495,151"/>
+<area shape="rect" id="node9" href="$memoize__test_8cpp.html" title="Program for unit testing. " alt="" coords="519,95,726,151"/>
+<area shape="rect" id="node3" href="$merger_8h.html" title="quetzal/modules/coalescence\l/policies/merger.h" alt="" coords="181,206,376,247"/>
+<area shape="rect" id="node8" href="$spectrum__creation__policy__test_8cpp.html" title="Program for unit testing. " alt="" coords="400,199,608,255"/>
+<area shape="rect" id="node4" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="5,317,157,344"/>
+<area shape="rect" id="node6" href="$coalescence_2policies_2test_2_binary_merger_2test_8cpp.html" title="quetzal/modules/coalescence\l/policies/test/BinaryMerger\l/test.cpp" alt="" coords="181,303,376,359"/>
+<area shape="rect" id="node7" href="$coalescence_2policies_2test_2_simultaneous_multiple_merger_2test_8cpp.html" title="quetzal/modules/coalescence\l/policies/test/SimultaneousMultiple\lMerger/test.cpp" alt="" coords="400,303,624,359"/>
+<area shape="rect" id="node5" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="21,407,142,433"/>
 </map>

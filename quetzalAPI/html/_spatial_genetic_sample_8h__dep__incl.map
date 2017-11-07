@@ -1,9 +1,7 @@
 <map id="quetzal/modules/genetics/SpatialGeneticSample.h" name="quetzal/modules/genetics/SpatialGeneticSample.h">
-<area shape="rect" id="node2" href="$_spatial_genetic_sample_loader_8h.html" title="quetzal/modules/genetics\l/SpatialGeneticSampleLoader.h" alt="" coords="225,95,430,136"/>
-<area shape="rect" id="node8" href="$_spatial_genetic_sample__test_8cpp.html" title="quetzal/modules/genetics\l/SpatialGeneticSample_test.cpp" alt="" coords="455,95,664,136"/>
-<area shape="rect" id="node3" href="$genetics_8h.html" title="quetzal/genetics.h" alt="" coords="171,199,299,225"/>
-<area shape="rect" id="node7" href="$_spatial_genetic_sample_loader__test_8cpp.html" title="quetzal/modules/genetics\l/SpatialGeneticSampleLoader\l_test.cpp" alt="" coords="323,184,518,240"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,288,296,315"/>
-<area shape="rect" id="node5" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,370,236,411"/>
-<area shape="rect" id="node6" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,363,439,419"/>
+<area shape="rect" id="node2" href="$_spatial_genetic_sample_loader_8h.html" title="quetzal/modules/genetics\l/SpatialGeneticSampleLoader.h" alt="" coords="59,95,264,136"/>
+<area shape="rect" id="node6" href="$_spatial_genetic_sample__test_8cpp.html" title="quetzal/modules/genetics\l/SpatialGeneticSample_test.cpp" alt="" coords="289,95,498,136"/>
+<area shape="rect" id="node3" href="$genetics_8h.html" title="quetzal/genetics.h" alt="" coords="5,199,133,225"/>
+<area shape="rect" id="node5" href="$_spatial_genetic_sample_loader__test_8cpp.html" title="quetzal/modules/genetics\l/SpatialGeneticSampleLoader\l_test.cpp" alt="" coords="157,184,352,240"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="9,288,130,315"/>
 </map>

@@ -1,7 +1,5 @@
 <map id="quetzal/modules/abc/abc.h" name="quetzal/modules/abc/abc.h">
-<area shape="rect" id="node2" href="$abc_8h.html" title="quetzal/abc.h" alt="" coords="185,102,285,129"/>
-<area shape="rect" id="node6" href="$abc__test_8cpp.html" title="quetzal/modules/abc\l/abc_test.cpp" alt="" coords="309,95,452,136"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,184,296,211"/>
-<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,266,236,307"/>
-<area shape="rect" id="node5" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,259,439,315"/>
+<area shape="rect" id="node2" href="$abc_8h.html" title="quetzal/abc.h" alt="" coords="16,102,116,129"/>
+<area shape="rect" id="node4" href="$abc_2test_2test_8cpp.html" title="quetzal/modules/abc\l/test/test.cpp" alt="" coords="140,95,283,136"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="5,184,127,211"/>
 </map>

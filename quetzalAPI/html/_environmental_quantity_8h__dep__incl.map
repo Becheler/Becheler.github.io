@@ -1,9 +1,7 @@
 <map id="quetzal/modules/geography/EnvironmentalQuantity.h" name="quetzal/modules/geography/EnvironmentalQuantity.h">
-<area shape="rect" id="node2" href="$_discrete_landscape_8h.html" title="quetzal/modules/geography\l/DiscreteLandscape.h" alt="" coords="239,102,421,143"/>
-<area shape="rect" id="node8" href="$_environmental_quantity__test_8cpp.html" title="quetzal/modules/geography\l/test/EnvironmentalQuantity\l/EnvironmentalQuantity_test.cpp" alt="" coords="445,95,657,151"/>
-<area shape="rect" id="node3" href="$geography_8h.html" title="quetzal/geography.h" alt="" coords="166,213,305,240"/>
-<area shape="rect" id="node7" href="$_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/test/DiscreteLandscape\l/DiscreteLandscape_test.cpp" alt="" coords="329,199,521,255"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="175,303,296,329"/>
-<area shape="rect" id="node5" href="$example1_8cpp.html" title="quetzal/documentation\l/examples/landscape/example1.cpp" alt="" coords="5,385,236,426"/>
-<area shape="rect" id="node6" href="$two__demes_8cpp.html" title="quetzal/documentation\l/examples/two_demes/two\l_demes.cpp" alt="" coords="261,377,439,433"/>
+<area shape="rect" id="node2" href="$_discrete_landscape_8h.html" title="quetzal/modules/geography\l/DiscreteLandscape.h" alt="" coords="79,102,260,143"/>
+<area shape="rect" id="node6" href="$_environmental_quantity__test_8cpp.html" title="quetzal/modules/geography\l/test/EnvironmentalQuantity\l/EnvironmentalQuantity_test.cpp" alt="" coords="285,95,497,151"/>
+<area shape="rect" id="node3" href="$geography_8h.html" title="quetzal/geography.h" alt="" coords="5,213,144,240"/>
+<area shape="rect" id="node5" href="$_discrete_landscape__test_8cpp.html" title="quetzal/modules/geography\l/test/DiscreteLandscape\l/DiscreteLandscape_test.cpp" alt="" coords="168,199,360,255"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="14,303,135,329"/>
 </map>

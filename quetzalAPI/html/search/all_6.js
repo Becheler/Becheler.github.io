@@ -9,7 +9,6 @@ var searchData=
   ['gdalcpp_2eh',['gdalcpp.h',['../gdalcpp_8h.html',1,'']]],
   ['gdalcpp_5ftest_2ecpp',['gdalcpp_test.cpp',['../gdalcpp__test_8cpp.html',1,'']]],
   ['generate',['generate',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_af4b187154cd2717e86328c98eb873477.html#af4b187154cd2717e86328c98eb873477',1,'quetzal::coalescence::occupancy_spectrum::Generator']]],
-  ['generativemodel',['GenerativeModel',['../class_generative_model.html',1,'GenerativeModel'],['../class_generative_model_a306a0696c11cf426adcb87e5f9beeb64.html#a306a0696c11cf426adcb87e5f9beeb64',1,'GenerativeModel::GenerativeModel()']]],
   ['generator',['Generator',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator.html',1,'quetzal::coalescence::occupancy_spectrum']]],
   ['generator_2eh',['Generator.h',['../_generator_8h.html',1,'']]],
   ['generator_5ftest_2ecpp',['Generator_test.cpp',['../_generator__test_8cpp.html',1,'']]],

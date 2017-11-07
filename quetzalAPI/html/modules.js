@@ -5,5 +5,5 @@ var modules =
     [ "demography", "group__demography.html", "group__demography" ],
     [ "random", "group__random.html", "group__random" ],
     [ "coalescence", "group__coalescence.html", "group__coalescence" ],
-    [ "abc", "group__abc.html", null ]
+    [ "abc", "group__abc.html", "group__abc" ]
 ];

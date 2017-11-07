@@ -95,9 +95,12 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c.html',''
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classquetzal_1_1abc_1_1_a_b_c-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt; Class Template Reference</div>  </div>
+<div class="title">quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__abc.html">abc</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> object for Approximate Bayesian Computations.  
+ <a href="classquetzal_1_1abc_1_1_a_b_c.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="modules_2abc_2abc_8h_source.html">abc.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -121,7 +124,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afbd4df8a02cb4ea39c0a11bec34cf37d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_afbd4df8a02cb4ea39c0a11bec34cf37d.html#afbd4df8a02cb4ea39c0a11bec34cf37d">sample_prior_predictive_distribution</a> (unsigned int N, Generator &amp;g) const </td></tr>
 <tr class="separator:afbd4df8a02cb4ea39c0a11bec34cf37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ModelType, class ParametersJointDistributionType&gt;<br />
+class quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt;</h3>
+
+<p><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> object for Approximate Bayesian Computations. </p>
+<p>Associates a generative (simulation) model with a possibly multidimensional prior distribution to sample the prior predictive distribution sampling by constituting a reference table, or using samplers for estimating the posterior distribution based on some observed data.</p>
+<p>Simulation models are abstracted to the concept of GenerativeModel. The type <code>D</code> satisfies GenerativeModel if</p><ul>
+<li><code>D</code> satisfies CopyConstructible</li>
+<li><code>D</code> satisfies CopyAssignable Given</li>
+<li><code>T</code>, the type named by <code>M::return_type</code></li>
+<li><code>P</code>, the type named by <code>M::param_type</code>, which:</li>
+<li>* satisfies CopyConstructible</li>
+<li>* satisfies CopyAssignable</li>
+<li>* satisfies EqualityComparable</li>
+<li>* has a constructor taking identical arguments as each of the constructors of <code>D</code> that take arguments corresponding to the model parameters.</li>
+<li>* has a member function with the identical name, type, and semantics, as every member function of <code>D</code> that returns a parameter of the model</li>
+<li>* declares a member typedef <code>using distribution_type = D</code>;</li>
+<li><code>d</code>, a value of type <code>D</code></li>
+<li><code>x</code>, a (possibly const) value of type <code>D</code></li>
+<li>p, a (possibly const) value of type <code>P</code></li>
+<li><code>g</code> a lvalue of a type satisfying the STL UniformRandomBitGenerator concept The following expressions must be valid and have their specified effects : Expression | Type | Notes -------------------------------------&mdash;| ----------&mdash; <code>D::result_type</code> | T | the type of the simulated data <code>D::param_type</code> | T | <code>D()</code> | | creates a distribution indistinguishable from any other default-constructed <code>D</code> <code>D(p)</code> | | creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> <code>x.param()</code> | P | Returns <code>p</code> such that <code>D(p).param() == p</code> <code>d.param(p)</code> | void | Postcondition: <code>d.param() == p</code> <code>d(g)</code> | T | The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by d.param() <code>d(g,p)</code> | T | The sequence of data returned by successive invocations of this call with the same g are randomly distributed according to the distribution parametrized by p <dl class="section remark"><dt>Remarks</dt><dd>all types satisfying the requirements of the STL RandomNumberDistribution satisfy quetzal GenerativeModel concept.</dd></dl>
+</li>
+</ul>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>quetzal/modules/abc/<a class="el" href="modules_2abc_2abc_8h_source.html">abc.h</a></li>
 </ul>
 </div><!-- contents -->

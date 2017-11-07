@@ -134,8 +134,21 @@ Classes</h2></td></tr>
 <th>Expression </th><th>Type </th><th>Notes  </th></tr>
 <tr>
 <td><code>D::result_type</code> </td><td>T </td><td>the type of the simulated data </td></tr>
+<tr>
+<td><code>D::param_type</code> </td><td>T </td><td></td></tr>
+<tr>
+<td><code>D()</code> </td><td></td><td>creates a distribution indistinguishable from any other default-constructed <code>D</code> </td></tr>
+<tr>
+<td><code>D(p)</code> </td><td></td><td>creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> </td></tr>
+<tr>
+<td><code>x.param()</code> </td><td>P </td><td>Returns <code>p</code> such that <code>D(p).param() == p</code> </td></tr>
+<tr>
+<td><code>d.param(p)</code> </td><td>void </td><td>Postcondition: <code>d.param() == p</code> </td></tr>
+<tr>
+<td><code>d(g)</code> </td><td>T </td><td>The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by <code>d.param()</code> </td></tr>
+<tr>
+<td><code>d(g,p)</code> </td><td>T </td><td>The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by <code>p</code> </td></tr>
 </table>
-<p><code>D::param_type</code> | T | <code>D()</code> | | creates a distribution indistinguishable from any other default-constructed <code>D</code> <code>D(p)</code> | | creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> <code>x.param()</code> | P | Returns <code>p</code> such that <code>D(p).param() == p</code> <code>d.param(p)</code> | void | Postcondition: <code>d.param() == p</code> <code>d(g)</code> | T | The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by d.param() <code>d(g,p)</code> | T | The sequence of data returned by successive invocations of this call with the same g are randomly distributed according to the distribution parametrized by p</p>
 <dl class="section remark"><dt>Remarks</dt><dd>All types satisfying the requirements of the STL RandomNumberDistribution satisfy quetzal GenerativeModel concept. </dd></dl>
 </div><!-- contents -->
 </div><!-- doc-content -->

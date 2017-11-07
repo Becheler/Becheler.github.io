@@ -109,7 +109,8 @@ Classes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Template classes for embedding simulation model objects into an ABC framework. </p>
 <p>Defines template classes to embed simulation code into an ABC framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-ended number of important inference tasks, as the user can inject almost any kind of distance or summary statistics in the analysis of the reference table.</p>
-<p>This module relies heavily on the C++ concept of GenerativeModel, which defines the set of constraints that a simulation model object must have to interact with the ABC module.</p>
+<h2>C++ concept : GenerativeModel</h2>
+<p>The abc module relies heavily on the C++ concept of GenerativeModel, which defines the set of constraints that a simulation model object must have to interact with the abc module.</p>
 <p>The type <code>D</code> satisfies GenerativeModel if</p>
 <ul>
 <li><code>D</code> satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyConstructible">CopyConstructible</a></li>

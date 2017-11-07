@@ -115,7 +115,15 @@ Classes</h2></td></tr>
 <li><code>D</code> satisfies CopyConstructible</li>
 <li><code>D</code> satisfies CopyAssignable Given</li>
 <li><code>T</code>, the type named by <code>M::return_type</code></li>
-<li><code>P</code>, the type named by <code>M::param_type</code>, which: ** satisfies CopyConstructible ** satisfies CopyAssignable ** satisfies EqualityComparable ** has a constructor taking identical arguments as each of the constructors of <code>D</code> that take arguments corresponding to the model parameters. ** has a member function with the identical name, type, and semantics, as every member function of <code>D</code> that returns a parameter of the model ** declares a member typedef <code>using distribution_type = D</code>;</li>
+<li><code>P</code>, the type named by <code>M::param_type</code>, which:<ul>
+<li>satisfies CopyConstructible</li>
+<li>satisfies CopyAssignable</li>
+<li>satisfies EqualityComparable</li>
+<li>has a constructor taking identical arguments as each of the constructors of <code>D</code> that take arguments corresponding to the model parameters.</li>
+<li>has a member function with the identical name, type, and semantics, as every member function of <code>D</code> that returns a parameter of the model</li>
+<li>declares a member typedef <code>using distribution_type = D</code>;</li>
+</ul>
+</li>
 <li><code>d</code>, a value of type <code>D</code></li>
 <li><code>x</code>, a (possibly const) value of type <code>D</code></li>
 <li>p, a (possibly const) value of type <code>P</code></li>
@@ -127,7 +135,8 @@ Classes</h2></td></tr>
 <tr>
 <td><code>D::result_type</code> </td><td>T </td><td>the type of the simulated data </td></tr>
 </table>
-<p><code>D::param_type</code> | T | <code>D()</code> | | creates a distribution indistinguishable from any other default-constructed <code>D</code> <code>D(p)</code> | | creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> <code>x.param()</code> | P | Returns <code>p</code> such that <code>D(p).param() == p</code> <code>d.param(p)</code> | void | Postcondition: <code>d.param() == p</code> <code>d(g)</code> | T | The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by d.param() <code>d(g,p)</code> | T | The sequence of data returned by successive invocations of this call with the same g are randomly distributed according to the distribution parametrized by p </p><dl class="section remark"><dt>Remarks</dt><dd>All types satisfying the requirements of the STL RandomNumberDistribution satisfy quetzal GenerativeModel concept. </dd></dl>
+<p><code>D::param_type</code> | T | <code>D()</code> | | creates a distribution indistinguishable from any other default-constructed <code>D</code> <code>D(p)</code> | | creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code> <code>x.param()</code> | P | Returns <code>p</code> such that <code>D(p).param() == p</code> <code>d.param(p)</code> | void | Postcondition: <code>d.param() == p</code> <code>d(g)</code> | T | The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by d.param() <code>d(g,p)</code> | T | The sequence of data returned by successive invocations of this call with the same g are randomly distributed according to the distribution parametrized by p</p>
+<dl class="section remark"><dt>Remarks</dt><dd>All types satisfying the requirements of the STL RandomNumberDistribution satisfy quetzal GenerativeModel concept. </dd></dl>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.11-->

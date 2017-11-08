@@ -22,6 +22,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -137,7 +143,7 @@ template&lt;class BidirectionalIterator , class Generator &gt; </div>
 </div><div class="memdoc">
 
 <p>merges 2 randomly selected elements in a range. </p>
-<p>With a probability <img class="formulaInl" alt="$1/N$" src="form_14.png"/>, merges 2 elements selected uniformely at random in a range.</p>
+<p>With a probability \(1/N\), merges 2 elements selected uniformely at random in a range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">first</td><td>iterator at the begin of the range </td></tr>

@@ -22,6 +22,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -99,7 +105,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1random_1_1_transition_
 </div><!--header-->
 <div class="contents">
 
-<p>Discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_18.png"/>.  
+<p>Discrete markovian transition kernel for sampling the next state knowing the present state \(x_0\).  
  <a href="classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_transition_kernel_8h_source.html">TransitionKernel.h</a>&gt;</code></p>
@@ -150,8 +156,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename Distribution&gt;<br />
 class quetzal::random::TransitionKernel&lt; Distribution &gt;</h3>
 
-<p>Discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_18.png"/>. </p>
-<p>Considering a Markov chain <img class="formulaInl" alt="$(X_k)_{k\in Z_+}$" src="form_19.png"/> with discrete state space <img class="formulaInl" alt="$S$" src="form_20.png"/>, and given each initial state <img class="formulaInl" alt="$x_0$" src="form_18.png"/> of <img class="formulaInl" alt="$S$" src="form_20.png"/>, defines the markovian probability distribution <img class="formulaInl" alt="$P(X_1=\cdot|X_0=x_0)$" src="form_21.png"/>, and samples the stochastic value <img class="formulaInl" alt="$X_1$" src="form_22.png"/>, according to this probability law.</p>
+<p>Discrete markovian transition kernel for sampling the next state knowing the present state \(x_0\). </p>
+<p>Considering a Markov chain \((X_k)_{k\in Z_+}\) with discrete state space \(S\), and given each initial state \(x_0\) of \(S\), defines the markovian probability distribution \(P(X_1=\cdot|X_0=x_0)\), and samples the stochastic value \(X_1\), according to this probability law.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Distribution</td><td>type of the transition kernels. </td></tr>

@@ -22,6 +22,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -133,12 +139,12 @@ template&lt;class StatisticsType , typename Generator &gt; </div>
 </div><div class="memdoc">
 
 <p>Generation of reference table from prior predictive distribution. </p>
-<p>A parameter <img class="formulaInl" alt="$\theta$" src="form_5.png"/> is generated from the prior <img class="formulaInl" alt="$\pi(\theta)$" src="form_6.png"/>, a data <img class="formulaInl" alt="$z$" src="form_13.png"/> is simulated from the likelyhood and a dimension reduction function <img class="formulaInl" alt="$eta$" src="form_9.png"/> is computed on <img class="formulaInl" alt="$z$" src="form_13.png"/>. The set of simulated statistics is called the reference table.</p>
+<p>A parameter \(\theta\) is generated from the prior \(\pi(\theta)\), a data \(z\) is simulated from the likelyhood and a dimension reduction function \(eta\) is computed on \(z\). The set of simulated statistics is called the reference table.</p>
 <p>See Algorithm 1 in <a href="https://arxiv.org/abs/1605.05537">ABC Random Forests for Bayesian Parameter Inference (Marin et al 2016)</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">N</td><td>the number of parameters to accept. </td></tr>
-    <tr><td class="paramname">eta</td><td>a function <img class="formulaInl" alt="$eta$" src="form_9.png"/> on <img class="formulaInl" alt="$D$" src="form_8.png"/> defining a statistics (sufficient or not). </td></tr>
+    <tr><td class="paramname">eta</td><td>a function \(eta\) on \(D\) defining a statistics (sufficient or not). </td></tr>
     <tr><td class="paramname">g</td><td>a random generator that must meet the requirements of UniformRandomBitGenerator concept.</td></tr>
   </table>
   </dd>

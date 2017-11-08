@@ -22,6 +22,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -146,19 +152,19 @@ template&lt;class ObservedDataType , class DistanceType , class T , class Genera
 
 <p>Pritchard &amp; al (1999) likelyhood free rejection sampler. </p>
 <p>An extension of the Rubin sampler to the case of continuous sample spaces.</p>
-<p>A parameter <img class="formulaInl" alt="$\theta$" src="form_5.png"/> is generated from the prior <img class="formulaInl" alt="$\pi(\theta)$" src="form_6.png"/>, a data is simulated, and the parameter is accepted if the simulated data is equal to the observed data <img class="formulaInl" alt="$y$" src="form_7.png"/>, assuming observed data takes values in a finite or countable set <img class="formulaInl" alt="$D$" src="form_8.png"/> as defined in <a href="https://link.springer.com/article/10.1007%2Fs11222-011-9288-2?LI=true">Approximate Bayesian Computations methods, Marin et al 2011</a>, Algorithm 2.</p>
+<p>A parameter \(\theta\) is generated from the prior \(\pi(\theta)\), a data is simulated, and the parameter is accepted if the simulated data is equal to the observed data \(y\), assuming observed data takes values in a finite or countable set \(D\) as defined in <a href="https://link.springer.com/article/10.1007%2Fs11222-011-9288-2?LI=true">Approximate Bayesian Computations methods, Marin et al 2011</a>, Algorithm 2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>the number of parameters to accept. </td></tr>
     <tr><td class="paramname">y</td><td>the observed data from which to draw inference. </td></tr>
-    <tr><td class="paramname">rho</td><td>a distance <img class="formulaInl" alt="$rho &gt; 0$" src="form_10.png"/> on <img class="formulaInl" alt="$eta(D)$" src="form_11.png"/> </td></tr>
-    <tr><td class="paramname">epsilon</td><td>a tolerance level <img class="formulaInl" alt="$epsilon &gt; 0$" src="form_12.png"/> </td></tr>
+    <tr><td class="paramname">rho</td><td>a distance \(rho &gt; 0\) on \(eta(D)\) </td></tr>
+    <tr><td class="paramname">epsilon</td><td>a tolerance level \(epsilon &gt; 0\) </td></tr>
     <tr><td class="paramname">g</td><td>a random generator that must meet the requirements of UniformRandomBitGenerator concept.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of accepted parameter values.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>the dimension reduction function <img class="formulaInl" alt="$eta$" src="form_9.png"/> is here defined as the identity.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the dimension reduction function \(eta\) is here defined as the identity.</dd></dl>
 <h1><a class="anchor" id="Example"></a>
 Example</h1>
 <div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>

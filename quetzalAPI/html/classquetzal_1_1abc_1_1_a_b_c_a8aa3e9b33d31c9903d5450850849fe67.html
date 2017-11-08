@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::abc::ABC::rubin_rejection_sampler</title>
+<title>QUETZAL: quetzal::abc::ABC::sample_prior_predictive_distribution</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_a88ac2d30591554e12eeec5c048d6fba3.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_a8aa3e9b33d31c9903d5450850849fe67.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -90,19 +90,19 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_a88ac2d3
 </div>
 
 <div class="contents">
-<a class="anchor" id="a88ac2d30591554e12eeec5c048d6fba3"></a>
+<a class="anchor" id="a8aa3e9b33d31c9903d5450850849fe67"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ModelType, class ParametersJointDistributionType&gt; </div>
+template&lt;class ModelType, class PriorType&gt; </div>
 <div class="memtemplate">
-template&lt;class ObsType , typename Generator &gt; </div>
+template&lt;class StatisticsType , typename Generator &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;param_type&gt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, ParametersJointDistributionType &gt;::rubin_rejection_sampler </td>
+          <td class="memname">auto <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, PriorType &gt;::sample_prior_predictive_distribution </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>N</em>, </td>
@@ -110,8 +110,8 @@ template&lt;class ObsType , typename Generator &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ObsType const &amp;&#160;</td>
-          <td class="paramname"><em>observed_data</em>, </td>
+          <td class="paramtype">StatisticsType const &amp;&#160;</td>
+          <td class="paramname"><em>eta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -131,14 +131,24 @@ template&lt;class ObsType , typename Generator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section remark"><dt>Remarks</dt><dd>Rubin(1984) likelyhood-free rejection sampler </dd>
-<dd>
-assume observed data takes values in a finite or countable set D </dd>
-<dd>
-ObservedDataType and simulated_data_type should be EqualityComparable </dd>
-<dd>
-see 'Approximate Bayesian Computations methods, Marin et al 2011, Algorithm 1) </dd></dl>
 
+<p>Generation of reference table from prior predictive distribution. </p>
+<p>A parameter <img class="formulaInl" alt="$\theta$" src="form_5.png"/> is generated from the prior <img class="formulaInl" alt="$\pi(\theta)$" src="form_6.png"/>, a data <img class="formulaInl" alt="$z$" src="form_13.png"/> is simulated from the likelyhood and a dimension reduction function <img class="formulaInl" alt="$eta$" src="form_9.png"/> is computed on <img class="formulaInl" alt="$z$" src="form_13.png"/>. The set of simulated statistics is called the reference table.</p>
+<p>See Algorithm 1 in <a href="https://arxiv.org/abs/1605.05537">ABC Random Forests for Bayesian Parameter Inference (Marin et al 2016)</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>the number of parameters to accept. </td></tr>
+    <tr><td class="paramname">eta</td><td>a function <img class="formulaInl" alt="$eta$" src="form_9.png"/> on <img class="formulaInl" alt="$D$" src="form_8.png"/> defining a statistics (sufficient or not). </td></tr>
+    <tr><td class="paramname">g</td><td>a random generator that must meet the requirements of UniformRandomBitGenerator concept.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="class_reference_table.html">ReferenceTable</a></dd></dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

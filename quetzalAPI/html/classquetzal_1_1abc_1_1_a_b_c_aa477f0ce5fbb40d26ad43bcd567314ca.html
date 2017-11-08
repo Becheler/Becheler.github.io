@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::abc::ABC::sample_prior_predictive_distribution</title>
+<title>QUETZAL: quetzal::abc::ABC::pritchard_rejection_sampler</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_a657231748fd215993eef98a20db70209.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_aa477f0ce5fbb40d26ad43bcd567314ca.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -90,19 +90,19 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_a6572317
 </div>
 
 <div class="contents">
-<a class="anchor" id="a657231748fd215993eef98a20db70209"></a>
+<a class="anchor" id="aa477f0ce5fbb40d26ad43bcd567314ca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ModelType, class ParametersJointDistributionType&gt; </div>
+template&lt;class ModelType, class PriorType&gt; </div>
 <div class="memtemplate">
-template&lt;class EtaType , typename Generator &gt; </div>
+template&lt;class ObservedDataType , class DistanceType , class T , class Generator &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, ParametersJointDistributionType &gt;::sample_prior_predictive_distribution </td>
+          <td class="memname">std::vector&lt;<a class="el" href="classquetzal_1_1abc_1_1_a_b_c_adae41dc52f4540ccd3437db80966f419.html#adae41dc52f4540ccd3437db80966f419">param_type</a>&gt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, PriorType &gt;::pritchard_rejection_sampler </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>N</em>, </td>
@@ -110,14 +110,26 @@ template&lt;class EtaType , typename Generator &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Generator &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
+          <td class="paramtype">ObservedDataType const &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EtaType const &amp;&#160;</td>
-          <td class="paramname"><em>eta</em>&#160;</td>
+          <td class="paramtype">DistanceType const &amp;&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Generator &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -131,10 +143,27 @@ template&lt;class EtaType , typename Generator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section remark"><dt>Remarks</dt><dd>Generation of reference table from prior predictive distribution </dd>
-<dd>
-see Algorithm 1 in <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> Random Forests for Bayesian Parameter Inference (Marin et al 2016) Returns of <a class="el" href="class_reference_table.html">ReferenceTable</a> </dd></dl>
 
+<p>Pritchard &amp; al (1999) likelyhood free rejection sampler. </p>
+<p>An extension of the Rubin sampler to the case of continuous sample spaces.</p>
+<p>A parameter <img class="formulaInl" alt="$\theta$" src="form_5.png"/> is generated from the prior <img class="formulaInl" alt="$\pi(\theta)$" src="form_6.png"/>, a data is simulated, and the parameter is accepted if the simulated data is equal to the observed data <img class="formulaInl" alt="$y$" src="form_7.png"/>, assuming observed data takes values in a finite or countable set <img class="formulaInl" alt="$D$" src="form_8.png"/> as defined in <a href="https://link.springer.com/article/10.1007%2Fs11222-011-9288-2?LI=true">Approximate Bayesian Computations methods, Marin et al 2011</a>, Algorithm 2.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the number of parameters to accept. </td></tr>
+    <tr><td class="paramname">y</td><td>the observed data from which to draw inference. </td></tr>
+    <tr><td class="paramname">rho</td><td>a distance <img class="formulaInl" alt="$rho &gt; 0$" src="form_10.png"/> on <img class="formulaInl" alt="$eta(D)$" src="form_11.png"/> </td></tr>
+    <tr><td class="paramname">epsilon</td><td>a tolerance level <img class="formulaInl" alt="$epsilon &gt; 0$" src="form_12.png"/> </td></tr>
+    <tr><td class="paramname">g</td><td>a random generator that must meet the requirements of UniformRandomBitGenerator concept.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of accepted parameter values.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the dimension reduction function <img class="formulaInl" alt="$eta$" src="form_9.png"/> is here defined as the identity.</dd></dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

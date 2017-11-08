@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"classquetzal_1_1genetics_1_1_diploid_individual_a1ced9feb3dda30b6fe4b403ca86f82f4.html#a1ced9feb3dda30b6fe4b403ca86f82f4":[3,0,1,4,1,10],
+"classquetzal_1_1genetics_1_1_diploid_individual_a1ff9dba64b82691603c4bff894ab112a.html#a1ff9dba64b82691603c4bff894ab112a":[3,0,1,4,1,4],
+"classquetzal_1_1genetics_1_1_diploid_individual_a29f83c0f2a2e174386c6dfcd250faf81.html#a29f83c0f2a2e174386c6dfcd250faf81":[3,0,1,4,1,11],
+"classquetzal_1_1genetics_1_1_diploid_individual_a418ca09ef36d65ff1537c9c83a41e87b.html#a418ca09ef36d65ff1537c9c83a41e87b":[3,0,1,4,1,9],
 "classquetzal_1_1genetics_1_1_diploid_individual_a42f9907129645e64e052a02de79a7622.html#a42f9907129645e64e052a02de79a7622":[3,0,1,4,1,6],
 "classquetzal_1_1genetics_1_1_diploid_individual_a42fdeb193188dc9b7e72e61d70c269d7.html#a42fdeb193188dc9b7e72e61d70c269d7":[3,0,1,4,1,1],
 "classquetzal_1_1genetics_1_1_diploid_individual_a45285663b1ad13ac7dc1795b8251f2c3.html#a45285663b1ad13ac7dc1795b8251f2c3":[3,0,1,4,1,2],
@@ -190,8 +194,8 @@ var NAVTREEINDEX1 =
 "functions_d.html":[3,3,0,3],
 "functions_e.html":[3,3,0,4],
 "functions_f.html":[3,3,0,5],
-"functions_func.html":[3,3,1],
 "functions_func.html":[3,3,1,0],
+"functions_func.html":[3,3,1],
 "functions_func_0x7e.html":[3,3,1,20],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "globals_func.html":[4,1,1],
 "group__abc.html":[1,5],
 "group__coal__algorithms.html":[1,4,0],
-"group__coal__algorithms_ga45cd8b6f39a5b41d4667f3bed3fc13fe.html#ga45cd8b6f39a5b41d4667f3bed3fc13fe":[1,4,0,1],
-"group__coal__algorithms_ga58ed2931bdac16146460718751d8647c.html#ga58ed2931bdac16146460718751d8647c":[1,4,0,0],
-"group__coal__algorithms_gac90d96d04f0434b2a32417428b2c86ce.html#gac90d96d04f0434b2a32417428b2c86ce":[1,4,0,2],
-"group__coal__algorithms_gae87571745b7e6a24a1c75b4e7d8d6467.html#gae87571745b7e6a24a1c75b4e7d8d6467":[1,4,0,3],
-"group__coal__containers.html":[1,4,1]
+"group__coal__algorithms_ga45cd8b6f39a5b41d4667f3bed3fc13fe.html#ga45cd8b6f39a5b41d4667f3bed3fc13fe":[1,4,0,1]
 };

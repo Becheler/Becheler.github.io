@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::abc::ABC::pritchard_rejection_sampler</title>
+<title>QUETZAL: quetzal::abc::ABC::ABC</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_ad8be44a1de7c4a0e3afedcaa7ac3dbfd.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_aa305d85417d07db5ada8b65e5315190a.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -90,57 +90,31 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_ad8be44a
 </div>
 
 <div class="contents">
-<a class="anchor" id="ad8be44a1de7c4a0e3afedcaa7ac3dbfd"></a>
+<a class="anchor" id="aa305d85417d07db5ada8b65e5315190a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ModelType, class ParametersJointDistributionType&gt; </div>
-<div class="memtemplate">
-template&lt;class ObsType , class RhoType , class EtaType , class T , class Generator &gt; </div>
+template&lt;class ModelType, class PriorType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;param_type&gt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, ParametersJointDistributionType &gt;::pritchard_rejection_sampler </td>
+          <td class="memname"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, PriorType &gt;::<a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">ABC</a> </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a4b1591982f5bf59b0d0cb9ed191f1ee1.html#a4b1591982f5bf59b0d0cb9ed191f1ee1">model_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ObsType const &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RhoType const &amp;&#160;</td>
-          <td class="paramname"><em>rho</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T const &amp;&#160;</td>
-          <td class="paramname"><em>epsilon</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Generator &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EtaType const &amp;&#160;</td>
-          <td class="paramname"><em>eta</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a9355a52ccd6fd7abf952c07f4212ec28.html#a9355a52ccd6fd7abf952c07f4212ec28">prior_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -149,12 +123,20 @@ template&lt;class ObsType , class RhoType , class EtaType , class T , class Gene
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section remark"><dt>Remarks</dt><dd>Pritchard &amp; al (1999) likelyhood free rejection sampler. </dd>
-<dd>
-Extension of Rubin sampler to the case of continuous sample spaces </dd>
-<dd>
-see 'Approximate Bayesian Computations methods, Marin et al 2011, Algorithm 2) </dd></dl>
 
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>the model to be used </td></tr>
+    <tr><td class="paramname">p</td><td>the prior distribution </td></tr>
+  </table>
+  </dd>
+</dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

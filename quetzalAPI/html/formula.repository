@@ -3,14 +3,23 @@
 \form#2:$f : R \rightarrow [0,1]$
 \form#3:$R$
 \form#4:$[0,1] $
-\form#5:$1/N$
-\form#6:$i$
-\form#7:$w = i/S$
-\form#8:$n$
-\form#9:$x_0$
-\form#10:$(X_k)_{k\in Z_+}$
-\form#11:$S$
-\form#12:$P(X_1=\cdot|X_0=x_0)$
-\form#13:$X_1$
-\form#14:$t$
-\form#15:$P_t(X_1=\cdot|X_0=x_0)$
+\form#5:$\theta$
+\form#6:$\pi(\theta)$
+\form#7:$y$
+\form#8:$D$
+\form#9:$eta$
+\form#10:$rho > 0$
+\form#11:$eta(D)$
+\form#12:$epsilon > 0$
+\form#13:$z$
+\form#14:$1/N$
+\form#15:$i$
+\form#16:$w = i/S$
+\form#17:$n$
+\form#18:$x_0$
+\form#19:$(X_k)_{k\in Z_+}$
+\form#20:$S$
+\form#21:$P(X_1=\cdot|X_0=x_0)$
+\form#22:$X_1$
+\form#23:$t$
+\form#24:$P_t(X_1=\cdot|X_0=x_0)$

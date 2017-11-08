@@ -97,18 +97,18 @@ $(document).ready(function(){initNavTree('group__abc.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Template classes for embedding simulation model objects into an ABC framework.  
+<p>Template classes for embedding simulation model objects into an Approximate Bayesian Computation framework.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC&lt; ModelType, PriorType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> object for Approximate Bayesian Computations.  <a href="classquetzal_1_1abc_1_1_a_b_c.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Template classes for embedding simulation model objects into an ABC framework. </p>
-<p>Defines template classes to embed simulation code into an ABC framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-ended number of important inference tasks, as the user can inject almost any kind of distance or summary statistics in the analysis of the reference table.</p>
+<p>Template classes for embedding simulation model objects into an Approximate Bayesian Computation framework. </p>
+<p>Defines template classes to embed simulation code into an Approximate Bayesian Computation framework framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-ended number of important inference tasks, as the user can for example inject almost any kind of distance or summary statistics in the analysis of the reference table.</p>
 <h2>C++ concept : GenerativeModel</h2>
 <p>The abc module relies heavily on the C++ concept of GenerativeModel, which defines the set of constraints that a simulation model object must have to interact with the abc module.</p>
 <p>The type <code>D</code> satisfies GenerativeModel if</p>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::abc::ABC::pritchard_rejection_sampler</title>
+<title>QUETZAL: quetzal::abc::make_ABC</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_aa35fcaf55609c441c936849bc90db9c7.html','');});
+$(document).ready(function(){initNavTree('namespacequetzal_1_1abc_a3bc932cd81941359d2d800b45df064f4.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -90,65 +90,46 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c_aa35fcaf
 </div>
 
 <div class="contents">
-<a class="anchor" id="aa35fcaf55609c441c936849bc90db9c7"></a>
+<a class="anchor" id="a3bc932cd81941359d2d800b45df064f4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ModelType, class ParametersJointDistributionType&gt; </div>
-<div class="memtemplate">
-template&lt;class ObsType , class RhoType , class T , class Generator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class ModelType , class PriorType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;param_type&gt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html">quetzal::abc::ABC</a>&lt; ModelType, ParametersJointDistributionType &gt;::pritchard_rejection_sampler </td>
+          <td class="memname">auto quetzal::abc::make_ABC </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
+          <td class="paramtype">ModelType const &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ObsType const &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RhoType const &amp;&#160;</td>
-          <td class="paramname"><em>rho</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T const &amp;&#160;</td>
-          <td class="paramname"><em>epsilon</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Generator &amp;&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
+          <td class="paramtype">PriorType const &amp;&#160;</td>
+          <td class="paramname"><em>prior</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<dl class="section remark"><dt>Remarks</dt><dd>Pritchard &amp; al (1999) likelyhood free rejection sampler. </dd>
-<dd>
-Extension of Rubin sampler to the case of continuous sample spaces </dd>
-<dd>
-see 'Approximate Bayesian Computations methods, Marin et al 2011, Algorithm 2) </dd></dl>
 
+<p>Build an <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>a model that must meet the requirements of <a class="el" href="group__abc.html">abc</a> 'GenerativeModel' </td></tr>
+    <tr><td class="paramname">prior</td><td>a prior distribution that must meet the requirements of <a class="el" href="group__abc.html">abc</a> 'PriorDistribution'</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an <a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> object.</dd></dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

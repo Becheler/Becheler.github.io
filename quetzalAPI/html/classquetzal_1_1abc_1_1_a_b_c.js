@@ -1,9 +1,13 @@
 var classquetzal_1_1abc_1_1_a_b_c =
 [
-    [ "ABC", "classquetzal_1_1abc_1_1_a_b_c_a9d4920502fab5903ba20d8bf078ee623.html#a9d4920502fab5903ba20d8bf078ee623", null ],
-    [ "pritchard_rejection_sampler", "classquetzal_1_1abc_1_1_a_b_c_ad8be44a1de7c4a0e3afedcaa7ac3dbfd.html#ad8be44a1de7c4a0e3afedcaa7ac3dbfd", null ],
-    [ "pritchard_rejection_sampler", "classquetzal_1_1abc_1_1_a_b_c_aa35fcaf55609c441c936849bc90db9c7.html#aa35fcaf55609c441c936849bc90db9c7", null ],
-    [ "rubin_rejection_sampler", "classquetzal_1_1abc_1_1_a_b_c_a88ac2d30591554e12eeec5c048d6fba3.html#a88ac2d30591554e12eeec5c048d6fba3", null ],
-    [ "sample_prior_predictive_distribution", "classquetzal_1_1abc_1_1_a_b_c_a657231748fd215993eef98a20db70209.html#a657231748fd215993eef98a20db70209", null ],
-    [ "sample_prior_predictive_distribution", "classquetzal_1_1abc_1_1_a_b_c_afbd4df8a02cb4ea39c0a11bec34cf37d.html#afbd4df8a02cb4ea39c0a11bec34cf37d", null ]
+    [ "model_type", "classquetzal_1_1abc_1_1_a_b_c_a4b1591982f5bf59b0d0cb9ed191f1ee1.html#a4b1591982f5bf59b0d0cb9ed191f1ee1", null ],
+    [ "param_type", "classquetzal_1_1abc_1_1_a_b_c_adae41dc52f4540ccd3437db80966f419.html#adae41dc52f4540ccd3437db80966f419", null ],
+    [ "prior_type", "classquetzal_1_1abc_1_1_a_b_c_a9355a52ccd6fd7abf952c07f4212ec28.html#a9355a52ccd6fd7abf952c07f4212ec28", null ],
+    [ "simulated_data_type", "classquetzal_1_1abc_1_1_a_b_c_a7ad3d31e8c364de14135c9f67eb61df7.html#a7ad3d31e8c364de14135c9f67eb61df7", null ],
+    [ "ABC", "classquetzal_1_1abc_1_1_a_b_c_aa305d85417d07db5ada8b65e5315190a.html#aa305d85417d07db5ada8b65e5315190a", null ],
+    [ "pritchard_rejection_sampler", "classquetzal_1_1abc_1_1_a_b_c_a55ab0b81ed7f2f86a3f51fe0741d36e2.html#a55ab0b81ed7f2f86a3f51fe0741d36e2", null ],
+    [ "pritchard_rejection_sampler", "classquetzal_1_1abc_1_1_a_b_c_aa477f0ce5fbb40d26ad43bcd567314ca.html#aa477f0ce5fbb40d26ad43bcd567314ca", null ],
+    [ "rubin_rejection_sampler", "classquetzal_1_1abc_1_1_a_b_c_a580546045e0582e68c47f8f0a0ea8475.html#a580546045e0582e68c47f8f0a0ea8475", null ],
+    [ "sample_prior_predictive_distribution", "classquetzal_1_1abc_1_1_a_b_c_a8aa3e9b33d31c9903d5450850849fe67.html#a8aa3e9b33d31c9903d5450850849fe67", null ],
+    [ "sample_prior_predictive_distribution", "classquetzal_1_1abc_1_1_a_b_c_a272a4ac9869cde2280e22fec1eaf3ced.html#a272a4ac9869cde2280e22fec1eaf3ced", null ]
 ];

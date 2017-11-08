@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QUETZAL: quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt; Class Template Reference</title>
+<title>QUETZAL: quetzal::abc::ABC&lt; ModelType, PriorType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,10 +92,11 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c.html',''
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classquetzal_1_1abc_1_1_a_b_c-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__abc.html">abc</a></div></div>  </div>
+<div class="title">quetzal::abc::ABC&lt; ModelType, PriorType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__abc.html">abc</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -104,32 +105,57 @@ $(document).ready(function(){initNavTree('classquetzal_1_1abc_1_1_a_b_c.html',''
 
 <p><code>#include &lt;<a class="el" href="modules_2abc_2abc_8h_source.html">abc.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4b1591982f5bf59b0d0cb9ed191f1ee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a4b1591982f5bf59b0d0cb9ed191f1ee1.html#a4b1591982f5bf59b0d0cb9ed191f1ee1">model_type</a> = ModelType</td></tr>
+<tr class="separator:a4b1591982f5bf59b0d0cb9ed191f1ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae41dc52f4540ccd3437db80966f419"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_adae41dc52f4540ccd3437db80966f419.html#adae41dc52f4540ccd3437db80966f419">param_type</a> = typename model_type::param_type</td></tr>
+<tr class="separator:adae41dc52f4540ccd3437db80966f419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad3d31e8c364de14135c9f67eb61df7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a7ad3d31e8c364de14135c9f67eb61df7.html#a7ad3d31e8c364de14135c9f67eb61df7">simulated_data_type</a> = typename model_type::return_type</td></tr>
+<tr class="separator:a7ad3d31e8c364de14135c9f67eb61df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9355a52ccd6fd7abf952c07f4212ec28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a9355a52ccd6fd7abf952c07f4212ec28.html#a9355a52ccd6fd7abf952c07f4212ec28">prior_type</a> = PriorType</td></tr>
+<tr class="separator:a9355a52ccd6fd7abf952c07f4212ec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d4920502fab5903ba20d8bf078ee623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a9d4920502fab5903ba20d8bf078ee623.html#a9d4920502fab5903ba20d8bf078ee623">ABC</a> (model_type const &amp;m, priors_type const &amp;p)</td></tr>
-<tr class="separator:a9d4920502fab5903ba20d8bf078ee623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ac2d30591554e12eeec5c048d6fba3"><td class="memTemplParams" colspan="2">template&lt;class ObsType , typename Generator &gt; </td></tr>
-<tr class="memitem:a88ac2d30591554e12eeec5c048d6fba3"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; param_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a88ac2d30591554e12eeec5c048d6fba3.html#a88ac2d30591554e12eeec5c048d6fba3">rubin_rejection_sampler</a> (unsigned int N, ObsType const &amp;observed_data, Generator &amp;g) const </td></tr>
-<tr class="separator:a88ac2d30591554e12eeec5c048d6fba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8be44a1de7c4a0e3afedcaa7ac3dbfd"><td class="memTemplParams" colspan="2">template&lt;class ObsType , class RhoType , class EtaType , class T , class Generator &gt; </td></tr>
-<tr class="memitem:ad8be44a1de7c4a0e3afedcaa7ac3dbfd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; param_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_ad8be44a1de7c4a0e3afedcaa7ac3dbfd.html#ad8be44a1de7c4a0e3afedcaa7ac3dbfd">pritchard_rejection_sampler</a> (unsigned int N, ObsType const &amp;y, RhoType const &amp;rho, T const &amp;epsilon, Generator &amp;g, EtaType const &amp;eta) const </td></tr>
-<tr class="separator:ad8be44a1de7c4a0e3afedcaa7ac3dbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa35fcaf55609c441c936849bc90db9c7"><td class="memTemplParams" colspan="2">template&lt;class ObsType , class RhoType , class T , class Generator &gt; </td></tr>
-<tr class="memitem:aa35fcaf55609c441c936849bc90db9c7"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; param_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_aa35fcaf55609c441c936849bc90db9c7.html#aa35fcaf55609c441c936849bc90db9c7">pritchard_rejection_sampler</a> (unsigned int N, ObsType const &amp;y, RhoType const &amp;rho, T const &amp;epsilon, Generator &amp;g) const </td></tr>
-<tr class="separator:aa35fcaf55609c441c936849bc90db9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657231748fd215993eef98a20db70209"><td class="memTemplParams" colspan="2">template&lt;class EtaType , typename Generator &gt; </td></tr>
-<tr class="memitem:a657231748fd215993eef98a20db70209"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a657231748fd215993eef98a20db70209.html#a657231748fd215993eef98a20db70209">sample_prior_predictive_distribution</a> (unsigned int N, Generator &amp;g, EtaType const &amp;eta) const </td></tr>
-<tr class="separator:a657231748fd215993eef98a20db70209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd4df8a02cb4ea39c0a11bec34cf37d"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
-<tr class="memitem:afbd4df8a02cb4ea39c0a11bec34cf37d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_afbd4df8a02cb4ea39c0a11bec34cf37d.html#afbd4df8a02cb4ea39c0a11bec34cf37d">sample_prior_predictive_distribution</a> (unsigned int N, Generator &amp;g) const </td></tr>
-<tr class="separator:afbd4df8a02cb4ea39c0a11bec34cf37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa305d85417d07db5ada8b65e5315190a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_aa305d85417d07db5ada8b65e5315190a.html#aa305d85417d07db5ada8b65e5315190a">ABC</a> (<a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a4b1591982f5bf59b0d0cb9ed191f1ee1.html#a4b1591982f5bf59b0d0cb9ed191f1ee1">model_type</a> const &amp;m, <a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a9355a52ccd6fd7abf952c07f4212ec28.html#a9355a52ccd6fd7abf952c07f4212ec28">prior_type</a> const &amp;p)</td></tr>
+<tr class="memdesc:aa305d85417d07db5ada8b65e5315190a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classquetzal_1_1abc_1_1_a_b_c_aa305d85417d07db5ada8b65e5315190a.html#aa305d85417d07db5ada8b65e5315190a">More...</a><br /></td></tr>
+<tr class="separator:aa305d85417d07db5ada8b65e5315190a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580546045e0582e68c47f8f0a0ea8475"><td class="memTemplParams" colspan="2">template&lt;class ObservedDataType , typename Generator &gt; </td></tr>
+<tr class="memitem:a580546045e0582e68c47f8f0a0ea8475"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c_adae41dc52f4540ccd3437db80966f419.html#adae41dc52f4540ccd3437db80966f419">param_type</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a580546045e0582e68c47f8f0a0ea8475.html#a580546045e0582e68c47f8f0a0ea8475">rubin_rejection_sampler</a> (unsigned int N, ObservedDataType const &amp;y, Generator &amp;g) const </td></tr>
+<tr class="memdesc:a580546045e0582e68c47f8f0a0ea8475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rubin (1984) likelyhood-free rejection sampler.  <a href="classquetzal_1_1abc_1_1_a_b_c_a580546045e0582e68c47f8f0a0ea8475.html#a580546045e0582e68c47f8f0a0ea8475">More...</a><br /></td></tr>
+<tr class="separator:a580546045e0582e68c47f8f0a0ea8475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ab0b81ed7f2f86a3f51fe0741d36e2"><td class="memTemplParams" colspan="2">template&lt;class ObservedDataType , class DistanceType , class StatisticsType , class T , class Generator &gt; </td></tr>
+<tr class="memitem:a55ab0b81ed7f2f86a3f51fe0741d36e2"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c_adae41dc52f4540ccd3437db80966f419.html#adae41dc52f4540ccd3437db80966f419">param_type</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a55ab0b81ed7f2f86a3f51fe0741d36e2.html#a55ab0b81ed7f2f86a3f51fe0741d36e2">pritchard_rejection_sampler</a> (unsigned int N, ObservedDataType const &amp;y, StatisticsType const &amp;eta, DistanceType const &amp;rho, T const &amp;epsilon, Generator &amp;g) const </td></tr>
+<tr class="memdesc:a55ab0b81ed7f2f86a3f51fe0741d36e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pritchard &amp; al (1999) likelyhood free rejection sampler.  <a href="classquetzal_1_1abc_1_1_a_b_c_a55ab0b81ed7f2f86a3f51fe0741d36e2.html#a55ab0b81ed7f2f86a3f51fe0741d36e2">More...</a><br /></td></tr>
+<tr class="separator:a55ab0b81ed7f2f86a3f51fe0741d36e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa477f0ce5fbb40d26ad43bcd567314ca"><td class="memTemplParams" colspan="2">template&lt;class ObservedDataType , class DistanceType , class T , class Generator &gt; </td></tr>
+<tr class="memitem:aa477f0ce5fbb40d26ad43bcd567314ca"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classquetzal_1_1abc_1_1_a_b_c_adae41dc52f4540ccd3437db80966f419.html#adae41dc52f4540ccd3437db80966f419">param_type</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_aa477f0ce5fbb40d26ad43bcd567314ca.html#aa477f0ce5fbb40d26ad43bcd567314ca">pritchard_rejection_sampler</a> (unsigned int N, ObservedDataType const &amp;y, DistanceType const &amp;rho, T const &amp;epsilon, Generator &amp;g) const </td></tr>
+<tr class="memdesc:aa477f0ce5fbb40d26ad43bcd567314ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pritchard &amp; al (1999) likelyhood free rejection sampler.  <a href="classquetzal_1_1abc_1_1_a_b_c_aa477f0ce5fbb40d26ad43bcd567314ca.html#aa477f0ce5fbb40d26ad43bcd567314ca">More...</a><br /></td></tr>
+<tr class="separator:aa477f0ce5fbb40d26ad43bcd567314ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa3e9b33d31c9903d5450850849fe67"><td class="memTemplParams" colspan="2">template&lt;class StatisticsType , typename Generator &gt; </td></tr>
+<tr class="memitem:a8aa3e9b33d31c9903d5450850849fe67"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a8aa3e9b33d31c9903d5450850849fe67.html#a8aa3e9b33d31c9903d5450850849fe67">sample_prior_predictive_distribution</a> (unsigned int N, StatisticsType const &amp;eta, Generator &amp;g) const </td></tr>
+<tr class="memdesc:a8aa3e9b33d31c9903d5450850849fe67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generation of reference table from prior predictive distribution.  <a href="classquetzal_1_1abc_1_1_a_b_c_a8aa3e9b33d31c9903d5450850849fe67.html#a8aa3e9b33d31c9903d5450850849fe67">More...</a><br /></td></tr>
+<tr class="separator:a8aa3e9b33d31c9903d5450850849fe67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272a4ac9869cde2280e22fec1eaf3ced"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:a272a4ac9869cde2280e22fec1eaf3ced"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1abc_1_1_a_b_c_a272a4ac9869cde2280e22fec1eaf3ced.html#a272a4ac9869cde2280e22fec1eaf3ced">sample_prior_predictive_distribution</a> (unsigned int N, Generator &amp;g) const </td></tr>
+<tr class="memdesc:a272a4ac9869cde2280e22fec1eaf3ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generation of reference table from prior predictive distribution.  <a href="classquetzal_1_1abc_1_1_a_b_c_a272a4ac9869cde2280e22fec1eaf3ced.html#a272a4ac9869cde2280e22fec1eaf3ced">More...</a><br /></td></tr>
+<tr class="separator:a272a4ac9869cde2280e22fec1eaf3ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class ModelType, class ParametersJointDistributionType&gt;<br />
-class quetzal::abc::ABC&lt; ModelType, ParametersJointDistributionType &gt;</h3>
+<div class="textblock"><h3>template&lt;class ModelType, class PriorType&gt;<br />
+class quetzal::abc::ABC&lt; ModelType, PriorType &gt;</h3>
 
 <p><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> object for Approximate Bayesian Computations. </p>
-<p>Associates a generative (simulation) model with a possibly multidimensional prior distribution to sample the prior predictive distribution sampling by constituting a reference table, or using samplers for estimating the posterior distribution based on some observed data. Simulation models are abstracted to the concept of <a class="el" href="group__abc.html">GenerativeModel</a>.</p>
+<p>Associates a generative (simulation) model with a possibly multidimensional prior distribution.</p>
+<p>Simulation models are abstracted to the concept of <a class="el" href="group__abc.html">GenerativeModel</a>. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ModelType</td><td>a type that meets the requirements of <a class="el" href="group__abc.html">GenerativeModel</a>. </td></tr>
+    <tr><td class="paramname">PriorType</td><td>a type that meets the requirements of <a class="el" href="group__abc.html">PriorDistribution</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd><a class="el" href="classquetzal_1_1abc_1_1_a_b_c.html" title="ABC object for Approximate Bayesian Computations. ">ABC</a> objects can be used with the helper function <code>make_ABC</code></dd></dl>
 <h1><a class="anchor" id="Example"></a>
 Example</h1>
 <div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>

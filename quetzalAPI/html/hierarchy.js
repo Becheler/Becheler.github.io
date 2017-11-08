@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "quetzal::abc::ABC< ModelType, ParametersJointDistributionType >", "classquetzal_1_1abc_1_1_a_b_c.html", null ],
+    [ "quetzal::abc::ABC< ModelType, PriorType >", "classquetzal_1_1abc_1_1_a_b_c.html", null ],
     [ "quetzal::genetics::Allele< Value >", "classquetzal_1_1genetics_1_1_allele.html", null ],
     [ "quetzal::coalescence::BinaryMerger", "structquetzal_1_1coalescence_1_1_binary_merger.html", null ],
     [ "quetzal::expressive::Callable_traits< Callable >", "structquetzal_1_1expressive_1_1_callable__traits.html", null ],

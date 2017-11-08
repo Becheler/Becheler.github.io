@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"structquetzal_1_1expressive_1_1literal__t_aa92504f308bbc693bb82c127440554a9.html#aa92504f308bbc693bb82c127440554a9":[3,0,1,3,14,2],
+"structquetzal_1_1expressive_1_1literal__t_adfb186e242dcfee726cfc9c025c6e8d1.html#adfb186e242dcfee726cfc9c025c6e8d1":[3,0,1,3,14,1],
+"structquetzal_1_1expressive_1_1make__expression__t.html":[3,0,1,3,15],
+"structquetzal_1_1expressive_1_1make__expression__t_a484b3efb2559f59ff97c56acf821aa94.html#a484b3efb2559f59ff97c56acf821aa94":[3,0,1,3,15,0],
 "structquetzal_1_1expressive_1_1make__expression__t_a735ffd10e4d90c099c40a9c80f8558cf.html#a735ffd10e4d90c099c40a9c80f8558cf":[3,0,1,3,15,1],
 "structquetzal_1_1expressive_1_1make__expression__t_a74ec448c4f6bd2fdf107f806e5761106.html#a74ec448c4f6bd2fdf107f806e5761106":[3,0,1,3,15,3],
 "structquetzal_1_1expressive_1_1make__expression__t_a833b6c4b96811eaa60c9f8a18c19db83.html#a833b6c4b96811eaa60c9f8a18c19db83":[3,0,1,3,15,2],

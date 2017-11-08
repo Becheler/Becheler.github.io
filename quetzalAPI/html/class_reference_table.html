@@ -143,6 +143,40 @@ class ReferenceTable&lt; Cont, ParamType, DataType &gt;</h3>
 
 <p>Reference table produced by ABC sampling procedures in the prior predictive distribution. </p>
 <p>In some ABC procedures, a parameter \(\theta\) is generated from the prior \(\pi(\theta)\), a data \(z\) is simulated from the likelyhood and a dimension reduction function \(\eta\) is computed on \(z\). The set of simulated statistics is called the reference table.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ParamType</td><td>the parameter type. </td></tr>
+    <tr><td class="paramname">DataType</td><td>the type of the data generated. </td></tr>
+    <tr><td class="paramname">Cont</td><td>the type wrapping the couple parameter and the data value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The template parameter Cont must meet the following requirements:</p>
+<ul>
+<li><code>Cont</code> satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyConstructible">CopyConstructible</a></li>
+<li><code>Cont</code> satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyAssignable">CopyAssignable</a></li>
+</ul>
+<p>Given</p>
+<ul>
+<li><code>T</code>, the type named by <code>Cont::data_type</code></li>
+<li><code>P</code>, the type named by <code>Cont::param_type</code>, which:</li>
+<li><code>s</code>, a value of type <code>Cont</code></li>
+<li><code>x</code>, a value of type <code>T</code></li>
+<li><code>p</code>, a value of type <code>P</code></li>
+</ul>
+<p>The following expressions must be valid and have their specified effects :</p>
+<table class="doxtable">
+<tr>
+<th>Expression </th><th>Type </th><th>Notes  </th></tr>
+<tr>
+<td><code>Cont::data_type</code> </td><td><code>T</code> </td><td>the type of the simulated data </td></tr>
+<tr>
+<td><code>Cont::param_type</code> </td><td><code>P</code> </td><td>the type of the parameter </td></tr>
+<tr>
+<td><code>s.data()</code> </td><td><code>T</code> </td><td>Returns the simulated data </td></tr>
+<tr>
+<td><code>s.param()</code> </td><td><code>P</code> </td><td>Returns the parameter used for simulating the data </td></tr>
+</table>
 <h1><a class="anchor" id="Example"></a>
 Example</h1>
 <div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;random&gt;</span>    <span class="comment">// std::poisson_distribution, std::uniform_real_distribution</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">// std::endl</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a class="code" href="pritchard__identity__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> () {</div><div class="line"></div><div class="line">  <span class="keyword">using</span> data_type = <span class="keywordtype">unsigned</span> int;</div><div class="line">  <span class="keyword">using</span> model_type = std::poisson_distribution&lt;data_type&gt;;</div><div class="line"></div><div class="line">  std::mt19937 g;</div><div class="line"></div><div class="line">  model_type model;</div><div class="line"></div><div class="line">  std::uniform_real_distribution&lt;double&gt; prior_on_lambda(1.,100.);</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> abc = <a class="code" href="group__abc_ga3bc932cd81941359d2d800b45df064f4.html#ga3bc932cd81941359d2d800b45df064f4">quetzal::abc::make_ABC</a>(model, prior_on_lambda);</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> reference_table = abc.sample_prior_predictive_distribution(30, g);</div><div class="line"></div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Reference Table generated :\n\nlambda\tdata&quot;</span> &lt;&lt; std::endl;</div><div class="line">  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; it : reference_table){</div><div class="line">    std::cout &lt;&lt; it.param().mean() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; it.data() &lt;&lt; std::endl;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div></div><!-- fragment --><h1><a class="anchor" id="Output"></a>

@@ -16,6 +16,8 @@ var searchData=
   ['pre_5forder_5fdfs_5ftest_2ecpp',['pre_order_DFS_test.cpp',['../pre__order___d_f_s__test_8cpp.html',1,'']]],
   ['prepare_5fedit',['prepare_edit',['../classgdalcpp_1_1_dataset_a514db9a24b2cfa7e566dc91d9c376350.html#a514db9a24b2cfa7e566dc91d9c376350',1,'gdalcpp::Dataset']]],
   ['prior_5ftype',['prior_type',['../classquetzal_1_1abc_1_1_a_b_c_a9355a52ccd6fd7abf952c07f4212ec28.html#a9355a52ccd6fd7abf952c07f4212ec28',1,'quetzal::abc::ABC']]],
+  ['pritchard_5fidentity_5ftest_2ecpp',['pritchard_identity_test.cpp',['../pritchard__identity__test_8cpp.html',1,'']]],
   ['pritchard_5frejection_5fsampler',['pritchard_rejection_sampler',['../classquetzal_1_1abc_1_1_a_b_c_a55ab0b81ed7f2f86a3f51fe0741d36e2.html#a55ab0b81ed7f2f86a3f51fe0741d36e2',1,'quetzal::abc::ABC::pritchard_rejection_sampler(unsigned int N, ObservedDataType const &amp;y, StatisticsType const &amp;eta, DistanceType const &amp;rho, T const &amp;epsilon, Generator &amp;g) const '],['../classquetzal_1_1abc_1_1_a_b_c_aa477f0ce5fbb40d26ad43bcd567314ca.html#aa477f0ce5fbb40d26ad43bcd567314ca',1,'quetzal::abc::ABC::pritchard_rejection_sampler(unsigned int N, ObservedDataType const &amp;y, DistanceType const &amp;rho, T const &amp;epsilon, Generator &amp;g) const ']]],
+  ['pritchard_5ftest_2ecpp',['pritchard_test.cpp',['../pritchard__test_8cpp.html',1,'']]],
   ['push_5fback',['push_back',['../class_reference_table_ab1925e7529f91e17fa629448fe280425.html#ab1925e7529f91e17fa629448fe280425',1,'ReferenceTable::push_back(Cont&lt; ParamType, DataType &gt; const &amp;sample)'],['../class_reference_table_ad55a63434d609553ac4e2b7156c550eb.html#ad55a63434d609553ac4e2b7156c550eb',1,'ReferenceTable::push_back(Cont&lt; ParamType, DataType &gt; &amp;&amp;sample)']]]
 ];

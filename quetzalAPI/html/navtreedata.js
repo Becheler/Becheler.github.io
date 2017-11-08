@@ -39,7 +39,7 @@ var NAVTREEINDEX =
 "_allele_8h.html",
 "classquetzal_1_1genetics_1_1_diploid_individual_a1ced9feb3dda30b6fe4b403ca86f82f4.html#a1ced9feb3dda30b6fe4b403ca86f82f4",
 "group__coal__algorithms_ga58ed2931bdac16146460718751d8647c.html#ga58ed2931bdac16146460718751d8647c",
-"structquetzal_1_1expressive_1_1literal__t_aa92504f308bbc693bb82c127440554a9.html#aa92504f308bbc693bb82c127440554a9"
+"structquetzal_1_1expressive_1_1composite__functor_aeb0f6e8cec2a250b37729288cd2167ff.html#aeb0f6e8cec2a250b37729288cd2167ff"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

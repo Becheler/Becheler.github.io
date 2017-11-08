@@ -139,12 +139,12 @@ template&lt;class StatisticsType , typename Generator &gt; </div>
 </div><div class="memdoc">
 
 <p>Generation of reference table from prior predictive distribution. </p>
-<p>A parameter \(\theta\) is generated from the prior \(\pi(\theta)\), a data \(z\) is simulated from the likelyhood and a dimension reduction function \(eta\) is computed on \(z\). The set of simulated statistics is called the reference table.</p>
+<p>A parameter \(\theta\) is generated from the prior \(\pi(\theta)\), a data \(z\) is simulated from the likelyhood and a dimension reduction function \(\eta\) is computed on \(z\). The set of simulated statistics is called the reference table.</p>
 <p>See Algorithm 1 in <a href="https://arxiv.org/abs/1605.05537">ABC Random Forests for Bayesian Parameter Inference (Marin et al 2016)</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">N</td><td>the number of parameters to accept. </td></tr>
-    <tr><td class="paramname">eta</td><td>a function \(eta\) on \(D\) defining a statistics (sufficient or not). </td></tr>
+    <tr><td class="paramname">eta</td><td>a function \(\eta\) on \(D\) defining a statistics (sufficient or not). </td></tr>
     <tr><td class="paramname">g</td><td>a random generator that must meet the requirements of UniformRandomBitGenerator concept.</td></tr>
   </table>
   </dd>

@@ -1,5 +1,6 @@
 var dir_7a530fcd76992b240c6a9d220f470266 =
 [
+    [ "documentation", "dir_6b73199a94c34bc35836b02c35b0ca28.html", "dir_6b73199a94c34bc35836b02c35b0ca28" ],
     [ "modules", "dir_452d8c588a01d0d9b6358ca147e46c83.html", "dir_452d8c588a01d0d9b6358ca147e46c83" ],
     [ "abc.h", "abc_8h.html", null ],
     [ "coalescence.h", "coalescence_8h.html", null ],

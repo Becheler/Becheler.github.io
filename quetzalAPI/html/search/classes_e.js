@@ -1,8 +1,19 @@
 var searchData=
 [
-  ['simultaneousmultiplemerger',['SimultaneousMultipleMerger',['../structquetzal_1_1coalescence_1_1_simultaneous_multiple_merger.html',1,'quetzal::coalescence']]],
-  ['spatialgeneticsample',['SpatialGeneticSample',['../classquetzal_1_1genetics_1_1_spatial_genetic_sample.html',1,'quetzal::genetics']]],
-  ['spatialgeneticsample_3c_20coord_5ftype_2c_20quetzal_3a_3agenetics_3a_3adiploidindividual_20_3e',['SpatialGeneticSample&lt; coord_type, quetzal::genetics::DiploidIndividual &gt;',['../classquetzal_1_1genetics_1_1_spatial_genetic_sample.html',1,'quetzal::genetics']]],
-  ['srs',['SRS',['../classgdalcpp_1_1_s_r_s.html',1,'gdalcpp']]],
-  ['symetric_5fbinop_5ft',['symetric_binop_t',['../structquetzal_1_1expressive_1_1symetric__binop__t.html',1,'quetzal::expressive']]]
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law_1_1param__type.html',1,'quetzal::demography::dispersal::UndefinedInversePowerLaw']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_exponential_power_1_1param__type.html',1,'quetzal::demography::dispersal::ExponentialPower']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_two_dt_1_1param__type.html',1,'quetzal::demography::dispersal::TwoDt']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_gaussian_1_1param__type.html',1,'quetzal::demography::dispersal::Gaussian']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type.html',1,'quetzal::demography::dispersal::GaussianMixture']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_logistic_1_1param__type.html',1,'quetzal::demography::dispersal::Logistic']]],
+  ['param_5ftype',['param_type',['../class_gaussian_1_1param__type.html',1,'Gaussian']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_inverse_power_law_1_1param__type.html',1,'quetzal::demography::dispersal::InversePowerLaw']]],
+  ['param_5ftype',['param_type',['../class_logistic_1_1param__type.html',1,'Logistic']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_lognormal_1_1param__type.html',1,'quetzal::demography::dispersal::Lognormal']]],
+  ['param_5ftype',['param_type',['../classquetzal_1_1demography_1_1dispersal_1_1_negative_exponential_1_1param__type.html',1,'quetzal::demography::dispersal::NegativeExponential']]],
+  ['param_5ftype',['param_type',['../class_demonstration_model_1_1param__type.html',1,'DemonstrationModel']]],
+  ['partitioner',['Partitioner',['../classfuzzy__transfer__distance_1_1_partitioner.html',1,'fuzzy_transfer_distance']]],
+  ['populationflux',['PopulationFlux',['../classquetzal_1_1demography_1_1_population_flux.html',1,'quetzal::demography']]],
+  ['populationsize',['PopulationSize',['../classquetzal_1_1demography_1_1_population_size.html',1,'quetzal::demography']]],
+  ['prior',['Prior',['../struct_prior.html',1,'']]]
 ];

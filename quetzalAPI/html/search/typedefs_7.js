@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['key_5ftype',['key_type',['../classquetzal_1_1geography_1_1_discrete_landscape_a24dae2e408f1448b21ba4f679182b516.html#a24dae2e408f1448b21ba4f679182b516',1,'quetzal::geography::DiscreteLandscape']]],
-  ['km',['km',['../classquetzal_1_1geography_1_1_geographic_coordinates_a737a7055dc61e2426181d33f73b629fc.html#a737a7055dc61e2426181d33f73b629fc',1,'quetzal::geography::GeographicCoordinates']]]
+  ['history_5ftype',['history_type',['../class_demonstration_model_ae04e6e7556ed5ff8aa574ba24660d7be.html#ae04e6e7556ed5ff8aa574ba24660d7be',1,'DemonstrationModel::history_type()'],['../class_demonstration_model_ae04e6e7556ed5ff8aa574ba24660d7be.html#ae04e6e7556ed5ff8aa574ba24660d7be',1,'DemonstrationModel::history_type()'],['../classquetzal_1_1simulators_1_1_i_d_d_c__model__1_ad953b762fa1dee42af95ddeae72be8fc.html#ad953b762fa1dee42af95ddeae72be8fc',1,'quetzal::simulators::IDDC_model_1::history_type()']]]
 ];

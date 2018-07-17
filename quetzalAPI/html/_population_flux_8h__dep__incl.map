@@ -1,5 +1,9 @@
 <map id="quetzal/modules/demography/PopulationFlux.h" name="quetzal/modules/demography/PopulationFlux.h">
-<area shape="rect" id="node2" href="$demography_8h.html" title="quetzal/demography.h" alt="" coords="5,109,156,136"/>
-<area shape="rect" id="node4" href="$_population_flux__test_8cpp.html" title="quetzal/modules/demography\l/test/PopulationFlux/Population\lFlux_test.cpp" alt="" coords="181,95,383,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="20,199,141,225"/>
+<area shape="rect" id="node2" href="$demography_8h.html" title="quetzal/demography.h" alt="" coords="353,109,503,136"/>
+<area shape="rect" id="node8" href="$_population_flux__test_8cpp.html" title="quetzal/modules/demography\l/test/PopulationFlux/Population\lFlux_test.cpp" alt="" coords="528,95,731,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="367,199,489,225"/>
+<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/code_examples/example1.cpp" alt="" coords="5,288,208,329"/>
+<area shape="rect" id="node5" href="$landscape__invasion_2main_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/main.cpp" alt="" coords="233,281,413,337"/>
+<area shape="rect" id="node6" href="$main__simultaneous__loci_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/main_simultaneous\l_loci.cpp" alt="" coords="437,273,630,344"/>
+<area shape="rect" id="node7" href="$two__demes_2main_8cpp.html" title="quetzal/documentation\l/code_examples/two_demes\l/main.cpp" alt="" coords="654,281,842,337"/>
 </map>

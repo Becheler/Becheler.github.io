@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['referencetable',['ReferenceTable',['../class_reference_table.html',1,'']]],
-  ['resolution',['Resolution',['../classquetzal_1_1geography_1_1_resolution.html',1,'quetzal::geography']]],
-  ['resolution_3c_20decimal_5fdegree_20_3e',['Resolution&lt; decimal_degree &gt;',['../classquetzal_1_1geography_1_1_resolution.html',1,'quetzal::geography']]],
-  ['retrievelastemptyurns',['RetrieveLastEmptyUrns',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_retrieve_last_empty_urns.html',1,'quetzal::coalescence::occupancy_spectrum']]],
-  ['returnalwaystrue',['ReturnAlwaysTrue',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_return_always_true.html',1,'quetzal::coalescence::occupancy_spectrum']]]
+  ['occupancyspectrumdistribution',['OccupancySpectrumDistribution',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html',1,'quetzal::coalescence::occupancy_spectrum']]],
+  ['on_5fthe_5ffly',['on_the_fly',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html',1,'quetzal::coalescence::occupancy_spectrum']]],
+  ['options',['Options',['../structgdalcpp_1_1detail_1_1_options.html',1,'gdalcpp::detail']]]
 ];

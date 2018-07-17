@@ -1,6 +1,9 @@
 var searchData=
 [
   ['detail',['detail',['../namespacegdalcpp_1_1detail.html',1,'gdalcpp']]],
+  ['gaussian',['Gaussian',['../struct_gaussian.html',1,'']]],
+  ['gaussian',['Gaussian',['../structquetzal_1_1demography_1_1dispersal_1_1_gaussian.html',1,'quetzal::demography::dispersal']]],
+  ['gaussianmixture',['GaussianMixture',['../structquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture.html',1,'quetzal::demography::dispersal']]],
   ['gdal_5fdataset_5ftype',['gdal_dataset_type',['../namespacegdalcpp_a16ca0d44964c7c49d949d466541f17d9.html#a16ca0d44964c7c49d949d466541f17d9',1,'gdalcpp']]],
   ['gdal_5fdriver_5ftype',['gdal_driver_type',['../namespacegdalcpp_a2b5a6d9930eaa0ddd70f732bffc3997d.html#a2b5a6d9930eaa0ddd70f732bffc3997d',1,'gdalcpp']]],
   ['gdal_5ferror',['gdal_error',['../classgdalcpp_1_1gdal__error.html',1,'gdalcpp']]],
@@ -9,9 +12,11 @@ var searchData=
   ['gdalcpp_2eh',['gdalcpp.h',['../gdalcpp_8h.html',1,'']]],
   ['gdalcpp_5ftest_2ecpp',['gdalcpp_test.cpp',['../gdalcpp__test_8cpp.html',1,'']]],
   ['generate',['generate',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator_af4b187154cd2717e86328c98eb873477.html#af4b187154cd2717e86328c98eb873477',1,'quetzal::coalescence::occupancy_spectrum::Generator']]],
+  ['generativemodel',['GenerativeModel',['../class_generative_model.html',1,'GenerativeModel'],['../class_generative_model_a9c43018a537d56f8cb1298d802c61bc1.html#a9c43018a537d56f8cb1298d802c61bc1',1,'GenerativeModel::GenerativeModel(const landscape_type &amp;landscape, dataset_type dataset, locus_ID_type locus)'],['../class_generative_model_a2241ec974938df18325766a3d3fd4383.html#a2241ec974938df18325766a3d3fd4383',1,'GenerativeModel::GenerativeModel(const landscape_type &amp;landscape, dataset_type dataset)']]],
   ['generator',['Generator',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator.html',1,'quetzal::coalescence::occupancy_spectrum']]],
   ['generator_2eh',['Generator.h',['../_generator_8h.html',1,'']]],
   ['generator_5ftest_2ecpp',['Generator_test.cpp',['../_generator__test_8cpp.html',1,'']]],
+  ['generator_5ftype',['generator_type',['../class_demonstration_model_a3a9dd2136d9f8ad0b3f50a126df29cff.html#a3a9dd2136d9f8ad0b3f50a126df29cff',1,'DemonstrationModel::generator_type()'],['../struct_wrapper_ad6c763ead7593b11d0fc1f93760b63d4.html#ad6c763ead7593b11d0fc1f93760b63d4',1,'Wrapper::generator_type()'],['../struct_wrapper_a4fa8a9fb08b4abb3e8c84f90cf18c1f0.html#a4fa8a9fb08b4abb3e8c84f90cf18c1f0',1,'Wrapper::generator_type()'],['../class_demonstration_model_a3a9dd2136d9f8ad0b3f50a126df29cff.html#a3a9dd2136d9f8ad0b3f50a126df29cff',1,'DemonstrationModel::generator_type()'],['../class_generative_model_ada7374e3bb2ad9b6966141c9712d5486.html#ada7374e3bb2ad9b6966141c9712d5486',1,'GenerativeModel::generator_type()'],['../struct_wrapper_aa3f3f21693c4a1e5c68674e896625a0b.html#aa3f3f21693c4a1e5c68674e896625a0b',1,'Wrapper::generator_type()'],['../class_generative_model_ada7374e3bb2ad9b6966141c9712d5486.html#ada7374e3bb2ad9b6966141c9712d5486',1,'GenerativeModel::generator_type()'],['../struct_wrapper_aa3f3f21693c4a1e5c68674e896625a0b.html#aa3f3f21693c4a1e5c68674e896625a0b',1,'Wrapper::generator_type()']]],
   ['genetics_2eh',['genetics.h',['../genetics_8h.html',1,'']]],
   ['geographic_5fdefinition_5fspace',['geographic_definition_space',['../classquetzal_1_1geography_1_1_discrete_landscape_aa12c7c2aa0d46efdda81043fe1a8770c.html#aa12c7c2aa0d46efdda81043fe1a8770c',1,'quetzal::geography::DiscreteLandscape::geographic_definition_space()'],['../classquetzal_1_1geography_1_1_environmental_quantity_a20c986b22bd1ba957fb77724009b99d8.html#a20c986b22bd1ba957fb77724009b99d8',1,'quetzal::geography::EnvironmentalQuantity::geographic_definition_space()']]],
   ['geographiccoordinates',['GeographicCoordinates',['../classquetzal_1_1geography_1_1_geographic_coordinates.html',1,'quetzal::geography']]],

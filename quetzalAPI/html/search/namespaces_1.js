@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['meta',['meta',['../namespacemeta.html',1,'']]]
+  ['detail',['detail',['../namespacegdalcpp_1_1detail.html',1,'gdalcpp']]],
+  ['gdalcpp',['gdalcpp',['../namespacegdalcpp.html',1,'']]]
 ];

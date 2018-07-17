@@ -1,7 +1,14 @@
 <map id="quetzal/modules/coalescence/containers/Forest.h" name="quetzal/modules/coalescence/containers/Forest.h">
-<area shape="rect" id="node2" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="5,109,157,136"/>
-<area shape="rect" id="node4" href="$_forest__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Forest\l/Forest_test.cpp" alt="" coords="181,95,376,151"/>
-<area shape="rect" id="node5" href="$coalescence_2containers_2test_2_forest_2initialization__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Forest\l/initialization_test.cpp" alt="" coords="400,95,595,151"/>
-<area shape="rect" id="node6" href="$insertion__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Forest\l/insertion_test.cpp" alt="" coords="619,95,813,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="21,199,142,225"/>
+<area shape="rect" id="node2" href="$coalescence_8h.html" title="quetzal/coalescence.h" alt="" coords="353,109,505,136"/>
+<area shape="rect" id="node8" href="$simulators_8h.html" title="quetzal/modules/simulator\l/simulators.h" alt="" coords="529,102,704,143"/>
+<area shape="rect" id="node11" href="$_forest__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Forest\l/Forest_test.cpp" alt="" coords="729,95,923,151"/>
+<area shape="rect" id="node12" href="$coalescence_2containers_2test_2_forest_2initialization__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Forest\l/initialization_test.cpp" alt="" coords="947,95,1142,151"/>
+<area shape="rect" id="node13" href="$insertion__test_8cpp.html" title="quetzal/modules/coalescence\l/containers/test/Forest\l/insertion_test.cpp" alt="" coords="1166,95,1361,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="377,213,499,240"/>
+<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/code_examples/example1.cpp" alt="" coords="210,317,413,359"/>
+<area shape="rect" id="node5" href="$landscape__invasion_2main_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/main.cpp" alt="" coords="5,310,185,366"/>
+<area shape="rect" id="node6" href="$main__simultaneous__loci_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/main_simultaneous\l_loci.cpp" alt="" coords="437,303,631,373"/>
+<area shape="rect" id="node7" href="$two__demes_2main_8cpp.html" title="quetzal/documentation\l/code_examples/two_demes\l/main.cpp" alt="" coords="655,310,843,366"/>
+<area shape="rect" id="node9" href="$_demonstration_model_8h.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/DemonstrationModel.h" alt="" coords="803,199,1015,255"/>
+<area shape="rect" id="node10" href="$cross__val_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/cross_val.cpp" alt="" coords="867,310,1047,366"/>
 </map>

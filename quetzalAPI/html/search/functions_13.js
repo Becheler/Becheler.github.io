@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['weights',['weights',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution_a0e7e99bb03da133e5d142fe1a4044176.html#a0e7e99bb03da133e5d142fe1a4044176',1,'quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution']]],
-  ['width',['width',['../classgdalcpp_1_1_dataset_a24ed406b36c81e437ea25cf2af85381b.html#a24ed406b36c81e437ea25cf2af85381b',1,'gdalcpp::Dataset']]]
+  ['unop_5ft',['unop_t',['../structquetzal_1_1expressive_1_1unop__t_a9a7f12901949ede6028d3594509a4e4d.html#a9a7f12901949ede6028d3594509a4e4d',1,'quetzal::expressive::unop_t']]],
+  ['use',['use',['../group__expressive_gacdec2cd4ec959709f7a1891702c4d5dd.html#gacdec2cd4ec959709f7a1891702c4d5dd',1,'quetzal::expressive']]]
 ];

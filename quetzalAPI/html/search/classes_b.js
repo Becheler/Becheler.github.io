@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['occupancyspectrumdistribution',['OccupancySpectrumDistribution',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html',1,'quetzal::coalescence::occupancy_spectrum']]],
-  ['on_5fthe_5ffly',['on_the_fly',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html',1,'quetzal::coalescence::occupancy_spectrum']]],
-  ['options',['Options',['../structgdalcpp_1_1detail_1_1_options.html',1,'gdalcpp::detail']]]
+  ['make_5fexpression_5ft',['make_expression_t',['../structquetzal_1_1expressive_1_1make__expression__t.html',1,'quetzal::expressive']]],
+  ['marker_5fdescriptor',['Marker_Descriptor',['../structquetzal_1_1genetics_1_1_marker___descriptor.html',1,'quetzal::genetics']]],
+  ['mass_5fbased',['mass_based',['../structquetzal_1_1demography_1_1strategy_1_1mass__based.html',1,'quetzal::demography::strategy']]],
+  ['matrix',['Matrix',['../class_matrix.html',1,'']]],
+  ['matrix_3c_20data_20_3e',['Matrix&lt; Data &gt;',['../class_matrix.html',1,'']]],
+  ['matrix_3c_20int_20_3e',['Matrix&lt; int &gt;',['../class_matrix.html',1,'']]],
+  ['munkres',['Munkres',['../class_munkres.html',1,'']]],
+  ['myhash',['MyHash',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1_my_hash.html',1,'quetzal::coalescence::occupancy_spectrum::utils']]]
 ];

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['mainpage_2edox',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
-  ['marker_5ftraits_2eh',['marker_traits.h',['../marker__traits_8h.html',1,'']]],
-  ['memoize_2eh',['memoize.h',['../memoize_8h.html',1,'']]],
-  ['memoize_5ftest_2ecpp',['memoize_test.cpp',['../memoize__test_8cpp.html',1,'']]],
-  ['merge_2eh',['merge.h',['../merge_8h.html',1,'']]],
-  ['merger_2eh',['merger.h',['../merger_8h.html',1,'']]],
-  ['modules_2edox',['modules.dox',['../modules_8dox.html',1,'']]]
+  ['initialization_5ftest_2ecpp',['initialization_test.cpp',['../coalescence_2containers_2test_2_forest_2initialization__test_8cpp.html',1,'']]],
+  ['initialization_5ftest_2ecpp',['initialization_test.cpp',['../coalescence_2containers_2test_2_tree_2initialization__test_8cpp.html',1,'']]],
+  ['initialization_5ftest_2ecpp',['initialization_test.cpp',['../random_2test_2_transition_kernel_2initialization__test_8cpp.html',1,'']]],
+  ['initialization_5ftest_2ecpp',['initialization_test.cpp',['../random_2test_2_time_transition_kernel_2initialization__test_8cpp.html',1,'']]],
+  ['initialization_5ftest_2ecpp',['initialization_test.cpp',['../random_2test_2_discrete_distribution_2initialization__test_8cpp.html',1,'']]],
+  ['initialization_5ftest_2ecpp',['initialization_test.cpp',['../coalescence_2occupancy__spectrum_2test_2_occupancy_spectrum_distribution_2initialization__test_8cpp.html',1,'']]],
+  ['insertion_5ftest_2ecpp',['insertion_test.cpp',['../insertion__test_8cpp.html',1,'']]]
 ];

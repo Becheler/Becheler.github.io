@@ -1,5 +1,14 @@
 <map id="quetzal/modules/demography/PopulationSize.h" name="quetzal/modules/demography/PopulationSize.h">
-<area shape="rect" id="node2" href="$demography_8h.html" title="quetzal/demography.h" alt="" coords="5,109,156,136"/>
-<area shape="rect" id="node4" href="$_population_size__test_8cpp.html" title="quetzal/modules/demography\l/test/PopulationSize/Population\lSize_test.cpp" alt="" coords="180,95,384,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="20,199,141,225"/>
+<area shape="rect" id="node2" href="$demography_8h.html" title="quetzal/demography.h" alt="" coords="151,206,301,233"/>
+<area shape="rect" id="node8" href="$_history_8h.html" title="quetzal/modules/demography\l/History.h" alt="" coords="311,102,503,143"/>
+<area shape="rect" id="node13" href="$_population_size__test_8cpp.html" title="quetzal/modules/demography\l/test/PopulationSize/Population\lSize_test.cpp" alt="" coords="528,95,732,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title="quetzal/quetzal.h" alt="" coords="332,303,453,329"/>
+<area shape="rect" id="node4" href="$example1_8cpp.html" title="quetzal/documentation\l/code_examples/example1.cpp" alt="" coords="210,407,413,448"/>
+<area shape="rect" id="node5" href="$landscape__invasion_2main_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/main.cpp" alt="" coords="5,399,185,455"/>
+<area shape="rect" id="node6" href="$main__simultaneous__loci_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/main_simultaneous\l_loci.cpp" alt="" coords="437,392,631,463"/>
+<area shape="rect" id="node7" href="$two__demes_2main_8cpp.html" title="quetzal/documentation\l/code_examples/two_demes\l/main.cpp" alt="" coords="655,399,843,455"/>
+<area shape="rect" id="node9" href="$simulators_8h.html" title="quetzal/modules/simulator\l/simulators.h" alt="" coords="545,199,720,240"/>
+<area shape="rect" id="node12" href="$_history__test_8cpp.html" title="quetzal/modules/demography\l/test/History/History_test.cpp" alt="" coords="326,199,521,240"/>
+<area shape="rect" id="node10" href="$_demonstration_model_8h.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/DemonstrationModel.h" alt="" coords="809,288,1021,344"/>
+<area shape="rect" id="node11" href="$cross__val_8cpp.html" title="quetzal/documentation\l/code_examples/landscape\l_invasion/cross_val.cpp" alt="" coords="867,399,1047,455"/>
 </map>

@@ -7,5 +7,9 @@ var searchData=
   ['hash_3c_20quetzal_3a_3ageography_3a_3ageographiccoordinates_20_3e',['hash&lt; quetzal::geography::GeographicCoordinates &gt;',['../structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html',1,'std']]],
   ['hash_5fcombine',['hash_combine',['../namespacequetzal_1_1geography_acf2ee27bd314f24ffa1452971dcc6bfc.html#acf2ee27bd314f24ffa1452971dcc6bfc',1,'quetzal::geography']]],
   ['height',['height',['../classgdalcpp_1_1_dataset_a7b9b40099773b59fa385b95a034d9330.html#a7b9b40099773b59fa385b95a034d9330',1,'gdalcpp::Dataset']]],
+  ['history',['History',['../classquetzal_1_1demography_1_1_history.html',1,'quetzal::demography']]],
+  ['history_2eh',['History.h',['../_history_8h.html',1,'']]],
+  ['history_5ftest_2ecpp',['History_test.cpp',['../_history__test_8cpp.html',1,'']]],
+  ['history_5ftype',['history_type',['../class_demonstration_model_ae04e6e7556ed5ff8aa574ba24660d7be.html#ae04e6e7556ed5ff8aa574ba24660d7be',1,'DemonstrationModel::history_type()'],['../class_demonstration_model_ae04e6e7556ed5ff8aa574ba24660d7be.html#ae04e6e7556ed5ff8aa574ba24660d7be',1,'DemonstrationModel::history_type()'],['../classquetzal_1_1simulators_1_1_i_d_d_c__model__1_ad953b762fa1dee42af95ddeae72be8fc.html#ad953b762fa1dee42af95ddeae72be8fc',1,'quetzal::simulators::IDDC_model_1::history_type()']]],
   ['home',['Home',['../index.html',1,'']]]
 ];

@@ -28,7 +28,8 @@ var NAVTREE =
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -37,9 +38,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_allele_8h.html",
-"classquetzal_1_1genetics_1_1_diploid_individual_a1ced9feb3dda30b6fe4b403ca86f82f4.html#a1ced9feb3dda30b6fe4b403ca86f82f4",
-"group__coal__algorithms_ga45cd8b6f39a5b41d4667f3bed3fc13fe.html#ga45cd8b6f39a5b41d4667f3bed3fc13fe",
-"structquetzal_1_1expressive_1_1composite__functor_ad496cf13e65e3e1e84f82e9defdadd70.html#ad496cf13e65e3e1e84f82e9defdadd70"
+"class_matrix_a87f85cfbd2d8741828d3603a0ab5801c.html#a87f85cfbd2d8741828d3603a0ab5801c",
+"classquetzal_1_1demography_1_1dispersal_1_1_logistic_1_1param__type_a36b6f953ca1a1e03a45670efa10ee832.html#a36b6f953ca1a1e03a45670efa10ee832",
+"dir_cfdef74113ebb05dd22e34738c29d9db.html",
+"spectrum__creation__policy_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

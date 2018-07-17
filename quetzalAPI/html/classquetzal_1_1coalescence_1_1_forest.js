@@ -19,7 +19,7 @@ var classquetzal_1_1coalescence_1_1_forest =
     [ "insert", "classquetzal_1_1coalescence_1_1_forest_a2b25eef5fb3e0b350c98dd86dbc6189a.html#a2b25eef5fb3e0b350c98dd86dbc6189a", null ],
     [ "insert", "classquetzal_1_1coalescence_1_1_forest_a2b3d485d9f2b88f9088deaef7600c558.html#a2b3d485d9f2b88f9088deaef7600c558", null ],
     [ "nb_trees", "classquetzal_1_1coalescence_1_1_forest_adb6c8603279331a34ab5bebef0d583e7.html#adb6c8603279331a34ab5bebef0d583e7", null ],
-    [ "nb_trees", "classquetzal_1_1coalescence_1_1_forest_a05fea2065e4719bbd436bf9144c42006.html#a05fea2065e4719bbd436bf9144c42006", null ],
+    [ "nb_trees", "classquetzal_1_1coalescence_1_1_forest_a02302a9e9e7acf79cff9ffd01b9e8a04.html#a02302a9e9e7acf79cff9ffd01b9e8a04", null ],
     [ "operator=", "classquetzal_1_1coalescence_1_1_forest_aea06997876c0409fa6c41c66a817cccc.html#aea06997876c0409fa6c41c66a817cccc", null ],
     [ "operator=", "classquetzal_1_1coalescence_1_1_forest_a3b6bf3a928a7c502dfbc3b443d02a4c6.html#a3b6bf3a928a7c502dfbc3b443d02a4c6", null ],
     [ "positions", "classquetzal_1_1coalescence_1_1_forest_aa9ba21ebbddde0775427fbe9f92c08ab.html#aa9ba21ebbddde0775427fbe9f92c08ab", null ],

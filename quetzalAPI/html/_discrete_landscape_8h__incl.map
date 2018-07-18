@@ -1,7 +1,0 @@
-<map id="quetzal/modules/geography/DiscreteLandscape.h" name="quetzal/modules/geography/DiscreteLandscape.h">
-<area shape="rect" id="node9" href="$_environmental_quantity_8h.html" title="EnvironmentalQuantity.h" alt="" coords="491,95,656,121"/>
-<area shape="rect" id="node10" href="$gdalcpp_8h.html" title="gdalcpp.h" alt="" coords="534,169,613,196"/>
-<area shape="rect" id="node18" href="$_geographic_coordinates_8h.html" title="GeographicCoordinates.h" alt="" coords="194,169,363,196"/>
-<area shape="rect" id="node21" href="$_resolution_8h.html" title="Resolution.h" alt="" coords="637,169,731,196"/>
-<area shape="rect" id="node22" href="$_extent_8h.html" title="Extent.h" alt="" coords="387,169,458,196"/>
-</map>

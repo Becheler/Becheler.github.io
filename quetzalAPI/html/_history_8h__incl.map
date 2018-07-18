@@ -1,7 +1,0 @@
-<map id="quetzal/modules/demography/History.h" name="quetzal/modules/demography/History.h">
-<area shape="rect" id="node2" href="$_flow_8h.html" title="Flow.h" alt="" coords="124,95,186,121"/>
-<area shape="rect" id="node7" href="$_population_size_8h.html" title="PopulationSize.h" alt="" coords="318,177,438,203"/>
-<area shape="rect" id="node10" href="$random_8h.html" title="../../random.h" alt="" coords="620,95,720,121"/>
-<area shape="rect" id="node11" href="$_discrete_distribution_8h.html" title="modules/random/DiscreteDistribution.h" alt="" coords="664,177,912,203"/>
-<area shape="rect" id="node14" href="$_transition_kernel_8h.html" title="modules/random/Transition\lKernel.h" alt="" coords="462,169,640,211"/>
-</map>

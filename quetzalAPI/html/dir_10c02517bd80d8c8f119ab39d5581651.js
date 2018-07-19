@@ -27,8 +27,6 @@ var dir_10c02517bd80d8c8f119ab39d5581651 =
     ] ],
     [ "Flow.h", "_flow_8h.html", "_flow_8h" ],
     [ "History.h", "_history_8h.html", [
-      [ "individual_based", "structquetzal_1_1demography_1_1strategy_1_1individual__based.html", "structquetzal_1_1demography_1_1strategy_1_1individual__based" ],
-      [ "mass_based", "structquetzal_1_1demography_1_1strategy_1_1mass__based.html", "structquetzal_1_1demography_1_1strategy_1_1mass__based" ],
       [ "History", "classquetzal_1_1demography_1_1_history.html", null ]
     ] ],
     [ "PopulationFlux.h", "_population_flux_8h.html", null ],

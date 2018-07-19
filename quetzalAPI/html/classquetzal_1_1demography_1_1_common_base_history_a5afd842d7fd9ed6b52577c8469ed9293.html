@@ -147,7 +147,8 @@ template&lt;typename Generator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Samples from the backward-in-time dispersal kernel from the demographic flows database. The returned coordinate object will basically answer the question: when I am in \(x\) at time \(t\), where could I have been at \(t-1\) ? Let \( \mathds{X} \) be the geographic space and \(\Phi_{x,y}^t\) be the number of individuals going from coordinate \(x \in \mathds{X}\) to coordinate \(y\) at time \(t\). Knowing that a child node \(c\) is found in \( j \in \mathds{X} \), the probability for its parent \(p\) to be in \(i\in \mathds{X}\) is: \( P( p \in i ~|~ e \in j) = \frac{\Phi_{i, j}^{t}}{ \sum_{k} \Phi_{k, j}^{t} } ~.\). </p>
+<p>Samples a coordinate from the backward-in-time transition matrix. </p>
+<p class="">The transition matrix is computed from the demographic flows database. The returned coordinate object will basically answer the question: when an individual is found in \(x\) at time \(t\), where could it have been at time \(t-1\) ? Let \( \mathds{X} \) be the geographic space and \(\Phi_{x,y}^t\) be the number of individuals going from coordinate \(x \in \mathds{X}\) to coordinate \(y\) at time \(t\). Knowing that a child node \(c\) is found in \( j \in \mathds{X} \), the probability for its parent \(p\) to be in \(i\in \mathds{X}\) is: \( P( p \in i ~|~ e \in j) = \frac{\Phi_{i, j}^{t}}{ \sum_{k} \Phi_{k, j}^{t} } ~.\) </p>
 <h1><a class="anchor" id="Example"></a>
 Example</h1>
 <div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>

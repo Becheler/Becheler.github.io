@@ -1,0 +1,28 @@
+var classquetzal_1_1coalescence_1_1_forest =
+[
+    [ "const_iterator", "classquetzal_1_1coalescence_1_1_forest_ab225661fff890d81b32b5f8be5accd0d.html#ab225661fff890d81b32b5f8be5accd0d", null ],
+    [ "iterator", "classquetzal_1_1coalescence_1_1_forest_aabf247362d41417d575abaecf5311a5c.html#aabf247362d41417d575abaecf5311a5c", null ],
+    [ "position_type", "classquetzal_1_1coalescence_1_1_forest_a34a13c58c832bc0156914512b38ffdcf.html#a34a13c58c832bc0156914512b38ffdcf", null ],
+    [ "Forest", "classquetzal_1_1coalescence_1_1_forest_ad7b2cfe69b17824a127812cd5ee0cb25.html#ad7b2cfe69b17824a127812cd5ee0cb25", null ],
+    [ "Forest", "classquetzal_1_1coalescence_1_1_forest_a794af66102f9c811ce3e93d7e63d8713.html#a794af66102f9c811ce3e93d7e63d8713", null ],
+    [ "Forest", "classquetzal_1_1coalescence_1_1_forest_adc037a05d6fae30bb171129993c637f2.html#adc037a05d6fae30bb171129993c637f2", null ],
+    [ "begin", "classquetzal_1_1coalescence_1_1_forest_a91ebe572b0a2343cec35ebb27c94e38b.html#a91ebe572b0a2343cec35ebb27c94e38b", null ],
+    [ "begin", "classquetzal_1_1coalescence_1_1_forest_a4e3467a25723e801937ed78e32b07acd.html#a4e3467a25723e801937ed78e32b07acd", null ],
+    [ "cbegin", "classquetzal_1_1coalescence_1_1_forest_a74d745ad15871e67a21837703bdd7fae.html#a74d745ad15871e67a21837703bdd7fae", null ],
+    [ "cend", "classquetzal_1_1coalescence_1_1_forest_a8d841e847c17b26e7c1e8c0ff863e59d.html#a8d841e847c17b26e7c1e8c0ff863e59d", null ],
+    [ "end", "classquetzal_1_1coalescence_1_1_forest_a8df79ed64093a376c31c7d0111280a1a.html#a8df79ed64093a376c31c7d0111280a1a", null ],
+    [ "end", "classquetzal_1_1coalescence_1_1_forest_aa90a07f3c52b62369d07b967f12e15e9.html#aa90a07f3c52b62369d07b967f12e15e9", null ],
+    [ "erase", "classquetzal_1_1coalescence_1_1_forest_aaff44f5a3ec3bef232554782681fe75b.html#aaff44f5a3ec3bef232554782681fe75b", null ],
+    [ "erase", "classquetzal_1_1coalescence_1_1_forest_afc0cdb7e9f093cc20201015869b1ece8.html#afc0cdb7e9f093cc20201015869b1ece8", null ],
+    [ "insert", "classquetzal_1_1coalescence_1_1_forest_aaed1e6e616684ea2adf3535751a40cbf.html#aaed1e6e616684ea2adf3535751a40cbf", null ],
+    [ "insert", "classquetzal_1_1coalescence_1_1_forest_afc17afc07ea756c9ea732eadc5d677ff.html#afc17afc07ea756c9ea732eadc5d677ff", null ],
+    [ "insert", "classquetzal_1_1coalescence_1_1_forest_a2b25eef5fb3e0b350c98dd86dbc6189a.html#a2b25eef5fb3e0b350c98dd86dbc6189a", null ],
+    [ "insert", "classquetzal_1_1coalescence_1_1_forest_a2b3d485d9f2b88f9088deaef7600c558.html#a2b3d485d9f2b88f9088deaef7600c558", null ],
+    [ "nb_trees", "classquetzal_1_1coalescence_1_1_forest_a1e284f792ffaf70884575fb73084f655.html#a1e284f792ffaf70884575fb73084f655", null ],
+    [ "nb_trees", "classquetzal_1_1coalescence_1_1_forest_a7b6d7ae99d2ba998aeaf16aa877eb216.html#a7b6d7ae99d2ba998aeaf16aa877eb216", null ],
+    [ "operator=", "classquetzal_1_1coalescence_1_1_forest_aea06997876c0409fa6c41c66a817cccc.html#aea06997876c0409fa6c41c66a817cccc", null ],
+    [ "operator=", "classquetzal_1_1coalescence_1_1_forest_a3b6bf3a928a7c502dfbc3b443d02a4c6.html#a3b6bf3a928a7c502dfbc3b443d02a4c6", null ],
+    [ "positions", "classquetzal_1_1coalescence_1_1_forest_a39fb620e2f8fd16e58b14ddae7a82836.html#a39fb620e2f8fd16e58b14ddae7a82836", null ],
+    [ "trees_at_same_position", "classquetzal_1_1coalescence_1_1_forest_ae920385eeb8b16af2ccefa6d2e65812f.html#ae920385eeb8b16af2ccefa6d2e65812f", null ],
+    [ "trees_at_same_position", "classquetzal_1_1coalescence_1_1_forest_a5703603903dc4420fa5649b21777208e.html#a5703603903dc4420fa5649b21777208e", null ]
+];

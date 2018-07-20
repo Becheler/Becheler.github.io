@@ -24,6 +24,9 @@ var group__demography =
     [ "individual_based", "structquetzal_1_1demography_1_1strategy_1_1individual__based.html", [
       [ "value_type", "structquetzal_1_1demography_1_1strategy_1_1individual__based_aa3d35cc0ae94a3230a094008afa4209c.html#aa3d35cc0ae94a3230a094008afa4209c", null ]
     ] ],
+    [ "mass_based", "structquetzal_1_1demography_1_1strategy_1_1mass__based.html", [
+      [ "value_type", "structquetzal_1_1demography_1_1strategy_1_1mass__based_aff822c26eac70b884e50d1b9abac6f22.html#aff822c26eac70b884e50d1b9abac6f22", null ]
+    ] ],
     [ "CommonBaseHistory", "classquetzal_1_1demography_1_1_common_base_history.html", [
       [ "backward_kernel_type", "classquetzal_1_1demography_1_1_common_base_history_a10b30f5aceda7e8541ef19d7d96e0f20.html#a10b30f5aceda7e8541ef19d7d96e0f20", null ],
       [ "coord_type", "classquetzal_1_1demography_1_1_common_base_history_a4196f48ee45bc257223a71330590eeef.html#a4196f48ee45bc257223a71330590eeef", null ],

@@ -29,6 +29,7 @@ var searchData=
   ['marker_5fdescriptor',['Marker_Descriptor',['../structquetzal_1_1genetics_1_1_marker___descriptor.html',1,'quetzal::genetics']]],
   ['marker_5ftraits_2eh',['marker_traits.h',['../marker__traits_8h.html',1,'']]],
   ['marker_5ftype',['marker_type',['../classquetzal_1_1genetics_1_1_loader_ae74e065faf2279647795ccf0f58a4037.html#ae74e065faf2279647795ccf0f58a4037',1,'quetzal::genetics::Loader']]],
+  ['mass_5fbased',['mass_based',['../structquetzal_1_1demography_1_1strategy_1_1mass__based.html',1,'quetzal::demography::strategy']]],
   ['mass_5fbased_5fhistory_5ftest_2ecpp',['Mass_based_history_test.cpp',['../_mass__based__history__test_8cpp.html',1,'']]],
   ['matrix',['Matrix',['../class_matrix.html',1,'Matrix&lt; T &gt;'],['../class_matrix_a9d567e3a121b1be0c3f9c461cab524fe.html#a9d567e3a121b1be0c3f9c461cab524fe',1,'Matrix::Matrix()'],['../class_matrix_a10517cfad0ac5fe6da33877acd439b82.html#a10517cfad0ac5fe6da33877acd439b82',1,'Matrix::Matrix(const size_t rows, const size_t columns)'],['../class_matrix_a191d66d2caa4230916b897d9af84f048.html#a191d66d2caa4230916b897d9af84f048',1,'Matrix::Matrix(const std::initializer_list&lt; std::initializer_list&lt; T &gt;&gt; init)'],['../class_matrix_a1012080b9cf91044d58c11f5a49c8230.html#a1012080b9cf91044d58c11f5a49c8230',1,'Matrix::Matrix(const Matrix&lt; T &gt; &amp;other)']]],
   ['matrix_2eh',['matrix.h',['../matrix_8h.html',1,'']]],

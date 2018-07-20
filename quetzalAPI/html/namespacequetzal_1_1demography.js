@@ -5,6 +5,5 @@ var namespacequetzal_1_1demography =
     [ "CommonBaseHistory", "classquetzal_1_1demography_1_1_common_base_history.html", "classquetzal_1_1demography_1_1_common_base_history" ],
     [ "Flow", "classquetzal_1_1demography_1_1_flow.html", "classquetzal_1_1demography_1_1_flow" ],
     [ "History", "classquetzal_1_1demography_1_1_history.html", null ],
-    [ "PopulationFlux", "classquetzal_1_1demography_1_1_population_flux.html", "classquetzal_1_1demography_1_1_population_flux" ],
     [ "PopulationSize", "classquetzal_1_1demography_1_1_population_size.html", "classquetzal_1_1demography_1_1_population_size" ]
 ];

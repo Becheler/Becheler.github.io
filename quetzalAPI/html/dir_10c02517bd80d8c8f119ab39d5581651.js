@@ -29,7 +29,6 @@ var dir_10c02517bd80d8c8f119ab39d5581651 =
     [ "History.h", "_history_8h.html", [
       [ "History", "classquetzal_1_1demography_1_1_history.html", null ]
     ] ],
-    [ "PopulationFlux.h", "_population_flux_8h.html", null ],
     [ "PopulationSize.h", "_population_size_8h.html", null ],
     [ "SymmetricDistanceMatrix.h", "_symmetric_distance_matrix_8h.html", "_symmetric_distance_matrix_8h" ]
 ];

@@ -2,7 +2,15 @@ var hierarchy =
 [
     [ "quetzal::abc::ABC< ModelType, PriorType >", "classquetzal_1_1abc_1_1_a_b_c.html", null ],
     [ "quetzal::genetics::Allele< Value >", "classquetzal_1_1genetics_1_1_allele.html", null ],
-    [ "quetzal::demography::BaseHistory< Space, Time, Strategy >", "classquetzal_1_1demography_1_1_base_history.html", null ],
+    [ "quetzal::demography::BaseHistory< Space, Time, Strategy >", "classquetzal_1_1demography_1_1_base_history.html", [
+      [ "quetzal::demography::History< Space, Time, Strategy >", "classquetzal_1_1demography_1_1_history.html", null ]
+    ] ],
+    [ "quetzal::demography::BaseHistory< coord_type, time_type, N_value_type >", "classquetzal_1_1demography_1_1_base_history.html", [
+      [ "quetzal::demography::History< coord_type, time_type, N_value_type, demography::Flow< coord_type, time_type, N_value_type > >", "classquetzal_1_1demography_1_1_history.html", null ]
+    ] ],
+    [ "quetzal::demography::BaseHistory< Space, Time, Value >", "classquetzal_1_1demography_1_1_base_history.html", [
+      [ "quetzal::demography::History< Space, Time, Value, quetzal::demography::Flow< Space, Time, Value > >", "classquetzal_1_1demography_1_1_history.html", null ]
+    ] ],
     [ "quetzal::coalescence::BinaryMerger", "structquetzal_1_1coalescence_1_1_binary_merger.html", null ],
     [ "quetzal::expressive::Callable_traits< Callable >", "structquetzal_1_1expressive_1_1_callable__traits.html", null ],
     [ "quetzal::expressive::Callable_traits< compose_t< Outer, Inners... > >", "structquetzal_1_1expressive_1_1_callable__traits_3_01compose__t_3_01_outer_00_01_inners_8_8_8_01_4_01_4.html", null ],
@@ -72,8 +80,8 @@ var hierarchy =
     [ "quetzal::expressive::literal_factory< Args >", "structquetzal_1_1expressive_1_1literal__factory.html", null ],
     [ "quetzal::expressive::literal_t< T, Args >", "structquetzal_1_1expressive_1_1literal__t.html", null ],
     [ "quetzal::genetics::Loader< Space, Marker >", "classquetzal_1_1genetics_1_1_loader.html", null ],
-    [ "quetzal::demography::dispersal::Logistic", "structquetzal_1_1demography_1_1dispersal_1_1_logistic.html", null ],
     [ "Logistic", "struct_logistic.html", null ],
+    [ "quetzal::demography::dispersal::Logistic", "structquetzal_1_1demography_1_1dispersal_1_1_logistic.html", null ],
     [ "quetzal::demography::dispersal::Lognormal", "structquetzal_1_1demography_1_1dispersal_1_1_lognormal.html", null ],
     [ "quetzal::genetics::Marker_Descriptor< T >", "structquetzal_1_1genetics_1_1_marker___descriptor.html", null ],
     [ "quetzal::demography::strategy::mass_based", "structquetzal_1_1demography_1_1strategy_1_1mass__based.html", null ],
@@ -89,21 +97,21 @@ var hierarchy =
       [ "quetzal::expressive::symetric_binop_t< FL, Operator, FR >", "structquetzal_1_1expressive_1_1symetric__binop__t.html", null ]
     ] ],
     [ "gdalcpp::detail::Options", "structgdalcpp_1_1detail_1_1_options.html", null ],
+    [ "quetzal::demography::dispersal::Gaussian::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_1_1param__type.html", null ],
     [ "quetzal::demography::dispersal::NegativeExponential::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_negative_exponential_1_1param__type.html", null ],
     [ "quetzal::demography::dispersal::ExponentialPower::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_exponential_power_1_1param__type.html", null ],
     [ "Logistic::param_type", "class_logistic_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::InversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_inverse_power_law_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::UndefinedInversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law_1_1param__type.html", null ],
     [ "quetzal::demography::dispersal::TwoDt::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_two_dt_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::InversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_inverse_power_law_1_1param__type.html", null ],
     [ "quetzal::demography::dispersal::Lognormal::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_lognormal_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::GaussianMixture::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type.html", null ],
     [ "Gaussian::param_type", "class_gaussian_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::Gaussian::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::Logistic::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_logistic_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::UndefinedInversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law_1_1param__type.html", null ],
     [ "param_type", null, [
       [ "DemonstrationModel< DispersalKernel, Generator >::param_type", "class_demonstration_model_1_1param__type.html", null ],
       [ "DemonstrationModel< DispersalKernel, Generator >::param_type", "class_demonstration_model_1_1param__type.html", null ]
     ] ],
+    [ "quetzal::demography::dispersal::GaussianMixture::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::Logistic::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_logistic_1_1param__type.html", null ],
     [ "fuzzy_transfer_distance::Partitioner", "classfuzzy__transfer__distance_1_1_partitioner.html", null ],
     [ "quetzal::demography::PopulationSize< Space, Time, Value >", "classquetzal_1_1demography_1_1_population_size.html", null ],
     [ "Prior< Model >", "struct_prior.html", null ],

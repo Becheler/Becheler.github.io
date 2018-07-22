@@ -4,5 +4,6 @@ var namespacequetzal_1_1demography =
     [ "strategy", "namespacequetzal_1_1demography_1_1strategy.html", "namespacequetzal_1_1demography_1_1strategy" ],
     [ "BaseHistory", "classquetzal_1_1demography_1_1_base_history.html", "classquetzal_1_1demography_1_1_base_history" ],
     [ "Flow", "classquetzal_1_1demography_1_1_flow.html", "classquetzal_1_1demography_1_1_flow" ],
+    [ "History", "classquetzal_1_1demography_1_1_history.html", null ],
     [ "PopulationSize", "classquetzal_1_1demography_1_1_population_size.html", "classquetzal_1_1demography_1_1_population_size" ]
 ];

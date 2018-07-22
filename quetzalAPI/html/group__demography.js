@@ -48,6 +48,7 @@ var group__demography =
       [ "m_sizes", "classquetzal_1_1demography_1_1_base_history_a17aa233ef20fcc8c168071b25166de5d.html#a17aa233ef20fcc8c168071b25166de5d", null ],
       [ "m_times", "classquetzal_1_1demography_1_1_base_history_acf7870bb2703b9f6fe408ffefa0dfb33.html#acf7870bb2703b9f6fe408ffefa0dfb33", null ]
     ] ],
+    [ "History", "classquetzal_1_1demography_1_1_history.html", null ],
     [ "PopulationSize", "classquetzal_1_1demography_1_1_population_size.html", [
       [ "coord_type", "classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356", null ],
       [ "time_type", "classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c", null ],

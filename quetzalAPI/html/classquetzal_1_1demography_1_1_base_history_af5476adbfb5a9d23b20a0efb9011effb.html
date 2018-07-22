@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QUETZAL: quetzal::demography::CommonBaseHistory::discrete_distribution_type</title>
+<title>QUETZAL: quetzal::demography::BaseHistory::BaseHistory</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1_common_base_history_a2ef9d88d12f9008942ed4517499045df.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1_base_history_af5476adbfb5a9d23b20a0efb9011effb.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,20 +103,62 @@ $(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1_common_
 </div>
 
 <div class="contents">
-<a id="a2ef9d88d12f9008942ed4517499045df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ef9d88d12f9008942ed4517499045df">&#9670;&nbsp;</a></span>discrete_distribution_type</h2>
+<a id="af5476adbfb5a9d23b20a0efb9011effb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5476adbfb5a9d23b20a0efb9011effb">&#9670;&nbsp;</a></span>BaseHistory()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space, typename Time, typename Strategy&gt; </div>
+template&lt;typename Space , typename Time , typename Strategy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1_common_base_history.html">quetzal::demography::CommonBaseHistory</a>&lt; Space, Time, Strategy &gt;::<a class="el" href="classquetzal_1_1demography_1_1_common_base_history_a2ef9d88d12f9008942ed4517499045df.html#a2ef9d88d12f9008942ed4517499045df">discrete_distribution_type</a> =  <a class="el" href="classquetzal_1_1random_1_1_discrete_distribution.html">quetzal::random::DiscreteDistribution</a>&lt;<a class="el" href="classquetzal_1_1demography_1_1_common_base_history_a4196f48ee45bc257223a71330590eeef.html#a4196f48ee45bc257223a71330590eeef">coord_type</a>&gt;</td>
+          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1_base_history.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, Strategy &gt;::<a class="el" href="classquetzal_1_1demography_1_1_base_history.html">BaseHistory</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1_base_history_abae498922a194e88daea5c031f6883be.html#abae498922a194e88daea5c031f6883be">coord_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1_base_history_ab3acdc93f9a4cd6581f43c07fd758ffc.html#ab3acdc93f9a4cd6581f43c07fd758ffc">time_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename strategy_type::value_type&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
+<p>Constructor initializing the demographic database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>the coordinate of introduction </td></tr>
+    <tr><td class="paramname">t</td><td>the introduction time </td></tr>
+    <tr><td class="paramname">N</td><td>the population size at coordinate x at time t </td></tr>
+  </table>
+  </dd>
+</dl>
+<h1><a class="anchor" id="Example"></a>
+Example</h1>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
+Output</h1>
+<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

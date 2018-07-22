@@ -7,10 +7,7 @@ var searchData=
   ['hash_3c_20quetzal_3a_3ageography_3a_3ageographiccoordinates_20_3e',['hash&lt; quetzal::geography::GeographicCoordinates &gt;',['../structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html',1,'std']]],
   ['hash_5fcombine',['hash_combine',['../namespacequetzal_1_1geography_acf2ee27bd314f24ffa1452971dcc6bfc.html#acf2ee27bd314f24ffa1452971dcc6bfc',1,'quetzal::geography']]],
   ['height',['height',['../classgdalcpp_1_1_dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d.html#a93c5f8ee3dd7e8be034d09a4eb4fc04d',1,'gdalcpp::Dataset']]],
-  ['history',['History',['../classquetzal_1_1demography_1_1_history.html',1,'quetzal::demography']]],
   ['history_2eh',['History.h',['../_history_8h.html',1,'']]],
-  ['history_3c_20coord_5ftype_2c_20time_5ftype_2c_20n_5fvalue_5ftype_2c_20demography_3a_3aflow_3c_20coord_5ftype_2c_20time_5ftype_2c_20n_5fvalue_5ftype_20_3e_20_3e',['History&lt; coord_type, time_type, N_value_type, demography::Flow&lt; coord_type, time_type, N_value_type &gt; &gt;',['../classquetzal_1_1demography_1_1_history.html',1,'quetzal::demography']]],
-  ['history_3c_20space_2c_20time_2c_20value_2c_20quetzal_3a_3ademography_3a_3aflow_3c_20space_2c_20time_2c_20value_20_3e_20_3e',['History&lt; Space, Time, Value, quetzal::demography::Flow&lt; Space, Time, Value &gt; &gt;',['../classquetzal_1_1demography_1_1_history.html',1,'quetzal::demography']]],
   ['history_5ftype',['history_type',['../class_demonstration_model_a67bb66a198558ae429507875192dc091.html#a67bb66a198558ae429507875192dc091',1,'DemonstrationModel::history_type()'],['../class_demonstration_model_a67bb66a198558ae429507875192dc091.html#a67bb66a198558ae429507875192dc091',1,'DemonstrationModel::history_type()'],['../classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a16ab5fd9208fb914afbaa837a3f37276.html#a16ab5fd9208fb914afbaa837a3f37276',1,'quetzal::simulators::IDDC_model_1::history_type()']]],
   ['home',['Home',['../index.html',1,'']]]
 ];

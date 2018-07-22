@@ -93,7 +93,7 @@ var hierarchy =
     [ "quetzal::demography::dispersal::NegativeExponential", "structquetzal_1_1demography_1_1dispersal_1_1_negative_exponential.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution< UnaryPredicate, SpectrumHandler, Int, Float >", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::on_the_fly", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html", null ],
-    [ "Operator", null, [
+    [ "Operator", "class_operator.html", [
       [ "quetzal::expressive::symetric_binop_t< FL, Operator, FR >", "structquetzal_1_1expressive_1_1symetric__binop__t.html", null ]
     ] ],
     [ "gdalcpp::detail::Options", "structgdalcpp_1_1detail_1_1_options.html", null ],

@@ -12,6 +12,7 @@ var annotated_dup =
     [ "Logistic", "struct_logistic.html", "struct_logistic" ],
     [ "Matrix", "class_matrix.html", "class_matrix" ],
     [ "Munkres", "class_munkres.html", "class_munkres" ],
+    [ "Operator", "class_operator.html", null ],
     [ "Prior", "struct_prior.html", "struct_prior" ],
     [ "ReferenceTable", "class_reference_table.html", "class_reference_table" ],
     [ "RestrictedGrowthString", "class_restricted_growth_string.html", "class_restricted_growth_string" ],

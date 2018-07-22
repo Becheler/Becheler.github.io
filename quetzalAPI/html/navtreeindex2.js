@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix_a1fcfcc294e9f691b7a1dd9d79c737cff.html#a1fcfcc294e9f691b7a1dd9d79c737cff":[3,0,2,2,0,9,1],
 "classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix_a45090a0e02fe1f6b3b2f1ceeb457e18b.html#a45090a0e02fe1f6b3b2f1ceeb457e18b":[3,0,2,2,0,9,4],
 "classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix_a467edf246d6e3b2dc5d54adb9fddc3ea.html#a467edf246d6e3b2dc5d54adb9fddc3ea":[3,0,2,2,0,9,2],
 "classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix_ab498d130f2678c649e707532cba1fc86.html#ab498d130f2678c649e707532cba1fc86":[3,0,2,2,0,9,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "dispersal_8h_source.html":[4,0,0,1,2,1],
 "dispersal__test_8cpp.html":[4,0,0,1,2,0,0,0],
 "dispersal__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,2,0,0,0,0],
-"example1_8cpp.html":[4,0,0,0,0,2],
-"example1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,0,0,2,4]
+"example1_8cpp.html":[4,0,0,0,0,2]
 };

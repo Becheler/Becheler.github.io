@@ -11,6 +11,7 @@ var searchData=
   ['callable_5ftraits_3c_20unop_5ft_3c_20operator_2c_20f_20_3e_20_3e',['Callable_traits&lt; unop_t&lt; Operator, F &gt; &gt;',['../structquetzal_1_1expressive_1_1_callable__traits_3_01unop__t_3_01_operator_00_01_f_01_4_01_4.html',1,'quetzal::expressive']]],
   ['common_5ftype_3c_20std_3a_3atuple_3c_20t_2e_2e_2e_20_3e_2c_20std_3a_3atuple_3c_20u_2e_2e_2e_20_3e_20_3e',['common_type&lt; std::tuple&lt; T... &gt;, std::tuple&lt; U... &gt; &gt;',['../structstd_1_1common__type_3_01std_1_1tuple_3_01_t_8_8_8_01_4_00_01std_1_1tuple_3_01_u_8_8_8_01_4_01_4.html',1,'std']]],
   ['commonbasehistory',['CommonBaseHistory',['../classquetzal_1_1demography_1_1_common_base_history.html',1,'quetzal::demography']]],
+  ['commonbasehistory_3c_20coord_5ftype_2c_20time_5ftype_2c_20n_5fvalue_5ftype_20_3e',['CommonBaseHistory&lt; coord_type, time_type, N_value_type &gt;',['../classquetzal_1_1demography_1_1_common_base_history.html',1,'quetzal::demography']]],
   ['commonbasehistory_3c_20space_2c_20time_2c_20value_20_3e',['CommonBaseHistory&lt; Space, Time, Value &gt;',['../classquetzal_1_1demography_1_1_common_base_history.html',1,'quetzal::demography']]],
   ['compose_5ft',['compose_t',['../structquetzal_1_1expressive_1_1compose__t.html',1,'quetzal::expressive']]],
   ['compose_5ft_3c_20outer_20_3e',['compose_t&lt; Outer &gt;',['../structquetzal_1_1expressive_1_1compose__t_3_01_outer_01_4.html',1,'quetzal::expressive']]],

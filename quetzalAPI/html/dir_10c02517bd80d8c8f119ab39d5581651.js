@@ -26,9 +26,7 @@ var dir_10c02517bd80d8c8f119ab39d5581651 =
       [ "DiscreteLocationKernelFactory", "structquetzal_1_1demography_1_1dispersal_1_1_discrete_location_kernel_factory.html", "structquetzal_1_1demography_1_1dispersal_1_1_discrete_location_kernel_factory" ]
     ] ],
     [ "Flow.h", "_flow_8h.html", "_flow_8h" ],
-    [ "History.h", "_history_8h.html", [
-      [ "History", "classquetzal_1_1demography_1_1_history.html", null ]
-    ] ],
+    [ "History.h", "_history_8h.html", null ],
     [ "PopulationSize.h", "_population_size_8h.html", null ],
     [ "SymmetricDistanceMatrix.h", "_symmetric_distance_matrix_8h.html", "_symmetric_distance_matrix_8h" ]
 ];

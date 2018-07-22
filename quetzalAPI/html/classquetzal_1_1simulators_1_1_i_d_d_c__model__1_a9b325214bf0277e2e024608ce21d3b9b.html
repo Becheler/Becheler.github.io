@@ -127,6 +127,8 @@ template&lt;typename Space , typename Time , typename Value &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p class="">Read-only access to the population size history. </p><dl class="section remark"><dt>Remarks</dt><dd>Useful for implementing time-dependent population growth models </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a non-copiable functor with signature 'N_type fun(coord_type const&amp; x, time_type const&amp; t)' giving the population size in deme \(x\) at time \(t\). </dd></dl>
 
 </div>
 </div>

@@ -174,6 +174,12 @@ var NAVTREEINDEX2 =
 "classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a9b325214bf0277e2e024608ce21d3b9b.html#a9b325214bf0277e2e024608ce21d3b9b":[3,0,2,7,0,12],
 "classquetzal_1_1simulators_1_1_i_d_d_c__model__1_ab9305105909d16c51e67601052a5fc98.html#ab9305105909d16c51e67601052a5fc98":[3,0,2,7,0,3],
 "classquetzal_1_1simulators_1_1_i_d_d_c__model__1_ad0b94ac6e93d1a9953d121b2b5e042b9.html#ad0b94ac6e93d1a9953d121b2b5e042b9":[3,0,2,7,0,9],
+"classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator.html":[3,0,2,7,1],
+"classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a126ff46b2a0a2e9532c7af5445eeaeae.html#a126ff46b2a0a2e9532c7af5445eeaeae":[3,0,2,7,1,1],
+"classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a2ce2f93d5e5918621c2ab8e29dd776d3.html#a2ce2f93d5e5918621c2ab8e29dd776d3":[3,0,2,7,1,2],
+"classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a820ec09d04aef90b6c056472b33c7fe9.html#a820ec09d04aef90b6c056472b33c7fe9":[3,0,2,7,1,4],
+"classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a914b59fe3a496ceb4c920f33952d117b.html#a914b59fe3a496ceb4c920f33952d117b":[3,0,2,7,1,0],
+"classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a9fd36751771bd0aa0fd3c725c4400273.html#a9fd36751771bd0aa0fd3c725c4400273":[3,0,2,7,1,3],
 "coalescence_2containers_2test_2_forest_2initialization__test_8cpp.html":[4,0,0,1,1,1,0,0,1],
 "coalescence_2containers_2test_2_forest_2initialization__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,1,1,0,0,1,0],
 "coalescence_2containers_2test_2_tree_2initialization__test_8cpp.html":[4,0,0,1,1,1,0,1,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX2 =
 "dispersal__test_8cpp.html":[4,0,0,1,2,0,0,0],
 "dispersal__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,1,2,0,0,0,0],
 "example1_8cpp.html":[4,0,0,0,0,2],
-"example1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,0,0,2,4],
-"expressive_8h.html":[4,0,0,5],
-"expressive_8h_source.html":[4,0,0,5],
-"files.html":[4,0],
-"functions.html":[3,3,0],
-"functions.html":[3,3,0,0],
-"functions_b.html":[3,3,0,1]
+"example1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,0,0,2,4]
 };

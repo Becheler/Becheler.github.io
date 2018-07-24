@@ -196,7 +196,7 @@ var NAVTREEINDEX1 =
 "classquetzal_1_1demography_1_1_flow_ae3b23a9a71b087e87ff124c1b23b4a66.html#ae3b23a9a71b087e87ff124c1b23b4a66":[1,2,0,1],
 "classquetzal_1_1demography_1_1_history.html":[1,2,4],
 "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1individual__based_01_4.html":[1,2,5],
-"classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1individual__based_01_4_a1feda3a3363d225021702e9841117fbc.html#a1feda3a3363d225021702e9841117fbc":[1,2,5,0],
+"classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1individual__based_01_4_a04c3eb4c118d267c355e3e31229dc23f.html#a04c3eb4c118d267c355e3e31229dc23f":[1,2,5,0],
 "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1mass__based_01_4.html":[1,2,6],
 "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1mass__based_01_4_a4384e01bca13a7edb608679939074918.html#a4384e01bca13a7edb608679939074918":[1,2,6,0],
 "classquetzal_1_1demography_1_1_population_size.html":[1,2,7],

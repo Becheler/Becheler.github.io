@@ -1,0 +1,5 @@
+var structquetzal_1_1simulators_1_1_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4 =
+[
+    [ "merger_type", "structquetzal_1_1simulators_1_1_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4_a9164b1e476a1e3c4f9f369fd75cd6edf.html#a9164b1e476a1e3c4f9f369fd75cd6edf", null ],
+    [ "check_consistency", "structquetzal_1_1simulators_1_1_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4_a8872fd6dfe1d309e2f986d4a7f57c9bd.html#a8872fd6dfe1d309e2f986d4a7f57c9bd", null ]
+];

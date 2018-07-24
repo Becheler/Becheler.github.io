@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QUETZAL: quetzal::simulators::IDDC_model_1::simulate</title>
+<title>QUETZAL: quetzal::simulators::Spatially_explicit_coalescence_simulator::N_value_type</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_i_d_d_c__model__1_ad0b94ac6e93d1a9953d121b2b5e042b9.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a44213f9b2fee31c3c1dcc5a65745f225.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,72 +103,19 @@ $(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_i_d_d_c
 </div>
 
 <div class="contents">
-<a id="ad0b94ac6e93d1a9953d121b2b5e042b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0b94ac6e93d1a9953d121b2b5e042b9">&#9670;&nbsp;</a></span>simulate() <span class="overload">[1/2]</span></h2>
+<a id="a44213f9b2fee31c3c1dcc5a65745f225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44213f9b2fee31c3c1dcc5a65745f225">&#9670;&nbsp;</a></span>N_value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename Value &gt; </div>
-<div class="memtemplate">
-template&lt;typename Generator , typename Growth , typename Dispersal , typename Tree &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename Space , typename Time , typename Strategy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a39de37e17fc5776faeac8b200c46cc9d.html#a39de37e17fc5776faeac8b200c46cc9d">forest_type</a>&lt;Tree&gt; <a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1.html">quetzal::simulators::IDDC_model_1</a>&lt; Space, Time, Value &gt;::simulate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a39de37e17fc5776faeac8b200c46cc9d.html#a39de37e17fc5776faeac8b200c46cc9d">forest_type</a>&lt; Tree &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>forest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Growth&#160;</td>
-          <td class="paramname"><em>growth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dispersal&#160;</td>
-          <td class="paramname"><em>kernel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a95e7ad6a4a9d56055d846cd40f2b2642.html#a95e7ad6a4a9d56055d846cd40f2b2642">time_type</a>&#160;</td>
-          <td class="paramname"><em>t_sampling</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Generator &amp;&#160;</td>
-          <td class="paramname"><em>gen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator.html">quetzal::simulators::Spatially_explicit_coalescence_simulator</a>&lt; Space, Time, Strategy &gt;::<a class="el" href="classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a44213f9b2fee31c3c1dcc5a65745f225.html#a44213f9b2fee31c3c1dcc5a65745f225">N_value_type</a> =  typename strategy_type::value_type</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p class="">Simulate a demographic history forward in time conditionally to the user-defined growth and dispersal features, then simulate the coalescence of a forest conditionally to the simulated demography. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">forest</td><td>[description] </td></tr>
-    <tr><td class="paramname">growth</td><td>[description] </td></tr>
-    <tr><td class="paramname">kernel</td><td>[description] </td></tr>
-    <tr><td class="paramname">t_sampling</td><td>[description] </td></tr>
-    <tr><td class="paramname">gen</td><td>[description] </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>[description] </dd></dl>
 
 </div>
 </div>

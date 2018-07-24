@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QUETZAL: quetzal::simulators::Spatially_explicit_coalescence_simulator::size_history</title>
+<title>QUETZAL: quetzal::simulators::Spatially_explicit_coalescence_simulator::expand_demography</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a820ec09d04aef90b6c056472b33c7fe9.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_ab720333101f48bcc5f1dff87a5cd20ec.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,32 +103,55 @@ $(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_spatial
 </div>
 
 <div class="contents">
-<a id="a820ec09d04aef90b6c056472b33c7fe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a820ec09d04aef90b6c056472b33c7fe9">&#9670;&nbsp;</a></span>size_history()</h2>
+<a id="ab720333101f48bcc5f1dff87a5cd20ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab720333101f48bcc5f1dff87a5cd20ec">&#9670;&nbsp;</a></span>expand_demography()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Space , typename Time , typename Strategy &gt; </div>
+<div class="memtemplate">
+template&lt;typename Generator , typename Growth , typename Dispersal &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto const&amp; <a class="el" href="classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator.html">quetzal::simulators::Spatially_explicit_coalescence_simulator</a>&lt; Space, Time, Strategy &gt;::size_history </td>
+          <td class="memname">void <a class="el" href="classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator.html">quetzal::simulators::Spatially_explicit_coalescence_simulator</a>&lt; Space, Time, Strategy &gt;::expand_demography </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">Growth&#160;</td>
+          <td class="paramname"><em>growth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dispersal&#160;</td>
+          <td class="paramname"><em>kernel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_a2ce2f93d5e5918621c2ab8e29dd776d3.html#a2ce2f93d5e5918621c2ab8e29dd776d3">time_type</a>&#160;</td>
+          <td class="paramname"><em>t_sampling</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Generator &amp;&#160;</td>
+          <td class="paramname"><em>gen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p class="">Read-only access to the population size history. </p><dl class="section remark"><dt>Remarks</dt><dd>Useful for implementing time-dependent population growth models. Use std::cref to make it a copiable reference, so it can be captured in a lambda expression or composed into more complex expressions using expressive, </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>a non-copiable functor with signature 'N_value_type fun(coord_type const&amp; x, time_type const&amp; t)' giving the population size in deme \(x\) at time \(t\). </dd></dl>
 
 </div>
 </div>

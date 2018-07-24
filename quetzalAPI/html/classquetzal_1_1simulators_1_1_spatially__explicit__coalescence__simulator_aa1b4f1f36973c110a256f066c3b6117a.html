@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QUETZAL: quetzal::simulators::IDDC_model_1::simulate</title>
+<title>QUETZAL: quetzal::simulators::Spatially_explicit_coalescence_simulator::size_history</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a1d2bbda607ac8cc581b84770d1d647dc.html','');});
+$(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator_aa1b4f1f36973c110a256f066c3b6117a.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,67 +103,34 @@ $(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_i_d_d_c
 </div>
 
 <div class="contents">
-<a id="a1d2bbda607ac8cc581b84770d1d647dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d2bbda607ac8cc581b84770d1d647dc">&#9670;&nbsp;</a></span>simulate() <span class="overload">[2/2]</span></h2>
+<a id="aa1b4f1f36973c110a256f066c3b6117a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b4f1f36973c110a256f066c3b6117a">&#9670;&nbsp;</a></span>size_history()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename Value &gt; </div>
-<div class="memtemplate">
-template&lt;typename Generator , typename Growth , typename Dispersal , typename F , typename Tree &gt; </div>
+template&lt;typename Space , typename Time , typename Strategy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a39de37e17fc5776faeac8b200c46cc9d.html#a39de37e17fc5776faeac8b200c46cc9d">forest_type</a>&lt;Tree&gt; <a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1.html">quetzal::simulators::IDDC_model_1</a>&lt; Space, Time, Value &gt;::simulate </td>
+          <td class="memname">auto <a class="el" href="classquetzal_1_1simulators_1_1_spatially__explicit__coalescence__simulator.html">quetzal::simulators::Spatially_explicit_coalescence_simulator</a>&lt; Space, Time, Strategy &gt;::size_history </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a39de37e17fc5776faeac8b200c46cc9d.html#a39de37e17fc5776faeac8b200c46cc9d">forest_type</a>&lt; Tree &gt;&#160;</td>
-          <td class="paramname"><em>forest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Growth&#160;</td>
-          <td class="paramname"><em>growth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dispersal&#160;</td>
-          <td class="paramname"><em>kernel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1simulators_1_1_i_d_d_c__model__1_a95e7ad6a4a9d56055d846cd40f2b2642.html#a95e7ad6a4a9d56055d846cd40f2b2642">time_type</a>&#160;</td>
-          <td class="paramname"><em>t_sampling</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">F&#160;</td>
-          <td class="paramname"><em>binary_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Generator &amp;&#160;</td>
-          <td class="paramname"><em>gen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Read-only access to the population size history. </p>
+<p class="">The primary purpose of this access is to allow the implemention of time-dependent population growth models&gt;. The returned functor can be captured in a lambda expression and/or composed into more complex expressions using the expressive module.</p>
+<dl class="section return"><dt>Returns</dt><dd>a functor with signature 'N_value_type fun(coord_type const&amp; x, time_type const&amp; t)' giving the population size in deme \(x\) at time \(t\). </dd></dl>
 
 </div>
 </div>

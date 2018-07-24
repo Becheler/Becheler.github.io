@@ -62,9 +62,9 @@ var NAVTREEINDEX =
 [
 "_allele_8h.html",
 "class_matrix_a710d9b6934a24229fe06789f65ed0571.html#a710d9b6934a24229fe06789f65ed0571",
-"classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix_a1fcfcc294e9f691b7a1dd9d79c737cff.html#a1fcfcc294e9f691b7a1dd9d79c737cff",
-"example1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"struct_lat_lon_a6725284e799758d287209ae5052a3f56.html#a6725284e799758d287209ae5052a3f56"
+"classquetzal_1_1demography_1_1dispersal_1_1_negative_exponential_1_1param__type_a65c86c77cc2df2780188b2a5b1581523.html#a65c86c77cc2df2780188b2a5b1581523",
+"functions_b.html",
+"struct_prior_a4dbd06297237589be935ab28b99cfdf1.html#a4dbd06297237589be935ab28b99cfdf1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

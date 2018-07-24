@@ -43,7 +43,7 @@ var searchData=
   ['merge_2eh',['merge.h',['../merge_8h.html',1,'']]],
   ['merge_5fclusters',['merge_clusters',['../class_fuzzy_partition_a3b2bda53a624bc960c1f3c2a826a6e22.html#a3b2bda53a624bc960c1f3c2a826a6e22',1,'FuzzyPartition']]],
   ['merger_2eh',['merger.h',['../merger_8h.html',1,'']]],
-  ['merger_5ftype',['merger_type',['../classquetzal_1_1simulators_1_1_i_d_d_c__model__1_ab9305105909d16c51e67601052a5fc98.html#ab9305105909d16c51e67601052a5fc98',1,'quetzal::simulators::IDDC_model_1']]],
+  ['merger_5ftype',['merger_type',['../structquetzal_1_1simulators_1_1_policy_a35c9c0bb3b2d7f80aecbdc5f6eed902c.html#a35c9c0bb3b2d7f80aecbdc5f6eed902c',1,'quetzal::simulators::Policy::merger_type()'],['../structquetzal_1_1simulators_1_1_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4_a9164b1e476a1e3c4f9f369fd75cd6edf.html#a9164b1e476a1e3c4f9f369fd75cd6edf',1,'quetzal::simulators::Policy&lt; quetzal::demography::strategy::individual_based &gt;::merger_type()']]],
   ['meta',['meta',['../namespacemeta.html',1,'']]],
   ['microsat_5finstance',['microsat_instance',['../namespacequetzal_1_1genetics_aca0882b179f9e3dd54cb4b626efca127.html#aca0882b179f9e3dd54cb4b626efca127',1,'quetzal::genetics']]],
   ['microsatellite',['microsatellite',['../namespacequetzal_1_1genetics_a990a78fa0fe31e0d7beca22e9634ae42.html#a990a78fa0fe31e0d7beca22e9634ae42',1,'quetzal::genetics']]],

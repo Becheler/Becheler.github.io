@@ -53,7 +53,7 @@ var group__demography =
       [ "expand", "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1individual__based_01_4_a1feda3a3363d225021702e9841117fbc.html#a1feda3a3363d225021702e9841117fbc", null ]
     ] ],
     [ "History< Space, Time, strategy::mass_based >", "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1mass__based_01_4.html", [
-      [ "expand", "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1mass__based_01_4_a3cf862802cde3422f1e3ec513940d2f7.html#a3cf862802cde3422f1e3ec513940d2f7", null ]
+      [ "expand", "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1mass__based_01_4_a4384e01bca13a7edb608679939074918.html#a4384e01bca13a7edb608679939074918", null ]
     ] ],
     [ "PopulationSize", "classquetzal_1_1demography_1_1_population_size.html", [
       [ "coord_type", "classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356", null ],

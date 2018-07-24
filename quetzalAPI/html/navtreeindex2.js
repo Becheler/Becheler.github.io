@@ -248,6 +248,6 @@ var NAVTREEINDEX2 =
 "expressive_8h.html":[4,0,0,5],
 "expressive_8h_source.html":[4,0,0,5],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
-"functions.html":[3,3,0]
+"functions.html":[3,3,0],
+"functions.html":[3,3,0,0]
 };

@@ -165,7 +165,7 @@ template&lt;typename T , typename U , typename V &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nb_generations</td><td>the number of generations to simulate. </td></tr>
-    <tr><td class="paramname">sim_growth</td><td>a functor simulating \(\tilde{N}_{x}^{t}\). The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following: <code>double sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code>. </td></tr>
+    <tr><td class="paramname">sim_growth</td><td>a functor simulating \(\tilde{N}_{x}^{t}\). The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following: <code>unsigned int sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code>. </td></tr>
     <tr><td class="paramname">kernel</td><td>a functor representing the dispersal transition matrix. The signature of the function should be equivalent to <code>double kernel( const coord_type &amp; x, const coord_type &amp;y, const time_type &amp;t);</code> and the function should return the probability for an individual to disperse from \(x\) to \(y\) at time \(t\). The expression <code>kernel.state_space(time_type const&amp; t)</code> must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space at time \(t\).</td></tr>
   </table>
   </dd>

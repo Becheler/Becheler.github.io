@@ -1,14 +1,15 @@
 <map id="quetzal/modules/coalescence/policies/merger.h" name="quetzal/modules/coalescence/policies/merger.h">
-<area shape="rect" id="node1" title=" " alt="" coords="627,5,822,47"/>
-<area shape="rect" id="node2" href="$coalescence_8h.html" title=" " alt="" coords="357,109,509,136"/>
-<area shape="rect" id="node8" href="$simulators_8h.html" title=" " alt="" coords="533,102,708,143"/>
-<area shape="rect" id="node11" href="$coalescence_2policies_2test_2_binary_merger_2test_8cpp.html" title=" " alt="" coords="733,95,927,151"/>
-<area shape="rect" id="node12" href="$coalescence_2policies_2test_2_simultaneous_multiple_merger_2test_8cpp.html" title=" " alt="" coords="951,95,1175,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title=" " alt="" coords="381,213,503,240"/>
-<area shape="rect" id="node4" href="$example1_8cpp.html" title=" " alt="" coords="210,317,413,359"/>
-<area shape="rect" id="node5" href="$landscape__invasion_2main_8cpp.html" title=" " alt="" coords="5,310,185,366"/>
-<area shape="rect" id="node6" href="$main__simultaneous__loci_8cpp.html" title=" " alt="" coords="437,303,631,373"/>
-<area shape="rect" id="node7" href="$two__demes_2main_8cpp.html" title=" " alt="" coords="655,310,843,366"/>
-<area shape="rect" id="node9" href="$_demonstration_model_8h.html" title=" " alt="" coords="797,199,1009,255"/>
-<area shape="rect" id="node10" href="$cross__val_8cpp.html" title=" " alt="" coords="867,310,1047,366"/>
+<area shape="rect" id="node1" title=" " alt="" coords="522,5,717,47"/>
+<area shape="rect" id="node2" href="$coalescence_8h.html" title=" " alt="" coords="251,109,403,136"/>
+<area shape="rect" id="node8" href="$simulators_8h.html" title=" " alt="" coords="428,102,603,143"/>
+<area shape="rect" id="node12" href="$coalescence_2policies_2test_2_binary_merger_2test_8cpp.html" title=" " alt="" coords="627,95,822,151"/>
+<area shape="rect" id="node13" href="$coalescence_2policies_2test_2_simultaneous_multiple_merger_2test_8cpp.html" title=" " alt="" coords="846,95,1070,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title=" " alt="" coords="267,221,388,247"/>
+<area shape="rect" id="node4" href="$example1_8cpp.html" title=" " alt="" coords="210,332,413,373"/>
+<area shape="rect" id="node5" href="$landscape__invasion_2main_8cpp.html" title=" " alt="" coords="5,325,185,381"/>
+<area shape="rect" id="node6" href="$main__simultaneous__loci_8cpp.html" title=" " alt="" coords="437,317,631,388"/>
+<area shape="rect" id="node7" href="$two__demes_2main_8cpp.html" title=" " alt="" coords="655,325,843,381"/>
+<area shape="rect" id="node9" href="$_demonstration_model_8h.html" title=" " alt="" coords="817,206,1029,262"/>
+<area shape="rect" id="node11" href="$mass__based__simulator__test_8cpp.html" title=" " alt="" coords="412,199,611,269"/>
+<area shape="rect" id="node10" href="$cross__val_8cpp.html" title=" " alt="" coords="867,325,1047,381"/>
 </map>

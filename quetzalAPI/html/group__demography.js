@@ -25,7 +25,7 @@ var group__demography =
       [ "value_type", "structquetzal_1_1demography_1_1strategy_1_1individual__based_aa3d35cc0ae94a3230a094008afa4209c.html#aa3d35cc0ae94a3230a094008afa4209c", null ]
     ] ],
     [ "mass_based", "structquetzal_1_1demography_1_1strategy_1_1mass__based.html", [
-      [ "value_type", "structquetzal_1_1demography_1_1strategy_1_1mass__based_aff822c26eac70b884e50d1b9abac6f22.html#aff822c26eac70b884e50d1b9abac6f22", null ]
+      [ "value_type", "structquetzal_1_1demography_1_1strategy_1_1mass__based_aeea02a86fb58f93d4b866269cbddffea.html#aeea02a86fb58f93d4b866269cbddffea", null ]
     ] ],
     [ "BaseHistory", "classquetzal_1_1demography_1_1_base_history.html", [
       [ "backward_kernel_type", "classquetzal_1_1demography_1_1_base_history_a5abd15ac0d6ebb382ed119a0b4fe6098.html#a5abd15ac0d6ebb382ed119a0b4fe6098", null ],
@@ -36,7 +36,7 @@ var group__demography =
       [ "strategy_type", "classquetzal_1_1demography_1_1_base_history_a8383edea8b6e236bd41f13259c8e7040.html#a8383edea8b6e236bd41f13259c8e7040", null ],
       [ "time_type", "classquetzal_1_1demography_1_1_base_history_ab3acdc93f9a4cd6581f43c07fd758ffc.html#ab3acdc93f9a4cd6581f43c07fd758ffc", null ],
       [ "BaseHistory", "classquetzal_1_1demography_1_1_base_history_af5476adbfb5a9d23b20a0efb9011effb.html#af5476adbfb5a9d23b20a0efb9011effb", null ],
-      [ "backward_kernel", "classquetzal_1_1demography_1_1_base_history_adaeac842feda692fbef8f9a735f5b990.html#adaeac842feda692fbef8f9a735f5b990", null ],
+      [ "backward_kernel", "classquetzal_1_1demography_1_1_base_history_a5329009cc97ca48650bf766e852ae75d.html#a5329009cc97ca48650bf766e852ae75d", null ],
       [ "first_time", "classquetzal_1_1demography_1_1_base_history_a0119e24ec0959ac96cfc6c0084aec859.html#a0119e24ec0959ac96cfc6c0084aec859", null ],
       [ "flows", "classquetzal_1_1demography_1_1_base_history_a1c8acc95b392c2e53bc79120204e1794.html#a1c8acc95b392c2e53bc79120204e1794", null ],
       [ "flows", "classquetzal_1_1demography_1_1_base_history_ae13fb7b4e725a0fe84570661608aac01.html#ae13fb7b4e725a0fe84570661608aac01", null ],

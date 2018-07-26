@@ -111,18 +111,18 @@ $(document).ready(function(){initNavTree('structquetzal_1_1demography_1_1strateg
 </div><!--header-->
 <div class="contents">
 
-<p>Traits class for simulating the demographic history of importnat masses of populations.  
+<p>Traits class for simulating the demographic history of important masses of populations.  
  <a href="structquetzal_1_1demography_1_1strategy_1_1mass__based.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_history_8h_source.html">History.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aff822c26eac70b884e50d1b9abac6f22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1strategy_1_1mass__based_aff822c26eac70b884e50d1b9abac6f22.html#aff822c26eac70b884e50d1b9abac6f22">value_type</a> = double</td></tr>
-<tr class="separator:aff822c26eac70b884e50d1b9abac6f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea02a86fb58f93d4b866269cbddffea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1strategy_1_1mass__based_aeea02a86fb58f93d4b866269cbddffea.html#aeea02a86fb58f93d4b866269cbddffea">value_type</a> = unsigned int</td></tr>
+<tr class="separator:aeea02a86fb58f93d4b866269cbddffea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">Traits class for simulating the demographic history of importnat masses of populations. </p>
+<div class="textblock"><p class="">Traits class for simulating the demographic history of important masses of populations. </p>
 <p class="">Simulate the demographic history by considering that populations of individuals are divisible masses, leading to faster simulations.</p>
 <dl class="section user"><dt>Intialization:</dt><dd>\(N\) is initialized by setting \(N(.,t_0)\) the initial distribution of individuals across demes at the first time \(t_0\). Typically for a biological invasion, this is restricted to the introduction site(s) with the number of introduced individuals. For endemic species, paleoclimatic distribution can be considered as starting points.</dd></dl>
 <dl class="section user"><dt>Growth:</dt><dd>The offspring number \(\tilde{N}_{x}^{t}\) in each deme is freely defined by the user. For example, it can be sampled in a distribution conditionally to a function of the local density of parents. Non-overlapping generations are considered (the parents die just after reproduction).</dd></dl>

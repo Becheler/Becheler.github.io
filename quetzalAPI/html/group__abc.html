@@ -132,53 +132,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p class="">Template classes for embedding simulation model objects into an Approximate Bayesian Computation framework. </p>
-<p class="">Defines template classes to embed simulation code into an Approximate Bayesian Computation framework framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-ended number of important inference tasks, as the user can for example inject almost any kind of distance or summary statistics in the analysis of the reference table.</p>
-<h2>C++ concept : <a class="el" href="class_generative_model.html">GenerativeModel</a></h2>
-<p class="">The abc module relies heavily on the C++ concept of <a class="el" href="class_generative_model.html">GenerativeModel</a>, which defines the set of constraints that a simulation model object must have to interact with the abc module.</p>
-<p class="">The type <code>D</code> satisfies <a class="el" href="class_generative_model.html">GenerativeModel</a> if</p>
-<ul>
-<li><code>D</code> satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyConstructible">CopyConstructible</a></li>
-<li><code>D</code> satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyAssignable">CopyAssignable</a></li>
-</ul>
-<p class="">Given</p>
-<ul>
-<li><code>T</code>, the type named by <code>M::return_type</code></li>
-<li><code>P</code>, the type named by <code>M::param_type</code>, which:<ul>
-<li>satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyConstructible">CopyConstructible</a></li>
-<li>satisfies <a href="http://en.cppreference.com/w/cpp/concept/CopyAssignable">CopyAssignable</a></li>
-<li>satisfies <a href="http://en.cppreference.com/w/cpp/concept/EqualityComparable">EqualityComparable</a></li>
-<li>has a constructor taking identical arguments as each of the constructors of <code>D</code> that take arguments corresponding to the model parameters.</li>
-<li>has a member function with the identical name, type, and semantics, as every member function of <code>D</code> that returns a parameter of the model</li>
-<li>declares a member typedef <code>using distribution_type = D</code>;</li>
-</ul>
-</li>
-<li><code>d</code>, a value of type <code>D</code></li>
-<li><code>x</code>, a (possibly <code>const</code>) value of type <code>D</code></li>
-<li><code>p</code>, a (possibly <code>const</code>) value of type <code>P</code></li>
-<li><code>g</code>, a lvalue of a type satisfying the STL <a href="http://en.cppreference.com/w/cpp/concept/UniformRandomBitGenerator">UniformRandomBitGenerator</a> concept</li>
-</ul>
-<p class="">The following expressions must be valid and have their specified effects :</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Notes   </th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>D::result_type</code>  </td><td class="markdownTableBodyNone"><code>T</code>  </td><td class="markdownTableBodyNone">the type of the simulated data   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>D::param_type</code>  </td><td class="markdownTableBodyNone"><code>T</code>  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>D()</code>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">creates a distribution indistinguishable from any other default-constructed <code>D</code>   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>D(p)</code>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">creates a distribution indistinguishable from <code>D</code> constructed directly from the values used to construct <code>p</code>   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>x.param()</code>  </td><td class="markdownTableBodyNone"><code>P</code>  </td><td class="markdownTableBodyNone">Returns <code>p</code> such that <code>D(p).param() == p</code>   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>d.param(p)</code>  </td><td class="markdownTableBodyNone"><code>void</code>  </td><td class="markdownTableBodyNone">Postcondition: <code>d.param() == p</code>   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>d(g)</code>  </td><td class="markdownTableBodyNone"><code>T</code>  </td><td class="markdownTableBodyNone">The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by <code>d.param()</code>   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>d(g,p)</code>  </td><td class="markdownTableBodyNone"><code>T</code>  </td><td class="markdownTableBodyNone">The sequence of data returned by successive invocations of this call with the same <code>g</code> are randomly distributed according to the distribution parametrized by <code>p</code>   </td></tr>
-</table>
-<dl class="section remark"><dt>Remarks</dt><dd>All types satisfying the requirements of the STL <a href="http://en.cppreference.com/w/cpp/concept/RandomNumberDistribution">RandomNumberDistribution</a> satisfy quetzal <a class="el" href="class_generative_model.html">GenerativeModel</a> concept. </dd></dl>
+<p class="">Defines template classes to embed simulation code into an Approximate Bayesian Computation framework framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-ended number of important inference tasks, as the user can for example inject almost any kind of distance or summary statistics in the analysis of the reference table. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.11-->

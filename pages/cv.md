@@ -1,16 +1,25 @@
 ---
 layout: cv
 title: Arnaud Becheler
-tagline: phD student
+tagline: PhD
 description: Curriculum Vitae
 ---
+
 # Curriculum vitae
 
+[Get the PDF version]({{ "/_assets/cv.pdf" | absolute_url }}).
 **********************************
 
 ## Research experience
 
-* phD student (December 2014 - present)
+* Postdoctoral Fellow at University of Michigan (July 2018 - present)
+  * Methodological development and software programming for species delimitation models
+  * [Ecology And Evolutionary Biology](https://lsa.umich.edu/eeb), University of Michigan
+  * Faculty mentor: [Lacey Knowles](https://lsa.umich.edu/eeb/people/faculty/knowlesl.html)
+  * Other mentors: [Jeet Sukumaran](http://jeetblogs.org/), [Craig Moritz](http://biology.anu.edu.au/people/craig-moritz)
+  * [UMich page](https://lsa.umich.edu/ummz/people/postdoctoral-fellows/arnaud-becheler.html)
+
+* PhD student at Université Paris-Sud, Paris-Saclay (December 2014 - June 2018)
   * [Environmental demogenetic model for an invasive species](http://www.theses.fr/s143741)
   * [Laboratoire Évolution, Génomes, Comportement et Écologie](http://www.egce.cnrs-gif.fr/?lang=en) (EGCE), Gif-sur-Yvette, France
   * Advisors: [Stéphane Dupas](http://www.egce.cnrs-gif.fr/?p=722), [Camille Coron](https://www.math.u-psud.fr/~ccoron/)  

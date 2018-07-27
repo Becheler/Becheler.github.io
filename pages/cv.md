@@ -7,7 +7,7 @@ description: Curriculum Vitae
 
 # Curriculum vitae
 
-[Get the PDF version]({{ "/_assets/cv.pdf" | absolute_url }}).
+[Get the PDF version]({{ "../_assets/cv.pdf"}}).
 **********************************
 
 ## Research experience

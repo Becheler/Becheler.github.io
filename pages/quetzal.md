@@ -2,7 +2,7 @@
 layout: quetzal
 title: Quetzal
 tagline: the C++ Coalescence Template Library
-description: introduction
+description: home
 ---
 
 # What is Quetzal?
@@ -57,9 +57,14 @@ But you will surely spare time by **not re-inventing the wheel**.
 
 # Why a library and not a program ?
 
-In biology we love programs. We love them because they are nice black-boxes we can
-manipulate with a neat interface (configuration files, GUI...) without having to
-worry about programming languages.
+In biology we love programs.
+
+We love them because they are nice black-boxes eating data and digesting them in
+a process we can adjust using a neat interface (configuration files, GUI...).
+
+All the magic happens without having to worry about programming languages, design or architecture.
+
+![Magic behind]({{site.url}}/pictures/user-interface.gif)
 
 So naturally we tend to think that programs are the first and final answer
 for any computational problem. So we end up with a variety of programs fulfilling a
@@ -100,7 +105,7 @@ We designed Quetzal so the code can be very expressive and compact.
 For example, here is a code extract of a documentation script. We use just some
 of the Quetzal capabilities to simulate a demography in an arbitrary demic structure.
 
-The keypoint is that even the simulator behavior is complex, we have total control
+The keypoint is that even if the simulator behavior is complex, we have total control
 on many implementation details and the code is still
 compact, easy to read and fast to execute:
 
@@ -157,7 +162,7 @@ auto branching_operator = []( auto parent , auto child ){
   return parent + "," + child + ")" ;
 };
 
-// And inject it!
+// ... and inject it!
 auto new_forest = simulator.coalesce_along_history(forest, branching_operator, gen);
 
 for(auto const& it : new_forest ){
@@ -165,19 +170,25 @@ for(auto const& it : new_forest ){
 }
 ```
 
-And that's it ! Compile, run, and get as an output the ancestral location of the tree and
+And that's it !
+
+Compile, run, and get as an output the ancestral location of the tree and
 the topology:
 
 ```
 Ann Arbor (((((a,d),e),b),f),c)
 ```
 
-- You want to change the dipsersal model ?
-- You want to simulate explicit allelic states ?
-- You want to change the demographic growth ?
-- You want to incorporate landscape heterogeneity in the model ?
+# Going further is part of the fun
 
-This is totally expected and doable: type your own components code respecting some basic
+Actually it was the main focus of Quetzal design: answering some questions by enabling new ones.
+
+- Do you want to change the dispersal model ?
+- Do you want to simulate explicit allelic states ?
+- Do you want to change the demographic growth ?
+- Do you want to incorporate landscape heterogeneity in the model ?
+
+This is totally expected and doable: code only your customized components respecting some basic
 constraints, and inject them in your main function.
 
 Quetzal code will adapt to your components: **no need to recode everything !**

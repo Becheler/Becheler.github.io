@@ -7,7 +7,7 @@ description: Curriculum Vitae
 
 # Curriculum vitae
 
-You can get a more detailed [PDF version](cv.pdf).
+You can get a more detailed [PDF version](../pdfs/cv.pdf).
 
 **********************************
 

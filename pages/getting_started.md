@@ -109,6 +109,7 @@ Open a terminal, go in the ``quetzal`` directory and type:
 ./run_test.sh
 ```
 
-If all the tests end without problems, it means you are ready to go!
+If all the tests end without problems, it means you are ready to write [your first
+own little program]({{ site.url }}/pages/tutorials.html).
 
 If you have any trouble, feel free to contact us.

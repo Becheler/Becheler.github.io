@@ -10,13 +10,13 @@ use_math: true
 
 There are two main ways to simulate the expansion of populations of individuals
 in a discrete landscape:
-- dispersing each individual separately according to a user-defined probability distribution.
-- splitting each population across space according to user-defined migration probabilities.
+- [dispersing each individual separately according to a user-defined probability distribution.](#ind_based)
+- [splitting each population across space according to user-defined migration probabilities.](#mass_based)
 
 These two strategies can seem quite similar in theory, but their computational border-effects
 are quite distinct and are detailed below.
 
-## Individual-based dispersal in small populations
+## Individual-based dispersal in small populations <a name="ind_based"></a>
 
 For the biologist, the most intuitive simulation behavior would be that each individual
 disperse independently. Accordingly, we defined a demographic expansion algorithm
@@ -166,7 +166,7 @@ auto growth = [N](auto& gen, coord_type x, time_type t){
  };
 ```
 
-#### Implementing a dispersal location kernel
+#### Implementing a dispersal location kernel <a name="dispersal_sampler"></a>
 
 The ```individual_based``` strategy requires a specific type of dispersal function.
 Remember that for each individual, a post-dispersal location is sampled in a distribution.
@@ -305,4 +305,229 @@ time	from	to	flow
 2019	1	1	12
 ```
 
-## Mass-based dispersal for big populations
+## Mass-based dispersal for big populations <a name="mass_based"></a>
+
+We can avoid the cost of having to disperse each individual of the landscape by
+considering a model where population masses would be split through the landscape
+according to migration probabilities: the model is deterministic
+in the sense that no random number is generated.
+
+### Pros
+
+This algorithm is more efficient as the computation time is now only related to
+the number of demes in the landscape. Consequently it allows to perform simulations
+with high number of individuals in a very reasonable amount of time
+
+### Cons
+
+Defining a strategy that is more efficient for high populations levels
+comes with the major drawback that it is unsuited whenever populations are too small:
+> What if 10 individuals are split across 1000 demes ?
+
+> What does 0.001 individual mean in terms of coalescence probability ?
+
+It could seem easy to ensure it never happens. Unfortunately, population levels
+are actually hard to control in an ABC simulation context where
+parameters are randomly sampled, so we can hardly guarantee that this situation will
+not arise.
+
+We avoid the problem with a computational little trick: when summing the population
+flows arriving to a same deme, the least integer greater or equal to the actual flow value
+is used.
+
+So when dispersing 2 individuals in a 4-demes landscape with equal migration
+probabilities, the simulation will end up with $\lceil 2 \times 0.25 \rceil = 1$ individual in each deme...
+
+That is, dispersing 2 individuals leads to having 4 individuals in the lanscape.
+
+Obviously this behavior is not satisfying if the high-population hypothesis is violated,
+but when the population size in each deme is of the order of the
+number of demes, this little excess is expected to have little impact.
+
+### Mathematical description
+
+ The children dispersal is done by splitting the population masses according
+ to their migration probabilities, defining
+ $ \Phi_{x,y}^t $, the population flow going from $x$ to $y$ at time $t$:
+
+ $$
+ (\Phi_{x,y}^{t})_{y\in  X} =  ( \lceil \tilde{N}_{x}^{t} \times m_{xy} \rceil )_{y\in  X} ~.
+ $$
+
+ The term $ m_{xy} $ denotes the parameters of the transition kernel,
+ giving for an individual in $x$ its probability to go to $y$.
+ These probabilities are given by the dispersal law with parameter $\theta$:
+
+ $$
+ \begin{array}{cclcl}
+ m  & : &  X^2 & \mapsto & R_{+} \\
+ &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
+ \end{array}
+ $$
+
+ After migration, the population size in deme $x$ is defined by the sum of population flows converging to $x$:
+
+ $$
+ N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
+ $$
+
+### Implementation
+
+Most of the features are the same than for the [individual_based](#ind_based) strategy.
+
+The only thing changing is the way to represent a dispersal kernel. For the individual-based
+strategy, we needed to [sample a new location conditionally to the present location](#dispersal_sampler).
+
+Now we just need a function that returns $m_{xy}$, the probability to move from
+$x$ to $y$ at time $t$. Basically, we need a transition matrix, not a random sampler.
+
+Note that we are not forced to use a matrix data structure: it is enough to implement
+a **functor** returning the migration rates, that is to define the member function
+`operator()(coord_type x, coord_type y, time_type t)`.
+
+Another important constraint is that we need this transition matrix to give the set
+ of inhabitable demes representing the landscape.
+
+ ```cpp
+ struct transition_matrix {
+   using coord_type = int;
+   using time_type = unsigned int;
+
+   std::vector<coord_type> state_space(time_type t)
+   {
+     return {-1, 1};
+   }
+   // 1/2 probability to change of location
+   double operator()(coord_type x, coord_type y, time_type t)
+   {
+     return 0.5;
+   }
+ };
+ ```
+
+Here we assume that the spatial representation
+is constant through time so the temporal argument `time_type t` is not used in the
+body of the `state_space` function.
+
+It is however an important extension point. Indeed at large temporal
+scales we expect the landscape to go through some form of modification, for example
+contraction or expansion of the inhabitable areas due to sea-level rises  or glaciation.
+
+In this case we would be interested to use this time argument in the function implementation
+in order to implement this dynamic.
+
+For the rest it is totally similar with the individual based strategy.
+
+### Complete script and compilation options
+
+#### Compilation options
+
+The complete `demo.cpp` script is given below.
+
+It compiles with the following terminal command:
+```
+g++ -Wall -std=c++14 demo.cpp
+```
+- the option `-Wall` enables all warnings
+- the option `-std=c++14` enables the C++14 standard compiler support
+
+Then you can run the program with the following command:
+```
+./a.out
+```
+
+#### Complete script
+
+The complete
+code is given below. We changed the type of the demes identifiers - that have now
+names of cities, just to demonstrate that Quetzal functions are not linked to any
+precise geographical coordinate system.
+
+
+```cpp
+#include "quetzal/demography.h"
+
+#include <iostream>
+#include <random>
+#include <map>
+
+struct transition_matrix {
+
+	using coord_type = std::string;
+	using time_type = unsigned int;
+
+	std::vector<coord_type> state_space(time_type t)
+	{
+		return {"Paris", "Ann Arbor"};
+	}
+
+	double operator()(coord_type x, coord_type y, time_type t)
+	{
+		return 0.5; // 1/2 probability to change of location
+	}
+
+};
+
+int main(){
+
+	using coord_type = std::string;
+	using time_type = unsigned int;
+	using generator_type = std::mt19937;
+
+	// Initialize history: 100 individuals introduced at x=1, t=2018
+	using quetzal::demography::strategy::mass_based;
+	quetzal::demography::History<coord_type, time_type, mass_based> history("Paris", 2018, 100);
+
+	// Growth function
+	auto N = std::cref(history.pop_sizes());
+	auto growth = [N](auto& gen, coord_type x, time_type t){ return 2*N(x,t) ; };
+
+	// Number of non-overlapping generations for the demographic simulation
+	unsigned int nb_generations = 3;
+
+	// Random number generation
+	generator_type gen;
+
+	transition_matrix M;
+
+	history.expand(nb_generations, growth, M, gen);
+
+	std::cout << "Population flows from x to y at time t:\n\n" << history.flows() << std::endl;
+
+	return 0;
+}
+```
+
+The expected output is:
+
+```
+Population flows from x to y at time t:
+
+time	from	to	flow
+2020	Ann Arbor	Ann Arbor	20
+2020	Paris	Paris	20
+2018	Paris	Ann Arbor	10
+2020	Ann Arbor	Paris	20
+2019	Ann Arbor	Ann Arbor	10
+2020	Paris	Ann Arbor	20
+2019	Paris	Paris	10
+2018	Paris	Paris	10
+2019	Paris	Ann Arbor	10
+2019	Ann Arbor	Paris	10
+```
+
+# Conclusion
+
+You now know how to implement your own little demographic simulator.
+
+If you have very peculiar growth or dispersal model, this tutorial demonstrated that you can
+inject user-defined implementations into Quetzal components.
+
+However, you will surely not manually hard-code the migration rates between hundreds
+of demes in a landscape.
+
+You may find in Quetzal a way to automate the process of [constructing spatially explicit,
+distance-based dispersal kernels]({{ site.url }}/pages/tuto_dispersal).
+
+But before to compute probabilities across space, you first need to know more
+about [how to represent a spatially explicit landscape]({{ site.url }}/pages/tuto_geo)!

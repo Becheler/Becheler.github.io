@@ -14,8 +14,8 @@ will be set up, you will learn about the following:
 
  [How to use different strategies for simulating populations dispersal:](tuto_demography.html)
 
-- [Individual-based dispersal in small populations](tuto_demography.html/#ind_based)
-- [Mass-based dispersal for big populations](tuto_demography.html/#mass_based)
+- [Individual-based dispersal in small populations](tuto_demography.html/ind_based)
+- [Mass-based dispersal for big populations](tuto_demography.html/mass_based)
 
  How to integrate landscape heterogeneity in the analysis with GIS:
 

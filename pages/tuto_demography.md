@@ -87,6 +87,22 @@ To get these features we include some STL features:
 #include <random>
 ```
 
+So now that we included the required pre-existing code, we can begin to write our own code
+in the main function of the program:
+
+```cpp
+#include "quetzal/demography.h"
+#include <iostream>
+#include <random>
+
+int main
+{
+
+  // we will write things here
+
+  return 0;
+}
+```
 #### Expliciting the simulation model framework and hypothesis
 
 A feature of Quetzal is that it makes no hypothesis about the space or the time representation.
@@ -530,4 +546,4 @@ You may find in Quetzal a way to automate the process of [constructing spatially
 distance-based dispersal kernels]({{ site.url }}/pages/tuto_dispersal).
 
 But before to compute probabilities across space, you first need to know more
-about [how to represent a spatially explicit landscape]({{ site.url }}/pages/tuto_geo)!
+about [how to represent a spatially explicit landscape]({{ site.url }}/pages/tuto_geography)!

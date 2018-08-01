@@ -60,40 +60,33 @@ But you will surely spare time by **not re-inventing the wheel**.
 In biology we love programs.
 
 We love them because they are nice black-boxes eating data and digesting them in
-a process we can adjust using a neat interface (configuration files, GUI...).
+a process we can adjust using a neat interface (configuration files, GUI...), so
+we do not have to worry about programming languages, design or architecture.
 
-All the magic happens without having to worry about programming languages, design or architecture.
+But what if the options of the program do not meet our need ?
 
-![Magic behind]({{site.url}}/pictures/user-interface.gif)
+In that case, we have to modify the code, so we have to worry about the programming language.
+Modifications should be easy, and so we have to worry about design and architecture.
 
-So naturally we tend to think that programs are the first and final answer
-for any computational problem. So we end up with a variety of programs fulfilling a
-variety of behaviors. When one program is not enough for a given purpose, we
-concatenate it to another, using scripts to pipe outputs to inputs.
-However, this is not always efficient, and there are important limits to this tradition.
-
-First of all: what if the options of the first program do not meet our need ?
-
-Quetzal existence stems from the fact **it was impossible to customize the behavior
+Quetzal's very existence stems from the fact **it was impossible to customize the behavior
 of a pre-existing program in the desired way using the available options**.
 
-So we had to re-implement **everything**.
-
-Programs are not the right level of granularity to reuse the work of other coders.
+So we had to re-implement **everything** : programs are not the right level of
+granularity to reuse the work of other coders.
 
 > The key to fast development, correctness, efficiency, and maintainability is
 to use a suitable level of abstraction supported by good libraries.
 > -Stroustrup
 
-When your scientific question leads to change a minor detail in a simulation model,
-you do not want to have to recode everything, right ? So it
-means that this very detail should be the right unit of code. In this way you can just
-replace a piece of code by another in a very easy way.
+When a scientific question leads to change a minor detail in the simulation model,
+we do not want to have to recode everything, do we ? So it
+means that this very detail should be the right unit of code. In this way it is
+possible to only replace a piece of code by another in a very easy way.
 
 This is the meaning of components libraries.
 
-And you do not want to pay computation time for this flexibility, right ? So we
-use the C++ template mechanism to build these components. In this way they can be
+And as we never want to pay computation time for flexibility, the C++ template
+mechanism is used in Quetzal to build these components. In this way they can be
 reused, adapted and extended to other contexts with maximal efficiency.
 
 This is the meaning of a C++ template library: flexible, efficient, extensible.

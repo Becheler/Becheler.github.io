@@ -17,7 +17,7 @@ will be set up, you will learn about the following:
 - Individual-based dispersal in small populations
 - Mass-based dispersal for big populations
 
- How to integrate landscape heterogeneity in the analysis with GIS:
+ [How to integrate landscape heterogeneity in the analysis with GIS:](tuto_geography.html)
 
 - For retrieving a demic structure
 - For constructing niche functions
@@ -29,7 +29,7 @@ will be set up, you will learn about the following:
 
 # Backward-in-time coalescence simulation
 
- How to think about coalescence graphs:
+How to think about coalescence graphs:
 
 - using user-defined data structure (that is, the graph nodes)
 - using user-defined ancestral relationship (that is, the graph edge)

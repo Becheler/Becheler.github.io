@@ -84,7 +84,7 @@ you can get the latest version of boost using [Homebrew](https://brew.sh/):
 brew install boost
 ```
 
-### Install GDAL, the Geospatial Data Abstraction Library
+### Install GDAL
 
 The Geospatial Data Abstraction Library (GDAL) is essential to represent a
 spatially explicit landscapes. We need the GDAL sources enable interactions with

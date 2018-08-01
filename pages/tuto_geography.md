@@ -59,7 +59,7 @@ int main
 }
 ```
 
-## Read the environmental quantity
+## Read an environmental quantity
 
 ### About the temporal dimension
 
@@ -99,20 +99,186 @@ encapsulates a lot a troubles, like projection system, great circle distance com
 
 After these definitions, you can finally build your quantity, giving to the constructor
 - the path to the data
-- a vector of ordered time points for each layer (from the oldest to the most recent)
+- a vector of ordered time points for each layer, from the oldest to the most recent
 
 ```cpp
-quantity_type bio1( "../test_data/bio1.tif", std::vector<time_type>{"january_present"} );
+quantity_type my_quantity( "my_file", std::vector<time_type>{"january_present"} );
 ```
 
 >**Note** here we use only one point time. In another setting, you would probably
 want to write things like this:
 ```cpp
-quantity_type bio1( "../test_data/bio1.tif", {2001,2002,2003,2004,2005,2006,2007,2008,2009,2010} );
+quantity_type my_quantity( "my_file", {2001,2002,2003,2004,2005,2006,2007,2008,2009,2010} );
 ```
 
-### Retrieve a demic structure
+### Retrieve the set of inhabitable demes
 
-Now
-auto times = bio1.temporal_definition_space();
-auto space = bio1.geographic_definition_space();
+When considering a spatial grid, it is quite usual to consider that each cell
+of the grid is a deme. So to represent each deme with a unique identifier,
+we can use the centroids of each cell.
+
+>**Note**: we could use the raw/column indices of the spatial grid as indices
+of the demes, but doing so we would be putting too much emphasis on the grid
+representation and loosing the geographic intuition. Emphasizing details is
+typically what should be avoided in software design.
+
+Moreover, we are generally interested in representing only demes that are inhabitable.
+Typically we do not want to pay for representing ocean cells in the simulation context.
+In worldclim datasets, oceans environmental values are undefined, so to get the continental
+demes we have to retrieve only the centroids of the cells for which the environmental data is defined.
+
+This is exactly the purpose of the `geographic_definition_space` function:
+
+```cpp
+auto space = my_quantity.geographic_definition_space();
+```
+
+We can iterate over this geographic space. The following lines prints out the
+geographic coordinates of the continental demes:
+
+```cpp
+for(auto const& it : space){
+  std::cout << it << std::endl;
+}
+```
+
+Importantly, this collection of inhabitable demes is typically what you need to
+[construct dispersal models](tuto_dispersal.md) for spatially-explicit simulations.
+
+Similarly, you can retrieve at any time the time steps related to the dataset
+and iterate over it:
+
+```cpp
+auto times = my_quantity.temporal_definition_space();
+for(auto const& it : times){
+  std::cout << it << std::endl;
+}
+```
+
+### Read the data inside
+
+To retrieve the quantity value at deme $x$ at time $t$,
+use the following function by passing the right arguments:
+
+```cpp
+for(auto const& t : times){
+  for(auto const& x : space){
+    std::cout << x << "\t" << t << "\t" << my_quantity.at(x,t) << std::endl;
+  }
+}
+```
+An that's it !
+
+### Complete script and compilation
+
+The complete script is given below. Make sure gou give the right paths
+on your own system.
+
+```cpp
+#include "my_path/quetzal/geography.h"
+#include <iostream>
+#include <assert.h>
+#include <string>
+
+int main()
+{
+
+	using time_type = std::string;
+	using quantity_type = quetzal::geography::EnvironmentalQuantity<time_type>;
+	using coord_type = typename quantity_type::coord_type;
+
+	quantity_type my_quantity( "my_file.tif", std::vector<time_type>{"january_present"} );
+
+	auto times = my_quantity.temporal_definition_space();
+	auto space = my_quantity.geographic_definition_space();
+
+	std::cout << "Demic structure for demographic simulation" << std::endl;
+	for(auto const& it : space)
+  {
+		std::cout << it << std::endl;
+	}
+
+  for(auto const& t : times){
+    for(auto const& x : space){
+      std::cout << x << "\t" << t << "\t" << my_quantity.at(x,t) << std::endl;
+    }
+  }
+
+  return 0;
+}
+```
+
+When you compile it, make sure that you link to the [gdal library](getting_started#install-gdal) :
+
+```
+g++ -Wall -std=c++14 tuto_geo.cpp -I/usr/include/gdal  -L/usr/lib/ -lgdal
+```
+
+Then run the script with `./a.out`
+
+## Constructing a multi-variate environment
+
+The joint manipulation of multiple environmental dataset can be tricky: the system has to
+guarantee a common geographic subset for which all environmental quantities are defined,
+that the temporal ranges of each variable are consistent, that resolutions are identical
+across files...
+
+Using multiple EnvironmentalQuantity objects is error-prone, and you should
+prefer instead the use of the DiscreteLandscape classm that secures the construction
+of a multivariate, temporal, spatial grid.
+
+Most of the concepts are similar to those previously exposed so just read the following code
+as an illustration.
+
+Some precisions however:
+- You have to give identifiers to the quantities, so you can retrieve them later. These
+  identifiers can be of any user-defined type: integers, strings ...
+- The quantities retrieved from a DiscreteLandscape have the semantic of a function
+  of space and time.
+- If you want to run the following script, make sure that your TIFF files are consistent with the
+temporal range given in the demonstration code.
+- Reprojecting `coord_type` objects to the nearest cell centroid is a precious feature when
+  incorporating genetic dataset in the spatial analysis, because it allows you to easily
+  reproject your sample in the demic structure.
+
+```cpp
+#include "my_path/quetzal/geography.h"
+#include <iostream>   // std::cout
+#include <string>
+
+int main()bio12
+{
+  using ID_type = std::string;
+	using time_type = unsigned int;
+	using landscape_type = quetzal::geography::DiscreteLandscape<ID_type, time_type>;
+	landscape_type env( { {"rain","my_file.tif"},
+                        {"temperature","other_file.tif"}
+                      },
+	                    {2001,2002,2003,2004,2005,2006,2007,2008,2009,2010} );
+
+	std::cout << env.quantities_nbr() << " quantities read from files" << std::endl;
+
+  landscape_type::coord_type Bordeaux(44.5, 0.34);
+  if(env.is_in_spatial_extent(Bordeaux)) {
+    std::cout << "Centroid: " << env.reproject_to_centroid(Bordeaux) << std::endl;
+  }
+
+  // Retrieve environmental functions
+  auto f = env["rain"];
+  auto g = env["temperature"];
+
+  auto times = env.temporal_definition_space();
+  auto space = env.geographic_definition_space();
+
+  for(auto const& t : times){
+    for(auto const& x : space){
+      if( f(x,t) <= 200. && g(x,t) <= 600.){
+        std::cout << x << "\t" << t << "\t" << f(x,t) << "\t" << g(x,t) << std::endl;
+      }
+    }
+  }
+
+	return 0;
+}
+
+```

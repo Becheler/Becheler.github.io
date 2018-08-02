@@ -12,15 +12,19 @@ will be set up, you will learn about the following:
 
 # Forward-in-time demographic simulations
 
- [How to use different strategies for simulating populations dispersal:](tuto_demography.html)
+[How to use different strategies for simulating populations dispersal:](tuto_demography.html)
 
 - Individual-based dispersal in small populations
 - Mass-based dispersal for big populations
 
- [How to integrate landscape heterogeneity in the analysis with GIS:](tuto_geography.html)
+[How to integrate landscape heterogeneity in the analysis with GIS:](tuto_geography.html)
 
 - For retrieving a demic structure
-- For constructing niche functions
+- For constructing multivariate, spatially explicit, temporally changing landscapes.
+
+[How to construct niche functions](tuto_niche.html)
+- Enable mathematical composition of functions of space and time using expressive
+- Coupling environment, growth model and stochastic sampling.
 
  How to represent dispersal models:
 

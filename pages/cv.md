@@ -18,7 +18,7 @@ You can get a more detailed [PDF version](../pdfs/cv.pdf).
   * [Ecology And Evolutionary Biology](https://lsa.umich.edu/eeb) (EEB), University of Michigan
   * Faculty mentor: [Lacey Knowles](https://lsa.umich.edu/eeb/people/faculty/knowlesl.html)
   * Other mentors: [Jeet Sukumaran](http://jeetblogs.org/), [Craig Moritz](http://biology.anu.edu.au/people/craig-moritz)
-  * [UMich personal page](https://lsa.umich.edu/ummz/people/postdoctoral-fellows/arnaud-becheler.html)
+  * [UMich personal page](https://lsa.umich.edu/eeb/people/postdoctoral-fellows/arnaud-becheler.html)
 
 * PhD student at Université Paris-Sud, Paris-Saclay (December 2014 - June 2018)
   * [Environmental demogenetic model for an invasive species](http://www.theses.fr/s143741)

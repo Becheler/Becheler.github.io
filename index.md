@@ -10,10 +10,14 @@ I am a French Postdoctoral Fellow at the
 [University of Michigan](https://lsa.umich.edu/eeb/people/postdoctoral-fellows/arnaud-becheler.html),
 mainly working on simulation models for population genetics.
 
-I love to be at the frontier between biology, mathematics, statistics and informatics:
-biologists come with a broad question about Nature and some data, mathematicians help to precise
-the question, statisticians help to design the tools to obtain an answer from the data, and my role is
-to implement all of this in the computer language, so it can compute the answer for us.
+I love to collaborate with a bunch of people:
+- **biologists** who come with some data and a broad question about Nature,
+- **mathematicians** who help to precise the question,
+- **statisticians** who help to design the tools to obtain an answer from the data.
+- **software developers** who know how to efficiently translate all of the former to a computer.
 
-I maintain [Quetzal](pages/quetzal.md), a C++ template library easing the development of
+My role is gathering information from these communities so I can implement
+the required software.
+
+As an illustration, I maintain [Quetzal](pages/quetzal.md), a C++ template library easing the development of
 population genetics simulators based on gene genealogies.

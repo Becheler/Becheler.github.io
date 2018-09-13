@@ -3,20 +3,17 @@ layout: home
 ---
 
 <p align="center">
-  <img src="pic.png" alt="pic" width="150">
+  <img src="/pictures/pic_me_eeb.png" alt="pic" width="150">
 </p>
 
+I am a French Postdoctoral Fellow at the
+[University of Michigan](https://lsa.umich.edu/eeb/people/postdoctoral-fellows/arnaud-becheler.html),
+mainly working on simulation models for population genetics.
 
-I am interested in modeling the relationship between environment, demography and
-genetics in spatially and temporally heterogeneous environments, using [coalescence
-approaches](https://en.wikipedia.org/wiki/Coalescent_theory). This kind of models
-allow to shed light on the ecology of a species (dispersal abilities, growth
-capacities…) from observational data, genetic data, and environmental data.
+I love to be at the frontier between biology, mathematics, statistics and informatics:
+biologists come with a broad question about Nature and some data, mathematicians help to precise
+the question, statisticians help to design the tools to obtain an answer from the data, and my role is
+to implement all of this in the computer language, so it can compute the answer for us.
 
-Under such complex models, [likelihood](https://en.wikipedia.org/wiki/Likelihood_function)-based inferential methods are useless, and
- [_Approximate Bayesian Computation_](https://en.wikipedia.org/wiki/Approximate_Bayesian_computation) is a natural way to tackle this
-kind of models as it makes use of simulations to estimate parameters. This need for
-massive simulations justifies my principal activity of C++ programming.
-
-I maintain [Quetzal](quetzalAPI/html/index.html), a C++ template library easing the development of
-coalescence-based models.
+I maintain [Quetzal](pages/quetzal.md), a C++ template library easing the development of
+population genetics simulators based on gene genealogies.

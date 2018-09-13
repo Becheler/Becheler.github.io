@@ -10,31 +10,36 @@ description: home
 Quetzal is a collection of C++ code snippets, that can be picked and combined to
 build complex, spatially explicit population genetics simulators and inference frameworks.
 
-![Quetzal scheme]( {{site.url}}/draw/quetzal_scheme.png)
-
 # Why should I care ?
 
 ## You are a researcher exploring a new model
 
-The principal activity of a researcher is to explore new questions. Using computational methods
-to explore new territories is a powerful technique, but it requires a solid equipment
-that can adapt to change.
+The principal activity of a researcher is to explore new questions. Using simulations
+to explore new complex models is a powerful technique, but it requires a solid
+code base that can adapt to theoretical changes.
 
-If the software breaks at each minor theoretical change, your exploration will be
-painful, or even worse: impossible!
+If the software breaks at each minor change, the exploration would be
+painful, almost impossible!
 
-The task of a [research software engineer](https://rse.ac.uk/about/) is to enable
-the scientific curiosity by building powerful equipments, ideally both efficient and flexible.
+Quetzal allows the researcher to **widen the limits** of the traditional spatially explicit
+and coalescence-based simulators by allowing the customization of key aspects of
+the problem: populations reaction to landscape heterogeneity and genes genealogies
+simulations details.
 
-Using Quetzal allows the researcher to **widen the limits** of the traditional spatially explicit
-and coalescence-based models.
+![Quetzal scheme]( {{site.url}}/draw/quetzal_scheme.png)
 
-## You are a research software engineer
+As nothing is never free is this wild world, this flexibility comes at a cost:
+using Quetzal requires technical knowledge in C++, so perhaps you would need a
+Research Software Engineer to code your model.
 
-Is your task to implement a new coalescence-based simulator following a model specified by a researcher ?
+## You are a Research Software Engineer (RSE)
+
+[You do not know if you are or not a RSE?](https://rse.ac.uk/who/)
+
+Do you have to implement or extend a coalescence-based simulator specified by a researcher ?
 
 Well, here are some bad news:
- - Reusing or adapting existing code bases is hardly feasible.
+ - Reusing or adapting existing code bases for structured coalescence is hardly feasible.
  - We never have time to re-code everything from scratch.
  - Supposing you succeed to write the correct program
 in a reasonable amount of time (which is not yet certain) **sooner or later the model will change**,
@@ -46,10 +51,10 @@ and you will have to start all over again.
 We all know that there is no such thing as frozen specification. Building a
 system in a changing environment is challenging, and you need the right tools.
 
-But here are the good news:
+But here are the **good news**:
 
-Quetzal is an open-source set of C++ abstractions (template classes, functions, algorithms, concepts)
-that provides a nice starter-pack to write your own simulation program.
+As an open-source set of C++ abstractions (template classes, functions, algorithms, concepts)
+Quetzal provides a nice starter-pack to write your own simulation program.
 
 You will probably not find everything that you need.
 
@@ -57,31 +62,38 @@ But you will surely spare time by **not re-inventing the wheel**.
 
 # Why a library and not a program ?
 
-In biology we love programs.
+## Programs are not always the right level of configurability
 
-We love them because they are nice black-boxes eating data and digesting them in
-a process we can adjust using a neat interface (configuration files, GUI...), so
-we do not have to worry about programming languages, design or architecture.
+Programs are super handy, because they act as nice black-boxes eating data and
+digesting them in a process we can adjust using a neat interface (configuration files,
+Graphical User Interface...). Thanks to programs, we biologists do not need to
+worry about programming languages, design or architecture.
 
 But what if the options of the program do not meet our need ?
 
-In that case, we have to modify the code, so we have to worry about the programming language.
-Modifications should be easy, and so we have to worry about design and architecture.
+In that case, we have to modify the code, to *extend it*, so we finally have to
+worry about the programming language.
 
-Quetzal's very existence stems from the fact **it was impossible to customize the behavior
-of a pre-existing program in the desired way using the available options**.
+Modifications should be easy so we finally have to worry about design and architecture.
 
-So we had to re-implement **everything** : programs are not the right level of
-granularity to reuse the work of other coders.
+Indeed, Quetzal existence stems from the fact it was impossible to customize the behavior
+of a pre-existing program in the desired way using the available options: we had
+to re-implement **everything**. Programs are not the right level of
+granularity when it comes to reusing the work of other coders.
 
 > The key to fast development, correctness, efficiency, and maintainability is
 to use a suitable level of abstraction supported by good libraries.
 > -Stroustrup
 
+But programs are still very usefull and user-friendly, so we are currently using Quetzal
+to develop various programs!
+
+## Small components libraries allow to tailor the code to your needs
+
 When a scientific question leads to change a minor detail in the simulation model,
-we do not want to have to recode everything, do we ? So it
-means that this very detail should be the right unit of code. In this way it is
-possible to only replace a piece of code by another in a very easy way.
+we never want to have to recode everything. So it means that this very level of
+detail should be the right unit of code. In this way it is possible to only replace
+a piece of code by another in a very easy way.
 
 This is the meaning of components libraries.
 

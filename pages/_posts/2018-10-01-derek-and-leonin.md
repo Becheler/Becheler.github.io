@@ -1,10 +1,7 @@
 ---
 layout: blog
 title: Derek Leonin
-
 ---
-
-![Derek et Léonin - Let's go exploring!]( {{site.url}}/draw/lets_go_exploring.png)
 
 ## A new blog about coding?
 
@@ -96,18 +93,3 @@ One is a researcher, the other one is a software engineer.
 They use to have different views and priorities making their collaboration somewhat... fascinating.
 
 ![Derek and Leonin collaborating]( {{site.url}}/draw/derekleonin.png)
-
-# Disclaimer
-
-This is a personal weblog. The opinions expressed here represent my own and not those of my employer.
-
-As it is developed on my free-time, the posting pace may be slow, but I will try to come
-with a new post each week-end.
-
-In addition, my thoughts and opinions change from time to time I consider this
-a necessary consequence of having an open mind.
-
-Any thoughts and opinions expressed within out-of-date posts may not the same,
-nor even similar, to those I may hold today.
-
-This blog disclaimer is subject to change at anytime without notifications.

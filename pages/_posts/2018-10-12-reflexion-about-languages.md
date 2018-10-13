@@ -3,7 +3,7 @@ layout: blog
 title: Reflexion about natural languages and their abstractions
 ---
 
-# Natural languages and their abstractions
+# Natural languages and their abstractions.
 
 Programming concepts can seem so arid when you come from the biological world!
 
@@ -18,7 +18,7 @@ defined terms, that allow us to express general ideas.
 
 The purpose of this bunch of pages is to progressively get familiar with the idea that programming languages are **not so different** from natural languages: we **need** abstract words in our code to communicate clear ideas to our pairs.
 
-## Programming activity as a linguistic experience
+## Programming activity as a linguistic experience!
 
 > Nouns, verbs and adjectives. Lightness and rigour form the secret of this precious
 alloy: the language. Express as precisely as possible, without heaviness, let the
@@ -31,10 +31,10 @@ In this series of posts, I will develop the idea that we pay way too much attent
 to **code details**, when we should actually make our best to **forget them**: in
 this sense we should actually try to mimic the way natural languages work.
 
-The urge to follow this principle is not new, and has been termed the [information hiding](https://en.wikipedia.org/wiki/Information_hiding). It's essential, but not very
+The urge to follow this principle is not new, and has been termed the information hiding. It's essential, but not very
 well understood by our research communities, so I will develop this idea further.
 
-## Benefits of the natural language perspective
+## Benefits of the natural language perspective
 
 Thinking this about programming languages encouraged
 me to write more literal, more abstract, more human-friendly code.
@@ -61,7 +61,7 @@ All the **qualities** we would like to enforce in our science projects!
 So naturally I am tempted to share this idea, because I thing it is a useful perspective,
 and that is why I write this blog!
 
-# Why you should definitely read that
+##  Why you should definitely read that?
 
 Going through this post series will help you understanding understand better how much **abstraction is important for us**, poor humans (machine actually don't care).
 

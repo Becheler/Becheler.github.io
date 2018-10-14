@@ -85,10 +85,8 @@ I will try to maintain two styles across these pages:
 for the researcher in Ecology & Evolution.
 - A more thorough, technical style illustrated with C++ code for the programmer.
 
-Here come **Derek** and **Léonin**, two charming/grumping characters who will
+Here come **Derek** the programmer and **Léonin** the researcher, two charming/grumping characters who will
 have much fun in animating the speech.
-
-One is a researcher, the other one is a software engineer.
 
 They use to have different views and priorities making their collaboration somewhat... fascinating.
 

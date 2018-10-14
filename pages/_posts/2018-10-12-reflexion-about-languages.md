@@ -3,53 +3,136 @@ layout: blog
 title: Reflexion about natural languages and their abstractions
 ---
 
-# Natural languages and their abstractions.
+# Reflexion about languages.
+
+## In short
+
+### Why programming has to be so frustrating?
 
 Programming concepts can seem so arid when you come from the biological world!
 
-Technical aspects of languages are useless if you did not understand *why* the technique has been invented.
+Technical aspects of programming languages are useless if you do not understand *why* the
+technique has been invented.
 
-To understand better why software design and all the related technical jargon are so important, a pleasant first step is to reframe the question in a *more biological, philosophical perspective*:
+The most complex features of modern languages (like for example [move semantics](https://stackoverflow.com/questions/3106110/what-are-move-semantics) in C++)
+obviously do not exist just for the pleasure to complicate our learning curve and
+make us suffer (or do they?).
+
+These features exist because they allow us to clearly express in our code core ideas that
+would have been very tricky to express otherwise.
+
+So technique enables us to be **clear** and **precise**. Clear enough to be understood
+by the **human**, precise enough to be understood by the **machine**.
+
+### A more human perspective to programming
+
+Reaching *concision* is a challenging goal! Sometimes we are tempted to be
+lazy and to talk only to the machine, obfuscating the code to the human intelligence!
+
+Design solutions are here to bring the **computational problem formulation**
+to the reach of our **human intelligence**.
+
+As I was struggling with design concept not so long ago, a software developer introduced me to
+the idea that I should think about programming languages as actual languages, and
+about the programming activity as a creative, linguistic, almost literary experience.
+
+In short: to think about **code as a vector of communication between coders**.
+
+It made so much sense that it radically changed the way I was grasping code.
+For the better of course: enhanced readibility, modularity, efficiency resulted
+from the paradigm switch.
+
+So let me present you coding as a literary, linguistic experience!
+
+![Derek over exagerating a bit]( {{site.url}}/draw/pure_poetry.png)
+
+
+## More in-depth presentation
+
+### Reframing the programming activity
+
+To understand better why software design and all the related technical jargon
+are so important, a pleasant first step is to reframe the question in a *more intuitive perspective*:
 
 > *Which common points do programming languages share with natural languages like English, French, Japanese?*
 
-We will see that our impossibility to constantly remember the most ultimate details of the real world is **mirrored in our natural languages** through the abundance of loosely
-defined terms, that allow us to express general ideas.
+Quick answer: **They all mirror our human incapacity to handle too much information.**
 
-The purpose of this bunch of pages is to progressively get familiar with the idea that programming languages are **not so different** from natural languages: we **need** abstract words in our code to communicate clear ideas to our pairs.
+We will see that natural languages
+are crowded with loosely defined terms that allow us to efficiently express general ideas.
 
-## Programming activity as a linguistic experience!
+We will then get familiar with the idea that programming languages are **not so different**
+from natural languages in the sense that we can not pretend to remember all
+the details of our codes, so we **need** to build abstract words we can use
+to better communicate ideas to our pairs.
 
-> Nouns, verbs and adjectives. Lightness and rigour form the secret of this precious
-alloy: the language. Express as precisely as possible, without heaviness, let the
-beauty appear. The language is music made of liberty and unbreakable rules - Eve Ricard
+We will see how programming languages allow you us to do so.
 
-As biologists, we use to manipulate very abstract words like *ecosystems*,
-*environmental niche* or *natural selection*, but our codes generally **do not reflect** this degree of generality. It can actually be detrimental for the research activity, and I think it is worth to take a moment to wonder why.
+By expressing more **human** ideas in our code, we allow a concise description
+of our problems and solutions. Because it requires creativity and skills, it becomes
+actually a very pleasant job!
 
-In this series of posts, I will develop the idea that we pay way too much attention
+> "Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better." - Donald Knuth
+
+### Your job? Creating new words!
+
+When you call a function, for example using R:
+
+`my_sample <- rnorm(sample_size, mean, square_deviation)`,
+
+you have to understand that your life has been here facilitated by *someone* who wrote hundreds
+(or thousands) of code lines so you can manipulate comfortably the rather abstract
+concept of *normal random distribution sampling*.
+
+As biologists caring about computational solutions, we will also need, at some point,
+to write thousands of code lines *just* to be able to **express in our codes abstract
+biological concepts in a clear and efficient way**.
+
+So we have to forget about computer-oriented words like *matrix*, *vectors*, *lists*, *dictionaries*
+ ... and begin to invent in our codes new words like *genotypes*, *individuals*, *landscapes*!
+
+This process is called a **higher level of abstraction**, and programming is all about that!
+
+According to the language you are using, you will have different tools
+to **invent this new semantic field you need** to describe your biological problem.
+
+### Programming activity as a linguistic experience!
+
+As biologists, we learned how to manipulate very abstract words like *ecosystems*,
+*environmental niche* or *natural selection*, but not how **to reflect** this degree
+of generality in our codes.
+
+It can actually be detrimental for the research activity (as after some months no one
+remembers what these 5000 strange code lines describe, the code is lost), and I think it is worth
+to take a moment to wonder why, and to think about solutions.
+
+It is widely admitted in the software engineering world that we tend to pay way too much attention
 to **code details**, when we should actually make our best to **forget them**: in
 this sense we should actually try to mimic the way natural languages work.
 
-The urge to follow this principle is not new, and has been termed the information hiding. It's essential, but not very
-well understood by our research communities, so I will develop this idea further.
+The urge to follow this principle of forgetting details is not new, and has been termed
+[information hiding](https://en.wikipedia.org/wiki/Information_hiding).
 
-## Benefits of the natural language perspective
+It's a core programming concept, but not very
+well understood by our research communities, so we will share *a lot* about that!
 
-Thinking this about programming languages encouraged
+### Benefits of this perspective
+
+Thinking about programming languages as I think about natural languages encouraged
 me to write more literal, more abstract, more human-friendly code.
 
-This metaphor acted like a **paradigm shift**, switching my mindset about the programming activity from a rather **frustrating observation**:
+This metaphor encouraged a **paradigm shift** switching my mindset about the programming activity from a rather **frustrating observation**:
 
 > "I am writing arid instructions for this stupid machine."
 
 to a **more fulfilling one**:
 
-> "I am explaining to my fellow coder, perhaps even myself in a near future, the problem
-at hand and how to solve it. I want the code to be as clear a understandable as the text of a
+> "I am explaining to my fellow researcher-coder, perhaps even myself in a near future,
+perhaps someone else in 20 years, the problem at hand and how to solve it.
+I want the code to be as clear a understandable as the text of a
 scientific paper".
 
-I used this metaphor as a constant reminder of our human condition to
+So I used this as a constant reminder of our human condition to
 inevitably forget details dispersed through the code, were they documented.
 
 Operating this mental shift, I was actually acknowledging my own weakness: oblivion! so I could *adapt using the tools offered by the programming language that exist for this very purpose*.
@@ -58,18 +141,17 @@ Doing so, my code became more *structured*, *reusable*, *modular*, *maintainable
 
 All the **qualities** we would like to enforce in our science projects!
 
-So naturally I am tempted to share this idea, because I thing it is a useful perspective,
-and that is why I write this blog!
+##  Conclusion
 
-##  Why you should definitely read that?
+Going through this post helped you understanding better how much **abstraction is important for us**, poor humans (machine actually don't care).
 
-Going through this post series will help you understanding understand better how much **abstraction is important for us**, poor humans (machine actually don't care).
+The mindset presented here, along with time, patience and the required technical knowledge, can help you to write **better code**.
 
-You will perhaps appreciate how the mindset presented here, along with time, patience and the required technical knowledge, can help you to write **better code** and appreciate the true beauty and intelligence of the programming activity!
+I hope that you will ultimately come to the idea that **programming is not only about a technical description to the machine** of a computational solution described in terms of 0 and 1.
 
-Perhaps that you will ultimately come to the idea that **programming is not only about a technical description** of your problems in terms of 0 and 1 in such a way it can be understood by a machine.
+Perhaps that programming can also be a **new linguistic experience** where a human has to write a text that can be understood **both** by the dumbest machine that can crunch
+the numbers **and** by a human intelligence able to understand the purpose.
 
-Perhaps that programming can also be a **new linguistic experience** where a human has to write a text that can be understood *both* by the dumbest machine that can crunch
-the numbers *and* by a human intelligence able to understand the purpose.
+I hope you will finally see programming languages as wonderful, living, powerful instruments of communication, that open *new ways to think about the real world we aim to describe as biologists!*
 
-I hope you will finally see programming languages as wonderful, living, powerful instruments of communication, that open *new ways to think about the real world we aim to describe!*
+So have fun reading these posts, have fun coding, and appreciate the true beauty and intelligence of the programming activity!

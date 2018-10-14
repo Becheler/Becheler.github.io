@@ -1,9 +1,11 @@
 ---
 layout: blog
-title: Derek Leonin
+title: A new blog about coding, seriously?
 ---
 
-## A new blog about coding?
+{{ page.date | date: "%d %B %Y" }}
+
+## A new blog about coding, seriously?
 
 Definitely!
 
@@ -13,14 +15,19 @@ If, like me, you come from an academic background like Ecology and Evolutionary 
 perhaps you were not taught about **design** and **code principles**.
 
 We learned how to write 200-300 lines of code to analyze data, and most of the time
-it was sufficient to our needs.
+it is sufficient to our needs.
 
 But not all code projects in science are that short,
 and unfortunately principles that work in developing short scripts do not scale with
 larger projects.
 
+It raises an important question familiar to software engineers:
+**How to not get lost in thousands of lines of code?**
+
+![lost in the code]({{ site.url }}/pictures/lost_in_the_code.jpg)
+
 As methods in Biology become more and more computational, the amount of code
-underlying modern research activity becomes *huge*.
+underlying modern research activity becomes actually *huge*.
 
 Getting familiar with the culture of software engineering is not absurd anymore if
 we want our tools to handle the complexity of present and future biological questions.
@@ -28,8 +35,8 @@ we want our tools to handle the complexity of present and future biological ques
 If you are directly or indirectly confronted with some coding project,
 general knowledge about coding principles can:
 - make your programming activity easier
-- help you understand better the activity of your fellows coders
 - better anticipate your computational projects.
+- help you understand better the activity of your fellows coders
 
 ## Software design? What on earth is that?
 

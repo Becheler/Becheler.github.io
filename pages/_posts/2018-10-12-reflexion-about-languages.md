@@ -1,13 +1,13 @@
 ---
 layout: blog
-title: Reflexion about natural languages and their abstractions
+title: Thoughts about natural languages and their abstractions
 ---
 
-# Reflexion about languages.
+{{ page.date | date: "%d %B %Y" }}
 
-## In short
+# Thoughts about programming languages.
 
-### Why programming has to be so frustrating?
+## Why programming has to be so frustrating?
 
 Programming concepts can seem so arid when you come from the biological world!
 
@@ -24,10 +24,16 @@ would have been very tricky to express otherwise.
 So technique enables us to be **clear** and **precise**. Clear enough to be understood
 by the **human**, precise enough to be understood by the **machine**.
 
-### A more human perspective to programming
+This duality is at the heart of the programming activity.
 
-Reaching *concision* is a challenging goal! Sometimes we are tempted to be
-lazy and to talk only to the machine, obfuscating the code to the human intelligence!
+![machine versus human languages]({{site.url}}/pictures/machine_vs_human_languages.jpg)
+
+## A more human perspective to programming
+
+Reaching *concision* is a challenging goal!
+
+Sometimes we are tempted to be lazy and to talk only to the machine, obfuscating
+the code to the human intelligence!
 
 Design solutions are here to bring the **computational problem formulation**
 to the reach of our **human intelligence**.
@@ -47,9 +53,7 @@ So let me present you coding as a literary, linguistic experience!
 ![Derek over exagerating a bit]( {{site.url}}/draw/pure_poetry.png)
 
 
-## More in-depth presentation
-
-### Reframing the programming activity
+## Reframing the programming activity
 
 To understand better why software design and all the related technical jargon
 are so important, a pleasant first step is to reframe the question in a *more intuitive perspective*:
@@ -58,23 +62,23 @@ are so important, a pleasant first step is to reframe the question in a *more in
 
 Quick answer: **They all mirror our human incapacity to handle too much information.**
 
-We will see that natural languages
-are crowded with loosely defined terms that allow us to efficiently express general ideas.
+Natural languages are crowded with loosely defined terms that allow us to efficiently express general ideas.
 
-We will then get familiar with the idea that programming languages are **not so different**
+Perhaps that the main purpose of this blog is to get familiar with the idea that
+programming languages are **not so different**
 from natural languages in the sense that we can not pretend to remember all
 the details of our codes, so we **need** to build abstract words we can use
 to better communicate ideas to our pairs.
 
-We will see how programming languages allow you us to do so.
+We will see in other posts which tools programming languages give us to do so.
 
-By expressing more **human** ideas in our code, we allow a concise description
+By expressing more **human** concepts in our code, we allow a concise description
 of our problems and solutions. Because it requires creativity and skills, it becomes
 actually a very pleasant job!
 
 > "Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better." - Donald Knuth
 
-### Your job? Creating new words!
+## Your job? Creating new words!
 
 When you call a function, for example using R:
 
@@ -96,7 +100,7 @@ This process is called a **higher level of abstraction**, and programming is all
 According to the language you are using, you will have different tools
 to **invent this new semantic field you need** to describe your biological problem.
 
-### Programming activity as a linguistic experience!
+## Programming activity as a linguistic experience!
 
 As biologists, we learned how to manipulate very abstract words like *ecosystems*,
 *environmental niche* or *natural selection*, but not how **to reflect** this degree
@@ -116,7 +120,7 @@ The urge to follow this principle of forgetting details is not new, and has been
 It's a core programming concept, but not very
 well understood by our research communities, so we will share *a lot* about that!
 
-### Benefits of this perspective
+## Benefits
 
 Thinking about programming languages as I think about natural languages encouraged
 me to write more literal, more abstract, more human-friendly code.
@@ -141,7 +145,7 @@ Doing so, my code became more *structured*, *reusable*, *modular*, *maintainable
 
 All the **qualities** we would like to enforce in our science projects!
 
-##  Conclusion
+##  Final thoughts
 
 Going through this post helped you understanding better how much **abstraction is important for us**, poor humans (machine actually don't care).
 

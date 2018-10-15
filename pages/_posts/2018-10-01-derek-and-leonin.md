@@ -57,9 +57,20 @@ Well, I lost almost one year of my PhD because I coded a simulation project with
 almost zero knowledge of software design. At some point, the code was just too
 big, too rigid and too unstable to evolve further. Dead end. Back to square one.
 
-I contacted software developers who helped me acquire the needed knowledge. It was
-too late to save the old project (R.I.P. little code!) and I had to start
-all over again, but this time *in the right direction*.
+I contacted software developers who **helped me understand what the hell was going
+on in the code** and helped me finding a better design.
+
+It was unfortunately too late to save the old project (R.I.P. little code!) and I had to
+delete **everything** I had previously coded: thousands of code lines.
+
+![this day leonin understood the term rigidity]( {{site.url}}/draw/this_day.png )
+
+I understood the terms **rigidity** and **dependencies** the hard way!
+
+I started all over again, but this time *in the right direction*!
+
+With **sound knowledge of design** and thanks to the **help of the developers online community**,
+the code has involved a bit less rapidly, but with much more stability and reliability!
 
 So yes, design is important. Absence of design had in my case rather ... concrete consequences!
 

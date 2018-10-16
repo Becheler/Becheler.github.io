@@ -30,21 +30,22 @@ This duality is at the heart of the programming activity.
 
 ## A more human perspective to programming
 
-Reaching *concision* is a challenging goal!
-
-Sometimes we are tempted to be lazy and to talk only to the machine, obfuscating
-the code to the human intelligence!
-
-Design solutions are here to bring the **computational problem formulation**
-to the reach of our **human intelligence**.
-
 As I was struggling with design concept not so long ago, a software developer introduced me to
 the idea that I should think about programming languages as actual languages, and
 about the programming activity as a creative, linguistic, almost literary experience.
 
 In short: to think about **code as a vector of communication between coders**.
 
-It made so much sense that it radically changed the way I was grasping code.
+Design solutions are here to bring the **exhaustive computational problem formulation**
+(so exhaustive it can actually be solved by a machine) to the reach of our **human intelligence**.
+
+So yes, this is a challenging goal!
+
+Sometimes we are tempted to be lazy and to talk only to the machine, obfuscating
+the code to the human intelligence! Not so surprisingly, problems generally appear
+sooner or later if the code is not sanitized.
+
+This recommandation made so much sense that it radically changed the way I was grasping code.
 For the better of course: enhanced readibility, modularity, efficiency resulted
 from the paradigm switch.
 
@@ -70,7 +71,7 @@ from natural languages in the sense that we can not pretend to remember all
 the details of our codes, so we **need** to build abstract words we can use
 to better communicate ideas to our pairs.
 
-We will see in other posts which tools programming languages give us to do so.
+We will see [which tools programming languages give us to do so]({{site.url}}/under_construction.md).
 
 By expressing more **human** concepts in our code, we allow a concise description
 of our problems and solutions. Because it requires creativity and skills, it becomes

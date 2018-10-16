@@ -71,7 +71,7 @@ from natural languages in the sense that we can not pretend to remember all
 the details of our codes, so we **need** to build abstract words we can use
 to better communicate ideas to our pairs.
 
-We will see [which tools programming languages give us to do so]({{site.url}}/under_construction.md).
+We will see [which tools programming languages give us to do so]({{site.url }}/pages/under_construction.html).
 
 By expressing more **human** concepts in our code, we allow a concise description
 of our problems and solutions. Because it requires creativity and skills, it becomes

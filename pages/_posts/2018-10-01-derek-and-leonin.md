@@ -24,7 +24,7 @@ larger projects.
 It raises an important question familiar to software engineers:
 **How to not get lost in thousands of lines of code?**
 
-![lost in the code]({{ site.url }}/pictures/lost_in_the_code.jpg)
+![lost in translation]({{ site.url }}/draw/lost_in_translation.png)
 
 As methods in Biology become more and more computational, the amount of code
 underlying modern research activity becomes actually *huge*.

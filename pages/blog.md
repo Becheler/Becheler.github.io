@@ -12,8 +12,9 @@ I am a [young biologist](../index.md) wanting to share
 about a core aspect of my research activity: [software design](https://en.wikipedia.org/wiki/Software_design)!
 
 [Software plays an important role in sustaining science](https://rse.ac.uk/about/why-research-needs-rses/),
-but code is often written by the biologist himself. Having a deep understanding of the problem to
-implement helps to write the code, but does not imply knowing *how* to structure it.
+and code is often written by the biologist himself. Having a deep understanding of
+a problem surely helps a lot in coding its solution, but it is not straightfoward
+to find *how* to structure the code.
 
 I have written code for science for a while, mostly in C++, and it took me
 years to figure out how much **software engineering culture**

@@ -46,6 +46,8 @@ In other words, it can help you avoid your code turning into a scary network of
 interdependent functions: I am of course talking about the well-known
 [spaghetti code syndrome](https://en.wikipedia.org/wiki/Spaghetti_code).
 
+![Leonin in spaghetti code]({{ site.url }}/draw/leonin_in_spaghetti_code.png)
+
 Design was essential for me in building a code base solid enough to be
 extended or reused across multiple projects.
 
@@ -54,8 +56,11 @@ extended or reused across multiple projects.
 ### Back to the old days
 
 Well, I lost almost one year of my PhD because I coded a simulation project with
-almost zero knowledge of software design. At some point, the code was just too
-big, too rigid and too unstable to evolve further. Dead end. Back to square one.
+almost zero knowledge of software design.
+
+At some point, the code was just too big, too rigid and too unstable to evolve
+further. I was unable to bring the required modification without
+breaking everything. Dead end.
 
 I contacted software developers who **helped me understand what the hell was going
 on in the code** and helped me finding a better design.
@@ -63,21 +68,27 @@ on in the code** and helped me finding a better design.
 It was unfortunately too late to save the old project (R.I.P. little code!) and I had to
 delete **everything** I had previously coded: thousands of code lines.
 
+Back to square one. That was not my best day.
+
 ![this day leonin understood the term rigidity]( {{site.url}}/draw/this_day.png )
 
-I understood the terms **rigidity** and **dependencies** the hard way!
+I understood the terms **rigidity** and **code dependency** the hard way!
 
 I started all over again, but this time *in the right direction*!
 
-With **sound knowledge of design** and thanks to the **help of the developers online community**,
-the code has involved a bit less rapidly, but with much more stability and reliability!
+**On an online developers community**, I began to ask each time I was not sure about
+the best (the less quick and dirty) way to code a feature or another. Thanks to their
+help I was little by little able to acquire some sound knowledge about design.
+
+The code has involved a bit less rapidly, but with much more stability and reliability!
 
 So yes, design is important. Absence of design had in my case rather ... concrete consequences!
 
 ### Never again!
 
-At the time of my PhD, it would have been a dream come true to have access to a resource warning me **I was
-missing something crucial**: design!
+At the time of my PhD, it would have been
+a dream come true to have access to a resource warning me **I was
+missing something crucial**!
 
 I did put huge efforts on training, though.
 
@@ -88,11 +99,14 @@ But at some point in the learning curve I reached the **limit
 of the information** that was accessible from my academic culture.
 
 I needed information related to engineering culture to answer my research problem
-in biology, but the cultures are still very partitioned.
+in ecology, but the cultures are still very partitioned. I am convinced we need
+to collaborate.
 
 This is exactly the purpose I want to give to these pages: contribute to bridging
 this gap by presenting a number of facts and **design principles** that I should have known three
 years ago!
+
+![Leonin broke his code today]({{ site.url}}/draw/i_broke_my_code_today.png)
 
 ## Two hats, one head
 

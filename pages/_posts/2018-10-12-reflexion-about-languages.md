@@ -1,9 +1,7 @@
 ---
 layout: blog
-title: Thoughts about natural languages and their abstractions
+title: Thoughts about languages
 ---
-
-{{ page.date | date: "%d %B %Y" }}
 
 # Thoughts about programming languages.
 

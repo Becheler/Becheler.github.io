@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['make_5fexpression_5ft',['make_expression_t',['../structquetzal_1_1expressive_1_1make__expression__t.html',1,'quetzal::expressive']]],
-  ['marker_5fdescriptor',['Marker_Descriptor',['../structquetzal_1_1genetics_1_1_marker___descriptor.html',1,'quetzal::genetics']]],
-  ['mass_5fbased',['mass_based',['../structquetzal_1_1demography_1_1strategy_1_1mass__based.html',1,'quetzal::demography::strategy']]],
-  ['matrix',['Matrix',['../class_matrix.html',1,'']]],
-  ['matrix_3c_20data_20_3e',['Matrix&lt; Data &gt;',['../class_matrix.html',1,'']]],
-  ['matrix_3c_20int_20_3e',['Matrix&lt; int &gt;',['../class_matrix.html',1,'']]],
-  ['munkres',['Munkres',['../class_munkres.html',1,'']]],
-  ['myhash',['MyHash',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1_my_hash.html',1,'quetzal::coalescence::occupancy_spectrum::utils']]]
+  ['latlon',['LatLon',['../struct_lat_lon.html',1,'']]],
+  ['layer',['Layer',['../classgdalcpp_1_1_layer.html',1,'gdalcpp']]],
+  ['literal_5ffactory',['literal_factory',['../structquetzal_1_1expressive_1_1literal__factory.html',1,'quetzal::expressive']]],
+  ['literal_5ft',['literal_t',['../structquetzal_1_1expressive_1_1literal__t.html',1,'quetzal::expressive']]],
+  ['loader',['Loader',['../classquetzal_1_1genetics_1_1_loader.html',1,'quetzal::genetics']]],
+  ['logistic',['Logistic',['../structquetzal_1_1demography_1_1dispersal_1_1_logistic.html',1,'quetzal::demography::dispersal::Logistic'],['../struct_logistic.html',1,'Logistic']]],
+  ['lognormal',['Lognormal',['../structquetzal_1_1demography_1_1dispersal_1_1_lognormal.html',1,'quetzal::demography::dispersal']]]
 ];

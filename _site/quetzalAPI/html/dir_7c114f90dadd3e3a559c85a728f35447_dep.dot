@@ -1,0 +1,11 @@
+digraph "quetzal/documentation/code_examples/landscape_invasion" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b4df6a4ea48e4fa4c3eb0ed2f6e369e8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="code_examples" fontname="Helvetica", fontsize="10", URL="dir_b4df6a4ea48e4fa4c3eb0ed2f6e369e8.html"]
+  dir_7c114f90dadd3e3a559c85a728f35447 [shape=box, label="landscape_invasion", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7c114f90dadd3e3a559c85a728f35447.html"];
+  }
+  dir_452d8c588a01d0d9b6358ca147e46c83 [shape=box label="modules" fillcolor="white" style="filled" color="red" URL="dir_452d8c588a01d0d9b6358ca147e46c83.html"];
+  dir_7c114f90dadd3e3a559c85a728f35447->dir_452d8c588a01d0d9b6358ca147e46c83 [headlabel="10", labeldistance=1.5 headhref="dir_000011_000001.html"];
+}

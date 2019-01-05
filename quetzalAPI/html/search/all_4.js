@@ -37,5 +37,6 @@ var searchData=
   ['double_5fquote',['double_quote',['../namespacedvp_afe59223e1e2838fd0166df747761e630.html#afe59223e1e2838fd0166df747761e630a3ca3e74a265bca3ad989dc1ab0373493',1,'dvp']]],
   ['driver',['Driver',['../classgdalcpp_1_1detail_1_1_driver.html',1,'gdalcpp::detail::Driver'],['../classgdalcpp_1_1gdal__error_a1aaeb9de9beb7c68cb80a4b8fbd9818a.html#a1aaeb9de9beb7c68cb80a4b8fbd9818a',1,'gdalcpp::gdal_error::driver()'],['../classgdalcpp_1_1detail_1_1_driver_a861d15ea071ac5aad5f292fc271e03a1.html#a861d15ea071ac5aad5f292fc271e03a1',1,'gdalcpp::detail::Driver::Driver()']]],
   ['driver_5fname',['driver_name',['../classgdalcpp_1_1_dataset_a16c9be3f3d3f67a8d2a24c4ea322081c.html#a16c9be3f3d3f67a8d2a24c4ea322081c',1,'gdalcpp::Dataset']]],
-  ['dvp',['dvp',['../namespacedvp.html',1,'']]]
+  ['dvp',['dvp',['../namespacedvp.html',1,'']]],
+  ['dev_20docs',['Dev Docs',['../index.html',1,'']]]
 ];

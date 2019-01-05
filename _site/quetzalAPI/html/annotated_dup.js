@@ -1,10 +1,15 @@
 var annotated_dup =
 [
+    [ "dvp", "namespacedvp.html", "namespacedvp" ],
     [ "fuzzy_transfer_distance", "namespacefuzzy__transfer__distance.html", "namespacefuzzy__transfer__distance" ],
     [ "gdalcpp", "namespacegdalcpp.html", "namespacegdalcpp" ],
     [ "quetzal", "namespacequetzal.html", "namespacequetzal" ],
     [ "std", "namespacestd.html", "namespacestd" ],
+    [ "Bar", "struct_bar.html", "struct_bar" ],
+    [ "CoalescencePolicy", "class_coalescence_policy.html", null ],
+    [ "csv_traits", "classcsv__traits.html", null ],
     [ "DemonstrationModel", "class_demonstration_model.html", "class_demonstration_model" ],
+    [ "Foo", "class_foo.html", "class_foo" ],
     [ "FuzzyPartition", "class_fuzzy_partition.html", "class_fuzzy_partition" ],
     [ "Gaussian", "struct_gaussian.html", "struct_gaussian" ],
     [ "GenerativeModel", "class_generative_model.html", "class_generative_model" ],

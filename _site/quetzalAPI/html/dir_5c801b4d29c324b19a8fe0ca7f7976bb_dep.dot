@@ -1,0 +1,9 @@
+digraph "quetzal/modules/coalescence/containers/test/Tree" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_459e60857007137563b15a974c8870b3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_459e60857007137563b15a974c8870b3.html"]
+  dir_5c801b4d29c324b19a8fe0ca7f7976bb [shape=box, label="Tree", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5c801b4d29c324b19a8fe0ca7f7976bb.html"];
+  }
+}

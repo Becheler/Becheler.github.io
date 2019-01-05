@@ -1,0 +1,13 @@
+digraph "quetzal::expressive::compose_t&lt; Outer, Inners &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="quetzal::expressive\l::compose_t\< Outer,\l Inners \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="quetzal::expressive\l::composite_functor\l\< Inners... \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structquetzal_1_1expressive_1_1composite__functor.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" functors" ,fontname="Helvetica"];
+  Node4 [label="tuple\< Functors... \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" outer" ,fontname="Helvetica"];
+  Node5 [label="Outer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

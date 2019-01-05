@@ -1,0 +1,25 @@
+digraph "quetzal/geography.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node25 [label="quetzal/geography.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node25 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="quetzal/quetzal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$quetzal_8h.html",tooltip=" "];
+  Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="quetzal/documentation\l/code_examples/example1.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$example1_8cpp.html",tooltip=" "];
+  Node26 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="quetzal/documentation\l/code_examples/expansion\l/main_1.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__1_8cpp.html",tooltip=" "];
+  Node26 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="quetzal/documentation\l/code_examples/landscape\l_invasion/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$documentation_2code__examples_2landscape__invasion_2main_8cpp.html",tooltip=" "];
+  Node26 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="quetzal/documentation\l/code_examples/landscape\l_invasion/main_simultaneous\l_loci.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__simultaneous__loci_8cpp.html",tooltip=" "];
+  Node26 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="quetzal/documentation\l/code_examples/two_demes\l/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$documentation_2code__examples_2two__demes_2main_8cpp.html",tooltip=" "];
+  Node26 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="quetzal/test/integration\l_test/integration.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$integration_8cpp.html",tooltip=" "];
+  Node26 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="quetzal/test/integration\l_test/spatial_expansion\l/model_1/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test_2integration__test_2spatial__expansion_2model__1_2main_8cpp.html",tooltip=" "];
+  Node26 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="quetzal/test/unit_test\l/simulator/simulator_test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simulator__test_8cpp.html",tooltip=" "];
+}

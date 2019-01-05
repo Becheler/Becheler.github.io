@@ -1,0 +1,13 @@
+digraph "quetzal/modules/expressive" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_452d8c588a01d0d9b6358ca147e46c83 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="modules" fontname="Helvetica", fontsize="10", URL="dir_452d8c588a01d0d9b6358ca147e46c83.html"]
+  subgraph clusterdir_db869d965372c8d4723c4516cb60a721 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_db869d965372c8d4723c4516cb60a721.html"];
+    dir_db869d965372c8d4723c4516cb60a721 [shape=plaintext label="expressive"];
+    dir_5440d39b7a5892e39ab18a77ab578eab [shape=box label="test" color="black" fillcolor="white" style="filled" URL="dir_5440d39b7a5892e39ab18a77ab578eab.html"];
+  }
+  }
+}

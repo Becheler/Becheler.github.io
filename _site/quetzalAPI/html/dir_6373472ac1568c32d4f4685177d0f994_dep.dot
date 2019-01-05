@@ -1,0 +1,9 @@
+digraph "quetzal/modules/random/test/DiscreteDistribution" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e79c9d0adf249558926df1e0cfaf98af {
+    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_e79c9d0adf249558926df1e0cfaf98af.html"]
+  dir_6373472ac1568c32d4f4685177d0f994 [shape=box, label="DiscreteDistribution", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6373472ac1568c32d4f4685177d0f994.html"];
+  }
+}

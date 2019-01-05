@@ -1,0 +1,10 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="quetzal::demography\l::BaseHistory\< Space,\l Time, strategy::mass\l_based \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1demography_1_1_base_history.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="quetzal::demography\l::History\< Space, Time,\l strategy::mass_based \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1mass__based_01_4.html",tooltip="Partial specialization where populations levels are assumed high enough to be considered as divisible..."];
+}

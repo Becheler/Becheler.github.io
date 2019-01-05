@@ -1,0 +1,9 @@
+digraph "quetzal/modules/coalescence/policies/test/BinaryMerger" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_930f75db551d3917be89428d39cce91f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_930f75db551d3917be89428d39cce91f.html"]
+  dir_a83c673f0aabe6296a57325eddf209e2 [shape=box, label="BinaryMerger", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a83c673f0aabe6296a57325eddf209e2.html"];
+  }
+}

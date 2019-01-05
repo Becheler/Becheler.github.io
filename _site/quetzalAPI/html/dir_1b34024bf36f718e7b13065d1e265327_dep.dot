@@ -1,0 +1,9 @@
+digraph "quetzal/modules/coalescence/occupancy_spectrum/test/Generator" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_45bdf26323ebf9ed667d08dc44dc54ff {
+    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_45bdf26323ebf9ed667d08dc44dc54ff.html"]
+  dir_1b34024bf36f718e7b13065d1e265327 [shape=box, label="Generator", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1b34024bf36f718e7b13065d1e265327.html"];
+  }
+}

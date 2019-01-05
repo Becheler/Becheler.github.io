@@ -234,16 +234,15 @@ the topology:
 Ann Arbor (((((a,d),e),b),f),c)
 ```
 
-# Going further is part of the fun
+# About
 
-Actually it was the main focus of Quetzal design: answering some questions by enabling new ones.
+**Maintainer:** [Arnaud Becheler](https://becheler.github.io/)
 
-- Do you want to change the dispersal model ?
-- Do you want to simulate explicit allelic states ?
-- Do you want to change the demographic growth ?
-- Do you want to incorporate landscape heterogeneity in the model ?
+**How to cite:** [see the founder article](https://www.biorxiv.org/content/early/2017/11/06/214767)
 
-This is totally expected and doable: code only your customized components respecting some basic
-constraints, and inject them in your main function.
+**Community:** IRC channel \#quetzal on [Freenode](https://webchat.freenode.net/)
 
-Quetzal code will adapt to your components: **no need to recode everything !**
+**Supported platform:** Linux
+
+**Contribute:** Check [our Github repository](https://github.com/Becheler/quetzal) and use the [Pull Request system](https://help.github.com/articles/creating-a-pull-request/)
+<P><B>Clone:</B><PRE CLASS="fragment">git clone %https://github.com/Becheler/quetzal.git</PRE></P>

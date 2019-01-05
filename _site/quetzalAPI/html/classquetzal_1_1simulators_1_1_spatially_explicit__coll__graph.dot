@@ -1,0 +1,11 @@
+digraph "quetzal::simulators::SpatiallyExplicit&lt; Space, Time, Strategy, CoalescencePolicy &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="quetzal::simulators\l::SpatiallyExplicit\l\< Space, Time, Strategy,\l CoalescencePolicy \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Coalescence simulator in a spatially explicit landscape."];
+  Node4 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="quetzal::simulators\l::DemographicAssumptionPolicy\l\< Strategy \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1simulators_1_1_demographic_assumption_policy.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CoalescencePolicy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_coalescence_policy.html",tooltip=" "];
+}

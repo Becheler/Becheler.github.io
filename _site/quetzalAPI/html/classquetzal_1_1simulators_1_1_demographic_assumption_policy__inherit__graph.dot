@@ -1,0 +1,9 @@
+digraph "quetzal::simulators::DemographicAssumptionPolicy&lt; Strategy &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="quetzal::simulators\l::DemographicAssumptionPolicy\l\< Strategy \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="quetzal::simulators\l::SpatiallyExplicit\l\< Strategy \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1simulators_1_1_spatially_explicit.html",tooltip="Coalescence simulator in a spatially explicit landscape."];
+}

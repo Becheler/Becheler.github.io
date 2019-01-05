@@ -1,0 +1,9 @@
+digraph "Policies"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="coalescence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__coalescence.html",tooltip="Template algorithms for operating coalescence operations on data sequences."];
+  Node0 [label="Policies",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Policies with common interface, made to be used when designing coalescence algorithms or models."];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="FuzzyPartition\< Element \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_fuzzy_partition.html",tooltip="Clusters are implicitly defined because of cluster merging (what would make unique IDs complicated to..."];
+}

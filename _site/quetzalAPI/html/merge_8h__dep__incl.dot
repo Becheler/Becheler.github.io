@@ -1,0 +1,55 @@
+digraph "quetzal/modules/coalescence/algorithms/merge.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node5 [label="quetzal/modules/coalescence\l/algorithms/merge.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="quetzal/modules/coalescence\l/policies/merger.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$merger_8h.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="quetzal/coalescence.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$coalescence_8h.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="quetzal/quetzal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$quetzal_8h.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="quetzal/documentation\l/code_examples/example1.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$example1_8cpp.html",tooltip=" "];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="quetzal/documentation\l/code_examples/expansion\l/main_1.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__1_8cpp.html",tooltip=" "];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="quetzal/documentation\l/code_examples/landscape\l_invasion/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$documentation_2code__examples_2landscape__invasion_2main_8cpp.html",tooltip=" "];
+  Node8 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="quetzal/documentation\l/code_examples/landscape\l_invasion/main_simultaneous\l_loci.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__simultaneous__loci_8cpp.html",tooltip=" "];
+  Node8 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="quetzal/documentation\l/code_examples/two_demes\l/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$documentation_2code__examples_2two__demes_2main_8cpp.html",tooltip=" "];
+  Node8 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="quetzal/test/integration\l_test/integration.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$integration_8cpp.html",tooltip=" "];
+  Node8 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="quetzal/test/integration\l_test/spatial_expansion\l/model_1/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test_2integration__test_2spatial__expansion_2model__1_2main_8cpp.html",tooltip=" "];
+  Node8 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="quetzal/test/unit_test\l/simulator/simulator_test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simulator__test_8cpp.html",tooltip=" "];
+  Node6 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="quetzal/modules/simulator\l/simulators.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simulators_8h.html",tooltip=" "];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="quetzal/modules/coalescence\l/policies/distance_to_parent.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$distance__to__parent_8h.html",tooltip=" "];
+  Node18 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="quetzal/documentation\l/code_examples/landscape\l_invasion/DemonstrationModel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_demonstration_model_8h.html",tooltip=" "];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="quetzal/documentation\l/code_examples/landscape\l_invasion/cross_val.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cross__val_8cpp.html",tooltip=" "];
+  Node17 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="quetzal/modules/simulator\l/test/spatially_explicit\l_coalescence_simulator/mass\l_based_simulator_test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mass__based__simulator__test_8cpp.html",tooltip=" "];
+  Node6 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="quetzal/modules/simulator\l/utils.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2simulator_2utils_8h.html",tooltip=" "];
+  Node22 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="quetzal/modules/coalescence\l/policies/test/BinaryMerger\l/test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$coalescence_2policies_2test_2_binary_merger_2test_8cpp.html",tooltip=" "];
+  Node6 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="quetzal/modules/coalescence\l/policies/test/SimultaneousMultiple\lMerger/test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$coalescence_2policies_2test_2_simultaneous_multiple_merger_2test_8cpp.html",tooltip=" "];
+  Node5 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="quetzal/modules/coalescence\l/algorithms/test/binary\l_merge_test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$binary__merge__test_8cpp.html",tooltip="Program for unit testing."];
+  Node5 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="quetzal/modules/coalescence\l/algorithms/test/simultaneous\l_multiple_merge_test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simultaneous__multiple__merge__test_8cpp.html",tooltip=" "];
+}

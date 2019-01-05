@@ -1,0 +1,13 @@
+digraph "quetzal/modules/coalescence/containers" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6f18ad16022816a18d280c39985f7841 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="coalescence" fontname="Helvetica", fontsize="10", URL="dir_6f18ad16022816a18d280c39985f7841.html"]
+  subgraph clusterdir_004de26391fc50012dd8482d8b1b4cbf {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_004de26391fc50012dd8482d8b1b4cbf.html"];
+    dir_004de26391fc50012dd8482d8b1b4cbf [shape=plaintext label="containers"];
+    dir_459e60857007137563b15a974c8870b3 [shape=box label="test" color="red" fillcolor="white" style="filled" URL="dir_459e60857007137563b15a974c8870b3.html"];
+  }
+  }
+}

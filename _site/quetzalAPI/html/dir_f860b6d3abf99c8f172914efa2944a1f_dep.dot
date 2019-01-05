@@ -1,0 +1,9 @@
+digraph "quetzal/documentation/code_examples/expansion" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b4df6a4ea48e4fa4c3eb0ed2f6e369e8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="code_examples" fontname="Helvetica", fontsize="10", URL="dir_b4df6a4ea48e4fa4c3eb0ed2f6e369e8.html"]
+  dir_f860b6d3abf99c8f172914efa2944a1f [shape=box, label="expansion", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f860b6d3abf99c8f172914efa2944a1f.html"];
+  }
+}

@@ -1,0 +1,9 @@
+digraph "quetzal/modules/demography/test/PopulationSize" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_01f779851d3ad90c202093140b80f55c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_01f779851d3ad90c202093140b80f55c.html"]
+  dir_c7f759fd71605a9e649a00d725f30a61 [shape=box, label="PopulationSize", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c7f759fd71605a9e649a00d725f30a61.html"];
+  }
+}

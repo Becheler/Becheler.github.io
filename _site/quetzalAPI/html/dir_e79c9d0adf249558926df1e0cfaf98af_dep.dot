@@ -1,0 +1,15 @@
+digraph "quetzal/modules/random/test" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8a59f40c12a6ed459c765e23781c48c7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="random" fontname="Helvetica", fontsize="10", URL="dir_8a59f40c12a6ed459c765e23781c48c7.html"]
+  subgraph clusterdir_e79c9d0adf249558926df1e0cfaf98af {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e79c9d0adf249558926df1e0cfaf98af.html"];
+    dir_e79c9d0adf249558926df1e0cfaf98af [shape=plaintext label="test"];
+    dir_6373472ac1568c32d4f4685177d0f994 [shape=box label="DiscreteDistribution" color="black" fillcolor="white" style="filled" URL="dir_6373472ac1568c32d4f4685177d0f994.html"];
+    dir_9c2a20ace8f1872d47bea2240384567e [shape=box label="TimeTransitionKernel" color="black" fillcolor="white" style="filled" URL="dir_9c2a20ace8f1872d47bea2240384567e.html"];
+    dir_4e47120ad55fabc1803d94e9ab8c4d15 [shape=box label="TransitionKernel" color="black" fillcolor="white" style="filled" URL="dir_4e47120ad55fabc1803d94e9ab8c4d15.html"];
+  }
+  }
+}

@@ -1,0 +1,17 @@
+digraph "quetzal/modules/demography/test" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_10c02517bd80d8c8f119ab39d5581651 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="demography" fontname="Helvetica", fontsize="10", URL="dir_10c02517bd80d8c8f119ab39d5581651.html"]
+  subgraph clusterdir_01f779851d3ad90c202093140b80f55c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_01f779851d3ad90c202093140b80f55c.html"];
+    dir_01f779851d3ad90c202093140b80f55c [shape=plaintext label="test"];
+    dir_5b03a00fd3688c2aa6df3403ba956b0a [shape=box label="dispersal" color="black" fillcolor="white" style="filled" URL="dir_5b03a00fd3688c2aa6df3403ba956b0a.html"];
+    dir_4aecf4b153fa6b0108794fea197d8d7f [shape=box label="Flow" color="black" fillcolor="white" style="filled" URL="dir_4aecf4b153fa6b0108794fea197d8d7f.html"];
+    dir_6882df31bcfc01aff78f69e2f726b461 [shape=box label="History" color="black" fillcolor="white" style="filled" URL="dir_6882df31bcfc01aff78f69e2f726b461.html"];
+    dir_c7f759fd71605a9e649a00d725f30a61 [shape=box label="PopulationSize" color="black" fillcolor="white" style="filled" URL="dir_c7f759fd71605a9e649a00d725f30a61.html"];
+    dir_92e4fd13c525e06b4660f06bc926fe62 [shape=box label="SymmetricDistanceMatrix" color="black" fillcolor="white" style="filled" URL="dir_92e4fd13c525e06b4660f06bc926fe62.html"];
+  }
+  }
+}

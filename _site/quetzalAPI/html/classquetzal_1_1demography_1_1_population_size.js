@@ -4,7 +4,7 @@ var classquetzal_1_1demography_1_1_population_size =
     [ "time_type", "classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c", null ],
     [ "value_type", "classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434", null ],
     [ "PopulationSize", "classquetzal_1_1demography_1_1_population_size_af4018ef08839888744f5b3dc4ceae213.html#af4018ef08839888744f5b3dc4ceae213", null ],
-    [ "definition_space", "classquetzal_1_1demography_1_1_population_size_a5cf89380cec5e475a94f86b8e4129a72.html#a5cf89380cec5e475a94f86b8e4129a72", null ],
+    [ "definition_space", "classquetzal_1_1demography_1_1_population_size_a70b555871e321ceb7f2a4272431c4a94.html#a70b555871e321ceb7f2a4272431c4a94", null ],
     [ "get", "classquetzal_1_1demography_1_1_population_size_a03de313c7bb868c0dedbc9eecaaf562b.html#a03de313c7bb868c0dedbc9eecaaf562b", null ],
     [ "is_defined", "classquetzal_1_1demography_1_1_population_size_a9f21dcff60484d65e3a92500eb0618cb.html#a9f21dcff60484d65e3a92500eb0618cb", null ],
     [ "operator()", "classquetzal_1_1demography_1_1_population_size_ae77a5b32324ba4fd44669929096dbd60.html#ae77a5b32324ba4fd44669929096dbd60", null ],

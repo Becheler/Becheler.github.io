@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['_7edataset',['~Dataset',['../classgdalcpp_1_1_dataset_ae94b12a68b5bb2f8654243a07429fb4c.html#ae94b12a68b5bb2f8654243a07429fb4c',1,'gdalcpp::Dataset']]],
-  ['_7einit_5fwrapper',['~init_wrapper',['../structgdalcpp_1_1detail_1_1init__wrapper_aeefb45245f393409acaf99227ae23b63.html#aeefb45245f393409acaf99227ae23b63',1,'gdalcpp::detail::init_wrapper']]],
-  ['_7ematrix',['~Matrix',['../class_matrix_a91aa704de674203e96aece9e1955ccd3.html#a91aa704de674203e96aece9e1955ccd3',1,'Matrix']]]
+  ['weights',['weights',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution_a8b03e63c4e43e067479baa5c9cfef541.html#a8b03e63c4e43e067479baa5c9cfef541',1,'quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution']]],
+  ['width',['width',['../classgdalcpp_1_1_dataset_ad69a97a8c1df367c86643bf62e9b934d.html#ad69a97a8c1df367c86643bf62e9b934d',1,'gdalcpp::Dataset']]],
+  ['wrapper',['Wrapper',['../struct_wrapper.html',1,'Wrapper&lt; Model &gt;'],['../struct_wrapper_a62584ee35bc7d9e9bb78d36ba08c49cb.html#a62584ee35bc7d9e9bb78d36ba08c49cb',1,'Wrapper::Wrapper(model_type &amp;model)'],['../struct_wrapper_a62584ee35bc7d9e9bb78d36ba08c49cb.html#a62584ee35bc7d9e9bb78d36ba08c49cb',1,'Wrapper::Wrapper(model_type &amp;model)'],['../struct_wrapper_abdb36dec5712714b7503f1c0dfe60afd.html#abdb36dec5712714b7503f1c0dfe60afd',1,'Wrapper::Wrapper(GenerativeModel &amp;model)'],['../struct_wrapper_abdb36dec5712714b7503f1c0dfe60afd.html#abdb36dec5712714b7503f1c0dfe60afd',1,'Wrapper::Wrapper(GenerativeModel &amp;model)']]],
+  ['wright_5ffisher_5fmodel',['wright_fisher_model',['../integration_8cpp_ab3453231ac01e3a4e9fe79c6dddfea59.html#ab3453231ac01e3a4e9fe79c6dddfea59',1,'integration.cpp']]]
 ];

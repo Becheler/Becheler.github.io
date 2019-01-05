@@ -1,0 +1,11 @@
+digraph "quetzal/test/unit_test/demography" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bb982ae42cce9fc7564a862e4b1786e2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="unit_test" fontname="Helvetica", fontsize="10", URL="dir_bb982ae42cce9fc7564a862e4b1786e2.html"]
+  dir_ef7dbf30bb49d03978e4fe26566c4c7a [shape=box, label="demography", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ef7dbf30bb49d03978e4fe26566c4c7a.html"];
+  }
+  dir_452d8c588a01d0d9b6358ca147e46c83 [shape=box label="modules" fillcolor="white" style="filled" color="red" URL="dir_452d8c588a01d0d9b6358ca147e46c83.html"];
+  dir_ef7dbf30bb49d03978e4fe26566c4c7a->dir_452d8c588a01d0d9b6358ca147e46c83 [headlabel="1", labeldistance=1.5 headhref="dir_000064_000001.html"];
+}

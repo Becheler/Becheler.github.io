@@ -1,0 +1,11 @@
+digraph "quetzal/documentation/code_examples/two_demes" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b4df6a4ea48e4fa4c3eb0ed2f6e369e8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="code_examples" fontname="Helvetica", fontsize="10", URL="dir_b4df6a4ea48e4fa4c3eb0ed2f6e369e8.html"]
+  dir_9ed70baee238b45e556e838cb6b9866d [shape=box, label="two_demes", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9ed70baee238b45e556e838cb6b9866d.html"];
+  }
+  dir_452d8c588a01d0d9b6358ca147e46c83 [shape=box label="modules" fillcolor="white" style="filled" color="red" URL="dir_452d8c588a01d0d9b6358ca147e46c83.html"];
+  dir_9ed70baee238b45e556e838cb6b9866d->dir_452d8c588a01d0d9b6358ca147e46c83 [headlabel="1", labeldistance=1.5 headhref="dir_000012_000001.html"];
+}

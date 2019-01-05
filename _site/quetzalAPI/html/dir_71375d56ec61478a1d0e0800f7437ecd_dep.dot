@@ -1,0 +1,13 @@
+digraph "quetzal/modules/simulator/test" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2a1890074ce3c655d2ada46e194b66a5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="simulator" fontname="Helvetica", fontsize="10", URL="dir_2a1890074ce3c655d2ada46e194b66a5.html"]
+  subgraph clusterdir_71375d56ec61478a1d0e0800f7437ecd {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_71375d56ec61478a1d0e0800f7437ecd.html"];
+    dir_71375d56ec61478a1d0e0800f7437ecd [shape=plaintext label="test"];
+    dir_af2bfa90b441edcbb40d40d1c413f4da [shape=box label="spatially_explicit_coalescence_simulator" color="black" fillcolor="white" style="filled" URL="dir_af2bfa90b441edcbb40d40d1c413f4da.html"];
+  }
+  }
+}

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['occupancyspectrumdistribution',['OccupancySpectrumDistribution',['../classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html',1,'quetzal::coalescence::occupancy_spectrum']]],
-  ['on_5fthe_5ffly',['on_the_fly',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html',1,'quetzal::coalescence::occupancy_spectrum']]],
-  ['operator',['Operator',['../class_operator.html',1,'']]],
-  ['options',['Options',['../structgdalcpp_1_1detail_1_1_options.html',1,'gdalcpp::detail']]]
+  ['negativeexponential',['NegativeExponential',['../structquetzal_1_1demography_1_1dispersal_1_1_negative_exponential.html',1,'quetzal::demography::dispersal']]],
+  ['neighbor_5fmigration',['neighbor_migration',['../structquetzal_1_1neighbor__migration.html',1,'quetzal']]]
 ];

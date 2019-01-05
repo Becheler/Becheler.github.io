@@ -2,6 +2,7 @@ var dir_452d8c588a01d0d9b6358ca147e46c83 =
 [
     [ "abc", "dir_a5f1dae3cdac4f64efd28e557e397a9e.html", "dir_a5f1dae3cdac4f64efd28e557e397a9e" ],
     [ "coalescence", "dir_6f18ad16022816a18d280c39985f7841.html", "dir_6f18ad16022816a18d280c39985f7841" ],
+    [ "data", "dir_f678d05d571285a2f1eda7d1a0cba4f8.html", "dir_f678d05d571285a2f1eda7d1a0cba4f8" ],
     [ "demography", "dir_10c02517bd80d8c8f119ab39d5581651.html", "dir_10c02517bd80d8c8f119ab39d5581651" ],
     [ "expressive", "dir_db869d965372c8d4723c4516cb60a721.html", "dir_db869d965372c8d4723c4516cb60a721" ],
     [ "fuzzy_transfer_distance", "dir_22efcbeb0f24518974dc2d2710886964.html", "dir_22efcbeb0f24518974dc2d2710886964" ],

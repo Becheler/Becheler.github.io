@@ -1,0 +1,5 @@
+var classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1mass__based_01_4 =
+[
+    [ "merger_type", "classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1mass__based_01_4_a0053f1a4d4d6d5f41c6cad3f9964795b.html#a0053f1a4d4d6d5f41c6cad3f9964795b", null ],
+    [ "check_consistency", "classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1mass__based_01_4_a3b1ccf3b067af16f2def3fb0ba59a589.html#a3b1ccf3b067af16f2def3fb0ba59a589", null ]
+];

@@ -10,9 +10,63 @@ description: home
 Quetzal is a collection of C++ code snippets, that can be picked and combined to
 build complex, spatially explicit population genetics simulators and inference frameworks.
 
-# Why should I care ?
+It has been designed as a **toolbox** allowing a programmer to switch between several
+modeling frameworks, and to **rapidly test different models**.
 
-## You are a researcher exploring a new model
+![Quetzal scheme]( {{site.url}}/draw/quetzal_scheme.png)
+
+# Quick demonstration
+
+### Step 1 - Design your own model
+
+The user can freely specify the demographic model that is used to simulate a
+demographic history in a discrete geographic space.
+
+For example, to simulate a fast demographic expansion in Western Europe, we will use
+here:
+* a nearest-neighbor migration process
+* a carrying capacity set as a function of the local rainfall values
+* a growth rate set to a constant
+
+Quetzal makes it easy to set and modify the details of this model and to add
+or remove some stochasticity.
+
+### Step 2 - Simulate a time-forward demographic history
+
+All the demographic events are recorded by the simulation, and
+the population sizes across the landscape can be simulated and exported in
+geospatial files for visualization:
+
+![Example of demographic expansion]( {{site.url}}/demo/model1/history.gif)
+
+### Step 3 - Simulate the gene genalogies backward in time
+
+#### Sampling scheme
+
+For data analysis, you would probably consider a real genetic dataset.
+For methodological exploration purpose you would
+want to specify a controlled sampling design: in this example the sampling of genetic material
+is simulated around two regions (Spain and Sicilia) only if the simulated local
+population size is high enough.
+
+![Sampling schemes]( {{site.url}}/demo/model1/sampling.png)
+
+#### Coalescence process
+
+Starting from this sampling scheme, Quetzal track the genes genealogies
+back in the demographic history, allowing to export relevant information to other frameworks.
+
+![Coalescent tree]( {{site.url}}/draw/demo/tree.png)
+
+Simulating these genealogies allows to efficiently simulate genetic diversity patterns,
+possibly using Quetzal or exporting the trees in Newick format to others simulators.
+
+
+# Why a library and not a program ?
+
+## Why should I care ?
+
+### You are a researcher exploring a new model
 
 The principal activity of a researcher is to explore new questions. Using simulations
 to explore new complex models is a powerful technique, but it requires a solid
@@ -26,13 +80,11 @@ and coalescence-based simulators by allowing the customization of key aspects of
 the problem: populations reaction to landscape heterogeneity and genes genealogies
 simulations details.
 
-![Quetzal scheme]( {{site.url}}/draw/quetzal_scheme.png)
-
 As nothing is never free is this wild world, this flexibility comes at a cost:
 using Quetzal requires technical knowledge in C++, so perhaps you would need a
 Research Software Engineer to code your model.
 
-## You are a Research Software Engineer (RSE)
+### You are a Research Software Engineer (RSE)
 
 [You do not know if you are or not a RSE?](https://rse.ac.uk/who/)
 
@@ -48,7 +100,7 @@ and you will have to start all over again.
 > Walking on water and developing software from a specification are easy if both are frozen.
 > -Edward Berard
 
-We all know that there is no such thing as frozen specification. Building a
+We all know that there is no such thing as frozen [specification](https://en.wikipedia.org/wiki/Software_requirements_specification). Building a
 system in a changing environment is challenging, and you need the right tools.
 
 But here are the **good news**:
@@ -59,8 +111,6 @@ Quetzal provides a nice starter-pack to write your own simulation program.
 You will probably not find everything that you need.
 
 But you will surely spare time by **not re-inventing the wheel**.
-
-# Why a library and not a program ?
 
 ## Programs are not always the right level of configurability
 

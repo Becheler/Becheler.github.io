@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Quetzal | Arnaud Becheler</title>
+<meta property="og:title" content="Quetzal" />
+<meta name="author" content="Arnaud Becheler" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="home" />
+<meta property="og:description" content="home" />
+<link rel="canonical" href="http://localhost:4000/pages/quetzal.html" />
+<meta property="og:url" content="http://localhost:4000/pages/quetzal.html" />
+<meta property="og:site_name" content="Arnaud Becheler" />
+<script type="application/ld+json">
+{"sameAs":null,"datePublished":null,"description":"home","@type":"WebPage","image":null,"mainEntityOfPage":null,"url":"http://localhost:4000/pages/quetzal.html","name":null,"publisher":null,"author":{"@type":"Person","name":"Arnaud Becheler"},"headline":"Quetzal","dateModified":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="description" content="home"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+
+
+  </head>
+  <body>
+
+    <section class="page-header">
+  <h1 class="project-name">QUETZAL</h1>
+  <h2 class="project-tagline">The Coalescence Template Library</h2>
+  <a href="../pages/quetzal.html" class="btn">Home</a>
+  <a href="../pages/getting_started.html" class="btn">Getting Started</a>
+  <a href="../pages/tutorials.html" class="btn">Tutorials</a>
+  <a href="https://github.com/Becheler/quetzal" class="btn">GitHub</a>
+  <a href="../quetzalAPI/html/index.html" class="btn">Devs Doc</a>
+  <a href="../index.html" class="btn">Maintainer</a>
+</section>
+
+
+    <section class="main-content">
+      <h1 id="what-is-quetzal">What is Quetzal?</h1>
+
+<p>Quetzal is a collection of C++ code snippets, that can be picked and combined to
+build complex, spatially explicit population genetics simulators and inference frameworks.</p>
+
+<p>It has been designed as a <strong>toolbox</strong> allowing a programmer to switch between several
+modeling frameworks, and to <strong>rapidly test different models</strong>.</p>
+
+<p><img src="http://localhost:4000/draw/quetzal_scheme.png" alt="Quetzal scheme" /></p>
+
+<h1 id="quick-demonstration">Quick demonstration</h1>
+
+<h3 id="step-1---design-your-own-model">Step 1 - Design your own model</h3>
+
+<p>The user can freely specify the demographic model that is used to simulate a
+demographic history in a discrete geographic space.</p>
+
+<p>For example, to simulate a fast demographic expansion in Western Europe, we will use
+here:</p>
+<ul>
+  <li>a nearest-neighbor migration process</li>
+  <li>a carrying capacity set as a function of the local rainfall values</li>
+  <li>a growth rate set to a constant</li>
+</ul>
+
+<p>Quetzal makes it easy to set and modify the details of this model and to add
+or remove some stochasticity.</p>
+
+<h3 id="step-2---simulate-a-time-forward-demographic-history">Step 2 - Simulate a time-forward demographic history</h3>
+
+<p>All the demographic events are recorded by the simulation, and
+the population sizes across the landscape can be simulated and exported in
+geospatial files for visualization:</p>
+
+<p><img src="http://localhost:4000/demo/model1/history.gif" alt="Example of demographic expansion" /></p>
+
+<h3 id="step-3---simulate-the-gene-genalogies-backward-in-time">Step 3 - Simulate the gene genalogies backward in time</h3>
+
+<h4 id="sampling-scheme">Sampling scheme</h4>
+
+<p>For data analysis, you would probably consider a real genetic dataset.
+For methodological exploration purpose you would
+want to specify a controlled sampling design: in this example the sampling of genetic material
+is simulated around two regions (Spain and Sicilia) only if the simulated local
+population size is high enough.</p>
+
+<p><img src="http://localhost:4000/demo/model1/sampling.png" alt="Sampling schemes" /></p>
+
+<h4 id="coalescence-process">Coalescence process</h4>
+
+<p>Starting from this sampling scheme, Quetzal track the genes genealogies
+back in the demographic history, allowing to export relevant information to other frameworks.</p>
+
+<p><img src="http://localhost:4000/draw/demo/tree.png" alt="Coalescent tree" /></p>
+
+<p>Simulating these genealogies allows to efficiently simulate genetic diversity patterns,
+possibly using Quetzal or exporting the trees in Newick format to others simulators.</p>
+
+<h1 id="why-a-library-and-not-a-program-">Why a library and not a program ?</h1>
+
+<h2 id="why-should-i-care-">Why should I care ?</h2>
+
+<h3 id="you-are-a-researcher-exploring-a-new-model">You are a researcher exploring a new model</h3>
+
+<p>The principal activity of a researcher is to explore new questions. Using simulations
+to explore new complex models is a powerful technique, but it requires a solid
+code base that can adapt to theoretical changes.</p>
+
+<p>If the software breaks at each minor change, the exploration would be
+painful, almost impossible!</p>
+
+<p>Quetzal allows the researcher to <strong>widen the limits</strong> of the traditional spatially explicit
+and coalescence-based simulators by allowing the customization of key aspects of
+the problem: populations reaction to landscape heterogeneity and genes genealogies
+simulations details.</p>
+
+<p>As nothing is never free is this wild world, this flexibility comes at a cost:
+using Quetzal requires technical knowledge in C++, so perhaps you would need a
+Research Software Engineer to code your model.</p>
+
+<h3 id="you-are-a-research-software-engineer-rse">You are a Research Software Engineer (RSE)</h3>
+
+<p><a href="https://rse.ac.uk/who/">You do not know if you are or not a RSE?</a></p>
+
+<p>Do you have to implement or extend a coalescence-based simulator specified by a researcher ?</p>
+
+<p>Well, here are some bad news:</p>
+<ul>
+  <li>Reusing or adapting existing code bases for structured coalescence is hardly feasible.</li>
+  <li>We never have time to re-code everything from scratch.</li>
+  <li>Supposing you succeed to write the correct program
+in a reasonable amount of time (which is not yet certain) <strong>sooner or later the model will change</strong>,
+and you will have to start all over again.</li>
+</ul>
+
+<blockquote>
+  <p>Walking on water and developing software from a specification are easy if both are frozen.
+-Edward Berard</p>
+</blockquote>
+
+<p>We all know that there is no such thing as frozen <a href="https://en.wikipedia.org/wiki/Software_requirements_specification">specification</a>. Building a
+system in a changing environment is challenging, and you need the right tools.</p>
+
+<p>But here are the <strong>good news</strong>:</p>
+
+<p>As an open-source set of C++ abstractions (template classes, functions, algorithms, concepts)
+Quetzal provides a nice starter-pack to write your own simulation program.</p>
+
+<p>You will probably not find everything that you need.</p>
+
+<p>But you will surely spare time by <strong>not re-inventing the wheel</strong>.</p>
+
+<h2 id="programs-are-not-always-the-right-level-of-configurability">Programs are not always the right level of configurability</h2>
+
+<p>Programs are super handy, because they act as nice black-boxes eating data and
+digesting them in a process we can adjust using a neat interface (configuration files,
+Graphical User Interface…). Thanks to programs, we biologists do not need to
+worry about programming languages, design or architecture.</p>
+
+<p>But what if the options of the program do not meet our need ?</p>
+
+<p>In that case, we have to modify the code, to <em>extend it</em>, so we finally have to
+worry about the programming language.</p>
+
+<p>Modifications should be easy so we finally have to worry about design and architecture.</p>
+
+<p>Indeed, Quetzal existence stems from the fact it was impossible to customize the behavior
+of a pre-existing program in the desired way using the available options: we had
+to re-implement <strong>everything</strong>. Programs are not the right level of
+granularity when it comes to reusing the work of other coders.</p>
+
+<blockquote>
+  <p>The key to fast development, correctness, efficiency, and maintainability is
+to use a suitable level of abstraction supported by good libraries.
+-Stroustrup</p>
+</blockquote>
+
+<p>But programs are still very usefull and user-friendly, so we are currently using Quetzal
+to develop various programs!</p>
+
+<h2 id="small-components-libraries-allow-to-tailor-the-code-to-your-needs">Small components libraries allow to tailor the code to your needs</h2>
+
+<p>When a scientific question leads to change a minor detail in the simulation model,
+we never want to have to recode everything. So it means that this very level of
+detail should be the right unit of code. In this way it is possible to only replace
+a piece of code by another in a very easy way.</p>
+
+<p>This is the meaning of components libraries.</p>
+
+<p>And as we never want to pay computation time for flexibility, the C++ template
+mechanism is used in Quetzal to build these components. In this way they can be
+reused, adapted and extended to other contexts with maximal efficiency.</p>
+
+<p>This is the meaning of a C++ template library: flexible, efficient, extensible.</p>
+
+<h1 id="its-easier-than-you-think">It’s easier than you think</h1>
+
+<p>We designed Quetzal so the code can be very expressive and compact.</p>
+
+<p>For example, here is a code extract of a documentation script. We use just some
+of the Quetzal capabilities to simulate a demography in an arbitrary demic structure.</p>
+
+<p>The keypoint is that even if the simulator behavior is complex, we have total control
+on many implementation details and the code is still
+compact, easy to read and fast to execute:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code>
+<span class="c1">// Total control on the data types and the simulation engine
+</span><span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">strategy</span><span class="o">::</span><span class="n">individual_based</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">simulators</span><span class="o">::</span><span class="n">SpatiallyExplicitCoalescenceSimulator</span><span class="p">;</span>
+
+<span class="c1">// Demographic simulation setting
+</span><span class="n">coord_type</span> <span class="n">x_0</span> <span class="o">=</span> <span class="s">"Paris"</span><span class="p">;</span>
+<span class="n">time_type</span> <span class="n">t_0</span> <span class="o">=</span> <span class="mi">1912</span><span class="p">;</span>
+<span class="n">mass_based</span><span class="o">::</span><span class="n">value_type</span> <span class="n">N_0</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+
+<span class="k">using</span> <span class="n">simulator_type</span> <span class="o">=</span>
+  <span class="n">SpatiallyExplicitCoalescenceSimulator</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="p">,</span> <span class="n">individual_based</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="n">simulator_type</span> <span class="n">simulator</span><span class="p">(</span><span class="n">x_0</span><span class="p">,</span> <span class="n">t_0</span><span class="p">,</span> <span class="n">N_0</span><span class="p">);</span>
+
+<span class="n">time_type</span> <span class="n">sampling_time</span> <span class="o">=</span> <span class="mi">2018</span><span class="p">;</span>
+
+<span class="c1">// Total liberty in the demographic growth model
+</span><span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">simulator</span><span class="p">.</span><span class="n">pop_size_history</span><span class="p">();</span>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">K</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">K</span><span class="p">,</span> <span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">),</span> <span class="n">K</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// True but not shown: total liberty in the dispersal model,
+</span><span class="n">Dispersal_sampler</span> <span class="n">D</span><span class="p">;</span>
+
+<span class="c1">// Chose your Random number generator
+</span><span class="k">using</span> <span class="n">generator_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+<span class="n">generator_type</span> <span class="n">gen</span><span class="p">;</span>
+
+<span class="n">simulator</span><span class="p">.</span><span class="n">expand_demography</span><span class="p">(</span><span class="n">sampling_time</span><span class="p">,</span> <span class="n">growth</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+
+<span class="c1">// User defined coalescence data structures
+</span><span class="k">using</span> <span class="n">tree_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">forest_type</span> <span class="o">=</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">coalescence</span><span class="o">::</span><span class="n">Forest</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">tree_type</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="n">forest_type</span> <span class="n">forest</span><span class="p">;</span>
+
+<span class="c1">// Insert some nodes at some locations:
+</span><span class="n">forest</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">"Paris"</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">tree_type</span><span class="o">&gt;</span><span class="p">{</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">});</span>
+<span class="n">forest</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">"Ann Arbor"</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">tree_type</span><span class="o">&gt;</span><span class="p">{</span><span class="s">"d"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"f"</span><span class="p">});</span>
+
+<span class="c1">// Need to generate some Newick formula ? Just code it...
+</span><span class="k">auto</span> <span class="n">branching_operator</span> <span class="o">=</span> <span class="p">[](</span> <span class="k">auto</span> <span class="n">parent</span> <span class="p">,</span> <span class="k">auto</span> <span class="n">child</span> <span class="p">){</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">parent</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">return</span> <span class="s">"("</span> <span class="o">+</span> <span class="n">child</span> <span class="p">;</span>
+  <span class="k">else</span>
+  <span class="k">return</span> <span class="n">parent</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">child</span> <span class="o">+</span> <span class="s">")"</span> <span class="p">;</span>
+<span class="p">};</span>
+
+<span class="c1">// ... and inject it!
+</span><span class="k">auto</span> <span class="n">new_forest</span> <span class="o">=</span> <span class="n">simulator</span><span class="p">.</span><span class="n">coalesce_along_history</span><span class="p">(</span><span class="n">forest</span><span class="p">,</span> <span class="n">branching_operator</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+
+<span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">it</span> <span class="o">:</span> <span class="n">new_forest</span> <span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">it</span><span class="p">.</span><span class="n">first</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">it</span><span class="p">.</span><span class="n">second</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>And that’s it !</p>
+
+<p>Compile, run, and get as an output the ancestral location of the tree and
+the topology:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Ann Arbor (((((a,d),e),b),f),c)
+</code></pre>
+</div>
+
+<h1 id="going-further-is-part-of-the-fun">Going further is part of the fun</h1>
+
+<p>Actually it was the main focus of Quetzal design: answering some questions by enabling new ones.</p>
+
+<ul>
+  <li>Do you want to change the dispersal model ?</li>
+  <li>Do you want to simulate explicit allelic states ?</li>
+  <li>Do you want to change the demographic growth ?</li>
+  <li>Do you want to incorporate landscape heterogeneity in the model ?</li>
+</ul>
+
+<p>This is totally expected and doable: code only your customized components respecting some basic
+constraints, and inject them in your main function.</p>
+
+<p>Quetzal code will adapt to your components: <strong>no need to recode everything !</strong></p>
+
+
+      <footer class="site-footer">
+
+  <div class="post-nav">
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </div>
+
+  <span class="contact"><a href="mailto:Arnaud.Becheler@egce.cnrs-gif.fr">Contact me !</a> </span>
+</footer>
+
+
+    </section>
+
+    
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+  </body>
+</html>

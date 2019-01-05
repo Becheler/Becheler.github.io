@@ -1,7 +1,6 @@
 var namespacequetzal_1_1demography_1_1dispersal =
 [
-    [ "DiscreteLocationKernelFactory", "structquetzal_1_1demography_1_1dispersal_1_1_discrete_location_kernel_factory.html", "structquetzal_1_1demography_1_1dispersal_1_1_discrete_location_kernel_factory" ],
-    [ "DiscreteLocationTransitionKernel", "classquetzal_1_1demography_1_1dispersal_1_1_discrete_location_transition_kernel.html", "classquetzal_1_1demography_1_1dispersal_1_1_discrete_location_transition_kernel" ],
+    [ "DiscreteLocationSampler", "classquetzal_1_1demography_1_1dispersal_1_1_discrete_location_sampler.html", "classquetzal_1_1demography_1_1dispersal_1_1_discrete_location_sampler" ],
     [ "ExponentialPower", "structquetzal_1_1demography_1_1dispersal_1_1_exponential_power.html", "structquetzal_1_1demography_1_1dispersal_1_1_exponential_power" ],
     [ "Gaussian", "structquetzal_1_1demography_1_1dispersal_1_1_gaussian.html", "structquetzal_1_1demography_1_1dispersal_1_1_gaussian" ],
     [ "GaussianMixture", "structquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture.html", "structquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture" ],

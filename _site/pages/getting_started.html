@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Quetzal | Arnaud Becheler</title>
+<meta property="og:title" content="Quetzal" />
+<meta name="author" content="Arnaud Becheler" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="getting started" />
+<meta property="og:description" content="getting started" />
+<link rel="canonical" href="http://localhost:4000/pages/getting_started.html" />
+<meta property="og:url" content="http://localhost:4000/pages/getting_started.html" />
+<meta property="og:site_name" content="Arnaud Becheler" />
+<script type="application/ld+json">
+{"sameAs":null,"datePublished":null,"description":"getting started","@type":"WebPage","image":null,"mainEntityOfPage":null,"url":"http://localhost:4000/pages/getting_started.html","name":null,"publisher":null,"author":{"@type":"Person","name":"Arnaud Becheler"},"headline":"Quetzal","dateModified":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="description" content="getting started"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+
+
+  </head>
+  <body>
+
+    <section class="page-header">
+  <h1 class="project-name">QUETZAL</h1>
+  <h2 class="project-tagline">The Coalescence Template Library</h2>
+  <a href="../pages/quetzal.html" class="btn">Home</a>
+  <a href="../pages/getting_started.html" class="btn">Getting Started</a>
+  <a href="../pages/tutorials.html" class="btn">Tutorials</a>
+  <a href="https://github.com/Becheler/quetzal" class="btn">GitHub</a>
+  <a href="../quetzalAPI/html/index.html" class="btn">Devs Doc</a>
+  <a href="../index.html" class="btn">Maintainer</a>
+</section>
+
+
+    <section class="main-content">
+      <h1 id="get-started-with-the-quetzal-project">Get started with the Quetzal project!</h1>
+
+<p>Here we give some guidance to install Quetzal and its dependencies for Ubuntu and Mac OSX users.</p>
+
+<h2 id="1--get-the-source-code">1- Get the source code</h2>
+
+<p>To include source code in your own project, you need to have it available on your computer.</p>
+
+<p>Two options are possible, up to you:</p>
+
+<h3 id="you-are-not-interested-in-future-quetzal-features">You are not interested in future Quetzal features</h3>
+
+<p>You may just want to download the <a href="https://github.com/Becheler/quetzal/releases">latest release of the project</a>.</p>
+
+<h3 id="you-want-to-benefit-from-further-developments">You want to benefit from further developments</h3>
+
+<p>Then you should prefer to clone the github project, so you can update the Quetzal
+library whenever you want. To clone the project, you need git, so first be sure that git is installed in your system.</p>
+
+<p>To do so, simply open a terminal, type <code class="highlighter-rouge">git --version</code> and press Enter.</p>
+
+<p>If the terminal answers something like <code class="highlighter-rouge">git version 2.17.1</code>, congrats: git is already installed.
+If it is not the case, then check the <a href="https://git-scm.com/">git website</a> for proper installation.</p>
+
+<p>Once you have successfully installed git, then open a terminal, chose a suitable
+folder in your file system, and type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/Becheler/quetzal.git
+</code></pre>
+</div>
+
+<p>Nice, the Quetzal source is now on your computer.</p>
+
+<blockquote>
+  <p><strong>Tip of the day #1:</strong>
+In a near future, to benefit from a later version, you will surely want to type the following in the terminal:</p>
+  <div class="highlighter-rouge"><pre class="highlight"><code>cd quetzal
+git pull
+</code></pre>
+  </div>
+  <p>This will automatically retrieve the last code updates.</p>
+</blockquote>
+
+<h2 id="2--get-a-decent-c-compiler">2- Get a decent C++ compiler</h2>
+
+<p>Quetzal is a C++ template library, so obviously you need a C++ compiler. Quetzal
+makes use of modern template techniques for which a compiler with a strong template support
+is needed.</p>
+
+<p>Basically, this is simply not the case for compilers versions prior to 2003, so make sure you have a decent version.</p>
+
+<p>We use <code class="highlighter-rouge">g++ 7.3.0</code> in our projects, enabled for C++17 features.</p>
+<blockquote>
+  <p><strong>Tip of the day #2:</strong>
+To enable C++17 support, add the command-line parameter <code class="highlighter-rouge">-std=c++17</code> to your g++
+command line when you will compile your programs.</p>
+</blockquote>
+
+<h2 id="3--get-the-dependencies">3- Get the dependencies</h2>
+
+<p>Quetzal uses some external libraries to make things easier and faster. Be sure
+dependencies are installed.</p>
+
+<h3 id="install-the-boost-libraries">Install the Boost libraries</h3>
+
+<p>Boost is a big resource for C++ devs. It is a set of libraries (more than 80!) that
+cover a wide range of problems. We use them here and there when necessary.</p>
+
+<p><strong>Ubuntu</strong></p>
+
+<p>Open a terminal and type</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install libboost-all-dev
+</code></pre>
+</div>
+
+<p><strong>Mac OSX</strong></p>
+
+<p>According to <a href="http://macappstore.org/boost/">Mac App Store</a>,
+you can get the latest version of boost using <a href="https://brew.sh/">Homebrew</a>:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>brew install boost
+</code></pre>
+</div>
+
+<h3 id="install-gdal">Install GDAL</h3>
+
+<p>The Geospatial Data Abstraction Library (GDAL) is essential to represent a
+spatially explicit landscapes. We need the GDAL sources enable interactions with
+Quetzal features, so make sure you have the dev version:</p>
+
+<p><strong>Ubuntu</strong></p>
+
+<p>Open a terminal and type</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install libgdal-dev
+</code></pre>
+</div>
+
+<p><strong>Mac OSX</strong></p>
+
+<p>Visit <a href="https://www.gdal.org/">GDAL website</a> for proper download.</p>
+
+<h2 id="4--check-that-everything-works">4- Check that everything works</h2>
+
+<p>Open a terminal, go in the <code class="highlighter-rouge">quetzal</code> directory and type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>./run_test.sh
+</code></pre>
+</div>
+
+<p>If all the tests end without problems, it means you are ready to write <a href="http://localhost:4000/pages/tutorials.html">your first
+own little program</a>.</p>
+
+<p>If you have any trouble, feel free to contact us.</p>
+
+
+      <footer class="site-footer">
+
+  <div class="post-nav">
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </div>
+
+  <span class="contact"><a href="mailto:Arnaud.Becheler@egce.cnrs-gif.fr">Contact me !</a> </span>
+</footer>
+
+
+    </section>
+
+    
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+  </body>
+</html>

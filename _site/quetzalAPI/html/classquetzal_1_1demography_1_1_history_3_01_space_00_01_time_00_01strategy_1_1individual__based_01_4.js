@@ -1,0 +1,4 @@
+var classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1individual__based_01_4 =
+[
+    [ "expand", "classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01strategy_1_1individual__based_01_4_a04c3eb4c118d267c355e3e31229dc23f.html#a04c3eb4c118d267c355e3e31229dc23f", null ]
+];

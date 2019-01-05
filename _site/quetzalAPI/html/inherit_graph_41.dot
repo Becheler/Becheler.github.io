@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="quetzal::coalescence\l::occupancy_spectrum\l::OccupancySpectrumDistribution\l\< UnaryPredicate, SpectrumHandler,\l Int, Float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html",tooltip="Generates random occupancy spectrum that are distributed according to the associated probability func..."];
-}

@@ -1,9 +1,0 @@
-digraph "quetzal/modules/coalescence/occupancy_spectrum/test/OccupancySpectrumDistribution" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_45bdf26323ebf9ed667d08dc44dc54ff {
-    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_45bdf26323ebf9ed667d08dc44dc54ff.html"]
-  dir_4c93baea34ae4f98e675226d6b80f5cf [shape=box, label="OccupancySpectrumDistribution", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4c93baea34ae4f98e675226d6b80f5cf.html"];
-  }
-}

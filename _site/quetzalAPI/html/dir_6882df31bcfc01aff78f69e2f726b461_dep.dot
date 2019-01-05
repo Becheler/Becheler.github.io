@@ -1,9 +1,0 @@
-digraph "quetzal/modules/demography/test/History" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_01f779851d3ad90c202093140b80f55c {
-    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_01f779851d3ad90c202093140b80f55c.html"]
-  dir_6882df31bcfc01aff78f69e2f726b461 [shape=box, label="History", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6882df31bcfc01aff78f69e2f726b461.html"];
-  }
-}

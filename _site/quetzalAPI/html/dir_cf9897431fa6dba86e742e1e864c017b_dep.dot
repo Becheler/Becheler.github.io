@@ -1,9 +1,0 @@
-digraph "quetzal/modules/geography/test/Resolution" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_c70a5f0b12f0bb74510ddcc8fbae5dd6 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_c70a5f0b12f0bb74510ddcc8fbae5dd6.html"]
-  dir_cf9897431fa6dba86e742e1e864c017b [shape=box, label="Resolution", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_cf9897431fa6dba86e742e1e864c017b.html"];
-  }
-}

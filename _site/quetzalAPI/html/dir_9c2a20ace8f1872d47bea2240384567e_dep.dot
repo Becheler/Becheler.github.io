@@ -1,9 +1,0 @@
-digraph "quetzal/modules/random/test/TimeTransitionKernel" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_e79c9d0adf249558926df1e0cfaf98af {
-    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_e79c9d0adf249558926df1e0cfaf98af.html"]
-  dir_9c2a20ace8f1872d47bea2240384567e [shape=box, label="TimeTransitionKernel", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9c2a20ace8f1872d47bea2240384567e.html"];
-  }
-}

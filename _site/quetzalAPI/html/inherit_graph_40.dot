@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="quetzal::coalescence\l::occupancy_spectrum\l::in_memoized_distribution\l\< UnaryPredicate, SpectrumHandler,\l Int, Float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html",tooltip=" "];
-}

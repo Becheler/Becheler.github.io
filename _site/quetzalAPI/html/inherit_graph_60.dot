@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="quetzal::demography\l::dispersal::ExponentialPower\l::param_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1demography_1_1dispersal_1_1_exponential_power_1_1param__type.html",tooltip=" "];
-}

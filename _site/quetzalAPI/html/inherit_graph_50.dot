@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="quetzal::coalescence\l::policies::distance\l_to_parent_leaf_name\<\l Space, Time \>::cell_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1cell__type.html",tooltip="Defines what data type the tree should store."];
-}

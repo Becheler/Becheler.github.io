@@ -1,9 +1,0 @@
-digraph "quetzal/modules/abc/test" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_a5f1dae3cdac4f64efd28e557e397a9e {
-    graph [ bgcolor="#ddddee", pencolor="black", label="abc" fontname="Helvetica", fontsize="10", URL="dir_a5f1dae3cdac4f64efd28e557e397a9e.html"]
-  dir_5d0812209158b194633a8ff503c36b0f [shape=box, label="test", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5d0812209158b194633a8ff503c36b0f.html"];
-  }
-}

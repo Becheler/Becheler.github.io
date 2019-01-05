@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="quetzal::random::Transition\lKernel\< Time, Distribution \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classquetzal_1_1random_1_1_transition_kernel_3_01_time_00_01_distribution_01_4.html",tooltip="Time-variable discrete markovian transition kernel for sampling the next state knowing the present st..."];
-}

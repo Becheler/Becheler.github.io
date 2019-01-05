@@ -1,9 +1,0 @@
-digraph "quetzal/modules/geography/test/GeographicCoordinates" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_c70a5f0b12f0bb74510ddcc8fbae5dd6 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_c70a5f0b12f0bb74510ddcc8fbae5dd6.html"]
-  dir_2223056158f32a2213253763f6384dd6 [shape=box, label="GeographicCoordinates", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2223056158f32a2213253763f6384dd6.html"];
-  }
-}

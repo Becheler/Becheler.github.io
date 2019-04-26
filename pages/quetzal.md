@@ -25,7 +25,7 @@ Quetzalcoatl, the Feathered Serpent, was a powerful divinity from Mesoamerica wh
 
 The god's name is a combination of two Nahuatl words:
 - **quetzal** refers to the [Resplendant Quetzal](https://en.wikipedia.org/wiki/Resplendent_quetzal) (an emerald bird symbol of freedom)
-- **coatl** basically means *snake* (well, all that glitters is not gold...) and
+- **coatl** basically means *snake* (remember, all that glitters is not gold...) and
 conveniently fits to **Coa**lescence **T**emplate **L**ibrary.
 
 But the full name is quite difficult to pronounce, so feel free to focus on the glitter when you use Quetzal.

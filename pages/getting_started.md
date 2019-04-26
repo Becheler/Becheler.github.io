@@ -101,15 +101,31 @@ sudo apt-get install libgdal-dev
 
 Visit [GDAL website](https://www.gdal.org/) for proper download.
 
-## 4- Check that everything works
+### Install cmake
+
+Check that cmake is present on your system (we use version 3.10.2) by typing
+in a terminal:
+
+```
+cmake --version
+```
+
+If it returns a version, e.g. `cmake version 3.10.2`, go to the next step
+(if not, you need to [install cmake](https://cmake.org/install/) first).
+
+## 4- Check that everything works by running the tests
 
 Open a terminal, go in the ``quetzal`` directory and type:
 
 ```
-./run_test.sh
+mkdir build
+cd build
+cmake ..
+make
+make test
 ```
 
 If all the tests end without problems, it means you are ready to write [your first
 own little program]({{ site.url }}/pages/tutorials.html).
 
-If you have any trouble, feel free to contact us.
+If you have any trouble, feel free to contact us!

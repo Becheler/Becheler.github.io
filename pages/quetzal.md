@@ -5,7 +5,9 @@ tagline: the C++ Coalescence Template Library
 description: home
 ---
 
-# What is Quetzal?
+# The Quetzal Coalescence Template Library
+
+# What is this?
 
 Quetzal is a collection of C++ code snippets, that can be picked and combined to
 build complex, spatially explicit population genetics simulators and inference frameworks.
@@ -14,6 +16,37 @@ It has been designed as a **toolbox** allowing a programmer to switch between se
 modeling frameworks, and to **rapidly test different models**.
 
 ![Quetzal scheme]( {{site.url}}/draw/quetzal_scheme.png)
+
+**Name origin:**
+
+Quetzalcoatl, the Feathered Serpent, was a powerful divinity from Mesoamerica who created the world
+*(it still took him 600 years to reach a satisfying version, and we strongly identify to this part
+  of the tale).*
+
+The god's name is a combination of two Nahuatl words:
+- **quetzal** refers to the [Resplendant Quetzal](https://en.wikipedia.org/wiki/Resplendent_quetzal) (an emerald bird symbol of freedom)
+- **coatl** basically means *snake* (well, all that glitters is not gold...) and
+conveniently fits to **Coa**lescence **T**emplate **L**ibrary.
+
+But the full name is quite difficult to pronounce, so feel free to focus on the glitter when you use Quetzal.
+
+# About the library
+
+**Maintainer:** [Arnaud Becheler](https://becheler.github.io/)
+
+**Founder article:** [Access on Wiley](https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.12992)
+
+**How to cite:**  
+
+Becheler, A, Coron, C, Dupas, S. The Quetzal Coalescence template library: A C++ programmers resource for integrating distributional, demographic and coalescent models. Mol Ecol Resour. 2019; 19: 788– 793. https://doi.org/10.1111/1755-0998.12992
+
+**Clone:** ``git clone https://github.com/Becheler/quetzal.git``
+
+**Community:** IRC channel \#quetzal on [Freenode](https://webchat.freenode.net/)
+
+**Supported platforms:** Linux, Windows, Mac
+
+**Contribute:** Check [our Github repository](https://github.com/Becheler/quetzal) and use the [Pull Request system](https://help.github.com/articles/creating-a-pull-request/)
 
 # Quick demonstration
 
@@ -153,96 +186,4 @@ reused, adapted and extended to other contexts with maximal efficiency.
 
 This is the meaning of a C++ template library: flexible, efficient, extensible.
 
-# It's easier than you think
-
-We designed Quetzal so the code can be very expressive and compact.
-
-For example, here is a code extract of a documentation script. We use just some
-of the Quetzal capabilities to simulate a demography in an arbitrary demic structure.
-
-The keypoint is that even if the simulator behavior is complex, we have total control
-on many implementation details and the code is still
-compact, easy to read and fast to execute:
-
-```cpp
-
-// Total control on the data types and the simulation engine
-using coord_type = std::string;
-using time_type = unsigned int;
-using quetzal::demography::strategy::individual_based;
-using quetzal::simulators::SpatiallyExplicitCoalescenceSimulator;
-
-// Demographic simulation setting
-coord_type x_0 = "Paris";
-time_type t_0 = 1912;
-mass_based::value_type N_0 = 1000;
-
-using simulator_type =
-  SpatiallyExplicitCoalescenceSimulator<coord_type, time_type, individual_based>;
-
-simulator_type simulator(x_0, t_0, N_0);
-
-time_type sampling_time = 2018;
-
-// Total liberty in the demographic growth model
-auto N = simulator.pop_size_history();
-unsigned int K = 20;
-auto growth = [K, N](auto& gen, coord_type x, time_type t){
-  return std::min(100*N(x,t), K);
-};
-
-// True but not shown: total liberty in the dispersal model,
-Dispersal_sampler D;
-
-// Chose your Random number generator
-using generator_type = std::mt19937;
-generator_type gen;
-
-simulator.expand_demography(sampling_time, growth, D, gen);
-
-// User defined coalescence data structures
-using tree_type = std::string;
-using forest_type = quetzal::coalescence::Forest<coord_type, tree_type>;
-forest_type forest;
-
-// Insert some nodes at some locations:
-forest.insert("Paris", std::vector<tree_type>{"a", "b", "c"});
-forest.insert("Ann Arbor", std::vector<tree_type>{"d", "e", "f"});
-
-// Need to generate some Newick formula ? Just code it...
-auto branching_operator = []( auto parent , auto child ){
-  if ( parent.size () == 0)
-  return "(" + child ;
-  else
-  return parent + "," + child + ")" ;
-};
-
-// ... and inject it!
-auto new_forest = simulator.coalesce_along_history(forest, branching_operator, gen);
-
-for(auto const& it : new_forest ){
-  std::cout << it.first << "\t" << it.second << std::endl;
-}
-```
-
-And that's it !
-
-Compile, run, and get as an output the ancestral location of the tree and
-the topology:
-
-```
-Ann Arbor (((((a,d),e),b),f),c)
-```
-
-# About
-
-**Maintainer:** [Arnaud Becheler](https://becheler.github.io/)
-
-**How to cite:** [see the founder article](https://www.biorxiv.org/content/early/2017/11/06/214767)
-
-**Community:** IRC channel \#quetzal on [Freenode](https://webchat.freenode.net/)
-
-**Supported platform:** Linux
-
-**Contribute:** Check [our Github repository](https://github.com/Becheler/quetzal) and use the [Pull Request system](https://help.github.com/articles/creating-a-pull-request/)
-<P><B>Clone:</B><PRE CLASS="fragment">git clone %https://github.com/Becheler/quetzal.git</PRE></P>
+It's easier than you think: we designed Quetzal so the code can be very expressive and compact.

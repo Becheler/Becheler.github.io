@@ -1,6 +1,0 @@
-var structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_class_1_1_5_08_07_args_8_8_8_08_01const_01_4 =
-[
-    [ "arguments_type", "structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_class_1_1_5_08_07_args_8_8_8_08_01const_01_4_adeb991cff2ca89e01f7f8c230c3ca938.html#adeb991cff2ca89e01f7f8c230c3ca938", null ],
-    [ "return_type", "structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_class_1_1_5_08_07_args_8_8_8_08_01const_01_4_abf69b0df9bf0afeb4d3c4e3a85560f13.html#abf69b0df9bf0afeb4d3c4e3a85560f13", null ],
-    [ "arguments_count", "structquetzal_1_1expressive_1_1_callable__traits_3_01_ret_07_class_1_1_5_08_07_args_8_8_8_08_01const_01_4_a1064f863dbd360e210d2ac0d27094f75.html#a1064f863dbd360e210d2ac0d27094f75", null ]
-];

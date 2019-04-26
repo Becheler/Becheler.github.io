@@ -1,6 +1,0 @@
-var structquetzal_1_1expressive_1_1_callable__traits_3_01symetric__binop__t_3_01_f_l_00_01_operator_00_01_f_r_01_4_01_4 =
-[
-    [ "arguments_type", "structquetzal_1_1expressive_1_1_callable__traits_3_01symetric__binop__t_3_01_f_l_00_01_operator_00_01_f_r_01_4_01_4_ac86ca8a3222c2e91563022462a21cc48.html#ac86ca8a3222c2e91563022462a21cc48", null ],
-    [ "return_type", "structquetzal_1_1expressive_1_1_callable__traits_3_01symetric__binop__t_3_01_f_l_00_01_operator_00_01_f_r_01_4_01_4_abc110af12b59001c9d57da93dd1a3870.html#abc110af12b59001c9d57da93dd1a3870", null ],
-    [ "arguments_count", "structquetzal_1_1expressive_1_1_callable__traits_3_01symetric__binop__t_3_01_f_l_00_01_operator_00_01_f_r_01_4_01_4_af45f285408ab9cdf7c43ed42d760fab5.html#af45f285408ab9cdf7c43ed42d760fab5", null ]
-];

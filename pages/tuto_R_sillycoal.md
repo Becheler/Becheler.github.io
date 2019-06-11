@@ -45,8 +45,7 @@ Hopefully, it will allow you to better grasp the why and the how mathematicians 
 nightmarish - but super useful - variety of formulas haunting the population genetic textbooks.
 
 I hope it will also help you in the future to better decide what model to use for your data.
-
-And to better understand mathematicians. Our communities benefit a lot from mutual understanding.
+And also to better understand mathematicians: our communities benefit a lot from mutual understanding.
 
 ## The neutral Wright-Fisher model
 
@@ -99,7 +98,7 @@ event*.
 Coalescence events lead the building of coalescence trees, where vertices are
 common ancestors of children nodes and where edges are ancestry relationship.
 
-### The silliest, slowest discrete-time coalescent simulation eveeeer
+### The silliest, slowest discrete-time simulation eveeeer
 
 Let's copy this code in [your favorite R statistical language integrated development environment](https://www.rstudio.com/).
 
@@ -149,7 +148,7 @@ while(k > 1 && t < tlim){
       points(parent, t, pch=16, col="black")
     }else if (number_of_coalescence == 1){
       # Yes ! :D
-      points(parent, t, pch=16, col="green")
+      points(parent, t, pch=16, col="blue")
       k = k-1
     }else if (number_of_coalescence >= 2){
       # OMG more than two nodes have coalesced!!!!
@@ -170,9 +169,9 @@ Execute the code.
 Don't be angry if sometimes the graph gets messy and ugly, the aim was a have the simplest code, not
 the prettiest tree!
 
-### Model exploration
+### Simulation exploration
 
-#### Same parametrization
+#### Constant parameters
 
 In this section, $k=3, N=10, tlim=N$
 
@@ -189,12 +188,12 @@ if you want by increasing the ```delay``` variable to 1 seconde or more.
 Does the result seem to change qualitatively a lot for the same parameters k and N?*
 
 I personally got all gene coalescing in one parent after only two generations, then in sequence
-no coalescence at all during all the generations:
+no coalescence at all during:
 
 [triple coalescence](({{site.url}}/pictures/triple_coalescence.png)
 [no coalescence](({{site.url}}/pictures/no_coalescence.png)
 
-Try to explore the variability of the trees that this model can generate by trying to *rematch* my results.
+Try to explore the variability of the trees that this model can generate by trying to *rematch* these results.
 
 > **Question #3:**
 Can you compute the probability of these two simulation outputs?*
@@ -205,7 +204,7 @@ the graph contains the Most Recent Common Ancestor of the sampled lineages.
 
 Any idea?
 
-#### Varying the parametrization
+#### Varying k
 
 Try to set different values for $k$. Try two very different situations: $k=3$ and $k=N$.
 >
@@ -215,4 +214,15 @@ Many branches make the plot look awful. Maybe you could simplify it: disable the
 code responsible for plotting the branches and representing the non-coalescence events.
 
 > Look how the coalescence events are distributed along the generations. Look also how greater $k$
-values influence the probability of ternary coalescence events. How do you think that higher population sizes $N$ would influence these distributions?
+values influence the probability of ternary coalescence events.
+
+#### Varying N
+
+Disable also the parts of the code responsible for plotting the population individuals (white circles),
+then begin to increase $N$ values.
+
+> How do you think that higher population sizes $N$ influence the distributions of coalescence events?
+
+> **The cost of "nothing is happening"**
+Try very high values like $N = 10000$, $k=100$. Can you feel the computational cost increasing?
+Look at how many generations occur without a single coalescence event simulated.

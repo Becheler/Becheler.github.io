@@ -6,6 +6,7 @@ description: Basic Coalescence Simulation Concepts
 use_math: true
 ---
 
+# Basic Coalescence Simulation Concepts
 
 ## Reconciling intuition with mathematical assumptions
 
@@ -58,7 +59,7 @@ The model was implicitly defined by Fisher and explicitly defined by Wright.
 This model, defined here for haploid populations, makes a number of assumptions:
 
 - population size is constant in time
-- the population described by the model is not spatially structured (panmixia).
+- the population described by the model is not spatially structured: panmixia.
 - No selection or mutation, i.e. as individuals are equally fitted, their number of
 descendants follow the same law.
 - Discrete and non-overlapping generations : all individuals reproduce/die at
@@ -166,14 +167,14 @@ while(k > 1 && t < tlim){
 
 Execute the code.
 
-Don't be angry if sometimes the graph gets messy and ugly, the aim was a have the simplest code, not
+Don't be angry if sometimes the graph gets messy and ugly, the aim was to have the simplest code, not
 the prettiest tree!
 
 ### Simulation exploration
 
 #### Constant parameters
 
-In this section, $k=3, N=10, tlim=N$
+In this section, $k = 3$, $N = 10$, $tlim = N$
 
 > **Question #1:**
 Do you observe coalescence events ? How many ?
@@ -182,21 +183,24 @@ Try to re-execute the code. Your results will normally change, it's totally expe
 model is stochastic.
 
 Try to understand each step of the animation. You can slow down the animation even more
-if you want by increasing the ```delay``` variable to 1 seconde or more.
+if you want by increasing the ```delay``` variable to 1 seconde or more. From these
+genealogical trees, how to simulate genetic data?
 
 > **Question #2:**
-Does the result seem to change qualitatively a lot for the same parameters k and N?*
+Does the simulation output seem to change qualitatively a lot for the same parameters k and N?
 
-I personally got all gene coalescing in one parent after only two generations, then in sequence
-no coalescence at all during:
+I personally got all gene coalescing in one parent after only two generations:
 
-[triple coalescence](({{site.url}}/pictures/triple_coalescence.png)
-[no coalescence](({{site.url}}/pictures/no_coalescence.png)
+![triple coalescence]({{site.url}}/pictures/triple_coalescence.png)
+
+and just the next simulation no coalescence at all:
+![no coalescence]({{site.url}}/pictures/no_coalescence.png)
 
 Try to explore the variability of the trees that this model can generate by trying to *rematch* these results.
 
 > **Question #3:**
-Can you compute the probability of these two simulation outputs?*
+Can you compute the probability of these two simulation outputs? A lead: the probability for
+two genes to coalesce in the same parent is $1/N$.
 
 It's rather frustrating to have to stop the coalescence process when we get out of the plot.
 *If only* we could set a value for ```tlim``` in such a way we are *almost* sure that
@@ -204,25 +208,49 @@ the graph contains the Most Recent Common Ancestor of the sampled lineages.
 
 Any idea?
 
+>Under the assumptions of a Wright-Fisher mode, the mean and variance of
+the time required to find the Most Recent Common ancestor of the $k$ sampled gene copies are expected to be:
+>
+>$$
+>E[T_{MRCA} = 2.N.\frac{k-1}{N}
+>$$
+>
+>$$
+>V[T_{MRCA}] = N^2.(8.( \sum_{i=2}^{k}{\frac{1}{i^2}}) - 4(1-\frac{1}{k})^2)
+>$$
+> Can you see to this expectations some utilities for those coding simulators?
+
 #### Varying k
 
-Try to set different values for $k$. Try two very different situations: $k=3$ and $k=N$.
->
-How does k seem to affect the coalescence process?
+Try to set different values for $k$ using opposite situations: $k=3$ and $k=N$.
+> **Question #4:**
+How does higher sampling density seem to affect the coalescence process? Which aspects of it?
 
-Many branches make the plot look awful. Maybe you could simplify it: disable the
+Too many branches make the plot look awful. Maybe you could simplify it: disable the
 code responsible for plotting the branches and representing the non-coalescence events.
 
-> Look how the coalescence events are distributed along the generations. Look also how greater $k$
-values influence the probability of ternary coalescence events.
+> **Question #5:**
+> Look how the coalescence events are distributed along the generations and how k influences them.
+> Look also how greater $k$ values influence the probability of ternary coalescence events.
+
+Try to modify the code so it can store the time at which all genes have coalesced to the MRCA: perform many repetitions under $k=3$ and $k=N$ and compare these distributions.
 
 #### Varying N
 
-Disable also the parts of the code responsible for plotting the population individuals (white circles),
-then begin to increase $N$ values.
+Now disable also the parts of the code responsible for plotting the white circles representing the population individuals,
+and try to increase $N$ values.
 
-> How do you think that higher population sizes $N$ influence the distributions of coalescence events?
+> **Question #6:**
+> How do you think that higher population size influences the distributions of coalescence events?
 
-> **The cost of "nothing is happening"**
-Try very high values like $N = 10000$, $k=100$. Can you feel the computational cost increasing?
-Look at how many generations occur without a single coalescence event simulated.
+Now, can you add some lines of code so you can store all coalescence times and plot their distribution?
+
+> **The computational cost of "nothing is happening"**
+>
+>Try very high values like $N = 10000$, $k=100$.
+>
+>Can you feel the computational cost increasing?
+>
+> Look at how many generations occur without a single coalescence event simulated: do yo think a discrete-time Wrigh-Fisher model is relevant here?
+
+## The n-coalescent: just another way to look at the same process.

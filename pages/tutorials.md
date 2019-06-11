@@ -10,6 +10,14 @@ Welcome in the Quetzal tutorials!
 The website is still under construction, so things are missing. But whenever the tutorials
 will be set up, you will learn about the following:
 
+# Coalescence basics with R
+
+Maybe are you not familiar with coalescence-based models: hopefully these resources
+will help you becoming familiar with the basic concepts around coalescence simulation.
+
+[SillyCoal: the silliest, slowest simulator ever](tuto_R_sillycoal.html)
+
+
 # Forward-in-time demographic simulations
 
 [How to use different strategies for simulating populations dispersal:](tuto_demography.html)

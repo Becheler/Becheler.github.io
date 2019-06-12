@@ -232,8 +232,6 @@ Let's consider $k=2$ nodes coalescing in a population of size $N$.
 
 > ... t generations before?
 
-Can you compute the probability of these two simulation outputs?
-
 >**Question 4: Simulating genetic data along the tree**
 >
 > Among your simulated trees, chose a relatively simple one that has coalesced to the MRCA.

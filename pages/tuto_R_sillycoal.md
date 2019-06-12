@@ -177,12 +177,15 @@ while(k > 1 && t < tlim){
 }
 ```
 
+### Exploring the simulation model
+
 Execute the code.
 
 Don't be angry if sometimes the graph gets messy and ugly, the aim was to have the simplest code, not
 the prettiest tree!
 
-### Simulation exploration
+We will try to understand how this model behave under different situations, and
+how we can reformulate the model si it can be more useful in some parametrization contexts.
 
 #### Model variability with constant parameters
 

@@ -187,9 +187,10 @@ the prettiest tree!
 #### Model variability with constant parameters
 
 In this section, we will fix the sampling size to $k = 3$, the population size to $N = 10$,
-and the upper limit of the plot to $tlim = N$
+and the upper limit of the plot to $t_{lim} = N$
 
 > **Question 1: First insights**
+>
 > Do you observe coalescence events ? How many ?
 
 Try to re-execute the code. Your results will normally change, it's totally expected: the
@@ -202,10 +203,13 @@ variable to 1 seconde or more.
 - Why are some coalescence events represented by blue points ? Red points ?
 - Are multiple coalescence events happening often ?
 
-> **Question 2: Simulating different trees (loci)**
+> **Question 2: Simulating different trees**
+>
 > Does the simulation output seem to change qualitatively a lot for the same parameters k and N?
-> What does it mean if you want to simulate coalescence process at various loci?
-> How does it translate in your conslusions for species delimitation methods?
+>
+> What does it mean if you want to simulate coalescence process for various independent loci?
+>
+> Why does it matter for species delimitation multi-loci methods?
 
 I personally got all gene coalescing in one parent after only two generations:
 
@@ -231,14 +235,17 @@ Let's consider $k=2$ nodes coalescing in a population of size $N$.
 Can you compute the probability of these two simulation outputs?
 
 >**Question 4: Simulating genetic data along the tree**
-Among your simulated trees, chose a relatively simple one that has coalesced to the MRCA.
-Then chose an ancestral allelic state for this locus like A, T, G or C: how would
-you simulate genetic variation in the sampled gene copies along this genealogical tree, from the root to the tips ?
+>
+> Among your simulated trees, chose a relatively simple one that has coalesced to the MRCA.
+>
+>Then chose an ancestral allelic state for this locus like A, T, G or C.
+>
+> How would you simulate genetic variation in the sampled gene copies along this genealogical tree, from the root to the tips ?
 
 The probability of mutation at each generation is usually very small. And, concretely,
 for $N=10$ the height of the simulated tree in number of generation is never very large.
 
-> What does it mean in terms of unlikely to simulate a mutation event in this example?
+> What does it mean in terms of the probability to simulate at least one mutation event in this example?
 
 >**Question 5: Time to MRCA**
 

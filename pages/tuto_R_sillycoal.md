@@ -189,7 +189,7 @@ the prettiest tree!
 In this section, we will fix the sampling size to $k = 3$, the population size to $N = 10$,
 and the upper limit of the plot to $tlim = N$
 
-> **Question #1: Model variability**
+> **Question 1: Model variability**
 > Do you observe coalescence events ? How many ?
 
 Try to re-execute the code. Your results will normally change, it's totally expected: the
@@ -202,7 +202,7 @@ variable to 1 seconde or more.
 - Why are some coalescence events represented by blue points ? Red points ?
 - Are multiple coalescence events happening often ?
 
-> **Question #2:**
+> **Question 2:**
 Does the simulation output seem to change qualitatively a lot for the same parameters k and N?
 
 I personally got all gene coalescing in one parent after only two generations:
@@ -214,11 +214,11 @@ and just the next simulation no coalescence at all:
 
 Try to explore the variability of the trees that this model can generate by trying to *rematch* these results.
 
-> **Question #3:**
+> **Question 3:**
 Can you compute the probability of these two simulation outputs? A lead: the probability for
 two genes to coalesce in the same parent is $1/N$.
 
->**Question #4. Simulating genetic data along the tree**
+>**Question 4. Simulating genetic data along the tree**
 Among your simulated trees, chose a relatively simple one that has coalesced to the MRCA.
 Then chose an ancestral allelic state for this locus like A, T, G or C: how would
 you simulate genetic variation in the sampled gene copies along this genealogical tree, from the root to the tips ?
@@ -228,7 +228,7 @@ for $N=10$ the height of the simulated tree in number of generation is never ver
 
 > What does it mean in terms of unlikely to simulate a mutation event in this example?
 
->**Question #5 The time to MRCA**
+>**Question 5 The time to MRCA**
 
 It's rather frustrating to have to stop the coalescence process when we get out of the plot.
 *If only* we could set a value for ```tlim``` in such a way we are *almost* sure that
@@ -237,8 +237,9 @@ the graph contains the Most Recent Common Ancestor of the sampled lineages.
 Under the assumptions of a Wright-Fisher mode, the mean of
 the time required to find the Most Recent Common ancestor of the $k$ sampled gene copies
 has been shown to be:
+
 $$
-E[T_{MRCA} = 2.N.\frac{k-1}{N}
+E[T_{MRCA}] = 2.N.\frac{k-1}{N}
 $$
 
 And the variance is:
@@ -256,7 +257,7 @@ $$
 Try to set different values (reasonably small to not have an ugly plot) for $k$.
 For example $k=3$ and $k=N$.
 
-> **Question #4:**
+> **Question 6:**
 >How does higher sampling density seem to affect the coalescence process? Which aspects of it?
 
 Too many branches make the plot look awful. Maybe you could simplify it: disable the
@@ -265,7 +266,7 @@ code responsible for plotting the branches and the code lines representing the n
 You will lose the shape of the tree, but you will have a better highlight of the
 distribution of coalescence times.
 
-> **Question #5:**
+> **Question 7:**
 > Look how the coalescence events are distributed along the generations and how k influences them.
 > Look also how greater $k$ values influence the probability of ternary coalescence events.
 
@@ -282,7 +283,7 @@ Compare these distributions.
 Now disable also the parts of the code responsible for plotting the white circles
 representing the population individuals and try to increase $N$ values.
 
-> **Question #6:**
+> **Question 8:**
 > How do you think that higher population size influences the distributions of coalescence events?
 
 Now, can you add some lines of code so you can remember all coalescence times and plot their distribution?
@@ -297,8 +298,28 @@ Try very high values like $N = 10000$, $k=100$: can you feel the computational c
 Have a look at how many generations occur without a single coalescence event simulated when
 the population size is very high.
 
+> **Question 9:**
 > What do you think it means in terms of genetic diversity that can be simulated on this tree?
 
+> **Question 10:**
 > Do yo think that simulating each generation one by one is the most relevant approach for large Wright-Fisher populations?
 
 ## The n-coalescent: just another way to look at the same process.
+
+### A more efficient approach than simulating generation-by-generation.
+
+For large Wright-Fisher populations, we saw that many generations can go without
+any coalescence event happening. Simulating each generation is then not always the best
+approach, both computationally and theoretically: we are losing computational time
+and we are also losing sight of the general behavior of the coalescent tree model.
+
+There is better to do.
+
+Some smart mathematicians have shown that when $k$ lineages coalesce in a Wright-Fisher population of size $N$, it is possible
+to mathematically derive interesting properties of the process like for example $T_1$, the first time of coalescence.
+Of course we can not *compute* with certainty $T_1$, since the coalescence process is stochastic.
+
+But starting from the smallest details of the Wright-Fisher model, it is possible to
+progressively figure out how this quantity is **distributed**. That is to quantify the
+properties of the uncertainty surrounding $T_1$: this probability distribution is exactly
+what we need to simulate the coalescence process more efficiently.

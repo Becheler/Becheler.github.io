@@ -15,7 +15,7 @@ will be set up, you will learn about the following:
 Maybe are you not familiar with coalescence-based models: hopefully these resources
 will help you becoming familiar with the basic concepts around coalescence simulation.
 
-[SillyCoal: the silliest, slowest simulator ever](tuto_R_sillycoal.html)
+[Step by step exploration of the coalescence process](tuto_R_sillycoal.html)
 
 
 # Forward-in-time demographic simulations

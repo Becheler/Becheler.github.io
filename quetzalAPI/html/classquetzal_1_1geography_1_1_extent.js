@@ -10,5 +10,6 @@ var classquetzal_1_1geography_1_1_extent =
     [ "lon_max", "classquetzal_1_1geography_1_1_extent_ab93aaa79c459f12beb1503e74f52690e.html#ab93aaa79c459f12beb1503e74f52690e", null ],
     [ "lon_min", "classquetzal_1_1geography_1_1_extent_ad4e65e1fe885c54e0d22ca478ea7601a.html#ad4e65e1fe885c54e0d22ca478ea7601a", null ],
     [ "lon_min", "classquetzal_1_1geography_1_1_extent_a478605d780e545bf2fc521b0f90f836a.html#a478605d780e545bf2fc521b0f90f836a", null ],
+    [ "operator!=", "classquetzal_1_1geography_1_1_extent_ad0f9ddd76b13286f12cf9553cad4a336.html#ad0f9ddd76b13286f12cf9553cad4a336", null ],
     [ "operator==", "classquetzal_1_1geography_1_1_extent_a26e4c03fedcf7eb2f6fab9417d0ddcf9.html#a26e4c03fedcf7eb2f6fab9417d0ddcf9", null ]
 ];

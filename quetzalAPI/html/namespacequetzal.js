@@ -10,7 +10,6 @@ var namespacequetzal =
     [ "random", "namespacequetzal_1_1random.html", "namespacequetzal_1_1random" ],
     [ "sampling_scheme", "namespacequetzal_1_1sampling__scheme.html", "namespacequetzal_1_1sampling__scheme" ],
     [ "simulators", "namespacequetzal_1_1simulators.html", "namespacequetzal_1_1simulators" ],
-    [ "utils", "namespacequetzal_1_1utils.html", "namespacequetzal_1_1utils" ],
     [ "cell_JC69", "classquetzal_1_1cell___j_c69.html", "classquetzal_1_1cell___j_c69" ],
     [ "neighbor_migration", "structquetzal_1_1neighbor__migration.html", "structquetzal_1_1neighbor__migration" ]
 ];

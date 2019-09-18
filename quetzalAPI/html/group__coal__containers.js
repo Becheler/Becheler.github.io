@@ -15,6 +15,7 @@ var group__coal__containers =
       [ "end", "classquetzal_1_1coalescence_1_1_forest_aa90a07f3c52b62369d07b967f12e15e9.html#aa90a07f3c52b62369d07b967f12e15e9", null ],
       [ "erase", "classquetzal_1_1coalescence_1_1_forest_aaff44f5a3ec3bef232554782681fe75b.html#aaff44f5a3ec3bef232554782681fe75b", null ],
       [ "erase", "classquetzal_1_1coalescence_1_1_forest_afc0cdb7e9f093cc20201015869b1ece8.html#afc0cdb7e9f093cc20201015869b1ece8", null ],
+      [ "get_all_trees", "classquetzal_1_1coalescence_1_1_forest_a5209ff6d7649f6f0b8516586442a1a70.html#a5209ff6d7649f6f0b8516586442a1a70", null ],
       [ "insert", "classquetzal_1_1coalescence_1_1_forest_aaed1e6e616684ea2adf3535751a40cbf.html#aaed1e6e616684ea2adf3535751a40cbf", null ],
       [ "insert", "classquetzal_1_1coalescence_1_1_forest_afc17afc07ea756c9ea732eadc5d677ff.html#afc17afc07ea756c9ea732eadc5d677ff", null ],
       [ "insert", "classquetzal_1_1coalescence_1_1_forest_a2b25eef5fb3e0b350c98dd86dbc6189a.html#a2b25eef5fb3e0b350c98dd86dbc6189a", null ],

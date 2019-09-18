@@ -28,6 +28,7 @@ var group__geography =
       [ "at", "classquetzal_1_1geography_1_1_environmental_quantity_a041bf9db3953cb86fb7ff30a92404e3d.html#a041bf9db3953cb86fb7ff30a92404e3d", null ],
       [ "export_to_geotiff", "classquetzal_1_1geography_1_1_environmental_quantity_a207ce3690a67dd04d75b5f2770a9ca97.html#a207ce3690a67dd04d75b5f2770a9ca97", null ],
       [ "export_to_shapefile", "classquetzal_1_1geography_1_1_environmental_quantity_a00d7660b1c21995a098f7f08c78083e5.html#a00d7660b1c21995a098f7f08c78083e5", null ],
+      [ "export_to_shapefile", "classquetzal_1_1geography_1_1_environmental_quantity_a56c82382d574866b8424a31cd8931bee.html#a56c82382d574866b8424a31cd8931bee", null ],
       [ "extent", "classquetzal_1_1geography_1_1_environmental_quantity_aaeed223976f42ad50c4f27321fe7f7f3.html#aaeed223976f42ad50c4f27321fe7f7f3", null ],
       [ "geographic_definition_space", "classquetzal_1_1geography_1_1_environmental_quantity_ac524710bfd17bcb26921dfc3d8ac39a8.html#ac524710bfd17bcb26921dfc3d8ac39a8", null ],
       [ "is_in_spatial_extent", "classquetzal_1_1geography_1_1_environmental_quantity_a619e18963da66c8397f160c8277fc54e.html#a619e18963da66c8397f160c8277fc54e", null ],
@@ -47,6 +48,7 @@ var group__geography =
       [ "lon_max", "classquetzal_1_1geography_1_1_extent_ab93aaa79c459f12beb1503e74f52690e.html#ab93aaa79c459f12beb1503e74f52690e", null ],
       [ "lon_min", "classquetzal_1_1geography_1_1_extent_ad4e65e1fe885c54e0d22ca478ea7601a.html#ad4e65e1fe885c54e0d22ca478ea7601a", null ],
       [ "lon_min", "classquetzal_1_1geography_1_1_extent_a478605d780e545bf2fc521b0f90f836a.html#a478605d780e545bf2fc521b0f90f836a", null ],
+      [ "operator!=", "classquetzal_1_1geography_1_1_extent_ad0f9ddd76b13286f12cf9553cad4a336.html#ad0f9ddd76b13286f12cf9553cad4a336", null ],
       [ "operator==", "classquetzal_1_1geography_1_1_extent_a26e4c03fedcf7eb2f6fab9417d0ddcf9.html#a26e4c03fedcf7eb2f6fab9417d0ddcf9", null ]
     ] ],
     [ "GeographicCoordinates", "classquetzal_1_1geography_1_1_geographic_coordinates.html", [
@@ -61,6 +63,7 @@ var group__geography =
       [ "lon", "classquetzal_1_1geography_1_1_geographic_coordinates_a597e76186a7d759a58a60d3bb7967124.html#a597e76186a7d759a58a60d3bb7967124", null ],
       [ "lon", "classquetzal_1_1geography_1_1_geographic_coordinates_af9beb47fedf0d17fb8c95b17dc14e80c.html#af9beb47fedf0d17fb8c95b17dc14e80c", null ],
       [ "lon", "classquetzal_1_1geography_1_1_geographic_coordinates_a7240e4d6b4a7d769a7275f5730d97738.html#a7240e4d6b4a7d769a7275f5730d97738", null ],
+      [ "operator!=", "classquetzal_1_1geography_1_1_geographic_coordinates_a42d427ac90087dfa12da7a1c776d2b53.html#a42d427ac90087dfa12da7a1c776d2b53", null ],
       [ "operator<", "classquetzal_1_1geography_1_1_geographic_coordinates_a2bcaa9b2fd3738d1a3026ed6a2c4dd93.html#a2bcaa9b2fd3738d1a3026ed6a2c4dd93", null ],
       [ "operator==", "classquetzal_1_1geography_1_1_geographic_coordinates_a6a3e1e1a98c534c19ec2946f423b3583.html#a6a3e1e1a98c534c19ec2946f423b3583", null ]
     ] ],
@@ -71,6 +74,7 @@ var group__geography =
       [ "lat", "classquetzal_1_1geography_1_1_resolution_a0248e2870d63cd66884f6ca975b496eb.html#a0248e2870d63cd66884f6ca975b496eb", null ],
       [ "lon", "classquetzal_1_1geography_1_1_resolution_a166869a5c2ffa5464815980c8963de19.html#a166869a5c2ffa5464815980c8963de19", null ],
       [ "lon", "classquetzal_1_1geography_1_1_resolution_a362a2a273d78d82f80056b7103183d94.html#a362a2a273d78d82f80056b7103183d94", null ],
+      [ "operator!=", "classquetzal_1_1geography_1_1_resolution_acf255e6dc57547355c1deb101a0bbf1d.html#acf255e6dc57547355c1deb101a0bbf1d", null ],
       [ "operator==", "classquetzal_1_1geography_1_1_resolution_a8ebe9d669ac0119d7bd7f121eba370c1.html#a8ebe9d669ac0119d7bd7f121eba370c1", null ]
     ] ]
 ];

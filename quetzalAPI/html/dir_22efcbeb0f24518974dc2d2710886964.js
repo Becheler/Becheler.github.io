@@ -1,6 +1,6 @@
 var dir_22efcbeb0f24518974dc2d2710886964 =
 [
-    [ "fuzzy_transfer_distance.h", "fuzzy__transfer__distance_8h.html", null ],
+    [ "fuzzy_transfer_distance.h", "modules_2fuzzy__transfer__distance_2fuzzy__transfer__distance_8h.html", null ],
     [ "FuzzyPartition.h", "_fuzzy_partition_8h.html", "_fuzzy_partition_8h" ],
     [ "FuzzyPartition_test.cpp", "_fuzzy_partition__test_8cpp.html", "_fuzzy_partition__test_8cpp" ],
     [ "matrix.h", "matrix_8h.html", [

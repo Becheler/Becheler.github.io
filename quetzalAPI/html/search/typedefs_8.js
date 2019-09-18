@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['individual_5ftype',['individual_type',['../classquetzal_1_1genetics_1_1_spatial_genetic_sample_a8290a4b085880ed7ff9f6655c9dd1728.html#a8290a4b085880ed7ff9f6655c9dd1728',1,'quetzal::genetics::SpatialGeneticSample::individual_type()'],['../classquetzal_1_1genetics_1_1_loader_a8ce0d3ae0a55f78815efa7c418b2d259.html#a8ce0d3ae0a55f78815efa7c418b2d259',1,'quetzal::genetics::Loader::individual_type()']]],
-  ['iterator',['iterator',['../classquetzal_1_1coalescence_1_1_forest_aabf247362d41417d575abaecf5311a5c.html#aabf247362d41417d575abaecf5311a5c',1,'quetzal::coalescence::Forest']]]
+  ['key_5ftype',['key_type',['../classquetzal_1_1geography_1_1_discrete_landscape_a24dae2e408f1448b21ba4f679182b516.html#a24dae2e408f1448b21ba4f679182b516',1,'quetzal::geography::DiscreteLandscape']]],
+  ['km',['km',['../classquetzal_1_1geography_1_1_geographic_coordinates_a737a7055dc61e2426181d33f73b629fc.html#a737a7055dc61e2426181d33f73b629fc',1,'quetzal::geography::GeographicCoordinates']]]
 ];

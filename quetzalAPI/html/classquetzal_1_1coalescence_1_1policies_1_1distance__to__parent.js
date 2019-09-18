@@ -7,6 +7,7 @@ var classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent =
     [ "time_type", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_af884570ad8831dea06a2ab844b745bb0.html#af884570ad8831dea06a2ab844b745bb0", null ],
     [ "tree_type", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_a6411d54a1cdc4d5432b8903d2cb9e45f.html#a6411d54a1cdc4d5432b8903d2cb9e45f", null ],
     [ "ancestral_Wright_Fisher_N", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_a5cbcdcaa696d09edf6cd38bc582c27cb.html#a5cbcdcaa696d09edf6cd38bc582c27cb", null ],
+    [ "ancestral_Wright_Fisher_N", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_a6e478cec141869941a9de633f82b1faa.html#a6e478cec141869941a9de633f82b1faa", null ],
     [ "branch", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_a6149a4649540616d5c735b6b2f58e93e.html#a6149a4649540616d5c735b6b2f58e93e", null ],
     [ "find_mrca", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_aa80190dc43fcc6f97f3dee54badd7428.html#aa80190dc43fcc6f97f3dee54badd7428", null ],
     [ "init", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_a527c16c53c968cef7ad209f710844e89.html#a527c16c53c968cef7ad209f710844e89", null ],

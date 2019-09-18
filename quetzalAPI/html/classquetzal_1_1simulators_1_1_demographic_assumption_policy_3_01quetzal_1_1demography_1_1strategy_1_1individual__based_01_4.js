@@ -1,5 +1,0 @@
-var classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4 =
-[
-    [ "merger_type", "classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4_a6a1dbbbf2c763e81fb4a991283856c80.html#a6a1dbbbf2c763e81fb4a991283856c80", null ],
-    [ "check_consistency", "classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4_a5f5e4f9d6cc196a43423e3c88b31b916.html#a5f5e4f9d6cc196a43423e3c88b31b916", null ]
-];

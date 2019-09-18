@@ -6,7 +6,5 @@ var searchData=
   ['spatiallyexplicit',['SpatiallyExplicit',['../classquetzal_1_1simulators_1_1_spatially_explicit.html',1,'quetzal::simulators']]],
   ['srs',['SRS',['../classgdalcpp_1_1_s_r_s.html',1,'gdalcpp']]],
   ['standard_5fdata',['standard_data',['../classquetzal_1_1mutation__kernel_1_1standard__data.html',1,'quetzal::mutation_kernel']]],
-  ['symetric_5fbinop_5ft',['symetric_binop_t',['../structquetzal_1_1expressive_1_1symetric__binop__t.html',1,'quetzal::expressive']]],
-  ['symmetricdistancematrix',['SymmetricDistanceMatrix',['../classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix.html',1,'quetzal::demography::dispersal']]],
-  ['symmetricdistancematrix_3c_20coord_5ftype_2c_20typename_20quetzal_3a_3ageography_3a_3ageographiccoordinates_3a_3akm_20_3e',['SymmetricDistanceMatrix&lt; coord_type, typename quetzal::geography::GeographicCoordinates::km &gt;',['../classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix.html',1,'quetzal::demography::dispersal']]]
+  ['symetric_5fbinop_5ft',['symetric_binop_t',['../structquetzal_1_1expressive_1_1symetric__binop__t.html',1,'quetzal::expressive']]]
 ];

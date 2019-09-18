@@ -6,5 +6,6 @@ var classquetzal_1_1geography_1_1_resolution =
     [ "lat", "classquetzal_1_1geography_1_1_resolution_a0248e2870d63cd66884f6ca975b496eb.html#a0248e2870d63cd66884f6ca975b496eb", null ],
     [ "lon", "classquetzal_1_1geography_1_1_resolution_a166869a5c2ffa5464815980c8963de19.html#a166869a5c2ffa5464815980c8963de19", null ],
     [ "lon", "classquetzal_1_1geography_1_1_resolution_a362a2a273d78d82f80056b7103183d94.html#a362a2a273d78d82f80056b7103183d94", null ],
+    [ "operator!=", "classquetzal_1_1geography_1_1_resolution_acf255e6dc57547355c1deb101a0bbf1d.html#acf255e6dc57547355c1deb101a0bbf1d", null ],
     [ "operator==", "classquetzal_1_1geography_1_1_resolution_a8ebe9d669ac0119d7bd7f121eba370c1.html#a8ebe9d669ac0119d7bd7f121eba370c1", null ]
 ];

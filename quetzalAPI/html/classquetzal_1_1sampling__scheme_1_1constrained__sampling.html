@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1sampling__scheme_1_1co
 </div><!--header-->
 <div class="contents">
 
-<p>Policy to sample coordinates uniformely at random in a space.  
+<p>Policy to sample coordinates at random in a space.  
  <a href="classquetzal_1_1sampling__scheme_1_1constrained__sampling.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sampling__scheme_8h_source.html">sampling_scheme.h</a>&gt;</code></p>
@@ -131,21 +131,21 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa524dd8352bbd0057487c7497fc785b3"><td class="memTemplParams" colspan="2">template&lt;typename F1 &gt; </td></tr>
-<tr class="memitem:aa524dd8352bbd0057487c7497fc785b3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_aa524dd8352bbd0057487c7497fc785b3.html#aa524dd8352bbd0057487c7497fc785b3">constrained_sampling</a> (std::vector&lt; <a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e.html#a5f92ab5efb18e14d1c05a331ade8364e">coord_type</a> &gt; const &amp;<a class="el" href="simulator__test_8cpp_a26c814e3ac0592665751fe5b9be857bb.html#a26c814e3ac0592665751fe5b9be857bb">space</a>, F1 f, <a class="el" href="integration_8cpp_afa8e4126754dbc1e7f327d4c3d6c03db.html#afa8e4126754dbc1e7f327d4c3d6c03db">N</a> pop_size, unsigned int n)</td></tr>
+<tr class="memitem:aa524dd8352bbd0057487c7497fc785b3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_aa524dd8352bbd0057487c7497fc785b3.html#aa524dd8352bbd0057487c7497fc785b3">constrained_sampling</a> (std::vector&lt; <a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e.html#a5f92ab5efb18e14d1c05a331ade8364e">coord_type</a> &gt; const &amp;space, F1 f, N pop_size, unsigned int n)</td></tr>
 <tr class="separator:aa524dd8352bbd0057487c7497fc785b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac905d6ed421333546230dbaabc2d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_1_1param__type.html">param_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_afac905d6ed421333546230dbaabc2d8d.html#afac905d6ed421333546230dbaabc2d8d">param</a> () const</td></tr>
 <tr class="separator:afac905d6ed421333546230dbaabc2d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9cff1684dad68e1dd0212cdfe5a1d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_af9cff1684dad68e1dd0212cdfe5a1d95.html#af9cff1684dad68e1dd0212cdfe5a1d95">param</a> (unsigned int n)</td></tr>
 <tr class="separator:af9cff1684dad68e1dd0212cdfe5a1d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31461f40a6cd6d89b5079d4782878fcd"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
-<tr class="memitem:a31461f40a6cd6d89b5079d4782878fcd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_a31461f40a6cd6d89b5079d4782878fcd.html#a31461f40a6cd6d89b5079d4782878fcd">operator()</a> (Generator &amp;<a class="el" href="integration_8cpp_a374a9a7de3fd00dceacc5de8a654c087.html#a374a9a7de3fd00dceacc5de8a654c087">gen</a>) const</td></tr>
+<tr class="memitem:a31461f40a6cd6d89b5079d4782878fcd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1sampling__scheme_1_1constrained__sampling_a31461f40a6cd6d89b5079d4782878fcd.html#a31461f40a6cd6d89b5079d4782878fcd">operator()</a> (Generator &amp;gen) const</td></tr>
 <tr class="separator:a31461f40a6cd6d89b5079d4782878fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename X, typename N&gt;<br />
 class quetzal::sampling_scheme::constrained_sampling&lt; X, N &gt;</h3>
 
-<p class="">Policy to sample coordinates uniformely at random in a space. </p>
+<p class="">Policy to sample coordinates at random in a space. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>quetzal/modules/utils/<a class="el" href="sampling__scheme_8h_source.html">sampling_scheme.h</a></li>
 </ul>

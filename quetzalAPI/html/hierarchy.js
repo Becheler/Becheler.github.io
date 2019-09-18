@@ -27,9 +27,9 @@ var hierarchy =
     [ "quetzal::expressive::Callable_traits< symetric_binop_t< FL, Operator, FR > >", "structquetzal_1_1expressive_1_1_callable__traits_3_01symetric__binop__t_3_01_f_l_00_01_operator_00_01_f_r_01_4_01_4.html", null ],
     [ "quetzal::expressive::Callable_traits< unop_t< Operator, F > >", "structquetzal_1_1expressive_1_1_callable__traits_3_01unop__t_3_01_operator_00_01_f_01_4_01_4.html", null ],
     [ "quetzal::cell_JC69", "classquetzal_1_1cell___j_c69.html", null ],
-    [ "quetzal::mutation_kernel::standard_data::cell_type", "classquetzal_1_1mutation__kernel_1_1standard__data_1_1cell__type.html", null ],
-    [ "quetzal::coalescence::policies::distance_to_parent< Space, Time >::cell_type", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1cell__type.html", null ],
     [ "quetzal::coalescence::policies::distance_to_parent_leaf_name< Space, Time >::cell_type", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1cell__type.html", null ],
+    [ "quetzal::coalescence::policies::distance_to_parent< Space, Time >::cell_type", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1cell__type.html", null ],
+    [ "quetzal::mutation_kernel::standard_data::cell_type", "classquetzal_1_1mutation__kernel_1_1standard__data_1_1cell__type.html", null ],
     [ "CoalescencePolicy", "class_coalescence_policy.html", [
       [ "quetzal::simulators::SpatiallyExplicit< Space, Time, Strategy, CoalescencePolicy >", "classquetzal_1_1simulators_1_1_spatially_explicit.html", null ]
     ] ],
@@ -63,19 +63,12 @@ var hierarchy =
     [ "gdalcpp::Dataset", "classgdalcpp_1_1_dataset.html", [
       [ "quetzal::geography::EnvironmentalQuantity< Time >", "classquetzal_1_1geography_1_1_environmental_quantity.html", null ]
     ] ],
-    [ "quetzal::simulators::DemographicAssumptionPolicy< Strategy >", "classquetzal_1_1simulators_1_1_demographic_assumption_policy.html", [
-      [ "quetzal::simulators::SpatiallyExplicit< Space, Time, Strategy, CoalescencePolicy >", "classquetzal_1_1simulators_1_1_spatially_explicit.html", null ]
-    ] ],
-    [ "quetzal::simulators::DemographicAssumptionPolicy< quetzal::demography::strategy::individual_based >", "classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1individual__based_01_4.html", null ],
-    [ "quetzal::simulators::DemographicAssumptionPolicy< quetzal::demography::strategy::mass_based >", "classquetzal_1_1simulators_1_1_demographic_assumption_policy_3_01quetzal_1_1demography_1_1strategy_1_1mass__based_01_4.html", null ],
-    [ "DemonstrationModel< DispersalKernel, Generator >", "class_demonstration_model.html", null ],
     [ "quetzal::genetics::DiploidIndividual< Allele >", "classquetzal_1_1genetics_1_1_diploid_individual.html", null ],
     [ "quetzal::random::DiscreteDistribution< State >", "classquetzal_1_1random_1_1_discrete_distribution.html", null ],
     [ "quetzal::geography::DiscreteLandscape< Key, Time >", "classquetzal_1_1geography_1_1_discrete_landscape.html", null ],
-    [ "quetzal::demography::dispersal::DiscreteLocationSampler< Space >", "classquetzal_1_1demography_1_1dispersal_1_1_discrete_location_sampler.html", null ],
     [ "quetzal::simulators::DiscreteTimeWrightFisher", "classquetzal_1_1simulators_1_1_discrete_time_wright_fisher.html", null ],
     [ "quetzal::coalescence::policies::distance_to_parent< Space, Time >", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent.html", null ],
-    [ "quetzal::coalescence::policies::distance_to_parent_leaf_name< Space, Time >", "structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html", null ],
+    [ "quetzal::coalescence::policies::distance_to_parent_leaf_name< Space, Time >", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html", null ],
     [ "quetzal::demography::dispersal::ExponentialPower", "structquetzal_1_1demography_1_1dispersal_1_1_exponential_power.html", null ],
     [ "quetzal::geography::Extent< T >", "classquetzal_1_1geography_1_1_extent.html", null ],
     [ "quetzal::geography::Extent< decimal_degree >", "classquetzal_1_1geography_1_1_extent.html", null ],
@@ -83,17 +76,14 @@ var hierarchy =
     [ "quetzal::demography::Flow< Space, Time, Value >", "classquetzal_1_1demography_1_1_flow.html", null ],
     [ "Foo", "class_foo.html", null ],
     [ "quetzal::coalescence::Forest< Position, Tree >", "classquetzal_1_1coalescence_1_1_forest.html", null ],
-    [ "quetzal::coalescence::Forest< coord_type, tree_type >", "classquetzal_1_1coalescence_1_1_forest.html", null ],
     [ "FuzzyPartition< Element >", "class_fuzzy_partition.html", null ],
-    [ "Gaussian", "struct_gaussian.html", null ],
     [ "quetzal::demography::dispersal::Gaussian", "structquetzal_1_1demography_1_1dispersal_1_1_gaussian.html", null ],
     [ "quetzal::demography::dispersal::GaussianMixture", "structquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture.html", null ],
-    [ "GenerativeModel", "class_generative_model.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::Generator", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_generator.html", null ],
     [ "quetzal::geography::GeographicCoordinates", "classquetzal_1_1geography_1_1_geographic_coordinates.html", null ],
     [ "std::hash< quetzal::geography::GeographicCoordinates >", "structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4.html", null ],
-    [ "quetzal::coalescence::occupancy_spectrum::Identity", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_identity.html", null ],
     [ "quetzal::abc::identity< T >", "structquetzal_1_1abc_1_1identity.html", null ],
+    [ "quetzal::coalescence::occupancy_spectrum::identity", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1identity.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::in_memoized_distribution< UnaryPredicate, SpectrumHandler, Int, Float >", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html", null ],
     [ "quetzal::demography::strategy::individual_based", "classquetzal_1_1demography_1_1strategy_1_1individual__based.html", null ],
     [ "gdalcpp::detail::init_library", "structgdalcpp_1_1detail_1_1init__library.html", [
@@ -109,7 +99,6 @@ var hierarchy =
     [ "quetzal::expressive::literal_t< T, Args >", "structquetzal_1_1expressive_1_1literal__t.html", null ],
     [ "quetzal::genetics::Loader< Space, Marker >", "classquetzal_1_1genetics_1_1_loader.html", null ],
     [ "quetzal::demography::dispersal::Logistic", "structquetzal_1_1demography_1_1dispersal_1_1_logistic.html", null ],
-    [ "Logistic", "struct_logistic.html", null ],
     [ "quetzal::demography::dispersal::Lognormal", "structquetzal_1_1demography_1_1dispersal_1_1_lognormal.html", null ],
     [ "quetzal::genetics::Marker_Descriptor< T >", "structquetzal_1_1genetics_1_1_marker___descriptor.html", null ],
     [ "quetzal::demography::strategy::mass_based", "classquetzal_1_1demography_1_1strategy_1_1mass__based.html", null ],
@@ -121,6 +110,7 @@ var hierarchy =
     [ "quetzal::geography::MyHash", "structquetzal_1_1geography_1_1_my_hash.html", null ],
     [ "quetzal::demography::dispersal::NegativeExponential", "structquetzal_1_1demography_1_1dispersal_1_1_negative_exponential.html", null ],
     [ "quetzal::neighbor_migration< Env, F >", "structquetzal_1_1neighbor__migration.html", null ],
+    [ "quetzal::demography::strategy::mass_based::neighboring_migration< Space, F1, F2 >", "classquetzal_1_1demography_1_1strategy_1_1mass__based_1_1neighboring__migration.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution< UnaryPredicate, SpectrumHandler, Int, Float >", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_occupancy_spectrum_distribution.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::on_the_fly", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html", null ],
     [ "Operator", "class_operator.html", [
@@ -130,31 +120,23 @@ var hierarchy =
     [ "quetzal::sampling_scheme::param_base_class", "classquetzal_1_1sampling__scheme_1_1param__base__class.html", [
       [ "quetzal::sampling_scheme::constrained_sampling< X, N >::param_type", "classquetzal_1_1sampling__scheme_1_1constrained__sampling_1_1param__type.html", null ]
     ] ],
-    [ "quetzal::demography::dispersal::InversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_inverse_power_law_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::GaussianMixture::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::NegativeExponential::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_negative_exponential_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::ExponentialPower::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_exponential_power_1_1param__type.html", null ],
-    [ "param_type", null, [
-      [ "DemonstrationModel< DispersalKernel, Generator >::param_type", "class_demonstration_model_1_1param__type.html", null ],
-      [ "DemonstrationModel< DispersalKernel, Generator >::param_type", "class_demonstration_model_1_1param__type.html", null ]
-    ] ],
-    [ "quetzal::demography::dispersal::Gaussian::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_1_1param__type.html", null ],
     [ "quetzal::demography::dispersal::Logistic::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_logistic_1_1param__type.html", null ],
-    [ "Logistic::param_type", "class_logistic_1_1param__type.html", null ],
-    [ "Gaussian::param_type", "class_gaussian_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::Lognormal::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_lognormal_1_1param__type.html", null ],
-    [ "quetzal::demography::dispersal::UndefinedInversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::NegativeExponential::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_negative_exponential_1_1param__type.html", null ],
     [ "quetzal::demography::dispersal::TwoDt::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_two_dt_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::GaussianMixture::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::Lognormal::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_lognormal_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::ExponentialPower::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_exponential_power_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::Gaussian::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::InversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_inverse_power_law_1_1param__type.html", null ],
+    [ "quetzal::demography::dispersal::UndefinedInversePowerLaw::param_type", "classquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law_1_1param__type.html", null ],
     [ "fuzzy_transfer_distance::Partitioner", "classfuzzy__transfer__distance_1_1_partitioner.html", null ],
-    [ "quetzal::utils::PointWithId< Point >", "classquetzal_1_1utils_1_1_point_with_id.html", null ],
+    [ "quetzal::demography::strategy::PointWithId< Point >", "classquetzal_1_1demography_1_1strategy_1_1_point_with_id.html", null ],
     [ "quetzal::demography::PopulationSize< Space, Time, Value >", "classquetzal_1_1demography_1_1_population_size.html", null ],
-    [ "Prior< Model >", "struct_prior.html", null ],
     [ "ReferenceTable< Cont, ParamType, DataType >", "class_reference_table.html", null ],
     [ "quetzal::geography::Resolution< T >", "classquetzal_1_1geography_1_1_resolution.html", null ],
     [ "quetzal::geography::Resolution< decimal_degree >", "classquetzal_1_1geography_1_1_resolution.html", null ],
     [ "RestrictedGrowthString", "class_restricted_growth_string.html", null ],
-    [ "quetzal::coalescence::occupancy_spectrum::RetrieveLastEmptyUrns", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_retrieve_last_empty_urns.html", null ],
-    [ "quetzal::coalescence::occupancy_spectrum::ReturnAlwaysTrue", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1_return_always_true.html", null ],
+    [ "quetzal::coalescence::occupancy_spectrum::return_always_true", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html", null ],
     [ "runtime_error", null, [
       [ "gdalcpp::gdal_error", "classgdalcpp_1_1gdal__error.html", null ]
     ] ],
@@ -163,8 +145,6 @@ var hierarchy =
     [ "quetzal::genetics::SpatialGeneticSample< coord_type, quetzal::genetics::DiploidIndividual >", "classquetzal_1_1genetics_1_1_spatial_genetic_sample.html", null ],
     [ "gdalcpp::SRS", "classgdalcpp_1_1_s_r_s.html", null ],
     [ "quetzal::mutation_kernel::standard_data", "classquetzal_1_1mutation__kernel_1_1standard__data.html", null ],
-    [ "quetzal::demography::dispersal::SymmetricDistanceMatrix< Space, Value >", "classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix.html", null ],
-    [ "quetzal::demography::dispersal::SymmetricDistanceMatrix< coord_type, typename quetzal::geography::GeographicCoordinates::km >", "classquetzal_1_1demography_1_1dispersal_1_1_symmetric_distance_matrix.html", null ],
     [ "transition_matrix", "structtransition__matrix.html", null ],
     [ "quetzal::random::TransitionKernel< T >", "classquetzal_1_1random_1_1_transition_kernel.html", null ],
     [ "quetzal::random::TransitionKernel< Distribution >", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4.html", null ],
@@ -172,7 +152,7 @@ var hierarchy =
     [ "quetzal::coalescence::policies::distance_to_parent< Space, Time >::treatment", "structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1treatment.html", null ],
     [ "quetzal::coalescence::policies::distance_to_parent_leaf_name< Space, Time >::treatment", "structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1treatment.html", null ],
     [ "quetzal::coalescence::Tree< CellT >", "classquetzal_1_1coalescence_1_1_tree.html", null ],
+    [ "quetzal::coalescence::occupancy_spectrum::truncate_tail", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail.html", null ],
     [ "quetzal::demography::dispersal::TwoDt", "structquetzal_1_1demography_1_1dispersal_1_1_two_dt.html", null ],
-    [ "quetzal::demography::dispersal::UndefinedInversePowerLaw", "structquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law.html", null ],
-    [ "Wrapper< Model >", "struct_wrapper.html", null ]
+    [ "quetzal::demography::dispersal::UndefinedInversePowerLaw", "structquetzal_1_1demography_1_1dispersal_1_1_undefined_inverse_power_law.html", null ]
 ];

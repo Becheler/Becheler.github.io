@@ -112,6 +112,9 @@ $(document).ready(function(){initNavTree('classquetzal_1_1simulators_1_1_discret
 </div><!--header-->
 <div class="contents">
 
+<p>Class to coalesce lineages by sampling their parents uniformely at random in the previous generation.  
+ <a href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="simulators_8h_source.html">simulators.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -122,17 +125,22 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3d4aea7de4503bd4371787b67070271d"><td class="memTemplParams" colspan="2">template&lt;typename Space , typename Tree , typename Generator , typename Binop , typename TimeFun &gt; </td></tr>
+<tr class="memitem:a3d4aea7de4503bd4371787b67070271d"><td class="memTemplItemLeft" align="right" valign="top">static Tree&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_a3d4aea7de4503bd4371787b67070271d.html#a3d4aea7de4503bd4371787b67070271d">coalesce</a> (<a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_abff8c0e9582fbd6338a9c30e5398651e.html#abff8c0e9582fbd6338a9c30e5398651e">forest_type</a>&lt; Space, Tree &gt; const &amp;forest, unsigned int N, Generator &amp;gen, Binop branch, TimeFun make_tree)</td></tr>
+<tr class="separator:a3d4aea7de4503bd4371787b67070271d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6b4e64dbd47f948e255c8559fedca85"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
-<tr class="memitem:af6b4e64dbd47f948e255c8559fedca85"><td class="memTemplItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_af6b4e64dbd47f948e255c8559fedca85.html#af6b4e64dbd47f948e255c8559fedca85">sample_waiting_time</a> (unsigned int k, unsigned int <a class="el" href="integration_8cpp_afa8e4126754dbc1e7f327d4c3d6c03db.html#afa8e4126754dbc1e7f327d4c3d6c03db">N</a>, Generator &amp;<a class="el" href="integration_8cpp_a374a9a7de3fd00dceacc5de8a654c087.html#a374a9a7de3fd00dceacc5de8a654c087">gen</a>)</td></tr>
+<tr class="memitem:af6b4e64dbd47f948e255c8559fedca85"><td class="memTemplItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_af6b4e64dbd47f948e255c8559fedca85.html#af6b4e64dbd47f948e255c8559fedca85">sample_waiting_time</a> (unsigned int k, unsigned int N, Generator &amp;gen)</td></tr>
 <tr class="separator:af6b4e64dbd47f948e255c8559fedca85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31dc8ee7fdd7378e26914746f5b89e65"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Generator , typename Binop , typename TimeFun &gt; </td></tr>
-<tr class="memitem:a31dc8ee7fdd7378e26914746f5b89e65"><td class="memTemplItemLeft" align="right" valign="top">static Tree&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_a31dc8ee7fdd7378e26914746f5b89e65.html#a31dc8ee7fdd7378e26914746f5b89e65">coalesce</a> (std::vector&lt; Tree &gt; &amp;trees, unsigned int <a class="el" href="integration_8cpp_afa8e4126754dbc1e7f327d4c3d6c03db.html#afa8e4126754dbc1e7f327d4c3d6c03db">N</a>, Generator &amp;<a class="el" href="integration_8cpp_a374a9a7de3fd00dceacc5de8a654c087.html#a374a9a7de3fd00dceacc5de8a654c087">gen</a>, Binop <a class="el" href="integration_8cpp_ad35317d4c2cece8e98ae7bb3ba71aabb.html#ad35317d4c2cece8e98ae7bb3ba71aabb">branch</a>, TimeFun make_tree)</td></tr>
+<tr class="memitem:a31dc8ee7fdd7378e26914746f5b89e65"><td class="memTemplItemLeft" align="right" valign="top">static Tree&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_a31dc8ee7fdd7378e26914746f5b89e65.html#a31dc8ee7fdd7378e26914746f5b89e65">coalesce</a> (std::vector&lt; Tree &gt; &amp;trees, unsigned int N, Generator &amp;gen, Binop branch, TimeFun make_tree)</td></tr>
 <tr class="separator:a31dc8ee7fdd7378e26914746f5b89e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d4aea7de4503bd4371787b67070271d"><td class="memTemplParams" colspan="2">template&lt;typename Space , typename Tree , typename Generator , typename Binop , typename TimeFun &gt; </td></tr>
-<tr class="memitem:a3d4aea7de4503bd4371787b67070271d"><td class="memTemplItemLeft" align="right" valign="top">static Tree&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_a3d4aea7de4503bd4371787b67070271d.html#a3d4aea7de4503bd4371787b67070271d">coalesce</a> (<a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_abff8c0e9582fbd6338a9c30e5398651e.html#abff8c0e9582fbd6338a9c30e5398651e">forest_type</a>&lt; Space, Tree &gt; const &amp;<a class="el" href="integration_8cpp_a73af89a6ea1a137ed8db5f663adeac0b.html#a73af89a6ea1a137ed8db5f663adeac0b">forest</a>, unsigned int <a class="el" href="integration_8cpp_afa8e4126754dbc1e7f327d4c3d6c03db.html#afa8e4126754dbc1e7f327d4c3d6c03db">N</a>, Generator &amp;<a class="el" href="integration_8cpp_a374a9a7de3fd00dceacc5de8a654c087.html#a374a9a7de3fd00dceacc5de8a654c087">gen</a>, Binop <a class="el" href="integration_8cpp_ad35317d4c2cece8e98ae7bb3ba71aabb.html#ad35317d4c2cece8e98ae7bb3ba71aabb">branch</a>, TimeFun make_tree)</td></tr>
-<tr class="separator:a3d4aea7de4503bd4371787b67070271d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab770358937a3e903571ea0803e87308b"><td class="memTemplParams" colspan="2">template&lt;typename MergerType  = coalescence::SimultaneousMultipleMerger&lt;coalescence::occupancy_spectrum::on_the_fly&gt;, typename Tree , typename Generator , typename Binop , typename TimeFun &gt; </td></tr>
+<tr class="memitem:ab770358937a3e903571ea0803e87308b"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; Tree &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1simulators_1_1_discrete_time_wright_fisher_ab770358937a3e903571ea0803e87308b.html#ab770358937a3e903571ea0803e87308b">coalesce</a> (std::vector&lt; Tree &gt; &amp;trees, unsigned int N, unsigned int g, Generator &amp;gen, Binop branch, TimeFun make_tree)</td></tr>
+<tr class="separator:ab770358937a3e903571ea0803e87308b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">Class to coalesce lineages by sampling their parents uniformely at random in the previous generation. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>quetzal/modules/simulator/<a class="el" href="simulators_8h_source.html">simulators.h</a></li>
 </ul>
 </div><!-- contents -->

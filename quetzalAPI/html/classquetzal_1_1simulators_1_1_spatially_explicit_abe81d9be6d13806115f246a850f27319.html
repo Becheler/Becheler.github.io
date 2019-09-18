@@ -150,6 +150,7 @@ template&lt;typename Merger  = quetzal::coalescence::SimultaneousMultipleMerger&
 <p>Create a forest from a sample and coalesce it conditionally to the simulated demography. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
+    <tr><td class="paramname">Merger</td><td>a coalescence merger to use </td></tr>
     <tr><td class="paramname">Generator</td><td>a random number Generator</td></tr>
   </table>
   </dd>
@@ -157,7 +158,7 @@ template&lt;typename Merger  = quetzal::coalescence::SimultaneousMultipleMerger&
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sample</td><td>the number of gene copies at each location </td></tr>
-    <tr><td class="paramname">sampling_time</td><td>the time of sampling_time  a random number generator </td></tr>
+    <tr><td class="paramname">sampling_time</td><td>the time of sampling_time to build the make_forest coalescence policy function  a random number generator </td></tr>
   </table>
   </dd>
 </dl>

@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1simulator_1_1_spatiall
 </div><!--header-->
 <div class="contents">
 
-<p>Coalescence simulator in a spatially explicit landscape.  
+<p>Discrete-time coalescence simulator in a discrete spatially explicit landscape.  
  <a href="classquetzal_1_1simulator_1_1_spatially_explicit.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="modules_2simulator_2simulator_8h_source.html">simulator.h</a>&gt;</code></p>
@@ -121,7 +121,7 @@ Inheritance diagram for quetzal::simulator::SpatiallyExplicit&lt; Space, Time, S
 <div class="dyncontent">
 <div class="center"><img src="classquetzal_1_1simulator_1_1_spatially_explicit__inherit__graph.png" border="0" usemap="#quetzal_1_1simulator_1_1_spatially_explicit_3_01_space_00_01_time_00_01_strategy_00_01_coalescence_policy_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="quetzal_1_1simulator_1_1_spatially_explicit_3_01_space_00_01_time_00_01_strategy_00_01_coalescence_policy_01_4_inherit__map" id="quetzal_1_1simulator_1_1_spatially_explicit_3_01_space_00_01_time_00_01_strategy_00_01_coalescence_policy_01_4_inherit__map">
-<area shape="rect" id="node1" title="Coalescence simulator in a spatially explicit landscape." alt="" coords="5,80,175,151"/>
+<area shape="rect" id="node1" title="Discrete&#45;time coalescence simulator in a discrete spatially explicit landscape." alt="" coords="5,80,175,151"/>
 <area shape="rect" id="node2" href="class_coalescence_policy.html" title=" " alt="" coords="23,5,157,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -130,7 +130,7 @@ Collaboration diagram for quetzal::simulator::SpatiallyExplicit&lt; Space, Time,
 <div class="dyncontent">
 <div class="center"><img src="classquetzal_1_1simulator_1_1_spatially_explicit__coll__graph.png" border="0" usemap="#quetzal_1_1simulator_1_1_spatially_explicit_3_01_space_00_01_time_00_01_strategy_00_01_coalescence_policy_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="quetzal_1_1simulator_1_1_spatially_explicit_3_01_space_00_01_time_00_01_strategy_00_01_coalescence_policy_01_4_coll__map" id="quetzal_1_1simulator_1_1_spatially_explicit_3_01_space_00_01_time_00_01_strategy_00_01_coalescence_policy_01_4_coll__map">
-<area shape="rect" id="node1" title="Coalescence simulator in a spatially explicit landscape." alt="" coords="5,80,175,151"/>
+<area shape="rect" id="node1" title="Discrete&#45;time coalescence simulator in a discrete spatially explicit landscape." alt="" coords="5,80,175,151"/>
 <area shape="rect" id="node2" href="class_coalescence_policy.html" title=" " alt="" coords="23,5,157,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -192,13 +192,13 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename Space, typename Time, typename Strategy, typename CoalescencePolicy&gt;<br />
 class quetzal::simulator::SpatiallyExplicit&lt; Space, Time, Strategy, CoalescencePolicy &gt;</h3>
 
-<p class="">Coalescence simulator in a spatially explicit landscape. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p class="">Discrete-time coalescence simulator in a discrete spatially explicit landscape. </p>
+<p class="">This simulator consists in a forward demographic simulation of population growth and migration, after what a backward coalescent simulation is performed that traces back the ancestry of a sample of gene copies sampled in one or more populations. Most Recent Common ancestor is not always find in the time span of the spatial history, so if the chosen <a class="el" href="class_coalescence_policy.html">CoalescencePolicy</a> implements it, ancestry can be simulated in the more distant past using another model like the <a class="el" href="classquetzal_1_1simulator_1_1_discrete_time_wright_fisher.html" title="Class to coalesce lineages by sampling their parents uniformely at random in the previous generation.">DiscreteTimeWrightFisher</a> model, to find the MRCA. Details concerning the mergers (binary mergers, simultaneous multiple mergers) can be controlled using the relevant Merger policy class when calling a coalescence function of the class interface. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Space</td><td>deme identifiers (like the populations geographic coordinates) </td></tr>
     <tr><td class="paramname">Time</td><td>time identifier (like an integer representing the year) </td></tr>
-    <tr><td class="paramname">Strategy</td><td>a template class argument (e.g. mass_based, individual_based) that indicates how dispersal should be defined in terms of demographic expansion algorithms. Strategy class implements the details (computing migrations probabilites as a function of the distance for example) whereas template specialization of the internal history_type class defines different migration algorithms. for the demographic expansion (e.g. individual_based) </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_coalescence_policy.html">CoalescencePolicy</a></td><td>a politic for the demographic expansion (e.g. individual_based) </td></tr>
+    <tr><td class="paramname">Strategy</td><td>a template class argument (e.g. mass_based, individual_based) that indicates how dispersal should be defined in terms of demographic expansion algorithms. Strategy class implements the details (computing migrations probabilites as a function of the distance for example) whereas template specialization of the internal history_type class defines different migration algorithms. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_coalescence_policy.html">CoalescencePolicy</a></td><td>a politic for the demographic expansion. </td></tr>
   </table>
   </dd>
 </dl>

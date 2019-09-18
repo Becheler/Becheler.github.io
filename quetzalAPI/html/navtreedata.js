@@ -66,7 +66,7 @@ var NAVTREEINDEX =
 "classgdalcpp_1_1gdal__error_a1aaeb9de9beb7c68cb80a4b8fbd9818a.html#a1aaeb9de9beb7c68cb80a4b8fbd9818a",
 "classquetzal_1_1genetics_1_1_diploid_individual.html",
 "dir_060f8aa27afcef9df86429bf4a782ee2.html",
-"namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html",
+"namespacequetzal_1_1coalescence.html",
 "structquetzal_1_1neighbor__migration_a60003bb62be17a9826c6dea9bbc639e1.html#a60003bb62be17a9826c6dea9bbc639e1"
 ];
 

@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"namespacequetzal_1_1coalescence.html":[2,0,4,1],
+"namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html":[3,0,3,1,0],
 "namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html":[2,0,4,1,0],
 "namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html":[2,0,4,1,0,0],
 "namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html":[3,0,3,1,0,0],
@@ -23,8 +25,8 @@ var NAVTREEINDEX4 =
 "namespacequetzal_1_1random.html":[3,0,3,7],
 "namespacequetzal_1_1sampling__scheme.html":[2,0,4,8],
 "namespacequetzal_1_1sampling__scheme.html":[3,0,3,8],
-"namespacequetzal_1_1simulators.html":[2,0,4,9],
-"namespacequetzal_1_1simulators.html":[3,0,3,9],
+"namespacequetzal_1_1simulator.html":[3,0,3,9],
+"namespacequetzal_1_1simulator.html":[2,0,4,9],
 "namespacequetzal_1_1utils.html":[2,0,4,10],
 "namespaces.html":[2,0],
 "namespacestd.html":[2,0,5],
@@ -55,8 +57,6 @@ var NAVTREEINDEX4 =
 "sampling__scheme_8h_source.html":[4,0,0,2,10,1],
 "simulator_8h.html":[4,0,0,13],
 "simulator_8h_source.html":[4,0,0,13],
-"simulators_8h.html":[4,0,0,2,9,0],
-"simulators_8h_source.html":[4,0,0,2,9,0],
 "spectrum__creation__policy_8h.html":[4,0,0,2,1,2,3],
 "spectrum__creation__policy_8h.html#a30268b1838d2b46b60648ecccbeadd03":[4,0,0,2,1,2,3,3],
 "spectrum__creation__policy_8h.html#ab0c06231877f665154968d96408bcc46":[4,0,0,2,1,2,3,2],

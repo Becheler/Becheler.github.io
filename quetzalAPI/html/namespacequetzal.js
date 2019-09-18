@@ -9,7 +9,7 @@ var namespacequetzal =
     [ "mutation_kernel", "namespacequetzal_1_1mutation__kernel.html", "namespacequetzal_1_1mutation__kernel" ],
     [ "random", "namespacequetzal_1_1random.html", "namespacequetzal_1_1random" ],
     [ "sampling_scheme", "namespacequetzal_1_1sampling__scheme.html", "namespacequetzal_1_1sampling__scheme" ],
-    [ "simulators", "namespacequetzal_1_1simulators.html", "namespacequetzal_1_1simulators" ],
+    [ "simulator", "namespacequetzal_1_1simulator.html", "namespacequetzal_1_1simulator" ],
     [ "cell_JC69", "classquetzal_1_1cell___j_c69.html", "classquetzal_1_1cell___j_c69" ],
     [ "neighbor_migration", "structquetzal_1_1neighbor__migration.html", "structquetzal_1_1neighbor__migration" ]
 ];

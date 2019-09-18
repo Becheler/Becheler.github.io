@@ -224,6 +224,8 @@ var NAVTREEINDEX3 =
 "modules_2expressive_2test_2expressive__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[4,0,0,2,4,0,0,2],
 "modules_2fuzzy__transfer__distance_2fuzzy__transfer__distance_8h.html":[4,0,0,2,5,0],
 "modules_2fuzzy__transfer__distance_2fuzzy__transfer__distance_8h_source.html":[4,0,0,2,5,0],
+"modules_2simulator_2simulator_8h.html":[4,0,0,2,9,0],
+"modules_2simulator_2simulator_8h_source.html":[4,0,0,2,9,0],
 "modules_2simulator_2utils_8h.html":[4,0,0,2,9,1],
 "modules_2simulator_2utils_8h.html#afb5382a04c754f45a788505d333d3be1":[4,0,0,2,9,1,5],
 "modules_2simulator_2utils_8h_source.html":[4,0,0,2,9,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "namespacequetzal.html":[3,0,3],
 "namespacequetzal_1_1abc.html":[3,0,3,0],
 "namespacequetzal_1_1abc.html":[2,0,4,0],
-"namespacequetzal_1_1coalescence.html":[3,0,3,1],
-"namespacequetzal_1_1coalescence.html":[2,0,4,1],
-"namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html":[3,0,3,1,0]
+"namespacequetzal_1_1coalescence.html":[3,0,3,1]
 };

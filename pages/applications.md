@@ -102,6 +102,8 @@ you can find:
 In a terminal, go to the sandbox directory and run the following:
 ```
 cd path/to/sandbox
+chmod +x decrypt/spatial_process decrypt/bpp
+mkdir output
 ./decrypt/spatial_process --config decrypt/example/spatial_process.ctl
 ```
 
@@ -117,12 +119,12 @@ how advanced the pseudo-observed data generation is:
 ***************************************************
 ```
 
-This program creates a bunch of files in a new ```output``` directory that give access
+This program creates a bunch of files in the ```output``` directory that give access
 to various aspects of the demographic process. We will be able to visualize them
 later using the small R library ```decrypt/decrypt.R```. Now we will focus on analyzing
 the simulated coalescents that have been stored in the ```output/test.db``` database.
 
-## Performing species delimitation under the MSC using BPP on the pods
+## Performing species delimitation under the MSC using BPP
 
 In the ```sandbox``` directory, create a Python virtual environment to avoid polluting your system, activate it
 and install the python dependencies:
@@ -132,7 +134,31 @@ virtualenv ENV
 source ENV/bin/activate
 pip install pandas matplotlib seaborn pyvolve
 ```
+
 Ask what options the ```decrypt/decrypt.py``` program takes:
+
 ```
 python3 decrypt/decrypt.py --help
 ```
+The output is:
+```
+Options:
+  -h, --help        show this help message and exit
+  -d DATABASE       path to database
+  -l SEQUENCE_SIZE  sequence_size
+  -s SCALE_TREE     scale tree branch length
+  -b BPP            path to bpp executable
+  -c BPP_CTL        path to bpp config file
+```
+
+Run the following command line:
+
+```
+python3 decrypt/decrypt.py -d output/test.db -l 100 -s 0.000001 -b decrypt/bpp -c decrypt/example/bpp.ctl
+```
+It will go through each gene genealogy, evolve sequences along branches and perform
+species delimitation on this pseudo-observed data. When the BPP analysis is done,
+a dataframe is generated that give for each sampling scheme the probability to detect
+more than one species.
+
+We can then use the R library to visualize the results.

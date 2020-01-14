@@ -38,6 +38,7 @@ Open a terminal and type
 ```
 sudo apt-get install libgdal-dev libboost-all-dev sqlite3
 ```
+To install BPP, follow the instructions provided on the project page: https://github.com/bpp/bpp
 
 ### 2- Get Decrypt source code
 
@@ -63,8 +64,6 @@ folder in your file system, and type:
 ```
 git clone https://github.com/Becheler/decrypt.git
 ```
-
-Awesome, the Decrypt source code is now on your computer!
 
 ### 3 - Build, test and install
 
@@ -102,7 +101,7 @@ you can find:
 In a terminal, go to the sandbox directory and run the following:
 ```
 cd path/to/sandbox
-chmod +x decrypt/spatial_process decrypt/bpp
+chmod +x decrypt/spatial_process
 mkdir output
 ./decrypt/spatial_process --config decrypt/example/spatial_process.ctl
 ```
@@ -151,10 +150,10 @@ Options:
   -c BPP_CTL        path to bpp config file
 ```
 
-Run the following command line:
+If you copy the BPP executable into the sandbox directory, you can run the following command line:
 
 ```
-python3 decrypt/decrypt.py -d output/test.db -l 100 -s 0.000001 -b decrypt/bpp -c decrypt/example/bpp.ctl
+python3 decrypt/decrypt.py -d output/test.db -l 100 -s 0.000001 -b bpp -c decrypt/example/bpp.ctl
 ```
 It will go through each gene genealogy, evolve sequences along branches and perform
 species delimitation on this pseudo-observed data. When the BPP analysis is done,

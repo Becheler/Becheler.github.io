@@ -38,7 +38,9 @@ Open a terminal and type
 ```
 sudo apt-get install libgdal-dev libboost-all-dev sqlite3
 ```
-To install BPP, follow the instructions provided on the project page: https://github.com/bpp/bpp
+To install BPP, the species delimitation software used here, follow the instructions provided on the [project github page](https://github.com/bpp/bpp).
+
+> **Reference:** Flouri T., Jiao X., Rannala B., Yang Z. (2018) Species Tree Inference with BPP using Genomic Sequences and the Multispecies Coalescent. Molecular Biology and Evolution (accepted manuscript). doi:10.1093/molbev/msy147
 
 ### 2- Get Decrypt source code
 
@@ -155,9 +157,103 @@ If you copy the BPP executable into the sandbox directory, you can run the follo
 ```
 python3 decrypt/decrypt.py -d output/test.db -l 100 -s 0.000001 -b bpp -c decrypt/example/bpp.ctl
 ```
-It will go through each gene genealogy, evolve sequences along branches and perform
+The program will iterate through each gene genealogy simulated with ```spatial_process```,
+evolve sequences along branches and perform
 species delimitation on this pseudo-observed data. When the BPP analysis is done,
-a dataframe is generated that give for each sampling scheme the probability to detect
+a dataframe ```data.txt``` is generated giving for each sampling scheme the probability to detect
 more than one species.
 
 We can then use the R library to visualize the results.
+
+## Visualization
+
+Open R and set ```sandbox``` as being the working directory.
+```
+# Load some tool functions
+source("decrypt/decrypt.R")
+```
+### Inspect the demographic history
+
+#### Snaps
+
+The parameter ```demography_out=output/N.tif```  in ```spatial_process.ctl```
+creates a tif file to record the demographic history (leave this parameter blank
+to avoid the cost of creating this file for longer times).
+
+It allows to inspect the effect of different parametrizations of the spatial process.
+
+```
+# Read the geotiff file created by spatial_process
+history <- stack("output/N.tif")
+# Subset history for different times and plot
+snaps <- subset(history, list(1,10, 50, 100, 200,400))
+plot(snaps)
+```
+
+#### Movie
+
+Sometimes it is easier to understand the process through an animation.
+We use here the command ```convert``` that is part of the ImageMagick package,
+which comes with many Linux distributions.
+
+```
+# Create a directory to store intermediary files
+dir.create("movie")
+working_folder <- paste0(getwd(),"/movie")
+ordered_times <- 1:400
+# Standardize the plots legends with an expected maximal N value in the dataset
+# like the maximal carrying capacity
+max_N_value <- 100
+make_movie(history, ordered_times, max_N_value, working_folder)
+```
+
+#### Potential pitfalls with ImageMagick
+
+If the time range is too wide or the landscape too wide, the default settings of
+ImageMagick package may be insufficient. You can check the current settings by
+typing ```convert -list resource``` in a terminal. You may need to change these
+default values: [check this page](https://imagemagick.org/script/security-policy.php).
+To handle long histories, our configuration has been set to:
+ ```
+ Resource limits:
+  Width: 128KP
+  Height: 128KP
+  Area: 1.0737GP
+  Memory: 2GiB
+  Map: 4GiB
+  Disk: 8GiB
+  File: 768
+  Thread: 4
+  Throttle: 0
+  Time: unlimited
+```
+
+### Inspect the sampling schemes
+
+In the spatial process configuration file, we limited the number of simulations to
+one fixed sampling point, and 5 varying sampling points uniformly sampled across
+the distribution area, with a radius of 30km.
+
+The following lines allows to visualize the fixed sampling cluster (in red) and the
+5 varying clusters with their respective radius (black circle).
+
+```
+data <- read.csv("data.txt")
+mask <- history[[nlayers(history)]]
+x0 <- data.frame("lon" = c(125), "lat" = c(-20))
+plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))
+```
+
+### Posterior probability
+
+To visulize the combined effects of departures from the MSC model hypothesis and
+sampling scheme, you can either look at the raw posterior probabilities, or perform
+a spatial interpolation of this probability.
+Of course, the example considered here (with only 5 points for sake of affordable
+  computational time) is not offer an ideal
+situation for a spatial interpolation.
+```
+mask2 <- disaggregate(mask,fact=2)
+raw_posterior_probability(data=data, mask=mask2, proj4string=crs(mask))
+interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(mask))
+```

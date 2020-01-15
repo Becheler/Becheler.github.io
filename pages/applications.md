@@ -21,8 +21,6 @@ Quetzal modules have been here very useful to build the Decrypt C++ demogenetic 
 and along with Quetzal sampling models, it allows to test the inferential impacts of many different sampling
 schemes on the MSC model.
 
-<video src="../movies/decrypt_demography.mp4" width="640" height="400" controls preload></video>
-
 ## Installation
 
 The following instructions allow to install decrypt on an Ubuntu environment.
@@ -190,6 +188,8 @@ snaps <- subset(history, list(1,10, 50, 100, 200,400))
 plot(snaps)
 ```
 
+![alt text](../demo/decrypt/snaps.jpeg "Population sizes at different times")
+
 #### Movie
 
 Sometimes it is easier to understand the process through an animation.
@@ -206,6 +206,8 @@ ordered_times <- 1:400
 max_N_value <- 100
 make_movie(history, ordered_times, max_N_value, working_folder)
 ```
+
+<video src="../demo/decrypt/movie.mp4" width="640" height="400" controls preload></video>
 
 #### Potential pitfalls with ImageMagick
 
@@ -231,11 +233,12 @@ To handle long histories, our configuration has been set to:
 ### Inspect the sampling schemes
 
 In the spatial process configuration file, we limited the number of simulations to
-one fixed sampling point, and 5 varying sampling points uniformly sampled across
-the distribution area, with a radius of 30km.
+5 sampling schemes, each one composed of:
+- 1 sampling cluster fixed on a given coordinate
+- 1 sampling cluster that varies uniformly across the distribution area
 
-The following lines allows to visualize the fixed sampling cluster (in red) and the
-5 varying clusters with their respective radius (black circle).
+Within a radius of 30km each of these coordinates, 30 individuals are sampled uniformly.
+These parameters can be change in the ```spatial_process.ctl``` configuration file.
 
 ```
 data <- read.csv("data.txt")
@@ -244,16 +247,60 @@ x0 <- data.frame("lon" = c(125), "lat" = c(-20))
 plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))
 ```
 
+The previous lines allow to plot the fixed sampling cluster (in red) and the
+5 varying clusters with their respective radius (black at sampling time circle) on top of the spatial
+distribution of the population sizes at sampling time (colors).
+
+![alt text](../demo/decrypt/sampling.jpeg "Different sampling schemes")
+
 ### Posterior probability
 
+### In short
 To visulize the combined effects of departures from the MSC model hypothesis and
 sampling scheme, you can either look at the raw posterior probabilities, or perform
 a spatial interpolation of this probability.
-Of course, the example considered here (with only 5 points for sake of affordable
-  computational time) is not offer an ideal
-situation for a spatial interpolation.
 ```
 mask2 <- disaggregate(mask,fact=2)
 raw_posterior_probability(data=data, mask=mask2, proj4string=crs(mask))
 interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(mask))
 ```
+![alt text](../demo/decrypt/raw.jpeg "Probability to detect more than one species")
+
+Of course, the example that was developed here focus on a quite recent history
+(400 generations), and then test only 5 alternative sampling points. This is
+computationally tractable for a demo, but it is not an ideal situation to
+perform a spatial interpolation, so we will show the related figure.
+
+### Larger dataset
+
+We provide here the results of a more substantial analysis on longer times with
+more intensive:
+
+{% raw %}
+<button onclick="window.open('../demo/decrypt/data_extract.txt')">Download dataset </button>
+{% endraw %}
+
+The ```spatial_process``` program can also generate a file called ```last_N.tif```
+that gives access to the population distribution area
+at sampling time (rather than having to store the complete history). We give it here for proper interpolation:
+
+{% raw %}
+<button onclick="window.open('../demo/decryt/last_layer.tif')">Download area </button>
+{% endraw %}
+
+Download these files and copy them into the ```sandbox``` directory. Then run:
+
+```
+data <- read.csv("data_extract.txt",header=TRUE)
+mask <- raster("last_N.tif")
+
+x0 <- data.frame("lon" = c(125), "lat" = c(-20))
+plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))
+mask2 <- disaggregate(mask,fact=2)
+raw_posterior_probability(data=data, mask=mask2, proj4string=crs(mask))
+interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(mask))
+```
+![alt text](../demo/decrypt/sampling_2.jpeg "More sampling schemes simulated")
+![alt text](../demo/decrypt/interpol_2.jpeg "Spatial interpolation of the probability to detect more than one species")
+
+## Adapting the simulation

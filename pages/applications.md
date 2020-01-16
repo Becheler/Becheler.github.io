@@ -3,6 +3,7 @@ layout: quetzal
 title: Quetzal
 tagline: the C++ Coalescence Template Library
 description: applications
+use_math: true
 ---
 
 # Decrypt
@@ -11,36 +12,48 @@ description: applications
 
 Decrypt is a tool allowing to shed light on systems where cryptic diversity and
 isolation by distance are two competing hypothesis. Decrypt can help understanding
-if the genetic structure detected under the MultiSpecies Coalescent (MSC) could possibly
+if the genetic structure detected under the MultiSpecies Coalescent, MSC, could possibly
 be explained by the intra-species spatial structure.
 
 It can be seen as a way to automate MSC robustness analyses for different realistic demographic histories
-and sampling scenarios.
+and spatial sampling schemes.
 
-Quetzal modules have been here very useful to build the Decrypt C++ demogenetic simulation core,
-and along with Quetzal sampling models, it allows to test the inferential impacts of many different sampling
-schemes on the MSC model.
+The Decrypt C++ demogenetic simulation core has been developed using the Quetzal library.
+It generates a spatially explicit demographic history incorporating environmental
+heterogeneity. At sampling time, it simulates gene trees under different sampling schemes.
+
+In the current version, sampling schemes are quite simplistic. Each scheme is defined
+by two clusters of individuals, defining two sampling populations $P_1$ and
+$P_2$.
+- $P_1$, the red circle in the following picture, is fixed for all simulations at a user-defined location $(lon_1, lat_1)$.
+At sampling time, $n_1$ gene copies are sampled uniformly in a radius $r_1$ around this
+coordinate.
+- $P_2$, white circle, is a population which location varies across simulations: it is uniformly sampled in the distribution
+area. At sampling time, $n_2$ gene copies are sampled uniformly in a radius $r_1$.
+
+![alt text](../draw/decrypt_sampling_scheme.png "Decrypt sampling scheme")
 
 ## Installation
 
 The following instructions allow to install decrypt on an Ubuntu environment.
 
-### 1 Get the dependencies
+### Dependencies
 
-We first need to install three main dependencies. The Geospatial Data Abstraction Library (GDAL) is useful to represent a
-spatially explicit landscapes. Boost is an important code resource for C++ dev
-that covers a wide range of problems. SQLite3 is a lightweight database software
-we use to store intermediary results.
+We first need to install three main dependencies.
+- the Geospatial Data Abstraction Library (GDAL) is useful to represent a
+spatially explicit landscapes.
+- Boost is an important code resource for C++ dev that covers a wide range of problems.
+- SQLite3 is a lightweight database software we use to store intermediary results.
 
 Open a terminal and type
 ```
 sudo apt-get install libgdal-dev libboost-all-dev sqlite3
 ```
-To install BPP, the species delimitation software used here, follow the instructions provided on the [project github page](https://github.com/bpp/bpp).
+Thenm to install BPP, the species delimitation software used here, follow the instructions provided on the [project github page](https://github.com/bpp/bpp).
 
 > **Reference:** Flouri T., Jiao X., Rannala B., Yang Z. (2018) Species Tree Inference with BPP using Genomic Sequences and the Multispecies Coalescent. Molecular Biology and Evolution (accepted manuscript). doi:10.1093/molbev/msy147
 
-### 2- Get Decrypt source code
+### Get Decrypt source code
 
 Two options are possible here, up to you:
 
@@ -65,7 +78,7 @@ folder in your file system, and type:
 git clone https://github.com/Becheler/decrypt.git
 ```
 
-### 3 - Build, test and install
+### Build, test and install
 
 Create a directory ```sandbox``` somewhere on your computer. We will use it
 as both an install location and an application directory the time for us to package the software better.
@@ -92,9 +105,9 @@ If the tests and the installation end without problems, there is now a directory
 
 The install location contains an ```example``` directory where
 you can find:
-- a landscape (a tiff file representing the rainfall in North Australia)
-- a configuration file to set parameters of the spatial spatial process
-- a configuration file for BPP
+- a landscape (a .tiff file representing the rainfall in North Australia)
+- ```spatial_process.ctl```: a configuration file to set parameters of the spatial spatial process
+- ```bpp.ctl```: a configuration file for BPP
 
 ## Running the spatial process
 

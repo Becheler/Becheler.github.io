@@ -176,7 +176,7 @@ more than one species.
 
 We can then use the R library to visualize the results.
 
-## Visualization
+## Visualization with R
 
 Open R and set ```sandbox``` as being the working directory.
 ```
@@ -286,26 +286,18 @@ perform a spatial interpolation, so we will show the related figure.
 
 ### Larger dataset
 
-We provide here the results of a more substantial analysis on longer times with
-more intensive:
+We provide in the ```decrypt/example``` directory two supplementary files giving
+the results of a more substantial analysis on longer times with
+more intensive sampling scheme:
 
-{% raw %}
-<button onclick="window.open('../demo/decrypt/data_extract.txt')">Download dataset </button>
-{% endraw %}
+- ```data_extract.txt```: a larger dataset for proper interpolation
+- ```last_N.tif```: The ```spatial_process``` program can also generate this file,
+that gives access to the population distribution area.
 
-The ```spatial_process``` program can also generate a file called ```last_N.tif```
-that gives access to the population distribution area
-at sampling time (rather than having to store the complete history). We give it here for proper interpolation:
-
-{% raw %}
-<button onclick="window.open('../demo/decryt/last_layer.tif')">Download area </button>
-{% endraw %}
-
-Download these files and copy them into the ```sandbox``` directory. Then run:
-
+You can run:
 ```
-data <- read.csv("data_extract.txt",header=TRUE)
-mask <- raster("last_N.tif")
+data <- read.csv("decrypt/example/data_extract.txt",header=TRUE)
+mask <- raster("decrypt/example/last_N.tif")
 
 x0 <- data.frame("lon" = c(125), "lat" = c(-20))
 plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))

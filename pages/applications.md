@@ -292,7 +292,7 @@ more intensive sampling scheme:
 
 - ```data_extract.txt```: a larger dataset for proper interpolation
 - ```last_N.tif```: The ```spatial_process``` program can also generate this file,
-that gives access to the population distribution area.
+that gives access to the population distribution area at sampling time.
 
 You can run:
 ```

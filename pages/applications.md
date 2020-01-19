@@ -20,7 +20,8 @@ and spatial sampling schemes.
 
 The Decrypt C++ demogenetic simulation core has been developed using the Quetzal library.
 It generates a spatially explicit demographic history incorporating environmental
-heterogeneity. At sampling time, it simulates gene trees under different sampling schemes.
+heterogeneity and random population persistence in unsuitable areas.
+At sampling time, it simulates gene trees under different sampling schemes.
 
 In the current version, sampling schemes are quite simplistic. Each scheme is defined
 by two clusters of individuals, defining two sampling populations $P_1$ and
@@ -32,6 +33,8 @@ coordinate.
 area. At sampling time, $n_2$ gene copies are sampled uniformly in a radius $r_1$.
 
 ![alt text](../draw/decrypt_sampling_scheme.png "Decrypt sampling scheme")
+
+Sequences are simulated along the gene trees, and BPP is run for species delimitation.
 
 ## Installation
 
@@ -310,7 +313,12 @@ interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(
 ## Adapting the simulation
 
 Besides changing the lanscape tiff file, you can also modify the spatial process parameters
- in the ```decrypt/example/spatial_process.ctl``` file:
+ in the ```decrypt/example/spatial_process.ctl``` file.
+
+> **Caution** changing the sampling parameters in the configuration file (number of loci,
+number of gene copies) requires to also modify the bpp.ctl file: BPP does not detect
+these parameters automatically.  
+
 
 ```
 # Geospatial file in tiff format

@@ -40,7 +40,7 @@ The following instructions allow to install decrypt on an Ubuntu environment.
 ### Dependencies
 
 We first need to install three main dependencies.
-- the Geospatial Data Abstraction Library (GDAL) is useful to represent a
+- the Geospatial Data Abstraction Library, GDAL, is useful to represent a
 spatially explicit landscapes.
 - Boost is an important code resource for C++ dev that covers a wide range of problems.
 - SQLite3 is a lightweight database software we use to store intermediary results.
@@ -105,9 +105,9 @@ If the tests and the installation end without problems, there is now a directory
 
 The install location contains an ```example``` directory where
 you can find:
-- a landscape (a .tiff file representing the rainfall in North Australia)
-- ```spatial_process.ctl```: a configuration file to set parameters of the spatial spatial process
-- ```bpp.ctl```: a configuration file for BPP
+- ```australia.tiff``` a file representing the rainfall in North Australia)
+- ```spatial_process.ctl``` a configuration file to set parameters of the spatial spatial process
+- ```bpp.ctl``` a configuration file for BPP
 
 ## Running the spatial process
 
@@ -188,8 +188,7 @@ source("decrypt/decrypt.R")
 #### Snaps
 
 The parameter ```demography_out=output/N.tif```  in ```spatial_process.ctl```
-creates a tif file to record the demographic history (leave this parameter blank
-to avoid the cost of creating this file for longer times).
+creates a tif file to record the demographic history.
 
 It allows to inspect the effect of different parametrizations of the spatial process.
 
@@ -260,16 +259,16 @@ x0 <- data.frame("lon" = c(125), "lat" = c(-20))
 plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))
 ```
 
-The previous lines allow to plot the fixed sampling cluster (in red) and the
-5 varying clusters with their respective radius (black at sampling time circle) on top of the spatial
-distribution of the population sizes at sampling time (colors).
+The previous lines allow to plot the fixed sampling cluster, in red, and the
+5 varying clusters with their respective radius, in black, on top of the spatial
+distribution of the population sizes at sampling time, in colors.
 
 ![alt text](../demo/decrypt/sampling.jpeg "Different sampling schemes")
 
 ### Posterior probability
 
 ### In short
-To visulize the combined effects of departures from the MSC model hypothesis and
+To visualize the combined effects of departures from the MSC model hypothesis and
 sampling scheme, you can either look at the raw posterior probabilities, or perform
 a spatial interpolation of this probability.
 ```
@@ -279,8 +278,8 @@ interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(
 ```
 ![alt text](../demo/decrypt/raw.jpeg "Probability to detect more than one species")
 
-Of course, the example that was developed here focus on a quite recent history
-(400 generations), and then test only 5 alternative sampling points. This is
+Of course, the example that was developed here focus on a quite recent history, *i.e.*
+400 generations, and then test only 5 alternative sampling points. This is
 computationally tractable for a demo, but it is not an ideal situation to
 perform a spatial interpolation, so we will show the related figure.
 
@@ -310,7 +309,8 @@ interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(
 
 ## Adapting the simulation
 
-The spatial process parameters can be changed in the ```decrypt/example/spatial_process.ctl``` file:
+Besides changing the lanscape tiff file, you can also modify the spatial process parameters
+ in the ```decrypt/example/spatial_process.ctl``` file:
 
 ```
 # Geospatial file in tiff format

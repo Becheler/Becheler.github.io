@@ -313,12 +313,16 @@ interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(
 ## Adapting the simulation
 
 Besides changing the lanscape tiff file, you can also modify the spatial process parameters
- in the ```decrypt/example/spatial_process.ctl``` file.
+ in the ```decrypt/example/spatial_process.ctl``` file: parameters description is given below.
 
-> **Caution** changing the sampling parameters in the configuration file (number of loci,
-number of gene copies) requires to also modify the bpp.ctl file: BPP does not detect
+> **Caution** changing the sampling parameters in the configuration file like the number of loci
+or the number of gene copies, requires to also modify the ```bpp.ctl``` file: BPP does not detect
 these parameters automatically.  
 
+Also, modification of the spatial model itself (or the sampling scheme) requires modifying
+the C++ source code. It should be reasonably easy to do if you know C++. The model specification
+is in the [```decrypt/cpp/spatial_simulator.h``` file](https://github.com/Becheler/decrypt/blob/master/cpp/spatial_simulator.h)
+ in the code project, checki it out.
 
 ```
 # Geospatial file in tiff format

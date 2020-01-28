@@ -51,6 +51,7 @@ This directory contains various folders:
 - ```sandbox/decrypt``` a folder where the project has been installed along with several examples files
 - ```sandbox/play_with_demography``` a demonstration folder for discovering the demographic simulation tool
 - ```sandbox/play_with_robustness``` a demonstration folder to visualize pre-computed results
+- ```sandbox/output``` a temporary output folder to store simulations results
 
 ## Example configuration files
 
@@ -66,7 +67,7 @@ The ```sandbox/decrypt``` folder contains:
 
 ## Running the spatial process
 
-In a terminal, and run the following in the :
+Run the following in a terminal:
 ```
 cd /home/popgen/software/decrypt/toto/sandbox
 ./decrypt/spatial_process --config decrypt/example/spatial_process.ctl
@@ -158,7 +159,7 @@ to simulate interesting patterns of population persistence in unsuitable areas.
 
 The growth rate is assumed constant across the landscape, as well as the emigrant rate.
 
-This configuration allow to generate the following demgraphic history.
+This configuration allow to generate the following demgoraphic history.
 
 > You may need google chrome to be able to see this movie
 

@@ -69,7 +69,6 @@ The ```sandbox/decrypt``` folder contains:
 In a terminal, and run the following in the :
 ```
 cd /home/popgen/software/decrypt/toto/sandbox
-mkdir output
 ./decrypt/spatial_process --config decrypt/example/spatial_process.ctl
 ```
 
@@ -102,7 +101,6 @@ in the second part.
 Run the following:
 ```
 cd /home/popgen/software/decrypt/toto/sandbox/play_with_demography
-mkdir output
 ./../decrypt/spatial_process --config spatial_process.ctl
 ./visualize.R
 ```
@@ -152,9 +150,12 @@ In its present version, the demographic model considers that the landscape is di
 into *suitable* and *unsuitable* areas. Suitable areas are locations where the value
 of the landscape is greater than a threshold. Suitable areas are characterized by
 higher carrying capacity $K_{max}$ and a facilitated migration. Unsuitable areas have most of the time a low carrying capacity $K_{min}^a$,
-but with probability $p$ a location can switch to a higher $K_{min}^b$. We may surely develop
+but with probability $p$ a location can switch to a higher $K_{min}^b$.
+
+We may surely develop
 a simpler alternative model, but in its current state it allows
 to simulate interesting patterns of population persistence in unsuitable areas.
+
 The growth rate is assumed constant across the landscape, as well as the emigrant rate.
 
 This configuration allow to generate the following demgraphic history.
@@ -163,10 +164,12 @@ This configuration allow to generate the following demgraphic history.
 
 <video src="../demo/decrypt/movie2.mp4" width="640" height="400" controls preload></video>
 
-Change the value options to generate different types of history. Lower $p$ will be, the more
+Change the value options to generate different histories. Lower $p$ will be, the more
 the demographic expansion will be constrained to suitable areas.
 
-### Inspect the sampling schemes
+## Visualize pre-computed results
+
+### Sampling scheme
 
 In the spatial process configuration file, we limited the number of simulations to
 5 sampling schemes, each one composed of:
@@ -176,74 +179,43 @@ In the spatial process configuration file, we limited the number of simulations 
 Within a radius of 30km each of these coordinates, 30 individuals are sampled uniformly.
 These parameters can be change in the ```spatial_process.ctl``` configuration file.
 
+We pre-computed a bunch of result to spare simulation time. To visualize them,
+run this:
+
 ```
-data <- read.csv("data.txt")
-mask <- history[[nlayers(history)]]
-x0 <- data.frame("lon" = c(125), "lat" = c(-20))
-plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))
+cd /home/popgen/software/decrypt/toto/sandbox/play_with_robustness
+./visualize.R
 ```
 
-The previous lines allow to plot the fixed sampling cluster, in red, and the
+First this script allows to generate a plot ```sampling_scheme.png``` representing the fixed sampling cluster, in red, and the
 5 varying clusters with their respective radius, in black, on top of the spatial
 distribution of the population sizes at sampling time, in colors.
 
-![alt text](../demo/decrypt/sampling.jpeg "Different sampling schemes")
+![alt text](../demo/decrypt/sampling_2.jpeg "Sampling schemes simulated")
+
+We find these kind of plots useful to configure the sampling scheme properties. The R script also generates visualization of the BPP robustness analysis.
 
 ### Posterior probability
 
-### In short
 To visualize the combined effects of departures from the MSC model hypothesis and
 sampling scheme, you can either look at the raw posterior probabilities, or perform
 a spatial interpolation of this probability.
-```
-mask2 <- disaggregate(mask,fact=2)
-raw_posterior_probability(data=data, mask=mask2, proj4string=crs(mask))
-interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(mask))
-```
-![alt text](../demo/decrypt/raw.jpeg "Probability to detect more than one species")
 
-Of course, the example that was developed here focus on a quite recent history, *i.e.*
-400 generations, and then test only 5 alternative sampling points. This is
-computationally tractable for a demo, but it is not an ideal situation to
-perform a spatial interpolation, so we will show the related figure.
+The script generated a plot ```raw_posterior_probability.png``` representing
+at the location of population $P_2$ the posterior probability of detecting more than 1 species by BPP.
 
-### Larger dataset
+![alt text](../demo/decrypt/raw_posterior_probability.png "More sampling schemes simulated")
 
-We provide in the ```decrypt/example``` directory two supplementary files giving
-the results of a more substantial analysis on longer times with
-more intensive sampling scheme:
-
-- ```data_extract.txt```: a larger dataset for proper interpolation
-- ```last_N.tif```: The ```spatial_process``` program can also generate this file,
-that gives access to the population distribution area at sampling time.
-
-You can run:
-```
-data <- read.csv("decrypt/example/data_extract.txt",header=TRUE)
-mask <- raster("decrypt/example/last_N.tif")
-
-x0 <- data.frame("lon" = c(125), "lat" = c(-20))
-plot_sampling_scheme(mask, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(mask))
-mask2 <- disaggregate(mask,fact=2)
-raw_posterior_probability(data=data, mask=mask2, proj4string=crs(mask))
-interpolate_posterior_probability(data=data, mask=mask2, x0=x0, proj4string=crs(mask))
-```
-![alt text](../demo/decrypt/sampling_2.jpeg "More sampling schemes simulated")
+A spatial interpolation of these probabilities is also generated by the R script, and
+saved as ```interpolation.png```
 ![alt text](../demo/decrypt/interpol_2.jpeg "Spatial interpolation of the probability to detect more than one species")
 
-## Adapting the simulation
+This plot give an interesting overview of what we should expect BPP to infer under
+a spatial history.
 
-Besides changing the lanscape tiff file, you can also modify the spatial process parameters
- in the ```decrypt/example/spatial_process.ctl``` file: parameters description is given below.
+## Scripts
 
-> **Caution** changing the sampling parameters in the configuration file like the number of loci
-or the number of gene copies, requires to also modify the ```bpp.ctl``` file: BPP does not detect
-these parameters automatically.  
-
-Also, modification of the spatial model itself (or the sampling scheme) requires modifying
-the C++ source code. It should be reasonably easy to do if you know C++. The model specification
-is in the [```decrypt/cpp/spatial_simulator.h``` file](https://github.com/Becheler/decrypt/blob/master/cpp/spatial_simulator.h)
- in the code project, checki it out.
+The ```spatial_process.ctl``` files description:
 
 ```
 # Geospatial file in tiff format
@@ -297,10 +269,10 @@ K_max=50
 # Population persistance parameter in unsuitable areas
 p=0.175
 
-# Carrying capacity in unsuitable areas with probability p
+# Carrying capacity in unsuitable areas with probability 1-p
 K_min_a=1
 
-# Carrying capacity in unsuitable areas with probability 1 - p
+# Carrying capacity in unsuitable areas with probability p
 K_min_b=20
 
 # Constant growth rate
@@ -332,4 +304,96 @@ sample_out=output/sample.shp
 
 # Filename database storing the output
 database=output/test.db
+```
+
+The ```/home/popgen/software/decrypt/toto/sandbox/play_with_demography/visualize.R``` script:
+
+```
+#!/usr/bin/Rscript --vanilla
+
+packages <- c("raster","devtools","dismo","gstat","viridis","rspatial")
+if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
+  install.packages(setdiff(packages, rownames(installed.packages())), dependencies = T)
+}
+
+# load decrypt tools
+source("decrypt.R")
+
+## SNAPS
+
+message("Reading the demographic history geotiff file created by spatial_process")
+history <- stack("output/N.tif")
+
+# Subset history for different times and plot
+snaps <- subset(history, list(1,10, 50, 100, 200,400))
+
+message("Plotting demographic history snaps")
+png(file = "snaps.png")
+plot(snaps)
+garbage <- dev.off()
+
+## MOVIE (may take some time like 3 minutes)
+# Create a directory to store intermediary png files
+dir.create("temp_movie")
+
+# Precise the working directory to generate the demographic plots
+working_folder <- paste0(getwd(),"/temp_movie")
+
+# the time range to plot
+ordered_times <- 1:400
+
+# Standardize the plots legends with an expected maximal N value in the dataset
+# like the maximal carrying capacity
+max_N_value <- 100
+
+message("Generating history movie")
+# generate a MP4 file in the movie directory. Requires the ImageMagick package to be installed
+make_movie_2(history, ordered_times, max_N_value, working_folder)
+
+copied <- file.copy(from="temp_movie/movie.mp4", to=getwd(), overwrite=TRUE)
+message(paste("movie.mp4 generated at", getwd()))
+removed <- file.remove(file.path("temp_movie", list.files("temp_movie")))
+unlinked <- unlink(working_folder <- paste0(getwd(),"/temp_movie"), recursive=TRUE)
+```
+
+The ```/home/popgen/software/decrypt/toto/sandbox/play_with_robustness/visualize.R```
+```
+#!/usr/bin/Rscript --vanilla
+
+packages <- c("raster","devtools","dismo","gstat","viridis","rspatial")
+if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
+  install.packages(setdiff(packages, rownames(installed.packages())), dependencies = T)
+}
+
+# load decrypt tools
+source("decrypt.R")
+
+message("Reading data that took few hours to be generated: small extract")
+data <- read.csv("../decrypt/example/data_extract.txt",header=TRUE)
+head(data)
+
+# we want to interpolate the probabilities only on the distribution area at sampling time
+area <- raster("../decrypt/example/last_N.tif")
+
+# we want to plot the fixed sampling point (red cross)
+x0 <- data.frame("lon" = c(125), "lat" = c(-20))
+
+message("\n\nRepresenting all variable sampling points by a circle with a 3000m radius")
+png(file = "sampling_scheme.png")
+plot_sampling_scheme(area, x0=x0, r0=30000, x=data[,c('lon','lat')], r=30000, proj4string=crs(area))
+garbage <- dev.off()
+
+# we want a finer grid for prettier plot
+mask <- disaggregate(area,fact=2)
+
+message("\n\nPlotting raw decrypt output (p2: probability to detect more than one species)")
+png(file = "raw_posterior_probability.png")
+raw_posterior_probability(data=data, mask=mask, proj4string=crs(mask))
+garbage <- dev.off()
+
+message("Plotting the interpolation results")
+png(file = "interpolation.png")
+interpolate_posterior_probability(data=data, mask=mask, x0=x0, proj4string=crs(mask))
+garbage <- dev.off()
+
 ```

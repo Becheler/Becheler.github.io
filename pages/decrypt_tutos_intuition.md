@@ -23,7 +23,14 @@ that we intuitively understand forward in time:
 
 *Evolutionary process of whole population. Adapted from Irwin et al. (2016).*
 
-However, modeling this process forward in time is not always relevant. For example,
+> **Task**
+ - Take a look at the previous figure.
+ - Does it look like a coalescent tree? What is different?
+ - Reconstruct the distribution of the number of children for few generations.
+ - How does it affect the genealogical process and the population diversity?
+ - What population parameter would you change in this example to attenuate this effect?
+
+Modeling a process forward in time is not always relevant. For example,
 think about simulating data: we would need to simulate a whole population of
 individuals and their genetic material in order to simply sample a small fraction of the
 whole population. It's not very convenient.
@@ -48,6 +55,11 @@ of the lineages of interest:
 
 *Evolutionary process of whole population. Adapted from Irwin et al. (2016).*
 
+> **Task**
+ - Does this tree better match your expectation of a coalescent tree?
+ - Look closer at the number of branches.
+ - Why do you think that usually coalescent trees are represented as binary trees?
+
 # Fifty shades of gene trees
 
 We are generally interested in characteristics of the lineages trees that are generated under
@@ -68,6 +80,12 @@ Along the years, mathematicians have produced a (large) number of formulas to de
 about the simplest models (*e.g.* Wright-Fisher with or without migration). It is important to
 keep in mind that a given formula (for example the expected time to the MRCA) is
 linked to a particular demographic model, that implies a number of assumptions.
+
+> **Task**
+ - List the formulas you learned in class.
+ - What quantities do they describe?
+ - From what model have they been derived? List its assumptions.
+ - What could be the most important consequences of an unmet assumption?
 
 # Inference
 
@@ -101,10 +119,11 @@ and the sample genetic diversity that depends on these genealogies.
 Finding both the model and the parameter that allows to best match observed patterns is the purpose of inference.
 The [likelihood function](https://en.wikipedia.org/wiki/Likelihood_function) is a way to describe the quality of the match. [Animation borrowed from towardsdatascience.com](https://towardsdatascience.com/maximum-likelihood-estimation-984af2dcfcac).*
 
-# 
+> **Task**
+ - What other inference methods do you know?
+ - In these methods, how is represented the match quality to the observations?
 
 
-
-# Resources
+# References
 
 Irwin, K., Laurent, S., Matuszewski, S. et al. On the importance of skewed offspring distributions and background selection in virus population genetics. Heredity 117, 393–399 (2016). https://doi.org/10.1038/hdy.2016.58

@@ -8,6 +8,6 @@ use_math: true
 
 How demography affects the coalescent ?
 
- - [Intuition and model](decrypt_tutos_intuition)
+ - [Coalescence theory starter pack](decrypt_tutos_intuition)
  - bla
  - bla

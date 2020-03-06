@@ -1,12 +1,10 @@
 ---
-layout: quetzal
-title: Quetzal
-tagline: the C++ Coalescence Template Library
-description: applications
+layout: decrypt
+title: Decrypt
+tagline: speciation versus isolation by distance
+description: application
 use_math: true
 ---
-
-[Decrypt](decrypt)
 
 # Decrypt
 

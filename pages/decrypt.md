@@ -6,9 +6,7 @@ description: application
 use_math: true
 ---
 
-# Decrypt
-
-## Summary
+# Summary
 
 Decrypt is a tool allowing to shed light on systems where cryptic diversity and
 isolation by distance are two competing hypothesis. Decrypt can help understanding

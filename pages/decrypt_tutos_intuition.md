@@ -57,8 +57,8 @@ of the lineages of interest:
 
 > **Task**
  - Does this tree better match your expectation of a coalescent tree?
- - Look closer at the number of branches.
- - Why do you think that usually coalescent trees are represented as binary trees?
+ - Look closer at the number of branches: why do you think that usually coalescent trees are represented as binary trees?
+ - WHat assumption do you make by choosing to track only the sampled lineages and not even consider the others?
 
 # Fifty shades of gene trees
 

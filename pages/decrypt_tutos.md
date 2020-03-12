@@ -3,7 +3,7 @@ layout: decrypt
 title: Decrypt
 tagline: speciation versus isolation by distance
 description: tutorials
-use_math: true
+use_math: false
 ---
 
 

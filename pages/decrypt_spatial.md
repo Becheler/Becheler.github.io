@@ -104,7 +104,11 @@ model_1 --config examples/config_1.ctl --landscape examples/australia_precipitat
 
  ![expansion 1]({{site.url}}/pictures/decrypt/animation_1.gif)
 
-## Modelling dispersal
+## Another model of dispersal
+
+Instead of splitting a population of deme across neighboring cells, one can also, using Quetzal,
+simulate the dispersal of each individual by sampling their destination in a Gaussian kernel centered
+on the departure cell.
 
 > Type in the terminal:  
 > ```
@@ -113,16 +117,40 @@ model_2 --config examples/config_2.ctl --landscape examples/australia_precipitat
 
 ![expansion 1]({{site.url}}/pictures/decrypt/animation_2.gif)
 
-### Adding environmental heterogeneity
+> Task:
+  - In what context should we prefer this dispersal mode?
+  - When would it be overkill?
+  - Do you know other dispersal forms that could be used?
+  - Check [this review of dispersal kernels by Nathan et al., 2012](https://books.google.fr/books?hl=en&lr=&id=s3EVDAAAQBAJ&oi=fnd&pg=PA187&dq=nathan+dispersal+kernel+review&ots=LKrBHv_VDo&sig=vhJcyp8wJmazryll68rvU9SK4Ms#v=onepage&q=nathan%20dispersal%20kernel%20review&f=false)
+  - What would you use for your organism of interest?
 
-> Type in the terminal:  
-> ```
-model_3 --config examples/config_3.ctl --landscape examples/australia_precipitation_6032.tif
-```
+## Adding environmental heterogeneity
 
-![expansion 1]({{site.url}}/pictures/decrypt/animation_3.gif)
+In a third version of the model, we will introduce landscape heterogeneity into the model.
+There are at least three ways to do so:
+- say that $r$ depends on the local environmental conditions
+- say that $K$ depends on the local environmental conditions
+- say that migration depends on the local and neighboring environmental conditions
 
-The number of descendants $$ \tilde{N}_{x}^{t} $$ in each deme can be sampled in a
+> Task:
+  - What do you expect each option to change in the demographic dynamics?
+  - In the coalescence process?
+
+### Defining niche functions in the reproduction model
+
+By *niche functions*, we mean any model quantity that is linked to environmental
+quantities.
+
+For example the following function is what we would call a niche function: the growth rate
+is a function of the temperature.
+
+![niche function]({{site.url}}/pictures/niche.png)
+
+Usually in demogenetic models, the "true" niche functions are not precisely known,
+so their forms have to be inferred. In the previous picture, we would typically try to estimate
+the parameters $T_{opt}$, $T_{min}$ and $T_{max}$.
+
+Formally, let's pretend here that the number of descendants $$ \tilde{N}_{x}^{t} $$ in each deme can be sampled in a
 distribution conditionally to a function of the the local density of parents,
 for example
 
@@ -154,47 +182,15 @@ r  & : & \mathbb{X} & \mapsto & \mathbb{R} \\
 \end{array}
 $$
 
-# Defining niche functions in the simulation model
 
-## Introduction
+> Type in the terminal:  
+> ```
+model_3 --config examples/config_3.ctl --landscape examples/australia_precipitation_6032.tif
+```
 
-By *niche functions*, we mean any model quantity that is linked to environmental
-quantities.
-
-For example the following function is what we would call a niche function: the growth rate
-is a function of the temperature.
-
-![niche function]({{site.url}}/pictures/niche.png)
-
-Usually in demogenetic models, the "true" niche functions are not precisely known,
-so their forms have to be inferred. In the previous picture, we would typically try to estimate
-the parameters $T_{opt}$, $T_{min}$ and $T_{max}$.
-
-If you are reading this tutorial, it means that you are
-probably interested in simulation-based inference: in such frameworks a huge amount of simulations is needed to explore the parameters
-space. Quetzal allows to explore the parameter space of the niche functions with
-a priori better efficiency than achieved by previous simulation resources.
-
-> Why ?
-
-Typically, an ABC analysis would require:
-- the raw geographic dataset to be read and tranformed using an external software with a
-  given set of parameters
-- The tranformed data to be written in memory
-- The transformed data to be read by the demogenetic program to run a simulation.
-
-And this *read-write-read* cycle would repeat *millions of times* as the parameters are resampled.
-
-We advocate that it is a *costly way to compute things*. Instead, we prefer to
-integrate the model choice into the demogenetic simulation program, so the data transformations
-are computed *on the fly* rather than written in memory. Plus, it fosters scientific reproducibility.
-
-As there are a open-ended number of possible models, and that their relevancy is
-very specific to the question at hand, we choose to
-leave the user free to define its own niche functions, and we give him the right
-tools to do so.
+![expansion 3]({{site.url}}/pictures/decrypt/animation_3.gif)
 
 
 # References
 
-Irwin, K., Laurent, S., Matuszewski, S. et al. On the importance of skewed offspring distributions and background selection in virus population genetics. Heredity 117, 393–399 (2016). https://doi.org/10.1038/hdy.2016.58
+Nathan, R., Klein, E. K., Robledo-Arnuncio, J. J., & Revilla, E. (2012). Dispersal kernels. Dispersal ecology and evolution, 187-210.

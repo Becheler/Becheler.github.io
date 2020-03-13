@@ -102,8 +102,25 @@ model_1 --config examples/config_1.ctl --landscape examples/australia_precipitat
  - Make a list of your biological systems of interest that match/don't match this model.
  - What aspect(s) of the demographic process could be changed to give a better match?
 
-###
+ ![expansion 1]({{site.url}}/pictures/decrypt/animation_1.gif)
+
+## Modelling dispersal
+
+> Type in the terminal:  
+> ```
+model_2 --config examples/config_2.ctl --landscape examples/australia_precipitation_6032.tif
+```
+
+![expansion 1]({{site.url}}/pictures/decrypt/animation_2.gif)
+
 ### Adding environmental heterogeneity
+
+> Type in the terminal:  
+> ```
+model_3 --config examples/config_3.ctl --landscape examples/australia_precipitation_6032.tif
+```
+
+![expansion 1]({{site.url}}/pictures/decrypt/animation_3.gif)
 
 The number of descendants $$ \tilde{N}_{x}^{t} $$ in each deme can be sampled in a
 distribution conditionally to a function of the the local density of parents,
@@ -177,12 +194,6 @@ very specific to the question at hand, we choose to
 leave the user free to define its own niche functions, and we give him the right
 tools to do so.
 
-
-
-
-## Dispersal
-
-## Adapting the model to phylogeographic scales
 
 # References
 

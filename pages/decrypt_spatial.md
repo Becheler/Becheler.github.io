@@ -87,8 +87,7 @@ $$\tilde{N} = \frac{N.(1+r)}{1+\frac{rN}{K}}$$,
 
 > Type in the terminal:  
 > ```
-./model_1 --config config_1.ctl --landscape australia.tif
-./to_animation.R output/N.tif output/history_1.gif
+model_1 --config examples/config_1.ctl --landscape examples/australia_precipitation_6032.tif
 ```
 > The first command line runs a demographic simulation across Australia.
 > The second command line generates an animation to visualize the results.
@@ -97,14 +96,13 @@ $$\tilde{N} = \frac{N.(1+r)}{1+\frac{rN}{K}}$$,
  - Total population size over the landscape
  - Does the process reach a stable state?
 >
-> Now copy the configuration file:
-> ``` cp config_1.ctl other_config_1.ctl```
- - Open the configuration file and modify the growth rate and the carrying capacity
-   to increase or decrease the speed of the expansion front
+> Now try different configurations:
+ - Open the configuration file and modify the growth rate and the carrying capacity in order to increase or decrease the speed of the expansion front
  - What conclusion can you make?
  - Make a list of your biological systems of interest that match/don't match this model.
  - What aspect(s) of the demographic process could be changed to give a better match?
 
+###
 ### Adding environmental heterogeneity
 
 The number of descendants $$ \tilde{N}_{x}^{t} $$ in each deme can be sampled in a

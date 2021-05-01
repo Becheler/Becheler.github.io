@@ -19,5 +19,5 @@ I love to collaborate with a bunch of people:
 My role is gathering information from these communities so I can implement
 the required software.
 
-As an illustration, I maintain [Quetzal](pages/quetzal.md), a C++ template library easing the development of
+As an illustration, I maintain [Quetzal](pages/quetzal/home), a C++ template library easing the development of
 population genetics simulators based on gene genealogies.

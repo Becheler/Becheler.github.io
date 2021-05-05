@@ -16,6 +16,12 @@ use_math: false
 [3]: /draw/logos/quetzal_eggs.png
 [4]: quetzal_eggs/home
 
+[![QUETZAL-CRUMBS][7]][8]
+
+[7]: /draw/logos/quetzal_crumbs.png
+[8]: quetzal_crumbs/home
+
+
 [![DECRYPT][5]][6]
 
 [5]: /draw/logos/decrypt.png

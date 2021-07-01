@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['flow_2eh',['Flow.h',['../_flow_8h.html',1,'']]],
-  ['forest_2eh',['Forest.h',['../_forest_8h.html',1,'']]],
-  ['forwardbackwardspatiallyexplicit_2eh',['ForwardBackwardSpatiallyExplicit.h',['../_forward_backward_spatially_explicit_8h.html',1,'']]],
-  ['fuzzy_5ftransfer_5fdistance_2eh',['fuzzy_transfer_distance.h',['../fuzzy__transfer__distance_2fuzzy__transfer__distance_8h.html',1,'(Global Namespace)'],['../fuzzy__transfer__distance_8h.html',1,'(Global Namespace)']]],
-  ['fuzzypartition_2eh',['FuzzyPartition.h',['../_fuzzy_partition_8h.html',1,'']]],
-  ['fuzzypartition_5ftest_2ecpp',['FuzzyPartition_test.cpp',['../_fuzzy_partition__test_8cpp.html',1,'']]]
+  ['environmentalquantity_2eh',['EnvironmentalQuantity.h',['../_environmental_quantity_8h.html',1,'']]],
+  ['expressive_2eh',['expressive.h',['../expressive_2expressive_8h.html',1,'(Global Namespace)'],['../expressive_8h.html',1,'(Global Namespace)']]],
+  ['expressive_5ftest_2ecpp',['expressive_test.cpp',['../include_2quetzal_2expressive_2test_2expressive__test_8cpp.html',1,'(Global Namespace)'],['../test_2unit__test_2expressive__test_8cpp.html',1,'(Global Namespace)']]],
+  ['expressive_5ftest_2ecpp_2eo_2ed',['expressive_test.cpp.o.d',['../subprojects_2_build_2quetzal__core_2test_2_c_make_files_2expressive__test_8dir_2unit__test_2expressive__test_8cpp_8o_8d.html',1,'(Global Namespace)'],['../test_2_c_make_files_2expressive__test_8dir_2unit__test_2expressive__test_8cpp_8o_8d.html',1,'(Global Namespace)']]],
+  ['extent_2eh',['Extent.h',['../_extent_8h.html',1,'']]]
 ];

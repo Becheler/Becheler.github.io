@@ -10,11 +10,11 @@ var searchData=
   ['mutation_5fkernel',['mutation_kernel',['../namespacequetzal_1_1mutation__kernel.html',1,'quetzal']]],
   ['occupancy_5fspectrum',['occupancy_spectrum',['../namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html',1,'quetzal::coalescence']]],
   ['policies',['policies',['../namespacequetzal_1_1coalescence_1_1policies.html',1,'quetzal::coalescence']]],
+  ['policy',['policy',['../namespacequetzal_1_1demography_1_1policy.html',1,'quetzal::demography']]],
   ['quantities_5fnbr',['quantities_nbr',['../classquetzal_1_1geography_1_1_discrete_landscape_a51dac772692d0a0acf9e6418023cd25e.html#a51dac772692d0a0acf9e6418023cd25e',1,'quetzal::geography::DiscreteLandscape']]],
   ['quetzal',['quetzal',['../namespacequetzal.html',1,'']]],
   ['quetzal_2eh',['quetzal.h',['../quetzal_8h.html',1,'']]],
   ['random',['random',['../namespacequetzal_1_1random.html',1,'quetzal']]],
   ['sampling_5fscheme',['sampling_scheme',['../namespacequetzal_1_1sampling__scheme.html',1,'quetzal']]],
-  ['strategy',['strategy',['../namespacequetzal_1_1demography_1_1strategy.html',1,'quetzal::demography']]],
   ['utils',['utils',['../namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html',1,'quetzal::coalescence::occupancy_spectrum::utils'],['../namespacequetzal_1_1utils.html',1,'quetzal::utils']]]
 ];

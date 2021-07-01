@@ -1,10 +1,11 @@
 <map id="quetzal/include/quetzal/demography/Flow.h" name="quetzal/include/quetzal/demography/Flow.h">
-<area shape="rect" id="node1" title=" " alt="" coords="116,5,271,47"/>
-<area shape="rect" id="node2" href="$_history_8h.html" title=" " alt="" coords="200,95,355,136"/>
-<area shape="rect" id="node3" href="$demography_8h.html" title=" " alt="" coords="5,191,160,233"/>
-<area shape="rect" id="node7" href="$_forward_backward_spatially_explicit_8h.html" title=" " alt="" coords="185,184,423,240"/>
-<area shape="rect" id="node8" href="$simulator_2utils_8h.html" title=" " alt="" coords="448,191,603,233"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="227,288,381,329"/>
-<area shape="rect" id="node6" href="$demography__test_8cpp.html" title=" " alt="" coords="7,288,158,329"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="223,377,385,419"/>
+<area shape="rect" id="node1" title=" " alt="" coords="92,5,247,47"/>
+<area shape="rect" id="node2" href="$_base_history_8h.html" title=" " alt="" coords="189,95,371,136"/>
+<area shape="rect" id="node4" href="$demography_8h.html" title=" " alt="" coords="5,281,160,322"/>
+<area shape="rect" id="node3" href="$_history_8h.html" title=" " alt="" coords="215,184,369,225"/>
+<area shape="rect" id="node8" href="$_forward_backward_spatially_explicit_8h.html" title=" " alt="" coords="185,273,423,329"/>
+<area shape="rect" id="node9" href="$simulator_2utils_8h.html" title=" " alt="" coords="448,281,603,322"/>
+<area shape="rect" id="node5" href="$quetzal_8h.html" title=" " alt="" coords="227,377,381,419"/>
+<area shape="rect" id="node7" href="$demography__test_8cpp.html" title=" " alt="" coords="7,377,158,419"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="223,467,385,508"/>
 </map>

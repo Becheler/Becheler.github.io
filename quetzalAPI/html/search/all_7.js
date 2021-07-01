@@ -23,8 +23,8 @@ var searchData=
   ['get_5fall_5ftrees',['get_all_trees',['../classquetzal_1_1coalescence_1_1_forest_a5209ff6d7649f6f0b8516586442a1a70.html#a5209ff6d7649f6f0b8516586442a1a70',1,'quetzal::coalescence::Forest']]],
   ['get_5fallelic_5fstate',['get_allelic_state',['../classquetzal_1_1genetics_1_1_allele_a17d9063b07ae9a222320147bb3c9665f.html#a17d9063b07ae9a222320147bb3c9665f',1,'quetzal::genetics::Allele']]],
   ['get_5fsampling_5fpoints',['get_sampling_points',['../classquetzal_1_1genetics_1_1_spatial_genetic_sample_a129cc3aef9b42b77ffe8c02690dd2c3e.html#a129cc3aef9b42b77ffe8c02690dd2c3e',1,'quetzal::genetics::SpatialGeneticSample']]],
-  ['getid',['getId',['../classquetzal_1_1demography_1_1strategy_1_1_point_with_id_a62b8c2850fde0e2101d5d3cdafa66564.html#a62b8c2850fde0e2101d5d3cdafa66564',1,'quetzal::demography::strategy::PointWithId']]],
-  ['getindexofpointinvector',['getIndexOfPointInVector',['../namespacequetzal_1_1demography_1_1strategy_a6f3b64f20bff2b46403169620e2c60cf.html#a6f3b64f20bff2b46403169620e2c60cf',1,'quetzal::demography::strategy']]],
-  ['getpoint',['getPoint',['../classquetzal_1_1demography_1_1strategy_1_1_point_with_id_afac5f79e9ca2bfae61e75e86a0278598.html#afac5f79e9ca2bfae61e75e86a0278598',1,'quetzal::demography::strategy::PointWithId']]],
+  ['getid',['getId',['../classquetzal_1_1demography_1_1policy_1_1_point_with_id_ae8a64629a0ea7b4888ff131d0d95edf2.html#ae8a64629a0ea7b4888ff131d0d95edf2',1,'quetzal::demography::policy::PointWithId']]],
+  ['getindexofpointinvector',['getIndexOfPointInVector',['../namespacequetzal_1_1demography_1_1policy_aa8e392c00d0ce50967ec5b6bb69ad6f9.html#aa8e392c00d0ce50967ec5b6bb69ad6f9',1,'quetzal::demography::policy']]],
+  ['getpoint',['getPoint',['../classquetzal_1_1demography_1_1policy_1_1_point_with_id_a1041ff2ccd42add219797751e195a36e.html#a1041ff2ccd42add219797751e195a36e',1,'quetzal::demography::policy::PointWithId']]],
   ['great_5fcircle_5fdistance_5fto',['great_circle_distance_to',['../classquetzal_1_1geography_1_1_geographic_coordinates_a8e57c0f504015ebf0bc6caabf869dfd5.html#a8e57c0f504015ebf0bc6caabf869dfd5',1,'quetzal::geography::GeographicCoordinates']]]
 ];

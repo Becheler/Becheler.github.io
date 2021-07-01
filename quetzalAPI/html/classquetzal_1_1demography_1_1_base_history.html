@@ -116,16 +116,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1_base_hi
 <p>Base class for spatially explicit and forward-in time population history simulators.  
  <a href="classquetzal_1_1demography_1_1_base_history.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_history_8h_source.html">History.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for quetzal::demography::BaseHistory&lt; Space, Time, Strategy &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classquetzal_1_1demography_1_1_base_history__inherit__graph.png" border="0" usemap="#quetzal_1_1demography_1_1_base_history_3_01_space_00_01_time_00_01_strategy_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="quetzal_1_1demography_1_1_base_history_3_01_space_00_01_time_00_01_strategy_01_4_inherit__map" id="quetzal_1_1demography_1_1_base_history_3_01_space_00_01_time_00_01_strategy_01_4_inherit__map">
-<area shape="rect" id="node1" title="Base class for spatially explicit and forward&#45;in time population history simulators." alt="" coords="9,5,164,61"/>
-<area shape="rect" id="node2" href="classquetzal_1_1demography_1_1_history.html" title="Unspecialized class." alt="" coords="5,109,168,165"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<p><code>#include &lt;<a class="el" href="_base_history_8h_source.html">BaseHistory.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for quetzal::demography::BaseHistory&lt; Space, Time, Strategy &gt;:</div>
 <div class="dyncontent">
@@ -200,6 +191,7 @@ Protected Attributes</h2></td></tr>
 class quetzal::demography::BaseHistory&lt; Space, Time, Strategy &gt;</h3>
 
 <p class="">Base class for spatially explicit and forward-in time population history simulators. </p>
+<p class="">CRTP design pattern: this class has to be specialized (inherited from) to define <a class="el" href="classquetzal_1_1demography_1_1_history.html" title="Unspecialized class (CRTP design pattern)">History</a> classes with different behaviors (eg mass-based or individual-based).</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Space</td><td>Demes identifiers. </td></tr>
@@ -209,7 +201,7 @@ class quetzal::demography::BaseHistory&lt; Space, Time, Strategy &gt;</h3>
   </dd>
 </dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>quetzal/include/quetzal/demography/<a class="el" href="_history_8h_source.html">History.h</a></li>
+<li>quetzal/include/quetzal/demography/<a class="el" href="_base_history_8h_source.html">BaseHistory.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

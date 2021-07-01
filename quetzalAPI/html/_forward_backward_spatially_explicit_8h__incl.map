@@ -1,43 +1,44 @@
 <map id="quetzal/include/quetzal/simulator/ForwardBackwardSpatiallyExplicit.h" name="quetzal/include/quetzal/simulator/ForwardBackwardSpatiallyExplicit.h">
-<area shape="rect" id="node1" title=" " alt="" coords="1559,5,1798,61"/>
-<area shape="rect" id="node2" href="$_history_8h.html" title=" " alt="" coords="1036,117,1196,143"/>
-<area shape="rect" id="node27" title=" " alt="" coords="2019,474,2066,501"/>
-<area shape="rect" id="node32" href="$_forest_8h.html" title=" " alt="" coords="1319,288,1489,329"/>
-<area shape="rect" id="node34" href="$merger_8h.html" title=" " alt="" coords="1817,199,1972,240"/>
-<area shape="rect" id="node38" href="$on__the__fly_8h.html" title=" " alt="" coords="1490,199,1665,240"/>
-<area shape="rect" id="node41" title=" " alt="" coords="2331,109,2490,151"/>
-<area shape="rect" id="node3" href="$_flow_8h.html" title=" " alt="" coords="1741,295,1800,322"/>
-<area shape="rect" id="node9" href="$_population_size_8h.html" title=" " alt="" coords="975,295,1095,322"/>
-<area shape="rect" id="node11" title=" " alt="" coords="961,385,1020,411"/>
-<area shape="rect" id="node13" href="$strategy_8h.html" title=" " alt="" coords="359,206,438,233"/>
-<area shape="rect" id="node28" href="$random_8h.html" title=" " alt="" coords="1072,206,1160,233"/>
-<area shape="rect" id="node31" title=" " alt="" coords="1184,206,1253,233"/>
-<area shape="rect" id="node4" title=" " alt="" coords="1266,385,1377,411"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1842,385,1907,411"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1931,385,2010,411"/>
-<area shape="rect" id="node7" title=" " alt="" coords="1671,474,1745,501"/>
-<area shape="rect" id="node8" title=" " alt="" coords="1745,385,1817,411"/>
-<area shape="rect" id="node10" title=" " alt="" coords="1044,385,1148,411"/>
-<area shape="rect" id="node12" title=" " alt="" coords="1172,385,1241,411"/>
-<area shape="rect" id="node14" href="$_point_with_id_8h.html" title=" " alt="" coords="436,295,537,322"/>
-<area shape="rect" id="node15" href="$dispersal_8h.html" title=" " alt="" coords="276,295,361,322"/>
-<area shape="rect" id="node18" title=" " alt="" coords="28,377,167,419"/>
-<area shape="rect" id="node21" href="$utils_8h.html" title=" " alt="" coords="561,295,631,322"/>
-<area shape="rect" id="node24" title=" " alt="" coords="5,467,144,508"/>
-<area shape="rect" id="node16" title=" " alt="" coords="404,385,463,411"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1169,474,1234,501"/>
-<area shape="rect" id="node19" title=" " alt="" coords="193,467,332,508"/>
-<area shape="rect" id="node20" title=" " alt="" coords="241,377,380,419"/>
-<area shape="rect" id="node22" href="$matrix__operation_8h.html" title=" " alt="" coords="487,385,644,411"/>
-<area shape="rect" id="node26" href="$sampling__scheme_8h.html" title=" " alt="" coords="719,385,886,411"/>
-<area shape="rect" id="node23" title=" " alt="" coords="577,467,716,508"/>
-<area shape="rect" id="node25" title=" " alt="" coords="415,467,553,508"/>
-<area shape="rect" id="node29" href="$_discrete_distribution_8h.html" title=" " alt="" coords="705,295,900,322"/>
-<area shape="rect" id="node30" href="$_transition_kernel_8h.html" title=" " alt="" coords="1119,295,1294,322"/>
-<area shape="rect" id="node33" title=" " alt="" coords="1401,385,1441,411"/>
-<area shape="rect" id="node35" href="$merge_8h.html" title=" " alt="" coords="1963,295,2109,322"/>
-<area shape="rect" id="node36" title=" " alt="" coords="2193,385,2255,411"/>
-<area shape="rect" id="node37" title=" " alt="" coords="2035,385,2117,411"/>
-<area shape="rect" id="node39" href="$coalescence_2occupancy__spectrum_2utils_8h.html" title=" " alt="" coords="1565,295,1622,322"/>
-<area shape="rect" id="node40" title=" " alt="" coords="1567,385,1620,411"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1401,5,1639,61"/>
+<area shape="rect" id="node2" href="$_history_8h.html" title=" " alt="" coords="1379,117,1539,143"/>
+<area shape="rect" id="node28" title=" " alt="" coords="6,549,53,575"/>
+<area shape="rect" id="node33" href="$_forest_8h.html" title=" " alt="" coords="656,363,827,404"/>
+<area shape="rect" id="node35" href="$merger_8h.html" title=" " alt="" coords="1927,273,2081,315"/>
+<area shape="rect" id="node39" href="$on__the__fly_8h.html" title=" " alt="" coords="1566,273,1741,315"/>
+<area shape="rect" id="node42" title=" " alt="" coords="1667,109,1826,151"/>
+<area shape="rect" id="node3" href="$_base_history_8h.html" title=" " alt="" coords="1318,199,1421,225"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1448,459,1507,486"/>
+<area shape="rect" id="node29" href="$random_8h.html" title=" " alt="" coords="1208,281,1296,307"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1421,281,1491,307"/>
+<area shape="rect" id="node4" href="$_flow_8h.html" title=" " alt="" coords="1845,370,1904,397"/>
+<area shape="rect" id="node10" href="$_population_size_8h.html" title=" " alt="" coords="1051,370,1171,397"/>
+<area shape="rect" id="node14" href="$policy_8h.html" title=" " alt="" coords="445,281,510,307"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1041,459,1151,486"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1946,459,2011,486"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2035,459,2114,486"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1775,549,1849,575"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1849,459,1921,486"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1269,459,1373,486"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1176,459,1245,486"/>
+<area shape="rect" id="node15" href="$_point_with_id_8h.html" title=" " alt="" coords="259,370,360,397"/>
+<area shape="rect" id="node16" href="$dispersal_8h.html" title=" " alt="" coords="435,370,520,397"/>
+<area shape="rect" id="node19" title=" " alt="" coords="93,452,232,493"/>
+<area shape="rect" id="node22" href="$utils_8h.html" title=" " alt="" coords="563,370,632,397"/>
+<area shape="rect" id="node25" title=" " alt="" coords="264,541,403,583"/>
+<area shape="rect" id="node17" title=" " alt="" coords="256,459,315,486"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1465,549,1530,575"/>
+<area shape="rect" id="node20" title=" " alt="" coords="520,541,659,583"/>
+<area shape="rect" id="node21" title=" " alt="" coords="389,452,528,493"/>
+<area shape="rect" id="node23" href="$matrix__operation_8h.html" title=" " alt="" coords="744,459,901,486"/>
+<area shape="rect" id="node27" href="$sampling__scheme_8h.html" title=" " alt="" coords="553,459,719,486"/>
+<area shape="rect" id="node24" title=" " alt="" coords="729,541,868,583"/>
+<area shape="rect" id="node26" title=" " alt="" coords="892,541,1031,583"/>
+<area shape="rect" id="node30" href="$_discrete_distribution_8h.html" title=" " alt="" coords="1195,370,1389,397"/>
+<area shape="rect" id="node31" href="$_transition_kernel_8h.html" title=" " alt="" coords="851,370,1026,397"/>
+<area shape="rect" id="node34" title=" " alt="" coords="976,459,1016,486"/>
+<area shape="rect" id="node36" href="$merge_8h.html" title=" " alt="" coords="2067,370,2213,397"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2297,459,2359,486"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2189,459,2272,486"/>
+<area shape="rect" id="node40" href="$coalescence_2occupancy__spectrum_2utils_8h.html" title=" " alt="" coords="1667,370,1725,397"/>
+<area shape="rect" id="node41" title=" " alt="" coords="1671,459,1724,486"/>
 </map>

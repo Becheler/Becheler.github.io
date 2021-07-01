@@ -1,12 +1,13 @@
 <map id="quetzal/include/quetzal/random/DiscreteDistribution.h" name="quetzal/include/quetzal/random/DiscreteDistribution.h">
-<area shape="rect" id="node1" title=" " alt="" coords="541,5,739,47"/>
-<area shape="rect" id="node2" href="$random_8h.html" title=" " alt="" coords="563,95,717,136"/>
-<area shape="rect" id="node3" href="$_history_8h.html" title=" " alt="" coords="295,184,449,225"/>
-<area shape="rect" id="node5" href="$quetzal_8h.html" title=" " alt="" coords="295,377,449,419"/>
-<area shape="rect" id="node10" href="$random__test_8cpp.html" title=" " alt="" coords="677,184,821,225"/>
-<area shape="rect" id="node4" href="$demography_8h.html" title=" " alt="" coords="5,281,160,322"/>
-<area shape="rect" id="node8" href="$_forward_backward_spatially_explicit_8h.html" title=" " alt="" coords="363,273,602,329"/>
-<area shape="rect" id="node9" href="$simulator_2utils_8h.html" title=" " alt="" coords="184,281,339,322"/>
-<area shape="rect" id="node7" href="$demography__test_8cpp.html" title=" " alt="" coords="7,377,158,419"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="291,467,453,508"/>
+<area shape="rect" id="node1" title=" " alt="" coords="515,5,714,47"/>
+<area shape="rect" id="node2" href="$random_8h.html" title=" " alt="" coords="537,95,692,136"/>
+<area shape="rect" id="node3" href="$_base_history_8h.html" title=" " alt="" coords="369,184,551,225"/>
+<area shape="rect" id="node4" href="$_history_8h.html" title=" " alt="" coords="383,273,537,315"/>
+<area shape="rect" id="node6" href="$quetzal_8h.html" title=" " alt="" coords="295,467,449,508"/>
+<area shape="rect" id="node11" href="$random__test_8cpp.html" title=" " alt="" coords="677,184,821,225"/>
+<area shape="rect" id="node5" href="$demography_8h.html" title=" " alt="" coords="5,370,160,411"/>
+<area shape="rect" id="node9" href="$_forward_backward_spatially_explicit_8h.html" title=" " alt="" coords="363,363,602,419"/>
+<area shape="rect" id="node10" href="$simulator_2utils_8h.html" title=" " alt="" coords="184,370,339,411"/>
+<area shape="rect" id="node8" href="$demography__test_8cpp.html" title=" " alt="" coords="7,467,158,508"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="291,556,453,597"/>
 </map>

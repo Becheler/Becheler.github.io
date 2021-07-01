@@ -63,11 +63,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_allele_8h.html",
-"classgdalcpp_1_1_layer.html",
-"classquetzal_1_1demography_1_1dispersal_1_1_inverse_power_law_1_1param__type.html",
-"coalescence__test_8cpp_a6b2a3852db8bb19ab6909bac01859985.html#a6b2a3852db8bb19ab6909bac01859985",
-"group__coal__containers.html",
-"structquetzal_1_1expressive_1_1compose__t_3_01_outer_00_01_inner_01_4_a008d5007ab1aeb642028f7a2e988cef9.html#a008d5007ab1aeb642028f7a2e988cef9"
+"classgdalcpp_1_1_feature_a7e4add3fcfe6beccc720aff2f6977926.html#a7e4add3fcfe6beccc720aff2f6977926",
+"classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type_ab02bf18710db156be34337927449ee00.html#ab02bf18710db156be34337927449ee00",
+"coalescence__test_8cpp_a450fe4766dc351b91fc7bca59e670c57.html#a450fe4766dc351b91fc7bca59e670c57",
+"group__coal__algorithms_gac90d96d04f0434b2a32417428b2c86ce.html#gac90d96d04f0434b2a32417428b2c86ce",
+"structquetzal_1_1expressive_1_1compose__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

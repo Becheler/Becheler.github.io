@@ -7,6 +7,7 @@ var classquetzal_1_1geography_1_1_discrete_landscape =
     [ "DiscreteLandscape", "classquetzal_1_1geography_1_1_discrete_landscape_ac8409e3905b9b3ed18bf7f1abf7a1650.html#ac8409e3905b9b3ed18bf7f1abf7a1650", null ],
     [ "export_to_geotiff", "classquetzal_1_1geography_1_1_discrete_landscape_a8858d75bafb293f958a206dc6e657563.html#a8858d75bafb293f958a206dc6e657563", null ],
     [ "export_to_shapefile", "classquetzal_1_1geography_1_1_discrete_landscape_aeb54b428bf4891bf86ac33a472f1c5e7.html#aeb54b428bf4891bf86ac33a472f1c5e7", null ],
+    [ "export_to_shapefile", "classquetzal_1_1geography_1_1_discrete_landscape_a48a76c171637c738f1d3df8f87dbf1db.html#a48a76c171637c738f1d3df8f87dbf1db", null ],
     [ "extent", "classquetzal_1_1geography_1_1_discrete_landscape_a270d829c44f6fd92e6af0342897eb7e0.html#a270d829c44f6fd92e6af0342897eb7e0", null ],
     [ "four_nearest_defined_cells", "classquetzal_1_1geography_1_1_discrete_landscape_a414e6c348371e455f9dd8547ac8ce7f3.html#a414e6c348371e455f9dd8547ac8ce7f3", null ],
     [ "geographic_definition_space", "classquetzal_1_1geography_1_1_discrete_landscape_a1d0f7554cd9871d9eab3d409e8b1eb25.html#a1d0f7554cd9871d9eab3d409e8b1eb25", null ],

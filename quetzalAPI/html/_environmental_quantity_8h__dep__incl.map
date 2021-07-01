@@ -1,8 +1,8 @@
-<map id="quetzal/modules/geography/EnvironmentalQuantity.h" name="quetzal/modules/geography/EnvironmentalQuantity.h">
-<area shape="rect" id="node1" title=" " alt="" coords="73,5,254,47"/>
-<area shape="rect" id="node2" href="$_discrete_landscape_8h.html" title=" " alt="" coords="73,95,254,136"/>
-<area shape="rect" id="node3" href="$geography_8h.html" title=" " alt="" coords="94,184,233,211"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="24,266,145,293"/>
-<area shape="rect" id="node6" href="$geography__test_8cpp.html" title=" " alt="" coords="170,259,314,300"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="5,348,164,404"/>
+<map id="quetzal/include/quetzal/geography/EnvironmentalQuantity.h" name="quetzal/include/quetzal/geography/EnvironmentalQuantity.h">
+<area shape="rect" id="node1" title=" " alt="" coords="57,5,288,47"/>
+<area shape="rect" id="node2" href="$_discrete_landscape_8h.html" title=" " alt="" coords="66,95,279,136"/>
+<area shape="rect" id="node3" href="$geography_8h.html" title=" " alt="" coords="95,184,250,225"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="9,273,163,315"/>
+<area shape="rect" id="node6" href="$geography__test_8cpp.html" title=" " alt="" coords="187,273,331,315"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="5,363,167,404"/>
 </map>

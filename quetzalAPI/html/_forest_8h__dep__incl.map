@@ -1,10 +1,11 @@
-<map id="quetzal/modules/coalescence/containers/Forest.h" name="quetzal/modules/coalescence/containers/Forest.h">
-<area shape="rect" id="node1" title=" " alt="" coords="86,5,281,47"/>
-<area shape="rect" id="node2" href="$distance__to__parent_8h.html" title=" " alt="" coords="24,184,218,225"/>
-<area shape="rect" id="node3" href="$coalescence_8h.html" title=" " alt="" coords="32,273,184,300"/>
-<area shape="rect" id="node7" href="$modules_2simulator_2simulator_8h.html" title=" " alt="" coords="159,95,334,136"/>
-<area shape="rect" id="node8" href="$modules_2simulator_2utils_8h.html" title=" " alt="" coords="294,184,468,225"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="202,355,323,382"/>
-<area shape="rect" id="node6" href="$coalescence__test_8cpp.html" title=" " alt="" coords="24,348,178,389"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="183,437,342,493"/>
+<map id="quetzal/include/quetzal/coalescence/containers/Forest.h" name="quetzal/include/quetzal/coalescence/containers/Forest.h">
+<area shape="rect" id="node1" title=" " alt="" coords="141,5,304,61"/>
+<area shape="rect" id="node2" href="$distance__to__parent_8h.html" title=" " alt="" coords="25,213,180,269"/>
+<area shape="rect" id="node3" href="$coalescence_8h.html" title=" " alt="" coords="25,317,180,359"/>
+<area shape="rect" id="node7" href="$_discrete_time_wright_fisher_8h.html" title=" " alt="" coords="123,109,322,165"/>
+<area shape="rect" id="node8" href="$_forward_backward_spatially_explicit_8h.html" title=" " alt="" coords="255,213,494,269"/>
+<area shape="rect" id="node9" href="$simulator_2utils_8h.html" title=" " alt="" coords="432,317,586,359"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="250,407,405,448"/>
+<area shape="rect" id="node6" href="$coalescence__test_8cpp.html" title=" " alt="" coords="26,407,179,448"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="247,496,408,537"/>
 </map>

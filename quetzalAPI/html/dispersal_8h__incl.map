@@ -1,5 +1,5 @@
-<map id="quetzal/modules/demography/dispersal.h" name="quetzal/modules/demography/dispersal.h">
-<area shape="rect" id="node1" title=" " alt="" coords="243,5,435,47"/>
+<map id="quetzal/include/quetzal/demography/dispersal.h" name="quetzal/include/quetzal/demography/dispersal.h">
+<area shape="rect" id="node1" title=" " alt="" coords="257,5,421,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,102,64,129"/>
 <area shape="rect" id="node3" title=" " alt="" coords="88,102,147,129"/>
 <area shape="rect" id="node4" title=" " alt="" coords="171,102,282,129"/>

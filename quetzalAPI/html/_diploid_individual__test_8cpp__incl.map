@@ -1,10 +1,10 @@
-<map id="quetzal/modules/genetics/DiploidIndividual_test.cpp" name="quetzal/modules/genetics/DiploidIndividual_test.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="154,5,329,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,75,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,95,171,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="235,169,290,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="245,95,304,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="456,169,496,196"/>
-<area shape="rect" id="node7" href="$_diploid_individual_8h.html" title=" " alt="" coords="328,95,456,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="369,169,415,196"/>
+<map id="quetzal/include/quetzal/genetics/DiploidIndividual_test.cpp" name="quetzal/include/quetzal/genetics/DiploidIndividual_test.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="154,5,329,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,75,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="99,109,171,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="235,184,290,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="245,109,304,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="456,184,496,211"/>
+<area shape="rect" id="node7" href="$_diploid_individual_8h.html" title=" " alt="" coords="328,109,456,136"/>
+<area shape="rect" id="node8" title=" " alt="" coords="369,184,415,211"/>
 </map>

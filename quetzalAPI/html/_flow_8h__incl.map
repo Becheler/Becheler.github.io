@@ -1,5 +1,5 @@
-<map id="quetzal/modules/demography/Flow.h" name="quetzal/modules/demography/Flow.h">
-<area shape="rect" id="node1" title=" " alt="" coords="173,5,365,47"/>
+<map id="quetzal/include/quetzal/demography/Flow.h" name="quetzal/include/quetzal/demography/Flow.h">
+<area shape="rect" id="node1" title=" " alt="" coords="191,5,346,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,116,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="140,95,205,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="229,95,308,121"/>

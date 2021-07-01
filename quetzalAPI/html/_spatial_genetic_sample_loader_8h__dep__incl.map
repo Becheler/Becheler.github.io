@@ -1,7 +1,7 @@
-<map id="quetzal/modules/genetics/SpatialGeneticSampleLoader.h" name="quetzal/modules/genetics/SpatialGeneticSampleLoader.h">
-<area shape="rect" id="node1" title=" " alt="" coords="74,5,279,47"/>
-<area shape="rect" id="node2" href="$genetics_8h.html" title=" " alt="" coords="21,109,149,136"/>
-<area shape="rect" id="node5" href="$_spatial_genetic_sample_loader__test_8cpp.html" title=" " alt="" coords="173,95,367,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title=" " alt="" coords="24,199,145,225"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title=" " alt="" coords="5,273,164,329"/>
+<map id="quetzal/include/quetzal/genetics/SpatialGeneticSampleLoader.h" name="quetzal/include/quetzal/genetics/SpatialGeneticSampleLoader.h">
+<area shape="rect" id="node1" title=" " alt="" coords="108,5,316,61"/>
+<area shape="rect" id="node2" href="$_spatial_genetic_sample_loader__test_8cpp.html" title=" " alt="" coords="5,109,213,165"/>
+<area shape="rect" id="node3" href="$genetics_8h.html" title=" " alt="" coords="237,117,392,158"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="237,213,392,255"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="234,303,395,344"/>
 </map>

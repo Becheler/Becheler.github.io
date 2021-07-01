@@ -1,13 +1,13 @@
-<map id="quetzal/modules/abc/ReferenceTable.h" name="quetzal/modules/abc/ReferenceTable.h">
-<area shape="rect" id="node1" title=" " alt="" coords="320,5,463,47"/>
-<area shape="rect" id="node2" href="$expressive_8h.html" title=" " alt="" coords="218,95,338,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="362,95,421,121"/>
-<area shape="rect" id="node11" title=" " alt="" coords="445,95,519,121"/>
-<area shape="rect" id="node3" href="$modules_2expressive_2expressive_8h.html" title=" " alt="" coords="209,169,347,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,259,84,285"/>
-<area shape="rect" id="node5" title=" " alt="" coords="109,259,162,285"/>
-<area shape="rect" id="node6" title=" " alt="" coords="186,259,269,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="293,259,365,285"/>
-<area shape="rect" id="node8" title=" " alt="" coords="389,259,444,285"/>
-<area shape="rect" id="node9" title=" " alt="" coords="469,259,519,285"/>
+<map id="quetzal/include/quetzal/abc/ReferenceTable.h" name="quetzal/include/quetzal/abc/ReferenceTable.h">
+<area shape="rect" id="node1" title=" " alt="" coords="309,5,463,47"/>
+<area shape="rect" id="node2" href="$expressive_8h.html" title=" " alt="" coords="224,95,332,121"/>
+<area shape="rect" id="node10" title=" " alt="" coords="357,95,415,121"/>
+<area shape="rect" id="node11" title=" " alt="" coords="439,95,514,121"/>
+<area shape="rect" id="node3" href="$expressive_2expressive_8h.html" title=" " alt="" coords="197,169,359,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,244,84,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="109,244,162,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="186,244,269,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="293,244,365,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="389,244,444,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="469,244,519,271"/>
 </map>

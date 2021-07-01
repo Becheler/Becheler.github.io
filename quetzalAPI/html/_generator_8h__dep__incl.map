@@ -1,14 +1,10 @@
-<map id="quetzal/modules/coalescence/occupancy_spectrum/Generator.h" name="quetzal/modules/coalescence/occupancy_spectrum/Generator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="42,5,265,47"/>
-<area shape="rect" id="node2" href="$_occupancy_spectrum_distribution_8h.html" title=" " alt="" coords="15,95,291,151"/>
-<area shape="rect" id="node3" href="$spectrum__creation__policy_8h.html" title=" " alt="" coords="49,288,257,344"/>
-<area shape="rect" id="node12" href="$memoize_8h.html" title=" " alt="" coords="117,199,336,240"/>
-<area shape="rect" id="node4" href="$merger_8h.html" title=" " alt="" coords="56,392,251,433"/>
-<area shape="rect" id="node5" href="$coalescence_8h.html" title=" " alt="" coords="31,660,183,687"/>
-<area shape="rect" id="node9" href="$modules_2simulator_2simulator_8h.html" title=" " alt="" coords="66,481,241,523"/>
-<area shape="rect" id="node11" href="$modules_2simulator_2utils_8h.html" title=" " alt="" coords="293,571,467,612"/>
-<area shape="rect" id="node6" href="$quetzal_8h.html" title=" " alt="" coords="201,742,322,769"/>
-<area shape="rect" id="node8" href="$coalescence__test_8cpp.html" title=" " alt="" coords="23,735,177,776"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="182,824,341,880"/>
-<area shape="rect" id="node10" href="$distance__to__parent_8h.html" title=" " alt="" coords="23,571,217,612"/>
+<map id="quetzal/include/quetzal/coalescence/occupancy_spectrum/Generator.h" name="quetzal/include/quetzal/coalescence/occupancy_spectrum/Generator.h">
+<area shape="rect" id="node1" title=" " alt="" coords="92,5,259,61"/>
+<area shape="rect" id="node2" href="$_occupancy_spectrum_distribution_8h.html" title=" " alt="" coords="32,109,319,165"/>
+<area shape="rect" id="node3" href="$in__memoized__distribution_8h.html" title=" " alt="" coords="53,317,298,373"/>
+<area shape="rect" id="node8" href="$memoize_8h.html" title=" " alt="" coords="153,213,320,269"/>
+<area shape="rect" id="node4" href="$coalescence_8h.html" title=" " alt="" coords="98,421,253,463"/>
+<area shape="rect" id="node5" href="$quetzal_8h.html" title=" " alt="" coords="9,511,163,552"/>
+<area shape="rect" id="node7" href="$coalescence__test_8cpp.html" title=" " alt="" coords="188,511,341,552"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="5,600,167,641"/>
 </map>

@@ -1,11 +1,11 @@
-<map id="quetzal/modules/abc/ReferenceTable.h" name="quetzal/modules/abc/ReferenceTable.h">
-<area shape="rect" id="node1" title=" " alt="" coords="340,5,483,47"/>
-<area shape="rect" id="node2" href="$modules_2abc_2abc_8h.html" title=" " alt="" coords="340,95,483,136"/>
-<area shape="rect" id="node3" href="$abc_8h.html" title=" " alt="" coords="35,199,135,225"/>
-<area shape="rect" id="node6" href="$pritchard__identity__test_8cpp.html" title=" " alt="" coords="159,184,309,240"/>
-<area shape="rect" id="node7" href="$pritchard__test_8cpp.html" title=" " alt="" coords="333,191,489,233"/>
-<area shape="rect" id="node8" href="$rubin__test_8cpp.html" title=" " alt="" coords="513,191,656,233"/>
-<area shape="rect" id="node9" href="$test_8cpp.html" title=" " alt="" coords="680,191,823,233"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="24,288,145,315"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="5,363,164,419"/>
+<map id="quetzal/include/quetzal/abc/ReferenceTable.h" name="quetzal/include/quetzal/abc/ReferenceTable.h">
+<area shape="rect" id="node1" title=" " alt="" coords="413,5,568,47"/>
+<area shape="rect" id="node2" href="$abc_2abc_8h.html" title=" " alt="" coords="413,95,568,136"/>
+<area shape="rect" id="node3" href="$pritchard__identity__test_8cpp.html" title=" " alt="" coords="5,184,181,240"/>
+<area shape="rect" id="node4" href="$pritchard__test_8cpp.html" title=" " alt="" coords="205,191,387,233"/>
+<area shape="rect" id="node5" href="$rubin__test_8cpp.html" title=" " alt="" coords="411,191,570,233"/>
+<area shape="rect" id="node6" href="$test_8cpp.html" title=" " alt="" coords="595,191,749,233"/>
+<area shape="rect" id="node7" href="$abc_8h.html" title=" " alt="" coords="773,191,928,233"/>
+<area shape="rect" id="node8" href="$quetzal_8h.html" title=" " alt="" coords="773,288,928,329"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title=" " alt="" coords="770,377,931,419"/>
 </map>

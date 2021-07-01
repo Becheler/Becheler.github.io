@@ -1,11 +1,12 @@
-<map id="quetzal/modules/coalescence/algorithms/merge.h" name="quetzal/modules/coalescence/algorithms/merge.h">
-<area shape="rect" id="node1" title=" " alt="" coords="56,5,251,47"/>
-<area shape="rect" id="node2" href="$merger_8h.html" title=" " alt="" coords="56,95,251,136"/>
-<area shape="rect" id="node3" href="$coalescence_8h.html" title=" " alt="" coords="31,363,183,389"/>
-<area shape="rect" id="node7" href="$modules_2simulator_2simulator_8h.html" title=" " alt="" coords="66,184,241,225"/>
-<area shape="rect" id="node9" href="$modules_2simulator_2utils_8h.html" title=" " alt="" coords="293,273,467,315"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="201,445,322,471"/>
-<area shape="rect" id="node6" href="$coalescence__test_8cpp.html" title=" " alt="" coords="23,437,177,479"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="182,527,341,583"/>
-<area shape="rect" id="node8" href="$distance__to__parent_8h.html" title=" " alt="" coords="23,273,217,315"/>
+<map id="quetzal/include/quetzal/coalescence/algorithms/merge.h" name="quetzal/include/quetzal/coalescence/algorithms/merge.h">
+<area shape="rect" id="node1" title=" " alt="" coords="214,5,377,61"/>
+<area shape="rect" id="node2" href="$merger_8h.html" title=" " alt="" coords="218,109,373,165"/>
+<area shape="rect" id="node3" href="$_discrete_time_wright_fisher_8h.html" title=" " alt="" coords="118,213,316,269"/>
+<area shape="rect" id="node5" href="$coalescence_8h.html" title=" " alt="" coords="25,421,180,463"/>
+<area shape="rect" id="node9" href="$_forward_backward_spatially_explicit_8h.html" title=" " alt="" coords="255,317,494,373"/>
+<area shape="rect" id="node10" href="$simulator_2utils_8h.html" title=" " alt="" coords="432,421,586,463"/>
+<area shape="rect" id="node4" href="$distance__to__parent_8h.html" title=" " alt="" coords="25,317,180,373"/>
+<area shape="rect" id="node6" href="$quetzal_8h.html" title=" " alt="" coords="250,511,405,552"/>
+<area shape="rect" id="node8" href="$coalescence__test_8cpp.html" title=" " alt="" coords="26,511,179,552"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="247,600,408,641"/>
 </map>

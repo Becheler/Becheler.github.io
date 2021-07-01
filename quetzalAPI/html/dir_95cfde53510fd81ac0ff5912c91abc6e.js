@@ -25,8 +25,7 @@ var dir_95cfde53510fd81ac0ff5912c91abc6e =
     [ "History.h", "_history_8h.html", null ],
     [ "PointWithId.h", "_point_with_id_8h.html", "_point_with_id_8h" ],
     [ "policy.h", "policy_8h.html", [
-      [ "neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration.html", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration" ],
-      [ "light_neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration.html", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration" ]
+      [ "neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration.html", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration" ]
     ] ],
     [ "PopulationSize.h", "_population_size_8h.html", null ],
     [ "PopulationSize2.h", "_population_size2_8h.html", null ]

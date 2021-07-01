@@ -65,9 +65,9 @@ var NAVTREEINDEX =
 "_allele_8h.html",
 "classgdalcpp_1_1_feature_a7e4add3fcfe6beccc720aff2f6977926.html#a7e4add3fcfe6beccc720aff2f6977926",
 "classquetzal_1_1demography_1_1dispersal_1_1_gaussian_mixture_1_1param__type_ab02bf18710db156be34337927449ee00.html#ab02bf18710db156be34337927449ee00",
-"coalescence__test_8cpp_a450fe4766dc351b91fc7bca59e670c57.html#a450fe4766dc351b91fc7bca59e670c57",
-"group__coal__algorithms_gac90d96d04f0434b2a32417428b2c86ce.html#gac90d96d04f0434b2a32417428b2c86ce",
-"structquetzal_1_1expressive_1_1compose__t.html"
+"coalescence__test_8cpp_a9af2aa70abf3a3228bfd68c7fe94d3f4.html#a9af2aa70abf3a3228bfd68c7fe94d3f4",
+"group__demography.html",
+"structquetzal_1_1expressive_1_1compose__t_3_01_outer_00_01_inner_01_4_a37a323e1b260b51fc87acfe8f077508b.html#a37a323e1b260b51fc87acfe8f077508b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

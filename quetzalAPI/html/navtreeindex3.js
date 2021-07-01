@@ -1,11 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"coalescence__test_8cpp_a450fe4766dc351b91fc7bca59e670c57.html#a450fe4766dc351b91fc7bca59e670c57":[4,0,0,3,1,0,4],
-"coalescence__test_8cpp_a4eac38b5b9566a25bd5a8e356ef41050.html#a4eac38b5b9566a25bd5a8e356ef41050":[4,0,0,3,1,0,3],
-"coalescence__test_8cpp_a6b2a3852db8bb19ab6909bac01859985.html#a6b2a3852db8bb19ab6909bac01859985":[4,0,0,3,1,0,1],
-"coalescence__test_8cpp_a6c17be4796516f10125732db48619487.html#a6c17be4796516f10125732db48619487":[4,0,0,3,1,0,12],
-"coalescence__test_8cpp_a80a4dff063a1107ea80e87bc25c1f354.html#a80a4dff063a1107ea80e87bc25c1f354":[4,0,0,3,1,0,9],
-"coalescence__test_8cpp_a894b46a4a36a00e19c0a372edb1a7ef2.html#a894b46a4a36a00e19c0a372edb1a7ef2":[4,0,0,3,1,0,16],
 "coalescence__test_8cpp_a9af2aa70abf3a3228bfd68c7fe94d3f4.html#a9af2aa70abf3a3228bfd68c7fe94d3f4":[4,0,0,3,1,0,13],
 "coalescence__test_8cpp_a9fda44de894410293295dd4df8389d48.html#a9fda44de894410293295dd4df8389d48":[4,0,0,3,1,0,6],
 "coalescence__test_8cpp_acf60b313ba363c2ded2ecd57c8a3127f.html#acf60b313ba363c2ded2ecd57c8a3127f":[4,0,0,3,1,0,14],
@@ -167,16 +161,16 @@ var NAVTREEINDEX3 =
 "expressive_8h.html":[4,0,0,2,0,14],
 "expressive_8h_source.html":[4,0,0,2,0,14],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_a.html":[3,3,0,1],
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
 "functions_d.html":[3,3,0,4],
 "functions_e.html":[3,3,0,5],
 "functions_f.html":[3,3,0,6],
-"functions_func.html":[3,3,1],
 "functions_func.html":[3,3,1,0],
+"functions_func.html":[3,3,1],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
@@ -249,5 +243,11 @@ var NAVTREEINDEX3 =
 "group__abc_ga3bc932cd81941359d2d800b45df064f4.html#ga3bc932cd81941359d2d800b45df064f4":[1,6,2],
 "group__coal__algorithms.html":[1,5,0],
 "group__coal__algorithms_ga45cd8b6f39a5b41d4667f3bed3fc13fe.html#ga45cd8b6f39a5b41d4667f3bed3fc13fe":[1,5,0,1],
-"group__coal__algorithms_ga58ed2931bdac16146460718751d8647c.html#ga58ed2931bdac16146460718751d8647c":[1,5,0,0]
+"group__coal__algorithms_ga58ed2931bdac16146460718751d8647c.html#ga58ed2931bdac16146460718751d8647c":[1,5,0,0],
+"group__coal__algorithms_gac90d96d04f0434b2a32417428b2c86ce.html#gac90d96d04f0434b2a32417428b2c86ce":[1,5,0,2],
+"group__coal__algorithms_gae87571745b7e6a24a1c75b4e7d8d6467.html#gae87571745b7e6a24a1c75b4e7d8d6467":[1,5,0,3],
+"group__coal__containers.html":[1,5,1],
+"group__coal__policies.html":[1,5,2],
+"group__coal__spectrum.html":[1,5,3],
+"group__coalescence.html":[1,5]
 };

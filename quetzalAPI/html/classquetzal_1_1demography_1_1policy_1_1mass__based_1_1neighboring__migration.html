@@ -121,14 +121,31 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4ad7492deca53600eaec3d68268a9a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aa4ad7492deca53600eaec3d68268a9a0.html#aa4ad7492deca53600eaec3d68268a9a0">neighboring_migration</a> (std::vector&lt; <a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9ca933f5e793da556f517467b6d27bd7.html#a9ca933f5e793da556f517467b6d27bd7">coord_type</a> &gt; const &amp;coords, double emigrant_rate, F1 friction, F2 get_neighbors)</td></tr>
-<tr class="separator:aa4ad7492deca53600eaec3d68268a9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7dcb1ffac504d573c98a24917c9357"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9f7dcb1ffac504d573c98a24917c9357.html#a9f7dcb1ffac504d573c98a24917c9357">neighboring_migration</a> (double emigrant_rate, F1 friction, F2 get_neighbors)</td></tr>
+<tr class="separator:a9f7dcb1ffac504d573c98a24917c9357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3e3be3cf47c4d77807cf2547537067"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9ca933f5e793da556f517467b6d27bd7.html#a9ca933f5e793da556f517467b6d27bd7">coord_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aca3e3be3cf47c4d77807cf2547537067.html#aca3e3be3cf47c4d77807cf2547537067">arrival_space</a> (<a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9ca933f5e793da556f517467b6d27bd7.html#a9ca933f5e793da556f517467b6d27bd7">coord_type</a> const &amp;x) const</td></tr>
+<tr class="memdesc:aca3e3be3cf47c4d77807cf2547537067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines arrival space (that is in this class case, vecinity plus focal deme) from coordinate x.  <a href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aca3e3be3cf47c4d77807cf2547537067.html#aca3e3be3cf47c4d77807cf2547537067">More...</a><br /></td></tr>
 <tr class="separator:aca3e3be3cf47c4d77807cf2547537067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa690de31c4dc78bc9e303b3706b2b3f2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aa690de31c4dc78bc9e303b3706b2b3f2.html#aa690de31c4dc78bc9e303b3706b2b3f2">operator()</a> (<a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9ca933f5e793da556f517467b6d27bd7.html#a9ca933f5e793da556f517467b6d27bd7">coord_type</a> const &amp;from, <a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9ca933f5e793da556f517467b6d27bd7.html#a9ca933f5e793da556f517467b6d27bd7">coord_type</a> const &amp;to)</td></tr>
+<tr class="memdesc:aa690de31c4dc78bc9e303b3706b2b3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migration rate, operator interfaceable with <a class="el" href="classquetzal_1_1demography_1_1_history.html">History</a> algorithm.  <a href="classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aa690de31c4dc78bc9e303b3706b2b3f2.html#aa690de31c4dc78bc9e303b3706b2b3f2">More...</a><br /></td></tr>
 <tr class="separator:aa690de31c4dc78bc9e303b3706b2b3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Space, typename F1, typename F2&gt;<br />
+class quetzal::demography::policy::mass_based::neighboring_migration&lt; Space, F1, F2 &gt;</h3>
+
+<p class="">Dispersal kernel compatible with the mass-based policy, but that restricts migration to the vecinity of each deme.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>For more flexibility, vecinity is defined by an external callable (does not have to be only the four nearest neighbours)</dd></dl>
+<p>This implementation should be chosen when the scale of the migration is much less than the scale of a deme. This class is not meant to be used directly, but instanciated through the use of the helper function <a class="el" href="classquetzal_1_1demography_1_1policy_1_1mass__based_a6958df43aad1d8207affabdac4df86b3.html#a6958df43aad1d8207affabdac4df86b3">make_neighboring_migration()</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>a container of geopgrahic points </td></tr>
+    <tr><td class="paramname">f</td><td>a functor giving the migration coefficient between two points The signature should be equivalent to double f(T const&amp; x, T const&amp; Y) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A dispersal kernel </dd></dl>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>quetzal/include/quetzal/demography/<a class="el" href="policy_8h_source.html">policy.h</a></li>
 </ul>
 </div><!-- contents -->

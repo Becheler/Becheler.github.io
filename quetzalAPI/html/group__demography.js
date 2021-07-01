@@ -54,22 +54,15 @@ var group__demography =
       [ "make_distance_based_dispersal", "classquetzal_1_1demography_1_1policy_1_1individual__based_a9783108382a3f08ea951705946485e4f.html#a9783108382a3f08ea951705946485e4f", null ]
     ] ],
     [ "mass_based", "classquetzal_1_1demography_1_1policy_1_1mass__based.html", [
-      [ "light_neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration.html", [
-        [ "coord_type", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration_a37476fc00655e64c3836408a0745f276.html#a37476fc00655e64c3836408a0745f276", null ],
-        [ "light_neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration_a150b28cc2c5420a28e897dfa42819be6.html#a150b28cc2c5420a28e897dfa42819be6", null ],
-        [ "arrival_space", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration_abd3fbe7f98aaf2a4cff1cb4b0be719db.html#abd3fbe7f98aaf2a4cff1cb4b0be719db", null ],
-        [ "operator()", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1light__neighboring__migration_a621993ed2c9bc648e1de9e59592e3f67.html#a621993ed2c9bc648e1de9e59592e3f67", null ]
-      ] ],
       [ "neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration.html", [
         [ "coord_type", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9ca933f5e793da556f517467b6d27bd7.html#a9ca933f5e793da556f517467b6d27bd7", null ],
-        [ "neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aa4ad7492deca53600eaec3d68268a9a0.html#aa4ad7492deca53600eaec3d68268a9a0", null ],
+        [ "neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9f7dcb1ffac504d573c98a24917c9357.html#a9f7dcb1ffac504d573c98a24917c9357", null ],
         [ "arrival_space", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aca3e3be3cf47c4d77807cf2547537067.html#aca3e3be3cf47c4d77807cf2547537067", null ],
         [ "operator()", "classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_aa690de31c4dc78bc9e303b3706b2b3f2.html#aa690de31c4dc78bc9e303b3706b2b3f2", null ]
       ] ],
       [ "value_type", "classquetzal_1_1demography_1_1policy_1_1mass__based_a42ec5ed40605367a4797c30bce02068d.html#a42ec5ed40605367a4797c30bce02068d", null ],
       [ "make_distance_based_dispersal", "classquetzal_1_1demography_1_1policy_1_1mass__based_a126340c28e4c3461b0c890ec47d5cbfe.html#a126340c28e4c3461b0c890ec47d5cbfe", null ],
-      [ "make_light_neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_acbc31a86e27bdf3cff6eae942ae4be86.html#acbc31a86e27bdf3cff6eae942ae4be86", null ],
-      [ "make_neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_adb471a810f537d9cb9b44588ecce976d.html#adb471a810f537d9cb9b44588ecce976d", null ],
+      [ "make_neighboring_migration", "classquetzal_1_1demography_1_1policy_1_1mass__based_a6958df43aad1d8207affabdac4df86b3.html#a6958df43aad1d8207affabdac4df86b3", null ],
       [ "make_sparse_distance_based_dispersal", "classquetzal_1_1demography_1_1policy_1_1mass__based_a1e650ce25e37e74e6f4deedf6002cc62.html#a1e650ce25e37e74e6f4deedf6002cc62", null ]
     ] ],
     [ "PopulationSize", "classquetzal_1_1demography_1_1_population_size.html", [

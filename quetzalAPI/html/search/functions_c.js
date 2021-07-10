@@ -8,7 +8,7 @@ var searchData=
   ['nblocks',['nBlocks',['../class_restricted_growth_string_a0a0c79e0c219c86f7d87b397a9e3bc43.html#a0a0c79e0c219c86f7d87b397a9e3bc43',1,'RestrictedGrowthString']]],
   ['nclusters',['nClusters',['../class_fuzzy_partition_ac404a36e7745132bd4b2ee27f9db72f7.html#ac404a36e7745132bd4b2ee27f9db72f7',1,'FuzzyPartition']]],
   ['neighbor_5fmigration',['neighbor_migration',['../structquetzal_1_1neighbor__migration_aa120bd89264767d08f138b80820a89c5.html#aa120bd89264767d08f138b80820a89c5',1,'quetzal::neighbor_migration']]],
-  ['neighboring_5fmigration',['neighboring_migration',['../classquetzal_1_1demography_1_1policy_1_1mass__based_1_1neighboring__migration_a9f7dcb1ffac504d573c98a24917c9357.html#a9f7dcb1ffac504d573c98a24917c9357',1,'quetzal::demography::policy::mass_based::neighboring_migration']]],
+  ['neighboring_5fmigration',['neighboring_migration',['../classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a20d6cf9216facc12d21533941cbad54c.html#a20d6cf9216facc12d21533941cbad54c',1,'quetzal::demography::dispersal_policy::mass_based::neighboring_migration']]],
   ['nelements',['nElements',['../class_fuzzy_partition_aed2056aeb533f5cbaa8af8ddeb66a018.html#aed2056aeb533f5cbaa8af8ddeb66a018',1,'FuzzyPartition']]],
   ['ngenotypedloci',['nGenotypedLoci',['../classquetzal_1_1genetics_1_1_diploid_individual_ab6ba289d49c97827f7d1785a089be034.html#ab6ba289d49c97827f7d1785a089be034',1,'quetzal::genetics::DiploidIndividual']]]
 ];

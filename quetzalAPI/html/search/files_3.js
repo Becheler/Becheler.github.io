@@ -8,6 +8,7 @@ var searchData=
   ['discretedistribution_2eh',['DiscreteDistribution.h',['../_discrete_distribution_8h.html',1,'']]],
   ['discretelandscape_2eh',['DiscreteLandscape.h',['../_discrete_landscape_8h.html',1,'']]],
   ['discretetimewrightfisher_2eh',['DiscreteTimeWrightFisher.h',['../_discrete_time_wright_fisher_8h.html',1,'']]],
-  ['dispersal_2eh',['dispersal.h',['../dispersal_8h.html',1,'']]],
+  ['dispersal_5fkernel_2eh',['dispersal_kernel.h',['../dispersal__kernel_8h.html',1,'']]],
+  ['dispersal_5fpolicy_2eh',['dispersal_policy.h',['../dispersal__policy_8h.html',1,'']]],
   ['distance_5fto_5fparent_2eh',['distance_to_parent.h',['../distance__to__parent_8h.html',1,'']]]
 ];

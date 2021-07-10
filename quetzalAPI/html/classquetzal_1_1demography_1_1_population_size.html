@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1_populat
 <p>Population size distribution in time and space.  
  <a href="classquetzal_1_1demography_1_1_population_size.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_population_size_8h_source.html">PopulationSize.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_population_size_map_implementation_8h_source.html">PopulationSizeMapImplementation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -125,12 +125,6 @@ Public Types</h2></td></tr>
 <tr class="separator:a06c9e63a70bc3b75ac641582a4e83356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69c1faba753f2cd7b29fad64b745f434"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434">value_type</a> = Value</td></tr>
 <tr class="separator:a69c1faba753f2cd7b29fad64b745f434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb5f1b0e23a30133fc5ed6a8d8db6778"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_acb5f1b0e23a30133fc5ed6a8d8db6778.html#acb5f1b0e23a30133fc5ed6a8d8db6778">time_type</a> = unsigned int</td></tr>
-<tr class="separator:acb5f1b0e23a30133fc5ed6a8d8db6778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c9e63a70bc3b75ac641582a4e83356"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356">coord_type</a> = Space</td></tr>
-<tr class="separator:a06c9e63a70bc3b75ac641582a4e83356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92928ac3ae718368c9e5cae7b39185a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a92928ac3ae718368c9e5cae7b39185a3.html#a92928ac3ae718368c9e5cae7b39185a3">value_type</a> = double</td></tr>
-<tr class="separator:a92928ac3ae718368c9e5cae7b39185a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -173,21 +167,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70b555871e321ceb7f2a4272431c4a94"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356">coord_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a70b555871e321ceb7f2a4272431c4a94.html#a70b555871e321ceb7f2a4272431c4a94">definition_space</a> (<a class="el" href="classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c">time_type</a> const &amp;t) const</td></tr>
 <tr class="memdesc:a70b555871e321ceb7f2a4272431c4a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the demes at which the population size was defined at time t.  <a href="classquetzal_1_1demography_1_1_population_size_a70b555871e321ceb7f2a4272431c4a94.html#a70b555871e321ceb7f2a4272431c4a94">More...</a><br /></td></tr>
 <tr class="separator:a70b555871e321ceb7f2a4272431c4a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc1b6e780165c2cad29c7e0b0fa469c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a1cc1b6e780165c2cad29c7e0b0fa469c.html#a1cc1b6e780165c2cad29c7e0b0fa469c">PopulationSize</a> (unsigned int nb_demes, unsigned_int nb_generations)</td></tr>
-<tr class="memdesc:a1cc1b6e780165c2cad29c7e0b0fa469c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classquetzal_1_1demography_1_1_population_size_a1cc1b6e780165c2cad29c7e0b0fa469c.html#a1cc1b6e780165c2cad29c7e0b0fa469c">More...</a><br /></td></tr>
-<tr class="separator:a1cc1b6e780165c2cad29c7e0b0fa469c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20581818b28b9672bf330e1cdcb41632"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a20581818b28b9672bf330e1cdcb41632.html#a20581818b28b9672bf330e1cdcb41632">get</a> (<a class="el" href="classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c">time_type</a> const &amp;t) const</td></tr>
-<tr class="memdesc:a20581818b28b9672bf330e1cdcb41632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get population size value at deme x at time t.  <a href="classquetzal_1_1demography_1_1_population_size_a20581818b28b9672bf330e1cdcb41632.html#a20581818b28b9672bf330e1cdcb41632">More...</a><br /></td></tr>
-<tr class="separator:a20581818b28b9672bf330e1cdcb41632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a39d585158f04ec7c6569d94f8770d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a8a39d585158f04ec7c6569d94f8770d2.html#a8a39d585158f04ec7c6569d94f8770d2">operator()</a> (<a class="el" href="classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c">time_type</a> const &amp;t) const</td></tr>
-<tr class="memdesc:a8a39d585158f04ec7c6569d94f8770d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get population size at deme x at time t.  <a href="classquetzal_1_1demography_1_1_population_size_a8a39d585158f04ec7c6569d94f8770d2.html#a8a39d585158f04ec7c6569d94f8770d2">More...</a><br /></td></tr>
-<tr class="separator:a8a39d585158f04ec7c6569d94f8770d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43b46de20a3ac8b342ec752b8b3fb742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a43b46de20a3ac8b342ec752b8b3fb742.html#a43b46de20a3ac8b342ec752b8b3fb742">operator()</a> (<a class="el" href="classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c">time_type</a> const &amp;t)</td></tr>
-<tr class="memdesc:a43b46de20a3ac8b342ec752b8b3fb742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Population size at deme x at time t.  <a href="classquetzal_1_1demography_1_1_population_size_a43b46de20a3ac8b342ec752b8b3fb742.html#a43b46de20a3ac8b342ec752b8b3fb742">More...</a><br /></td></tr>
-<tr class="separator:a43b46de20a3ac8b342ec752b8b3fb742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6153de7f2f98b6a51b7393403a8643fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_a6153de7f2f98b6a51b7393403a8643fb.html#a6153de7f2f98b6a51b7393403a8643fb">set</a> (<a class="el" href="classquetzal_1_1demography_1_1_population_size_a06c9e63a70bc3b75ac641582a4e83356.html#a06c9e63a70bc3b75ac641582a4e83356">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1_population_size_ab65cd7d432de7275d1be5af6b972b39c.html#ab65cd7d432de7275d1be5af6b972b39c">time_type</a> const &amp;t, <a class="el" href="classquetzal_1_1demography_1_1_population_size_a69c1faba753f2cd7b29fad64b745f434.html#a69c1faba753f2cd7b29fad64b745f434">value_type</a> N)</td></tr>
-<tr class="memdesc:a6153de7f2f98b6a51b7393403a8643fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set population size value at deme x at time t.  <a href="classquetzal_1_1demography_1_1_population_size_a6153de7f2f98b6a51b7393403a8643fb.html#a6153de7f2f98b6a51b7393403a8643fb">More...</a><br /></td></tr>
-<tr class="separator:a6153de7f2f98b6a51b7393403a8643fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Space, typename Time, typename Value&gt;<br />
@@ -206,15 +185,8 @@ class quetzal::demography::PopulationSize&lt; Space, Time, Value &gt;</h3>
 Example</h1>
 <div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
 Output</h1>
-<div class="fragment"></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Space</td><td>Demes identifiers. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>quetzal/include/quetzal/demography/<a class="el" href="_population_size_8h_source.html">PopulationSize.h</a></li>
-<li>quetzal/include/quetzal/demography/<a class="el" href="_population_size2_8h_source.html">PopulationSize2.h</a></li>
+<div class="fragment"></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>quetzal/include/quetzal/demography/<a class="el" href="_population_size_map_implementation_8h_source.html">PopulationSizeMapImplementation.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

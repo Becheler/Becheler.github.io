@@ -114,9 +114,11 @@ $(document).ready(function(){initNavTree('namespacequetzal_1_1demography.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacequetzal_1_1demography_1_1dispersal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacequetzal_1_1demography_1_1dispersal.html">dispersal</a></td></tr>
+<tr class="memitem:namespacequetzal_1_1demography_1_1dispersal__kernel"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacequetzal_1_1demography_1_1dispersal__kernel.html">dispersal_kernel</a></td></tr>
+<tr class="memdesc:namespacequetzal_1_1demography_1_1dispersal__kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for defining dispersal location kernels as in Nathan et al 2012, table 15.1. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacequetzal_1_1demography_1_1policy"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacequetzal_1_1demography_1_1policy.html">policy</a></td></tr>
+<tr class="memitem:namespacequetzal_1_1demography_1_1dispersal__policy"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacequetzal_1_1demography_1_1dispersal__policy.html">dispersal_policy</a></td></tr>
+<tr class="memdesc:namespacequetzal_1_1demography_1_1dispersal__policy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various implementations of dispersal process implementing an interface compatible with the requirements of the <a class="el" href="classquetzal_1_1demography_1_1_history.html">quetzal::demography::History</a> simulation algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -130,14 +132,19 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_history.html">History</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unspecialized class (CRTP design pattern)  <a href="classquetzal_1_1demography_1_1_history.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01policy_1_1individual__based_01_4.html">History&lt; Space, Time, policy::individual_based &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial specialization where each individual is dispersed individually.  <a href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01policy_1_1individual__based_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01dispersal__policy_1_1individual__based_01_4.html">History&lt; Space, Time, dispersal_policy::individual_based &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial specialization where each individual is dispersed individually.  <a href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01dispersal__policy_1_1individual__based_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01policy_1_1mass__based_01_4.html">History&lt; Space, Time, policy::mass_based &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial specialization where populations levels are assumed high enough to be considered as divisible masses.  <a href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01policy_1_1mass__based_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01dispersal__policy_1_1mass__based_01_4.html">History&lt; Space, Time, dispersal_policy::mass_based &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial specialization where populations levels are assumed high enough to be considered as divisible masses.  <a href="classquetzal_1_1demography_1_1_history_3_01_space_00_01_time_00_01dispersal__policy_1_1mass__based_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size.html">PopulationSize</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Population size distribution in time and space.  <a href="classquetzal_1_1demography_1_1_population_size.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1_population_size_vector_implementation.html">PopulationSizeVectorImplementation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Population size distribution in time and space.  <a href="classquetzal_1_1demography_1_1_population_size_vector_implementation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1storage__policy.html">storage_policy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>

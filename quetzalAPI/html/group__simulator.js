@@ -8,20 +8,20 @@ var group__simulator =
       [ "sample_waiting_time", "classquetzal_1_1_discrete_time_wright_fisher_a1757f5500b300e43264bbb224109bc02.html#a1757f5500b300e43264bbb224109bc02", null ]
     ] ],
     [ "ForwardBackwardSpatiallyExplicit", "classquetzal_1_1_forward_backward_spatially_explicit.html", [
-      [ "coord_type", "classquetzal_1_1_forward_backward_spatially_explicit_af963f233edbe4afe63b75d4d3c59d6e3.html#af963f233edbe4afe63b75d4d3c59d6e3", null ],
-      [ "forest_type", "classquetzal_1_1_forward_backward_spatially_explicit_a9e47db0821165c55d8404f41c85e9b80.html#a9e47db0821165c55d8404f41c85e9b80", null ],
-      [ "N_value_type", "classquetzal_1_1_forward_backward_spatially_explicit_ac1473ed413d0c29bc8defd7825f28691.html#ac1473ed413d0c29bc8defd7825f28691", null ],
-      [ "strategy_type", "classquetzal_1_1_forward_backward_spatially_explicit_a64e3e6df3ce5e62603a9d0df80a7ba0c.html#a64e3e6df3ce5e62603a9d0df80a7ba0c", null ],
-      [ "time_type", "classquetzal_1_1_forward_backward_spatially_explicit_adfeb7d4102c2c0fbe12abb23806ad3d6.html#adfeb7d4102c2c0fbe12abb23806ad3d6", null ],
-      [ "ForwardBackwardSpatiallyExplicit", "classquetzal_1_1_forward_backward_spatially_explicit_afadc3849fc9ec6dd5ccc449326440545.html#afadc3849fc9ec6dd5ccc449326440545", null ],
-      [ "coalesce_along_spatial_history", "classquetzal_1_1_forward_backward_spatially_explicit_af4f284dfbfaece67938e04bc260c8f18.html#af4f284dfbfaece67938e04bc260c8f18", null ],
-      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_a98604a4ca803659379ec13f1cc5ec546.html#a98604a4ca803659379ec13f1cc5ec546", null ],
-      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_a24cca7a182d3ae4b739c5a93c8190f7b.html#a24cca7a182d3ae4b739c5a93c8190f7b", null ],
-      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_a517b6696f284d16cd012f575502f1d5d.html#a517b6696f284d16cd012f575502f1d5d", null ],
-      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_aaae2ed8b93d1d3835f79e252a2b20565.html#aaae2ed8b93d1d3835f79e252a2b20565", null ],
-      [ "expand_demography", "classquetzal_1_1_forward_backward_spatially_explicit_a35492cdf2a21a76fd4f635f68f9824cf.html#a35492cdf2a21a76fd4f635f68f9824cf", null ],
-      [ "make_forest_and_coalesce_along_spatial_history", "classquetzal_1_1_forward_backward_spatially_explicit_a7bb095c8d28792d850e99ee2cee31c80.html#a7bb095c8d28792d850e99ee2cee31c80", null ],
-      [ "make_forest_using_sampling_time_and_coalesce_along_spatial_history", "classquetzal_1_1_forward_backward_spatially_explicit_a38074555878dc0eb3837db71d6f70946.html#a38074555878dc0eb3837db71d6f70946", null ],
-      [ "pop_size_history", "classquetzal_1_1_forward_backward_spatially_explicit_a6eb6587172bdbb639c23e22b62aab613.html#a6eb6587172bdbb639c23e22b62aab613", null ]
+      [ "coord_type", "classquetzal_1_1_forward_backward_spatially_explicit_aaee17ac8ea32a5db23fc068971f22564.html#aaee17ac8ea32a5db23fc068971f22564", null ],
+      [ "dispersal_policy_type", "classquetzal_1_1_forward_backward_spatially_explicit_ad266a2e607278b869212d8ee946b89f4.html#ad266a2e607278b869212d8ee946b89f4", null ],
+      [ "forest_type", "classquetzal_1_1_forward_backward_spatially_explicit_a8ebfb9ce69578deb566ff40b2676088e.html#a8ebfb9ce69578deb566ff40b2676088e", null ],
+      [ "N_value_type", "classquetzal_1_1_forward_backward_spatially_explicit_a3a258fd2950e2d974457c6e8dd941e5e.html#a3a258fd2950e2d974457c6e8dd941e5e", null ],
+      [ "time_type", "classquetzal_1_1_forward_backward_spatially_explicit_a5fbd956a83e7e8ee9e28e203c6bfa177.html#a5fbd956a83e7e8ee9e28e203c6bfa177", null ],
+      [ "ForwardBackwardSpatiallyExplicit", "classquetzal_1_1_forward_backward_spatially_explicit_adb8474c5c66991e5c7be6226c42a8b6f.html#adb8474c5c66991e5c7be6226c42a8b6f", null ],
+      [ "coalesce_along_spatial_history", "classquetzal_1_1_forward_backward_spatially_explicit_afac51da28d829d5f401e9cdda8f6616f.html#afac51da28d829d5f401e9cdda8f6616f", null ],
+      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_aff3306d2cf34dfb9577fc2e3b0b1b52f.html#aff3306d2cf34dfb9577fc2e3b0b1b52f", null ],
+      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_a985f808806ff68db361bca5dc0d137ae.html#a985f808806ff68db361bca5dc0d137ae", null ],
+      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_ab776ee1ea8d187fbc70e15ab93b91c49.html#ab776ee1ea8d187fbc70e15ab93b91c49", null ],
+      [ "coalesce_to_mrca", "classquetzal_1_1_forward_backward_spatially_explicit_a3d217cc52c5126f77207a37a2adcf040.html#a3d217cc52c5126f77207a37a2adcf040", null ],
+      [ "make_forest_and_coalesce_along_spatial_history", "classquetzal_1_1_forward_backward_spatially_explicit_a429984c5d78e2b1385749d42b79df030.html#a429984c5d78e2b1385749d42b79df030", null ],
+      [ "make_forest_using_sampling_time_and_coalesce_along_spatial_history", "classquetzal_1_1_forward_backward_spatially_explicit_ab1daf110230673bc437266dc03b9d784.html#ab1daf110230673bc437266dc03b9d784", null ],
+      [ "pop_size_history", "classquetzal_1_1_forward_backward_spatially_explicit_a8de3f9967123cc24c403deb79871c232.html#a8de3f9967123cc24c403deb79871c232", null ],
+      [ "simulate_forward_demography", "classquetzal_1_1_forward_backward_spatially_explicit_a1c02f6837a041942a963c2b3e2c227a1.html#a1c02f6837a041942a963c2b3e2c227a1", null ]
     ] ]
 ];

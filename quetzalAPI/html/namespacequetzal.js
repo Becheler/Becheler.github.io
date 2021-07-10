@@ -9,6 +9,7 @@ var namespacequetzal =
     [ "mutation_kernel", "namespacequetzal_1_1mutation__kernel.html", "namespacequetzal_1_1mutation__kernel" ],
     [ "random", "namespacequetzal_1_1random.html", "namespacequetzal_1_1random" ],
     [ "sampling_scheme", "namespacequetzal_1_1sampling__scheme.html", "namespacequetzal_1_1sampling__scheme" ],
+    [ "utils", "namespacequetzal_1_1utils.html", "namespacequetzal_1_1utils" ],
     [ "cell_JC69", "classquetzal_1_1cell___j_c69.html", "classquetzal_1_1cell___j_c69" ],
     [ "DiscreteTimeWrightFisher", "classquetzal_1_1_discrete_time_wright_fisher.html", "classquetzal_1_1_discrete_time_wright_fisher" ],
     [ "ForwardBackwardSpatiallyExplicit", "classquetzal_1_1_forward_backward_spatially_explicit.html", "classquetzal_1_1_forward_backward_spatially_explicit" ],

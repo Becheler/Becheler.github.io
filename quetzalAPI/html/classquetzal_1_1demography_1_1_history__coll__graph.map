@@ -1,8 +1,8 @@
-<map id="quetzal::demography::History&lt; Space, Time, policy &gt;" name="quetzal::demography::History&lt; Space, Time, policy &gt;">
-<area shape="rect" id="node1" title="Unspecialized class (CRTP design pattern)" alt="" coords="523,97,685,153"/>
-<area shape="rect" id="node2" href="$classquetzal_1_1demography_1_1_base_history.html" title=" " alt="" coords="319,97,473,153"/>
-<area shape="rect" id="node3" title=" " alt="" coords="16,5,203,47"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,71,213,112"/>
-<area shape="rect" id="node5" title=" " alt="" coords="35,136,184,177"/>
-<area shape="rect" id="node6" title=" " alt="" coords="54,202,165,229"/>
+<map id="quetzal::demography::History&lt; Space, Time, DispersalPolicy &gt;" name="quetzal::demography::History&lt; Space, Time, DispersalPolicy &gt;">
+<area shape="rect" id="node1" title="Unspecialized class (CRTP design pattern)" alt="" coords="513,97,676,153"/>
+<area shape="rect" id="node2" href="$classquetzal_1_1demography_1_1_base_history.html" title=" " alt="" coords="297,97,464,153"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="24,71,173,112"/>
+<area shape="rect" id="node5" title=" " alt="" coords="22,136,175,177"/>
+<area shape="rect" id="node6" title=" " alt="" coords="43,202,154,229"/>
 </map>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['abc',['abc',['../namespacequetzal_1_1abc.html',1,'quetzal']]],
   ['coalescence',['coalescence',['../namespacequetzal_1_1coalescence.html',1,'quetzal']]],
   ['demography',['demography',['../namespacequetzal_1_1demography.html',1,'quetzal']]],
   ['dispersal_5fkernel',['dispersal_kernel',['../namespacequetzal_1_1demography_1_1dispersal__kernel.html',1,'quetzal::demography']]],

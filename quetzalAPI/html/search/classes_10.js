@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['referencetable',['ReferenceTable',['../class_reference_table.html',1,'']]],
   ['resolution',['Resolution',['../classquetzal_1_1geography_1_1_resolution.html',1,'quetzal::geography']]],
   ['resolution_3c_20decimal_5fdegree_20_3e',['Resolution&lt; decimal_degree &gt;',['../classquetzal_1_1geography_1_1_resolution.html',1,'quetzal::geography']]],
   ['restrictedgrowthstring',['RestrictedGrowthString',['../class_restricted_growth_string.html',1,'']]],

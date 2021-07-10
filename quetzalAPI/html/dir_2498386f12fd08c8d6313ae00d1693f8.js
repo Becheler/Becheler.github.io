@@ -1,6 +1,5 @@
 var dir_2498386f12fd08c8d6313ae00d1693f8 =
 [
-    [ "abc", "dir_20a0c4f08d1222103cb84cdc1be4f1b7.html", "dir_20a0c4f08d1222103cb84cdc1be4f1b7" ],
     [ "coalescence", "dir_f67eb180340bc8fd414c01e23aba83d2.html", "dir_f67eb180340bc8fd414c01e23aba83d2" ],
     [ "data", "dir_3b69f90b48ef73631e8f99c0f30591c7.html", "dir_3b69f90b48ef73631e8f99c0f30591c7" ],
     [ "demography", "dir_95cfde53510fd81ac0ff5912c91abc6e.html", "dir_95cfde53510fd81ac0ff5912c91abc6e" ],

@@ -14,7 +14,6 @@ var annotated_dup =
     [ "Matrix", "class_matrix.html", "class_matrix" ],
     [ "Munkres", "class_munkres.html", "class_munkres" ],
     [ "Operator", "class_operator.html", null ],
-    [ "ReferenceTable", "class_reference_table.html", "class_reference_table" ],
     [ "RestrictedGrowthString", "class_restricted_growth_string.html", "class_restricted_growth_string" ],
     [ "transition_matrix", "structtransition__matrix.html", "structtransition__matrix" ]
 ];

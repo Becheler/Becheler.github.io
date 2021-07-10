@@ -54,9 +54,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Functions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -65,10 +63,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_allele_8h.html",
-"classgdalcpp_1_1detail_1_1_driver_a14cf07fd865770d588e54ba4a7fee44a.html#a14cf07fd865770d588e54ba4a7fee44a",
-"classquetzal_1_1demography_1_1dispersal__kernel_1_1_undefined_inverse_power_law_1_1param__type_afdf84e8a5b9a845a763b25e87c4a8f7b.html#afdf84e8a5b9a845a763b25e87c4a8f7b",
-"dir_8188774d03b05a0fb3d7914eca2b8404.html",
-"sampling__scheme_8h_source.html"
+"classquetzal_1_1coalescence_1_1_forest_a34a13c58c832bc0156914512b38ffdcf.html#a34a13c58c832bc0156914512b38ffdcf",
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a0e24a3e974c82918b74f0fe7cc793066.html#a0e24a3e974c82918b74f0fe7cc793066",
+"expressive_2expressive_8h.html#ae72816f9bacbce01fcc34e2dbe4f548b",
+"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true_a6a29bf1a1c3efa589de7d7a374266b1c.html#a6a29bf1a1c3efa589de7d7a374266b1c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

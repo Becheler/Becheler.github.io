@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['outer_1021',['outer',['../structquetzal_1_1expressive_1_1compose__t_af9a0007b564bea86b63b979c739e17f8.html#af9a0007b564bea86b63b979c739e17f8',1,'quetzal::expressive::compose_t::outer()'],['../structquetzal_1_1expressive_1_1compose__t_3_01_outer_00_01_inner_01_4_a008d5007ab1aeb642028f7a2e988cef9.html#a008d5007ab1aeb642028f7a2e988cef9',1,'quetzal::expressive::compose_t&lt; Outer, Inner &gt;::outer()']]]
+  ['separator_1001',['separator',['../structdvp_1_1csv__custom__separator__traits_a16f1385d29caf25cee2d749abc30c905.html#a16f1385d29caf25cee2d749abc30c905',1,'dvp::csv_custom_separator_traits']]],
+  ['snp_5finstance_1002',['SNP_instance',['../namespacequetzal_1_1genetics_ad2407190345ebac713963f6fe0effb76.html#ad2407190345ebac713963f6fe0effb76',1,'quetzal::genetics']]],
+  ['state_5fmatrix_1003',['state_matrix',['../classdvp_1_1csv__parser_aaeebe204be74691a974feecbe92054a2.html#aaeebe204be74691a974feecbe92054a2',1,'dvp::csv_parser']]]
 ];

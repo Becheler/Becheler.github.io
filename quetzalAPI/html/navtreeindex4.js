@@ -1,9 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true_a6a29bf1a1c3efa589de7d7a374266b1c.html#a6a29bf1a1c3efa589de7d7a374266b1c":[3,0,3,0,0,6,0],
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail.html":[3,0,3,0,0,7],
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail_ab305d00d2e3d15bc4bcc8d1c27de4b2e.html#ab305d00d2e3d15bc4bcc8d1c27de4b2e":[3,0,3,0,0,7,0],
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1_my_hash.html":[3,0,3,0,0,0,0],
 "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1_my_hash_add07c56880e2f2ddc249edb34b45ee65.html#add07c56880e2f2ddc249edb34b45ee65":[3,0,3,0,0,0,0,0],
 "structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1treatment.html":[3,0,3,0,1,0,1],
 "structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1treatment_a441a7ae0bcf02211851b19bd524fa2ea.html#a441a7ae0bcf02211851b19bd524fa2ea":[3,0,3,0,1,0,1,0],
@@ -141,7 +137,7 @@ var NAVTREEINDEX4 =
 "structstd_1_1hash_3_01quetzal_1_1geography_1_1_geographic_coordinates_01_4_ad504d47b8bf2b0bacb85949c25715dd8.html#ad504d47b8bf2b0bacb85949c25715dd8":[3,0,4,1,0],
 "utils_8h.html":[4,0,0,1,0,20],
 "utils_8h_source.html":[4,0,0,1,0,20],
-"zip__range_8h.html":[4,0,0,1,0,4,8],
-"zip__range_8h_a40f196e99816731d388caa787333b465.html#a40f196e99816731d388caa787333b465":[4,0,0,1,0,4,8,0],
-"zip__range_8h_source.html":[4,0,0,1,0,4,8]
+"zip__range_8h.html":[4,0,0,1,0,4,6],
+"zip__range_8h_a40f196e99816731d388caa787333b465.html#a40f196e99816731d388caa787333b465":[4,0,0,1,0,4,6,0],
+"zip__range_8h_source.html":[4,0,0,1,0,4,6]
 };

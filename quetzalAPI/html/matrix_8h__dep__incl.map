@@ -1,8 +1,7 @@
 <map id="quetzal/include/quetzal/fuzzy_transfer_distance/matrix.h" name="quetzal/include/quetzal/fuzzy_transfer_distance/matrix.h">
-<area shape="rect" id="node1" title=" " alt="" coords="103,5,268,61"/>
-<area shape="rect" id="node2" href="$_fuzzy_partition_8h.html" title=" " alt="" coords="103,213,268,269"/>
-<area shape="rect" id="node6" href="$munkres_8h.html" title=" " alt="" coords="163,109,328,165"/>
-<area shape="rect" id="node3" href="$_fuzzy_partition__test_8cpp.html" title=" " alt="" coords="5,317,171,373"/>
-<area shape="rect" id="node4" href="$fuzzy__transfer__distance_8h.html" title=" " alt="" coords="195,325,371,366"/>
-<area shape="rect" id="node5" href="$quetzal_8h.html" title=" " alt="" coords="205,421,360,463"/>
+<area shape="rect" id="node1" title=" " alt="" coords="11,5,176,61"/>
+<area shape="rect" id="node2" href="$_fuzzy_partition_8h.html" title=" " alt="" coords="11,213,176,269"/>
+<area shape="rect" id="node5" href="$munkres_8h.html" title=" " alt="" coords="71,109,236,165"/>
+<area shape="rect" id="node3" href="$fuzzy__transfer__distance_8h.html" title=" " alt="" coords="5,317,181,359"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="16,407,171,448"/>
 </map>

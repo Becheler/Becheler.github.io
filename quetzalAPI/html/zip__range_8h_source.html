@@ -104,9 +104,37 @@ $(document).ready(function(){initNavTree('zip__range_8h_source.html',''); initRe
 <div class="title">zip_range.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="zip__range_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="zip__range_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2016 Arnaud Becheler    &lt;Arnaud.Becheler@egce.cnrs-gif.fr&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* it under the terms of the GNU General Public License as published by *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">* the Free Software Foundation; either version 2 of the License, or    *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">* (at your option) any later version.                                  *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*                                                                      *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">ZIP_RANGE_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">ZIP_RANGE_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">boost</span><span class="preprocessor">/</span><span class="preprocessor">range</span><span class="preprocessor">/</span><span class="preprocessor">iterator_range</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">boost</span><span class="preprocessor">/</span><span class="preprocessor">iterator</span><span class="preprocessor">/</span><span class="preprocessor">zip_iterator</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">boost</span><span class="preprocessor">/</span><span class="preprocessor">tuple</span><span class="preprocessor">/</span><span class="preprocessor">tuple</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>... Conts&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="zip__range_8h_a40f196e99816731d388caa787333b465.html#a40f196e99816731d388caa787333b465">   19</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="zip__range_8h_a40f196e99816731d388caa787333b465.html#a40f196e99816731d388caa787333b465">zip_range</a>(Conts&amp;... conts)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  -&gt; <span class="keyword">decltype</span>(boost::make_iterator_range(</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  boost::make_zip_iterator(boost::make_tuple(conts.begin()...)),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  boost::make_zip_iterator(boost::make_tuple(conts.end()...))))</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> {boost::make_zip_iterator(boost::make_tuple(conts.begin()...)),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          boost::make_zip_iterator(boost::make_tuple(conts.end()...))};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="azip__range_8h_a40f196e99816731d388caa787333b465_html_a40f196e99816731d388caa787333b465"><div class="ttname"><a href="zip__range_8h_a40f196e99816731d388caa787333b465.html#a40f196e99816731d388caa787333b465">zip_range</a></div><div class="ttdeci">auto zip_range(Conts &amp;... conts) -&gt; decltype(boost::make_iterator_range(boost::make_zip_iterator(boost::make_tuple(conts.begin()...)), boost::make_zip_iterator(boost::make_tuple(conts.end()...))))</div><div class="ttdef"><b>Definition:</b> zip_range.h:19</div></div>
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

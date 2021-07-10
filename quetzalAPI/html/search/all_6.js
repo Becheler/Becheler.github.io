@@ -31,6 +31,5 @@ var searchData=
   ['fuzzy_5ftransfer_5fdistance_201',['fuzzy_transfer_distance',['../namespacefuzzy__transfer__distance.html',1,'fuzzy_transfer_distance'],['../class_fuzzy_partition_a3bf893e4fdb699003439537fce23c548.html#a3bf893e4fdb699003439537fce23c548',1,'FuzzyPartition::fuzzy_transfer_distance()']]],
   ['fuzzy_5ftransfer_5fdistance_2eh_202',['fuzzy_transfer_distance.h',['../fuzzy__transfer__distance_2fuzzy__transfer__distance_8h.html',1,'(Global Namespace)'],['../fuzzy__transfer__distance_8h.html',1,'(Global Namespace)']]],
   ['fuzzypartition_203',['FuzzyPartition',['../class_fuzzy_partition.html',1,'FuzzyPartition&lt; Element &gt;'],['../class_fuzzy_partition_a4f893d04d7a251efa056e60bd1d7bfe2.html#a4f893d04d7a251efa056e60bd1d7bfe2',1,'FuzzyPartition::FuzzyPartition()']]],
-  ['fuzzypartition_2eh_204',['FuzzyPartition.h',['../_fuzzy_partition_8h.html',1,'']]],
-  ['fuzzypartition_5ftest_2ecpp_205',['FuzzyPartition_test.cpp',['../_fuzzy_partition__test_8cpp.html',1,'']]]
+  ['fuzzypartition_2eh_204',['FuzzyPartition.h',['../_fuzzy_partition_8h.html',1,'']]]
 ];

@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classquetzal_1_1coalescence_1_1_forest_a34a13c58c832bc0156914512b38ffdcf.html#a34a13c58c832bc0156914512b38ffdcf":[1,5,1,0,2],
-"classquetzal_1_1coalescence_1_1_forest_a39fb620e2f8fd16e58b14ddae7a82836.html#a39fb620e2f8fd16e58b14ddae7a82836":[1,5,1,0,23],
-"classquetzal_1_1coalescence_1_1_forest_a3b6bf3a928a7c502dfbc3b443d02a4c6.html#a3b6bf3a928a7c502dfbc3b443d02a4c6":[1,5,1,0,22],
-"classquetzal_1_1coalescence_1_1_forest_a5209ff6d7649f6f0b8516586442a1a70.html#a5209ff6d7649f6f0b8516586442a1a70":[1,5,1,0,14],
 "classquetzal_1_1coalescence_1_1_forest_a5703603903dc4420fa5649b21777208e.html#a5703603903dc4420fa5649b21777208e":[1,5,1,0,24],
 "classquetzal_1_1coalescence_1_1_forest_a74d745ad15871e67a21837703bdd7fae.html#a74d745ad15871e67a21837703bdd7fae":[1,5,1,0,8],
 "classquetzal_1_1coalescence_1_1_forest_a794af66102f9c811ce3e93d7e63d8713.html#a794af66102f9c811ce3e93d7e63d8713":[1,5,1,0,4],
@@ -249,5 +245,9 @@ var NAVTREEINDEX1 =
 "classquetzal_1_1genetics_1_1_loader_a8ce0d3ae0a55f78815efa7c418b2d259.html#a8ce0d3ae0a55f78815efa7c418b2d259":[3,0,3,3,2,3],
 "classquetzal_1_1genetics_1_1_loader_ae56c5259d619b4e7eb0b88c85a604c3c.html#ae56c5259d619b4e7eb0b88c85a604c3c":[3,0,3,3,2,2],
 "classquetzal_1_1genetics_1_1_loader_ae74e065faf2279647795ccf0f58a4037.html#ae74e065faf2279647795ccf0f58a4037":[3,0,3,3,2,4],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample.html":[3,0,3,3,4]
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample.html":[3,0,3,3,4],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a0e24a3e974c82918b74f0fe7cc793066.html#a0e24a3e974c82918b74f0fe7cc793066":[3,0,3,3,4,12],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a129cc3aef9b42b77ffe8c02690dd2c3e.html#a129cc3aef9b42b77ffe8c02690dd2c3e":[3,0,3,3,4,10],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a198c1a2ecb01017ad55ba88319a0ae8f.html#a198c1a2ecb01017ad55ba88319a0ae8f":[3,0,3,3,4,6],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a21abab0e0d24c6ff72379912fc30a2b2.html#a21abab0e0d24c6ff72379912fc30a2b2":[3,0,3,3,4,4]
 };

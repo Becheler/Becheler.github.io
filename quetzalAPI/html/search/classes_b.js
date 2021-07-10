@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['latlon_583',['LatLon',['../struct_lat_lon.html',1,'']]],
-  ['layer_584',['Layer',['../classgdalcpp_1_1_layer.html',1,'gdalcpp']]],
-  ['literal_5ffactory_585',['literal_factory',['../structquetzal_1_1expressive_1_1literal__factory.html',1,'quetzal::expressive']]],
-  ['literal_5ft_586',['literal_t',['../structquetzal_1_1expressive_1_1literal__t.html',1,'quetzal::expressive']]],
-  ['loader_587',['Loader',['../classquetzal_1_1genetics_1_1_loader.html',1,'quetzal::genetics']]],
-  ['logistic_588',['Logistic',['../structquetzal_1_1demography_1_1dispersal__kernel_1_1_logistic.html',1,'quetzal::demography::dispersal_kernel']]],
-  ['lognormal_589',['Lognormal',['../structquetzal_1_1demography_1_1dispersal__kernel_1_1_lognormal.html',1,'quetzal::demography::dispersal_kernel']]]
+  ['latlon_581',['LatLon',['../struct_lat_lon.html',1,'']]],
+  ['layer_582',['Layer',['../classgdalcpp_1_1_layer.html',1,'gdalcpp']]],
+  ['literal_5ffactory_583',['literal_factory',['../structquetzal_1_1expressive_1_1literal__factory.html',1,'quetzal::expressive']]],
+  ['literal_5ft_584',['literal_t',['../structquetzal_1_1expressive_1_1literal__t.html',1,'quetzal::expressive']]],
+  ['loader_585',['Loader',['../classquetzal_1_1genetics_1_1_loader.html',1,'quetzal::genetics']]],
+  ['logistic_586',['Logistic',['../structquetzal_1_1demography_1_1dispersal__kernel_1_1_logistic.html',1,'quetzal::demography::dispersal_kernel']]],
+  ['lognormal_587',['Lognormal',['../structquetzal_1_1demography_1_1dispersal__kernel_1_1_lognormal.html',1,'quetzal::demography::dispersal_kernel']]]
 ];

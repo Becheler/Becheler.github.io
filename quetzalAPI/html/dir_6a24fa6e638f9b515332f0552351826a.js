@@ -2,7 +2,6 @@ var dir_6a24fa6e638f9b515332f0552351826a =
 [
     [ "fuzzy_transfer_distance.h", "fuzzy__transfer__distance_2fuzzy__transfer__distance_8h.html", null ],
     [ "FuzzyPartition.h", "_fuzzy_partition_8h.html", "_fuzzy_partition_8h" ],
-    [ "FuzzyPartition_test.cpp", "_fuzzy_partition__test_8cpp.html", "_fuzzy_partition__test_8cpp" ],
     [ "matrix.h", "matrix_8h.html", [
       [ "Matrix", "class_matrix.html", "class_matrix" ]
     ] ],
@@ -12,7 +11,6 @@ var dir_6a24fa6e638f9b515332f0552351826a =
     [ "Partitioner.h", "_partitioner_8h.html", [
       [ "Partitioner", "classfuzzy__transfer__distance_1_1_partitioner.html", "classfuzzy__transfer__distance_1_1_partitioner" ]
     ] ],
-    [ "Partitioner_test.cpp", "_partitioner__test_8cpp.html", "_partitioner__test_8cpp" ],
     [ "RestrictedGrowthString.h", "_restricted_growth_string_8h.html", [
       [ "RestrictedGrowthString", "class_restricted_growth_string.html", "class_restricted_growth_string" ]
     ] ],

@@ -15,7 +15,7 @@ var classquetzal_1_1genetics_1_1_spatial_genetic_sample =
     [ "loci", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a0e24a3e974c82918b74f0fe7cc793066.html#a0e24a3e974c82918b74f0fe7cc793066", null ],
     [ "nb_gene_copies_discarding_NA", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_add81e57a9d8fcf6a0c28f9df13192a96.html#add81e57a9d8fcf6a0c28f9df13192a96", null ],
     [ "reproject", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_ae83aa43b557beaaabee72252bcfd0a1b.html#ae83aa43b557beaaabee72252bcfd0a1b", null ],
-    [ "size", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a4f7ad107893729ffd5b5cb30ba6ac617.html#a4f7ad107893729ffd5b5cb30ba6ac617", null ],
     [ "size", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_aad022d451d19e83bb50df598a9128a21.html#aad022d451d19e83bb50df598a9128a21", null ],
+    [ "size", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a4f7ad107893729ffd5b5cb30ba6ac617.html#a4f7ad107893729ffd5b5cb30ba6ac617", null ],
     [ "operator<<", "classquetzal_1_1genetics_1_1_spatial_genetic_sample_aabdf44af1b0fde57c30e191d8a428196.html#aabdf44af1b0fde57c30e191d8a428196", null ]
 ];

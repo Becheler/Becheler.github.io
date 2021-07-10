@@ -1,8 +1,6 @@
 <map id="quetzal/include/quetzal/coalescence/containers/Tree.h" name="quetzal/include/quetzal/coalescence/containers/Tree.h">
-<area shape="rect" id="node1" title=" " alt="" coords="94,5,257,61"/>
-<area shape="rect" id="node2" href="$distance__to__parent_8h.html" title=" " alt="" coords="41,109,195,165"/>
-<area shape="rect" id="node3" href="$coalescence_8h.html" title=" " alt="" coords="98,213,253,255"/>
-<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="9,303,163,344"/>
-<area shape="rect" id="node6" href="$coalescence__test_8cpp.html" title=" " alt="" coords="188,303,341,344"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="5,392,167,433"/>
+<area shape="rect" id="node1" title=" " alt="" coords="59,5,221,61"/>
+<area shape="rect" id="node2" href="$distance__to__parent_8h.html" title=" " alt="" coords="5,109,160,165"/>
+<area shape="rect" id="node3" href="$coalescence_8h.html" title=" " alt="" coords="63,213,217,255"/>
+<area shape="rect" id="node4" href="$quetzal_8h.html" title=" " alt="" coords="63,303,217,344"/>
 </map>

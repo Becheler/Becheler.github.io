@@ -1,7 +1,5 @@
 <map id="quetzal/include/quetzal/coalescence/policies/distance_to_parent.h" name="quetzal/include/quetzal/coalescence/policies/distance_to_parent.h">
-<area shape="rect" id="node1" title=" " alt="" coords="98,5,253,61"/>
-<area shape="rect" id="node2" href="$coalescence_8h.html" title=" " alt="" coords="98,109,253,151"/>
-<area shape="rect" id="node3" href="$quetzal_8h.html" title=" " alt="" coords="9,199,163,240"/>
-<area shape="rect" id="node5" href="$coalescence__test_8cpp.html" title=" " alt="" coords="188,199,341,240"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title=" " alt="" coords="5,288,167,329"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,61"/>
+<area shape="rect" id="node2" href="$coalescence_8h.html" title=" " alt="" coords="5,109,160,151"/>
+<area shape="rect" id="node3" href="$quetzal_8h.html" title=" " alt="" coords="5,199,160,240"/>
 </map>

@@ -10,6 +10,6 @@ var classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4 =
     [ "operator()", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_ade89870f648986a4deb3caae2245eba7.html#ade89870f648986a4deb3caae2245eba7", null ],
     [ "operator=", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_a65113cad2cd299ec58f91200e8f1a7c0.html#a65113cad2cd299ec58f91200e8f1a7c0", null ],
     [ "operator=", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_ae7d81c65263e4d1417c27375afbb065c.html#ae7d81c65263e4d1417c27375afbb065c", null ],
-    [ "set", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_ad476bd3452798713c33573f63f3f6df5.html#ad476bd3452798713c33573f63f3f6df5", null ],
-    [ "set", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_aa984fb1181c2662559ed7645afe11e3a.html#aa984fb1181c2662559ed7645afe11e3a", null ]
+    [ "set", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_aa984fb1181c2662559ed7645afe11e3a.html#aa984fb1181c2662559ed7645afe11e3a", null ],
+    [ "set", "classquetzal_1_1random_1_1_transition_kernel_3_01_distribution_01_4_ad476bd3452798713c33573f63f3f6df5.html#ad476bd3452798713c33573f63f3f6df5", null ]
 ];

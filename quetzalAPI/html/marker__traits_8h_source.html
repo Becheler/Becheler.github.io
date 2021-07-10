@@ -104,9 +104,49 @@ $(document).ready(function(){initNavTree('marker__traits_8h_source.html',''); in
 <div class="title">marker_traits.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="marker__traits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="marker__traits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2016 Arnaud Becheler    &lt;Arnaud.Becheler@egce.cnrs-gif.fr&gt; Florence Jornod &lt;florence@jornod.com&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* it under the terms of the GNU General Public License as published by *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">* the Free Software Foundation; either version 2 of the License, or    *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">* (at your option) any later version.                                  *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*                                                                      *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">************************************************************************/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">__GENET_H_INCLUDED__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">__GENET_H_INCLUDED__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/**************************************************************************</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    Descriptor for marker types used in genetic sample data :</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">     - In microsatellite data, allelic states are unsigned integers</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">     - In Single Nuclear Polymorphism data, allelic states are A, T, G, C</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace</span> <a class="code" href="namespacequetzal.html">quetzal</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace</span> <a class="code" href="namespacequetzal_1_1genetics.html">genetics</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">struct</span> Marker_Descriptor</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> T value_type;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Marker_Descriptor&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt; microsat_instance;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Marker_Descriptor&lt;std::string&gt; SNP_instance;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structquetzal_1_1genetics_1_1_marker___descriptor.html">   32</a></span>&#160;    <span class="keyword">using</span> undefined = <span class="keywordtype">int</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">using</span> microsatellite = Marker_Descriptor&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacequetzal_1_1genetics.html">SNP</a> = <a class="code" href="namespacequetzal_1_1genetics.html">Marker_Descriptor</a>&lt;<a class="code" href="namespacequetzal_1_1genetics.html">std</a>::<a class="code" href="namespacequetzal_1_1genetics.html">string</a>&gt;;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacequetzal_1_1genetics_aca0882b179f9e3dd54cb4b626efca127.html#aca0882b179f9e3dd54cb4b626efca127">   37</a></span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacequetzal_1_1genetics_ad2407190345ebac713963f6fe0effb76.html#ad2407190345ebac713963f6fe0effb76">   38</a></span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacequetzal_1_1genetics_html"><div class="ttname"><a href="namespacequetzal_1_1genetics.html">quetzal::genetics</a></div><div class="ttdef"><b>Definition:</b> Allele.h:16</div></div>
+<div class="ttc" id="anamespacequetzal_html"><div class="ttname"><a href="namespacequetzal.html">quetzal</a></div><div class="ttdef"><b>Definition:</b> merge.h:23</div></div>
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

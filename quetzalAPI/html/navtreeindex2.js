@@ -1,11 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a26cb3ea8c02e2da534d2dc0d0d908df7.html#a26cb3ea8c02e2da534d2dc0d0d908df7":[3,0,3,3,4,0],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a2828686cd3a0133c606458cdfd0d23b9.html#a2828686cd3a0133c606458cdfd0d23b9":[3,0,3,3,4,5],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a3a8c8b24b5bc6f1956d9606d10339613.html#a3a8c8b24b5bc6f1956d9606d10339613":[3,0,3,3,4,2],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a3bbb292ac2f55ea89b6e797bf0fc0ffe.html#a3bbb292ac2f55ea89b6e797bf0fc0ffe":[3,0,3,3,4,9],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a3fc0a738bc92b44a633ee30f3d8f4143.html#a3fc0a738bc92b44a633ee30f3d8f4143":[3,0,3,3,4,3],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a4f7ad107893729ffd5b5cb30ba6ac617.html#a4f7ad107893729ffd5b5cb30ba6ac617":[3,0,3,3,4,16],
 "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a6ea93c59ad8186832508705af00b34bb.html#a6ea93c59ad8186832508705af00b34bb":[3,0,3,3,4,8],
 "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a8290a4b085880ed7ff9f6655c9dd1728.html#a8290a4b085880ed7ff9f6655c9dd1728":[3,0,3,3,4,1],
 "classquetzal_1_1genetics_1_1_spatial_genetic_sample_aabdf44af1b0fde57c30e191d8a428196.html#aabdf44af1b0fde57c30e191d8a428196":[3,0,3,3,4,17],
@@ -249,5 +243,11 @@ var NAVTREEINDEX2 =
 "expressive_2expressive_8h.html#ae72816f9bacbce01fcc34e2dbe4f548b":[4,0,0,1,0,3,0,38],
 "expressive_2expressive_8h.html#aee99874830e0ff12d282aa41f4b66a17":[4,0,0,1,0,3,0,30],
 "expressive_2expressive_8h.html#af29a9dde660b285c6eaf39b36ca655a2":[4,0,0,1,0,3,0,40],
-"expressive_2expressive_8h.html#ga12574ee3c5da08311afb7eb76d7089b4":[4,0,0,1,0,3,0,35]
+"expressive_2expressive_8h.html#ga12574ee3c5da08311afb7eb76d7089b4":[4,0,0,1,0,3,0,35],
+"expressive_2expressive_8h.html#ga58c778e9b9b37d66cacf0661990d0545":[4,0,0,1,0,3,0,44],
+"expressive_2expressive_8h.html#ga92089d2dbe2fb1d9ec4b8da47930b8ec":[4,0,0,1,0,3,0,51],
+"expressive_2expressive_8h.html#ga94be9d80e6f5f2281e4183109879a101":[4,0,0,1,0,3,0,61],
+"expressive_2expressive_8h.html#gacdec2cd4ec959709f7a1891702c4d5dd":[4,0,0,1,0,3,0,62],
+"expressive_2expressive_8h.html#gad7b37454071e4a4d0cf22961f4c6f2c8":[4,0,0,1,0,3,0,34],
+"expressive_2expressive_8h_source.html":[4,0,0,1,0,3,0]
 };

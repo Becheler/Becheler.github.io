@@ -1,16 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1_my_hash_add07c56880e2f2ddc249edb34b45ee65.html#add07c56880e2f2ddc249edb34b45ee65":[3,0,3,0,0,0,0,0],
-"structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1treatment.html":[3,0,3,0,1,0,1],
-"structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent_1_1treatment_a441a7ae0bcf02211851b19bd524fa2ea.html#a441a7ae0bcf02211851b19bd524fa2ea":[3,0,3,0,1,0,1,0],
-"structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1treatment.html":[3,0,3,0,1,1,1],
-"structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1treatment_acccede79a082d37bb1b58641330046f2.html#acccede79a082d37bb1b58641330046f2":[3,0,3,0,1,1,1,0],
-"structquetzal_1_1demography_1_1_flow_1_1key__type.html":[1,2,3,0],
-"structquetzal_1_1demography_1_1_flow_1_1key__type_a0cb1372eb597c2322ac5b25a5475ae2f.html#a0cb1372eb597c2322ac5b25a5475ae2f":[1,2,3,0,1],
-"structquetzal_1_1demography_1_1_flow_1_1key__type_a36492522daa5eeb8a97813d03f5dec6c.html#a36492522daa5eeb8a97813d03f5dec6c":[1,2,3,0,4],
-"structquetzal_1_1demography_1_1_flow_1_1key__type_a8183a0fd39bcbd1cd5091e2e11b89a6e.html#a8183a0fd39bcbd1cd5091e2e11b89a6e":[1,2,3,0,2],
-"structquetzal_1_1demography_1_1_flow_1_1key__type_aef3c2f216fc4a7597a622169a6a76053.html#aef3c2f216fc4a7597a622169a6a76053":[1,2,3,0,0],
-"structquetzal_1_1demography_1_1_flow_1_1key__type_afdc372f0f050b9fca534b064083d9698.html#afdc372f0f050b9fca534b064083d9698":[1,2,3,0,3],
 "structquetzal_1_1demography_1_1dispersal__kernel_1_1_exponential_power.html":[3,0,3,1,0,0],
 "structquetzal_1_1demography_1_1dispersal__kernel_1_1_exponential_power_a8f3e6aa35248c2b535e10e5db6628882.html#a8f3e6aa35248c2b535e10e5db6628882":[3,0,3,1,0,0,1],
 "structquetzal_1_1demography_1_1dispersal__kernel_1_1_gaussian.html":[3,0,3,1,0,1],

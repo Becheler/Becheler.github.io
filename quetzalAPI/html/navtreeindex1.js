@@ -1,11 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classquetzal_1_1coalescence_1_1_forest_a5703603903dc4420fa5649b21777208e.html#a5703603903dc4420fa5649b21777208e":[1,5,1,0,24],
-"classquetzal_1_1coalescence_1_1_forest_a74d745ad15871e67a21837703bdd7fae.html#a74d745ad15871e67a21837703bdd7fae":[1,5,1,0,8],
-"classquetzal_1_1coalescence_1_1_forest_a794af66102f9c811ce3e93d7e63d8713.html#a794af66102f9c811ce3e93d7e63d8713":[1,5,1,0,4],
-"classquetzal_1_1coalescence_1_1_forest_a7b6d7ae99d2ba998aeaf16aa877eb216.html#a7b6d7ae99d2ba998aeaf16aa877eb216":[1,5,1,0,20],
-"classquetzal_1_1coalescence_1_1_forest_a8d841e847c17b26e7c1e8c0ff863e59d.html#a8d841e847c17b26e7c1e8c0ff863e59d":[1,5,1,0,9],
-"classquetzal_1_1coalescence_1_1_forest_aabf247362d41417d575abaecf5311a5c.html#aabf247362d41417d575abaecf5311a5c":[1,5,1,0,1],
 "classquetzal_1_1coalescence_1_1_forest_aacc6483108823753b071ec137518030e.html#aacc6483108823753b071ec137518030e":[1,5,1,0,7],
 "classquetzal_1_1coalescence_1_1_forest_aaed1e6e616684ea2adf3535751a40cbf.html#aaed1e6e616684ea2adf3535751a40cbf":[1,5,1,0,18],
 "classquetzal_1_1coalescence_1_1_forest_aaff44f5a3ec3bef232554782681fe75b.html#aaff44f5a3ec3bef232554782681fe75b":[1,5,1,0,13],
@@ -249,5 +243,11 @@ var NAVTREEINDEX1 =
 "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a0e24a3e974c82918b74f0fe7cc793066.html#a0e24a3e974c82918b74f0fe7cc793066":[3,0,3,3,4,12],
 "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a129cc3aef9b42b77ffe8c02690dd2c3e.html#a129cc3aef9b42b77ffe8c02690dd2c3e":[3,0,3,3,4,10],
 "classquetzal_1_1genetics_1_1_spatial_genetic_sample_a198c1a2ecb01017ad55ba88319a0ae8f.html#a198c1a2ecb01017ad55ba88319a0ae8f":[3,0,3,3,4,6],
-"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a21abab0e0d24c6ff72379912fc30a2b2.html#a21abab0e0d24c6ff72379912fc30a2b2":[3,0,3,3,4,4]
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a21abab0e0d24c6ff72379912fc30a2b2.html#a21abab0e0d24c6ff72379912fc30a2b2":[3,0,3,3,4,4],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a26cb3ea8c02e2da534d2dc0d0d908df7.html#a26cb3ea8c02e2da534d2dc0d0d908df7":[3,0,3,3,4,0],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a2828686cd3a0133c606458cdfd0d23b9.html#a2828686cd3a0133c606458cdfd0d23b9":[3,0,3,3,4,5],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a3a8c8b24b5bc6f1956d9606d10339613.html#a3a8c8b24b5bc6f1956d9606d10339613":[3,0,3,3,4,2],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a3bbb292ac2f55ea89b6e797bf0fc0ffe.html#a3bbb292ac2f55ea89b6e797bf0fc0ffe":[3,0,3,3,4,9],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a3fc0a738bc92b44a633ee30f3d8f4143.html#a3fc0a738bc92b44a633ee30f3d8f4143":[3,0,3,3,4,3],
+"classquetzal_1_1genetics_1_1_spatial_genetic_sample_a4f7ad107893729ffd5b5cb30ba6ac617.html#a4f7ad107893729ffd5b5cb30ba6ac617":[3,0,3,3,4,16]
 };

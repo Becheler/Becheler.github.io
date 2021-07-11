@@ -125,17 +125,17 @@ Classes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Template classes for building spatially explicit representations of spatio-temporal quantities. </p>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Overview</h2>
 <p>These classes are designed to handle the geographical aspects of the spatially explicit simulations.</p>
 <p><img src="/resources/schema_geography_module.png" alt="geography module overview" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 GDAL core</h2>
 <p>Key features of <a href="http://www.gdal.org/">GDAL</a> API are encapsulated in a mordern C++ wrapper class, the <a class="el" href="classgdalcpp_1_1Dataset.html">gdalcpp::Dataset</a> class, allowing to read data from raster files and perform basic operations. Geolocalization syntax is pixel-oriented (data are accessed by row and columns indices), which can can be confusing when manipulating spatial landscapes along with dispersal kernels (where distances need to be computed) and spatial genetic samples (where sampling coordinates are typically defined in latitude/longitude).</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Geography-friendly interfaces</h2>
 <p>For better harmonization with other features, GeographicCoordinates objects are used in classes interfaces to represent latitude and longitude in decimal degrees and to compute great-circle distances in kilometers between two points.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Representing environmental quantities as functions of space and time.</h2>
 <p>The EnvironmentalQuantity class adds a level of abstraction to <a class="el" href="classgdalcpp_1_1Dataset.html">gdalcpp::Dataset</a>, in order to represent a discrete function of space and time based on geographic coordinates. It allows to retrieve the coordinates of the cells centroids for which the value is defined at all times. This set can be used to represent the demic structure and to perform secured mathematical composition of ecological functions (for example using the expressive module).</p>
 <p>For example, the DiscreteLandscape class template represents an arbitrary number of ecological quantities on a discrete geographic space. It allows to retrieve lightweight function-objects representing the underlying ecological quantities (candidates for function composition using expressive module). Similarly to the EnvironmentalQuantity class template, it allows to retrieve a geographic definition space suited to modeling: the coordinates of the cells centroids for which a value is defined at all times for all quantities. </p>

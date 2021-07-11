@@ -144,8 +144,8 @@ var NAVTREEINDEX2 =
 "expressive_2expressive_8h_source.html":[4,0,0,0,0,3,0],
 "expressive_8h_source.html":[4,0,0,0,0,12],
 "files.html":[4,0],
-"functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
+"functions.html":[3,3,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -193,7 +193,6 @@ var NAVTREEINDEX2 =
 "gdalcpp_8h_source.html":[4,0,0,0,0,6,3],
 "genetics_8h_source.html":[4,0,0,0,0,14],
 "geography_8h_source.html":[4,0,0,0,0,15],
-"group__abc.html":[1,6],
 "group__coal__algorithms.html":[1,5,0],
 "group__coal__algorithms.html#ga45cd8b6f39a5b41d4667f3bed3fc13fe":[1,5,0,0],
 "group__coal__algorithms.html#ga58ed2931bdac16146460718751d8647c":[1,5,0,1],
@@ -235,8 +234,8 @@ var NAVTREEINDEX2 =
 "namespacequetzal_1_1demography_1_1dispersal__kernel.html":[3,0,3,1,0],
 "namespacequetzal_1_1demography_1_1dispersal__policy.html":[3,0,3,1,1],
 "namespacequetzal_1_1demography_1_1dispersal__policy.html":[2,0,0,0,1],
-"namespacequetzal_1_1sampling__scheme.html":[2,0,0,1],
 "namespacequetzal_1_1sampling__scheme.html":[3,0,3,7],
+"namespacequetzal_1_1sampling__scheme.html":[2,0,0,1],
 "namespaces.html":[2,0],
 "neighbors_8h_source.html":[4,0,0,0,0,9,1],
 "on__the__fly_8h_source.html":[4,0,0,0,0,0,2,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "storage__policy_8h_source.html":[4,0,0,0,0,2,7],
 "structdvp_1_1csv__custom__separator__traits.html":[3,0,0,0],
 "structdvp_1_1csv__custom__separator__traits.html#a16f1385d29caf25cee2d749abc30c905":[3,0,0,0,5],
-"structdvp_1_1csv__custom__separator__traits.html#a32e673d29c17e620efdf633a63238833":[3,0,0,0,2]
+"structdvp_1_1csv__custom__separator__traits.html#a32e673d29c17e620efdf633a63238833":[3,0,0,0,2],
+"structdvp_1_1csv__custom__separator__traits.html#a620c8754fde41f0600e53b6576d33597":[3,0,0,0,1]
 };

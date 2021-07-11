@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="custom_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,6 +35,21 @@
    </div>
    <div id="projectbrief">The Coalescence Template Library</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -37,16 +61,23 @@
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
+$(document).ready(function(){initNavTree('Forest_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,11 +92,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_bcfaa045ea02ef87727a836d6121aab4.html">containers</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Forest.h</div>  </div>
@@ -292,6 +318,7 @@ $(function() {
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html">quetzal::coalescence::Tree</a></div><div class="ttdoc">Tree topology where each node contains a data field.</div><div class="ttdef"><b>Definition:</b> Tree.h:29</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Forest_html_afc0cdb7e9f093cc20201015869b1ece8"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Forest.html#afc0cdb7e9f093cc20201015869b1ece8">quetzal::coalescence::Forest::erase</a></div><div class="ttdeci">void erase(iterator first, iterator last)</div><div class="ttdoc">remove elements from the Forest.</div><div class="ttdef"><b>Definition:</b> Forest.h:168</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Forest_html_a74d745ad15871e67a21837703bdd7fae"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Forest.html#a74d745ad15871e67a21837703bdd7fae">quetzal::coalescence::Forest::cbegin</a></div><div class="ttdeci">const_iterator cbegin() const</div><div class="ttdoc">returns iterator to the begin</div><div class="ttdef"><b>Definition:</b> Forest.h:244</div></div>
@@ -309,11 +336,11 @@ $(function() {
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Forest_html_a5209ff6d7649f6f0b8516586442a1a70"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Forest.html#a5209ff6d7649f6f0b8516586442a1a70">quetzal::coalescence::Forest::get_all_trees</a></div><div class="ttdeci">std::vector&lt; Tree &gt; get_all_trees() const</div><div class="ttdoc">copies all trees in the forest</div><div class="ttdef"><b>Definition:</b> Forest.h:182</div></div>
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <a class= "footerinfo" href="https://github.com/Becheler/quetzal/wiki">Wiki</a>
+  <a class= "footerinfo" href="https://becheler.github.io/">Maintainer</a>
+  <a class= "footerinfo" href="mailto:Arnaud.Becheler@egce.cnrs-gif.fr">Contact</a>
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

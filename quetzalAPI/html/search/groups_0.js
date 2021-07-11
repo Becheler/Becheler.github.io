@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['algorithms_467',['Algorithms',['../group__coal__algorithms.html',1,'']]]
+  ['algorithms_490',['Algorithms',['../group__coal__algorithms.html',1,'']]]
 ];

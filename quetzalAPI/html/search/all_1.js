@@ -9,5 +9,6 @@ var searchData=
   ['basehistory_3c_20space_2c_20time_2c_20dispersalpolicy_20_3e_13',['BaseHistory&lt; Space, Time, DispersalPolicy &gt;',['../classquetzal_1_1demography_1_1BaseHistory.html',1,'quetzal::demography']]],
   ['begin_14',['begin',['../classquetzal_1_1coalescence_1_1Forest.html#a6688fa34359a1281a6d0a01e84aced7d',1,'quetzal::coalescence::Forest::begin()'],['../classquetzal_1_1coalescence_1_1Forest.html#aacc6483108823753b071ec137518030e',1,'quetzal::coalescence::Forest::begin() const'],['../classquetzal_1_1demography_1_1Flow.html#a9b0c368d58571c69603c24449b939c38',1,'quetzal::demography::Flow::begin()']]],
   ['binary_5fmerge_15',['binary_merge',['../group__coal__algorithms.html#ga58ed2931bdac16146460718751d8647c',1,'quetzal::coalescence::binary_merge(BidirectionalIterator first, BidirectionalIterator last, T init, BinaryOperation op, Generator &amp;g)'],['../group__coal__algorithms.html#ga45cd8b6f39a5b41d4667f3bed3fc13fe',1,'quetzal::coalescence::binary_merge(BidirectionalIterator first, BidirectionalIterator last, Generator &amp;g)']]],
-  ['binarymerger_16',['BinaryMerger',['../structquetzal_1_1coalescence_1_1BinaryMerger.html',1,'quetzal::coalescence']]]
+  ['binarymerger_16',['BinaryMerger',['../structquetzal_1_1coalescence_1_1BinaryMerger.html',1,'quetzal::coalescence']]],
+  ['branch_17',['branch',['../classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html#a5f8d3d42b1d7c4e9464e5540945887c1',1,'quetzal::coalescence::policies::distance_to_parent_leaf_name']]]
 ];

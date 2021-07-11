@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['occupancy_5fspectrum_5ftype_466',['occupancy_spectrum_type',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html#af70ba21047208434acae994606498415',1,'quetzal::coalescence::occupancy_spectrum::Generator']]]
+  ['coord_5ftype_485',['coord_type',['../classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html#adb11b291a2968ae59a4d725fe8ae20b3',1,'quetzal::coalescence::policies::distance_to_parent_leaf_name']]]
 ];

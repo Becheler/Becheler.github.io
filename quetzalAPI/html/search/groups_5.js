@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['occupancy_20spectrum_476',['Occupancy Spectrum',['../group__coal__spectrum.html',1,'']]]
+  ['occupancy_20spectrum_477',['Occupancy Spectrum',['../group__coal__spectrum.html',1,'']]]
 ];

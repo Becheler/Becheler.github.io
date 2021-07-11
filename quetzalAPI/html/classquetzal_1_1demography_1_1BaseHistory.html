@@ -22,6 +22,13 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -300,7 +307,7 @@ template&lt;typename Generator &gt; </div>
 </div><div class="memdoc">
 
 <p>Samples a coordinate from the backward-in-time transition matrix. </p>
-<p>The transition matrix is computed from the demographic flows database. The returned coordinate object will basically answer the question: when an individual is found in <img class="formulaInl" alt="$x$" src="form_6.png"/> at time <img class="formulaInl" alt="$t$" src="form_7.png"/>, where could it have been at time <img class="formulaInl" alt="$t-1$" src="form_8.png"/> ? </p>
+<p>The transition matrix is computed from the demographic flows database. The returned coordinate object will basically answer the question: when an individual is found in \(x\) at time \(t\), where could it have been at time \(t-1\) ? </p>
 
 </div>
 </div>

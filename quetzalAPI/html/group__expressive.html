@@ -22,6 +22,13 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -166,8 +173,8 @@ Examples of biological interests</h2>
 <h3><a class="anchor" id="autotoc_md10"></a>
 Representing dispersal kernels</h3>
 <p>Representation of a dispersal kernel density involves some kind of mathematical composition. In the simple case where density is only a function of the geographic distance, the details of the distance computation can be separated from the details of the kernel used by composing two independently defined functions.</p>
-<p>The inner function <img class="formulaInl" alt="$ g : X^2 \rightarrow R$" src="form_0.png"/> would be the distance computation function between two points of the geographic space <img class="formulaInl" alt="$X$" src="form_1.png"/>, and can be expressed in terms of a callable object having a <code>distance_type operator()(coord_type x, coord_type y)</code> interface.</p>
-<p>The outer function <img class="formulaInl" alt="$f : R \rightarrow [0,1]$" src="form_2.png"/> could be any kind of density function defined on the distance metric space <img class="formulaInl" alt="$R$" src="form_3.png"/> and taking value in <img class="formulaInl" alt="$[0,1] $" src="form_4.png"/>, and can be defined in terms of a callable object having a <code>double operator()(distance_type d)</code> interface.</p>
+<p>The inner function \( g : X^2 \rightarrow R\) would be the distance computation function between two points of the geographic space \(X\), and can be expressed in terms of a callable object having a <code>distance_type operator()(coord_type x, coord_type y)</code> interface.</p>
+<p>The outer function \(f : R \rightarrow [0,1]\) could be any kind of density function defined on the distance metric space \(R\) and taking value in \([0,1] \), and can be defined in terms of a callable object having a <code>double operator()(distance_type d)</code> interface.</p>
 <p>Without expressive, these two types could not be composed. With expressive, it becomes trivial: </p><div class="fragment"><div class="line"><span class="keyword">using</span> coord_type = int;</div>
 <div class="line"><span class="keyword">using</span> distance_type = double;</div>
 <div class="line"> </div>

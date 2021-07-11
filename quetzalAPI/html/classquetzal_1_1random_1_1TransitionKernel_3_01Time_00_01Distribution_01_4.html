@@ -22,6 +22,13 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -104,7 +111,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1random_1_1TransitionKe
 </div><!--header-->
 <div class="contents">
 
-<p>Time-variable discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_14.png"/>.  
+<p>Time-variable discrete markovian transition kernel for sampling the next state knowing the present state \(x_0\).  
  <a href="classquetzal_1_1random_1_1TransitionKernel_3_01Time_00_01Distribution_01_4.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="TransitionKernel_8h_source.html">TransitionKernel.h</a>&gt;</code></p>
@@ -160,8 +167,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename Time, typename Distribution&gt;<br />
 class quetzal::random::TransitionKernel&lt; Time, Distribution &gt;</h3>
 
-<p>Time-variable discrete markovian transition kernel for sampling the next state knowing the present state <img class="formulaInl" alt="$x_0$" src="form_14.png"/>. </p>
-<p>Considering a Markov chain <img class="formulaInl" alt="$(X_k)_{k\in Z_+}$" src="form_15.png"/> with discrete state space <img class="formulaInl" alt="$S$" src="form_16.png"/>, and given each initial state <img class="formulaInl" alt="$x_0$" src="form_14.png"/> of <img class="formulaInl" alt="$S$" src="form_16.png"/>, defines the markovian probability distribution at time <img class="formulaInl" alt="$t$" src="form_7.png"/> : <img class="formulaInl" alt="$P_t(X_1=\cdot|X_0=x_0)$" src="form_19.png"/>, and samples the stochastic value <img class="formulaInl" alt="$X_1$" src="form_18.png"/>, according to this probability law.</p>
+<p>Time-variable discrete markovian transition kernel for sampling the next state knowing the present state \(x_0\). </p>
+<p>Considering a Markov chain \((X_k)_{k\in Z_+}\) with discrete state space \(S\), and given each initial state \(x_0\) of \(S\), defines the markovian probability distribution at time \(t\) : \(P_t(X_1=\cdot|X_0=x_0)\), and samples the stochastic value \(X_1\), according to this probability law.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Distribution</td><td>type of the transition kernels. </td></tr>

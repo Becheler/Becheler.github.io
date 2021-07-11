@@ -44,31 +44,18 @@ body, table, div, p, dl {
 }
 
 h1, h2, h3, h4, h5, h6 {
-
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
     color: #159957;
-
 }
 
 h1 {
-
   font-size: 2em;
   margin: 0.67em 0;
-
 }
 
-/* Ensure that <CODE> and <TT> text is as big as the <BODY> text and use a nicer font */
-code, tt {
-    font-family: Consolas, Courier, monospace;
-    font-size: medium;
-}
 
-/* Need this as <PRE> makes the text look smaller due to different font */
-pre {
-    font-size: 105%;
-}
 
 #titlearea {
   overflow:hidden;

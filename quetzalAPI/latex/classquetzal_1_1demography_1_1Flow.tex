@@ -21,8 +21,8 @@ struct \mbox{\hyperlink{structquetzal_1_1demography_1_1Flow_1_1key__type}{key\+\
 using {\bfseries time\+\_\+type} = Time
 \item 
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}\label{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}} 
-using \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} = Space
-\begin{DoxyCompactList}\small\item\em \textbackslash{}typedf space type \end{DoxyCompactList}\item 
+using {\bfseries coord\+\_\+type} = Space
+\item 
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1Flow_a75685417e117f957b69700292ebd7f32}\label{classquetzal_1_1demography_1_1Flow_a75685417e117f957b69700292ebd7f32}} 
 using {\bfseries value\+\_\+type} = Value
 \item 
@@ -36,16 +36,16 @@ using {\bfseries map\+\_\+type} = std\+::unordered\+\_\+map$<$ const \mbox{\hype
 \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a9c30cad2ac9d41bbbe87a7161d448ffd}{Flow}} ()=default
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1Flow_a8bd9ab6ddd13f74c69e59e3308e76d08}\label{classquetzal_1_1demography_1_1Flow_a8bd9ab6ddd13f74c69e59e3308e76d08}} 
-value\+\_\+type \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a8bd9ab6ddd13f74c69e59e3308e76d08}{flux\+\_\+from\+\_\+to}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&from, \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&to, time\+\_\+type t) const
+value\+\_\+type \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a8bd9ab6ddd13f74c69e59e3308e76d08}{flux\+\_\+from\+\_\+to}} (coord\+\_\+type const \&from, coord\+\_\+type const \&to, time\+\_\+type t) const
 \begin{DoxyCompactList}\small\item\em Retrieves value of the flux from deme i to deme j at time t. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a1567f3aedaf71fc97b3f0fd2f15f4eb3}{set\+\_\+flux\+\_\+from\+\_\+to}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&from, \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&to, time\+\_\+type t, value\+\_\+type v)
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a1567f3aedaf71fc97b3f0fd2f15f4eb3}{set\+\_\+flux\+\_\+from\+\_\+to}} (coord\+\_\+type const \&from, coord\+\_\+type const \&to, time\+\_\+type t, value\+\_\+type v)
 \begin{DoxyCompactList}\small\item\em Retrieves value of the flux from deme i to deme j at time t. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1Flow_a2ebf35e4de00dfa50d43245e0f1b94ad}\label{classquetzal_1_1demography_1_1Flow_a2ebf35e4de00dfa50d43245e0f1b94ad}} 
-void {\bfseries add\+\_\+to\+\_\+flux\+\_\+from\+\_\+to} (\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&from, \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&to, time\+\_\+type t, value\+\_\+type v)
+void {\bfseries add\+\_\+to\+\_\+flux\+\_\+from\+\_\+to} (coord\+\_\+type const \&from, coord\+\_\+type const \&to, time\+\_\+type t, value\+\_\+type v)
 \item 
-const std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}}, value\+\_\+type $>$ \& \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ac0006b7dc24ff999dfb0074a577e6185}{flux\+\_\+to}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&x, time\+\_\+type t) const
+const std\+::unordered\+\_\+map$<$ coord\+\_\+type, value\+\_\+type $>$ \& \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ac0006b7dc24ff999dfb0074a577e6185}{flux\+\_\+to}} (coord\+\_\+type const \&x, time\+\_\+type t) const
 \begin{DoxyCompactList}\small\item\em Retrieves the distribution of the value of the flux converging to deme x at time t. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a904d0929d3d6c6be9b14b646502a2316}{flux\+\_\+to\+\_\+is\+\_\+defined}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&to, time\+\_\+type const \&t) const
+bool \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a904d0929d3d6c6be9b14b646502a2316}{flux\+\_\+to\+\_\+is\+\_\+defined}} (coord\+\_\+type const \&to, time\+\_\+type const \&t) const
 \begin{DoxyCompactList}\small\item\em Check if the distribution of the value of the flux converging to deme x at time t is defined. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_a9b0c368d58571c69603c24449b939c38}{begin}} () const
 \begin{DoxyCompactList}\small\item\em Read-\/only access to the migration history. \end{DoxyCompactList}\item 
@@ -104,7 +104,7 @@ An iterator on an object of type map\+\_\+type
 \index{flux\_to@{flux\_to}!quetzal::demography::Flow$<$ Space, Time, Value $>$@{quetzal::demography::Flow$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{flux\_to()}{flux\_to()}}
 {\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-const std\+::unordered\+\_\+map$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}}, value\+\_\+type$>$\& \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{quetzal\+::demography\+::\+Flow}}$<$ Space, Time, Value $>$\+::flux\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&}]{x,  }\item[{time\+\_\+type}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const std\+::unordered\+\_\+map$<$coord\+\_\+type, value\+\_\+type$>$\& \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{quetzal\+::demography\+::\+Flow}}$<$ Space, Time, Value $>$\+::flux\+\_\+to (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x,  }\item[{time\+\_\+type}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -118,7 +118,7 @@ a const reference on an unordered\+\_\+map with giving the origin deme and the v
 \index{flux\_to\_is\_defined@{flux\_to\_is\_defined}!quetzal::demography::Flow$<$ Space, Time, Value $>$@{quetzal::demography::Flow$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{flux\_to\_is\_defined()}{flux\_to\_is\_defined()}}
 {\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-bool \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{quetzal\+::demography\+::\+Flow}}$<$ Space, Time, Value $>$\+::flux\+\_\+to\+\_\+is\+\_\+defined (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&}]{to,  }\item[{time\+\_\+type const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{quetzal\+::demography\+::\+Flow}}$<$ Space, Time, Value $>$\+::flux\+\_\+to\+\_\+is\+\_\+defined (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{to,  }\item[{time\+\_\+type const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -132,7 +132,7 @@ true if the distribution is defined, else returns false
 \index{set\_flux\_from\_to@{set\_flux\_from\_to}!quetzal::demography::Flow$<$ Space, Time, Value $>$@{quetzal::demography::Flow$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{set\_flux\_from\_to()}{set\_flux\_from\_to()}}
 {\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-void \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{quetzal\+::demography\+::\+Flow}}$<$ Space, Time, Value $>$\+::set\+\_\+flux\+\_\+from\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&}]{from,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow_ae3b23a9a71b087e87ff124c1b23b4a66}{coord\+\_\+type}} const \&}]{to,  }\item[{time\+\_\+type}]{t,  }\item[{value\+\_\+type}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{quetzal\+::demography\+::\+Flow}}$<$ Space, Time, Value $>$\+::set\+\_\+flux\+\_\+from\+\_\+to (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{from,  }\item[{coord\+\_\+type const \&}]{to,  }\item[{time\+\_\+type}]{t,  }\item[{value\+\_\+type}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

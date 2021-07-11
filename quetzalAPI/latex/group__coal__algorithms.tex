@@ -110,11 +110,7 @@ merges randomly selected elements in a range according to an occupancy spectrum.
 \hline
 {\em last} & iterator to the past-\/the-\/end element. \\
 \hline
-{\em init} & the value at which parent is initialized \\
-\hline
 {\em sp} & occupancy spectrum giving the merging configuration \\
-\hline
-{\em op} & binary operation function object that will be applied for branching a child to its parent. The binary operator takes the parent value a (initialized to init) and the value of the child b. The signature of the function should be equivalent to the following\+: {\ttfamily Ret fun(const Type1 \&parent, const Type2 \&child);} \\
 \hline
 {\em g} & a random generator that must meet the requirements of Uniform\+Random\+Bit\+Generator concept. \\
 \hline

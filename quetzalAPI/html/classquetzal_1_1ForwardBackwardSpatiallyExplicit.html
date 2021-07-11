@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adb8474c5c66991e5c7be6226c42a8b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classquetzal_1_1ForwardBackwardSpatiallyExplicit.html#adb8474c5c66991e5c7be6226c42a8b6f">More...</a><br /></td></tr>
 <tr class="separator:adb8474c5c66991e5c7be6226c42a8b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de3f9967123cc24c403deb79871c232"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1ForwardBackwardSpatiallyExplicit.html#a8de3f9967123cc24c403deb79871c232">pop_size_history</a> () const noexcept</td></tr>
-<tr class="memdesc:a8de3f9967123cc24c403deb79871c232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only access to the population size history. @detail Designed to be used for composing growth expression.  <a href="classquetzal_1_1ForwardBackwardSpatiallyExplicit.html#a8de3f9967123cc24c403deb79871c232">More...</a><br /></td></tr>
+<tr class="memdesc:a8de3f9967123cc24c403deb79871c232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only access to the population size history.  <a href="classquetzal_1_1ForwardBackwardSpatiallyExplicit.html#a8de3f9967123cc24c403deb79871c232">More...</a><br /></td></tr>
 <tr class="separator:a8de3f9967123cc24c403deb79871c232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c02f6837a041942a963c2b3e2c227a1"><td class="memTemplParams" colspan="2">template&lt;typename Generator , typename Growth , typename Dispersal &gt; </td></tr>
 <tr class="memitem:a1c02f6837a041942a963c2b3e2c227a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1ForwardBackwardSpatiallyExplicit.html#a1c02f6837a041942a963c2b3e2c227a1">simulate_forward_demography</a> (Growth growth, Dispersal kernel, Generator &amp;gen)</td></tr>
@@ -692,8 +692,8 @@ template&lt;typename Space , typename Time , typename DispersalPolicy , typename
 </table>
 </div><div class="memdoc">
 
-<p>Read-only access to the population size history. @detail Designed to be used for composing growth expression. </p>
-<dl class="section return"><dt>Returns</dt><dd>a functor with signature <code>N_value_type fun(coord_type const&amp; x, time_type const&amp; t)</code> giving the population size in deme <img class="formulaInl" alt="$x$" src="form_6.png"/> at time <img class="formulaInl" alt="$t$" src="form_7.png"/>. </dd></dl>
+<p>Read-only access to the population size history. </p>
+<p>Designed to be used for composing growth expression. </p><dl class="section return"><dt>Returns</dt><dd>a functor with signature <code>N_value_type fun(coord_type const&amp; x, time_type const&amp; t)</code> giving the population size in deme <img class="formulaInl" alt="$x$" src="form_6.png"/> at time <img class="formulaInl" alt="$t$" src="form_7.png"/>. </dd></dl>
 
 </div>
 </div>

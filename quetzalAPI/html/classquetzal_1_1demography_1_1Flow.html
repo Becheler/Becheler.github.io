@@ -122,8 +122,7 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>time_type</b> = Time</td></tr>
 <tr class="separator:ad2fc642e79e098d0362c8b08eeadebcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3b23a9a71b087e87ff124c1b23b4a66"><td class="memItemLeft" align="right" valign="top"><a id="ae3b23a9a71b087e87ff124c1b23b4a66"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> = Space</td></tr>
-<tr class="memdesc:ae3b23a9a71b087e87ff124c1b23b4a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">\typedf space type <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>coord_type</b> = Space</td></tr>
 <tr class="separator:ae3b23a9a71b087e87ff124c1b23b4a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75685417e117f957b69700292ebd7f32"><td class="memItemLeft" align="right" valign="top"><a id="a75685417e117f957b69700292ebd7f32"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = Value</td></tr>
@@ -139,19 +138,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9c30cad2ac9d41bbbe87a7161d448ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:a9c30cad2ac9d41bbbe87a7161d448ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd9ab6ddd13f74c69e59e3308e76d08"><td class="memItemLeft" align="right" valign="top"><a id="a8bd9ab6ddd13f74c69e59e3308e76d08"></a>
-value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a8bd9ab6ddd13f74c69e59e3308e76d08">flux_from_to</a> (<a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;from, <a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;to, time_type t) const</td></tr>
+value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a8bd9ab6ddd13f74c69e59e3308e76d08">flux_from_to</a> (coord_type const &amp;from, coord_type const &amp;to, time_type t) const</td></tr>
 <tr class="memdesc:a8bd9ab6ddd13f74c69e59e3308e76d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves value of the flux from deme i to deme j at time t. <br /></td></tr>
 <tr class="separator:a8bd9ab6ddd13f74c69e59e3308e76d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1567f3aedaf71fc97b3f0fd2f15f4eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a1567f3aedaf71fc97b3f0fd2f15f4eb3">set_flux_from_to</a> (<a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;from, <a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;to, time_type t, value_type v)</td></tr>
+<tr class="memitem:a1567f3aedaf71fc97b3f0fd2f15f4eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a1567f3aedaf71fc97b3f0fd2f15f4eb3">set_flux_from_to</a> (coord_type const &amp;from, coord_type const &amp;to, time_type t, value_type v)</td></tr>
 <tr class="memdesc:a1567f3aedaf71fc97b3f0fd2f15f4eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves value of the flux from deme i to deme j at time t.  <a href="classquetzal_1_1demography_1_1Flow.html#a1567f3aedaf71fc97b3f0fd2f15f4eb3">More...</a><br /></td></tr>
 <tr class="separator:a1567f3aedaf71fc97b3f0fd2f15f4eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ebf35e4de00dfa50d43245e0f1b94ad"><td class="memItemLeft" align="right" valign="top"><a id="a2ebf35e4de00dfa50d43245e0f1b94ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_to_flux_from_to</b> (<a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;from, <a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;to, time_type t, value_type v)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_to_flux_from_to</b> (coord_type const &amp;from, coord_type const &amp;to, time_type t, value_type v)</td></tr>
 <tr class="separator:a2ebf35e4de00dfa50d43245e0f1b94ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0006b7dc24ff999dfb0074a577e6185"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a>, value_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ac0006b7dc24ff999dfb0074a577e6185">flux_to</a> (<a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;x, time_type t) const</td></tr>
+<tr class="memitem:ac0006b7dc24ff999dfb0074a577e6185"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; coord_type, value_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ac0006b7dc24ff999dfb0074a577e6185">flux_to</a> (coord_type const &amp;x, time_type t) const</td></tr>
 <tr class="memdesc:ac0006b7dc24ff999dfb0074a577e6185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the distribution of the value of the flux converging to deme x at time t.  <a href="classquetzal_1_1demography_1_1Flow.html#ac0006b7dc24ff999dfb0074a577e6185">More...</a><br /></td></tr>
 <tr class="separator:ac0006b7dc24ff999dfb0074a577e6185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904d0929d3d6c6be9b14b646502a2316"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a904d0929d3d6c6be9b14b646502a2316">flux_to_is_defined</a> (<a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;to, time_type const &amp;t) const</td></tr>
+<tr class="memitem:a904d0929d3d6c6be9b14b646502a2316"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a904d0929d3d6c6be9b14b646502a2316">flux_to_is_defined</a> (coord_type const &amp;to, time_type const &amp;t) const</td></tr>
 <tr class="memdesc:a904d0929d3d6c6be9b14b646502a2316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the distribution of the value of the flux converging to deme x at time t is defined.  <a href="classquetzal_1_1demography_1_1Flow.html#a904d0929d3d6c6be9b14b646502a2316">More...</a><br /></td></tr>
 <tr class="separator:a904d0929d3d6c6be9b14b646502a2316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b0c368d58571c69603c24449b939c38"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#a9b0c368d58571c69603c24449b939c38">begin</a> () const</td></tr>
@@ -247,9 +246,9 @@ template&lt;typename Space , typename Time , typename Value &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a>, value_type&gt;&amp; <a class="el" href="classquetzal_1_1demography_1_1Flow.html">quetzal::demography::Flow</a>&lt; Space, Time, Value &gt;::flux_to </td>
+          <td class="memname">const std::unordered_map&lt;coord_type, value_type&gt;&amp; <a class="el" href="classquetzal_1_1demography_1_1Flow.html">quetzal::demography::Flow</a>&lt; Space, Time, Value &gt;::flux_to </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;&#160;</td>
+          <td class="paramtype">coord_type const &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -290,7 +289,7 @@ template&lt;typename Space , typename Time , typename Value &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classquetzal_1_1demography_1_1Flow.html">quetzal::demography::Flow</a>&lt; Space, Time, Value &gt;::flux_to_is_defined </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;&#160;</td>
+          <td class="paramtype">coord_type const &amp;&#160;</td>
           <td class="paramname"><em>to</em>, </td>
         </tr>
         <tr>
@@ -331,13 +330,13 @@ template&lt;typename Space , typename Time , typename Value &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classquetzal_1_1demography_1_1Flow.html">quetzal::demography::Flow</a>&lt; Space, Time, Value &gt;::set_flux_from_to </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;&#160;</td>
+          <td class="paramtype">coord_type const &amp;&#160;</td>
           <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1Flow.html#ae3b23a9a71b087e87ff124c1b23b4a66">coord_type</a> const &amp;&#160;</td>
+          <td class="paramtype">coord_type const &amp;&#160;</td>
           <td class="paramname"><em>to</em>, </td>
         </tr>
         <tr>

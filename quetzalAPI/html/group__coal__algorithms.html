@@ -297,9 +297,7 @@ template&lt;class BidirectionalIterator , class OccupancySpectrum , class Genera
   <table class="params">
     <tr><td class="paramname">first</td><td>iterator at the begin of the range </td></tr>
     <tr><td class="paramname">last</td><td>iterator to the past-the-end element. </td></tr>
-    <tr><td class="paramname">init</td><td>the value at which parent is initialized </td></tr>
     <tr><td class="paramname">sp</td><td>occupancy spectrum giving the merging configuration </td></tr>
-    <tr><td class="paramname">op</td><td>binary operation function object that will be applied for branching a child to its parent. The binary operator takes the parent value a (initialized to init) and the value of the child b. The signature of the function should be equivalent to the following: <code>Ret fun(const Type1 &amp;parent, const Type2 &amp;child);</code> </td></tr>
     <tr><td class="paramname">g</td><td>a random generator that must meet the requirements of UniformRandomBitGenerator concept. </td></tr>
   </table>
   </dd>

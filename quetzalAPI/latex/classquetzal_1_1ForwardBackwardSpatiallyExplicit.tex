@@ -51,7 +51,7 @@ using {\bfseries N\+\_\+value\+\_\+type} = typename Dispersal\+Policy\+::value\+
 \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_adb8474c5c66991e5c7be6226c42a8b6f}{Forward\+Backward\+Spatially\+Explicit}} (coord\+\_\+type x\+\_\+0, N\+\_\+value\+\_\+type N\+\_\+0, unsigned int nb\+\_\+generations)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8de3f9967123cc24c403deb79871c232}{pop\+\_\+size\+\_\+history}} () const noexcept
-\begin{DoxyCompactList}\small\item\em Read-\/only access to the population size history. @detail Designed to be used for composing growth expression. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Read-\/only access to the population size history. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Generator , typename Growth , typename Dispersal $>$ }\\void \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a1c02f6837a041942a963c2b3e2c227a1}{simulate\+\_\+forward\+\_\+demography}} (Growth growth, Dispersal kernel, Generator \&gen)
 \begin{DoxyCompactList}\small\item\em Simulate the forward-\/in-\/time demographic expansion. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Merger , typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a429984c5d78e2b1385749d42b79df030}{make\+\_\+forest\+\_\+and\+\_\+coalesce\+\_\+along\+\_\+spatial\+\_\+history}} (std\+::map$<$ coord\+\_\+type, unsigned int $>$ sample, Generator \&gen)
@@ -276,9 +276,9 @@ auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\
 
 
 
-Read-\/only access to the population size history. @detail Designed to be used for composing growth expression. 
+Read-\/only access to the population size history. 
 
-\begin{DoxyReturn}{Returns}
+Designed to be used for composing growth expression. \begin{DoxyReturn}{Returns}
 a functor with signature {\ttfamily N\+\_\+value\+\_\+type fun(coord\+\_\+type const\& x, time\+\_\+type const\& t)} giving the population size in deme $x$ at time $t$. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a1c02f6837a041942a963c2b3e2c227a1}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a1c02f6837a041942a963c2b3e2c227a1}} 

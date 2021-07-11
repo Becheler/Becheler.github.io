@@ -7,6 +7,5 @@ var searchData=
   ['allele_4',['Allele',['../classquetzal_1_1genetics_1_1Allele.html',1,'quetzal::genetics']]],
   ['arrival_5fspace_5',['arrival_space',['../classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration.html#ae84114fcad67d951c88493658b7fc24e',1,'quetzal::demography::dispersal_policy::mass_based::neighboring_migration']]],
   ['at_6',['at',['../classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a041bf9db3953cb86fb7ff30a92404e3d',1,'quetzal::geography::EnvironmentalQuantity']]],
-  ['algorithms_7',['Algorithms',['../group__coal__algorithms.html',1,'']]],
-  ['api_20documentation_8',['API Documentation',['../index.html',1,'']]]
+  ['algorithms_7',['Algorithms',['../group__coal__algorithms.html',1,'']]]
 ];

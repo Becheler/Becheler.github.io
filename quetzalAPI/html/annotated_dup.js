@@ -31,18 +31,18 @@ var annotated_dup =
             [ "MyHash", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash" ]
           ] ],
           [ "Generator", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator" ],
-          [ "identity", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1identity.html", null ],
-          [ "in_memoized_distribution", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html", null ],
+          [ "identity", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1identity.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1identity" ],
+          [ "in_memoized_distribution", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution" ],
           [ "OccupancySpectrumDistribution", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution" ],
-          [ "on_the_fly", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html", null ],
+          [ "on_the_fly", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly" ],
           [ "return_always_true", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true" ],
-          [ "truncate_tail", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail.html", null ]
+          [ "truncate_tail", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail" ]
         ] ],
-        [ "BinaryMerger", "structquetzal_1_1coalescence_1_1BinaryMerger.html", null ],
+        [ "BinaryMerger", "structquetzal_1_1coalescence_1_1BinaryMerger.html", "structquetzal_1_1coalescence_1_1BinaryMerger" ],
         [ "Forest", "classquetzal_1_1coalescence_1_1Forest.html", "classquetzal_1_1coalescence_1_1Forest" ],
         [ "newick_with_distance_to_parent", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent" ],
         [ "newick_with_distance_to_parent_and_leaf_name", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name.html", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name" ],
-        [ "SimultaneousMultipleMerger", "structquetzal_1_1coalescence_1_1SimultaneousMultipleMerger.html", null ],
+        [ "SimultaneousMultipleMerger", "structquetzal_1_1coalescence_1_1SimultaneousMultipleMerger.html", "structquetzal_1_1coalescence_1_1SimultaneousMultipleMerger" ],
         [ "Tree", "classquetzal_1_1coalescence_1_1Tree.html", "classquetzal_1_1coalescence_1_1Tree" ]
       ] ],
       [ "demography", null, [

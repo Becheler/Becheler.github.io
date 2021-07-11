@@ -1,7 +1,8 @@
 var group__coal__spectrum =
 [
     [ "Generator", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html", [
-      [ "occupancy_spectrum_type", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html#af70ba21047208434acae994606498415", null ]
+      [ "occupancy_spectrum_type", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html#af70ba21047208434acae994606498415", null ],
+      [ "generate", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html#af4b187154cd2717e86328c98eb873477", null ]
     ] ],
     [ "OccupancySpectrumDistribution", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html", [
       [ "OccupancySpectrumDistribution", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html#a72594bdf23322be6176bf8d202cf4ba2", null ],

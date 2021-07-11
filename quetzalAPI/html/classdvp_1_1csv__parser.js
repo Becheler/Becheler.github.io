@@ -18,5 +18,6 @@ var classdvp_1_1csv__parser =
     [ "end_file_handler", "classdvp_1_1csv__parser.html#abe924b0f61da2406f7bc99189e0e232a", null ],
     [ "end_line_handler", "classdvp_1_1csv__parser.html#a2c0436d6781b3c11f7a91d108828e41b", null ],
     [ "error_handler", "classdvp_1_1csv__parser.html#adb8c730018d1cf9a8b20fc5d2ecd985a", null ],
-    [ "field_handler", "classdvp_1_1csv__parser.html#a527ecb53020b9333208a2b3d03ddca80", null ]
+    [ "field_handler", "classdvp_1_1csv__parser.html#a527ecb53020b9333208a2b3d03ddca80", null ],
+    [ "state_matrix", "classdvp_1_1csv__parser.html#aaeebe204be74691a974feecbe92054a2", null ]
 ];

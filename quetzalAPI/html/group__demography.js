@@ -23,7 +23,8 @@ var group__demography =
       [ "m_times", "classquetzal_1_1demography_1_1BaseHistory.html#aa86e2690297eff18f88db10e95de77b4", null ]
     ] ],
     [ "individual_based", "classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based.html", [
-      [ "value_type", "classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based.html#a3195a190996ea47dbbb0b3782e5f8ea8", null ]
+      [ "value_type", "classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based.html#a3195a190996ea47dbbb0b3782e5f8ea8", null ],
+      [ "make_distance_based_dispersal", "classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based.html#a396cd8c2d84dfb5edfdd78d6878a0e41", null ]
     ] ],
     [ "mass_based", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html", [
       [ "neighboring_migration", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration.html", [
@@ -32,7 +33,10 @@ var group__demography =
         [ "arrival_space", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration.html#ae84114fcad67d951c88493658b7fc24e", null ],
         [ "operator()", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration.html#a0010505a0061927c0af976b763f86182", null ]
       ] ],
-      [ "value_type", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html#a4274624eea03ce0f8d942711332853b3", null ]
+      [ "value_type", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html#a4274624eea03ce0f8d942711332853b3", null ],
+      [ "make_distance_based_dispersal", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html#a9ae773d60dbceecf923671c4831ac5ef", null ],
+      [ "make_neighboring_migration", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html#a4e6fdd8683c102bbd4f13522437bd39f", null ],
+      [ "make_sparse_distance_based_dispersal", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html#ad8b459367e912797ab0ef39b2afd7249", null ]
     ] ],
     [ "Flow", "classquetzal_1_1demography_1_1Flow.html", [
       [ "key_type", "structquetzal_1_1demography_1_1Flow_1_1key__type.html", [

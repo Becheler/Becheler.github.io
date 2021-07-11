@@ -8,5 +8,9 @@ var classquetzal_1_1coalescence_1_1newick__with__distance__to__parent =
     [ "tree_type", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a39416bbbaf21b761aa85e1dc38c08250", null ],
     [ "ancestral_Wright_Fisher_N", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a76c9284ed25dddc3f80b67a7e8af9f97", null ],
     [ "ancestral_Wright_Fisher_N", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#af5328eebabdd6107053f8bd258aa3409", null ],
-    [ "find_mrca", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a5165a3dc80400d35aa5dff61861d3804", null ]
+    [ "branch", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a1aaa2a4ecf29fa3f84b06e29cb1b6bd5", null ],
+    [ "find_mrca", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a5165a3dc80400d35aa5dff61861d3804", null ],
+    [ "init", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a5fd63cee81049a139882a03fd0a4469b", null ],
+    [ "make_forest", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a955b71aaf116a60471de63a194a5db2b", null ],
+    [ "treat", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#afc76ed9a47e557c41a1572e8243bd8d4", null ]
 ];

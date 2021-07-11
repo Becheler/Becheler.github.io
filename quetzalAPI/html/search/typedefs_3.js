@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['time_5ftype_488',['time_type',['../classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html#a12989b7417474206187485e62f7973ae',1,'quetzal::coalescence::policies::distance_to_parent_leaf_name']]],
-  ['tree_5ftype_489',['tree_type',['../classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html#a4ae09c0af9a8111d6a1f2614b53c9fb1',1,'quetzal::coalescence::policies::distance_to_parent_leaf_name']]]
+  ['time_5ftype_489',['time_type',['../classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name.html#a728bc23dfecd16532f8e063aa4ff6978',1,'quetzal::coalescence::policy::distance_to_parent_leaf_name']]],
+  ['tree_5ftype_490',['tree_type',['../classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name.html#a23031b29368f4c7ced31b8c20b6eb233',1,'quetzal::coalescence::policy::distance_to_parent_leaf_name']]]
 ];

@@ -38,9 +38,9 @@ var annotated_dup =
           [ "return_always_true", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true" ],
           [ "truncate_tail", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1truncate__tail.html", null ]
         ] ],
-        [ "policies", null, [
-          [ "distance_to_parent", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent.html", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent" ],
-          [ "distance_to_parent_leaf_name", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name.html", "classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name" ]
+        [ "policy", null, [
+          [ "distance_to_parent", "classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent.html", "classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent" ],
+          [ "distance_to_parent_leaf_name", "classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name.html", "classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name" ]
         ] ],
         [ "BinaryMerger", "structquetzal_1_1coalescence_1_1BinaryMerger.html", null ],
         [ "Forest", "classquetzal_1_1coalescence_1_1Forest.html", "classquetzal_1_1coalescence_1_1Forest" ],

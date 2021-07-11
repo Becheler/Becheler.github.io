@@ -23,8 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Quetzal-CoalTL", "index.html", [
-    [ "Welcome, developers!", "index.html#autotoc_md0", null ],
-    [ "Modules", "index.html#autotoc_md1", null ],
+    [ "Welcome, developers!", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
@@ -51,7 +50,7 @@ var NAVTREEINDEX =
 ".html",
 "classquetzal_1_1coalescence_1_1Tree.html#a9ea2cc358aed0bd329d2c170c7039586",
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a619e18963da66c8397f160c8277fc54e",
-"structdvp_1_1csv__custom__separator__traits.html#a620c8754fde41f0600e53b6576d33597"
+"structdvp_1_1csv__custom__separator__traits.html#a80d2fd9d63bf62f915e5464216f7c4e6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

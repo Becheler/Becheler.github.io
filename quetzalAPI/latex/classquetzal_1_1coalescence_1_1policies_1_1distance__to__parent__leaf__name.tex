@@ -1,0 +1,56 @@
+\hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name}{}\doxysection{quetzal\+::coalescence\+::policies\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name$<$ Space, Time $>$ Class Template Reference}
+\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name}\index{quetzal::coalescence::policies::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policies::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1cell__type}{cell\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Defines what data type the tree should store. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1treatment}{treatment}}
+\begin{DoxyCompactList}\small\item\em Treatment to operate on a D\+FS on the tree to compute branches length. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_adb11b291a2968ae59a4d725fe8ae20b3}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_adb11b291a2968ae59a4d725fe8ae20b3}} 
+using {\bfseries coord\+\_\+type} = Space
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a12989b7417474206187485e62f7973ae}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a12989b7417474206187485e62f7973ae}} 
+using {\bfseries time\+\_\+type} = Time
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a4ae09c0af9a8111d6a1f2614b53c9fb1}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a4ae09c0af9a8111d6a1f2614b53c9fb1}} 
+using {\bfseries tree\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_1_1cell__type}{cell\+\_\+type}} $>$
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_ae706cd108813b9666a2c4f0842b7edc3}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_ae706cd108813b9666a2c4f0842b7edc3}} 
+using {\bfseries forest\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{quetzal\+::coalescence\+::\+Forest}}$<$ coord\+\_\+type, \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{tree\+\_\+type}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_ac61021e100f46e4ed25cafe4189a75b7}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_ac61021e100f46e4ed25cafe4189a75b7}} 
+void {\bfseries ancestral\+\_\+\+Wright\+\_\+\+Fisher\+\_\+N} (unsigned int value)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a79543df4bc1ced4ee7cfc1b661610d3e}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a79543df4bc1ced4ee7cfc1b661610d3e}} 
+{\footnotesize template$<$typename Generator $>$ }\\\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{tree\+\_\+type}} {\bfseries find\+\_\+mrca} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{forest\+\_\+type}} const \&forest, time\+\_\+type const \&first\+\_\+time, Generator \&gen) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a388d12f3ffee2bbac11fa9c965f80f74}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a388d12f3ffee2bbac11fa9c965f80f74}} 
+std\+::string {\bfseries treat} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{tree\+\_\+type}} \&tree) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_ab7943f67607476ac3552a7284a9b9012}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_ab7943f67607476ac3552a7284a9b9012}} 
+{\footnotesize template$<$typename F $>$ }\\static auto {\bfseries make\+\_\+forest} (std\+::map$<$ coord\+\_\+type, unsigned int $>$ const \&sample\+\_\+counts, time\+\_\+type const \&sampling\+\_\+time, F get\+\_\+name)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a8d8e44aea6b9d57045632d7944ccad2e}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a8d8e44aea6b9d57045632d7944ccad2e}} 
+{\footnotesize template$<$typename T , typename F1 , typename F2 $>$ }\\static auto {\bfseries make\+\_\+forest} (std\+::vector$<$ T $>$ sample, time\+\_\+type const \&sampling\+\_\+time, F1 get\+\_\+location, F2 get\+\_\+name)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a5f8d3d42b1d7c4e9464e5540945887c1}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_a5f8d3d42b1d7c4e9464e5540945887c1}} 
+static auto {\bfseries branch} ()
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_abe47e901e26b5873e11aefc5db695960}\label{classquetzal_1_1coalescence_1_1policies_1_1distance__to__parent__leaf__name_abe47e901e26b5873e11aefc5db695960}} 
+static auto {\bfseries init} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/coalescence/policies/distance\+\_\+to\+\_\+parent.\+h\end{DoxyCompactItemize}

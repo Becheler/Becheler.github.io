@@ -1,0 +1,34 @@
+\hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t}{}\doxysection{quetzal\+::expressive\+::symetric\+\_\+binop\+\_\+t$<$ FL, Operator, FR $>$ Struct Template Reference}
+\label{structquetzal_1_1expressive_1_1symetric__binop__t}\index{quetzal::expressive::symetric\_binop\_t$<$ FL, Operator, FR $>$@{quetzal::expressive::symetric\_binop\_t$<$ FL, Operator, FR $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_a46778659fff87fb8d72b675c5283354e}\label{structquetzal_1_1expressive_1_1symetric__binop__t_a46778659fff87fb8d72b675c5283354e}} 
+using {\bfseries base\+\_\+t} = \mbox{\hyperlink{structquetzal_1_1expressive_1_1composite__functor}{composite\+\_\+functor}}$<$ FL, FR $>$
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_a2b2039191ddd6748e871b2a187cd837a}\label{structquetzal_1_1expressive_1_1symetric__binop__t_a2b2039191ddd6748e871b2a187cd837a}} 
+using {\bfseries F\+L\+\_\+return\+\_\+type} = typename base\+\_\+t\+::template return\+\_\+type$<$ 0 $>$
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_af1a5f87dffda7d7ff861d946cada40d2}\label{structquetzal_1_1expressive_1_1symetric__binop__t_af1a5f87dffda7d7ff861d946cada40d2}} 
+using {\bfseries F\+R\+\_\+return\+\_\+type} = typename base\+\_\+t\+::template return\+\_\+type$<$ 1 $>$
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_aae13bcf8752ba8a5bfce9962871fd53b}\label{structquetzal_1_1expressive_1_1symetric__binop__t_aae13bcf8752ba8a5bfce9962871fd53b}} 
+using {\bfseries value\+\_\+type} = applied\+\_\+binary\+\_\+type$<$ F\+L\+\_\+return\+\_\+type, Operator, F\+R\+\_\+return\+\_\+type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_a11a34625c31ad80a7443b41818a15cb9}\label{structquetzal_1_1expressive_1_1symetric__binop__t_a11a34625c31ad80a7443b41818a15cb9}} 
+constexpr {\bfseries symetric\+\_\+binop\+\_\+t} (FL l, FR r)
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_a6dd872d2b2129266f3c818de62671e85}\label{structquetzal_1_1expressive_1_1symetric__binop__t_a6dd872d2b2129266f3c818de62671e85}} 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr value\+\_\+type {\bfseries operator()} (Args... args) const
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1symetric__binop__t_ab97815d2143e94b1a0fc10b04c02d0f8}\label{structquetzal_1_1expressive_1_1symetric__binop__t_ab97815d2143e94b1a0fc10b04c02d0f8}} 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr value\+\_\+type {\bfseries impl} (Args... args) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/expressive/expressive.\+h\end{DoxyCompactItemize}

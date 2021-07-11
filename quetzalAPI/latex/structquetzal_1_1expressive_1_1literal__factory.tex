@@ -1,0 +1,47 @@
+\hypertarget{structquetzal_1_1expressive_1_1literal__factory}{}\doxysection{quetzal\+::expressive\+::literal\+\_\+factory$<$ Args $>$ Struct Template Reference}
+\label{structquetzal_1_1expressive_1_1literal__factory}\index{quetzal::expressive::literal\_factory$<$ Args $>$@{quetzal::expressive::literal\_factory$<$ Args $>$}}
+
+
+Transforms \href{https://stackoverflow.com/documentation/c\%2b\%2b/7836/literals\#t=201709240552046831589}{\texttt{ literals}} into operator friendly classes.  
+
+
+
+
+{\ttfamily \#include $<$expressive.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1literal__factory_ae3adc17ef47a119fcc351c1156c4b70b}\label{structquetzal_1_1expressive_1_1literal__factory_ae3adc17ef47a119fcc351c1156c4b70b}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr auto {\bfseries operator()} (T t)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename... Args$>$\newline
+struct quetzal\+::expressive\+::literal\+\_\+factory$<$ Args $>$}
+
+Transforms \href{https://stackoverflow.com/documentation/c\%2b\%2b/7836/literals\#t=201709240552046831589}{\texttt{ literals}} into operator friendly classes. 
+
+Transforms a \href{https://stackoverflow.com/documentation/c\%2b\%2b/7836/literals\#t=201709240552046831589}{\texttt{ literal}} object into operator friendly class, allowing it to be composed into a more complex expression using mathematical operators with others expressive objects having compatible callable interface.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the literal type \\
+\hline
+{\em Args} & the callable interface arguments to which the literal should be transformed\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/expressive/expressive.\+h\end{DoxyCompactItemize}

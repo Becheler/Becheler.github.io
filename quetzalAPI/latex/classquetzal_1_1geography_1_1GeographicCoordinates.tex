@@ -1,0 +1,334 @@
+\hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates}{}\doxysection{quetzal\+::geography\+::Geographic\+Coordinates Class Reference}
+\label{classquetzal_1_1geography_1_1GeographicCoordinates}\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+
+
+Geographic coordinates.  
+
+
+
+
+{\ttfamily \#include $<$Geographic\+Coordinates.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_acb477e2851f9bd20bc02c44729b24c54}\label{classquetzal_1_1geography_1_1GeographicCoordinates_acb477e2851f9bd20bc02c44729b24c54}} 
+using {\bfseries decimal\+\_\+degree} = double
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a737a7055dc61e2426181d33f73b629fc}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a737a7055dc61e2426181d33f73b629fc}} 
+using {\bfseries km} = double
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a58b5a38c267ca549fa0ca65ed3dc4254}{Geographic\+Coordinates}} (decimal\+\_\+degree \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a7c519e715edd1062e5ee27943e9a6779}{lat}}, decimal\+\_\+degree \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a597e76186a7d759a58a60d3bb7967124}{lon}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+km \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a8e57c0f504015ebf0bc6caabf869dfd5}{great\+\_\+circle\+\_\+distance\+\_\+to}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&other) const
+\begin{DoxyCompactList}\small\item\em Compute great-\/circle distance between two points on the Earth. \end{DoxyCompactList}\item 
+decimal\+\_\+degree \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a7c519e715edd1062e5ee27943e9a6779}{lat}} () const
+\begin{DoxyCompactList}\small\item\em Gets latitude. \end{DoxyCompactList}\item 
+decimal\+\_\+degree \& \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_aef64bb0aee1b1290ed8e08eef76cb3db}{lat}} ()
+\begin{DoxyCompactList}\small\item\em Gets latitude. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \& \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a50c5d0e72f5b80e8f0fecb9e09f78309}{lat}} (decimal\+\_\+degree value)
+\begin{DoxyCompactList}\small\item\em Set latitude. \end{DoxyCompactList}\item 
+decimal\+\_\+degree \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a597e76186a7d759a58a60d3bb7967124}{lon}} () const
+\begin{DoxyCompactList}\small\item\em Get longitude. \end{DoxyCompactList}\item 
+decimal\+\_\+degree \& \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_af9beb47fedf0d17fb8c95b17dc14e80c}{lon}} ()
+\begin{DoxyCompactList}\small\item\em Get reference on longitude. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \& \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a7240e4d6b4a7d769a7275f5730d97738}{lon}} (decimal\+\_\+degree value)
+\begin{DoxyCompactList}\small\item\em Set longitude. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a2bcaa9b2fd3738d1a3026ed6a2c4dd93}{operator$<$}} (const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \&other) const
+\begin{DoxyCompactList}\small\item\em Comparison operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a6a3e1e1a98c534c19ec2946f423b3583}{operator==}} (const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality comparison operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates_a42d427ac90087dfa12da7a1c776d2b53}{operator!=}} (const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \&other) const
+\begin{DoxyCompactList}\small\item\em Unequality comparison operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Geographic coordinates. 
+
+Geographic coordinates (longitude and latitude) in decimal degree.\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a58b5a38c267ca549fa0ca65ed3dc4254}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a58b5a38c267ca549fa0ca65ed3dc4254}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!GeographicCoordinates@{GeographicCoordinates}}
+\index{GeographicCoordinates@{GeographicCoordinates}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{GeographicCoordinates()}{GeographicCoordinates()}}
+{\footnotesize\ttfamily quetzal\+::geography\+::\+Geographic\+Coordinates\+::\+Geographic\+Coordinates (\begin{DoxyParamCaption}\item[{decimal\+\_\+degree}]{lat,  }\item[{decimal\+\_\+degree}]{lon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+Default Construct a Geographic\+Coordinate with given longitude and latitude.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat} & the latitude value \\
+\hline
+{\em lon} & the longitude value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Exception will be thrown if the given values are aberrant. 
+\end{DoxyRemark}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a8e57c0f504015ebf0bc6caabf869dfd5}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a8e57c0f504015ebf0bc6caabf869dfd5}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!great\_circle\_distance\_to@{great\_circle\_distance\_to}}
+\index{great\_circle\_distance\_to@{great\_circle\_distance\_to}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{great\_circle\_distance\_to()}{great\_circle\_distance\_to()}}
+{\footnotesize\ttfamily km quetzal\+::geography\+::\+Geographic\+Coordinates\+::great\+\_\+circle\+\_\+distance\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compute great-\/circle distance between two points on the Earth. 
+
+Compute great circle distance in kilometers to an other geographic coordinate. Implementation follows a direct translation of \href{http://en.wikipedia.org/wiki/Haversine_formula}{\texttt{ Haversine formula}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance in kilometers 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_aef64bb0aee1b1290ed8e08eef76cb3db}\label{classquetzal_1_1geography_1_1GeographicCoordinates_aef64bb0aee1b1290ed8e08eef76cb3db}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!lat@{lat}}
+\index{lat@{lat}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{lat()}{lat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily decimal\+\_\+degree\& quetzal\+::geography\+::\+Geographic\+Coordinates\+::lat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets latitude. 
+
+Gets latitude value reference.
+
+\begin{DoxyReturn}{Returns}
+a reference the latitude value 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a7c519e715edd1062e5ee27943e9a6779}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a7c519e715edd1062e5ee27943e9a6779}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!lat@{lat}}
+\index{lat@{lat}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{lat()}{lat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily decimal\+\_\+degree quetzal\+::geography\+::\+Geographic\+Coordinates\+::lat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets latitude. 
+
+Gets latitude value.
+
+\begin{DoxyReturn}{Returns}
+the latitude value 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a50c5d0e72f5b80e8f0fecb9e09f78309}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a50c5d0e72f5b80e8f0fecb9e09f78309}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!lat@{lat}}
+\index{lat@{lat}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{lat()}{lat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}}\& quetzal\+::geography\+::\+Geographic\+Coordinates\+::lat (\begin{DoxyParamCaption}\item[{decimal\+\_\+degree}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set latitude. 
+
+Set latitude value.
+
+\begin{DoxyReturn}{Returns}
+a reference on the modified object 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_af9beb47fedf0d17fb8c95b17dc14e80c}\label{classquetzal_1_1geography_1_1GeographicCoordinates_af9beb47fedf0d17fb8c95b17dc14e80c}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!lon@{lon}}
+\index{lon@{lon}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{lon()}{lon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily decimal\+\_\+degree\& quetzal\+::geography\+::\+Geographic\+Coordinates\+::lon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get reference on longitude. 
+
+Get reference on longitude value.
+
+\begin{DoxyReturn}{Returns}
+a reference on the longitude value 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a597e76186a7d759a58a60d3bb7967124}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a597e76186a7d759a58a60d3bb7967124}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!lon@{lon}}
+\index{lon@{lon}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{lon()}{lon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily decimal\+\_\+degree quetzal\+::geography\+::\+Geographic\+Coordinates\+::lon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get longitude. 
+
+Get longitude value.
+
+\begin{DoxyReturn}{Returns}
+the longitude value 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a7240e4d6b4a7d769a7275f5730d97738}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a7240e4d6b4a7d769a7275f5730d97738}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!lon@{lon}}
+\index{lon@{lon}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{lon()}{lon()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}}\& quetzal\+::geography\+::\+Geographic\+Coordinates\+::lon (\begin{DoxyParamCaption}\item[{decimal\+\_\+degree}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set longitude. 
+
+Set longitude value.
+
+\begin{DoxyReturn}{Returns}
+a reference on the modified object 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a42d427ac90087dfa12da7a1c776d2b53}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a42d427ac90087dfa12da7a1c776d2b53}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool quetzal\+::geography\+::\+Geographic\+Coordinates\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unequality comparison operator. 
+
+Compares two coordinates by their latitude and longitude.
+
+\begin{DoxyReturn}{Returns}
+false if longitude and latitude are equal, else returns true. 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a2bcaa9b2fd3738d1a3026ed6a2c4dd93}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a2bcaa9b2fd3738d1a3026ed6a2c4dd93}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool quetzal\+::geography\+::\+Geographic\+Coordinates\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comparison operator. 
+
+Establishes a strict total order relation between geographic coordinates.
+
+\begin{DoxyRemark}{Remarks}
+allow \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} to be used in map 
+\end{DoxyRemark}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1GeographicCoordinates_a6a3e1e1a98c534c19ec2946f423b3583}\label{classquetzal_1_1geography_1_1GeographicCoordinates_a6a3e1e1a98c534c19ec2946f423b3583}} 
+\index{quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}!operator==@{operator==}}
+\index{operator==@{operator==}!quetzal::geography::GeographicCoordinates@{quetzal::geography::GeographicCoordinates}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool quetzal\+::geography\+::\+Geographic\+Coordinates\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality comparison operator. 
+
+Compares two coordinates by their latitude and longitude.
+
+\begin{DoxyReturn}{Returns}
+true if longitude and latitude are equal, else returns false. 
+\end{DoxyReturn}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/geography/Geographic\+Coordinates.\+h\end{DoxyCompactItemize}

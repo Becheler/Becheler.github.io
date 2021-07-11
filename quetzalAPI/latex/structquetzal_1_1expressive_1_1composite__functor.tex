@@ -1,0 +1,43 @@
+\hypertarget{structquetzal_1_1expressive_1_1composite__functor}{}\doxysection{quetzal\+::expressive\+::composite\+\_\+functor$<$ Functors $>$ Struct Template Reference}
+\label{structquetzal_1_1expressive_1_1composite__functor}\index{quetzal::expressive::composite\_functor$<$ Functors $>$@{quetzal::expressive::composite\_functor$<$ Functors $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_a25f7f4557dc083c4d859d519aee42fcd}\label{structquetzal_1_1expressive_1_1composite__functor_a25f7f4557dc083c4d859d519aee42fcd}} 
+using {\bfseries functors\+\_\+type} = std\+::tuple$<$ Functors... $>$
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_a2fdb78fe19cf9eebbba733d3d3dee3bf}\label{structquetzal_1_1expressive_1_1composite__functor_a2fdb78fe19cf9eebbba733d3d3dee3bf}} 
+{\footnotesize template$<$std\+::size\+\_\+t I$>$ }\\using {\bfseries return\+\_\+type} = return\+\_\+type$<$ typename std\+::tuple\+\_\+element$<$ I, functors\+\_\+type $>$\+::type $>$
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_ad496cf13e65e3e1e84f82e9defdadd70}\label{structquetzal_1_1expressive_1_1composite__functor_ad496cf13e65e3e1e84f82e9defdadd70}} 
+using {\bfseries arguments\+\_\+type} = typename std\+::common\+\_\+type$<$ typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$ Functors $>$\+::arguments\+\_\+type... $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_a2f306db2905e113b32ba02712e58727b}\label{structquetzal_1_1expressive_1_1composite__functor_a2f306db2905e113b32ba02712e58727b}} 
+constexpr {\bfseries composite\+\_\+functor} (Functors const \&... functors)
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_aef32a8b39301a9053782bb35d0e49fb5}\label{structquetzal_1_1expressive_1_1composite__functor_aef32a8b39301a9053782bb35d0e49fb5}} 
+{\footnotesize template$<$std\+::size\+\_\+t I$>$ }\\constexpr auto const  \& {\bfseries f} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_af5660fbbc611a2414ec89387cfb96987}\label{structquetzal_1_1expressive_1_1composite__functor_af5660fbbc611a2414ec89387cfb96987}} 
+{\footnotesize template$<$std\+::size\+\_\+t I$>$ }\\static constexpr std\+::size\+\_\+t {\bfseries arguments\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_aeb0f6e8cec2a250b37729288cd2167ff}\label{structquetzal_1_1expressive_1_1composite__functor_aeb0f6e8cec2a250b37729288cd2167ff}} 
+{\footnotesize template$<$typename... Args$>$ }\\static constexpr bool {\bfseries call\+\_\+check} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1composite__functor_ac0a213f20c2a6e90092b08c34a23a1eb}\label{structquetzal_1_1expressive_1_1composite__functor_ac0a213f20c2a6e90092b08c34a23a1eb}} 
+functors\+\_\+type {\bfseries functors}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/expressive/expressive.\+h\end{DoxyCompactItemize}

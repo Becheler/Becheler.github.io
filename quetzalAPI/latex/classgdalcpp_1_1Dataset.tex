@@ -1,0 +1,77 @@
+\hypertarget{classgdalcpp_1_1Dataset}{}\doxysection{gdalcpp\+::Dataset Class Reference}
+\label{classgdalcpp_1_1Dataset}\index{gdalcpp::Dataset@{gdalcpp::Dataset}}
+
+
+Inheritance diagram for gdalcpp\+::Dataset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classgdalcpp_1_1Dataset__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}\label{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}} 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}} (const std\+::string \&driver\+\_\+name, const std\+::string \&dataset\+\_\+name, const \mbox{\hyperlink{classgdalcpp_1_1SRS}{S\+RS}} \&srs=\mbox{\hyperlink{classgdalcpp_1_1SRS}{S\+RS}}\{\}, const std\+::vector$<$ std\+::string $>$ \&options=\{\})
+\begin{DoxyCompactList}\small\item\em Vector constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_ad533cf0e2b283de08569f5f3a22f8cee}\label{classgdalcpp_1_1Dataset_ad533cf0e2b283de08569f5f3a22f8cee}} 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset_ad533cf0e2b283de08569f5f3a22f8cee}{Dataset}} (const std\+::string \&dataset\+\_\+name, const \mbox{\hyperlink{classgdalcpp_1_1SRS}{S\+RS}} \&srs=\mbox{\hyperlink{classgdalcpp_1_1SRS}{S\+RS}}\{\}, const std\+::vector$<$ std\+::string $>$ \&options=\{\})
+\begin{DoxyCompactList}\small\item\em Raster constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_ad69a97a8c1df367c86643bf62e9b934d}\label{classgdalcpp_1_1Dataset_ad69a97a8c1df367c86643bf62e9b934d}} 
+unsigned int \mbox{\hyperlink{classgdalcpp_1_1Dataset_ad69a97a8c1df367c86643bf62e9b934d}{width}} () const
+\begin{DoxyCompactList}\small\item\em Fetch raster width in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d}\label{classgdalcpp_1_1Dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d}} 
+unsigned int \mbox{\hyperlink{classgdalcpp_1_1Dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d}{height}} () const
+\begin{DoxyCompactList}\small\item\em Fetch raster height in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a20b601d62b830103869b4950d4d84df4}\label{classgdalcpp_1_1Dataset_a20b601d62b830103869b4950d4d84df4}} 
+unsigned int \mbox{\hyperlink{classgdalcpp_1_1Dataset_a20b601d62b830103869b4950d4d84df4}{depth}} () const
+\begin{DoxyCompactList}\small\item\em Fetch the number of raster bands on this dataset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a773642fddda3ecb3cbd30f4eab43feb0}\label{classgdalcpp_1_1Dataset_a773642fddda3ecb3cbd30f4eab43feb0}} 
+auto \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a773642fddda3ecb3cbd30f4eab43feb0}{band}} (unsigned int i) const
+\begin{DoxyCompactList}\small\item\em Fetch a band object for a dataset, zeroth-\/based numbering. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a9923a081ecc1beec126d28bd53549a81}\label{classgdalcpp_1_1Dataset_a9923a081ecc1beec126d28bd53549a81}} 
+auto \mbox{\hyperlink{classgdalcpp_1_1Dataset_a9923a081ecc1beec126d28bd53549a81}{affine\+\_\+transformation\+\_\+coefficients}} ()
+\begin{DoxyCompactList}\small\item\em Fetch the affine transformation coefficients. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a16c9be3f3d3f67a8d2a24c4ea322081c}\label{classgdalcpp_1_1Dataset_a16c9be3f3d3f67a8d2a24c4ea322081c}} 
+const std\+::string \& {\bfseries driver\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_afb2a92cae082f5f232a43da5a3d58990}\label{classgdalcpp_1_1Dataset_afb2a92cae082f5f232a43da5a3d58990}} 
+const std\+::string \& {\bfseries dataset\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_ac84a91fa4848148f5354dab33b7acad6}\label{classgdalcpp_1_1Dataset_ac84a91fa4848148f5354dab33b7acad6}} 
+gdal\+\_\+dataset\+\_\+type \& {\bfseries get} () const
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a41f8a3de96cb018cc53b8b2c269ad90f}\label{classgdalcpp_1_1Dataset_a41f8a3de96cb018cc53b8b2c269ad90f}} 
+\mbox{\hyperlink{classgdalcpp_1_1SRS}{S\+RS}} \& {\bfseries srs} ()
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_aafc9026e8b84ab2c32babfcd9ec4e3e1}\label{classgdalcpp_1_1Dataset_aafc9026e8b84ab2c32babfcd9ec4e3e1}} 
+void {\bfseries exec} (const char $\ast$sql)
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a9702cf5df173764b009f4d28c37361f2}\label{classgdalcpp_1_1Dataset_a9702cf5df173764b009f4d28c37361f2}} 
+void {\bfseries exec} (const std\+::string \&sql)
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a5e927830781e3a464c222c72760865a6}\label{classgdalcpp_1_1Dataset_a5e927830781e3a464c222c72760865a6}} 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \& {\bfseries start\+\_\+transaction} ()
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a8fadc8448d3935142a828ca93c3ce3a4}\label{classgdalcpp_1_1Dataset_a8fadc8448d3935142a828ca93c3ce3a4}} 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \& {\bfseries commit\+\_\+transaction} ()
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a514db9a24b2cfa7e566dc91d9c376350}\label{classgdalcpp_1_1Dataset_a514db9a24b2cfa7e566dc91d9c376350}} 
+void {\bfseries prepare\+\_\+edit} ()
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_ab00e5dbd49ce59e9656e473bb6755002}\label{classgdalcpp_1_1Dataset_ab00e5dbd49ce59e9656e473bb6755002}} 
+void {\bfseries finalize\+\_\+edit} ()
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a89d2d7cae1e3227417c5bdf4019c6bd3}\label{classgdalcpp_1_1Dataset_a89d2d7cae1e3227417c5bdf4019c6bd3}} 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \& {\bfseries enable\+\_\+auto\+\_\+transactions} (uint64\+\_\+t edits=100000)
+\item 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_abc28baecd7c9e1a414b4878a0f920e97}\label{classgdalcpp_1_1Dataset_abc28baecd7c9e1a414b4878a0f920e97}} 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \& {\bfseries disable\+\_\+auto\+\_\+transactions} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/geography/gdalcpp.\+h\end{DoxyCompactItemize}

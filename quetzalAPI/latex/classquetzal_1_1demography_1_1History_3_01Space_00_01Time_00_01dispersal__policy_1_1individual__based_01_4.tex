@@ -1,0 +1,111 @@
+\hypertarget{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4}{}\doxysection{quetzal\+::demography\+::History$<$ Space, Time, dispersal\+\_\+policy\+::individual\+\_\+based $>$ Class Template Reference}
+\label{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4}\index{quetzal::demography::History$<$ Space, Time, dispersal\_policy::individual\_based $>$@{quetzal::demography::History$<$ Space, Time, dispersal\_policy::individual\_based $>$}}
+
+
+Partial specialization where each individual is dispersed individually.  
+
+
+
+
+{\ttfamily \#include $<$History.\+h$>$}
+
+
+
+Inheritance diagram for quetzal\+::demography\+::History$<$ Space, Time, dispersal\+\_\+policy\+::individual\+\_\+based $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for quetzal\+::demography\+::History$<$ Space, Time, dispersal\+\_\+policy\+::individual\+\_\+based $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U , typename V $>$ }\\void \mbox{\hyperlink{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4_ac1d2accea468cd349c01f3bc2330d427}{expand}} (unsigned int nb\+\_\+generations, T sim\+\_\+growth, U kernel, V \&gen)
+\begin{DoxyCompactList}\small\item\em Expands the demographic database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Space, typename Time$>$\newline
+class quetzal\+::demography\+::\+History$<$ Space, Time, dispersal\+\_\+policy\+::individual\+\_\+based $>$}
+
+Partial specialization where each individual is dispersed individually. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Space} & Demes identifiers. \\
+\hline
+{\em Time} & Equality\+Comparable, Copy\+Constructible.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4_ac1d2accea468cd349c01f3bc2330d427}\label{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4_ac1d2accea468cd349c01f3bc2330d427}} 
+\index{quetzal::demography::History$<$ Space, Time, dispersal\_policy::individual\_based $>$@{quetzal::demography::History$<$ Space, Time, dispersal\_policy::individual\_based $>$}!expand@{expand}}
+\index{expand@{expand}!quetzal::demography::History$<$ Space, Time, dispersal\_policy::individual\_based $>$@{quetzal::demography::History$<$ Space, Time, dispersal\_policy::individual\_based $>$}}
+\doxysubsubsection{\texorpdfstring{expand()}{expand()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time $>$ \\
+template$<$typename T , typename U , typename V $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{quetzal\+::demography\+::\+History}}$<$ Space, Time, \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based}{dispersal\+\_\+policy\+::individual\+\_\+based}} $>$\+::expand (\begin{DoxyParamCaption}\item[{unsigned int}]{nb\+\_\+generations,  }\item[{T}]{sim\+\_\+growth,  }\item[{U}]{kernel,  }\item[{V \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expands the demographic database. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & a functor for representing the growth process. \\
+\hline
+{\em U} & a functor for representing the dispersal process. \\
+\hline
+{\em V} & a random number generator.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+generations} & the number of generations to simulate \\
+\hline
+{\em sim\+\_\+growth} & a functor simulating $\tilde{N}_{x}^{t}$. The functor can possibly internally use a reference on the population sizes to represent the time dependency. The signature of the function should be equivalent to the following\+: {\ttfamily unsigned int sim\+\_\+growth(\+V \&gen, const coord\+\_\+type \&x, const time\+\_\+type \&t);} \\
+\hline
+{\em kernel} & a functor representing the dispersal location kernel that simulates the coordinate of the next location conditionally to the current location $x$. The signature should be equivalent to {\ttfamily coord\+\_\+type kernel(\+V \&gen, const coord\+\_\+type \&x, const time\+\_\+type \&t);}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & if the population goes extincted before the simulation is completed.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/demography/History.\+h\end{DoxyCompactItemize}

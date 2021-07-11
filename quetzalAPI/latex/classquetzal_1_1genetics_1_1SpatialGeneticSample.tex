@@ -1,0 +1,67 @@
+\hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample}{}\doxysection{quetzal\+::genetics\+::Spatial\+Genetic\+Sample$<$ Space, Individual $>$ Class Template Reference}
+\label{classquetzal_1_1genetics_1_1SpatialGeneticSample}\index{quetzal::genetics::SpatialGeneticSample$<$ Space, Individual $>$@{quetzal::genetics::SpatialGeneticSample$<$ Space, Individual $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a26cb3ea8c02e2da534d2dc0d0d908df7}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a26cb3ea8c02e2da534d2dc0d0d908df7}} 
+using {\bfseries coord\+\_\+type} = Space
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a8290a4b085880ed7ff9f6655c9dd1728}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a8290a4b085880ed7ff9f6655c9dd1728}} 
+using {\bfseries individual\+\_\+type} = Individual
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a3a8c8b24b5bc6f1956d9606d10339613}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a3a8c8b24b5bc6f1956d9606d10339613}} 
+using {\bfseries locus\+\_\+\+I\+D\+\_\+type} = typename individual\+\_\+type\+::locus\+\_\+\+I\+D\+\_\+type
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a3fc0a738bc92b44a633ee30f3d8f4143}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a3fc0a738bc92b44a633ee30f3d8f4143}} 
+using {\bfseries value\+\_\+type} = typename individual\+\_\+type\+::allele\+\_\+type\+::value\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a21abab0e0d24c6ff72379912fc30a2b2}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a21abab0e0d24c6ff72379912fc30a2b2}} 
+{\bfseries Spatial\+Genetic\+Sample} (std\+::map$<$ coord\+\_\+type, std\+::vector$<$ individual\+\_\+type $>$$>$ const \&data)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a198c1a2ecb01017ad55ba88319a0ae8f}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a198c1a2ecb01017ad55ba88319a0ae8f}} 
+void {\bfseries add} (coord\+\_\+type const \&x, Individual const \&ind)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_ad40f4a34d5bc20fe3e6eb33d9db28135}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_ad40f4a34d5bc20fe3e6eb33d9db28135}} 
+void {\bfseries add} (Individual const \&ind, coord\+\_\+type const \&x)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a4f7ad107893729ffd5b5cb30ba6ac617}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a4f7ad107893729ffd5b5cb30ba6ac617}} 
+auto {\bfseries size} (coord\+\_\+type const \&x) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_aad022d451d19e83bb50df598a9128a21}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_aad022d451d19e83bb50df598a9128a21}} 
+auto {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_ae83aa43b557beaaabee72252bcfd0a1b}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_ae83aa43b557beaaabee72252bcfd0a1b}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classquetzal_1_1genetics_1_1SpatialGeneticSample}{Spatial\+Genetic\+Sample}}$<$ coord\+\_\+type, individual\+\_\+type $>$ \& {\bfseries reproject} (T const \&projection)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a129cc3aef9b42b77ffe8c02690dd2c3e}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a129cc3aef9b42b77ffe8c02690dd2c3e}} 
+std\+::set$<$ coord\+\_\+type $>$ const  \& {\bfseries get\+\_\+sampling\+\_\+points} () const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a0e24a3e974c82918b74f0fe7cc793066}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a0e24a3e974c82918b74f0fe7cc793066}} 
+std\+::set$<$ typename individual\+\_\+type\+::locus\+\_\+\+I\+D\+\_\+type $>$ const  \& {\bfseries loci} () const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_aeecc1db97e2c2d1c669ed303915eeabb}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_aeecc1db97e2c2d1c669ed303915eeabb}} 
+std\+::vector$<$ individual\+\_\+type $>$ const  \& {\bfseries individuals\+\_\+at} (coord\+\_\+type const \&x) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_add81e57a9d8fcf6a0c28f9df13192a96}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_add81e57a9d8fcf6a0c28f9df13192a96}} 
+auto {\bfseries nb\+\_\+gene\+\_\+copies\+\_\+discarding\+\_\+\+NA} (locus\+\_\+\+I\+D\+\_\+type const \&locus) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a6ea93c59ad8186832508705af00b34bb}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a6ea93c59ad8186832508705af00b34bb}} 
+unsigned int {\bfseries allelic\+\_\+richness} (locus\+\_\+\+I\+D\+\_\+type const \&locus) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_a3bbb292ac2f55ea89b6e797bf0fc0ffe}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_a3bbb292ac2f55ea89b6e797bf0fc0ffe}} 
+auto {\bfseries frequencies\+\_\+discarding\+\_\+\+NA} (locus\+\_\+\+I\+D\+\_\+type const \&locus) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1genetics_1_1SpatialGeneticSample_aabdf44af1b0fde57c30e191d8a428196}\label{classquetzal_1_1genetics_1_1SpatialGeneticSample_aabdf44af1b0fde57c30e191d8a428196}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classquetzal_1_1genetics_1_1SpatialGeneticSample}{Spatial\+Genetic\+Sample}} \&dt)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/genetics/Spatial\+Genetic\+Sample.\+h\end{DoxyCompactItemize}

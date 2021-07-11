@@ -1,0 +1,161 @@
+\hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{}\doxysection{quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::Occupancy\+Spectrum\+Distribution$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$ Class Template Reference}
+\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}\index{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}}
+
+
+Generates random occupancy spectrum that are distributed according to the associated probability function given by von Mises (1939). The entropy is acquired by calling g.\+operator().  
+
+
+
+
+{\ttfamily \#include $<$Occupancy\+Spectrum\+Distribution.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a72594bdf23322be6176bf8d202cf4ba2}{Occupancy\+Spectrum\+Distribution}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_acf916dd78a0fd0213291d5d948867f1f}{Occupancy\+Spectrum\+Distribution}} (unsigned int \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a2d0b2762d3f2c884b55a42f513a48c77}{n}}, unsigned int \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a56c87c6a187a8fa25b4529d47567fbf0}{m}}, Unary\+Predicate pred=Unary\+Predicate())
+\begin{DoxyCompactList}\small\item\em Construct the occupancy spectrum distribution resulting from throwing n balls into m urns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ac4ba37cd2458e1c7bab640ee2936b6ab}{Occupancy\+Spectrum\+Distribution}} (const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_aa807e3bf405ef7ebfe74e89f7420c567}{Occupancy\+Spectrum\+Distribution}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ab571eac21c7b82225c35dd05190a0ea1}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ab571eac21c7b82225c35dd05190a0ea1}} 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ab571eac21c7b82225c35dd05190a0ea1}{operator=}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ad53eba52f279ec9ce57b0e3a113b3eda}{operator=}} (const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a9733055e95a3be11a640fade7c66b08a}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a9733055e95a3be11a640fade7c66b08a}} 
+{\footnotesize template$<$typename Generator $>$ }\\const spectrum\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a9733055e95a3be11a640fade7c66b08a}{operator()}} (\mbox{\hyperlink{structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator}{Generator}} \&g) const
+\begin{DoxyCompactList}\small\item\em Generates random occupancy spectrum that are distributed according to the associated probability function given by von Mises (1939). The entropy is acquired by calling g.\+operator(). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a2d0b2762d3f2c884b55a42f513a48c77}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a2d0b2762d3f2c884b55a42f513a48c77}} 
+unsigned int \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a2d0b2762d3f2c884b55a42f513a48c77}{n}} () const
+\begin{DoxyCompactList}\small\item\em Gives the number of balls that are thrown in the random experience. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a56c87c6a187a8fa25b4529d47567fbf0}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a56c87c6a187a8fa25b4529d47567fbf0}} 
+unsigned int \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a56c87c6a187a8fa25b4529d47567fbf0}{m}} () const
+\begin{DoxyCompactList}\small\item\em Gives the number of urns used in the random experience. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a0c552c9ee14ee3729a38368043f51085}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a0c552c9ee14ee3729a38368043f51085}} 
+const support\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a0c552c9ee14ee3729a38368043f51085}{support}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve occupancy spectra constituting the support of the distribution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a8b03e63c4e43e067479baa5c9cfef541}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a8b03e63c4e43e067479baa5c9cfef541}} 
+const probabilities\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a8b03e63c4e43e067479baa5c9cfef541}{weights}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve the weights associated to the random experience. They do not necessarily sum to 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a05d0b9372e0cfbf2f737e0484997c27a}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a05d0b9372e0cfbf2f737e0484997c27a}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} const \&dist)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Unary\+Predicate = return\+\_\+always\+\_\+true, class Spectrum\+Handler = identity$<$\+Generator\+::occupancy\+\_\+spectrum\+\_\+type$>$, class Int = cpp\+\_\+int, class Float = cpp\+\_\+dec\+\_\+float\+\_\+50$>$\newline
+class quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::\+Occupancy\+Spectrum\+Distribution$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$}
+
+Generates random occupancy spectrum that are distributed according to the associated probability function given by von Mises (1939). The entropy is acquired by calling g.\+operator(). 
+
+\begin{DoxyRemark}{Remarks}
+The probability of an occupancy spectrum is described in the book \char`\"{}\+Urn models and their application\+: an approach
+        to modern discrete probability theory\char`\"{} (by John and Kotz, 1977, p.\+115). 
+\end{DoxyRemark}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Unary\+Predicate} & Function object class acting as a predicate, taking the probability of the spectrum as argument and returning a boolean. The signature should be {\ttfamily bool Unary\+Predicate\+::operator()(double)} The number of possible configurations grows very fast with n and m, so memorizing all of them quickly becomes intractable. As most of the configurations have extremely low output probability, you can choose to filter the spectrum according to their sampling probability, keeping only those which probability is superior to a given threshold (or other criterion). If the predicate is evaluated to true, the spectrum and its probability will be saved in the distribution. If the predicate is evaluated to false, the spectrum and its probability will be discarded. By default, Return\+Always\+True policy is used, so all spectra are kept. \\
+\hline
+{\em Spectrum\+Handler} & Function object class modifying the spectrum to optimize speed and memory use. The signature should be {\ttfamily Occupancy\+Spectrum Spectrum\+Handler\+::operator()(\+Occupancy\+Spectrum \&\&)}. By default the Identity policy wil not modify the spectra. The Retrieve\+Last\+Empty\+Urns will retrieve all the last urns that are empty, making later iteration over a spectrum faster. \\
+\hline
+{\em Int} & A big integer class for probability computation \\
+\hline
+{\em F\+Loat} & A big float class for probability computation \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a72594bdf23322be6176bf8d202cf4ba2}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_a72594bdf23322be6176bf8d202cf4ba2}} 
+\index{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}!OccupancySpectrumDistribution@{OccupancySpectrumDistribution}}
+\index{OccupancySpectrumDistribution@{OccupancySpectrumDistribution}!quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}}
+\doxysubsubsection{\texorpdfstring{OccupancySpectrumDistribution()}{OccupancySpectrumDistribution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Unary\+Predicate  = return\+\_\+always\+\_\+true, class Spectrum\+Handler  = identity$<$\+Generator\+::occupancy\+\_\+spectrum\+\_\+type$>$, class Int  = cpp\+\_\+int, class Float  = cpp\+\_\+dec\+\_\+float\+\_\+50$>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::\+Occupancy\+Spectrum\+Distribution}}$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Occupancy\+Spectrum\+Distribution}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\begin{DoxyRemark}{Remarks}
+Position and \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} must be default constructible 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_acf916dd78a0fd0213291d5d948867f1f}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_acf916dd78a0fd0213291d5d948867f1f}} 
+\index{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}!OccupancySpectrumDistribution@{OccupancySpectrumDistribution}}
+\index{OccupancySpectrumDistribution@{OccupancySpectrumDistribution}!quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}}
+\doxysubsubsection{\texorpdfstring{OccupancySpectrumDistribution()}{OccupancySpectrumDistribution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Unary\+Predicate  = return\+\_\+always\+\_\+true, class Spectrum\+Handler  = identity$<$\+Generator\+::occupancy\+\_\+spectrum\+\_\+type$>$, class Int  = cpp\+\_\+int, class Float  = cpp\+\_\+dec\+\_\+float\+\_\+50$>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::\+Occupancy\+Spectrum\+Distribution}}$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Occupancy\+Spectrum\+Distribution}} (\begin{DoxyParamCaption}\item[{unsigned int}]{n,  }\item[{unsigned int}]{m,  }\item[{Unary\+Predicate}]{pred = {\ttfamily UnaryPredicate()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct the occupancy spectrum distribution resulting from throwing n balls into m urns. 
+
+\begin{DoxyRemark}{Remarks}
+Object can be huge if large k 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of balls \\
+\hline
+{\em m} & number of urns \\
+\hline
+{\em pred} & Unary\+Predicate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ac4ba37cd2458e1c7bab640ee2936b6ab}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ac4ba37cd2458e1c7bab640ee2936b6ab}} 
+\index{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}!OccupancySpectrumDistribution@{OccupancySpectrumDistribution}}
+\index{OccupancySpectrumDistribution@{OccupancySpectrumDistribution}!quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}}
+\doxysubsubsection{\texorpdfstring{OccupancySpectrumDistribution()}{OccupancySpectrumDistribution()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Unary\+Predicate  = return\+\_\+always\+\_\+true, class Spectrum\+Handler  = identity$<$\+Generator\+::occupancy\+\_\+spectrum\+\_\+type$>$, class Int  = cpp\+\_\+int, class Float  = cpp\+\_\+dec\+\_\+float\+\_\+50$>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::\+Occupancy\+Spectrum\+Distribution}}$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Occupancy\+Spectrum\+Distribution}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\begin{DoxyRemark}{Remarks}
+Position and \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} must be default constructible 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_aa807e3bf405ef7ebfe74e89f7420c567}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_aa807e3bf405ef7ebfe74e89f7420c567}} 
+\index{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}!OccupancySpectrumDistribution@{OccupancySpectrumDistribution}}
+\index{OccupancySpectrumDistribution@{OccupancySpectrumDistribution}!quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}}
+\doxysubsubsection{\texorpdfstring{OccupancySpectrumDistribution()}{OccupancySpectrumDistribution()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Unary\+Predicate  = return\+\_\+always\+\_\+true, class Spectrum\+Handler  = identity$<$\+Generator\+::occupancy\+\_\+spectrum\+\_\+type$>$, class Int  = cpp\+\_\+int, class Float  = cpp\+\_\+dec\+\_\+float\+\_\+50$>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::\+Occupancy\+Spectrum\+Distribution}}$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Occupancy\+Spectrum\+Distribution}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move constructor. 
+
+\begin{DoxyRemark}{Remarks}
+Position and \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} must be default constructible 
+\end{DoxyRemark}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ad53eba52f279ec9ce57b0e3a113b3eda}\label{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_ad53eba52f279ec9ce57b0e3a113b3eda}} 
+\index{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$@{quetzal::coalescence::occupancy\_spectrum::OccupancySpectrumDistribution$<$ UnaryPredicate, SpectrumHandler, Int, Float $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Unary\+Predicate  = return\+\_\+always\+\_\+true, class Spectrum\+Handler  = identity$<$\+Generator\+::occupancy\+\_\+spectrum\+\_\+type$>$, class Int  = cpp\+\_\+int, class Float  = cpp\+\_\+dec\+\_\+float\+\_\+50$>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}}\& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::\+Occupancy\+Spectrum\+Distribution}}$<$ Unary\+Predicate, Spectrum\+Handler, Int, Float $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution}{Self\+Type}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted copy assignment operator. 
+
+\begin{DoxyRemark}{Remarks}
+Deleted for avoiding copying huge amount of data. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/coalescence/occupancy\+\_\+spectrum/Occupancy\+Spectrum\+Distribution.\+h\end{DoxyCompactItemize}

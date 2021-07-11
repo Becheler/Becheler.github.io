@@ -1,0 +1,300 @@
+\hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity}{}\doxysection{quetzal\+::geography\+::Environmental\+Quantity$<$ Time $>$ Class Template Reference}
+\label{classquetzal_1_1geography_1_1EnvironmentalQuantity}\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+
+
+Discretized representation of an ecological quantity that varies in space and time.  
+
+
+
+
+{\ttfamily \#include $<$Environmental\+Quantity.\+h$>$}
+
+
+
+Inheritance diagram for quetzal\+::geography\+::Environmental\+Quantity$<$ Time $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classquetzal_1_1geography_1_1EnvironmentalQuantity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for quetzal\+::geography\+::Environmental\+Quantity$<$ Time $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classquetzal_1_1geography_1_1EnvironmentalQuantity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}} 
+using {\bfseries coord\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_ae6313561599df6df202c63e7af0ee795}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_ae6313561599df6df202c63e7af0ee795}} 
+using {\bfseries time\+\_\+type} = Time
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a06fb8a24aba3823be38864b03930be51}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a06fb8a24aba3823be38864b03930be51}} 
+using {\bfseries decimal\+\_\+degree} = typename Geographic\+Coordinates\+::decimal\+\_\+degree
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_af3fe9c057de91a473215a82bfbfa5d14}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_af3fe9c057de91a473215a82bfbfa5d14}} 
+using {\bfseries value\+\_\+type} = double
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a3ef8f6a8195abe97749824a4bacab338}{Environmental\+Quantity}} (const std\+::string \&dataset\+\_\+name, std\+::vector$<$ time\+\_\+type $>$ const \&times)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a9e1d2428ae49ebdc60b8e3c338fc5453}{origin}} () const
+\begin{DoxyCompactList}\small\item\em Gets the origin of the spatial grid. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$ decimal\+\_\+degree $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a30f219fcc4650b5653caa9fa986d5533}{resolution}} () const
+\begin{DoxyCompactList}\small\item\em Gets the resolution of the spatial grid. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$ decimal\+\_\+degree $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_aaeed223976f42ad50c4f27321fe7f7f3}{extent}} () const
+\begin{DoxyCompactList}\small\item\em Gets the extent of the spatial grid. \end{DoxyCompactList}\item 
+value\+\_\+type \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a041bf9db3953cb86fb7ff30a92404e3d}{at}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&c, Time const \&t) const
+\begin{DoxyCompactList}\small\item\em read the value at position x and time t \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ac524710bfd17bcb26921dfc3d8ac39a8}{geographic\+\_\+definition\+\_\+space}} () const
+\begin{DoxyCompactList}\small\item\em The geographic coordinates of the centroids of the demes for which values are defined at all times. \end{DoxyCompactList}\item 
+const std\+::vector$<$ time\+\_\+type $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a5cb1839a8ddb0993cf88896c0493b665}{temporal\+\_\+definition\+\_\+space}} () const
+\begin{DoxyCompactList}\small\item\em read the times at which quantity is defined. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}{is\+\_\+in\+\_\+spatial\+\_\+extent}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&c) const
+\begin{DoxyCompactList}\small\item\em Checks if a given geographic coordinate is in the landscape spatial extent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a2f669a173e97698ef05cf032af08bf87}{reproject\+\_\+to\+\_\+centroid}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&c) const
+\begin{DoxyCompactList}\small\item\em Coordinate of the centroid of the deme to which the given coordinate belongs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a207ce3690a67dd04d75b5f2770a9ca97}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a207ce3690a67dd04d75b5f2770a9ca97}} 
+{\footnotesize template$<$typename F , typename G $>$ }\\void {\bfseries export\+\_\+to\+\_\+geotiff} (F f, G g, time\+\_\+type const \&t1, time\+\_\+type const \&t2, std\+::string const \&filename) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a00d7660b1c21995a098f7f08c78083e5}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a00d7660b1c21995a098f7f08c78083e5}} 
+void {\bfseries export\+\_\+to\+\_\+shapefile} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{coord\+\_\+type}}, unsigned int $>$ counts, std\+::string const \&filename) const
+\item 
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a56c82382d574866b8424a31cd8931bee}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a56c82382d574866b8424a31cd8931bee}} 
+void {\bfseries export\+\_\+to\+\_\+shapefile} (std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{coord\+\_\+type}} $>$ coords, std\+::string const \&filename) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Time$>$\newline
+class quetzal\+::geography\+::\+Environmental\+Quantity$<$ Time $>$}
+
+Discretized representation of an ecological quantity that varies in space and time. 
+
+The values of an ecological quantity are represented in a geographic explicit context constructed from raster files and gives strong guarantees on data consistency.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Time} & Time type\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a3ef8f6a8195abe97749824a4bacab338}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a3ef8f6a8195abe97749824a4bacab338}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!EnvironmentalQuantity@{EnvironmentalQuantity}}
+\index{EnvironmentalQuantity@{EnvironmentalQuantity}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{EnvironmentalQuantity()}{EnvironmentalQuantity()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+\mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{Environmental\+Quantity}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dataset\+\_\+name,  }\item[{std\+::vector$<$ time\+\_\+type $>$ const \&}]{times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dataset\+\_\+name} & the raster dataset file to read. \\
+\hline
+{\em times} & a sorted vector giving the times that represents each band of the dataset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+the size of times argument should be equal to the depth of the given dataset 
+
+times vector should be sorted 
+
+values should be defined for same coordinates at all times" 
+\end{DoxyRemark}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a041bf9db3953cb86fb7ff30a92404e3d}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a041bf9db3953cb86fb7ff30a92404e3d}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!at@{at}}
+\index{at@{at}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+value\+\_\+type \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&}]{c,  }\item[{Time const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+read the value at position x and time t 
+
+\begin{DoxyRemark}{Remarks}
+possibly slow 
+
+checks if the given time is in the temporal extent 
+\end{DoxyRemark}
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_aaeed223976f42ad50c4f27321fe7f7f3}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_aaeed223976f42ad50c4f27321fe7f7f3}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!extent@{extent}}
+\index{extent@{extent}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{extent()}{extent()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$decimal\+\_\+degree$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the extent of the spatial grid. 
+
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_ac524710bfd17bcb26921dfc3d8ac39a8}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_ac524710bfd17bcb26921dfc3d8ac39a8}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!geographic\_definition\_space@{geographic\_definition\_space}}
+\index{geographic\_definition\_space@{geographic\_definition\_space}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{geographic\_definition\_space()}{geographic\_definition\_space()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+const std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}}$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::geographic\+\_\+definition\+\_\+space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The geographic coordinates of the centroids of the demes for which values are defined at all times. 
+
+Returns the geographic coordinates of the centroids of the demes for which values are defined at all times. Values can be read from other coordinates, but this function provides a natural way to construct the geographic support for a demic structure (for example for demographic simulations).\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!is\_in\_spatial\_extent@{is\_in\_spatial\_extent}}
+\index{is\_in\_spatial\_extent@{is\_in\_spatial\_extent}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{is\_in\_spatial\_extent()}{is\_in\_spatial\_extent()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::is\+\_\+in\+\_\+spatial\+\_\+extent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a given geographic coordinate is in the landscape spatial extent. 
+
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a9e1d2428ae49ebdc60b8e3c338fc5453}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a9e1d2428ae49ebdc60b8e3c338fc5453}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!origin@{origin}}
+\index{origin@{origin}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{origin()}{origin()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}}\& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the origin of the spatial grid. 
+
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a2f669a173e97698ef05cf032af08bf87}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a2f669a173e97698ef05cf032af08bf87}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!reproject\_to\_centroid@{reproject\_to\_centroid}}
+\index{reproject\_to\_centroid@{reproject\_to\_centroid}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{reproject\_to\_centroid()}{reproject\_to\_centroid()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::reproject\+\_\+to\+\_\+centroid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Coordinate of the centroid of the deme to which the given coordinate belongs. 
+
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a30f219fcc4650b5653caa9fa986d5533}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a30f219fcc4650b5653caa9fa986d5533}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!resolution@{resolution}}
+\index{resolution@{resolution}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{resolution()}{resolution()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$decimal\+\_\+degree$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the resolution of the spatial grid. 
+
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a5cb1839a8ddb0993cf88896c0493b665}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a5cb1839a8ddb0993cf88896c0493b665}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!temporal\_definition\_space@{temporal\_definition\_space}}
+\index{temporal\_definition\_space@{temporal\_definition\_space}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{temporal\_definition\_space()}{temporal\_definition\_space()}}
+{\footnotesize\ttfamily template$<$typename Time $>$ \\
+const std\+::vector$<$time\+\_\+type$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::temporal\+\_\+definition\+\_\+space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+read the times at which quantity is defined. 
+
+\hypertarget{group__expressive_Example}{}\doxysubsection{Example}\label{group__expressive_Example}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{group__expressive_Output}{}\doxysubsection{Output}\label{group__expressive_Output}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/geography/Environmental\+Quantity.\+h\end{DoxyCompactItemize}

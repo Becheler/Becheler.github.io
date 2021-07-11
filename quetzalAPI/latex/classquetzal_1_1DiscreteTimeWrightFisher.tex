@@ -1,0 +1,45 @@
+\hypertarget{classquetzal_1_1DiscreteTimeWrightFisher}{}\doxysection{quetzal\+::Discrete\+Time\+Wright\+Fisher Class Reference}
+\label{classquetzal_1_1DiscreteTimeWrightFisher}\index{quetzal::DiscreteTimeWrightFisher@{quetzal::DiscreteTimeWrightFisher}}
+
+
+Discrete time simulation in a Wright-\/\+Fisher Population.  
+
+
+
+
+{\ttfamily \#include $<$Discrete\+Time\+Wright\+Fisher.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1DiscreteTimeWrightFisher_a3cde153dda7434880d637ed8a12414e8}\label{classquetzal_1_1DiscreteTimeWrightFisher_a3cde153dda7434880d637ed8a12414e8}} 
+{\footnotesize template$<$typename Space , typename Tree $>$ }\\using {\bfseries forest\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{quetzal\+::coalescence\+::\+Forest}}$<$ Space, Tree $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1DiscreteTimeWrightFisher_a4c04ad3c38c37b64345f0610befefa02}\label{classquetzal_1_1DiscreteTimeWrightFisher_a4c04ad3c38c37b64345f0610befefa02}} 
+{\footnotesize template$<$typename Space , typename Tree , typename Generator , typename Binop , typename Time\+Fun $>$ }\\static Tree {\bfseries coalesce} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{forest\+\_\+type}}$<$ Space, Tree $>$ const \&forest, unsigned int N, Generator \&gen, Binop branch, Time\+Fun make\+\_\+tree)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1DiscreteTimeWrightFisher_a1757f5500b300e43264bbb224109bc02}\label{classquetzal_1_1DiscreteTimeWrightFisher_a1757f5500b300e43264bbb224109bc02}} 
+{\footnotesize template$<$typename Generator $>$ }\\static unsigned int {\bfseries sample\+\_\+waiting\+\_\+time} (unsigned int k, unsigned int N, Generator \&gen)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1DiscreteTimeWrightFisher_a106236e4a516c5604cd7ed58e315f939}\label{classquetzal_1_1DiscreteTimeWrightFisher_a106236e4a516c5604cd7ed58e315f939}} 
+{\footnotesize template$<$typename Tree , typename Generator , typename Binop , typename Time\+Fun $>$ }\\static Tree {\bfseries coalesce} (std\+::vector$<$ Tree $>$ \&trees, unsigned int N, Generator \&gen, Binop branch, Time\+Fun make\+\_\+tree)
+\item 
+\mbox{\Hypertarget{classquetzal_1_1DiscreteTimeWrightFisher_a46f40dfe1b12a5e245b27be74785c1b5}\label{classquetzal_1_1DiscreteTimeWrightFisher_a46f40dfe1b12a5e245b27be74785c1b5}} 
+{\footnotesize template$<$typename Merger\+Type  = coalescence\+::\+Simultaneous\+Multiple\+Merger$<$coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Tree , typename Generator , typename Binop , typename Time\+Fun $>$ }\\static std\+::vector$<$ Tree $>$ {\bfseries coalesce} (std\+::vector$<$ Tree $>$ \&trees, unsigned int N, unsigned int g, Generator \&gen, Binop branch, Time\+Fun make\+\_\+tree)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Discrete time simulation in a Wright-\/\+Fisher Population. 
+
+\begin{DoxyRemark}{Remarks}
+All methods are static. Use on-\/the-\/fly policy.
+\end{DoxyRemark}
+This simulator consists in a backward coalescent simulation that traces back the ancestry of a sample of gene copies sampled in a populations. Either the user wants to perform generation-\/by-\/generation coalescence during a given number of generations (leading to a Forest of coalescent trees rather a single genealogy), or the user would be interested in coalescing lineages until M\+R\+CA has been found. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/simulator/Discrete\+Time\+Wright\+Fisher.\+h\end{DoxyCompactItemize}

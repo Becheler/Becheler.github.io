@@ -1,0 +1,25 @@
+\hypertarget{structquetzal_1_1expressive_1_1make__expression__t}{}\doxysection{quetzal\+::expressive\+::make\+\_\+expression\+\_\+t$<$ F $>$ Struct Template Reference}
+\label{structquetzal_1_1expressive_1_1make__expression__t}\index{quetzal::expressive::make\_expression\_t$<$ F $>$@{quetzal::expressive::make\_expression\_t$<$ F $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1make__expression__t_a484b3efb2559f59ff97c56acf821aa94}\label{structquetzal_1_1expressive_1_1make__expression__t_a484b3efb2559f59ff97c56acf821aa94}} 
+using {\bfseries base\+\_\+t} = \mbox{\hyperlink{structquetzal_1_1expressive_1_1composite__functor}{composite\+\_\+functor}}$<$ F $>$
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1make__expression__t_a735ffd10e4d90c099c40a9c80f8558cf}\label{structquetzal_1_1expressive_1_1make__expression__t_a735ffd10e4d90c099c40a9c80f8558cf}} 
+using {\bfseries value\+\_\+type} = typename base\+\_\+t\+::return\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1make__expression__t_a833b6c4b96811eaa60c9f8a18c19db83}\label{structquetzal_1_1expressive_1_1make__expression__t_a833b6c4b96811eaa60c9f8a18c19db83}} 
+constexpr {\bfseries make\+\_\+expression\+\_\+t} (F f)
+\item 
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1make__expression__t_a24b2a3c34a3a7d21e2e7edbb214d7dd1}\label{structquetzal_1_1expressive_1_1make__expression__t_a24b2a3c34a3a7d21e2e7edbb214d7dd1}} 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr std\+::enable\+\_\+if$<$ base\+\_\+t\+::template call\+\_\+check$<$ Args... $>$), value\+\_\+type $>$\+::type {\bfseries operator()} (Args... args) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/expressive/expressive.\+h\end{DoxyCompactItemize}

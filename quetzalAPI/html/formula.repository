@@ -1,0 +1,20 @@
+\_form#0:$ g : X^2 \rightarrow R$
+\_form#1:$X$
+\_form#2:$f : R \rightarrow [0,1]$
+\_form#3:$R$
+\_form#4:$[0,1] $
+\_form#5:$1/N$
+\_form#6:$x$
+\_form#7:$t$
+\_form#8:$t-1$
+\_form#9:$\tilde{N}_{x}^{t}$
+\_form#10:$y$
+\_form#11:$i$
+\_form#12:$w = i/S$
+\_form#13:$n$
+\_form#14:$x_0$
+\_form#15:$(X_k)_{k\in Z_+}$
+\_form#16:$S$
+\_form#17:$P(X_1=\cdot|X_0=x_0)$
+\_form#18:$X_1$
+\_form#19:$P_t(X_1=\cdot|X_0=x_0)$

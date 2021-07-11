@@ -9,12 +9,20 @@ p.reference, p.definition {
 }
 
 /*My standard*/
-
 body, table, div, p, dl {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: medium;
   line-height: 1.5;
   color: #606c71;
+}
+/* Ensure that <CODE> and <TT> text is as big as the <BODY> text and use a nicer font */
+code, tt {
+    font-family: Consolas, Courier, monospace;
+    font-size: medium;
+}
+/* Need this as <PRE> makes the text look smaller due to different font */
+pre {
+    font-size: 105%;
 }
 
 /* @group Heading Levels */

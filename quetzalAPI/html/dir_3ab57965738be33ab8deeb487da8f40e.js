@@ -8,5 +8,8 @@ var dir_3ab57965738be33ab8deeb487da8f40e =
       [ "cell_type", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name_1_1cell__type.html", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name_1_1cell__type" ],
       [ "treatment", "structquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name_1_1treatment.html", "structquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name_1_1treatment" ]
     ] ],
-    [ "merger.h", "merger_8h.html", null ]
+    [ "merger.h", "merger_8h.html", [
+      [ "BinaryMerger", "structquetzal_1_1coalescence_1_1BinaryMerger.html", "structquetzal_1_1coalescence_1_1BinaryMerger" ],
+      [ "SimultaneousMultipleMerger", "structquetzal_1_1coalescence_1_1SimultaneousMultipleMerger.html", "structquetzal_1_1coalescence_1_1SimultaneousMultipleMerger" ]
+    ] ]
 ];

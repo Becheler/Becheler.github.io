@@ -1,6 +1,8 @@
 var dir_95cfde53510fd81ac0ff5912c91abc6e =
 [
-    [ "BaseHistory.h", "BaseHistory_8h.html", null ],
+    [ "BaseHistory.h", "BaseHistory_8h.html", [
+      [ "BaseHistory", "classquetzal_1_1demography_1_1BaseHistory.html", "classquetzal_1_1demography_1_1BaseHistory" ]
+    ] ],
     [ "dispersal_kernel.h", "dispersal__kernel_8h.html", [
       [ "Gaussian", "structquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian.html", "structquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian" ],
       [ "param_type", "classquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian_1_1param__type.html", "classquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian_1_1param__type" ],
@@ -22,12 +24,22 @@ var dir_95cfde53510fd81ac0ff5912c91abc6e =
       [ "param_type", "classquetzal_1_1demography_1_1dispersal__kernel_1_1GaussianMixture_1_1param__type.html", "classquetzal_1_1demography_1_1dispersal__kernel_1_1GaussianMixture_1_1param__type" ]
     ] ],
     [ "dispersal_policy.h", "dispersal__policy_8h.html", [
+      [ "individual_based", "classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based.html", "classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based" ],
+      [ "mass_based", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based" ],
       [ "neighboring_migration", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration.html", "classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration" ]
     ] ],
     [ "Flow.h", "Flow_8h.html", "Flow_8h" ],
-    [ "History.h", "History_8h.html", null ],
-    [ "PopulationSizeMapImplementation.h", "PopulationSizeMapImplementation_8h.html", null ],
-    [ "PopulationSizeVectorImplementation.h", "PopulationSizeVectorImplementation_8h.html", null ],
+    [ "History.h", "History_8h.html", [
+      [ "History", "classquetzal_1_1demography_1_1History.html", null ],
+      [ "History< Space, Time, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4" ],
+      [ "History< Space, Time, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4" ]
+    ] ],
+    [ "PopulationSizeMapImplementation.h", "PopulationSizeMapImplementation_8h.html", [
+      [ "PopulationSize", "classquetzal_1_1demography_1_1PopulationSize.html", "classquetzal_1_1demography_1_1PopulationSize" ]
+    ] ],
+    [ "PopulationSizeVectorImplementation.h", "PopulationSizeVectorImplementation_8h.html", [
+      [ "PopulationSizeVectorImplementation", "classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeVectorImplementation" ]
+    ] ],
     [ "storage_policy.h", "storage__policy_8h.html", [
       [ "storage_policy", "structquetzal_1_1demography_1_1storage__policy.html", null ]
     ] ]

@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: text-shadow 0.5s linear;
 	margin-right: 15px;
 	color: #159957;
+	font-weight: normal;
 }
 
 h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {

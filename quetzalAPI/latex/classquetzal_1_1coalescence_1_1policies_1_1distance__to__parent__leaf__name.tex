@@ -120,9 +120,9 @@ Make a forest respecting the policy from a geographic sample.
 \begin{DoxyParams}{Parameters}
 {\em sample\+\_\+counts} & A map giving for each deme the number of sampled gene copies \\
 \hline
-{\em sampling} & time At what time the gene copies are sampled. \\
+{\em sampling\+\_\+time} & At what time the gene copies are sampled. \\
 \hline
-{\em get\+\_\+name} & A functor fabricating a name for each tip node and according to two parameters\+: its deme location and the time of sampling. Signature should be equivalent to {\ttfamily std\+::string f(coord\+\_\+type const\& x, time\+\_\+type t)} \\
+{\em get\+\_\+name} & functor fabricating a name for each tip node and according to two parameters\+: its deme location and the time of sampling. Signature should be equivalent to {\ttfamily std\+::string f(coord\+\_\+type const\& x, time\+\_\+type t)} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

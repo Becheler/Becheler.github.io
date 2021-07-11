@@ -342,8 +342,8 @@ template&lt;typename F &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sample_counts</td><td>A map giving for each deme the number of sampled gene copies </td></tr>
-    <tr><td class="paramname">sampling</td><td>time At what time the gene copies are sampled. </td></tr>
-    <tr><td class="paramname">get_name</td><td>A functor fabricating a name for each tip node and according to two parameters: its deme location and the time of sampling. Signature should be equivalent to <code>std::string f(coord_type const&amp; x, time_type t)</code> </td></tr>
+    <tr><td class="paramname">sampling_time</td><td>At what time the gene copies are sampled. </td></tr>
+    <tr><td class="paramname">get_name</td><td>functor fabricating a name for each tip node and according to two parameters: its deme location and the time of sampling. Signature should be equivalent to <code>std::string f(coord_type const&amp; x, time_type t)</code> </td></tr>
   </table>
   </dd>
 </dl>

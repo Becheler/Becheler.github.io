@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['merge_2eh_359',['merge.h',['../merge_8h.html',1,'']]]
+  ['allele_2eh_634',['Allele.h',['../Allele_8h.html',1,'']]]
 ];

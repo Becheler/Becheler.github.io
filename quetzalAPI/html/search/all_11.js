@@ -1,9 +1,18 @@
 var searchData=
 [
-  ['random_200',['random',['../group__random.html',1,'']]],
-  ['reproject_5fto_5fcentroid_201',['reproject_to_centroid',['../classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884',1,'quetzal::geography::DiscreteLandscape::reproject_to_centroid()'],['../classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a2f669a173e97698ef05cf032af08bf87',1,'quetzal::geography::EnvironmentalQuantity::reproject_to_centroid()']]],
-  ['resolution_202',['Resolution',['../classquetzal_1_1geography_1_1Resolution.html',1,'quetzal::geography::Resolution&lt; T &gt;'],['../classquetzal_1_1geography_1_1Resolution.html#aceef879cef45d7f00620313a4a364814',1,'quetzal::geography::Resolution::Resolution()'],['../classquetzal_1_1geography_1_1DiscreteLandscape.html#a77bef36bfa68983914760e63d8e28e7d',1,'quetzal::geography::DiscreteLandscape::resolution()'],['../classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a30f219fcc4650b5653caa9fa986d5533',1,'quetzal::geography::EnvironmentalQuantity::resolution()']]],
-  ['resolution_3c_20decimal_5fdegree_20_3e_203',['Resolution&lt; decimal_degree &gt;',['../classquetzal_1_1geography_1_1Resolution.html',1,'quetzal::geography']]],
-  ['restrictedgrowthstring_204',['RestrictedGrowthString',['../classRestrictedGrowthString.html',1,'']]],
-  ['return_5falways_5ftrue_205',['return_always_true',['../structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html',1,'quetzal::coalescence::occupancy_spectrum']]]
+  ['coalescence_392',['coalescence',['../namespacequetzal_1_1coalescence.html',1,'quetzal']]],
+  ['demography_393',['demography',['../namespacequetzal_1_1demography.html',1,'quetzal']]],
+  ['dispersal_5fkernel_394',['dispersal_kernel',['../namespacequetzal_1_1demography_1_1dispersal__kernel.html',1,'quetzal::demography']]],
+  ['dispersal_5fpolicy_395',['dispersal_policy',['../namespacequetzal_1_1demography_1_1dispersal__policy.html',1,'quetzal::demography']]],
+  ['expressive_396',['expressive',['../namespacequetzal_1_1expressive.html',1,'quetzal']]],
+  ['genetics_397',['genetics',['../namespacequetzal_1_1genetics.html',1,'quetzal']]],
+  ['geography_398',['geography',['../namespacequetzal_1_1geography.html',1,'quetzal']]],
+  ['mutation_5fkernel_399',['mutation_kernel',['../namespacequetzal_1_1mutation__kernel.html',1,'quetzal']]],
+  ['occupancy_5fspectrum_400',['occupancy_spectrum',['../namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html',1,'quetzal::coalescence']]],
+  ['quantities_5fnbr_401',['quantities_nbr',['../classquetzal_1_1geography_1_1DiscreteLandscape.html#a51dac772692d0a0acf9e6418023cd25e',1,'quetzal::geography::DiscreteLandscape']]],
+  ['quetzal_402',['quetzal',['../namespacequetzal.html',1,'']]],
+  ['quetzal_2eh_403',['quetzal.h',['../quetzal_8h.html',1,'']]],
+  ['random_404',['random',['../namespacequetzal_1_1random.html',1,'quetzal']]],
+  ['sampling_5fscheme_405',['sampling_scheme',['../namespacequetzal_1_1sampling__scheme.html',1,'quetzal']]],
+  ['utils_406',['utils',['../namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html',1,'quetzal::coalescence::occupancy_spectrum::utils'],['../namespacequetzal_1_1utils.html',1,'quetzal::utils']]]
 ];

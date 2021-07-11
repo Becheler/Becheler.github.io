@@ -1,10 +1,10 @@
 <map id="quetzal/include/quetzal/coalescence/algorithms/merge.h" name="quetzal/include/quetzal/coalescence/algorithms/merge.h">
 <area shape="rect" id="node1" title=" " alt="" coords="238,5,401,61"/>
-<area shape="rect" id="node2" href="$merger_8h_source.html" title=" " alt="" coords="242,109,397,165"/>
-<area shape="rect" id="node3" href="$DiscreteTimeWrightFisher_8h_source.html" title=" " alt="" coords="5,213,204,269"/>
-<area shape="rect" id="node5" href="$coalescence_8h_source.html" title=" " alt="" coords="163,421,318,463"/>
-<area shape="rect" id="node7" href="$ForwardBackwardSpatiallyExplicit_8h_source.html" title=" " alt="" coords="279,317,517,373"/>
-<area shape="rect" id="node8" href="$simulator_2utils_8h_source.html" title=" " alt="" coords="446,421,601,463"/>
-<area shape="rect" id="node4" href="$distance__to__parent_8h_source.html" title=" " alt="" coords="49,317,203,373"/>
-<area shape="rect" id="node6" href="$quetzal_8h_source.html" title=" " alt="" coords="221,511,375,552"/>
+<area shape="rect" id="node2" href="$merger_8h.html" title=" " alt="" coords="242,109,397,165"/>
+<area shape="rect" id="node3" href="$DiscreteTimeWrightFisher_8h.html" title=" " alt="" coords="5,213,204,269"/>
+<area shape="rect" id="node5" href="$coalescence_8h.html" title=" " alt="" coords="163,421,318,463"/>
+<area shape="rect" id="node7" href="$ForwardBackwardSpatiallyExplicit_8h.html" title=" " alt="" coords="279,317,517,373"/>
+<area shape="rect" id="node8" href="$simulator_2utils_8h.html" title=" " alt="" coords="446,421,601,463"/>
+<area shape="rect" id="node4" href="$distance__to__parent_8h.html" title=" " alt="" coords="49,317,203,373"/>
+<area shape="rect" id="node6" href="$quetzal_8h.html" title=" " alt="" coords="221,511,375,552"/>
 </map>

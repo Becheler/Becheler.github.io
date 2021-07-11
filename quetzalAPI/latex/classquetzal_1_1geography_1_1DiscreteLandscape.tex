@@ -12,51 +12,44 @@ Discretized representation of a landscape and its ecological quantities through 
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}} 
-using {\bfseries key\+\_\+type} = Key
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}{key\+\_\+type}} = Key
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}} 
-using {\bfseries coord\+\_\+type} = typename \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{geo\+\_\+data\+\_\+type\+::coord\+\_\+type}}
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} = typename \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}{geo\+\_\+data\+\_\+type\+::coord\+\_\+type}}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}} 
-using {\bfseries time\+\_\+type} = Time
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} = Time
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}\label{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}} 
-using {\bfseries decimal\+\_\+degree} = typename geo\+\_\+data\+\_\+type\+::decimal\+\_\+degree
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}{decimal\+\_\+degree}} = typename \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a06fb8a24aba3823be38864b03930be51}{geo\+\_\+data\+\_\+type\+::decimal\+\_\+degree}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a8858d75bafb293f958a206dc6e657563}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a8858d75bafb293f958a206dc6e657563}} 
-{\footnotesize template$<$typename F , typename G $>$ }\\void {\bfseries export\+\_\+to\+\_\+geotiff} (F f, time\+\_\+type const \&t1, time\+\_\+type const \&t2, G g, std\+::string const \&filename) const
+{\footnotesize template$<$typename F , typename G $>$ }\\void \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a8858d75bafb293f958a206dc6e657563}{export\+\_\+to\+\_\+geotiff}} (F f, \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} const \&t1, \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} const \&t2, G g, std\+::string const \&filename) const
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_aeb54b428bf4891bf86ac33a472f1c5e7}\label{classquetzal_1_1geography_1_1DiscreteLandscape_aeb54b428bf4891bf86ac33a472f1c5e7}} 
-void {\bfseries export\+\_\+to\+\_\+shapefile} (std\+::map$<$ coord\+\_\+type, unsigned int $>$ counts, std\+::string const \&filename) const
+void \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_aeb54b428bf4891bf86ac33a472f1c5e7}{export\+\_\+to\+\_\+shapefile}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}}, unsigned int $>$ counts, std\+::string const \&filename) const
 \item 
-\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a48a76c171637c738f1d3df8f87dbf1db}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a48a76c171637c738f1d3df8f87dbf1db}} 
-void {\bfseries export\+\_\+to\+\_\+shapefile} (std\+::vector$<$ coord\+\_\+type $>$ points, std\+::string const \&filename) const
+void \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a48a76c171637c738f1d3df8f87dbf1db}{export\+\_\+to\+\_\+shapefile}} (std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} $>$ points, std\+::string const \&filename) const
 \item 
-\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ac8409e3905b9b3ed18bf7f1abf7a1650}{Discrete\+Landscape}} (std\+::map$<$ key\+\_\+type, std\+::string $>$ const \&files, std\+::set$<$ Time $>$ const \&times)
+\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ac8409e3905b9b3ed18bf7f1abf7a1650}{Discrete\+Landscape}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}{key\+\_\+type}}, std\+::string $>$ const \&files, std\+::set$<$ Time $>$ const \&times)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a51dac772692d0a0acf9e6418023cd25e}{quantities\+\_\+nbr}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the number of ecological quantities. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a916d5dbdd2c04644178c2cadbc14f736}{operator\mbox{[}$\,$\mbox{]}}} (key\+\_\+type const \&k) const
+auto \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a916d5dbdd2c04644178c2cadbc14f736}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}{key\+\_\+type}} const \&k) const
 \begin{DoxyCompactList}\small\item\em Accesses the specified ecological quantity. \end{DoxyCompactList}\item 
-const std\+::vector$<$ time\+\_\+type $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ac709d47ef0f1876efe1b55f89f5f9764}{temporal\+\_\+definition\+\_\+space}} () const
+const std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ac709d47ef0f1876efe1b55f89f5f9764}{temporal\+\_\+definition\+\_\+space}} () const
 \begin{DoxyCompactList}\small\item\em read the times at which quantity is defined. \end{DoxyCompactList}\item 
-const std\+::vector$<$ coord\+\_\+type $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a1d0f7554cd9871d9eab3d409e8b1eb25}{geographic\+\_\+definition\+\_\+space}} () const
+const std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a1d0f7554cd9871d9eab3d409e8b1eb25}{geographic\+\_\+definition\+\_\+space}} () const
 \begin{DoxyCompactList}\small\item\em The geographic coordinates of the centroids of the demes for which values are defined for all ecological quantities at all times. \end{DoxyCompactList}\item 
-const coord\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a9cdefea47da6fc36bbccc7c26c3764de}{origin}} () const
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a9cdefea47da6fc36bbccc7c26c3764de}{origin}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the geographic coordinate of the top left corner of the landscape. \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$ decimal\+\_\+degree $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a77bef36bfa68983914760e63d8e28e7d}{resolution}} () const
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}{decimal\+\_\+degree}} $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a77bef36bfa68983914760e63d8e28e7d}{resolution}} () const
 \begin{DoxyCompactList}\small\item\em Gets the resolution (pixel dimensions) of the grid landscape. \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$ decimal\+\_\+degree $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a270d829c44f6fd92e6af0342897eb7e0}{extent}} () const
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}{decimal\+\_\+degree}} $>$ \& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a270d829c44f6fd92e6af0342897eb7e0}{extent}} () const
 \begin{DoxyCompactList}\small\item\em Gets the geographic extent of the landscape. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_aab14eed2715f5228def361e647a9ae0b}{is\+\_\+in\+\_\+spatial\+\_\+extent}} (coord\+\_\+type const \&c) const
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_aab14eed2715f5228def361e647a9ae0b}{is\+\_\+in\+\_\+spatial\+\_\+extent}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} const \&c) const
 \begin{DoxyCompactList}\small\item\em Check if a given geographic coordinate is in the landscpae spatial extent. \end{DoxyCompactList}\item 
-coord\+\_\+type \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_afc48b0345d80fc266310133504bca884}{reproject\+\_\+to\+\_\+centroid}} (coord\+\_\+type const \&c) const
+\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_afc48b0345d80fc266310133504bca884}{reproject\+\_\+to\+\_\+centroid}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} const \&c) const
 \begin{DoxyCompactList}\small\item\em Reprojects a coordinate to the centroid of the landscape cell to which it belongs. \end{DoxyCompactList}\item 
-std\+::vector$<$ coord\+\_\+type $>$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a0f3ea564667c8ce0c54fc3c44ad16bad}{direct\+\_\+neighbors}} (coord\+\_\+type const \&x0) const
+std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} $>$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a0f3ea564667c8ce0c54fc3c44ad16bad}{direct\+\_\+neighbors}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} const \&x0) const
 \begin{DoxyCompactList}\small\item\em Get the four neighbors of a cell -\/ or less if on the border of the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -77,13 +70,44 @@ A geographic explicit landscape is represented by a set of geographic coordinate
 \end{DoxyTemplParams}
 
 
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} =  typename \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}{geo\+\_\+data\+\_\+type\+::coord\+\_\+type}}}
+
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}\label{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!decimal\_degree@{decimal\_degree}}
+\index{decimal\_degree@{decimal\_degree}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{decimal\_degree}{decimal\_degree}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}{decimal\+\_\+degree}} =  typename \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a06fb8a24aba3823be38864b03930be51}{geo\+\_\+data\+\_\+type\+::decimal\+\_\+degree}}}
+
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!key\_type@{key\_type}}
+\index{key\_type@{key\_type}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{key\_type}{key\_type}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}{key\+\_\+type}} =  Key}
+
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!time\_type@{time\_type}}
+\index{time\_type@{time\_type}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{time\_type}{time\_type}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} =  Time}
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_ac8409e3905b9b3ed18bf7f1abf7a1650}\label{classquetzal_1_1geography_1_1DiscreteLandscape_ac8409e3905b9b3ed18bf7f1abf7a1650}} 
 \index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!DiscreteLandscape@{DiscreteLandscape}}
 \index{DiscreteLandscape@{DiscreteLandscape}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{DiscreteLandscape()}{DiscreteLandscape()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{Discrete\+Landscape}} (\begin{DoxyParamCaption}\item[{std\+::map$<$ key\+\_\+type, std\+::string $>$ const \&}]{files,  }\item[{std\+::set$<$ Time $>$ const \&}]{times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{Discrete\+Landscape}} (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}{key\+\_\+type}}, std\+::string $>$ const \&}]{files,  }\item[{std\+::set$<$ Time $>$ const \&}]{times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -111,7 +135,7 @@ All quantities types are casted to double.
 \index{direct\_neighbors@{direct\_neighbors}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{direct\_neighbors()}{direct\_neighbors()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-std\+::vector$<$coord\+\_\+type$>$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::direct\+\_\+neighbors (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x0 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}}$>$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::direct\+\_\+neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} const \&}]{x0 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -131,12 +155,34 @@ At least 2 neighbors (x0 is a corner) or 3 (x\+\_\+0 on the landscape boundary)
 \begin{DoxyReturn}{Returns}
 A vector with no more than 4 coordinates. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a8858d75bafb293f958a206dc6e657563}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a8858d75bafb293f958a206dc6e657563}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!export\_to\_geotiff@{export\_to\_geotiff}}
+\index{export\_to\_geotiff@{export\_to\_geotiff}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{export\_to\_geotiff()}{export\_to\_geotiff()}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+template$<$typename F , typename G $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::export\+\_\+to\+\_\+geotiff (\begin{DoxyParamCaption}\item[{F}]{f,  }\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} const \&}]{t1,  }\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}} const \&}]{t2,  }\item[{G}]{g,  }\item[{std\+::string const \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_aeb54b428bf4891bf86ac33a472f1c5e7}\label{classquetzal_1_1geography_1_1DiscreteLandscape_aeb54b428bf4891bf86ac33a472f1c5e7}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!export\_to\_shapefile@{export\_to\_shapefile}}
+\index{export\_to\_shapefile@{export\_to\_shapefile}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{export\_to\_shapefile()}{export\_to\_shapefile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::export\+\_\+to\+\_\+shapefile (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}}, unsigned int $>$}]{counts,  }\item[{std\+::string const \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a48a76c171637c738f1d3df8f87dbf1db}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a48a76c171637c738f1d3df8f87dbf1db}} 
+\index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!export\_to\_shapefile@{export\_to\_shapefile}}
+\index{export\_to\_shapefile@{export\_to\_shapefile}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
+\doxysubsubsection{\texorpdfstring{export\_to\_shapefile()}{export\_to\_shapefile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::export\+\_\+to\+\_\+shapefile (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} $>$}]{points,  }\item[{std\+::string const \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1DiscreteLandscape_a270d829c44f6fd92e6af0342897eb7e0}\label{classquetzal_1_1geography_1_1DiscreteLandscape_a270d829c44f6fd92e6af0342897eb7e0}} 
 \index{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}!extent@{extent}}
 \index{extent@{extent}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{extent()}{extent()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$decimal\+\_\+degree$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}{decimal\+\_\+degree}}$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -150,7 +196,7 @@ an \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}} object
 \index{geographic\_definition\_space@{geographic\_definition\_space}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{geographic\_definition\_space()}{geographic\_definition\_space()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-const std\+::vector$<$coord\+\_\+type$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::geographic\+\_\+definition\+\_\+space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}}$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::geographic\+\_\+definition\+\_\+space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -161,7 +207,7 @@ Returns the geographic coordinates of the centroids of the demes for which value
 \index{is\_in\_spatial\_extent@{is\_in\_spatial\_extent}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{is\_in\_spatial\_extent()}{is\_in\_spatial\_extent()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-bool \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::is\+\_\+in\+\_\+spatial\+\_\+extent (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::is\+\_\+in\+\_\+spatial\+\_\+extent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} const \&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -180,7 +226,7 @@ true if {\ttfamily c} is in the landscape limits, else false
 \index{operator\mbox{[}\mbox{]}@{operator[]}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-auto \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{key\+\_\+type const \&}]{k }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+auto \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a24dae2e408f1448b21ba4f679182b516}{key\+\_\+type}} const \&}]{k }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -204,7 +250,7 @@ the returned lightweight object can be used for mathematical function compositio
 \index{origin@{origin}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{origin()}{origin()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-const coord\+\_\+type\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}}\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -232,7 +278,7 @@ the number of ecological quantities.
 \index{reproject\_to\_centroid@{reproject\_to\_centroid}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{reproject\_to\_centroid()}{reproject\_to\_centroid()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-coord\+\_\+type \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::reproject\+\_\+to\+\_\+centroid (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::reproject\+\_\+to\+\_\+centroid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a422f508838180e37caf8610058bd869a}{coord\+\_\+type}} const \&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -254,7 +300,7 @@ the given coordinate must be in the landscape spatial extent
 \index{resolution@{resolution}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{resolution()}{resolution()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$decimal\+\_\+degree$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_ad9f58655f3004cf866f9ff27edb7f652}{decimal\+\_\+degree}}$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -268,7 +314,7 @@ a \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}} object
 \index{temporal\_definition\_space@{temporal\_definition\_space}!quetzal::geography::DiscreteLandscape$<$ Key, Time $>$@{quetzal::geography::DiscreteLandscape$<$ Key, Time $>$}}
 \doxysubsubsection{\texorpdfstring{temporal\_definition\_space()}{temporal\_definition\_space()}}
 {\footnotesize\ttfamily template$<$typename Key , typename Time $>$ \\
-const std\+::vector$<$time\+\_\+type$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::temporal\+\_\+definition\+\_\+space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape_a3a5153aa6a67bd390c1fe986030c0afc}{time\+\_\+type}}$>$\& \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape}}$<$ Key, Time $>$\+::temporal\+\_\+definition\+\_\+space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -281,4 +327,4 @@ the ordered times that have been specified at construction
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-quetzal/include/quetzal/geography/Discrete\+Landscape.\+h\end{DoxyCompactItemize}
+quetzal/include/quetzal/geography/\mbox{\hyperlink{DiscreteLandscape_8h}{Discrete\+Landscape.\+h}}\end{DoxyCompactItemize}

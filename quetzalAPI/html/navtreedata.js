@@ -26,7 +26,14 @@ var NAVTREE =
     [ "Welcome, developers!", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -36,21 +43,27 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-".html",
-"classquetzal_1_1coalescence_1_1Tree.html#a42f37a531054f5018a42905bfb695e57",
-"classquetzal_1_1geography_1_1DiscreteLandscape.html#a916d5dbdd2c04644178c2cadbc14f736",
-"munkres_8h_source.html"
+"Allele_8h.html",
+"classquetzal_1_1coalescence_1_1Forest.html#abb429532d4cd1b5b06771f10c5dbf7b9",
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#ad40f4a34d5bc20fe3e6eb33d9db28135",
+"functions.html",
+"structquetzal_1_1demography_1_1dispersal__kernel_1_1Logistic.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

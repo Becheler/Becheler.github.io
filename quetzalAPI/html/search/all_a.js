@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['key_5ftype_129',['key_type',['../structquetzal_1_1demography_1_1Flow_1_1key__type.html',1,'quetzal::demography::Flow']]]
+  ['jc69_260',['JC69',['../classquetzal_1_1mutation__kernel_1_1JC69.html',1,'quetzal::mutation_kernel']]]
 ];

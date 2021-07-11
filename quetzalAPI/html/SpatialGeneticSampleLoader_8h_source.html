@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="title">SpatialGeneticSampleLoader.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
+<a href="SpatialGeneticSampleLoader_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify *</span></div>
@@ -127,16 +127,16 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;marker_traits.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;Allele.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;DiploidIndividual.h&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;SpatialGeneticSample.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="marker__traits_8h.html">marker_traits.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Allele_8h.html">Allele.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DiploidIndividual_8h.html">DiploidIndividual.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SpatialGeneticSample_8h.html">SpatialGeneticSample.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> std::ifstream;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> std::string;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using</span> std::cerr;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>quetzal {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacequetzal.html">quetzal</a> {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>genetics {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> Space, <span class="keyword">typename</span> Marker&gt;</div>
@@ -144,14 +144,14 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">using</span> coord_type = Space;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">using</span> marker_type = Marker;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">using</span> allelic_state_type = <span class="keyword">typename</span> marker_type::value_type;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1Allele.html">allele_type</a> = <a class="code" href="classquetzal_1_1genetics_1_1Allele.html">Allele&lt;allelic_state_type&gt;</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1DiploidIndividual.html">individual_type</a> = <a class="code" href="classquetzal_1_1genetics_1_1DiploidIndividual.html">DiploidIndividual&lt;allele_type&gt;</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">return_type</a> = <a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">SpatialGeneticSample&lt;coord_type, individual_type&gt;</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c">   39</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c">coord_type</a> = Space;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#ae74e065faf2279647795ccf0f58a4037">   40</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#ae74e065faf2279647795ccf0f58a4037">marker_type</a> = Marker;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#a26ee3071e5f0097f0ef85caa3eccdfec">   41</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#a26ee3071e5f0097f0ef85caa3eccdfec">allelic_state_type</a> = <span class="keyword">typename</span> marker_type::value_type;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#a3bb88ddd22644a084974855dd2ba53d5">   42</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1Allele.html">allele_type</a> = <a class="code" href="classquetzal_1_1genetics_1_1Allele.html">Allele&lt;allelic_state_type&gt;</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#a8ce0d3ae0a55f78815efa7c418b2d259">   43</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1DiploidIndividual.html">individual_type</a> = <a class="code" href="classquetzal_1_1genetics_1_1DiploidIndividual.html">DiploidIndividual&lt;allele_type&gt;</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#a64d9d5c4a65739729760d391bb427235">   44</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">return_type</a> = <a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">SpatialGeneticSample&lt;coord_type, individual_type&gt;</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">SpatialGeneticSample&lt;coord_type, individual_type&gt;</a> read(std::string <span class="keyword">const</span>&amp; path){</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classquetzal_1_1genetics_1_1Loader.html#a50c21f8141643326fb4194d622b53f12">   46</a></span>&#160;    <a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">SpatialGeneticSample&lt;coord_type, individual_type&gt;</a> <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#a50c21f8141643326fb4194d622b53f12">read</a>(std::string <span class="keyword">const</span>&amp; path){</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span>( !is_readable(path)) {   <span class="keywordflow">throw</span> std::string(<span class="stringliteral">&quot;In GeneticsLoader::read : unable to read file&quot;</span>);}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        analyze(path);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> m_sample;</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }<span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keyword">auto</span> x = read_coordinates(line);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keyword">auto</span> ind = read_individual(erase_coordinates(line));</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                m_sample.add(x, ind);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                m_sample.<a class="code" href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a198c1a2ecb01017ad55ba88319a0ae8f">add</a>(x, ind);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            ++current_line;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">return</span> names;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    coord_type read_coordinates(std::string <span class="keyword">const</span>&amp; line)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c">coord_type</a> read_coordinates(std::string <span class="keyword">const</span>&amp; line)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">double</span> lat = 0.;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">double</span> lon = 0.;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        std::istringstream iss( line );</div>
@@ -220,17 +220,17 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            ++pos;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        coord_type x(lat, lon);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c">coord_type</a> x(lat, lon);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> x;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="classquetzal_1_1genetics_1_1DiploidIndividual.html">individual_type</a> read_individual(std::string <span class="keyword">const</span>&amp; line)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#a8ce0d3ae0a55f78815efa7c418b2d259">individual_type</a> read_individual(std::string <span class="keyword">const</span>&amp; line)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        std::istringstream iss( line );</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">string</span> elem;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="classquetzal_1_1genetics_1_1DiploidIndividual.html">individual_type</a> individual;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="classquetzal_1_1genetics_1_1Loader.html#a8ce0d3ae0a55f78815efa7c418b2d259">individual_type</a> individual;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        std::pair&lt;allele_type, allele_type&gt; alleles;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
@@ -264,15 +264,26 @@ $(document).ready(function(){initNavTree('SpatialGeneticSampleLoader_8h_source.h
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aAllele_8h_html"><div class="ttname"><a href="Allele_8h.html">Allele.h</a></div></div>
+<div class="ttc" id="aDiploidIndividual_8h_html"><div class="ttname"><a href="DiploidIndividual_8h.html">DiploidIndividual.h</a></div></div>
+<div class="ttc" id="aclassquetzal_1_1genetics_1_1Loader_html_ae56c5259d619b4e7eb0b88c85a604c3c"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c">quetzal::genetics::Loader::coord_type</a></div><div class="ttdeci">Space coord_type</div><div class="ttdef"><b>Definition:</b> SpatialGeneticSampleLoader.h:39</div></div>
+<div class="ttc" id="anamespacequetzal_html"><div class="ttname"><a href="namespacequetzal.html">quetzal</a></div><div class="ttdef"><b>Definition:</b> merge.h:23</div></div>
+<div class="ttc" id="aclassquetzal_1_1genetics_1_1Loader_html_a50c21f8141643326fb4194d622b53f12"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Loader.html#a50c21f8141643326fb4194d622b53f12">quetzal::genetics::Loader::read</a></div><div class="ttdeci">SpatialGeneticSample&lt; coord_type, individual_type &gt; read(std::string const &amp;path)</div><div class="ttdef"><b>Definition:</b> SpatialGeneticSampleLoader.h:46</div></div>
+<div class="ttc" id="aSpatialGeneticSample_8h_html"><div class="ttname"><a href="SpatialGeneticSample_8h.html">SpatialGeneticSample.h</a></div></div>
+<div class="ttc" id="aclassquetzal_1_1genetics_1_1Loader_html_a8ce0d3ae0a55f78815efa7c418b2d259"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Loader.html#a8ce0d3ae0a55f78815efa7c418b2d259">quetzal::genetics::Loader::individual_type</a></div><div class="ttdeci">DiploidIndividual&lt; allele_type &gt; individual_type</div><div class="ttdef"><b>Definition:</b> SpatialGeneticSampleLoader.h:43</div></div>
 <div class="ttc" id="aclassquetzal_1_1genetics_1_1SpatialGeneticSample_html"><div class="ttname"><a href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html">quetzal::genetics::SpatialGeneticSample</a></div><div class="ttdef"><b>Definition:</b> SpatialGeneticSample.h:24</div></div>
+<div class="ttc" id="amarker__traits_8h_html"><div class="ttname"><a href="marker__traits_8h.html">marker_traits.h</a></div></div>
+<div class="ttc" id="aclassquetzal_1_1genetics_1_1SpatialGeneticSample_html_a198c1a2ecb01017ad55ba88319a0ae8f"><div class="ttname"><a href="classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a198c1a2ecb01017ad55ba88319a0ae8f">quetzal::genetics::SpatialGeneticSample::add</a></div><div class="ttdeci">void add(coord_type const &amp;x, Individual const &amp;ind)</div><div class="ttdef"><b>Definition:</b> SpatialGeneticSample.h:41</div></div>
+<div class="ttc" id="aclassquetzal_1_1genetics_1_1Loader_html_ae74e065faf2279647795ccf0f58a4037"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Loader.html#ae74e065faf2279647795ccf0f58a4037">quetzal::genetics::Loader::marker_type</a></div><div class="ttdeci">Marker marker_type</div><div class="ttdef"><b>Definition:</b> SpatialGeneticSampleLoader.h:40</div></div>
 <div class="ttc" id="aclassquetzal_1_1genetics_1_1Loader_html"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Loader.html">quetzal::genetics::Loader</a></div><div class="ttdef"><b>Definition:</b> SpatialGeneticSampleLoader.h:35</div></div>
+<div class="ttc" id="aclassquetzal_1_1genetics_1_1Loader_html_a26ee3071e5f0097f0ef85caa3eccdfec"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Loader.html#a26ee3071e5f0097f0ef85caa3eccdfec">quetzal::genetics::Loader::allelic_state_type</a></div><div class="ttdeci">typename marker_type::value_type allelic_state_type</div><div class="ttdef"><b>Definition:</b> SpatialGeneticSampleLoader.h:41</div></div>
 <div class="ttc" id="aclassquetzal_1_1genetics_1_1Allele_html"><div class="ttname"><a href="classquetzal_1_1genetics_1_1Allele.html">quetzal::genetics::Allele</a></div><div class="ttdef"><b>Definition:</b> Allele.h:19</div></div>
 <div class="ttc" id="aclassquetzal_1_1genetics_1_1DiploidIndividual_html"><div class="ttname"><a href="classquetzal_1_1genetics_1_1DiploidIndividual.html">quetzal::genetics::DiploidIndividual</a></div><div class="ttdef"><b>Definition:</b> DiploidIndividual.h:22</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_87b89ccd1ee4ef514d1327594a8c8775.html">genetics</a></li><li class="navelem"><b>SpatialGeneticSampleLoader.h</b></li>
+    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_87b89ccd1ee4ef514d1327594a8c8775.html">genetics</a></li><li class="navelem"><a class="el" href="SpatialGeneticSampleLoader_8h.html">SpatialGeneticSampleLoader.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

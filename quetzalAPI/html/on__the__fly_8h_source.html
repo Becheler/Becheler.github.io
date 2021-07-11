@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('on__the__fly_8h_source.html',''); init
 <div class="title">on_the_fly.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
+<a href="on__the__fly_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify *</span></div>
@@ -119,18 +119,18 @@ $(document).ready(function(){initNavTree('on__the__fly_8h_source.html',''); init
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __ON_THE_FLY_H_INCLUDED__</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __ON_THE_FLY_H_INCLUDED__</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;utils.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coalescence_2occupancy__spectrum_2utils_8h.html">utils.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>quetzal{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacequetzal.html">quetzal</a>{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>coalescence {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>occupancy_spectrum{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html">on_the_fly</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Generator&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> sample(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html">Generator</a>&amp; g){</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html#a46c6812aa5624052631d9d4f96ef74db">   25</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html#a46c6812aa5624052631d9d4f96ef74db">sample</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html">Generator</a>&amp; g){</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;unsigned int&gt; M_j(k+1);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;unsigned int&gt; parents(N);</div>
@@ -145,8 +145,8 @@ $(document).ready(function(){initNavTree('on__the__fly_8h_source.html',''); init
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    assert(M_j.size() == k+1);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    assert(test_number_of_balls_conservation(k, M_j));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    assert(test_number_of_urns_conservation(N, M_j));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    assert(<a class="code" href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html#ab0c06231877f665154968d96408bcc46">test_number_of_balls_conservation</a>(k, M_j));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    assert(<a class="code" href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html#a30268b1838d2b46b60648ecccbeadd03">test_number_of_urns_conservation</a>(N, M_j));</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> M_j;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
@@ -160,12 +160,17 @@ $(document).ready(function(){initNavTree('on__the__fly_8h_source.html',''); init
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator_html"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1Generator.html">quetzal::coalescence::occupancy_spectrum::Generator</a></div><div class="ttdoc">Generative algorithm for the occupancy spectra resulting from throwing n balls in m urns.</div><div class="ttdef"><b>Definition:</b> Generator.h:28</div></div>
+<div class="ttc" id="acoalescence_2occupancy__spectrum_2utils_8h_html"><div class="ttname"><a href="coalescence_2occupancy__spectrum_2utils_8h.html">utils.h</a></div></div>
+<div class="ttc" id="anamespacequetzal_html"><div class="ttname"><a href="namespacequetzal.html">quetzal</a></div><div class="ttdef"><b>Definition:</b> merge.h:23</div></div>
+<div class="ttc" id="anamespacequetzal_1_1coalescence_1_1occupancy__spectrum_html_ab0c06231877f665154968d96408bcc46"><div class="ttname"><a href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html#ab0c06231877f665154968d96408bcc46">quetzal::coalescence::occupancy_spectrum::test_number_of_balls_conservation</a></div><div class="ttdeci">bool test_number_of_balls_conservation(unsigned int k, Spectrum const &amp;M_j)</div><div class="ttdef"><b>Definition:</b> utils.h:23</div></div>
+<div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly_html_a46c6812aa5624052631d9d4f96ef74db"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html#a46c6812aa5624052631d9d4f96ef74db">quetzal::coalescence::occupancy_spectrum::on_the_fly::sample</a></div><div class="ttdeci">static auto sample(unsigned int k, unsigned int N, Generator &amp;g)</div><div class="ttdef"><b>Definition:</b> on_the_fly.h:25</div></div>
 <div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly_html"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html">quetzal::coalescence::occupancy_spectrum::on_the_fly</a></div><div class="ttdef"><b>Definition:</b> on_the_fly.h:23</div></div>
+<div class="ttc" id="anamespacequetzal_1_1coalescence_1_1occupancy__spectrum_html_a30268b1838d2b46b60648ecccbeadd03"><div class="ttname"><a href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html#a30268b1838d2b46b60648ecccbeadd03">quetzal::coalescence::occupancy_spectrum::test_number_of_urns_conservation</a></div><div class="ttdeci">bool test_number_of_urns_conservation(unsigned int m, Spectrum const &amp;M_j)</div><div class="ttdef"><b>Definition:</b> utils.h:32</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_90bab4d02c4360463dc211262c6f1bd5.html">occupancy_spectrum</a></li><li class="navelem"><b>on_the_fly.h</b></li>
+    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_90bab4d02c4360463dc211262c6f1bd5.html">occupancy_spectrum</a></li><li class="navelem"><a class="el" href="on__the__fly_8h.html">on_the_fly.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

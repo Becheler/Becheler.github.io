@@ -12,19 +12,16 @@ Dispersal kernel compatible with the mass-\/based policy, but that restricts mig
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}} 
-using {\bfseries coord\+\_\+type} = Space
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} = Space
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a20d6cf9216facc12d21533941cbad54c}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a20d6cf9216facc12d21533941cbad54c}} 
-{\bfseries neighboring\+\_\+migration} (double emigrant\+\_\+rate, F1 friction, F2 get\+\_\+neighbors)
+\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a20d6cf9216facc12d21533941cbad54c}{neighboring\+\_\+migration}} (double emigrant\+\_\+rate, F1 friction, F2 get\+\_\+neighbors)
 \item 
-std\+::vector$<$ coord\+\_\+type $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_ae84114fcad67d951c88493658b7fc24e}{arrival\+\_\+space}} (coord\+\_\+type const \&x) const
+std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_ae84114fcad67d951c88493658b7fc24e}{arrival\+\_\+space}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} const \&x) const
 \begin{DoxyCompactList}\small\item\em Defines arrival space (that is in this class case, vecinity plus focal deme) from coordinate x. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a0010505a0061927c0af976b763f86182}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a0010505a0061927c0af976b763f86182}} 
-auto \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a0010505a0061927c0af976b763f86182}{operator()}} (coord\+\_\+type const \&from, coord\+\_\+type const \&to)
+auto \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a0010505a0061927c0af976b763f86182}{operator()}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} const \&from, \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} const \&to)
 \begin{DoxyCompactList}\small\item\em Migration rate, operator interfaceable with \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{History}} algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -51,13 +48,33 @@ A dispersal kernel
 \end{DoxyReturn}
 
 
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}} 
+\index{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename F1 , typename F2 $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration}{quetzal\+::demography\+::dispersal\+\_\+policy\+::mass\+\_\+based\+::neighboring\+\_\+migration}}$<$ Space, F1, F2 $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} =  Space}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a20d6cf9216facc12d21533941cbad54c}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a20d6cf9216facc12d21533941cbad54c}} 
+\index{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}!neighboring\_migration@{neighboring\_migration}}
+\index{neighboring\_migration@{neighboring\_migration}!quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}}
+\doxysubsubsection{\texorpdfstring{neighboring\_migration()}{neighboring\_migration()}}
+{\footnotesize\ttfamily template$<$typename Space , typename F1 , typename F2 $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration}{quetzal\+::demography\+::dispersal\+\_\+policy\+::mass\+\_\+based\+::neighboring\+\_\+migration}}$<$ Space, F1, F2 $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration}{neighboring\+\_\+migration}} (\begin{DoxyParamCaption}\item[{double}]{emigrant\+\_\+rate,  }\item[{F1}]{friction,  }\item[{F2}]{get\+\_\+neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_ae84114fcad67d951c88493658b7fc24e}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_ae84114fcad67d951c88493658b7fc24e}} 
 \index{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}!arrival\_space@{arrival\_space}}
 \index{arrival\_space@{arrival\_space}!quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}}
 \doxysubsubsection{\texorpdfstring{arrival\_space()}{arrival\_space()}}
 {\footnotesize\ttfamily template$<$typename Space , typename F1 , typename F2 $>$ \\
-std\+::vector$<$coord\+\_\+type$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration}{quetzal\+::demography\+::dispersal\+\_\+policy\+::mass\+\_\+based\+::neighboring\+\_\+migration}}$<$ Space, F1, F2 $>$\+::arrival\+\_\+space (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}}$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration}{quetzal\+::demography\+::dispersal\+\_\+policy\+::mass\+\_\+based\+::neighboring\+\_\+migration}}$<$ Space, F1, F2 $>$\+::arrival\+\_\+space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} const \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -66,8 +83,19 @@ Defines arrival space (that is in this class case, vecinity plus focal deme) fro
 \begin{DoxyRemark}{Remarks}
 Interface required in expansion algorithm. 
 \end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a0010505a0061927c0af976b763f86182}\label{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a0010505a0061927c0af976b763f86182}} 
+\index{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$@{quetzal::demography::dispersal\_policy::mass\_based::neighboring\_migration$<$ Space, F1, F2 $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Space , typename F1 , typename F2 $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration}{quetzal\+::demography\+::dispersal\+\_\+policy\+::mass\+\_\+based\+::neighboring\+\_\+migration}}$<$ Space, F1, F2 $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} const \&}]{from,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_1_1neighboring__migration_a60154d6b7baea413a53e44608ae1396a}{coord\+\_\+type}} const \&}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Migration rate, operator interfaceable with \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{History}} algorithm. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-quetzal/include/quetzal/demography/dispersal\+\_\+policy.\+h\end{DoxyCompactItemize}
+quetzal/include/quetzal/demography/\mbox{\hyperlink{dispersal__policy_8h}{dispersal\+\_\+policy.\+h}}\end{DoxyCompactItemize}

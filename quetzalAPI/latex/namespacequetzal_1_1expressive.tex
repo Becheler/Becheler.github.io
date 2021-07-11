@@ -1,0 +1,353 @@
+\hypertarget{namespacequetzal_1_1expressive}{}\doxysection{quetzal\+::expressive Namespace Reference}
+\label{namespacequetzal_1_1expressive}\index{quetzal::expressive@{quetzal::expressive}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4}{Callable\+\_\+traits$<$ compose\+\_\+t$<$ Outer, Inners... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01make__expression__t_3_01F_01_4_01_4}{Callable\+\_\+traits$<$ make\+\_\+expression\+\_\+t$<$ F $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01Ret_07_5_08_07Args_8_8_8_08_4}{Callable\+\_\+traits$<$ Ret($\ast$)(\+Args...)$>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01Ret_07Args_8_8_8_08_4}{Callable\+\_\+traits$<$ Ret(\+Args...)$>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01Ret_07Class_1_1_5_08_07Args_8_8_8_08_01const_01_4}{Callable\+\_\+traits$<$ Ret(\+Class\+::$\ast$)(\+Args...) const $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01symetric__binop__t_3_01FL_00_01Operator_00_01FR_01_4_01_4}{Callable\+\_\+traits$<$ symetric\+\_\+binop\+\_\+t$<$ F\+L, Operator, F\+R $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits_3_01unop__t_3_01Operator_00_01F_01_4_01_4}{Callable\+\_\+traits$<$ unop\+\_\+t$<$ Operator, F $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{compose\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_3_01Outer_01_4}{compose\+\_\+t$<$ Outer $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_3_01Outer_00_01Inner_01_4}{compose\+\_\+t$<$ Outer, Inner $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1composite__functor}{composite\+\_\+functor}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4}{composite\+\_\+functor$<$ F $>$}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1literal__factory}{literal\+\_\+factory}}
+\begin{DoxyCompactList}\small\item\em Transforms \href{https://stackoverflow.com/documentation/c\%2b\%2b/7836/literals\#t=201709240552046831589}{\texttt{ literals}} into operator friendly classes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1literal__t}{literal\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1make__expression__t}{make\+\_\+expression\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1symetric__binop__t}{symetric\+\_\+binop\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1expressive_1_1unop__t}{unop\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Callable $>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}{return\+\_\+type}} = typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$ Callable $>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}{return\+\_\+type}}
+\item 
+{\footnotesize template$<$typename Callable $>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}} = typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$ Callable $>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}
+\item 
+{\footnotesize template$<$typename Callable , std\+::size\+\_\+t I$>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_ab4459dfe368a0b2467e1789070f258c6}{argument\+\_\+type}} = typename std\+::tuple\+\_\+element$<$ I, typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$ Callable $>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}} $>$\+::type
+\item 
+{\footnotesize template$<$typename Functor , typename Interface $>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_ad5e9cd22a665a0e73dac1eebaade0e94}{functor\+\_\+has\+\_\+interface}} = std\+::is\+\_\+convertible$<$ Interface, typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$ Functor $>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}} $>$
+\item 
+{\footnotesize template$<$typename Functor , typename... Args$>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_aadd019eba06d6cfbf8a22527f18d5732}{callable\+\_\+with}} = std\+::is\+\_\+convertible$<$ \mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}$<$ void(Args...)$>$, \mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}$<$ Functor $>$ $>$
+\item 
+{\footnotesize template$<$typename Operator , typename T $>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_a44ab8e1c742723a2eaf3df3f228043ed}{applied\+\_\+unary\+\_\+type}} = decltype(std\+::declval$<$ Operator $>$()(std\+::declval$<$ T $>$()))
+\item 
+{\footnotesize template$<$typename A , typename Operator , typename B $>$ }\\using \mbox{\hyperlink{namespacequetzal_1_1expressive_a1858330e9c43da0981132558c4f36050}{applied\+\_\+binary\+\_\+type}} = decltype(std\+::declval$<$ Operator $>$()(std\+::declval$<$ A $>$(), std\+::declval$<$ B $>$()))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Callable $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_aa2d2beeba7e43bf54879fa4c786b3ad8}{arguments\+\_\+count}} ()
+\item 
+{\footnotesize template$<$typename F $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_a87c78604d4de45bb8aa6c3d424f107f3}{expression}} (F f)
+\item 
+{\footnotesize template$<$typename F $>$ }\\constexpr auto \mbox{\hyperlink{group__expressive_gacdec2cd4ec959709f7a1891702c4d5dd}{use}} (F f)
+\begin{DoxyCompactList}\small\item\em Transforms functions into operator friendly classes. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_abd0f762e5a79e4668c6318c6d4529df8}{function}} (F f)
+\item 
+{\footnotesize template$<$typename... Args, typename T $>$ }\\constexpr auto \mbox{\hyperlink{group__expressive_ga58c778e9b9b37d66cacf0661990d0545}{literal}} (T t)
+\begin{DoxyCompactList}\small\item\em Transforms \href{https://stackoverflow.com/documentation/c\%2b\%2b/7836/literals\#t=201709240552046831589}{\texttt{ literals}} into operator friendly classes. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Op , typename T $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_a96ae2091ecbdca2d8b9af3b32e4f4e0c}{is\+\_\+applicable\+\_\+unary\+\_\+impl}} (int) -\/$>$ decltype(std\+::declval$<$ \mbox{\hyperlink{namespacequetzal_1_1expressive_a44ab8e1c742723a2eaf3df3f228043ed}{applied\+\_\+unary\+\_\+type}}$<$ Op, T $>$$>$(), bool())
+\item 
+{\footnotesize template$<$typename Op , typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacequetzal_1_1expressive_a64346512dab51a42f2beb90335f2615b}{is\+\_\+applicable\+\_\+unary\+\_\+impl}} (...)
+\item 
+{\footnotesize template$<$typename A , typename Op , typename B $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_af29a9dde660b285c6eaf39b36ca655a2}{is\+\_\+applicable\+\_\+binary\+\_\+impl}} (int) -\/$>$ decltype(std\+::declval$<$ \mbox{\hyperlink{namespacequetzal_1_1expressive_a1858330e9c43da0981132558c4f36050}{applied\+\_\+binary\+\_\+type}}$<$ A, Op, B $>$$>$(), bool())
+\item 
+{\footnotesize template$<$typename A , typename Op , typename B $>$ }\\constexpr bool \mbox{\hyperlink{namespacequetzal_1_1expressive_aae5b7976627bcf64e3dde600c868e70b}{is\+\_\+applicable\+\_\+binary\+\_\+impl}} (...)
+\item 
+{\footnotesize template$<$typename Operator , typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacequetzal_1_1expressive_a8c5ef1ed683957d63a8144eb86f2b3a2}{is\+\_\+applicable\+\_\+unary}} ()
+\item 
+{\footnotesize template$<$typename A , typename Operator , typename B $>$ }\\constexpr bool \mbox{\hyperlink{namespacequetzal_1_1expressive_ae72816f9bacbce01fcc34e2dbe4f548b}{is\+\_\+applicable\+\_\+binary}} ()
+\item 
+{\footnotesize template$<$typename F $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_ad12d8050bad67b7d3b44e23a2d2bf9f6}{operator-\/}} (F f)
+\item 
+{\footnotesize template$<$typename F1 , typename F2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_acebcc16be37723966063915395704df4}{operator+}} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$typename F1 , typename F2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_a44ba8e34bc58dc3a7535c4c2de7f903b}{operator-\/}} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$typename F1 , typename F2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_aa214b3c64ca989dd23ecbbc7d6d2e0ce}{operator$\ast$}} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$typename F1 , typename F2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_a1eb4db1aa1c3d21c859e68c08ba66f9e}{operator/}} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$typename F1 , typename F2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_a219dcd2992558b6be6334a43d032cac0}{operator\%}} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$typename F , typename... Fs$>$ }\\constexpr auto \mbox{\hyperlink{group__expressive_ga12574ee3c5da08311afb7eb76d7089b4}{compose}} (F f, Fs... fs)
+\begin{DoxyCompactList}\small\item\em Mathematical \href{https://en.wikipedia.org/wiki/Function_composition}{\texttt{ function composition}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\constexpr auto \mbox{\hyperlink{namespacequetzal_1_1expressive_a1a8f6d0bfb61501af664bb6ae46e6a94}{chain}} (F f)
+\item 
+{\footnotesize template$<$typename Inner , typename Outer $>$ }\\constexpr auto \mbox{\hyperlink{group__expressive_ga94be9d80e6f5f2281e4183109879a101}{operator$>$$>$}} (Inner inner, Outer outer)
+\begin{DoxyCompactList}\small\item\em Mathematical \href{https://en.wikipedia.org/wiki/Function_composition}{\texttt{ function composition}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Inner , typename Outer $>$ }\\constexpr auto \mbox{\hyperlink{group__expressive_ga92089d2dbe2fb1d9ec4b8da47930b8ec}{operator$<$$<$}} (Outer outer, Inner inner)
+\begin{DoxyCompactList}\small\item\em Mathematical \href{https://en.wikipedia.org/wiki/Function_composition}{\texttt{ function composition}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F1 , typename F2 , typename... Fs$>$ }\\constexpr auto \mbox{\hyperlink{group__expressive_gad7b37454071e4a4d0cf22961f4c6f2c8}{chain}} (F1 f1, F2 f2, Fs... fs)
+\begin{DoxyCompactList}\small\item\em Mathematical \href{https://en.wikipedia.org/wiki/Function_composition}{\texttt{ function composition}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_adfb91665772c6cf67f5b870978ffcc45}{operator$<$$<$}} (std\+::ostream \&os, std\+::negate$<$ T $>$ const \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_aa9418e20517926c09e9fd4ba7a2f3847}{operator$<$$<$}} (std\+::ostream \&os, std\+::plus$<$ T $>$ const \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_a8e8194b53bdb45f13e91d4357c90a493}{operator$<$$<$}} (std\+::ostream \&os, std\+::minus$<$ T $>$ const \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_a69b7049f2cb9ca3e8fa96e86fe71abb4}{operator$<$$<$}} (std\+::ostream \&os, std\+::multiplies$<$ T $>$ const \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_aa7db462ef350cdd4f0d157c6d33c1217}{operator$<$$<$}} (std\+::ostream \&os, std\+::divides$<$ T $>$ const \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_a480818b13ac4caba22c4946c167aa969}{operator$<$$<$}} (std\+::ostream \&os, std\+::modulus$<$ T $>$ const \&)
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_a63cf254a3aaaeb2cfba70708f6b00be4}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{structquetzal_1_1expressive_1_1literal__t}{literal\+\_\+t}}$<$ T, Args... $>$ const \&l)
+\item 
+{\footnotesize template$<$typename Operator , typename F $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_aa02ceb8a758aa883c15d13ac7fc81375}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{structquetzal_1_1expressive_1_1unop__t}{unop\+\_\+t}}$<$ Operator, F $>$ const \&f)
+\item 
+{\footnotesize template$<$typename F1 , typename Operator , typename F2 $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacequetzal_1_1expressive_ac2d8c6cff78806fa933603fa356d19a2}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{structquetzal_1_1expressive_1_1symetric__binop__t}{symetric\+\_\+binop\+\_\+t}}$<$ F1, Operator, F2 $>$ const \&f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a1858330e9c43da0981132558c4f36050}\label{namespacequetzal_1_1expressive_a1858330e9c43da0981132558c4f36050}} 
+\index{quetzal::expressive@{quetzal::expressive}!applied\_binary\_type@{applied\_binary\_type}}
+\index{applied\_binary\_type@{applied\_binary\_type}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{applied\_binary\_type}{applied\_binary\_type}}
+{\footnotesize\ttfamily template$<$typename A , typename Operator , typename B $>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_a1858330e9c43da0981132558c4f36050}{quetzal\+::expressive\+::applied\+\_\+binary\+\_\+type}} = typedef decltype( std\+::declval$<$Operator$>$()(std\+::declval$<$A$>$(), std\+::declval$<$B$>$()) )}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a44ab8e1c742723a2eaf3df3f228043ed}\label{namespacequetzal_1_1expressive_a44ab8e1c742723a2eaf3df3f228043ed}} 
+\index{quetzal::expressive@{quetzal::expressive}!applied\_unary\_type@{applied\_unary\_type}}
+\index{applied\_unary\_type@{applied\_unary\_type}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{applied\_unary\_type}{applied\_unary\_type}}
+{\footnotesize\ttfamily template$<$typename Operator , typename T $>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_a44ab8e1c742723a2eaf3df3f228043ed}{quetzal\+::expressive\+::applied\+\_\+unary\+\_\+type}} = typedef decltype( std\+::declval$<$Operator$>$()(std\+::declval$<$T$>$()) )}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_ab4459dfe368a0b2467e1789070f258c6}\label{namespacequetzal_1_1expressive_ab4459dfe368a0b2467e1789070f258c6}} 
+\index{quetzal::expressive@{quetzal::expressive}!argument\_type@{argument\_type}}
+\index{argument\_type@{argument\_type}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{argument\_type}{argument\_type}}
+{\footnotesize\ttfamily template$<$typename Callable , std\+::size\+\_\+t I$>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_ab4459dfe368a0b2467e1789070f258c6}{quetzal\+::expressive\+::argument\+\_\+type}} = typedef typename std\+::tuple\+\_\+element$<$I, typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$Callable$>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}$>$\+::type}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}\label{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}} 
+\index{quetzal::expressive@{quetzal::expressive}!arguments\_type@{arguments\_type}}
+\index{arguments\_type@{arguments\_type}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{arguments\_type}{arguments\_type}}
+{\footnotesize\ttfamily template$<$typename Callable $>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{quetzal\+::expressive\+::arguments\+\_\+type}} = typedef typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$Callable$>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aadd019eba06d6cfbf8a22527f18d5732}\label{namespacequetzal_1_1expressive_aadd019eba06d6cfbf8a22527f18d5732}} 
+\index{quetzal::expressive@{quetzal::expressive}!callable\_with@{callable\_with}}
+\index{callable\_with@{callable\_with}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{callable\_with}{callable\_with}}
+{\footnotesize\ttfamily template$<$typename Functor , typename... Args$>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_aadd019eba06d6cfbf8a22527f18d5732}{quetzal\+::expressive\+::callable\+\_\+with}} = typedef std\+::is\+\_\+convertible$<$ \mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}$<$void(Args...)$>$, \mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}}$<$Functor$>$ $>$}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_ad5e9cd22a665a0e73dac1eebaade0e94}\label{namespacequetzal_1_1expressive_ad5e9cd22a665a0e73dac1eebaade0e94}} 
+\index{quetzal::expressive@{quetzal::expressive}!functor\_has\_interface@{functor\_has\_interface}}
+\index{functor\_has\_interface@{functor\_has\_interface}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{functor\_has\_interface}{functor\_has\_interface}}
+{\footnotesize\ttfamily template$<$typename Functor , typename Interface $>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_ad5e9cd22a665a0e73dac1eebaade0e94}{quetzal\+::expressive\+::functor\+\_\+has\+\_\+interface}} = typedef std\+::is\+\_\+convertible$<$ Interface, typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$Functor$>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a04f6b4f8021dfe823c9db5113bf315b8}{arguments\+\_\+type}} $>$}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}\label{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}} 
+\index{quetzal::expressive@{quetzal::expressive}!return\_type@{return\_type}}
+\index{return\_type@{return\_type}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{return\_type}{return\_type}}
+{\footnotesize\ttfamily template$<$typename Callable $>$ \\
+using \mbox{\hyperlink{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}{quetzal\+::expressive\+::return\+\_\+type}} = typedef typename \mbox{\hyperlink{structquetzal_1_1expressive_1_1Callable__traits}{Callable\+\_\+traits}}$<$Callable$>$\+::\mbox{\hyperlink{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}{return\+\_\+type}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aa2d2beeba7e43bf54879fa4c786b3ad8}\label{namespacequetzal_1_1expressive_aa2d2beeba7e43bf54879fa4c786b3ad8}} 
+\index{quetzal::expressive@{quetzal::expressive}!arguments\_count@{arguments\_count}}
+\index{arguments\_count@{arguments\_count}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{arguments\_count()}{arguments\_count()}}
+{\footnotesize\ttfamily template$<$typename Callable $>$ \\
+constexpr auto quetzal\+::expressive\+::arguments\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a1a8f6d0bfb61501af664bb6ae46e6a94}\label{namespacequetzal_1_1expressive_a1a8f6d0bfb61501af664bb6ae46e6a94}} 
+\index{quetzal::expressive@{quetzal::expressive}!chain@{chain}}
+\index{chain@{chain}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{chain()}{chain()}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+constexpr auto quetzal\+::expressive\+::chain (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a87c78604d4de45bb8aa6c3d424f107f3}\label{namespacequetzal_1_1expressive_a87c78604d4de45bb8aa6c3d424f107f3}} 
+\index{quetzal::expressive@{quetzal::expressive}!expression@{expression}}
+\index{expression@{expression}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+constexpr auto quetzal\+::expressive\+::expression (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_abd0f762e5a79e4668c6318c6d4529df8}\label{namespacequetzal_1_1expressive_abd0f762e5a79e4668c6318c6d4529df8}} 
+\index{quetzal::expressive@{quetzal::expressive}!function@{function}}
+\index{function@{function}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+constexpr auto quetzal\+::expressive\+::function (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_ae72816f9bacbce01fcc34e2dbe4f548b}\label{namespacequetzal_1_1expressive_ae72816f9bacbce01fcc34e2dbe4f548b}} 
+\index{quetzal::expressive@{quetzal::expressive}!is\_applicable\_binary@{is\_applicable\_binary}}
+\index{is\_applicable\_binary@{is\_applicable\_binary}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{is\_applicable\_binary()}{is\_applicable\_binary()}}
+{\footnotesize\ttfamily template$<$typename A , typename Operator , typename B $>$ \\
+constexpr bool quetzal\+::expressive\+::is\+\_\+applicable\+\_\+binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aae5b7976627bcf64e3dde600c868e70b}\label{namespacequetzal_1_1expressive_aae5b7976627bcf64e3dde600c868e70b}} 
+\index{quetzal::expressive@{quetzal::expressive}!is\_applicable\_binary\_impl@{is\_applicable\_binary\_impl}}
+\index{is\_applicable\_binary\_impl@{is\_applicable\_binary\_impl}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{is\_applicable\_binary\_impl()}{is\_applicable\_binary\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename A , typename Op , typename B $>$ \\
+constexpr bool quetzal\+::expressive\+::is\+\_\+applicable\+\_\+binary\+\_\+impl (\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_af29a9dde660b285c6eaf39b36ca655a2}\label{namespacequetzal_1_1expressive_af29a9dde660b285c6eaf39b36ca655a2}} 
+\index{quetzal::expressive@{quetzal::expressive}!is\_applicable\_binary\_impl@{is\_applicable\_binary\_impl}}
+\index{is\_applicable\_binary\_impl@{is\_applicable\_binary\_impl}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{is\_applicable\_binary\_impl()}{is\_applicable\_binary\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename A , typename Op , typename B $>$ \\
+constexpr auto quetzal\+::expressive\+::is\+\_\+applicable\+\_\+binary\+\_\+impl (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption}) -\/$>$ decltype( std\+::declval$<$\mbox{\hyperlink{namespacequetzal_1_1expressive_a1858330e9c43da0981132558c4f36050}{applied\+\_\+binary\+\_\+type}}$<$A,Op,B$>$$>$(), bool() ) \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a8c5ef1ed683957d63a8144eb86f2b3a2}\label{namespacequetzal_1_1expressive_a8c5ef1ed683957d63a8144eb86f2b3a2}} 
+\index{quetzal::expressive@{quetzal::expressive}!is\_applicable\_unary@{is\_applicable\_unary}}
+\index{is\_applicable\_unary@{is\_applicable\_unary}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{is\_applicable\_unary()}{is\_applicable\_unary()}}
+{\footnotesize\ttfamily template$<$typename Operator , typename T $>$ \\
+constexpr bool quetzal\+::expressive\+::is\+\_\+applicable\+\_\+unary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a64346512dab51a42f2beb90335f2615b}\label{namespacequetzal_1_1expressive_a64346512dab51a42f2beb90335f2615b}} 
+\index{quetzal::expressive@{quetzal::expressive}!is\_applicable\_unary\_impl@{is\_applicable\_unary\_impl}}
+\index{is\_applicable\_unary\_impl@{is\_applicable\_unary\_impl}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{is\_applicable\_unary\_impl()}{is\_applicable\_unary\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Op , typename T $>$ \\
+constexpr bool quetzal\+::expressive\+::is\+\_\+applicable\+\_\+unary\+\_\+impl (\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a96ae2091ecbdca2d8b9af3b32e4f4e0c}\label{namespacequetzal_1_1expressive_a96ae2091ecbdca2d8b9af3b32e4f4e0c}} 
+\index{quetzal::expressive@{quetzal::expressive}!is\_applicable\_unary\_impl@{is\_applicable\_unary\_impl}}
+\index{is\_applicable\_unary\_impl@{is\_applicable\_unary\_impl}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{is\_applicable\_unary\_impl()}{is\_applicable\_unary\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Op , typename T $>$ \\
+constexpr auto quetzal\+::expressive\+::is\+\_\+applicable\+\_\+unary\+\_\+impl (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption}) -\/$>$ decltype( std\+::declval$<$\mbox{\hyperlink{namespacequetzal_1_1expressive_a44ab8e1c742723a2eaf3df3f228043ed}{applied\+\_\+unary\+\_\+type}}$<$Op,T$>$$>$(), bool() ) \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a219dcd2992558b6be6334a43d032cac0}\label{namespacequetzal_1_1expressive_a219dcd2992558b6be6334a43d032cac0}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}}
+{\footnotesize\ttfamily template$<$typename F1 , typename F2 $>$ \\
+constexpr auto quetzal\+::expressive\+::operator\% (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aa214b3c64ca989dd23ecbbc7d6d2e0ce}\label{namespacequetzal_1_1expressive_aa214b3c64ca989dd23ecbbc7d6d2e0ce}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename F1 , typename F2 $>$ \\
+constexpr auto quetzal\+::expressive\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_acebcc16be37723966063915395704df4}\label{namespacequetzal_1_1expressive_acebcc16be37723966063915395704df4}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator+@{operator+}}
+\index{operator+@{operator+}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename F1 , typename F2 $>$ \\
+constexpr auto quetzal\+::expressive\+::operator+ (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_ad12d8050bad67b7d3b44e23a2d2bf9f6}\label{namespacequetzal_1_1expressive_ad12d8050bad67b7d3b44e23a2d2bf9f6}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+constexpr auto quetzal\+::expressive\+::operator-\/ (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a44ba8e34bc58dc3a7535c4c2de7f903b}\label{namespacequetzal_1_1expressive_a44ba8e34bc58dc3a7535c4c2de7f903b}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F1 , typename F2 $>$ \\
+constexpr auto quetzal\+::expressive\+::operator-\/ (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a1eb4db1aa1c3d21c859e68c08ba66f9e}\label{namespacequetzal_1_1expressive_a1eb4db1aa1c3d21c859e68c08ba66f9e}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator/@{operator/}}
+\index{operator/@{operator/}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename F1 , typename F2 $>$ \\
+constexpr auto quetzal\+::expressive\+::operator/ (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a63cf254a3aaaeb2cfba70708f6b00be4}\label{namespacequetzal_1_1expressive_a63cf254a3aaaeb2cfba70708f6b00be4}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structquetzal_1_1expressive_1_1literal__t}{literal\+\_\+t}}$<$ T, Args... $>$ const \&}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aa7db462ef350cdd4f0d157c6d33c1217}\label{namespacequetzal_1_1expressive_aa7db462ef350cdd4f0d157c6d33c1217}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::divides$<$ T $>$ const \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a8e8194b53bdb45f13e91d4357c90a493}\label{namespacequetzal_1_1expressive_a8e8194b53bdb45f13e91d4357c90a493}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::minus$<$ T $>$ const \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a480818b13ac4caba22c4946c167aa969}\label{namespacequetzal_1_1expressive_a480818b13ac4caba22c4946c167aa969}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::modulus$<$ T $>$ const \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_a69b7049f2cb9ca3e8fa96e86fe71abb4}\label{namespacequetzal_1_1expressive_a69b7049f2cb9ca3e8fa96e86fe71abb4}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::multiplies$<$ T $>$ const \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_adfb91665772c6cf67f5b870978ffcc45}\label{namespacequetzal_1_1expressive_adfb91665772c6cf67f5b870978ffcc45}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::negate$<$ T $>$ const \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aa9418e20517926c09e9fd4ba7a2f3847}\label{namespacequetzal_1_1expressive_aa9418e20517926c09e9fd4ba7a2f3847}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::plus$<$ T $>$ const \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_ac2d8c6cff78806fa933603fa356d19a2}\label{namespacequetzal_1_1expressive_ac2d8c6cff78806fa933603fa356d19a2}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily template$<$typename F1 , typename Operator , typename F2 $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structquetzal_1_1expressive_1_1symetric__binop__t}{symetric\+\_\+binop\+\_\+t}}$<$ F1, Operator, F2 $>$ const \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1expressive_aa02ceb8a758aa883c15d13ac7fc81375}\label{namespacequetzal_1_1expressive_aa02ceb8a758aa883c15d13ac7fc81375}} 
+\index{quetzal::expressive@{quetzal::expressive}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!quetzal::expressive@{quetzal::expressive}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily template$<$typename Operator , typename F $>$ \\
+std\+::ostream\& quetzal\+::expressive\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structquetzal_1_1expressive_1_1unop__t}{unop\+\_\+t}}$<$ Operator, F $>$ const \&}]{f }\end{DoxyParamCaption})}
+

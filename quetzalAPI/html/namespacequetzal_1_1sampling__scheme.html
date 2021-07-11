@@ -124,24 +124,101 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af387cf5d815bfd2c6e2ac63c57c0b3b2"><td class="memTemplParams" colspan="2"><a id="af387cf5d815bfd2c6e2ac63c57c0b3b2"></a>
-template&lt;typename X , typename F , typename N &gt; </td></tr>
-<tr class="memitem:af387cf5d815bfd2c6e2ac63c57c0b3b2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_constrained_sampler</b> (std::vector&lt; X &gt; const &amp;space, F f, N pop_size, unsigned int n)</td></tr>
+<tr class="memitem:af387cf5d815bfd2c6e2ac63c57c0b3b2"><td class="memTemplParams" colspan="2">template&lt;typename X , typename F , typename N &gt; </td></tr>
+<tr class="memitem:af387cf5d815bfd2c6e2ac63c57c0b3b2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacequetzal_1_1sampling__scheme.html#af387cf5d815bfd2c6e2ac63c57c0b3b2">make_constrained_sampler</a> (std::vector&lt; X &gt; const &amp;space, F f, N pop_size, unsigned int n)</td></tr>
 <tr class="separator:af387cf5d815bfd2c6e2ac63c57c0b3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bac808766a423246a21e1c3bfd35f6f"><td class="memTemplParams" colspan="2"><a id="a7bac808766a423246a21e1c3bfd35f6f"></a>
-template&lt;typename X , typename N &gt; </td></tr>
-<tr class="memitem:a7bac808766a423246a21e1c3bfd35f6f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unif_constrained_sampler</b> (std::vector&lt; X &gt; const &amp;space, N pop_size, unsigned int n)</td></tr>
+<tr class="memitem:a7bac808766a423246a21e1c3bfd35f6f"><td class="memTemplParams" colspan="2">template&lt;typename X , typename N &gt; </td></tr>
+<tr class="memitem:a7bac808766a423246a21e1c3bfd35f6f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacequetzal_1_1sampling__scheme.html#a7bac808766a423246a21e1c3bfd35f6f">make_unif_constrained_sampler</a> (std::vector&lt; X &gt; const &amp;space, N pop_size, unsigned int n)</td></tr>
 <tr class="separator:a7bac808766a423246a21e1c3bfd35f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generic sampling schemes simulation. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="af387cf5d815bfd2c6e2ac63c57c0b3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af387cf5d815bfd2c6e2ac63c57c0b3b2">&#9670;&nbsp;</a></span>make_constrained_sampler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename X , typename F , typename N &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto quetzal::sampling_scheme::make_constrained_sampler </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; X &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">N&#160;</td>
+          <td class="paramname"><em>pop_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bac808766a423246a21e1c3bfd35f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bac808766a423246a21e1c3bfd35f6f">&#9670;&nbsp;</a></span>make_unif_constrained_sampler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename X , typename N &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto quetzal::sampling_scheme::make_unif_constrained_sampler </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; X &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">N&#160;</td>
+          <td class="paramname"><em>pop_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>quetzal</b></li><li class="navelem"><a class="el" href="namespacequetzal_1_1sampling__scheme.html">sampling_scheme</a></li>
+    <li class="navelem"><a class="el" href="namespacequetzal.html">quetzal</a></li><li class="navelem"><a class="el" href="namespacequetzal_1_1sampling__scheme.html">sampling_scheme</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

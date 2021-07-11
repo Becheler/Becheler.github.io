@@ -1,0 +1,33 @@
+\hypertarget{namespacequetzal_1_1coalescence}{}\doxysection{quetzal\+::coalescence Namespace Reference}
+\label{namespacequetzal_1_1coalescence}\index{quetzal::coalescence@{quetzal::coalescence}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacequetzal_1_1coalescence_1_1occupancy__spectrum}{occupancy\+\_\+spectrum}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1coalescence_1_1BinaryMerger}{Binary\+Merger}}
+\begin{DoxyCompactList}\small\item\em Discrete generation binary merger. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{Forest}}
+\begin{DoxyCompactList}\small\item\em Collection of geo-\/localized coalescents. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1coalescence_1_1newick__with__distance__to__parent}{newick\+\_\+with\+\_\+distance\+\_\+to\+\_\+parent}}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name}{newick\+\_\+with\+\_\+distance\+\_\+to\+\_\+parent\+\_\+and\+\_\+leaf\+\_\+name}}
+\item 
+struct \mbox{\hyperlink{structquetzal_1_1coalescence_1_1SimultaneousMultipleMerger}{Simultaneous\+Multiple\+Merger}}
+\begin{DoxyCompactList}\small\item\em Discrete generation simultaneous multiple merger. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} topology where each node contains a data field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class T , class Binary\+Operation , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{group__coal__algorithms_ga58ed2931bdac16146460718751d8647c}{binary\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, T init, Binary\+Operation op, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges 2 randomly selected elements in a range. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{group__coal__algorithms_ga45cd8b6f39a5b41d4667f3bed3fc13fe}{binary\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges 2 randomly selected elements in a range, using sum operand between elements. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class T , class Binary\+Operation , class Occupancy\+Spectrum , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{group__coal__algorithms_gac90d96d04f0434b2a32417428b2c86ce}{simultaneous\+\_\+multiple\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, T init, Occupancy\+Spectrum const \&sp, Binary\+Operation op, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges randomly selected elements in a range according to an occupancy spectrum. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class Occupancy\+Spectrum , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{group__coal__algorithms_gae87571745b7e6a24a1c75b4e7d8d6467}{simultaneous\+\_\+multiple\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, Occupancy\+Spectrum const \&sp, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges randomly selected elements in a range according to an occupancy spectrum. \end{DoxyCompactList}\end{DoxyCompactItemize}

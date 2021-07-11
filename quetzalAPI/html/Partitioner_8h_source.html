@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('Partitioner_8h_source.html',''); initR
 <div class="title">Partitioner.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
+<a href="Partitioner_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify *</span></div>
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('Partitioner_8h_source.html',''); initR
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;assert.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;RestrictedGrowthString.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RestrictedGrowthString_8h.html">RestrictedGrowthString.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>fuzzy_transfer_distance {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacefuzzy__transfer__distance.html">   23</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefuzzy__transfer__distance.html">fuzzy_transfer_distance</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classfuzzy__transfer__distance_1_1Partitioner.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html">Partitioner</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
@@ -138,29 +138,29 @@ $(document).ready(function(){initNavTree('Partitioner_8h_source.html',''); initR
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">using</span> RGS_type = std::vector&lt;unsigned int&gt;; <span class="comment">// Restricted Growth String</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">   33</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">RGS_type</a> = std::vector&lt;unsigned int&gt;; <span class="comment">// Restricted Growth String</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html">Partitioner</a>(T <span class="keyword">const</span>&amp; set) : m_set(enumerate_elements(set)){}</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classfuzzy__transfer__distance_1_1Partitioner.html#ab42427c2479d56ab28a75e91b652e310">   36</a></span>&#160;    <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#ab42427c2479d56ab28a75e91b652e310">Partitioner</a>(T <span class="keyword">const</span>&amp; set) : m_set(enumerate_elements(set)){}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// http://www.computing-wisdom.com/computingreadings/fasc3b.pdf : response to exercice 17, page 68, 7.2.1.5</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::vector&lt;RestrictedGrowthString&gt; construct_all_m_blocks_partitions_of_the_set_by_algorithm_u(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_blocks){</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfuzzy__transfer__distance_1_1Partitioner.html#aad4ff7593a1e10ba26bb6f2768f84659">   39</a></span>&#160;    std::vector&lt;RestrictedGrowthString&gt; <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#aad4ff7593a1e10ba26bb6f2768f84659">construct_all_m_blocks_partitions_of_the_set_by_algorithm_u</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_blocks){</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::vector&lt;RestrictedGrowthString&gt; result;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span>(nb_blocks == 1){</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            result.emplace_back(RGS_type(m_set.size(), 0));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            result.emplace_back(<a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">RGS_type</a>(m_set.size(), 0));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(nb_blocks == m_set.size()){</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            RGS_type v(m_set.size()) ;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">RGS_type</a> v(m_set.size()) ;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            std::iota (std::begin(v), std::end(v), 0);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            result.emplace_back(v);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }<span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            assert( (1 &lt; nb_blocks) &amp;&amp; (nb_blocks &lt; m_set.size() ) );</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keyword">auto</span> n = m_set.size();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            a = RGS_type(n+1, 0);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            a = <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">RGS_type</a>(n+1, 0);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 1; j &lt;= nb_blocks; ++j ){ a[n - nb_blocks + j] = j -1; }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            f(nb_blocks, n, 0);</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('Partitioner_8h_source.html',''); initR
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    RGS_type a;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">RGS_type</a> a;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::vector&lt;RGS_type&gt; m_partitions;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    set_type m_set;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
@@ -280,12 +280,17 @@ $(document).ready(function(){initNavTree('Partitioner_8h_source.html',''); initR
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfuzzy__transfer__distance_1_1Partitioner_html_aa62b6ddf93a8bc8ad5e3009bb8d436d6"><div class="ttname"><a href="classfuzzy__transfer__distance_1_1Partitioner.html#aa62b6ddf93a8bc8ad5e3009bb8d436d6">fuzzy_transfer_distance::Partitioner::RGS_type</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; RGS_type</div><div class="ttdef"><b>Definition:</b> Partitioner.h:33</div></div>
+<div class="ttc" id="anamespacefuzzy__transfer__distance_html"><div class="ttname"><a href="namespacefuzzy__transfer__distance.html">fuzzy_transfer_distance</a></div><div class="ttdef"><b>Definition:</b> Partitioner.h:23</div></div>
+<div class="ttc" id="aclassfuzzy__transfer__distance_1_1Partitioner_html_aad4ff7593a1e10ba26bb6f2768f84659"><div class="ttname"><a href="classfuzzy__transfer__distance_1_1Partitioner.html#aad4ff7593a1e10ba26bb6f2768f84659">fuzzy_transfer_distance::Partitioner::construct_all_m_blocks_partitions_of_the_set_by_algorithm_u</a></div><div class="ttdeci">std::vector&lt; RestrictedGrowthString &gt; construct_all_m_blocks_partitions_of_the_set_by_algorithm_u(unsigned int nb_blocks)</div><div class="ttdef"><b>Definition:</b> Partitioner.h:39</div></div>
+<div class="ttc" id="aclassfuzzy__transfer__distance_1_1Partitioner_html_ab42427c2479d56ab28a75e91b652e310"><div class="ttname"><a href="classfuzzy__transfer__distance_1_1Partitioner.html#ab42427c2479d56ab28a75e91b652e310">fuzzy_transfer_distance::Partitioner::Partitioner</a></div><div class="ttdeci">Partitioner(T const &amp;set)</div><div class="ttdef"><b>Definition:</b> Partitioner.h:36</div></div>
+<div class="ttc" id="aRestrictedGrowthString_8h_html"><div class="ttname"><a href="RestrictedGrowthString_8h.html">RestrictedGrowthString.h</a></div></div>
 <div class="ttc" id="aclassfuzzy__transfer__distance_1_1Partitioner_html"><div class="ttname"><a href="classfuzzy__transfer__distance_1_1Partitioner.html">fuzzy_transfer_distance::Partitioner</a></div><div class="ttdef"><b>Definition:</b> Partitioner.h:25</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_6a24fa6e638f9b515332f0552351826a.html">fuzzy_transfer_distance</a></li><li class="navelem"><b>Partitioner.h</b></li>
+    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_6a24fa6e638f9b515332f0552351826a.html">fuzzy_transfer_distance</a></li><li class="navelem"><a class="el" href="Partitioner_8h.html">Partitioner.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

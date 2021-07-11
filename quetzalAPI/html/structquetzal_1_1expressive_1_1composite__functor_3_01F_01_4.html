@@ -112,38 +112,170 @@ $(document).ready(function(){initNavTree('structquetzal_1_1expressive_1_1composi
 <div class="title">quetzal::expressive::composite_functor&lt; F &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="expressive_2expressive_8h_source.html">expressive.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa14f89ca6393bd1579ebabdf3ccb017b"><td class="memItemLeft" align="right" valign="top"><a id="aa14f89ca6393bd1579ebabdf3ccb017b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>return_type</b> = typename <a class="el" href="structquetzal_1_1expressive_1_1Callable__traits.html">Callable_traits</a>&lt; F &gt;::return_type</td></tr>
+<tr class="memitem:aa14f89ca6393bd1579ebabdf3ccb017b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#aa14f89ca6393bd1579ebabdf3ccb017b">return_type</a> = typename <a class="el" href="structquetzal_1_1expressive_1_1Callable__traits.html">Callable_traits</a>&lt; F &gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#aa14f89ca6393bd1579ebabdf3ccb017b">return_type</a></td></tr>
 <tr class="separator:aa14f89ca6393bd1579ebabdf3ccb017b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae0b31e8951113ac38bd3b4e15626fe"><td class="memItemLeft" align="right" valign="top"><a id="a2ae0b31e8951113ac38bd3b4e15626fe"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>arguments_type</b> = typename <a class="el" href="structquetzal_1_1expressive_1_1Callable__traits.html">Callable_traits</a>&lt; F &gt;::arguments_type</td></tr>
+<tr class="memitem:a2ae0b31e8951113ac38bd3b4e15626fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a2ae0b31e8951113ac38bd3b4e15626fe">arguments_type</a> = typename <a class="el" href="structquetzal_1_1expressive_1_1Callable__traits.html">Callable_traits</a>&lt; F &gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a2ae0b31e8951113ac38bd3b4e15626fe">arguments_type</a></td></tr>
 <tr class="separator:a2ae0b31e8951113ac38bd3b4e15626fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38c2cf10e0b1fc9de7ccd024209a0395"><td class="memItemLeft" align="right" valign="top"><a id="a38c2cf10e0b1fc9de7ccd024209a0395"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>composite_functor</b> (F const &amp;f)</td></tr>
+<tr class="memitem:a38c2cf10e0b1fc9de7ccd024209a0395"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a38c2cf10e0b1fc9de7ccd024209a0395">composite_functor</a> (F const &amp;<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a6eebc62fd0727f3bfa0aa5be37c56b80">f</a>)</td></tr>
 <tr class="separator:a38c2cf10e0b1fc9de7ccd024209a0395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a803c756dd085e04cc52edadb058c8a59"><td class="memItemLeft" align="right" valign="top"><a id="a803c756dd085e04cc52edadb058c8a59"></a>
-static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>arguments_count</b> ()</td></tr>
+<tr class="memitem:a803c756dd085e04cc52edadb058c8a59"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a803c756dd085e04cc52edadb058c8a59">arguments_count</a> ()</td></tr>
 <tr class="separator:a803c756dd085e04cc52edadb058c8a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7cd6fe084b33a021a7b34940c186787"><td class="memTemplParams" colspan="2"><a id="ab7cd6fe084b33a021a7b34940c186787"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ab7cd6fe084b33a021a7b34940c186787"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>call_check</b> ()</td></tr>
+<tr class="memitem:ab7cd6fe084b33a021a7b34940c186787"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ab7cd6fe084b33a021a7b34940c186787"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#ab7cd6fe084b33a021a7b34940c186787">call_check</a> ()</td></tr>
 <tr class="separator:ab7cd6fe084b33a021a7b34940c186787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6eebc62fd0727f3bfa0aa5be37c56b80"><td class="memItemLeft" align="right" valign="top"><a id="a6eebc62fd0727f3bfa0aa5be37c56b80"></a>
-F&#160;</td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
+<tr class="memitem:a6eebc62fd0727f3bfa0aa5be37c56b80"><td class="memItemLeft" align="right" valign="top">F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a6eebc62fd0727f3bfa0aa5be37c56b80">f</a></td></tr>
 <tr class="separator:a6eebc62fd0727f3bfa0aa5be37c56b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a2ae0b31e8951113ac38bd3b4e15626fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae0b31e8951113ac38bd3b4e15626fe">&#9670;&nbsp;</a></span>arguments_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">quetzal::expressive::composite_functor</a>&lt; F &gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a2ae0b31e8951113ac38bd3b4e15626fe">arguments_type</a> =  typename <a class="el" href="structquetzal_1_1expressive_1_1Callable__traits.html">Callable_traits</a>&lt;F&gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a2ae0b31e8951113ac38bd3b4e15626fe">arguments_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa14f89ca6393bd1579ebabdf3ccb017b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14f89ca6393bd1579ebabdf3ccb017b">&#9670;&nbsp;</a></span>return_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">quetzal::expressive::composite_functor</a>&lt; F &gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#aa14f89ca6393bd1579ebabdf3ccb017b">return_type</a> =  typename <a class="el" href="structquetzal_1_1expressive_1_1Callable__traits.html">Callable_traits</a>&lt;F&gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#aa14f89ca6393bd1579ebabdf3ccb017b">return_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a38c2cf10e0b1fc9de7ccd024209a0395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c2cf10e0b1fc9de7ccd024209a0395">&#9670;&nbsp;</a></span>composite_functor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">quetzal::expressive::composite_functor</a>&lt; F &gt;::<a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">composite_functor</a> </td>
+          <td>(</td>
+          <td class="paramtype">F const &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a803c756dd085e04cc52edadb058c8a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803c756dd085e04cc52edadb058c8a59">&#9670;&nbsp;</a></span>arguments_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr std::size_t <a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">quetzal::expressive::composite_functor</a>&lt; F &gt;::arguments_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7cd6fe084b33a021a7b34940c186787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7cd6fe084b33a021a7b34940c186787">&#9670;&nbsp;</a></span>call_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr bool <a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">quetzal::expressive::composite_functor</a>&lt; F &gt;::call_check </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6eebc62fd0727f3bfa0aa5be37c56b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eebc62fd0727f3bfa0aa5be37c56b80">&#9670;&nbsp;</a></span>f</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">F <a class="el" href="structquetzal_1_1expressive_1_1composite__functor.html">quetzal::expressive::composite_functor</a>&lt; F &gt;::f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>quetzal/include/quetzal/expressive/<a class="el" href="expressive_2expressive_8h_source.html">expressive.h</a></li>
 </ul>
@@ -153,7 +285,7 @@ F&#160;</td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>quetzal</b></li><li class="navelem"><b>expressive</b></li><li class="navelem"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html">composite_functor&lt; F &gt;</a></li>
+    <li class="navelem"><a class="el" href="namespacequetzal.html">quetzal</a></li><li class="navelem"><a class="el" href="namespacequetzal_1_1expressive.html">expressive</a></li><li class="navelem"><a class="el" href="structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html">composite_functor&lt; F &gt;</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

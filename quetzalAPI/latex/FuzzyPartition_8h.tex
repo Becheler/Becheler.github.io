@@ -1,0 +1,61 @@
+\hypertarget{FuzzyPartition_8h}{}\doxysection{quetzal/include/quetzal/fuzzy\+\_\+transfer\+\_\+distance/\+Fuzzy\+Partition.h File Reference}
+\label{FuzzyPartition_8h}\index{quetzal/include/quetzal/fuzzy\_transfer\_distance/FuzzyPartition.h@{quetzal/include/quetzal/fuzzy\_transfer\_distance/FuzzyPartition.h}}
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}assert.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/matrix.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/matrix\+\_\+proxy.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/io.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}zip\+\_\+range.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}matrix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}munkres.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Restricted\+Growth\+String.\+h\char`\"{}}\newline
+Include dependency graph for Fuzzy\+Partition.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FuzzyPartition_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{FuzzyPartition_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition$<$ Element $>$}}
+\begin{DoxyCompactList}\small\item\em Clusters are implicitly defined because of cluster merging (what would make unique I\+Ds complicated to use) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition$<$ Element $>$}}
+\begin{DoxyCompactList}\small\item\em Clusters are implicitly defined because of cluster merging (what would make unique I\+Ds complicated to use) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{FuzzyPartition_8h_a9c0b641e04de83159f451712f1638e86}{operator==}} (const boost\+::numeric\+::ublas\+::matrix$<$ T $>$ \&m, const boost\+::numeric\+::ublas\+::matrix$<$ T $>$ \&n)
+\item 
+{\footnotesize template$<$typename E $>$ }\\std\+::ostream \& \mbox{\hyperlink{FuzzyPartition_8h_ae4dbae3046f1bf3e9b9cad1f52971dfc}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ E $>$ \&fuzzy\+\_\+partition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{FuzzyPartition_8h_ae4dbae3046f1bf3e9b9cad1f52971dfc}\label{FuzzyPartition_8h_ae4dbae3046f1bf3e9b9cad1f52971dfc}} 
+\index{FuzzyPartition.h@{FuzzyPartition.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!FuzzyPartition.h@{FuzzyPartition.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename E $>$ \\
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ E $>$ \&}]{fuzzy\+\_\+partition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{FuzzyPartition_8h_a9c0b641e04de83159f451712f1638e86}\label{FuzzyPartition_8h_a9c0b641e04de83159f451712f1638e86}} 
+\index{FuzzyPartition.h@{FuzzyPartition.h}!operator==@{operator==}}
+\index{operator==@{operator==}!FuzzyPartition.h@{FuzzyPartition.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool operator== (\begin{DoxyParamCaption}\item[{const boost\+::numeric\+::ublas\+::matrix$<$ T $>$ \&}]{m,  }\item[{const boost\+::numeric\+::ublas\+::matrix$<$ T $>$ \&}]{n }\end{DoxyParamCaption})}
+

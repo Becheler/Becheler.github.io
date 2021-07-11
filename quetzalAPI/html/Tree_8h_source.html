@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <div class="title">Tree.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler &lt;abechele@umich.edu&gt;</span></div>
+<a href="Tree_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler &lt;abechele@umich.edu&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify *</span></div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>quetzal{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacequetzal.html">quetzal</a>{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>coalescence{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Inspired from code publicated by Pyramidev here : http://www.developpez.net/forums/d1623113/c-cpp/cpp/debuter/loi-demeter/#post8894717</span></div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> UnaryOperation&gt;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> visit_subtrees_by_pre_order_DFS(UnaryOperation op) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classquetzal_1_1coalescence_1_1Tree.html#ac43c096cd0fde71d8495696239da267a">  159</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#ac43c096cd0fde71d8495696239da267a">visit_subtrees_by_pre_order_DFS</a>(UnaryOperation op) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        op(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; child : this-&gt;m_children){</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            child.visit_subtrees_by_pre_order_DFS(op);</div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Op1, <span class="keyword">typename</span> Op2, <span class="keyword">typename</span> Op3&gt;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> visit_subtrees_by_generic_DFS(Op1 preorder, Op2 inorder, Op3 postorder){</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classquetzal_1_1coalescence_1_1Tree.html#a3744f84fe9d661e99849a8d2f7af345a">  167</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#a3744f84fe9d661e99849a8d2f7af345a">visit_subtrees_by_generic_DFS</a>(Op1 preorder, Op2 inorder, Op3 postorder){</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        preorder(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; child : this-&gt;m_children)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
@@ -197,17 +197,17 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        postorder(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">auto</span>&amp; parent(){</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classquetzal_1_1coalescence_1_1Tree.html#af184f998dcffb06e011f4507fe8b7dc8">  177</a></span>&#160;    <span class="keyword">auto</span>&amp; <a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#af184f998dcffb06e011f4507fe8b7dc8">parent</a>(){</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        assert(<a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#a420f913c0921f7bc2caf4781c6a4732a">has_parent</a>());</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">return</span> *m_parent;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; parent()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classquetzal_1_1coalescence_1_1Tree.html#ab17685d71490471bdd9a8f648c6adbb5">  182</a></span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#ab17685d71490471bdd9a8f648c6adbb5">parent</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        assert(<a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#a420f913c0921f7bc2caf4781c6a4732a">has_parent</a>());</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> *m_parent;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_children()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_children.size(); }</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classquetzal_1_1coalescence_1_1Tree.html#ab81bdc547a7f2f258a72693e49ada8a0">  187</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#ab81bdc547a7f2f258a72693e49ada8a0">nb_children</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_children.size(); }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UnaryOperation&gt;</div>
 <div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classquetzal_1_1coalescence_1_1Tree.html#a9ea2cc358aed0bd329d2c170c7039586">  196</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classquetzal_1_1coalescence_1_1Tree.html#a9ea2cc358aed0bd329d2c170c7039586">visit_leaves_cells_by_DFS</a>(UnaryOperation op)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">    </span>{</div>
@@ -344,9 +344,15 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_ab17685d71490471bdd9a8f648c6adbb5"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#ab17685d71490471bdd9a8f648c6adbb5">quetzal::coalescence::Tree::parent</a></div><div class="ttdeci">auto const  &amp; parent() const</div><div class="ttdef"><b>Definition:</b> Tree.h:182</div></div>
+<div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_ac43c096cd0fde71d8495696239da267a"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#ac43c096cd0fde71d8495696239da267a">quetzal::coalescence::Tree::visit_subtrees_by_pre_order_DFS</a></div><div class="ttdeci">void visit_subtrees_by_pre_order_DFS(UnaryOperation op)</div><div class="ttdef"><b>Definition:</b> Tree.h:159</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html">quetzal::coalescence::Tree</a></div><div class="ttdoc">Tree topology where each node contains a data field.</div><div class="ttdef"><b>Definition:</b> Tree.h:29</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_a42d8ad262481416f12254f11e2fd3b70"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#a42d8ad262481416f12254f11e2fd3b70">quetzal::coalescence::Tree::cell</a></div><div class="ttdeci">const CellT &amp; cell() const</div><div class="ttdoc">Cell accessor.</div><div class="ttdef"><b>Definition:</b> Tree.h:280</div></div>
+<div class="ttc" id="anamespacequetzal_html"><div class="ttname"><a href="namespacequetzal.html">quetzal</a></div><div class="ttdef"><b>Definition:</b> merge.h:23</div></div>
+<div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_a3744f84fe9d661e99849a8d2f7af345a"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#a3744f84fe9d661e99849a8d2f7af345a">quetzal::coalescence::Tree::visit_subtrees_by_generic_DFS</a></div><div class="ttdeci">void visit_subtrees_by_generic_DFS(Op1 preorder, Op2 inorder, Op3 postorder)</div><div class="ttdef"><b>Definition:</b> Tree.h:167</div></div>
+<div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_af184f998dcffb06e011f4507fe8b7dc8"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#af184f998dcffb06e011f4507fe8b7dc8">quetzal::coalescence::Tree::parent</a></div><div class="ttdeci">auto &amp; parent()</div><div class="ttdef"><b>Definition:</b> Tree.h:177</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_a4e3f68d644c02491835e807644341c58"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#a4e3f68d644c02491835e807644341c58">quetzal::coalescence::Tree::operator=</a></div><div class="ttdeci">Tree&lt; CellT &gt; &amp; operator=(const Tree&lt; CellT &gt; &amp;other)</div><div class="ttdoc">Copy assignment operator.</div><div class="ttdef"><b>Definition:</b> Tree.h:261</div></div>
+<div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_ab81bdc547a7f2f258a72693e49ada8a0"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#ab81bdc547a7f2f258a72693e49ada8a0">quetzal::coalescence::Tree::nb_children</a></div><div class="ttdeci">unsigned int nb_children() const</div><div class="ttdef"><b>Definition:</b> Tree.h:187</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_a420f913c0921f7bc2caf4781c6a4732a"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#a420f913c0921f7bc2caf4781c6a4732a">quetzal::coalescence::Tree::has_parent</a></div><div class="ttdeci">bool has_parent() const</div><div class="ttdoc">Checks whether the tree has a parent.</div><div class="ttdef"><b>Definition:</b> Tree.h:132</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_a61af917e264a3b4a2b49bd613570b467"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#a61af917e264a3b4a2b49bd613570b467">quetzal::coalescence::Tree::has_children</a></div><div class="ttdeci">bool has_children() const</div><div class="ttdoc">Checks whether the tree has one or more child.</div><div class="ttdef"><b>Definition:</b> Tree.h:317</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1Tree_html_abd7e506290632b0529b1eac06b018839"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1Tree.html#abd7e506290632b0529b1eac06b018839">quetzal::coalescence::Tree::visit_cells_by_pre_order_DFS</a></div><div class="ttdeci">void visit_cells_by_pre_order_DFS(UnaryOperation op) const</div><div class="ttdoc">Applies a function object to each node encountered in a depth first search algorithm.</div><div class="ttdef"><b>Definition:</b> Tree.h:150</div></div>
@@ -357,7 +363,7 @@ $(document).ready(function(){initNavTree('Tree_8h_source.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_bcfaa045ea02ef87727a836d6121aab4.html">containers</a></li><li class="navelem"><b>Tree.h</b></li>
+    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_bcfaa045ea02ef87727a836d6121aab4.html">containers</a></li><li class="navelem"><a class="el" href="Tree_8h.html">Tree.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

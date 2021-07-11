@@ -12,41 +12,33 @@ Clusters are implicitly defined because of cluster merging (what would make uniq
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}\label{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}} 
-using {\bfseries element\+\_\+type} = Element
+using \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} = Element
 \item 
-\mbox{\Hypertarget{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}\label{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}} 
-using {\bfseries cluster\+\_\+type} = unsigned int
+using \mbox{\hyperlink{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}{cluster\+\_\+type}} = unsigned int
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classFuzzyPartition_a4f893d04d7a251efa056e60bd1d7bfe2}{Fuzzy\+Partition}} (std\+::map$<$ element\+\_\+type, std\+::vector$<$ double $>$ $>$ const \&coefficients)
+\mbox{\hyperlink{classFuzzyPartition_a4f893d04d7a251efa056e60bd1d7bfe2}{Fuzzy\+Partition}} (std\+::map$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}}, std\+::vector$<$ double $>$ $>$ const \&coefficients)
 \begin{DoxyCompactList}\small\item\em Construct the fuzz partition with given coefficients. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classFuzzyPartition_ae7c43fabf95b27e1b47e31d9cb47d37c}\label{classFuzzyPartition_ae7c43fabf95b27e1b47e31d9cb47d37c}} 
-const std\+::set$<$ element\+\_\+type $>$ \& \mbox{\hyperlink{classFuzzyPartition_ae7c43fabf95b27e1b47e31d9cb47d37c}{elements}} () const
+const std\+::set$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} $>$ \& \mbox{\hyperlink{classFuzzyPartition_ae7c43fabf95b27e1b47e31d9cb47d37c}{elements}} () const
 \begin{DoxyCompactList}\small\item\em Return the elements of the fuzzy partition. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classFuzzyPartition_a862b273da9ba0809b3b29e0dd9035f47}\label{classFuzzyPartition_a862b273da9ba0809b3b29e0dd9035f47}} 
-const std\+::set$<$ cluster\+\_\+type $>$ \& \mbox{\hyperlink{classFuzzyPartition_a862b273da9ba0809b3b29e0dd9035f47}{clusters}} () const
+const std\+::set$<$ \mbox{\hyperlink{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}{cluster\+\_\+type}} $>$ \& \mbox{\hyperlink{classFuzzyPartition_a862b273da9ba0809b3b29e0dd9035f47}{clusters}} () const
 \begin{DoxyCompactList}\small\item\em Return the clusters indices. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classFuzzyPartition_aed2056aeb533f5cbaa8af8ddeb66a018}\label{classFuzzyPartition_aed2056aeb533f5cbaa8af8ddeb66a018}} 
 size\+\_\+t \mbox{\hyperlink{classFuzzyPartition_aed2056aeb533f5cbaa8af8ddeb66a018}{n\+Elements}} () const
 \begin{DoxyCompactList}\small\item\em Returns the number of elements (columns) of the fuzzy partition (matrix) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classFuzzyPartition_ac404a36e7745132bd4b2ee27f9db72f7}\label{classFuzzyPartition_ac404a36e7745132bd4b2ee27f9db72f7}} 
 size\+\_\+t \mbox{\hyperlink{classFuzzyPartition_ac404a36e7745132bd4b2ee27f9db72f7}{n\+Clusters}} () const
 \begin{DoxyCompactList}\small\item\em Returns the number of clusters (lines) of the fuzzy partition (matrix) \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classFuzzyPartition_a3bf893e4fdb699003439537fce23c548}{fuzzy\+\_\+transfer\+\_\+distance}} (\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}} const \&other) const
 \begin{DoxyCompactList}\small\item\em Compute the fuzzy transfer distance between two fuzzy partition. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}} \& \mbox{\hyperlink{classFuzzyPartition_a3b2bda53a624bc960c1f3c2a826a6e22}{merge\+\_\+clusters}} (\mbox{\hyperlink{classRestrictedGrowthString}{Restricted\+Growth\+String}} const \&rgs)
 \begin{DoxyCompactList}\small\item\em Modifies the object, merging clusters (summing lines) according to a restricted growth string object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classFuzzyPartition_a2dd54da9b049eac1d546ff542c149208}\label{classFuzzyPartition_a2dd54da9b049eac1d546ff542c149208}} 
-bool \mbox{\hyperlink{classFuzzyPartition_a2dd54da9b049eac1d546ff542c149208}{operator==}} (\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ element\+\_\+type $>$ const \&other) const
+bool \mbox{\hyperlink{classFuzzyPartition_a2dd54da9b049eac1d546ff542c149208}{operator==}} (\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} $>$ const \&other) const
 \begin{DoxyCompactList}\small\item\em Comparison operator, returning true if two partitions have equal elements set and membership coefficent, else returns false. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFuzzyPartition_a3badde6fdb9abe2237551eed0afc996c}\label{classFuzzyPartition_a3badde6fdb9abe2237551eed0afc996c}} 
-std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ element\+\_\+type $>$ const \&)
+std\+::ostream \& \mbox{\hyperlink{classFuzzyPartition_a3badde6fdb9abe2237551eed0afc996c}{operator$<$$<$}} (std\+::ostream \&, \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} $>$ const \&)
 \end{DoxyCompactItemize}
 
 
@@ -68,13 +60,30 @@ In the present implementation, Clusters I\+Ds are not memorized, because it woul
 \end{DoxyTemplParams}
 
 
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}\label{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!cluster\_type@{cluster\_type}}
+\index{cluster\_type@{cluster\_type}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{cluster\_type}{cluster\_type}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+using \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::\mbox{\hyperlink{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}{cluster\+\_\+type}} =  unsigned int}
+
+\mbox{\Hypertarget{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}\label{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!element\_type@{element\_type}}
+\index{element\_type@{element\_type}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{element\_type}{element\_type}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+using \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::\mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} =  Element}
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classFuzzyPartition_a4f893d04d7a251efa056e60bd1d7bfe2}\label{classFuzzyPartition_a4f893d04d7a251efa056e60bd1d7bfe2}} 
 \index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!FuzzyPartition@{FuzzyPartition}}
 \index{FuzzyPartition@{FuzzyPartition}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
 \doxysubsubsection{\texorpdfstring{FuzzyPartition()}{FuzzyPartition()}}
 {\footnotesize\ttfamily template$<$typename Element $>$ \\
-\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}} (\begin{DoxyParamCaption}\item[{std\+::map$<$ element\+\_\+type, std\+::vector$<$ double $>$ $>$ const \&}]{coefficients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}} (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}}, std\+::vector$<$ double $>$ $>$ const \&}]{coefficients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -88,6 +97,28 @@ The vectors index gives the cluster index.
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFuzzyPartition_a862b273da9ba0809b3b29e0dd9035f47}\label{classFuzzyPartition_a862b273da9ba0809b3b29e0dd9035f47}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!clusters@{clusters}}
+\index{clusters@{clusters}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{clusters()}{clusters()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+const std\+::set$<$\mbox{\hyperlink{classFuzzyPartition_a827e7417c43eb4531f9ff401a1039bec}{cluster\+\_\+type}}$>$\& \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the clusters indices. 
+
+\mbox{\Hypertarget{classFuzzyPartition_ae7c43fabf95b27e1b47e31d9cb47d37c}\label{classFuzzyPartition_ae7c43fabf95b27e1b47e31d9cb47d37c}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!elements@{elements}}
+\index{elements@{elements}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{elements()}{elements()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+const std\+::set$<$\mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}}$>$\& \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the elements of the fuzzy partition. 
+
 \mbox{\Hypertarget{classFuzzyPartition_a3bf893e4fdb699003439537fce23c548}\label{classFuzzyPartition_a3bf893e4fdb699003439537fce23c548}} 
 \index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!fuzzy\_transfer\_distance@{fuzzy\_transfer\_distance}}
 \index{fuzzy\_transfer\_distance@{fuzzy\_transfer\_distance}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
@@ -110,8 +141,51 @@ Partitons must have same elements number, but number of clusters can differe. \m
 
 Modifies the object, merging clusters (summing lines) according to a restricted growth string object. 
 
-size1 = nbr of rows
+size1 = nbr of rows\mbox{\Hypertarget{classFuzzyPartition_ac404a36e7745132bd4b2ee27f9db72f7}\label{classFuzzyPartition_ac404a36e7745132bd4b2ee27f9db72f7}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!nClusters@{nClusters}}
+\index{nClusters@{nClusters}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{nClusters()}{nClusters()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+size\+\_\+t \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::n\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of clusters (lines) of the fuzzy partition (matrix) 
+
+\mbox{\Hypertarget{classFuzzyPartition_aed2056aeb533f5cbaa8af8ddeb66a018}\label{classFuzzyPartition_aed2056aeb533f5cbaa8af8ddeb66a018}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!nElements@{nElements}}
+\index{nElements@{nElements}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{nElements()}{nElements()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+size\+\_\+t \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::n\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of elements (columns) of the fuzzy partition (matrix) 
+
+\mbox{\Hypertarget{classFuzzyPartition_a2dd54da9b049eac1d546ff542c149208}\label{classFuzzyPartition_a2dd54da9b049eac1d546ff542c149208}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ Element $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} $>$ const \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comparison operator, returning true if two partitions have equal elements set and membership coefficent, else returns false. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classFuzzyPartition_a3badde6fdb9abe2237551eed0afc996c}\label{classFuzzyPartition_a3badde6fdb9abe2237551eed0afc996c}} 
+\index{FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!FuzzyPartition$<$ Element $>$@{FuzzyPartition$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{\mbox{\hyperlink{classFuzzyPartition}{Fuzzy\+Partition}}$<$ \mbox{\hyperlink{classFuzzyPartition_ac5e6f828d32548159998ebb71a459ac2}{element\+\_\+type}} $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-quetzal/include/quetzal/fuzzy\+\_\+transfer\+\_\+distance/Fuzzy\+Partition.\+h\end{DoxyCompactItemize}
+quetzal/include/quetzal/fuzzy\+\_\+transfer\+\_\+distance/\mbox{\hyperlink{FuzzyPartition_8h}{Fuzzy\+Partition.\+h}}\end{DoxyCompactItemize}

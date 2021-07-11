@@ -106,13 +106,13 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="title">csv_parser.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DVP_CSV_PARSER_H</span></div>
+<a href="csv__parser_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DVP_CSV_PARSER_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DVP_CSV_PARSER_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;csv_common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="csv__common_8h.html">csv_common.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>dvp</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacedvp.html">dvp</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> csv_traits&gt;</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> current_pos_;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">typename</span> csv_traits::string_type last_value_;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> complete_;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    csv_error error_;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">csv_error</a> error_;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">enum class</span> state : uint8_t</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        initial = 0,</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        record,</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        quoted_record,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        quote_quoted_record,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        new_line,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="namespacedvp.html#afe59223e1e2838fd0166df747761e630a620cf4c6d9756f9ce211c523f16c42a9">new_line</a>,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        between_records</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    state state_;</div>
@@ -139,26 +139,26 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> call_field_handler();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> call_end_line_handler();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> call_comment_handler();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> call_error_handler(csv_error err);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">csv_error</a> err);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> update_line_counter() {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        current_line_ += 1;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        current_pos_ = 1;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::function&lt;bool(<span class="keyword">typename</span> csv_traits::string_type <span class="keyword">const</span>&amp;)&gt; comment_handler;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::function&lt;bool(<span class="keyword">typename</span> csv_traits::string_type <span class="keyword">const</span>&amp;)&gt; field_handler;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::function&lt;bool()&gt; end_line_handler;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::function&lt;bool()&gt; end_file_handler;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::function&lt;void(csv_error,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)&gt; error_handler;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#a6dd8fc92e2a88cb8ad97671580574706">   41</a></span>&#160;    <a class="code" href="namespacequetzal_1_1expressive.html#abd0f762e5a79e4668c6318c6d4529df8">std::function</a>&lt;bool(<span class="keyword">typename</span> csv_traits::string_type <span class="keyword">const</span>&amp;)&gt; <a class="code" href="classdvp_1_1csv__parser.html#a6dd8fc92e2a88cb8ad97671580574706">comment_handler</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#a527ecb53020b9333208a2b3d03ddca80">   42</a></span>&#160;    <a class="code" href="namespacequetzal_1_1expressive.html#abd0f762e5a79e4668c6318c6d4529df8">std::function</a>&lt;bool(<span class="keyword">typename</span> csv_traits::string_type <span class="keyword">const</span>&amp;)&gt; <a class="code" href="classdvp_1_1csv__parser.html#a527ecb53020b9333208a2b3d03ddca80">field_handler</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#a2c0436d6781b3c11f7a91d108828e41b">   43</a></span>&#160;    <a class="code" href="namespacequetzal_1_1expressive.html#abd0f762e5a79e4668c6318c6d4529df8">std::function</a>&lt;bool()&gt; <a class="code" href="classdvp_1_1csv__parser.html#a2c0436d6781b3c11f7a91d108828e41b">end_line_handler</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#abe924b0f61da2406f7bc99189e0e232a">   44</a></span>&#160;    <a class="code" href="namespacequetzal_1_1expressive.html#abd0f762e5a79e4668c6318c6d4529df8">std::function</a>&lt;bool()&gt; <a class="code" href="classdvp_1_1csv__parser.html#abe924b0f61da2406f7bc99189e0e232a">end_file_handler</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#adb8c730018d1cf9a8b20fc5d2ecd985a">   45</a></span>&#160;    <a class="code" href="namespacequetzal_1_1expressive.html#abd0f762e5a79e4668c6318c6d4529df8">std::function</a>&lt;void(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">csv_error</a>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)&gt; <a class="code" href="classdvp_1_1csv__parser.html#adb8c730018d1cf9a8b20fc5d2ecd985a">error_handler</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> state_matrix[7][5];</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#aaeebe204be74691a974feecbe92054a2">   47</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classdvp_1_1csv__parser.html#aaeebe204be74691a974feecbe92054a2">state_matrix</a>[7][5];</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a>(Args... args);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ~<a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a>()=<span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a>(<a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a> <span class="keyword">const</span>&amp;)=<span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a>&amp; operator=(<a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a> <span class="keyword">const</span>&amp;)=<span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html#adfa2bc6b738b1ea492ae2663deab364a">csv_parser</a>(Args... args);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html#ab68a84605bef58b09b04e9686e4706f8">~csv_parser</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html#adfa2bc6b738b1ea492ae2663deab364a">csv_parser</a>(<a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a> <span class="keyword">const</span>&amp;)=<span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a>&amp; <a class="code" href="classdvp_1_1csv__parser.html#a81a5644962cd79fb7956c2b0a93acc93">operator=</a>(<a class="code" href="classdvp_1_1csv__parser.html">csv_parser</a> <span class="keyword">const</span>&amp;)=<span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classdvp_1_1csv__parser.html#ae99803cd0f999239cde2d879f75216c5">consume</a>(<span class="keyword">typename</span> csv_traits::char_type c);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
@@ -174,13 +174,13 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdvp_1_1csv__parser.html#add55bd70ebd2aa05c9ff40677b552062">error</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    csv_error last_error() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">csv_error</a> <a class="code" href="classdvp_1_1csv__parser.html#ab4ac5cfc28d546159d347a92b84df9ff">last_error</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdvp_1_1csv__parser.html#a2864ace25d847ed488fc0802b2821fee">set_separator</a>(<span class="keyword">typename</span> csv_traits::char_type separator);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> reset() {</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#a03739e08a628dcccb1c728f2565ef2ba">  101</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdvp_1_1csv__parser.html#a03739e08a628dcccb1c728f2565ef2ba">reset</a>() {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        complete_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        error_ = csv_error::no_error;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        error_ = <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">csv_error::no_error</a>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        state_ = state::initial;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        current_pos_ = 1;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        current_line_ = 1;</div>
@@ -191,23 +191,23 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> csv_traits&gt;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="classdvp_1_1csv__parser.html">csv_parser&lt;csv_traits&gt;::csv_parser</a>(Args... args) : csv_traits(args...),</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#adfa2bc6b738b1ea492ae2663deab364a">  114</a></span>&#160;<a class="code" href="classdvp_1_1csv__parser.html#adfa2bc6b738b1ea492ae2663deab364a">csv_parser&lt;csv_traits&gt;::csv_parser</a>(Args... args) : csv_traits(args...),</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    current_line_(1),</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    current_pos_(1),</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    complete_(false),</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    error_(csv_error::no_error),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    error_(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">csv_error</a>::<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">no_error</a>),</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    state_(state::initial)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> csv_traits&gt;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> csv_parser&lt;csv_traits&gt;::call_field_handler()</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdvp_1_1csv__parser.html">csv_parser&lt;csv_traits&gt;::call_field_handler</a>()</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(field_handler &amp;&amp; error_ == csv_error::no_error)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(field_handler &amp;&amp; error_ == <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">csv_error::no_error</a>)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span>(!field_handler(last_value_))</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            call_error_handler(csv_error::error_user_aborted);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba300065d6f4ca96d0f9cffac9a7cb77b5">csv_error::error_user_aborted</a>);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    csv_traits::truncate(last_value_);</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> csv_traits&gt;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">void</span> csv_parser&lt;csv_traits&gt;::call_error_handler(csv_error err)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">void</span> csv_parser&lt;csv_traits&gt;::call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">csv_error</a> err)</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    error_ = err;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span>(error_handler)</div>
@@ -234,10 +234,10 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> csv_traits&gt;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">void</span> csv_parser&lt;csv_traits&gt;::call_comment_handler()</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span>(comment_handler &amp;&amp; error_ == csv_error::no_error)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span>(comment_handler &amp;&amp; error_ == <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">csv_error::no_error</a>)</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span>(!comment_handler(last_value_))</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            call_error_handler(csv_error::error_user_aborted);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba300065d6f4ca96d0f9cffac9a7cb77b5">csv_error::error_user_aborted</a>);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    csv_traits::truncate(last_value_);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                state_ = state::new_line;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                call_error_handler(csv_error::malformed_quoted_string);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba763ee5583b4980ed4be9380d33005b3d">csv_error::malformed_quoted_string</a>);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">case</span> state::between_records:</div>
@@ -374,7 +374,7 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            call_end_line_handler();</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">case</span> state::quoted_record:</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            call_error_handler(csv_error::unterminated_quoted_string);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910badaef3623204a0d7cf1ad42dbc915ab0f">csv_error::unterminated_quoted_string</a>);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">case</span> state::new_line:</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -382,13 +382,13 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            call_comment_handler();</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">case</span> state::initial:</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            call_error_handler(csv_error::error_empty_file);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            call_error_handler(<a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910baea1861d24eac7f4a08852ce77e81ae3a">csv_error::error_empty_file</a>);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span>(end_file_handler &amp;&amp; error_ == csv_error::no_error)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span>(end_file_handler &amp;&amp; error_ == <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">csv_error::no_error</a>)</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">if</span>(!end_file_handler())</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            error_ = csv_error::error_user_aborted;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            error_ = <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba300065d6f4ca96d0f9cffac9a7cb77b5">csv_error::error_user_aborted</a>;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    } </div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
@@ -413,27 +413,48 @@ $(document).ready(function(){initNavTree('csv__parser_8h_source.html',''); initR
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> csv_traits&gt;</div>
 <div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="classdvp_1_1csv__parser.html#add55bd70ebd2aa05c9ff40677b552062">  334</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classdvp_1_1csv__parser.html#add55bd70ebd2aa05c9ff40677b552062">csv_parser&lt;csv_traits&gt;::error</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> error_ != csv_error::no_error;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> error_ != <a class="code" href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">csv_error::no_error</a>;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif // DVP_CSV_PARSER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_adfa2bc6b738b1ea492ae2663deab364a"><div class="ttname"><a href="classdvp_1_1csv__parser.html#adfa2bc6b738b1ea492ae2663deab364a">dvp::csv_parser::csv_parser</a></div><div class="ttdeci">csv_parser(Args... args)</div><div class="ttdef"><b>Definition:</b> csv_parser.h:114</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html"><div class="ttname"><a href="classdvp_1_1csv__parser.html">dvp::csv_parser</a></div><div class="ttdef"><b>Definition:</b> csv_parser.h:11</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_a1814ed1fe2a9f3d85b56fd70cff4f8c7"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a1814ed1fe2a9f3d85b56fd70cff4f8c7">dvp::csv_parser::complete</a></div><div class="ttdeci">bool complete() const</div><div class="ttdoc">complete returns true if the parser has completed without errors</div><div class="ttdef"><b>Definition:</b> csv_parser.h:316</div></div>
+<div class="ttc" id="anamespacedvp_html_acc103fe39d6a11f1b40808b7ed4c910b"><div class="ttname"><a href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910b">dvp::csv_error</a></div><div class="ttdeci">csv_error</div><div class="ttdef"><b>Definition:</b> csv_common.h:15</div></div>
+<div class="ttc" id="anamespacedvp_html"><div class="ttname"><a href="namespacedvp.html">dvp</a></div><div class="ttdef"><b>Definition:</b> csv_common.h:4</div></div>
+<div class="ttc" id="anamespacequetzal_1_1expressive_html_abd0f762e5a79e4668c6318c6d4529df8"><div class="ttname"><a href="namespacequetzal_1_1expressive.html#abd0f762e5a79e4668c6318c6d4529df8">quetzal::expressive::function</a></div><div class="ttdeci">constexpr auto function(F f)</div><div class="ttdef"><b>Definition:</b> expressive.h:193</div></div>
+<div class="ttc" id="anamespacedvp_html_afe59223e1e2838fd0166df747761e630a620cf4c6d9756f9ce211c523f16c42a9"><div class="ttname"><a href="namespacedvp.html#afe59223e1e2838fd0166df747761e630a620cf4c6d9756f9ce211c523f16c42a9">dvp::csv_token::new_line</a></div><div class="ttdeci">@ new_line</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_a527ecb53020b9333208a2b3d03ddca80"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a527ecb53020b9333208a2b3d03ddca80">dvp::csv_parser::field_handler</a></div><div class="ttdeci">std::function&lt; bool(typename csv_traits::string_type const  &amp;)&gt; field_handler</div><div class="ttdef"><b>Definition:</b> csv_parser.h:42</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_add55bd70ebd2aa05c9ff40677b552062"><div class="ttname"><a href="classdvp_1_1csv__parser.html#add55bd70ebd2aa05c9ff40677b552062">dvp::csv_parser::error</a></div><div class="ttdeci">bool error() const</div><div class="ttdoc">returns true if an error occurred</div><div class="ttdef"><b>Definition:</b> csv_parser.h:334</div></div>
+<div class="ttc" id="anamespacedvp_html_acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0"><div class="ttname"><a href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba7fa49f1a086c46bfc9e5f5fe279a82c0">dvp::csv_error::no_error</a></div><div class="ttdeci">@ no_error</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_a6dd8fc92e2a88cb8ad97671580574706"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a6dd8fc92e2a88cb8ad97671580574706">dvp::csv_parser::comment_handler</a></div><div class="ttdeci">std::function&lt; bool(typename csv_traits::string_type const  &amp;)&gt; comment_handler</div><div class="ttdef"><b>Definition:</b> csv_parser.h:41</div></div>
+<div class="ttc" id="anamespacedvp_html_acc103fe39d6a11f1b40808b7ed4c910ba763ee5583b4980ed4be9380d33005b3d"><div class="ttname"><a href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba763ee5583b4980ed4be9380d33005b3d">dvp::csv_error::malformed_quoted_string</a></div><div class="ttdeci">@ malformed_quoted_string</div></div>
+<div class="ttc" id="anamespacedvp_html_acc103fe39d6a11f1b40808b7ed4c910baea1861d24eac7f4a08852ce77e81ae3a"><div class="ttname"><a href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910baea1861d24eac7f4a08852ce77e81ae3a">dvp::csv_error::error_empty_file</a></div><div class="ttdeci">@ error_empty_file</div></div>
+<div class="ttc" id="anamespacedvp_html_acc103fe39d6a11f1b40808b7ed4c910ba300065d6f4ca96d0f9cffac9a7cb77b5"><div class="ttname"><a href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910ba300065d6f4ca96d0f9cffac9a7cb77b5">dvp::csv_error::error_user_aborted</a></div><div class="ttdeci">@ error_user_aborted</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_a81a5644962cd79fb7956c2b0a93acc93"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a81a5644962cd79fb7956c2b0a93acc93">dvp::csv_parser::operator=</a></div><div class="ttdeci">csv_parser &amp; operator=(csv_parser const &amp;)=delete</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_ae99803cd0f999239cde2d879f75216c5"><div class="ttname"><a href="classdvp_1_1csv__parser.html#ae99803cd0f999239cde2d879f75216c5">dvp::csv_parser::consume</a></div><div class="ttdeci">void consume(typename csv_traits::char_type c)</div><div class="ttdoc">consume consumes a new character, and acts accordingly</div><div class="ttdef"><b>Definition:</b> csv_parser.h:166</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_a2864ace25d847ed488fc0802b2821fee"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a2864ace25d847ed488fc0802b2821fee">dvp::csv_parser::set_separator</a></div><div class="ttdeci">void set_separator(typename csv_traits::char_type separator)</div><div class="ttdoc">set_separator sets the field separator used by the csv parser</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_aa78351941e9d1e12039b207ea32f096a"><div class="ttname"><a href="classdvp_1_1csv__parser.html#aa78351941e9d1e12039b207ea32f096a">dvp::csv_parser::abort</a></div><div class="ttdeci">void abort()</div><div class="ttdoc">abort stops the parser (may be used if there is no need to continue because something is missing)</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_ab4ac5cfc28d546159d347a92b84df9ff"><div class="ttname"><a href="classdvp_1_1csv__parser.html#ab4ac5cfc28d546159d347a92b84df9ff">dvp::csv_parser::last_error</a></div><div class="ttdeci">csv_error last_error() const</div></div>
+<div class="ttc" id="acsv__common_8h_html"><div class="ttname"><a href="csv__common_8h.html">csv_common.h</a></div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_aaeebe204be74691a974feecbe92054a2"><div class="ttname"><a href="classdvp_1_1csv__parser.html#aaeebe204be74691a974feecbe92054a2">dvp::csv_parser::state_matrix</a></div><div class="ttdeci">static int state_matrix[7][5]</div><div class="ttdef"><b>Definition:</b> csv_parser.h:47</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_af8d47bee6da03b8a62078b54394e98fe"><div class="ttname"><a href="classdvp_1_1csv__parser.html#af8d47bee6da03b8a62078b54394e98fe">dvp::csv_parser::end_of_data</a></div><div class="ttdeci">void end_of_data()</div><div class="ttdef"><b>Definition:</b> csv_parser.h:286</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_a3a93a3fe1d49e486eae5feda0c063b29"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a3a93a3fe1d49e486eae5feda0c063b29">dvp::csv_parser::current_position</a></div><div class="ttdeci">int current_position() const</div><div class="ttdoc">current_position returns the current position</div><div class="ttdef"><b>Definition:</b> csv_parser.h:328</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_ab68a84605bef58b09b04e9686e4706f8"><div class="ttname"><a href="classdvp_1_1csv__parser.html#ab68a84605bef58b09b04e9686e4706f8">dvp::csv_parser::~csv_parser</a></div><div class="ttdeci">~csv_parser()=default</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_abe924b0f61da2406f7bc99189e0e232a"><div class="ttname"><a href="classdvp_1_1csv__parser.html#abe924b0f61da2406f7bc99189e0e232a">dvp::csv_parser::end_file_handler</a></div><div class="ttdeci">std::function&lt; bool()&gt; end_file_handler</div><div class="ttdef"><b>Definition:</b> csv_parser.h:44</div></div>
 <div class="ttc" id="aclassdvp_1_1csv__parser_html_af77b669ffbaaea36da8a613cb7b51253"><div class="ttname"><a href="classdvp_1_1csv__parser.html#af77b669ffbaaea36da8a613cb7b51253">dvp::csv_parser::current_line</a></div><div class="ttdeci">int current_line() const</div><div class="ttdoc">current_line returns the current line number</div><div class="ttdef"><b>Definition:</b> csv_parser.h:322</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_adb8c730018d1cf9a8b20fc5d2ecd985a"><div class="ttname"><a href="classdvp_1_1csv__parser.html#adb8c730018d1cf9a8b20fc5d2ecd985a">dvp::csv_parser::error_handler</a></div><div class="ttdeci">std::function&lt; void(csv_error, int, int)&gt; error_handler</div><div class="ttdef"><b>Definition:</b> csv_parser.h:45</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_a03739e08a628dcccb1c728f2565ef2ba"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a03739e08a628dcccb1c728f2565ef2ba">dvp::csv_parser::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> csv_parser.h:101</div></div>
+<div class="ttc" id="aclassdvp_1_1csv__parser_html_a2c0436d6781b3c11f7a91d108828e41b"><div class="ttname"><a href="classdvp_1_1csv__parser.html#a2c0436d6781b3c11f7a91d108828e41b">dvp::csv_parser::end_line_handler</a></div><div class="ttdeci">std::function&lt; bool()&gt; end_line_handler</div><div class="ttdef"><b>Definition:</b> csv_parser.h:43</div></div>
+<div class="ttc" id="anamespacedvp_html_acc103fe39d6a11f1b40808b7ed4c910badaef3623204a0d7cf1ad42dbc915ab0f"><div class="ttname"><a href="namespacedvp.html#acc103fe39d6a11f1b40808b7ed4c910badaef3623204a0d7cf1ad42dbc915ab0f">dvp::csv_error::unterminated_quoted_string</a></div><div class="ttdeci">@ unterminated_quoted_string</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_3b69f90b48ef73631e8f99c0f30591c7.html">data</a></li><li class="navelem"><a class="el" href="dir_9691847366207a0f66531696f3b45e1d.html">csv</a></li><li class="navelem"><b>csv_parser.h</b></li>
+    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_3b69f90b48ef73631e8f99c0f30591c7.html">data</a></li><li class="navelem"><a class="el" href="dir_9691847366207a0f66531696f3b45e1d.html">csv</a></li><li class="navelem"><a class="el" href="csv__parser_8h.html">csv_parser.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

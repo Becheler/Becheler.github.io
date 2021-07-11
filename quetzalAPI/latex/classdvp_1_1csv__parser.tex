@@ -2,6 +2,10 @@
 \label{classdvp_1_1csv__parser}\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
 
 
+{\ttfamily \#include $<$csv\+\_\+parser.\+h$>$}
+
+
+
 Inheritance diagram for dvp\+::csv\+\_\+parser$<$ csv\+\_\+traits $>$\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,21 +25,18 @@ Collaboration diagram for dvp\+::csv\+\_\+parser$<$ csv\+\_\+traits $>$\+:\nopag
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_adfa2bc6b738b1ea492ae2663deab364a}\label{classdvp_1_1csv__parser_adfa2bc6b738b1ea492ae2663deab364a}} 
-{\footnotesize template$<$typename... Args$>$ }\\{\bfseries csv\+\_\+parser} (Args... args)
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{classdvp_1_1csv__parser_adfa2bc6b738b1ea492ae2663deab364a}{csv\+\_\+parser}} (Args... args)
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_adb7d42bded0430f5f959de15f670cedb}\label{classdvp_1_1csv__parser_adb7d42bded0430f5f959de15f670cedb}} 
-{\bfseries csv\+\_\+parser} (\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} const \&)=delete
+\mbox{\hyperlink{classdvp_1_1csv__parser_ab68a84605bef58b09b04e9686e4706f8}{$\sim$csv\+\_\+parser}} ()=default
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_a81a5644962cd79fb7956c2b0a93acc93}\label{classdvp_1_1csv__parser_a81a5644962cd79fb7956c2b0a93acc93}} 
-\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} \& {\bfseries operator=} (\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} const \&)=delete
+\mbox{\hyperlink{classdvp_1_1csv__parser_adb7d42bded0430f5f959de15f670cedb}{csv\+\_\+parser}} (\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} const \&)=delete
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_ae99803cd0f999239cde2d879f75216c5}\label{classdvp_1_1csv__parser_ae99803cd0f999239cde2d879f75216c5}} 
+\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} \& \mbox{\hyperlink{classdvp_1_1csv__parser_a81a5644962cd79fb7956c2b0a93acc93}{operator=}} (\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} const \&)=delete
+\item 
 void \mbox{\hyperlink{classdvp_1_1csv__parser_ae99803cd0f999239cde2d879f75216c5}{consume}} (typename csv\+\_\+traits\+::char\+\_\+type c)
 \begin{DoxyCompactList}\small\item\em consume consumes a new character, and acts accordingly \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classdvp_1_1csv__parser_af8d47bee6da03b8a62078b54394e98fe}{end\+\_\+of\+\_\+data}} ()
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_aa78351941e9d1e12039b207ea32f096a}\label{classdvp_1_1csv__parser_aa78351941e9d1e12039b207ea32f096a}} 
 void \mbox{\hyperlink{classdvp_1_1csv__parser_aa78351941e9d1e12039b207ea32f096a}{abort}} ()
 \begin{DoxyCompactList}\small\item\em abort stops the parser (may be used if there is no need to continue because something is missing) \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classdvp_1_1csv__parser_a1814ed1fe2a9f3d85b56fd70cff4f8c7}{complete}} () const
@@ -44,44 +45,71 @@ int \mbox{\hyperlink{classdvp_1_1csv__parser_af77b669ffbaaea36da8a613cb7b51253}{
 \begin{DoxyCompactList}\small\item\em current\+\_\+line returns the current line number \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classdvp_1_1csv__parser_a3a93a3fe1d49e486eae5feda0c063b29}{current\+\_\+position}} () const
 \begin{DoxyCompactList}\small\item\em current\+\_\+position returns the current position \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_add55bd70ebd2aa05c9ff40677b552062}\label{classdvp_1_1csv__parser_add55bd70ebd2aa05c9ff40677b552062}} 
 bool \mbox{\hyperlink{classdvp_1_1csv__parser_add55bd70ebd2aa05c9ff40677b552062}{error}} () const
 \begin{DoxyCompactList}\small\item\em returns true if an error occurred \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_ab4ac5cfc28d546159d347a92b84df9ff}\label{classdvp_1_1csv__parser_ab4ac5cfc28d546159d347a92b84df9ff}} 
-csv\+\_\+error {\bfseries last\+\_\+error} () const
+\mbox{\hyperlink{namespacedvp_acc103fe39d6a11f1b40808b7ed4c910b}{csv\+\_\+error}} \mbox{\hyperlink{classdvp_1_1csv__parser_ab4ac5cfc28d546159d347a92b84df9ff}{last\+\_\+error}} () const
 \item 
 void \mbox{\hyperlink{classdvp_1_1csv__parser_a2864ace25d847ed488fc0802b2821fee}{set\+\_\+separator}} (typename csv\+\_\+traits\+::char\+\_\+type separator)
 \begin{DoxyCompactList}\small\item\em set\+\_\+separator sets the field separator used by the csv parser \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_a03739e08a628dcccb1c728f2565ef2ba}\label{classdvp_1_1csv__parser_a03739e08a628dcccb1c728f2565ef2ba}} 
-void {\bfseries reset} ()
+void \mbox{\hyperlink{classdvp_1_1csv__parser_a03739e08a628dcccb1c728f2565ef2ba}{reset}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_a6dd8fc92e2a88cb8ad97671580574706}\label{classdvp_1_1csv__parser_a6dd8fc92e2a88cb8ad97671580574706}} 
-std\+::function$<$ bool(typename csv\+\_\+traits\+::string\+\_\+type const  \&)$>$ {\bfseries comment\+\_\+handler}
+std\+::function$<$ bool(typename csv\+\_\+traits\+::string\+\_\+type const  \&)$>$ \mbox{\hyperlink{classdvp_1_1csv__parser_a6dd8fc92e2a88cb8ad97671580574706}{comment\+\_\+handler}}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_a527ecb53020b9333208a2b3d03ddca80}\label{classdvp_1_1csv__parser_a527ecb53020b9333208a2b3d03ddca80}} 
-std\+::function$<$ bool(typename csv\+\_\+traits\+::string\+\_\+type const  \&)$>$ {\bfseries field\+\_\+handler}
+std\+::function$<$ bool(typename csv\+\_\+traits\+::string\+\_\+type const  \&)$>$ \mbox{\hyperlink{classdvp_1_1csv__parser_a527ecb53020b9333208a2b3d03ddca80}{field\+\_\+handler}}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_a2c0436d6781b3c11f7a91d108828e41b}\label{classdvp_1_1csv__parser_a2c0436d6781b3c11f7a91d108828e41b}} 
-std\+::function$<$ bool()$>$ {\bfseries end\+\_\+line\+\_\+handler}
+std\+::function$<$ bool()$>$ \mbox{\hyperlink{classdvp_1_1csv__parser_a2c0436d6781b3c11f7a91d108828e41b}{end\+\_\+line\+\_\+handler}}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_abe924b0f61da2406f7bc99189e0e232a}\label{classdvp_1_1csv__parser_abe924b0f61da2406f7bc99189e0e232a}} 
-std\+::function$<$ bool()$>$ {\bfseries end\+\_\+file\+\_\+handler}
+std\+::function$<$ bool()$>$ \mbox{\hyperlink{classdvp_1_1csv__parser_abe924b0f61da2406f7bc99189e0e232a}{end\+\_\+file\+\_\+handler}}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_adb8c730018d1cf9a8b20fc5d2ecd985a}\label{classdvp_1_1csv__parser_adb8c730018d1cf9a8b20fc5d2ecd985a}} 
-std\+::function$<$ void(csv\+\_\+error, int, int)$>$ {\bfseries error\+\_\+handler}
+std\+::function$<$ void(\mbox{\hyperlink{namespacedvp_acc103fe39d6a11f1b40808b7ed4c910b}{csv\+\_\+error}}, int, int)$>$ \mbox{\hyperlink{classdvp_1_1csv__parser_adb8c730018d1cf9a8b20fc5d2ecd985a}{error\+\_\+handler}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classdvp_1_1csv__parser_aaeebe204be74691a974feecbe92054a2}\label{classdvp_1_1csv__parser_aaeebe204be74691a974feecbe92054a2}} 
-static int {\bfseries state\+\_\+matrix} \mbox{[}7\mbox{]}\mbox{[}5\mbox{]}
+static int \mbox{\hyperlink{classdvp_1_1csv__parser_aaeebe204be74691a974feecbe92054a2}{state\+\_\+matrix}} \mbox{[}7\mbox{]}\mbox{[}5\mbox{]}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvp_1_1csv__parser_adfa2bc6b738b1ea492ae2663deab364a}\label{classdvp_1_1csv__parser_adfa2bc6b738b1ea492ae2663deab364a}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!csv\_parser@{csv\_parser}}
+\index{csv\_parser@{csv\_parser}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{csv\_parser()}{csv\_parser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_ab68a84605bef58b09b04e9686e4706f8}\label{classdvp_1_1csv__parser_ab68a84605bef58b09b04e9686e4706f8}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!````~csv\_parser@{$\sim$csv\_parser}}
+\index{````~csv\_parser@{$\sim$csv\_parser}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$csv\_parser()}{~csv\_parser()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+\mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::$\sim$\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_adb7d42bded0430f5f959de15f670cedb}\label{classdvp_1_1csv__parser_adb7d42bded0430f5f959de15f670cedb}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!csv\_parser@{csv\_parser}}
+\index{csv\_parser@{csv\_parser}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{csv\_parser()}{csv\_parser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+\mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}}$<$ csv\+\_\+traits $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvp_1_1csv__parser_aa78351941e9d1e12039b207ea32f096a}\label{classdvp_1_1csv__parser_aa78351941e9d1e12039b207ea32f096a}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!abort@{abort}}
+\index{abort@{abort}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{abort()}{abort()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+void \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::abort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+abort stops the parser (may be used if there is no need to continue because something is missing) 
+
 \mbox{\Hypertarget{classdvp_1_1csv__parser_a1814ed1fe2a9f3d85b56fd70cff4f8c7}\label{classdvp_1_1csv__parser_a1814ed1fe2a9f3d85b56fd70cff4f8c7}} 
 \index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!complete@{complete}}
 \index{complete@{complete}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
@@ -96,6 +124,17 @@ complete returns true if the parser has completed without errors
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classdvp_1_1csv__parser_ae99803cd0f999239cde2d879f75216c5}\label{classdvp_1_1csv__parser_ae99803cd0f999239cde2d879f75216c5}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!consume@{consume}}
+\index{consume@{consume}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+void \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::consume (\begin{DoxyParamCaption}\item[{typename csv\+\_\+traits\+::char\+\_\+type}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+consume consumes a new character, and acts accordingly 
+
 \mbox{\Hypertarget{classdvp_1_1csv__parser_af77b669ffbaaea36da8a613cb7b51253}\label{classdvp_1_1csv__parser_af77b669ffbaaea36da8a613cb7b51253}} 
 \index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!current\_line@{current\_line}}
 \index{current\_line@{current\_line}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
@@ -131,7 +170,39 @@ current\+\_\+position returns the current position
 {\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
 void \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::end\+\_\+of\+\_\+data}
 
-Inform the parser that data end has been reached. \mbox{\Hypertarget{classdvp_1_1csv__parser_a2864ace25d847ed488fc0802b2821fee}\label{classdvp_1_1csv__parser_a2864ace25d847ed488fc0802b2821fee}} 
+Inform the parser that data end has been reached. \mbox{\Hypertarget{classdvp_1_1csv__parser_add55bd70ebd2aa05c9ff40677b552062}\label{classdvp_1_1csv__parser_add55bd70ebd2aa05c9ff40677b552062}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!error@{error}}
+\index{error@{error}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+bool \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::error}
+
+
+
+returns true if an error occurred 
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_ab4ac5cfc28d546159d347a92b84df9ff}\label{classdvp_1_1csv__parser_ab4ac5cfc28d546159d347a92b84df9ff}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!last\_error@{last\_error}}
+\index{last\_error@{last\_error}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{last\_error()}{last\_error()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+\mbox{\hyperlink{namespacedvp_acc103fe39d6a11f1b40808b7ed4c910b}{csv\+\_\+error}} \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::last\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_a81a5644962cd79fb7956c2b0a93acc93}\label{classdvp_1_1csv__parser_a81a5644962cd79fb7956c2b0a93acc93}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}}\& \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvp_1_1csv__parser}{csv\+\_\+parser}}$<$ csv\+\_\+traits $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_a03739e08a628dcccb1c728f2565ef2ba}\label{classdvp_1_1csv__parser_a03739e08a628dcccb1c728f2565ef2ba}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!reset@{reset}}
+\index{reset@{reset}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+void \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_a2864ace25d847ed488fc0802b2821fee}\label{classdvp_1_1csv__parser_a2864ace25d847ed488fc0802b2821fee}} 
 \index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!set\_separator@{set\_separator}}
 \index{set\_separator@{set\_separator}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
 \doxysubsubsection{\texorpdfstring{set\_separator()}{set\_separator()}}
@@ -149,6 +220,51 @@ set\+\_\+separator sets the field separator used by the csv parser
 \end{DoxyParams}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvp_1_1csv__parser_a6dd8fc92e2a88cb8ad97671580574706}\label{classdvp_1_1csv__parser_a6dd8fc92e2a88cb8ad97671580574706}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!comment\_handler@{comment\_handler}}
+\index{comment\_handler@{comment\_handler}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{comment\_handler}{comment\_handler}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+std\+::function$<$bool(typename csv\+\_\+traits\+::string\+\_\+type const\&)$>$ \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::comment\+\_\+handler}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_abe924b0f61da2406f7bc99189e0e232a}\label{classdvp_1_1csv__parser_abe924b0f61da2406f7bc99189e0e232a}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!end\_file\_handler@{end\_file\_handler}}
+\index{end\_file\_handler@{end\_file\_handler}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{end\_file\_handler}{end\_file\_handler}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+std\+::function$<$bool()$>$ \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::end\+\_\+file\+\_\+handler}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_a2c0436d6781b3c11f7a91d108828e41b}\label{classdvp_1_1csv__parser_a2c0436d6781b3c11f7a91d108828e41b}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!end\_line\_handler@{end\_line\_handler}}
+\index{end\_line\_handler@{end\_line\_handler}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{end\_line\_handler}{end\_line\_handler}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+std\+::function$<$bool()$>$ \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::end\+\_\+line\+\_\+handler}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_adb8c730018d1cf9a8b20fc5d2ecd985a}\label{classdvp_1_1csv__parser_adb8c730018d1cf9a8b20fc5d2ecd985a}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!error\_handler@{error\_handler}}
+\index{error\_handler@{error\_handler}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{error\_handler}{error\_handler}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+std\+::function$<$void(\mbox{\hyperlink{namespacedvp_acc103fe39d6a11f1b40808b7ed4c910b}{csv\+\_\+error}},int,int)$>$ \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::error\+\_\+handler}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_a527ecb53020b9333208a2b3d03ddca80}\label{classdvp_1_1csv__parser_a527ecb53020b9333208a2b3d03ddca80}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!field\_handler@{field\_handler}}
+\index{field\_handler@{field\_handler}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{field\_handler}{field\_handler}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+std\+::function$<$bool(typename csv\+\_\+traits\+::string\+\_\+type const\&)$>$ \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::field\+\_\+handler}
+
+\mbox{\Hypertarget{classdvp_1_1csv__parser_aaeebe204be74691a974feecbe92054a2}\label{classdvp_1_1csv__parser_aaeebe204be74691a974feecbe92054a2}} 
+\index{dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}!state\_matrix@{state\_matrix}}
+\index{state\_matrix@{state\_matrix}!dvp::csv\_parser$<$ csv\_traits $>$@{dvp::csv\_parser$<$ csv\_traits $>$}}
+\doxysubsubsection{\texorpdfstring{state\_matrix}{state\_matrix}}
+{\footnotesize\ttfamily template$<$typename csv\+\_\+traits $>$ \\
+int \mbox{\hyperlink{classdvp_1_1csv__parser}{dvp\+::csv\+\_\+parser}}$<$ csv\+\_\+traits $>$\+::state\+\_\+matrix\mbox{[}7\mbox{]}\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-quetzal/include/quetzal/data/csv/csv\+\_\+parser.\+h\end{DoxyCompactItemize}
+quetzal/include/quetzal/data/csv/\mbox{\hyperlink{csv__parser_8h}{csv\+\_\+parser.\+h}}\end{DoxyCompactItemize}

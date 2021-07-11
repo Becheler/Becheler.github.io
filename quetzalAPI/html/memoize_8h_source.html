@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('memoize_8h_source.html',''); initResiz
 <div class="title">memoize.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="memoize_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright 2021 Arnaud Becheler    &lt;abechele@umich.edu&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/***********************************************************************                                                                         *</span></div>
@@ -120,19 +120,19 @@ $(document).ready(function(){initNavTree('memoize_8h_source.html',''); initResiz
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef __OCCUPANCY_SPECTRUM_UTILS_H_INCLUDED__</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define __OCCUPANCY_SPECTRUM_UTILS_H_INCLUDED__</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;OccupancySpectrumDistribution.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="OccupancySpectrumDistribution_8h.html">OccupancySpectrumDistribution.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span> <span class="comment">// std::hash</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>quetzal{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacequetzal.html">quetzal</a>{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>coalescence {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>occupancy_spectrum {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>utils{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html">   23</a></span>&#160;<span class="keyword">namespace </span>utils{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html">   25</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html">MyHash</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::size_t operator()(<span class="keyword">const</span> std::pair&lt;unsigned int, unsigned int&gt;&amp; param)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html#add07c56880e2f2ddc249edb34b45ee65">   27</a></span>&#160;    std::size_t <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html#add07c56880e2f2ddc249edb34b45ee65">operator()</a>(<span class="keyword">const</span> std::pair&lt;unsigned int, unsigned int&gt;&amp; param)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">auto</span> hacher = std::hash&lt;unsigned int&gt;();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">const</span> std::size_t h1 = hacher(param.first);</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('memoize_8h_source.html',''); initResiz
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">class </span>Float = cpp_dec_float_50</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  &gt;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> <a class="code" href="classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html">OccupancySpectrumDistribution&lt;UnaryPredicate, SpectrumHandler, Int, Float&gt;</a>&amp;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  memoize_OSD(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html#a2bbeb1644d64817c23836a1a52c74523">   44</a></span>&#160;  <a class="code" href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html#a2bbeb1644d64817c23836a1a52c74523">memoize_OSD</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> std::unordered_map&lt;std::pair&lt;unsigned int, unsigned int&gt;, <a class="code" href="classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html">OccupancySpectrumDistribution&lt;UnaryPredicate, SpectrumHandler, Int, Float&gt;</a>, <a class="code" href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html">MyHash</a>&gt; cache;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> pair_k_N = std::make_pair(k, N);</div>
@@ -173,15 +173,19 @@ $(document).ready(function(){initNavTree('memoize_8h_source.html',''); initResiz
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacequetzal_html"><div class="ttname"><a href="namespacequetzal.html">quetzal</a></div><div class="ttdef"><b>Definition:</b> merge.h:23</div></div>
 <div class="ttc" id="aclassquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution_html"><div class="ttname"><a href="classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html">quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution</a></div><div class="ttdoc">Generates random occupancy spectrum that are distributed according to the associated probability func...</div><div class="ttdef"><b>Definition:</b> OccupancySpectrumDistribution.h:73</div></div>
 <div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true_html"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html">quetzal::coalescence::occupancy_spectrum::return_always_true</a></div><div class="ttdef"><b>Definition:</b> utils.h:40</div></div>
+<div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash_html_add07c56880e2f2ddc249edb34b45ee65"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html#add07c56880e2f2ddc249edb34b45ee65">quetzal::coalescence::occupancy_spectrum::utils::MyHash::operator()</a></div><div class="ttdeci">std::size_t operator()(const std::pair&lt; unsigned int, unsigned int &gt; &amp;param) const</div><div class="ttdef"><b>Definition:</b> memoize.h:27</div></div>
 <div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1identity_html"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1identity.html">quetzal::coalescence::occupancy_spectrum::identity</a></div><div class="ttdef"><b>Definition:</b> utils.h:48</div></div>
+<div class="ttc" id="anamespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_html_a2bbeb1644d64817c23836a1a52c74523"><div class="ttname"><a href="namespacequetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils.html#a2bbeb1644d64817c23836a1a52c74523">quetzal::coalescence::occupancy_spectrum::utils::memoize_OSD</a></div><div class="ttdeci">const OccupancySpectrumDistribution&lt; UnaryPredicate, SpectrumHandler, Int, Float &gt; &amp; memoize_OSD(unsigned int k, unsigned int N)</div><div class="ttdef"><b>Definition:</b> memoize.h:44</div></div>
+<div class="ttc" id="aOccupancySpectrumDistribution_8h_html"><div class="ttname"><a href="OccupancySpectrumDistribution_8h.html">OccupancySpectrumDistribution.h</a></div></div>
 <div class="ttc" id="astructquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash_html"><div class="ttname"><a href="structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1utils_1_1MyHash.html">quetzal::coalescence::occupancy_spectrum::utils::MyHash</a></div><div class="ttdef"><b>Definition:</b> memoize.h:25</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_90bab4d02c4360463dc211262c6f1bd5.html">occupancy_spectrum</a></li><li class="navelem"><b>memoize.h</b></li>
+    <li class="navelem"><a class="el" href="dir_7a530fcd76992b240c6a9d220f470266.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_82b16ca17b0a5c2927ac42db4ba243ea.html">include</a></li><li class="navelem"><a class="el" href="dir_2498386f12fd08c8d6313ae00d1693f8.html">quetzal</a></li><li class="navelem"><a class="el" href="dir_f67eb180340bc8fd414c01e23aba83d2.html">coalescence</a></li><li class="navelem"><a class="el" href="dir_90bab4d02c4360463dc211262c6f1bd5.html">occupancy_spectrum</a></li><li class="navelem"><a class="el" href="memoize_8h.html">memoize.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

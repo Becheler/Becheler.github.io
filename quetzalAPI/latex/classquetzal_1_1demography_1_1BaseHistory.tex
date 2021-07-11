@@ -12,68 +12,51 @@ Base class for spatially explicit and forward-\/in time population history simul
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a56031376928aa3cd4cf0b138eee38cfa}\label{classquetzal_1_1demography_1_1BaseHistory_a56031376928aa3cd4cf0b138eee38cfa}} 
-using {\bfseries dispersal\+\_\+policy} = Dispersal\+Policy
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a56031376928aa3cd4cf0b138eee38cfa}{dispersal\+\_\+policy}} = Dispersal\+Policy
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_af3d0d44a30f648fa8500a7db2712cb65}\label{classquetzal_1_1demography_1_1BaseHistory_af3d0d44a30f648fa8500a7db2712cb65}} 
-using {\bfseries storage\+\_\+policy} = Storage\+Policy
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_af3d0d44a30f648fa8500a7db2712cb65}{storage\+\_\+policy}} = Storage\+Policy
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}\label{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}} 
-using {\bfseries flow\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{Flow}}$<$ Space, Time, typename dispersal\+\_\+policy\+::value\+\_\+type $>$
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{Flow}}$<$ Space, Time, typename dispersal\+\_\+policy\+::value\+\_\+type $>$
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}\label{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}} 
-using {\bfseries pop\+\_\+sizes\+\_\+type} = storage\+\_\+policy\+::pop\+\_\+sizes\+\_\+type$<$ Space, Time, typename dispersal\+\_\+policy\+::value\+\_\+type $>$
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}} = storage\+\_\+policy\+::pop\+\_\+sizes\+\_\+type$<$ Space, Time, typename dispersal\+\_\+policy\+::value\+\_\+type $>$
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}\label{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}} 
-using {\bfseries coord\+\_\+type} = Space
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} = Space
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}\label{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}} 
-using {\bfseries time\+\_\+type} = Time
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} = Time
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}\label{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}} 
-using {\bfseries discrete\+\_\+distribution\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1random_1_1DiscreteDistribution}{quetzal\+::random\+::\+Discrete\+Distribution}}$<$ coord\+\_\+type $>$
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}{discrete\+\_\+distribution\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1random_1_1DiscreteDistribution}{quetzal\+::random\+::\+Discrete\+Distribution}}$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} $>$
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}\label{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}} 
-using {\bfseries backward\+\_\+kernel\+\_\+type} = \mbox{\hyperlink{classquetzal_1_1random_1_1TransitionKernel}{quetzal\+::random\+::\+Transition\+Kernel}}$<$ time\+\_\+type, \mbox{\hyperlink{classquetzal_1_1random_1_1DiscreteDistribution}{discrete\+\_\+distribution\+\_\+type}} $>$
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}{backward\+\_\+kernel\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1random_1_1TransitionKernel}{quetzal\+::random\+::\+Transition\+Kernel}}$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}}, \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}{discrete\+\_\+distribution\+\_\+type}} $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a56057a25c36b0ac8584ac727a56ded2f}{Base\+History}} (coord\+\_\+type const \&x, time\+\_\+type const \&t, typename dispersal\+\_\+policy\+::value\+\_\+type N)
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a56057a25c36b0ac8584ac727a56ded2f}{Base\+History}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} const \&t, typename dispersal\+\_\+policy\+::value\+\_\+type N)
 \begin{DoxyCompactList}\small\item\em Constructor initializing the demographic database. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a880c0755394b283ec53419c6407ac277}\label{classquetzal_1_1demography_1_1BaseHistory_a880c0755394b283ec53419c6407ac277}} 
-\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{flow\+\_\+type}} const  \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a880c0755394b283ec53419c6407ac277}{flows}} () const
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}} const  \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a880c0755394b283ec53419c6407ac277}{flows}} () const
 \begin{DoxyCompactList}\small\item\em Read-\/only access to the demographic flows database. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a4d79867fb120d8cd0b6a50aceb713f1b}\label{classquetzal_1_1demography_1_1BaseHistory_a4d79867fb120d8cd0b6a50aceb713f1b}} 
-\mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{flow\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4d79867fb120d8cd0b6a50aceb713f1b}{flows}} ()
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4d79867fb120d8cd0b6a50aceb713f1b}{flows}} ()
 \begin{DoxyCompactList}\small\item\em Read and write access to the demographic flows database. \end{DoxyCompactList}\item 
-const pop\+\_\+sizes\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a28dbda2f496b586c9b9875ede55ef513}{pop\+\_\+sizes}} () const
+const \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a28dbda2f496b586c9b9875ede55ef513}{pop\+\_\+sizes}} () const
 \begin{DoxyCompactList}\small\item\em Read-\/only access to the demographic sizes database. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a39ecd787715f972e9b583db52084756d}\label{classquetzal_1_1demography_1_1BaseHistory_a39ecd787715f972e9b583db52084756d}} 
-pop\+\_\+sizes\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a39ecd787715f972e9b583db52084756d}{pop\+\_\+sizes}} ()
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a39ecd787715f972e9b583db52084756d}{pop\+\_\+sizes}} ()
 \begin{DoxyCompactList}\small\item\em Read-\/and-\/write access to the demographic sizes database. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_ad08db340e1ad6756466f3b9e81a766bf}\label{classquetzal_1_1demography_1_1BaseHistory_ad08db340e1ad6756466f3b9e81a766bf}} 
-time\+\_\+type const  \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ad08db340e1ad6756466f3b9e81a766bf}{first\+\_\+time}} () const
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} const  \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ad08db340e1ad6756466f3b9e81a766bf}{first\+\_\+time}} () const
 \begin{DoxyCompactList}\small\item\em First time recorded in the foward-\/in-\/time database history. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_acc8e8227050460961c2fc32c4eb75423}\label{classquetzal_1_1demography_1_1BaseHistory_acc8e8227050460961c2fc32c4eb75423}} 
-time\+\_\+type const  \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_acc8e8227050460961c2fc32c4eb75423}{last\+\_\+time}} () const
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} const  \& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_acc8e8227050460961c2fc32c4eb75423}{last\+\_\+time}} () const
 \begin{DoxyCompactList}\small\item\em Last time recorded in the foward-\/in-\/time database history. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename Generator $>$ }\\coord\+\_\+type \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a7be8be0871eeba1186f71ce994722cd4}{backward\+\_\+kernel}} (coord\+\_\+type const \&x, time\+\_\+type t, Generator \&gen) const
+{\footnotesize template$<$typename Generator $>$ }\\\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a7be8be0871eeba1186f71ce994722cd4}{backward\+\_\+kernel}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} t, Generator \&gen) const
 \begin{DoxyCompactList}\small\item\em Samples a coordinate from the backward-\/in-\/time transition matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a5787e9a9224972cadaa8096892fde67a}\label{classquetzal_1_1demography_1_1BaseHistory_a5787e9a9224972cadaa8096892fde67a}} 
-std\+::unique\+\_\+ptr$<$ pop\+\_\+sizes\+\_\+type $>$ {\bfseries m\+\_\+sizes}
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}} $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a5787e9a9224972cadaa8096892fde67a}{m\+\_\+sizes}}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_ac5808fea5fe745828c15cf04ed533546}\label{classquetzal_1_1demography_1_1BaseHistory_ac5808fea5fe745828c15cf04ed533546}} 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{flow\+\_\+type}} $>$ {\bfseries m\+\_\+flows}
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}} $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac5808fea5fe745828c15cf04ed533546}{m\+\_\+flows}}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_aa86e2690297eff18f88db10e95de77b4}\label{classquetzal_1_1demography_1_1BaseHistory_aa86e2690297eff18f88db10e95de77b4}} 
-std\+::vector$<$ Time $>$ {\bfseries m\+\_\+times}
+std\+::vector$<$ Time $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa86e2690297eff18f88db10e95de77b4}{m\+\_\+times}}
 \item 
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a1766ee688bfd5616f242c85bae6edd33}\label{classquetzal_1_1demography_1_1BaseHistory_a1766ee688bfd5616f242c85bae6edd33}} 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classquetzal_1_1random_1_1TransitionKernel}{backward\+\_\+kernel\+\_\+type}} $>$ {\bfseries m\+\_\+kernel}
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}{backward\+\_\+kernel\+\_\+type}} $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1766ee688bfd5616f242c85bae6edd33}{m\+\_\+kernel}}
 \end{DoxyCompactItemize}
 
 
@@ -96,13 +79,72 @@ C\+R\+TP design pattern\+: this class has to be specialized (inherited from) to 
 \end{DoxyTemplParams}
 
 
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}\label{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!backward\_kernel\_type@{backward\_kernel\_type}}
+\index{backward\_kernel\_type@{backward\_kernel\_type}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{backward\_kernel\_type}{backward\_kernel\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}{backward\+\_\+kernel\+\_\+type}} =  \mbox{\hyperlink{classquetzal_1_1random_1_1TransitionKernel}{quetzal\+::random\+::\+Transition\+Kernel}}$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}}, \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}{discrete\+\_\+distribution\+\_\+type}}$>$}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}\label{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} =  Space}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}\label{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!discrete\_distribution\_type@{discrete\_distribution\_type}}
+\index{discrete\_distribution\_type@{discrete\_distribution\_type}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{discrete\_distribution\_type}{discrete\_distribution\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a9acb368afc3878e1a7a912355e276f8c}{discrete\+\_\+distribution\+\_\+type}} =  \mbox{\hyperlink{classquetzal_1_1random_1_1DiscreteDistribution}{quetzal\+::random\+::\+Discrete\+Distribution}}$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}}$>$}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a56031376928aa3cd4cf0b138eee38cfa}\label{classquetzal_1_1demography_1_1BaseHistory_a56031376928aa3cd4cf0b138eee38cfa}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!dispersal\_policy@{dispersal\_policy}}
+\index{dispersal\_policy@{dispersal\_policy}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{dispersal\_policy}{dispersal\_policy}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a56031376928aa3cd4cf0b138eee38cfa}{dispersal\+\_\+policy}} =  Dispersal\+Policy}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}\label{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!flow\_type@{flow\_type}}
+\index{flow\_type@{flow\_type}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{flow\_type}{flow\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}} =  \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{Flow}}$<$Space, Time, typename dispersal\+\_\+policy\+::value\+\_\+type$>$}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}\label{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!pop\_sizes\_type@{pop\_sizes\_type}}
+\index{pop\_sizes\_type@{pop\_sizes\_type}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_sizes\_type}{pop\_sizes\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}} =  storage\+\_\+policy\+::pop\+\_\+sizes\+\_\+type$<$Space, Time, typename dispersal\+\_\+policy\+::value\+\_\+type$>$}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_af3d0d44a30f648fa8500a7db2712cb65}\label{classquetzal_1_1demography_1_1BaseHistory_af3d0d44a30f648fa8500a7db2712cb65}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!storage\_policy@{storage\_policy}}
+\index{storage\_policy@{storage\_policy}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{storage\_policy}{storage\_policy}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_af3d0d44a30f648fa8500a7db2712cb65}{storage\+\_\+policy}} =  Storage\+Policy}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}\label{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!time\_type@{time\_type}}
+\index{time\_type@{time\_type}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{time\_type}{time\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} =  Time}
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a56057a25c36b0ac8584ac727a56ded2f}\label{classquetzal_1_1demography_1_1BaseHistory_a56057a25c36b0ac8584ac727a56ded2f}} 
 \index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!BaseHistory@{BaseHistory}}
 \index{BaseHistory@{BaseHistory}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
 \doxysubsubsection{\texorpdfstring{BaseHistory()}{BaseHistory()}}
 {\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
-\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{Base\+History}} (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x,  }\item[{time\+\_\+type const \&}]{t,  }\item[{typename dispersal\+\_\+policy\+::value\+\_\+type}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{Base\+History}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} const \&}]{t,  }\item[{typename dispersal\+\_\+policy\+::value\+\_\+type}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -126,18 +168,73 @@ Constructor initializing the demographic database.
 \doxysubsubsection{\texorpdfstring{backward\_kernel()}{backward\_kernel()}}
 {\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
 template$<$typename Generator $>$ \\
-coord\+\_\+type \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::backward\+\_\+kernel (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x,  }\item[{time\+\_\+type}]{t,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::backward\+\_\+kernel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a4ea21e4affeec24999d1a976009a7c89}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}}}]{t,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Samples a coordinate from the backward-\/in-\/time transition matrix. 
 
-The transition matrix is computed from the demographic flows database. The returned coordinate object will basically answer the question\+: when an individual is found in $x$ at time $t$, where could it have been at time $t-1$ ? \mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a28dbda2f496b586c9b9875ede55ef513}\label{classquetzal_1_1demography_1_1BaseHistory_a28dbda2f496b586c9b9875ede55ef513}} 
+The transition matrix is computed from the demographic flows database. The returned coordinate object will basically answer the question\+: when an individual is found in $x$ at time $t$, where could it have been at time $t-1$ ? \mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_ad08db340e1ad6756466f3b9e81a766bf}\label{classquetzal_1_1demography_1_1BaseHistory_ad08db340e1ad6756466f3b9e81a766bf}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!first\_time@{first\_time}}
+\index{first\_time@{first\_time}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{first\_time()}{first\_time()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} const\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::first\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+First time recorded in the foward-\/in-\/time database history. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a4d79867fb120d8cd0b6a50aceb713f1b}\label{classquetzal_1_1demography_1_1BaseHistory_a4d79867fb120d8cd0b6a50aceb713f1b}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!flows@{flows}}
+\index{flows@{flows}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{flows()}{flows()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}}\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Read and write access to the demographic flows database. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a880c0755394b283ec53419c6407ac277}\label{classquetzal_1_1demography_1_1BaseHistory_a880c0755394b283ec53419c6407ac277}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!flows@{flows}}
+\index{flows@{flows}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{flows()}{flows()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}} const\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Read-\/only access to the demographic flows database. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_acc8e8227050460961c2fc32c4eb75423}\label{classquetzal_1_1demography_1_1BaseHistory_acc8e8227050460961c2fc32c4eb75423}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!last\_time@{last\_time}}
+\index{last\_time@{last\_time}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{last\_time()}{last\_time()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_aa9154b2a20aea98423ca68d1eaa713eb}{time\+\_\+type}} const\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::last\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Last time recorded in the foward-\/in-\/time database history. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a39ecd787715f972e9b583db52084756d}\label{classquetzal_1_1demography_1_1BaseHistory_a39ecd787715f972e9b583db52084756d}} 
 \index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!pop\_sizes@{pop\_sizes}}
 \index{pop\_sizes@{pop\_sizes}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
-\doxysubsubsection{\texorpdfstring{pop\_sizes()}{pop\_sizes()}}
+\doxysubsubsection{\texorpdfstring{pop\_sizes()}{pop\_sizes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
-const pop\+\_\+sizes\+\_\+type\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::pop\+\_\+sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}}\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::pop\+\_\+sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Read-\/and-\/write access to the demographic sizes database. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a28dbda2f496b586c9b9875ede55ef513}\label{classquetzal_1_1demography_1_1BaseHistory_a28dbda2f496b586c9b9875ede55ef513}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!pop\_sizes@{pop\_sizes}}
+\index{pop\_sizes@{pop\_sizes}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_sizes()}{pop\_sizes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+const \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}}\& \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::pop\+\_\+sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -148,6 +245,37 @@ Can be used for composition into time dependent growth functions.
 \end{DoxyRemark}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_ac5808fea5fe745828c15cf04ed533546}\label{classquetzal_1_1demography_1_1BaseHistory_ac5808fea5fe745828c15cf04ed533546}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!m\_flows@{m\_flows}}
+\index{m\_flows@{m\_flows}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{m\_flows}{m\_flows}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_ac76599592b1c37e2d137625239e63631}{flow\+\_\+type}}$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::m\+\_\+flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a1766ee688bfd5616f242c85bae6edd33}\label{classquetzal_1_1demography_1_1BaseHistory_a1766ee688bfd5616f242c85bae6edd33}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!m\_kernel@{m\_kernel}}
+\index{m\_kernel@{m\_kernel}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{m\_kernel}{m\_kernel}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a596f30e9ab37c21a0ef7a8d6c8b1f942}{backward\+\_\+kernel\+\_\+type}}$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::m\+\_\+kernel\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_a5787e9a9224972cadaa8096892fde67a}\label{classquetzal_1_1demography_1_1BaseHistory_a5787e9a9224972cadaa8096892fde67a}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!m\_sizes@{m\_sizes}}
+\index{m\_sizes@{m\_sizes}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{m\_sizes}{m\_sizes}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory_a1cc74d927ba3ecfb7d130a604d1fb6c8}{pop\+\_\+sizes\+\_\+type}}$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::m\+\_\+sizes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1BaseHistory_aa86e2690297eff18f88db10e95de77b4}\label{classquetzal_1_1demography_1_1BaseHistory_aa86e2690297eff18f88db10e95de77b4}} 
+\index{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}!m\_times@{m\_times}}
+\index{m\_times@{m\_times}!quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$@{quetzal::demography::BaseHistory$<$ Space, Time, DispersalPolicy, StoragePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{m\_times}{m\_times}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Dispersal\+Policy , typename Storage\+Policy $>$ \\
+std\+::vector$<$Time$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History}}$<$ Space, Time, Dispersal\+Policy, Storage\+Policy $>$\+::m\+\_\+times\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-quetzal/include/quetzal/demography/Base\+History.\+h\end{DoxyCompactItemize}
+quetzal/include/quetzal/demography/\mbox{\hyperlink{BaseHistory_8h}{Base\+History.\+h}}\end{DoxyCompactItemize}

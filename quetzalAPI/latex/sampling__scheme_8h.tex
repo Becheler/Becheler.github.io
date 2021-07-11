@@ -1,0 +1,43 @@
+\hypertarget{sampling__scheme_8h}{}\doxysection{quetzal/include/quetzal/utils/sampling\+\_\+scheme.h File Reference}
+\label{sampling__scheme_8h}\index{quetzal/include/quetzal/utils/sampling\_scheme.h@{quetzal/include/quetzal/utils/sampling\_scheme.h}}
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for sampling\+\_\+scheme.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{sampling__scheme_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{sampling__scheme_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1param__base__class}{quetzal\+::sampling\+\_\+scheme\+::param\+\_\+base\+\_\+class}}
+\begin{DoxyCompactList}\small\item\em Base class for sampling schemes parameter classes. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling$<$ X, N $>$}}
+\begin{DoxyCompactList}\small\item\em Policy to sample coordinates at random in a space. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_1_1param__type}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling$<$ X, N $>$\+::param\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacequetzal}{quetzal}}
+\item 
+ \mbox{\hyperlink{namespacequetzal_1_1sampling__scheme}{quetzal\+::sampling\+\_\+scheme}}
+\begin{DoxyCompactList}\small\item\em Generic sampling schemes simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename X , typename F , typename N $>$ }\\auto \mbox{\hyperlink{namespacequetzal_1_1sampling__scheme_af387cf5d815bfd2c6e2ac63c57c0b3b2}{quetzal\+::sampling\+\_\+scheme\+::make\+\_\+constrained\+\_\+sampler}} (std\+::vector$<$ X $>$ const \&space, F f, N pop\+\_\+size, unsigned int n)
+\item 
+{\footnotesize template$<$typename X , typename N $>$ }\\auto \mbox{\hyperlink{namespacequetzal_1_1sampling__scheme_a7bac808766a423246a21e1c3bfd35f6f}{quetzal\+::sampling\+\_\+scheme\+::make\+\_\+unif\+\_\+constrained\+\_\+sampler}} (std\+::vector$<$ X $>$ const \&space, N pop\+\_\+size, unsigned int n)
+\end{DoxyCompactItemize}

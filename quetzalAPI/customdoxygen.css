@@ -1,11 +1,20 @@
 /* The standard CSS for doxygen 1.8.17 */
 
-body, table, div, p, dl {
+/* body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
-}
+} */
 
 p.reference, p.definition {
 	font: 400 14px/22px Roboto,sans-serif;
+}
+
+/*My standard*/
+
+body, table, div, p, dl {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  line-height: 1.5;
+  color: #606c71;
 }
 
 /* @group Heading Levels */

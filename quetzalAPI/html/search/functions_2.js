@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['cbegin_358',['cbegin',['../classquetzal_1_1coalescence_1_1Forest.html#a74d745ad15871e67a21837703bdd7fae',1,'quetzal::coalescence::Forest']]],
+  ['cbegin_358',['cbegin',['../classquetzal_1_1coalescence_1_1Forest.html#a6723a6f85f3aa93d0721db09123b4c01',1,'quetzal::coalescence::Forest']]],
   ['cell_359',['cell',['../classquetzal_1_1coalescence_1_1Tree.html#a42d8ad262481416f12254f11e2fd3b70',1,'quetzal::coalescence::Tree::cell() const'],['../classquetzal_1_1coalescence_1_1Tree.html#a30c66e1e28aad7c8efdf671eb534e04b',1,'quetzal::coalescence::Tree::cell()']]],
-  ['cend_360',['cend',['../classquetzal_1_1coalescence_1_1Forest.html#a8d841e847c17b26e7c1e8c0ff863e59d',1,'quetzal::coalescence::Forest']]],
+  ['cend_360',['cend',['../classquetzal_1_1coalescence_1_1Forest.html#af4f5511f96d68fab37b92536923812a6',1,'quetzal::coalescence::Forest']]],
   ['chain_361',['chain',['../group__expressive.html#gad7b37454071e4a4d0cf22961f4c6f2c8',1,'quetzal::expressive']]],
   ['clusters_362',['clusters',['../classFuzzyPartition.html#a862b273da9ba0809b3b29e0dd9035f47',1,'FuzzyPartition']]],
   ['coalesce_5falong_5fspatial_5fhistory_363',['coalesce_along_spatial_history',['../classquetzal_1_1ForwardBackwardSpatiallyExplicit.html#afac51da28d829d5f401e9cdda8f6616f',1,'quetzal::ForwardBackwardSpatiallyExplicit']]],

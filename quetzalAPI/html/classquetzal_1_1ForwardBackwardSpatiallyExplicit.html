@@ -72,7 +72,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classquetzal_1_1ForwardBackwardSpatiallyExplicit-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::ForwardBackwardSpatiallyExplicit&lt; Space, Time, DispersalPolicy, CoalescencePolicy, StoragePolicy &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__simulator.html">simulator</a></div></div>  </div>
+<div class="title">quetzal::ForwardBackwardSpatiallyExplicit&lt; Space, Time, DispersalPolicy, CoalescencePolicy, StoragePolicy &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -665,7 +665,7 @@ template&lt;typename Space , typename Time , typename DispersalPolicy , typename
 </div><div class="memdoc">
 
 <p>Read-only access to the population size history. @detail Designed to be used for composing growth expression. </p>
-<dl class="section return"><dt>Returns</dt><dd>a functor with signature <code>N_value_type fun(coord_type const&amp; x, time_type const&amp; t)</code> giving the population size in deme <img class="formulaInl" alt="$x$" src="form_6.png"/> at time <img class="formulaInl" alt="$t$" src="form_7.png"/>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a functor with signature <code>N_value_type fun(coord_type const&amp; x, time_type const&amp; t)</code> giving the population size in deme <img class="formulaInl" alt="$x$" src="form_1.png"/> at time <img class="formulaInl" alt="$t$" src="form_2.png"/>. </dd></dl>
 
 </div>
 </div>
@@ -723,8 +723,8 @@ template&lt;typename Generator , typename Growth , typename Dispersal &gt; </div
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">growth</td><td>a functor simulating <img class="formulaInl" alt="$\tilde{N}_{x}^{t}$" src="form_9.png"/>. The functor can possibly make use of pop_size_history. The signature of the function should be equivalent to the following: <code>unsigned int sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code> </td></tr>
-    <tr><td class="paramname">kernel</td><td>a functor representing the dispersal location kernel that simulates the coordinate of the next location conditionally to the current location <img class="formulaInl" alt="$x$" src="form_6.png"/>. The signature should be equivalent to <code>coord_type kernel(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code> </td></tr>
+    <tr><td class="paramname">growth</td><td>a functor simulating <img class="formulaInl" alt="$\tilde{N}_{x}^{t}$" src="form_4.png"/>. The functor can possibly make use of pop_size_history. The signature of the function should be equivalent to the following: <code>unsigned int sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code> </td></tr>
+    <tr><td class="paramname">kernel</td><td>a functor representing the dispersal location kernel that simulates the coordinate of the next location conditionally to the current location <img class="formulaInl" alt="$x$" src="form_1.png"/>. The signature should be equivalent to <code>coord_type kernel(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code> </td></tr>
   </table>
   </dd>
 </dl>

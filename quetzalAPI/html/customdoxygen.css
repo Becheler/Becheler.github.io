@@ -4,15 +4,15 @@
 	font: 400 14px/22px Roboto,sans-serif;
 } */
 
-/* p.reference, p.definition {
+p.reference, p.definition {
 	font: 400 14px/22px Roboto,sans-serif;
-} */
+}
 
 /*My standards*/
 body, table, div, p, dl {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: medium;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   color: #606c71;
 }
 /* Ensure that <CODE> and <TT> text is as big as the <BODY> text and use a nicer font */

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1History_
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::demography::History&lt; Space, Time, dispersal_policy::mass_based &gt; Class Template Reference</div>  </div>
+<div class="title">quetzal::demography::History&lt; Space, Time, dispersal_policy::mass_based &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__demography.html">demography</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -279,8 +279,8 @@ template&lt;typename T , typename U , typename V &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nb_generations</td><td>the number of generations to simulate. </td></tr>
-    <tr><td class="paramname">sim_growth</td><td>a functor simulating <img class="formulaInl" alt="$\tilde{N}_{x}^{t}$" src="form_4.png"/>. The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following: <code>unsigned int sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code>. </td></tr>
-    <tr><td class="paramname">kernel</td><td>a functor representing the dispersal transition matrix. The signature of the function should be equivalent to <code>double kernel( const coord_type &amp; x, const coord_type &amp;y);</code> and the function should return the probability for an individual to disperse from <img class="formulaInl" alt="$x$" src="form_1.png"/> to <img class="formulaInl" alt="$y$" src="form_5.png"/> at time <img class="formulaInl" alt="$t$" src="form_2.png"/>. The expression <code>kernel.arrival_state()</code> must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space. </td></tr>
+    <tr><td class="paramname">sim_growth</td><td>a functor simulating <img class="formulaInl" alt="$\tilde{N}_{x}^{t}$" src="form_9.png"/>. The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following: <code>unsigned int sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code>. </td></tr>
+    <tr><td class="paramname">kernel</td><td>a functor representing the dispersal transition matrix. The signature of the function should be equivalent to <code>double kernel( const coord_type &amp; x, const coord_type &amp;y);</code> and the function should return the probability for an individual to disperse from <img class="formulaInl" alt="$x$" src="form_6.png"/> to <img class="formulaInl" alt="$y$" src="form_10.png"/> at time <img class="formulaInl" alt="$t$" src="form_7.png"/>. The expression <code>kernel.arrival_state()</code> must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space. </td></tr>
   </table>
   </dd>
 </dl>

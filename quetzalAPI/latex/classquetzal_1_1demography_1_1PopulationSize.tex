@@ -24,10 +24,12 @@ using {\bfseries value\+\_\+type} = Value
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_af4018ef08839888744f5b3dc4ceae213}\label{classquetzal_1_1demography_1_1PopulationSize_af4018ef08839888744f5b3dc4ceae213}} 
 \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_af4018ef08839888744f5b3dc4ceae213}{Population\+Size}} ()=default
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_a9f21dcff60484d65e3a92500eb0618cb}{is\+\_\+defined}} (coord\+\_\+type const \&x, time\+\_\+type const \&t) const
 \begin{DoxyCompactList}\small\item\em Checks if population size is defined at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a03de313c7bb868c0dedbc9eecaaf562b}\label{classquetzal_1_1demography_1_1PopulationSize_a03de313c7bb868c0dedbc9eecaaf562b}} 
 value\+\_\+type \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_a03de313c7bb868c0dedbc9eecaaf562b}{get}} (coord\+\_\+type const \&x, time\+\_\+type const \&t) const
 \begin{DoxyCompactList}\small\item\em Get population size value at deme x at time t. \end{DoxyCompactList}\item 
 value\+\_\+type \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_ae77a5b32324ba4fd44669929096dbd60}{operator()}} (coord\+\_\+type const \&x, time\+\_\+type const \&t) const
@@ -40,14 +42,19 @@ value\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize
 \begin{DoxyCompactList}\small\item\em Population size at deme x at time t. \end{DoxyCompactList}\item 
 value\+\_\+type \& \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_a3db7303218afe78627a189d1efda8348}{operator()}} (coord\+\_\+type \&\&x, time\+\_\+type \&\&t)
 \begin{DoxyCompactList}\small\item\em Population size at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a6153de7f2f98b6a51b7393403a8643fb}\label{classquetzal_1_1demography_1_1PopulationSize_a6153de7f2f98b6a51b7393403a8643fb}} 
 void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_a6153de7f2f98b6a51b7393403a8643fb}{set}} (coord\+\_\+type const \&x, time\+\_\+type const \&t, value\+\_\+type N)
 \begin{DoxyCompactList}\small\item\em Set population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_aca323de287215b497c29aebc71086b94}\label{classquetzal_1_1demography_1_1PopulationSize_aca323de287215b497c29aebc71086b94}} 
 void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_aca323de287215b497c29aebc71086b94}{set}} (coord\+\_\+type \&\&x, time\+\_\+type const \&t, value\+\_\+type N)
 \begin{DoxyCompactList}\small\item\em Set population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_ad7476ebf16787e81fe6b665ac8174b10}\label{classquetzal_1_1demography_1_1PopulationSize_ad7476ebf16787e81fe6b665ac8174b10}} 
 void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_ad7476ebf16787e81fe6b665ac8174b10}{set}} (coord\+\_\+type const \&x, time\+\_\+type \&\&t, value\+\_\+type N)
 \begin{DoxyCompactList}\small\item\em Set population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a00cb12970768584eedc0b5457aaf2275}\label{classquetzal_1_1demography_1_1PopulationSize_a00cb12970768584eedc0b5457aaf2275}} 
 void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_a00cb12970768584eedc0b5457aaf2275}{set}} (coord\+\_\+type \&\&x, time\+\_\+type \&\&t, value\+\_\+type N)
 \begin{DoxyCompactList}\small\item\em Set population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a70b555871e321ceb7f2a4272431c4a94}\label{classquetzal_1_1demography_1_1PopulationSize_a70b555871e321ceb7f2a4272431c4a94}} 
 std\+::vector$<$ coord\+\_\+type $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize_a70b555871e321ceb7f2a4272431c4a94}{definition\+\_\+space}} (time\+\_\+type const \&t) const
 \begin{DoxyCompactList}\small\item\em Return the demes at which the population size was defined at time t. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -64,81 +71,13 @@ Population size distribution in time and space.
 \hline
 {\em Time} & Equality\+Comparable, Copy\+Constructible. \\
 \hline
-{\em Value} & The type of the population size variable (int, unsigned int, double...)\\
+{\em Value} & The type of the population size variable (int, unsigned int, double...) \\
 \hline
 \end{DoxyTemplParams}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
 
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_af4018ef08839888744f5b3dc4ceae213}\label{classquetzal_1_1demography_1_1PopulationSize_af4018ef08839888744f5b3dc4ceae213}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!PopulationSize@{PopulationSize}}
-\index{PopulationSize@{PopulationSize}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{PopulationSize()}{PopulationSize()}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{Population\+Size}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
-
-
-
-Default constructor. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a70b555871e321ceb7f2a4272431c4a94}\label{classquetzal_1_1demography_1_1PopulationSize_a70b555871e321ceb7f2a4272431c4a94}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!definition\_space@{definition\_space}}
-\index{definition\_space@{definition\_space}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{definition\_space()}{definition\_space()}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-std\+::vector$<$ Space $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::definition\+\_\+space (\begin{DoxyParamCaption}\item[{time\+\_\+type const \&}]{t }\end{DoxyParamCaption}) const}
-
-
-
-Return the demes at which the population size was defined at time t. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a03de313c7bb868c0dedbc9eecaaf562b}\label{classquetzal_1_1demography_1_1PopulationSize_a03de313c7bb868c0dedbc9eecaaf562b}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!get@{get}}
-\index{get@{get}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{get()}{get()}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-Value \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::get (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x,  }\item[{time\+\_\+type const \&}]{t }\end{DoxyParamCaption}) const}
-
-
-
-Get population size value at deme x at time t. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a9f21dcff60484d65e3a92500eb0618cb}\label{classquetzal_1_1demography_1_1PopulationSize_a9f21dcff60484d65e3a92500eb0618cb}} 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a9f21dcff60484d65e3a92500eb0618cb}\label{classquetzal_1_1demography_1_1PopulationSize_a9f21dcff60484d65e3a92500eb0618cb}} 
 \index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!is\_defined@{is\_defined}}
 \index{is\_defined@{is\_defined}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{is\_defined()}{is\_defined()}}
@@ -152,15 +91,7 @@ Checks if population size is defined at deme x at time t.
 \begin{DoxyReturn}{Returns}
 True if variable is defined, else false. 
 \end{DoxyReturn}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a3db7303218afe78627a189d1efda8348}\label{classquetzal_1_1demography_1_1PopulationSize_a3db7303218afe78627a189d1efda8348}} 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a3db7303218afe78627a189d1efda8348}\label{classquetzal_1_1demography_1_1PopulationSize_a3db7303218afe78627a189d1efda8348}} 
 \index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!operator()@{operator()}}
 \index{operator()@{operator()}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
@@ -177,15 +108,7 @@ a reference to the value, initialized with value\+\_\+type default constructor
 \begin{DoxyRemark}{Remarks}
 operator allows for more expressive mathematical style in client code 
 \end{DoxyRemark}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a6a0012bc94922437265ea756f06d11b5}\label{classquetzal_1_1demography_1_1PopulationSize_a6a0012bc94922437265ea756f06d11b5}} 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a6a0012bc94922437265ea756f06d11b5}\label{classquetzal_1_1demography_1_1PopulationSize_a6a0012bc94922437265ea756f06d11b5}} 
 \index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!operator()@{operator()}}
 \index{operator()@{operator()}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
@@ -202,15 +125,7 @@ a reference to the value, initialized with value\+\_\+type default constructor
 \begin{DoxyRemark}{Remarks}
 operator allows for more expressive mathematical style in client code 
 \end{DoxyRemark}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a7fd3eae5071ead0cc87f5547c12110fe}\label{classquetzal_1_1demography_1_1PopulationSize_a7fd3eae5071ead0cc87f5547c12110fe}} 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a7fd3eae5071ead0cc87f5547c12110fe}\label{classquetzal_1_1demography_1_1PopulationSize_a7fd3eae5071ead0cc87f5547c12110fe}} 
 \index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!operator()@{operator()}}
 \index{operator()@{operator()}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
@@ -227,15 +142,7 @@ a reference to the value, initialized with value\+\_\+type default constructor
 \begin{DoxyRemark}{Remarks}
 operator allows for more expressive mathematical style in client code 
 \end{DoxyRemark}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a5e3f83809538e23d6976824ef0da1c60}\label{classquetzal_1_1demography_1_1PopulationSize_a5e3f83809538e23d6976824ef0da1c60}} 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a5e3f83809538e23d6976824ef0da1c60}\label{classquetzal_1_1demography_1_1PopulationSize_a5e3f83809538e23d6976824ef0da1c60}} 
 \index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!operator()@{operator()}}
 \index{operator()@{operator()}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
@@ -252,15 +159,7 @@ a reference to the value, initialized with value\+\_\+type default constructor
 \begin{DoxyRemark}{Remarks}
 operator allows for more expressive mathematical style in client code 
 \end{DoxyRemark}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_ae77a5b32324ba4fd44669929096dbd60}\label{classquetzal_1_1demography_1_1PopulationSize_ae77a5b32324ba4fd44669929096dbd60}} 
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_ae77a5b32324ba4fd44669929096dbd60}\label{classquetzal_1_1demography_1_1PopulationSize_ae77a5b32324ba4fd44669929096dbd60}} 
 \index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!operator()@{operator()}}
 \index{operator()@{operator()}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
 \doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
@@ -274,91 +173,7 @@ Get population size at deme x at time t.
 \begin{DoxyRemark}{Remarks}
 operator allows for more expressive mathematical style in client code 
 \end{DoxyRemark}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
 
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a00cb12970768584eedc0b5457aaf2275}\label{classquetzal_1_1demography_1_1PopulationSize_a00cb12970768584eedc0b5457aaf2275}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!set@{set}}
-\index{set@{set}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::set (\begin{DoxyParamCaption}\item[{coord\+\_\+type \&\&}]{x,  }\item[{time\+\_\+type \&\&}]{t,  }\item[{value\+\_\+type}]{N }\end{DoxyParamCaption})}
-
-
-
-Set population size value at deme x at time t. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_aca323de287215b497c29aebc71086b94}\label{classquetzal_1_1demography_1_1PopulationSize_aca323de287215b497c29aebc71086b94}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!set@{set}}
-\index{set@{set}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::set (\begin{DoxyParamCaption}\item[{coord\+\_\+type \&\&}]{x,  }\item[{time\+\_\+type const \&}]{t,  }\item[{value\+\_\+type}]{N }\end{DoxyParamCaption})}
-
-
-
-Set population size value at deme x at time t. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_ad7476ebf16787e81fe6b665ac8174b10}\label{classquetzal_1_1demography_1_1PopulationSize_ad7476ebf16787e81fe6b665ac8174b10}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!set@{set}}
-\index{set@{set}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::set (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x,  }\item[{time\+\_\+type \&\&}]{t,  }\item[{value\+\_\+type}]{N }\end{DoxyParamCaption})}
-
-
-
-Set population size value at deme x at time t. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSize_a6153de7f2f98b6a51b7393403a8643fb}\label{classquetzal_1_1demography_1_1PopulationSize_a6153de7f2f98b6a51b7393403a8643fb}} 
-\index{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}!set@{set}}
-\index{set@{set}!quetzal::demography::PopulationSize$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSize$<$ Space, Time, Value $>$}}
-\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
-void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{quetzal\+::demography\+::\+Population\+Size}}$<$ Space, Time, Value $>$\+::set (\begin{DoxyParamCaption}\item[{coord\+\_\+type const \&}]{x,  }\item[{time\+\_\+type const \&}]{t,  }\item[{value\+\_\+type}]{N }\end{DoxyParamCaption})}
-
-
-
-Set population size value at deme x at time t. 
-
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
-\hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

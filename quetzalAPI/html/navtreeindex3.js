@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html":[1,0,3,0,0,3],
 "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html":[1,0,3,0,0,5],
 "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html":[1,0,3,0,0,6],
 "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1return__always__true.html#a6a29bf1a1c3efa589de7d7a374266b1c":[1,0,3,0,0,6,0],
@@ -121,6 +120,6 @@ var NAVTREEINDEX3 =
 "structstd_1_1common__type_3_01std_1_1tuple_3_01T_8_8_8_01_4_00_01std_1_1tuple_3_01U_8_8_8_01_4_01_4.html#a94d046d3258783e1e8a6930014aac73e":[1,0,4,0,0],
 "structstd_1_1hash_3_01quetzal_1_1geography_1_1GeographicCoordinates_01_4.html":[1,0,4,1],
 "structstd_1_1hash_3_01quetzal_1_1geography_1_1GeographicCoordinates_01_4.html#ad504d47b8bf2b0bacb85949c25715dd8":[1,0,4,1,0],
-"utils_8h_source.html":[2,0,0,0,0,20],
+"utils_8h_source.html":[2,0,0,0,0,19],
 "zip__range_8h_source.html":[2,0,0,0,0,4,6]
 };

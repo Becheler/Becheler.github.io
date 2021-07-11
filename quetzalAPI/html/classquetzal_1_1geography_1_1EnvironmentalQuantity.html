@@ -148,11 +148,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ef8f6a8195abe97749824a4bacab338"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a3ef8f6a8195abe97749824a4bacab338">EnvironmentalQuantity</a> (const std::string &amp;dataset_name, std::vector&lt; time_type &gt; const &amp;times)</td></tr>
 <tr class="memdesc:a3ef8f6a8195abe97749824a4bacab338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a3ef8f6a8195abe97749824a4bacab338">More...</a><br /></td></tr>
 <tr class="separator:a3ef8f6a8195abe97749824a4bacab338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e1d2428ae49ebdc60b8e3c338fc5453"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classquetzal_1_1geography_1_1GeographicCoordinates.html">GeographicCoordinates</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a9e1d2428ae49ebdc60b8e3c338fc5453">origin</a> () const</td></tr>
-<tr class="memdesc:a9e1d2428ae49ebdc60b8e3c338fc5453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the origin of the spatial grid.  <a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a9e1d2428ae49ebdc60b8e3c338fc5453">More...</a><br /></td></tr>
+<tr class="memitem:a9e1d2428ae49ebdc60b8e3c338fc5453"><td class="memItemLeft" align="right" valign="top"><a id="a9e1d2428ae49ebdc60b8e3c338fc5453"></a>
+const <a class="el" href="classquetzal_1_1geography_1_1GeographicCoordinates.html">GeographicCoordinates</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a9e1d2428ae49ebdc60b8e3c338fc5453">origin</a> () const</td></tr>
+<tr class="memdesc:a9e1d2428ae49ebdc60b8e3c338fc5453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the origin of the spatial grid. <br /></td></tr>
 <tr class="separator:a9e1d2428ae49ebdc60b8e3c338fc5453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f219fcc4650b5653caa9fa986d5533"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classquetzal_1_1geography_1_1Resolution.html">Resolution</a>&lt; decimal_degree &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a30f219fcc4650b5653caa9fa986d5533">resolution</a> () const</td></tr>
-<tr class="memdesc:a30f219fcc4650b5653caa9fa986d5533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the resolution of the spatial grid.  <a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a30f219fcc4650b5653caa9fa986d5533">More...</a><br /></td></tr>
+<tr class="memitem:a30f219fcc4650b5653caa9fa986d5533"><td class="memItemLeft" align="right" valign="top"><a id="a30f219fcc4650b5653caa9fa986d5533"></a>
+const <a class="el" href="classquetzal_1_1geography_1_1Resolution.html">Resolution</a>&lt; decimal_degree &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a30f219fcc4650b5653caa9fa986d5533">resolution</a> () const</td></tr>
+<tr class="memdesc:a30f219fcc4650b5653caa9fa986d5533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the resolution of the spatial grid. <br /></td></tr>
 <tr class="separator:a30f219fcc4650b5653caa9fa986d5533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeed223976f42ad50c4f27321fe7f7f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classquetzal_1_1geography_1_1Extent.html">Extent</a>&lt; decimal_degree &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#aaeed223976f42ad50c4f27321fe7f7f3">extent</a> () const</td></tr>
 <tr class="memdesc:aaeed223976f42ad50c4f27321fe7f7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the extent of the spatial grid.  <a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#aaeed223976f42ad50c4f27321fe7f7f3">More...</a><br /></td></tr>
@@ -256,15 +258,11 @@ class quetzal::geography::EnvironmentalQuantity&lt; Time &gt;</h3>
 <p>The values of an ecological quantity are represented in a geographic explicit context constructed from raster files and gives strong guarantees on data consistency.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Time</td><td>Time type</td></tr>
+    <tr><td class="paramname">Time</td><td>Time type </td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3ef8f6a8195abe97749824a4bacab338"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ef8f6a8195abe97749824a4bacab338">&#9670;&nbsp;</a></span>EnvironmentalQuantity()</h2>
 
@@ -314,11 +312,7 @@ template&lt;typename Time &gt; </div>
 times vector should be sorted </dd>
 <dd>
 values should be defined for same coordinates at all times" </dd></dl>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -362,11 +356,7 @@ template&lt;typename Time &gt; </div>
 <dl class="section remark"><dt>Remarks</dt><dd>possibly slow </dd>
 <dd>
 checks if the given time is in the temporal extent </dd></dl>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
+
 </div>
 </div>
 <a id="aaeed223976f42ad50c4f27321fe7f7f3"></a>
@@ -395,11 +385,7 @@ template&lt;typename Time &gt; </div>
 </div><div class="memdoc">
 
 <p>Gets the extent of the spatial grid. </p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
+
 </div>
 </div>
 <a id="ac524710bfd17bcb26921dfc3d8ac39a8"></a>
@@ -428,12 +414,8 @@ template&lt;typename Time &gt; </div>
 </div><div class="memdoc">
 
 <p>The geographic coordinates of the centroids of the demes for which values are defined at all times. </p>
-<p>Returns the geographic coordinates of the centroids of the demes for which values are defined at all times. Values can be read from other coordinates, but this function provides a natural way to construct the geographic support for a demic structure (for example for demographic simulations).</p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
+<p>Returns the geographic coordinates of the centroids of the demes for which values are defined at all times. Values can be read from other coordinates, but this function provides a natural way to construct the geographic support for a demic structure (for example for demographic simulations). </p>
+
 </div>
 </div>
 <a id="a619e18963da66c8397f160c8277fc54e"></a>
@@ -463,44 +445,7 @@ template&lt;typename Time &gt; </div>
 </div><div class="memdoc">
 
 <p>Checks if a given geographic coordinate is in the landscape spatial extent. </p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
-</div>
-</div>
-<a id="a9e1d2428ae49ebdc60b8e3c338fc5453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e1d2428ae49ebdc60b8e3c338fc5453">&#9670;&nbsp;</a></span>origin()</h2>
 
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Time &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classquetzal_1_1geography_1_1GeographicCoordinates.html">GeographicCoordinates</a>&amp; <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html">quetzal::geography::EnvironmentalQuantity</a>&lt; Time &gt;::origin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the origin of the spatial grid. </p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 <a id="a2f669a173e97698ef05cf032af08bf87"></a>
@@ -530,44 +475,7 @@ template&lt;typename Time &gt; </div>
 </div><div class="memdoc">
 
 <p>Coordinate of the centroid of the deme to which the given coordinate belongs. </p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
-</div>
-</div>
-<a id="a30f219fcc4650b5653caa9fa986d5533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f219fcc4650b5653caa9fa986d5533">&#9670;&nbsp;</a></span>resolution()</h2>
 
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Time &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classquetzal_1_1geography_1_1Resolution.html">Resolution</a>&lt;decimal_degree&gt;&amp; <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html">quetzal::geography::EnvironmentalQuantity</a>&lt; Time &gt;::resolution </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the resolution of the spatial grid. </p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 <a id="a5cb1839a8ddb0993cf88896c0493b665"></a>
@@ -596,11 +504,7 @@ template&lt;typename Time &gt; </div>
 </div><div class="memdoc">
 
 <p>read the times at which quantity is defined. </p>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

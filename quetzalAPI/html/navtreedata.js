@@ -46,9 +46,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classquetzal_1_1coalescence_1_1Tree.html#a6720bd03532b7adb135b09a7ea8bce73",
-"classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a5cb1839a8ddb0993cf88896c0493b665",
-"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1in__memoized__distribution.html"
+"classquetzal_1_1coalescence_1_1Tree.html#a9ea2cc358aed0bd329d2c170c7039586",
+"classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a619e18963da66c8397f160c8277fc54e",
+"structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

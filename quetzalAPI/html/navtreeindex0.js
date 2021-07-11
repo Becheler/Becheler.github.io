@@ -45,7 +45,6 @@ var NAVTREEINDEX0 =
 "SpatialGeneticSample_8h_source.html":[2,0,0,0,0,5,3],
 "TransitionKernel_8h_source.html":[2,0,0,0,0,7,1],
 "Tree_8h_source.html":[2,0,0,0,0,0,1,1],
-"abc_8h_source.html":[2,0,0,0,0,10],
 "annotated.html":[1,0],
 "classFuzzyPartition.html":[1,0,5],
 "classFuzzyPartition.html#a2dd54da9b049eac1d546ff542c149208":[1,0,5,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classquetzal_1_1coalescence_1_1Tree.html#a4e3f68d644c02491835e807644341c58":[1,0,3,0,5,14],
 "classquetzal_1_1coalescence_1_1Tree.html#a54c9fba09d8f4931301cbbedffd6c7fa":[1,0,3,0,5,0],
 "classquetzal_1_1coalescence_1_1Tree.html#a5dd65e874bb9e179a3ceb1b589723e82":[1,0,3,0,5,3],
-"classquetzal_1_1coalescence_1_1Tree.html#a61af917e264a3b4a2b49bd613570b467":[1,0,3,0,5,11]
+"classquetzal_1_1coalescence_1_1Tree.html#a61af917e264a3b4a2b49bd613570b467":[1,0,3,0,5,11],
+"classquetzal_1_1coalescence_1_1Tree.html#a6720bd03532b7adb135b09a7ea8bce73":[1,0,3,0,5,5]
 };

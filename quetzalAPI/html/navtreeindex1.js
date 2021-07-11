@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classquetzal_1_1coalescence_1_1Tree.html#a6720bd03532b7adb135b09a7ea8bce73":[1,0,3,0,5,5],
 "classquetzal_1_1coalescence_1_1Tree.html#a9ea2cc358aed0bd329d2c170c7039586":[1,0,3,0,5,19],
 "classquetzal_1_1coalescence_1_1Tree.html#aa0f997d37d0ba2d7ea1fef79a78c3fe7":[1,0,3,0,5,1],
 "classquetzal_1_1coalescence_1_1Tree.html#ab17685d71490471bdd9a8f648c6adbb5":[1,0,3,0,5,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a2f669a173e97698ef05cf032af08bf87":[1,0,3,4,1,13],
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a30f219fcc4650b5653caa9fa986d5533":[1,0,3,4,1,14],
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a3ef8f6a8195abe97749824a4bacab338":[1,0,3,4,1,4],
-"classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a56c82382d574866b8424a31cd8931bee":[1,0,3,4,1,8]
+"classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a56c82382d574866b8424a31cd8931bee":[1,0,3,4,1,8],
+"classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a5cb1839a8ddb0993cf88896c0493b665":[1,0,3,4,1,15]
 };

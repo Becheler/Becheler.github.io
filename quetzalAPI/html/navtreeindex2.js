@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a619e18963da66c8397f160c8277fc54e":[1,1,1,11],
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a9e1d2428ae49ebdc60b8e3c338fc5453":[1,1,1,12],
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#aaeed223976f42ad50c4f27321fe7f7f3":[1,1,1,9],
 "classquetzal_1_1geography_1_1EnvironmentalQuantity.html#ab9dcd62c1ca8f368ece80072b054d48c":[1,1,1,0],
@@ -144,8 +143,8 @@ var NAVTREEINDEX2 =
 "expressive_2expressive_8h_source.html":[4,0,0,0,0,3,0],
 "expressive_8h_source.html":[4,0,0,0,0,12],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -216,8 +215,8 @@ var NAVTREEINDEX2 =
 "group__simulator.html":[1,4],
 "hierarchy.html":[3,2],
 "in__memoized__distribution_8h_source.html":[4,0,0,0,0,0,2,1],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "marker__traits_8h_source.html":[4,0,0,0,0,5,2],
 "matrix_8h_source.html":[4,0,0,0,0,4,2],
 "matrix__operation_8h_source.html":[4,0,0,0,0,9,0],
@@ -231,13 +230,11 @@ var NAVTREEINDEX2 =
 "merger_8h_source.html":[4,0,0,0,0,0,3,1],
 "modules.html":[1],
 "munkres_8h_source.html":[4,0,0,0,0,4,3],
-"namespacequetzal_1_1coalescence_1_1policy.html":[2,0,0,0,0],
-"namespacequetzal_1_1coalescence_1_1policy.html":[3,0,3,0,1],
-"namespacequetzal_1_1demography_1_1dispersal__kernel.html":[2,0,0,1,0],
+"namespacequetzal_1_1demography_1_1dispersal__kernel.html":[2,0,0,0,0],
 "namespacequetzal_1_1demography_1_1dispersal__kernel.html":[3,0,3,1,0],
+"namespacequetzal_1_1demography_1_1dispersal__policy.html":[2,0,0,0,1],
 "namespacequetzal_1_1demography_1_1dispersal__policy.html":[3,0,3,1,1],
-"namespacequetzal_1_1demography_1_1dispersal__policy.html":[2,0,0,1,1],
-"namespacequetzal_1_1sampling__scheme.html":[2,0,0,2],
+"namespacequetzal_1_1sampling__scheme.html":[2,0,0,1],
 "namespacequetzal_1_1sampling__scheme.html":[3,0,3,7],
 "namespaces.html":[2,0],
 "neighbors_8h_source.html":[4,0,0,0,0,9,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX2 =
 "simulator_2utils_8h_source.html":[4,0,0,0,0,8,2],
 "simulator_8h_source.html":[4,0,0,0,0,18],
 "storage__policy_8h_source.html":[4,0,0,0,0,2,7],
-"structdvp_1_1csv__custom__separator__traits.html":[3,0,0,0]
+"structdvp_1_1csv__custom__separator__traits.html":[3,0,0,0],
+"structdvp_1_1csv__custom__separator__traits.html#a16f1385d29caf25cee2d749abc30c905":[3,0,0,0,5],
+"structdvp_1_1csv__custom__separator__traits.html#a32e673d29c17e620efdf633a63238833":[3,0,0,0,2],
+"structdvp_1_1csv__custom__separator__traits.html#a620c8754fde41f0600e53b6576d33597":[3,0,0,0,1]
 };

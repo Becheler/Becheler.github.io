@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['time_5ftype_491',['time_type',['../classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name.html#a728bc23dfecd16532f8e063aa4ff6978',1,'quetzal::coalescence::policy::distance_to_parent_leaf_name']]],
-  ['tree_5ftype_492',['tree_type',['../classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name.html#a23031b29368f4c7ced31b8c20b6eb233',1,'quetzal::coalescence::policy::distance_to_parent_leaf_name']]]
+  ['time_5ftype_490',['time_type',['../classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a14f5420f82a01ff9b47ef8631836906d',1,'quetzal::coalescence::newick_with_distance_to_parent::time_type()'],['../classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name.html#aecac1968f23e2f6fb244f0b3cbd67c40',1,'quetzal::coalescence::newick_with_distance_to_parent_and_leaf_name::time_type()']]],
+  ['tree_5ftype_491',['tree_type',['../classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html#a39416bbbaf21b761aa85e1dc38c08250',1,'quetzal::coalescence::newick_with_distance_to_parent::tree_type()'],['../classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name.html#a91fcc57fa40a69e51cc7c0b28b48dc97',1,'quetzal::coalescence::newick_with_distance_to_parent_and_leaf_name::tree_type()']]]
 ];

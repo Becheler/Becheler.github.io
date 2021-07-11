@@ -2,9 +2,8 @@ var NAVTREEINDEX0 =
 {
 ".html":[2,0,0],
 ".html":[2,0,0,0],
-".html":[2,0,0,1],
-".html":[3,0,3,2],
 ".html":[3,0,0],
+".html":[3,0,3,2],
 ".html":[3,0,3,3],
 ".html":[3,0,1],
 ".html":[3,0,3,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classquetzal_1_1coalescence_1_1Tree.html#a54c9fba09d8f4931301cbbedffd6c7fa":[1,6,1,1,0],
 "classquetzal_1_1coalescence_1_1Tree.html#a5dd65e874bb9e179a3ceb1b589723e82":[1,6,1,1,3],
 "classquetzal_1_1coalescence_1_1Tree.html#a61af917e264a3b4a2b49bd613570b467":[1,6,1,1,11],
-"classquetzal_1_1coalescence_1_1Tree.html#a6720bd03532b7adb135b09a7ea8bce73":[1,6,1,1,5]
+"classquetzal_1_1coalescence_1_1Tree.html#a6720bd03532b7adb135b09a7ea8bce73":[1,6,1,1,5],
+"classquetzal_1_1coalescence_1_1Tree.html#a9ea2cc358aed0bd329d2c170c7039586":[1,6,1,1,19]
 };

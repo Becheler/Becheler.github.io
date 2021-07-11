@@ -935,7 +935,7 @@ EXCLUDE_SYMLINKS       = NO
 
 EXCLUDE_PATTERNS       = */test/* \
                          */cmake/* \
-                         */build/*
+                         */build/* \
                          README* \
                          CMakeLists.txt \
                          LICENSE

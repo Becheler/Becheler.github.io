@@ -212,15 +212,11 @@ class quetzal::demography::History&lt; Space, Time, dispersal_policy::mass_based
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Space</td><td>Demes identifiers. </td></tr>
-    <tr><td class="paramname">Time</td><td>EqualityComparable, CopyConstructible.</td></tr>
+    <tr><td class="paramname">Time</td><td>EqualityComparable, CopyConstructible. </td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --> <h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4f8d9df346720130ecbc1bd536c2a8cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f8d9df346720130ecbc1bd536c2a8cb">&#9670;&nbsp;</a></span>expand()</h2>
 
@@ -284,15 +280,11 @@ template&lt;typename T , typename U , typename V &gt; </div>
   <table class="params">
     <tr><td class="paramname">nb_generations</td><td>the number of generations to simulate. </td></tr>
     <tr><td class="paramname">sim_growth</td><td>a functor simulating <img class="formulaInl" alt="$\tilde{N}_{x}^{t}$" src="form_4.png"/>. The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following: <code>unsigned int sim_growth(V &amp;gen, const coord_type &amp;x, const time_type &amp;t);</code>. </td></tr>
-    <tr><td class="paramname">kernel</td><td>a functor representing the dispersal transition matrix. The signature of the function should be equivalent to <code>double kernel( const coord_type &amp; x, const coord_type &amp;y);</code> and the function should return the probability for an individual to disperse from <img class="formulaInl" alt="$x$" src="form_1.png"/> to <img class="formulaInl" alt="$y$" src="form_5.png"/> at time <img class="formulaInl" alt="$t$" src="form_2.png"/>. The expression <code>kernel.arrival_state()</code> must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space.</td></tr>
+    <tr><td class="paramname">kernel</td><td>a functor representing the dispersal transition matrix. The signature of the function should be equivalent to <code>double kernel( const coord_type &amp; x, const coord_type &amp;y);</code> and the function should return the probability for an individual to disperse from <img class="formulaInl" alt="$x$" src="form_1.png"/> to <img class="formulaInl" alt="$y$" src="form_5.png"/> at time <img class="formulaInl" alt="$t$" src="form_2.png"/>. The expression <code>kernel.arrival_state()</code> must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space. </td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="Example"></a>
-Example</h1>
-<div class="fragment"></div><!-- fragment --> <h1><a class="anchor" id="Output"></a>
-Output</h1>
-<div class="fragment"></div><!-- fragment --> 
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

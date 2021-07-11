@@ -45,18 +45,10 @@ Partial specialization where populations levels are assumed high enough to be co
 \begin{DoxyTemplParams}{Template Parameters}
 {\em Space} & Demes identifiers. \\
 \hline
-{\em Time} & Equality\+Comparable, Copy\+Constructible.\\
+{\em Time} & Equality\+Comparable, Copy\+Constructible. \\
 \hline
 \end{DoxyTemplParams}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
 
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4_a4f8d9df346720130ecbc1bd536c2a8cb}\label{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4_a4f8d9df346720130ecbc1bd536c2a8cb}} 
@@ -86,18 +78,10 @@ Expands the demographic history through space and time.
 \hline
 {\em sim\+\_\+growth} & a functor simulating $\tilde{N}_{x}^{t}$. The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following\+: {\ttfamily unsigned int sim\+\_\+growth(\+V \&gen, const coord\+\_\+type \&x, const time\+\_\+type \&t);}. \\
 \hline
-{\em kernel} & a functor representing the dispersal transition matrix. The signature of the function should be equivalent to {\ttfamily double kernel( const coord\+\_\+type \& x, const coord\+\_\+type \&y);} and the function should return the probability for an individual to disperse from $x$ to $y$ at time $t$. The expression {\ttfamily kernel.\+arrival\+\_\+state()} must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space.\\
+{\em kernel} & a functor representing the dispersal transition matrix. The signature of the function should be equivalent to {\ttfamily double kernel( const coord\+\_\+type \& x, const coord\+\_\+type \&y);} and the function should return the probability for an individual to disperse from $x$ to $y$ at time $t$. The expression {\ttfamily kernel.\+arrival\+\_\+state()} must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space. \\
 \hline
 \end{DoxyParams}
-\hypertarget{expressive_2expressive_8h_Example}{}\doxysubsection{Example}\label{expressive_2expressive_8h_Example}
 
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- \hypertarget{expressive_2expressive_8h_Output}{}\doxysubsection{Output}\label{expressive_2expressive_8h_Output}
-
-\begin{DoxyCodeInclude}{0}
-\end{DoxyCodeInclude}
- 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

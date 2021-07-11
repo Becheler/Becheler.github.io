@@ -34,11 +34,11 @@ var dir_95cfde53510fd81ac0ff5912c91abc6e =
       [ "History< Space, Time, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4" ],
       [ "History< Space, Time, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4" ]
     ] ],
-    [ "PopulationSizeMapImplementation.h", "PopulationSizeMapImplementation_8h.html", [
+    [ "PopulationSize.h", "PopulationSize_8h.html", [
       [ "PopulationSize", "classquetzal_1_1demography_1_1PopulationSize.html", "classquetzal_1_1demography_1_1PopulationSize" ]
     ] ],
-    [ "PopulationSizeVectorImplementation.h", "PopulationSizeVectorImplementation_8h.html", [
-      [ "PopulationSizeVectorImplementation", "classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeVectorImplementation" ]
+    [ "PopulationSizeOptimized.h", "PopulationSizeOptimized_8h.html", [
+      [ "PopulationSizeOptimized", "classquetzal_1_1demography_1_1PopulationSizeOptimized.html", "classquetzal_1_1demography_1_1PopulationSizeOptimized" ]
     ] ],
     [ "storage_policy.h", "storage__policy_8h.html", [
       [ "storage_policy", "structquetzal_1_1demography_1_1storage__policy.html", null ]

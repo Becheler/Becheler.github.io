@@ -1,6 +1,5 @@
 var dir_6a24fa6e638f9b515332f0552351826a =
 [
-    [ "fuzzy_transfer_distance.h", "fuzzy__transfer__distance_2fuzzy__transfer__distance_8h.html", null ],
     [ "FuzzyPartition.h", "FuzzyPartition_8h.html", "FuzzyPartition_8h" ],
     [ "matrix.h", "matrix_8h.html", [
       [ "Matrix", "classMatrix.html", "classMatrix" ]

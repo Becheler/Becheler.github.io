@@ -1,8 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"structquetzal_1_1expressive_1_1Callable__traits_3_01Ret_07_5_08_07Args_8_8_8_08_4.html#a7a3c760e28ebe5b3bc7148188694dbd3":[2,0,3,2,3,1],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01Ret_07_5_08_07Args_8_8_8_08_4.html#aaa0ad64e3dd7d25de85dabe9c20afa95":[2,0,3,2,3,0],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html":[2,0,3,2,1],
 "structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#a4bc7aa4335b641c7ab6790de19b7b71e":[2,0,3,2,1,0],
 "structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#aac5b4eee65b41c6316cdf21526dace47":[2,0,3,2,1,2],
 "structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#ac984a34bb924a52b9c93f25588a2f998":[2,0,3,2,1,1],
@@ -96,7 +93,7 @@ var NAVTREEINDEX4 =
 "structstd_1_1hash_3_01quetzal_1_1geography_1_1GeographicCoordinates_01_4.html#ad504d47b8bf2b0bacb85949c25715dd8":[2,0,4,1,0],
 "utils_8h.html":[3,0,0,1,0,19],
 "utils_8h_source.html":[3,0,0,1,0,19],
-"zip__range_8h.html":[3,0,0,1,0,4,6],
-"zip__range_8h.html#a40f196e99816731d388caa787333b465":[3,0,0,1,0,4,6,0],
-"zip__range_8h_source.html":[3,0,0,1,0,4,6]
+"zip__range_8h.html":[3,0,0,1,0,4,5],
+"zip__range_8h.html#a40f196e99816731d388caa787333b465":[3,0,0,1,0,4,5,0],
+"zip__range_8h_source.html":[3,0,0,1,0,4,5]
 };

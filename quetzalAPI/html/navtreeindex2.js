@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#ad40f4a34d5bc20fe3e6eb33d9db28135":[2,0,3,3,4,7],
 "classquetzal_1_1genetics_1_1SpatialGeneticSample.html#add81e57a9d8fcf6a0c28f9df13192a96":[2,0,3,3,4,13],
 "classquetzal_1_1genetics_1_1SpatialGeneticSample.html#ae83aa43b557beaaabee72252bcfd0a1b":[2,0,3,3,4,14],
 "classquetzal_1_1genetics_1_1SpatialGeneticSample.html#aeecc1db97e2c2d1c669ed303915eeabb":[2,0,3,3,4,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "expressive_8h.html":[3,0,0,1,0,12],
 "expressive_8h_source.html":[3,0,0,1,0,12],
 "files.html":[3,0],
-"functions.html":[2,3,0,0]
+"functions.html":[2,3,0,0],
+"functions.html":[2,3,0]
 };

@@ -60,9 +60,9 @@ var NAVTREEINDEX =
 [
 "Allele_8h.html",
 "classquetzal_1_1coalescence_1_1Forest.html#abb429532d4cd1b5b06771f10c5dbf7b9",
-"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#ad40f4a34d5bc20fe3e6eb33d9db28135",
-"functions.html",
-"structquetzal_1_1expressive_1_1Callable__traits_3_01Ret_07_5_08_07Args_8_8_8_08_4.html#a7a3c760e28ebe5b3bc7148188694dbd3"
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#add81e57a9d8fcf6a0c28f9df13192a96",
+"functions_a.html",
+"structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#a4bc7aa4335b641c7ab6790de19b7b71e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,10 +1,11 @@
 <map id="quetzal/include/quetzal/utils/PointWithId.h" name="quetzal/include/quetzal/utils/PointWithId.h">
-<area shape="rect" id="node1" title=" " alt="" coords="395,5,549,47"/>
-<area shape="rect" id="node2" href="$dispersal__policy_8h.html" title=" " alt="" coords="337,95,492,151"/>
-<area shape="rect" id="node8" href="$utils_8h.html" title=" " alt="" coords="523,199,677,240"/>
-<area shape="rect" id="node3" href="$History_8h.html" title=" " alt="" coords="305,199,460,240"/>
-<area shape="rect" id="node4" href="$demography_8h.html" title=" " alt="" coords="5,295,160,337"/>
-<area shape="rect" id="node6" href="$ForwardBackwardSpatiallyExplicit_8h.html" title=" " alt="" coords="185,288,423,344"/>
-<area shape="rect" id="node7" href="$simulator_2utils_8h.html" title=" " alt="" coords="448,295,603,337"/>
-<area shape="rect" id="node5" href="$quetzal_8h.html" title=" " alt="" coords="337,392,492,433"/>
+<area shape="rect" id="node1" title=" " alt="" coords="288,5,443,47"/>
+<area shape="rect" id="node2" href="$dispersal__policy_8h.html" title=" " alt="" coords="288,95,443,151"/>
+<area shape="rect" id="node8" href="$PopulationSizeOptimized_8h.html" title=" " alt="" coords="5,102,264,143"/>
+<area shape="rect" id="node9" href="$utils_8h.html" title=" " alt="" coords="540,199,695,240"/>
+<area shape="rect" id="node3" href="$History_8h.html" title=" " alt="" coords="283,199,437,240"/>
+<area shape="rect" id="node4" href="$demography_8h.html" title=" " alt="" coords="57,295,212,337"/>
+<area shape="rect" id="node6" href="$ForwardBackwardSpatiallyExplicit_8h.html" title=" " alt="" coords="237,288,475,344"/>
+<area shape="rect" id="node7" href="$simulator_2utils_8h.html" title=" " alt="" coords="500,295,655,337"/>
+<area shape="rect" id="node5" href="$quetzal_8h.html" title=" " alt="" coords="389,392,544,433"/>
 </map>

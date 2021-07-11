@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"structquetzal_1_1demography_1_1dispersal__kernel_1_1Logistic.html":[3,0,3,1,0,4],
 "structquetzal_1_1demography_1_1dispersal__kernel_1_1Logistic.html#a9b12cc24dab7a7697ece873045771a9a":[3,0,3,1,0,4,1],
 "structquetzal_1_1demography_1_1dispersal__kernel_1_1Lognormal.html":[3,0,3,1,0,5],
 "structquetzal_1_1demography_1_1dispersal__kernel_1_1Lognormal.html#a4b4777613553a259ea28dcea569fa5f2":[3,0,3,1,0,5,1],
@@ -74,8 +73,8 @@ var NAVTREEINDEX4 =
 "structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#a803c756dd085e04cc52edadb058c8a59":[3,0,3,2,12,3],
 "structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#aa14f89ca6393bd1579ebabdf3ccb017b":[3,0,3,2,12,1],
 "structquetzal_1_1expressive_1_1composite__functor_3_01F_01_4.html#ab7cd6fe084b33a021a7b34940c186787":[3,0,3,2,12,4],
-"structquetzal_1_1expressive_1_1literal__factory.html":[1,2,0],
-"structquetzal_1_1expressive_1_1literal__factory.html#ae3adc17ef47a119fcc351c1156c4b70b":[1,2,0,0],
+"structquetzal_1_1expressive_1_1literal__factory.html":[1,1,0],
+"structquetzal_1_1expressive_1_1literal__factory.html#ae3adc17ef47a119fcc351c1156c4b70b":[1,1,0,0],
 "structquetzal_1_1expressive_1_1literal__t.html":[3,0,3,2,14],
 "structquetzal_1_1expressive_1_1literal__t.html#a595427bdceaa22f2bef6f425c0d65bd2":[3,0,3,2,14,1],
 "structquetzal_1_1expressive_1_1literal__t.html#a9764f46a6e6d33383120b49385cd2494":[3,0,3,2,14,0],

@@ -63,7 +63,7 @@ var NAVTREEINDEX =
 "classquetzal_1_1coalescence_1_1Forest.html#abb429532d4cd1b5b06771f10c5dbf7b9",
 "classquetzal_1_1genetics_1_1SpatialGeneticSample.html#ad40f4a34d5bc20fe3e6eb33d9db28135",
 "functions.html",
-"structquetzal_1_1demography_1_1dispersal__kernel_1_1Logistic.html"
+"structquetzal_1_1demography_1_1dispersal__kernel_1_1Logistic.html#a9b12cc24dab7a7697ece873045771a9a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

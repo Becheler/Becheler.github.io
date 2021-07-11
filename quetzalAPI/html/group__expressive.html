@@ -148,18 +148,18 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compile-time mathematical expressions optimization. </p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Motivations</h2>
 <hr  />
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 Better express user-defined mathematical models</h3>
 <p>The impact of environmental factors or spatial structure on demographic processes can be assessed by setting up mathematical models linking environmental and demographic quantities together. Obviously, the details of the functions used depend on the biological context and the modeler intuition, so there is <b>no do-it-all function</b> that could be implemented once and used in all possible contexts.</p>
 <p>Inevitably, later or sooner the user would have to build its own modeling functions: all we can do is to propose <b>concise way to express them.</b></p>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md7"></a>
  Favor code modularity.</h3>
 <p>In the context of <a href="https://en.wikipedia.org/wiki/Approximate_Bayesian_computation">ABC</a> it is expected that several of the function parameters change their values at runtime. One should prefer to pass around a whole expression with internally changing parameters values rather than passing multiples parameters everywhere in the code to propagate their new state (what would greatly hinder maintainability, especially since ABC approaches tend to favor models comparison thus code flexibility).</p>
 <p>Expressive features allow to <b>encapsulate models details in an efficient way.</b></p>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md8"></a>
 Do it with minimal runtime cost</h3>
 <p>To tackle both this multiplicity and the computational cost imposed by <a href="https://en.wikipedia.org/wiki/Approximate_Bayesian_computation">ABC</a> approaches, we integrate <a href="https://github.com/ambre-m/expressive">expressive</a>, a library that allows to compose mathematical expressions at compile time. Compile-time expressions manipulation allows the compiler to apply intra-procedural optimization (dead code elimination, branch prediction, induction variable elimination). Finally, it allows the compiler to simplify the expressions, or even deduce the final result of the function. This comes along with the other known <a href="https://en.wikipedia.org/wiki/Inline_expansion">benefits of eliminating a function call</a>, namely:</p><ul>
 <li>It does not require function calling overhead.</li>
@@ -167,10 +167,10 @@ Do it with minimal runtime cost</h3>
 <li>It saves overhead of return call from a function.</li>
 <li>It increases <a href="https://en.wikipedia.org/wiki/Interprocedural_optimization">locality of reference</a>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Examples of biological interests</h2>
 <hr  />
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md10"></a>
 Representing dispersal kernels</h3>
 <p>Representation of a dispersal kernel density involves some kind of mathematical composition. In the simple case where density is only a function of the geographic distance, the details of the distance computation can be separated from the details of the kernel used by composing two independently defined functions.</p>
 <p>The inner function \( g : X^2 \rightarrow R\) would be the distance computation function between two points of the geographic space \(X\), and can be expressed in terms of a callable object having a <code>distance_type operator()(coord_type x, coord_type y)</code> interface.</p>
@@ -189,7 +189,7 @@ Representing dispersal kernels</h3>
 <div class="line"> }</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> kernel = <a class="code" href="group__expressive.html#ga12574ee3c5da08311afb7eb76d7089b4">quetzal::expressive::compose</a>(f,g);</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
 Representing environmental quantities as functions of space and time.</h3>
 <p>In the framework of complex coalescence processes, a major benefit of expressive is the possibility to express and compose quantities that are functions of space and time.</p>
 <p>The geography module, via the DiscreteLandscape class template, provides lightweight function objects of space and time which are callable with GeographicCoordinates and an user-defined time argument to access environmental values. These little objects can be composed into more complex expressions using expressive. </p>

@@ -14,3 +14,5 @@ It has been designed as a **toolbox** allowing a programmer to switch between se
 modeling frameworks, and to **rapidly test different models**.
 
 ![Quetzal scheme]( {{site.url}}/draw/quetzal_scheme.png)
+
+You can check examples of code on the [DevDocs](/quetzalAPI/html/index.html) section of this website!

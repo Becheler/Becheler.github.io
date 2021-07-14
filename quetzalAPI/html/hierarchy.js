@@ -1,17 +1,17 @@
 var hierarchy =
 [
     [ "quetzal::genetics::Allele< Value >", "classquetzal_1_1genetics_1_1Allele.html", null ],
-    [ "quetzal::demography::BaseHistory< Space, Time, DispersalPolicy >", "classquetzal_1_1demography_1_1BaseHistory.html", [
-      [ "quetzal::demography::History< Space, Time, DispersalPolicy >", "classquetzal_1_1demography_1_1History.html", null ]
+    [ "quetzal::demography::BaseHistory< Space, DispersalPolicy >", "classquetzal_1_1demography_1_1BaseHistory.html", [
+      [ "quetzal::demography::History< Space, DispersalPolicy >", "classquetzal_1_1demography_1_1History.html", null ]
     ] ],
-    [ "quetzal::demography::BaseHistory< coord_type, time_type, DispersalPolicy >", "classquetzal_1_1demography_1_1BaseHistory.html", [
-      [ "quetzal::demography::History< coord_type, time_type, DispersalPolicy, StoragePolicy >", "classquetzal_1_1demography_1_1History.html", null ]
+    [ "quetzal::demography::BaseHistory< coord_type, DispersalPolicy >", "classquetzal_1_1demography_1_1BaseHistory.html", [
+      [ "quetzal::demography::History< coord_type, DispersalPolicy >", "classquetzal_1_1demography_1_1History.html", null ]
     ] ],
-    [ "quetzal::demography::BaseHistory< Space, Time, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1BaseHistory.html", [
-      [ "quetzal::demography::History< Space, Time, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4.html", null ]
+    [ "quetzal::demography::BaseHistory< Space, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1BaseHistory.html", [
+      [ "quetzal::demography::History< Space, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_01_4.html", null ]
     ] ],
-    [ "quetzal::demography::BaseHistory< Space, Time, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1BaseHistory.html", [
-      [ "quetzal::demography::History< Space, Time, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4.html", null ]
+    [ "quetzal::demography::BaseHistory< Space, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1BaseHistory.html", [
+      [ "quetzal::demography::History< Space, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4.html", null ]
     ] ],
     [ "quetzal::coalescence::BinaryMerger", "structquetzal_1_1coalescence_1_1BinaryMerger.html", null ],
     [ "quetzal::expressive::Callable_traits< Callable >", "structquetzal_1_1expressive_1_1Callable__traits.html", null ],
@@ -29,7 +29,7 @@ var hierarchy =
     [ "quetzal::coalescence::newick_with_distance_to_parent_and_leaf_name< Space, Time >::cell_type", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name_1_1cell__type.html", null ],
     [ "quetzal::mutation_kernel::standard_data::cell_type", "classquetzal_1_1mutation__kernel_1_1standard__data_1_1cell__type.html", null ],
     [ "CoalescencePolicy", null, [
-      [ "quetzal::ForwardBackwardSpatiallyExplicit< Space, Time, DispersalPolicy, CoalescencePolicy, StoragePolicy >", "classquetzal_1_1ForwardBackwardSpatiallyExplicit.html", null ]
+      [ "quetzal::ForwardBackwardSpatiallyExplicit< Space, DispersalPolicy, CoalescencePolicy >", "classquetzal_1_1ForwardBackwardSpatiallyExplicit.html", null ]
     ] ],
     [ "std::common_type< std::tuple< T... >, std::tuple< U... > >", "structstd_1_1common__type_3_01std_1_1tuple_3_01T_8_8_8_01_4_00_01std_1_1tuple_3_01U_8_8_8_01_4_01_4.html", null ],
     [ "quetzal::expressive::compose_t< Outer, Inners >", "structquetzal_1_1expressive_1_1compose__t.html", null ],

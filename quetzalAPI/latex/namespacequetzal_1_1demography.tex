@@ -11,14 +11,14 @@
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{Base\+History}}
-\begin{DoxyCompactList}\small\item\em Base class for population history. Encpasulates backward migration logic. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Base class for simulating and recording spatial population history. It encpasulates backward migration logic. It makes use of the C\+R\+TP design pattern, meaning that this class has to be specialized to define \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{History}} classes offering customized behaviors, like details of the demograhic algorithms (mass\+\_\+based or individual\+\_\+based) or storage aspects. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classquetzal_1_1demography_1_1Flow}{Flow}}
 \begin{DoxyCompactList}\small\item\em Defines a template class to store the demographic flows number across a landscape along time. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{History}}
 \begin{DoxyCompactList}\small\item\em Unspecialized class (C\+R\+TP design pattern) \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4}{History$<$ Space, Time, dispersal\+\_\+policy\+::individual\+\_\+based $>$}}
+class \mbox{\hyperlink{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_01_4}{History$<$ Space, dispersal\+\_\+policy\+::individual\+\_\+based $>$}}
 \begin{DoxyCompactList}\small\item\em Partial specialization where each individual is dispersed individually. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4}{History$<$ Space, Time, dispersal\+\_\+policy\+::mass\+\_\+based $>$}}
+class \mbox{\hyperlink{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4}{History$<$ Space, dispersal\+\_\+policy\+::mass\+\_\+based $>$}}
 \begin{DoxyCompactList}\small\item\em Partial specialization where populations levels are assumed high enough to be considered as divisible masses. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSize}{Population\+Size}}
 \begin{DoxyCompactList}\small\item\em Population size distribution in time and space. \end{DoxyCompactList}\item 

@@ -1,4 +1,0 @@
-var classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4 =
-[
-    [ "expand", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4.html#ac1d2accea468cd349c01f3bc2330d427", null ]
-];

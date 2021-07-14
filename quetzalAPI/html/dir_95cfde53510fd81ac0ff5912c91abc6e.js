@@ -31,8 +31,8 @@ var dir_95cfde53510fd81ac0ff5912c91abc6e =
     [ "Flow.h", "Flow_8h.html", "Flow_8h" ],
     [ "History.h", "History_8h.html", [
       [ "History", "classquetzal_1_1demography_1_1History.html", null ],
-      [ "History< Space, Time, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1individual__based_01_4" ],
-      [ "History< Space, Time, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01Time_00_01dispersal__policy_1_1mass__based_01_4" ]
+      [ "History< Space, dispersal_policy::individual_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_01_4" ],
+      [ "History< Space, dispersal_policy::mass_based >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4" ]
     ] ],
     [ "PopulationSize.h", "PopulationSize_8h.html", [
       [ "PopulationSize", "classquetzal_1_1demography_1_1PopulationSize.html", "classquetzal_1_1demography_1_1PopulationSize" ]

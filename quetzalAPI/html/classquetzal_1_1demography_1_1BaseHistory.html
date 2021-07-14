@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quetzal-CoalTL: quetzal::demography::BaseHistory&lt; Space, Time, DispersalPolicy &gt; Class Template Reference</title>
+<title>Quetzal-CoalTL: quetzal::demography::BaseHistory&lt; Space, DispersalPolicy &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,201 +108,193 @@ $(document).ready(function(){initNavTree('classquetzal_1_1demography_1_1BaseHist
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classquetzal_1_1demography_1_1BaseHistory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::demography::BaseHistory&lt; Space, Time, DispersalPolicy &gt; Class Template Reference</div>  </div>
+<div class="title">quetzal::demography::BaseHistory&lt; Space, DispersalPolicy &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for population history. Encpasulates backward migration logic.  
+<p>Base class for simulating and recording spatial population history. It encpasulates backward migration logic. It makes use of the CRTP design pattern, meaning that this class has to be specialized to define <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">History</a> classes offering customized behaviors, like details of the demograhic algorithms (mass_based or individual_based) or storage aspects.  
  <a href="classquetzal_1_1demography_1_1BaseHistory.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="BaseHistory_8h_source.html">BaseHistory.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for quetzal::demography::BaseHistory&lt; Space, Time, DispersalPolicy &gt;:</div>
+Inheritance diagram for quetzal::demography::BaseHistory&lt; Space, DispersalPolicy &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classquetzal_1_1demography_1_1BaseHistory__inherit__graph.png" border="0" usemap="#quetzal_1_1demography_1_1BaseHistory_3_01Space_00_01Time_00_01DispersalPolicy_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="quetzal_1_1demography_1_1BaseHistory_3_01Space_00_01Time_00_01DispersalPolicy_01_4_inherit__map" id="quetzal_1_1demography_1_1BaseHistory_3_01Space_00_01Time_00_01DispersalPolicy_01_4_inherit__map">
-<area shape="rect" title="Base class for population history. Encpasulates backward migration logic." alt="" coords="5,5,172,61"/>
-<area shape="rect" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)" alt="" coords="7,109,170,165"/>
+<div class="center"><img src="classquetzal_1_1demography_1_1BaseHistory__inherit__graph.png" border="0" usemap="#quetzal_1_1demography_1_1BaseHistory_3_01Space_00_01DispersalPolicy_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="quetzal_1_1demography_1_1BaseHistory_3_01Space_00_01DispersalPolicy_01_4_inherit__map" id="quetzal_1_1demography_1_1BaseHistory_3_01Space_00_01DispersalPolicy_01_4_inherit__map">
+<area shape="rect" title="Base class for simulating and recording spatial population history. It encpasulates backward migratio..." alt="" coords="20,5,175,61"/>
+<area shape="rect" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)" alt="" coords="5,109,189,165"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a078bda812970ee943bc4fb77cf09a946"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a078bda812970ee943bc4fb77cf09a946">dispersal_policy</a> = DispersalPolicy</td></tr>
-<tr class="separator:a078bda812970ee943bc4fb77cf09a946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb25339b7696d49103d2f78d88f08d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a> = <a class="el" href="classquetzal_1_1demography_1_1Flow.html">Flow</a>&lt; Space, Time, typename dispersal_policy::value_type &gt;</td></tr>
-<tr class="separator:aafb25339b7696d49103d2f78d88f08d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79fc92b9a142673e9cb70ec1ad1c50ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a> = <a class="el" href="classquetzal_1_1demography_1_1PopulationSize.html">PopulationSize</a>&lt; Space, Time, typename dispersal_policy::value_type &gt;</td></tr>
-<tr class="separator:a79fc92b9a142673e9cb70ec1ad1c50ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ea5df389142f6668e82b2c192fde58"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> = Space</td></tr>
-<tr class="separator:aa7ea5df389142f6668e82b2c192fde58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196a012ca019bd1ce06232f53d2200a7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> = Time</td></tr>
-<tr class="separator:a196a012ca019bd1ce06232f53d2200a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc146f8922210ef828c03519ecfbf694"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#afc146f8922210ef828c03519ecfbf694">discrete_distribution_type</a> = <a class="el" href="classquetzal_1_1random_1_1DiscreteDistribution.html">quetzal::random::DiscreteDistribution</a>&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> &gt;</td></tr>
-<tr class="separator:afc146f8922210ef828c03519ecfbf694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc95a9b8cb17f5499d9c3c54fe07c57f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acc95a9b8cb17f5499d9c3c54fe07c57f">backward_kernel_type</a> = <a class="el" href="classquetzal_1_1random_1_1TransitionKernel.html">quetzal::random::TransitionKernel</a>&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#afc146f8922210ef828c03519ecfbf694">discrete_distribution_type</a> &gt;</td></tr>
-<tr class="separator:acc95a9b8cb17f5499d9c3c54fe07c57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadafbb24147512fc5cc53230a28a81d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> = Space</td></tr>
+<tr class="separator:acadafbb24147512fc5cc53230a28a81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57087cadda44776038760b144850657"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> = unsigned int</td></tr>
+<tr class="separator:ae57087cadda44776038760b144850657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac681a9a141c9adc150b7329fa28fb271"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ac681a9a141c9adc150b7329fa28fb271">dispersal_policy</a> = DispersalPolicy</td></tr>
+<tr class="separator:ac681a9a141c9adc150b7329fa28fb271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9852e655193cac31b08fc95fa9c3c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a> = dispersal_policy::value_type</td></tr>
+<tr class="separator:a9f9852e655193cac31b08fc95fa9c3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada795fcce1e0662f152c390e610c7d9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ada795fcce1e0662f152c390e610c7d9c">flow_type</a> = <a class="el" href="classquetzal_1_1demography_1_1Flow.html">Flow</a>&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a> &gt;</td></tr>
+<tr class="separator:ada795fcce1e0662f152c390e610c7d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57f52226b4189301c40d5ec94870799"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57f52226b4189301c40d5ec94870799">pop_sizes_type</a> = <a class="el" href="classquetzal_1_1demography_1_1PopulationSize.html">PopulationSize</a>&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a> &gt;</td></tr>
+<tr class="separator:ae57f52226b4189301c40d5ec94870799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3105372283b3ca2bd83172d1e5cb3ee0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a3105372283b3ca2bd83172d1e5cb3ee0">discrete_distribution_type</a> = <a class="el" href="classquetzal_1_1random_1_1DiscreteDistribution.html">quetzal::random::DiscreteDistribution</a>&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> &gt;</td></tr>
+<tr class="separator:a3105372283b3ca2bd83172d1e5cb3ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e0db53c80fbe4ca2c6cf6090807bd59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a1e0db53c80fbe4ca2c6cf6090807bd59">BaseHistory</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> const &amp;t, typename dispersal_policy::value_type N)</td></tr>
-<tr class="memdesc:a1e0db53c80fbe4ca2c6cf6090807bd59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor initializing the demographic database.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a1e0db53c80fbe4ca2c6cf6090807bd59">More...</a><br /></td></tr>
-<tr class="separator:a1e0db53c80fbe4ca2c6cf6090807bd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1812894459d2b9f7feff04407d0707de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a1812894459d2b9f7feff04407d0707de">flows</a> () const</td></tr>
-<tr class="memdesc:a1812894459d2b9f7feff04407d0707de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only access to the demographic flows database.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a1812894459d2b9f7feff04407d0707de">More...</a><br /></td></tr>
-<tr class="separator:a1812894459d2b9f7feff04407d0707de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b61b70160ffb2b9d045cc083cc53bd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a4b61b70160ffb2b9d045cc083cc53bd7">flows</a> ()</td></tr>
-<tr class="memdesc:a4b61b70160ffb2b9d045cc083cc53bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and write access to the demographic flows database.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a4b61b70160ffb2b9d045cc083cc53bd7">More...</a><br /></td></tr>
-<tr class="separator:a4b61b70160ffb2b9d045cc083cc53bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46040f486fcf50a7666020c353a5909e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a46040f486fcf50a7666020c353a5909e">pop_sizes</a> () const</td></tr>
-<tr class="memdesc:a46040f486fcf50a7666020c353a5909e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only access to the demographic sizes database.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a46040f486fcf50a7666020c353a5909e">More...</a><br /></td></tr>
-<tr class="separator:a46040f486fcf50a7666020c353a5909e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0432d83050fdc5a76401f5ed561b03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aeb0432d83050fdc5a76401f5ed561b03">pop_sizes</a> ()</td></tr>
-<tr class="memdesc:aeb0432d83050fdc5a76401f5ed561b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-and-write access to the demographic sizes database.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#aeb0432d83050fdc5a76401f5ed561b03">More...</a><br /></td></tr>
-<tr class="separator:aeb0432d83050fdc5a76401f5ed561b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a961f3fc5b428a1c1fc737d7eaa7dafa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a961f3fc5b428a1c1fc737d7eaa7dafa7">first_time</a> () const</td></tr>
-<tr class="memdesc:a961f3fc5b428a1c1fc737d7eaa7dafa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">First time recorded in the foward-in-time database history.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a961f3fc5b428a1c1fc737d7eaa7dafa7">More...</a><br /></td></tr>
-<tr class="separator:a961f3fc5b428a1c1fc737d7eaa7dafa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde86032d962b88f12081c934522ca43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#adde86032d962b88f12081c934522ca43">last_time</a> () const</td></tr>
-<tr class="memdesc:adde86032d962b88f12081c934522ca43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last time recorded in the foward-in-time database history.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#adde86032d962b88f12081c934522ca43">More...</a><br /></td></tr>
-<tr class="separator:adde86032d962b88f12081c934522ca43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b77082451a07c5206be95d953b6877d"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
-<tr class="memitem:a5b77082451a07c5206be95d953b6877d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a5b77082451a07c5206be95d953b6877d">backward_kernel</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> t, Generator &amp;gen) const</td></tr>
-<tr class="memdesc:a5b77082451a07c5206be95d953b6877d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a coordinate from the backward-in-time transition matrix.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a5b77082451a07c5206be95d953b6877d">More...</a><br /></td></tr>
-<tr class="separator:a5b77082451a07c5206be95d953b6877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fd7de80a26763b6b1b4d44f518dc5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a71fd7de80a26763b6b1b4d44f518dc5b">BaseHistory</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a> N, unsigned int <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a7af389e3845a223878dd85729637259a">nb_generations</a>)</td></tr>
+<tr class="memdesc:a71fd7de80a26763b6b1b4d44f518dc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor initializing the demographic database.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a71fd7de80a26763b6b1b4d44f518dc5b">More...</a><br /></td></tr>
+<tr class="separator:a71fd7de80a26763b6b1b4d44f518dc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab33346bc77b02b9b4c85a017a548c2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a3ab33346bc77b02b9b4c85a017a548c2">distribution_area</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> t) const</td></tr>
+<tr class="memdesc:a3ab33346bc77b02b9b4c85a017a548c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve demes where N &gt; 0 at time t.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a3ab33346bc77b02b9b4c85a017a548c2">More...</a><br /></td></tr>
+<tr class="separator:a3ab33346bc77b02b9b4c85a017a548c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab506bff2d1acbc453421e73200a88216"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ab506bff2d1acbc453421e73200a88216">pop_size</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> const &amp;t)</td></tr>
+<tr class="memdesc:ab506bff2d1acbc453421e73200a88216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Population size at deme x at time t.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#ab506bff2d1acbc453421e73200a88216">More...</a><br /></td></tr>
+<tr class="separator:ab506bff2d1acbc453421e73200a88216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c08d2a2b63df9f723981c546c3af446"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a8c08d2a2b63df9f723981c546c3af446">get_functor_N</a> () const noexcept</td></tr>
+<tr class="memdesc:a8c08d2a2b63df9f723981c546c3af446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only functor.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a8c08d2a2b63df9f723981c546c3af446">More...</a><br /></td></tr>
+<tr class="separator:a8c08d2a2b63df9f723981c546c3af446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46420150958ee3053d512b8fa768419f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a46420150958ee3053d512b8fa768419f">get_pop_size</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> const &amp;t)</td></tr>
+<tr class="memdesc:a46420150958ee3053d512b8fa768419f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a46420150958ee3053d512b8fa768419f">More...</a><br /></td></tr>
+<tr class="separator:a46420150958ee3053d512b8fa768419f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167786a9aa08b4b7170b3826100cb1c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a167786a9aa08b4b7170b3826100cb1c9">set_pop_size</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> const &amp;t, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a> N)</td></tr>
+<tr class="memdesc:a167786a9aa08b4b7170b3826100cb1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used in derived class <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">History</a> to increment migrants.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a167786a9aa08b4b7170b3826100cb1c9">More...</a><br /></td></tr>
+<tr class="separator:a167786a9aa08b4b7170b3826100cb1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af389e3845a223878dd85729637259a"><td class="memItemLeft" align="right" valign="top">unsigned int const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a7af389e3845a223878dd85729637259a">nb_generations</a> () const</td></tr>
+<tr class="memdesc:a7af389e3845a223878dd85729637259a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last time recorded in the foward-in-time database history.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a7af389e3845a223878dd85729637259a">More...</a><br /></td></tr>
+<tr class="separator:a7af389e3845a223878dd85729637259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40af8bb0e080880eb5ae88fbba89d9b8"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:a40af8bb0e080880eb5ae88fbba89d9b8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a40af8bb0e080880eb5ae88fbba89d9b8">backward_kernel</a> (<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;x, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> t, Generator &amp;gen) const</td></tr>
+<tr class="memdesc:a40af8bb0e080880eb5ae88fbba89d9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a coordinate from the backward-in-time transition matrix.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#a40af8bb0e080880eb5ae88fbba89d9b8">More...</a><br /></td></tr>
+<tr class="separator:a40af8bb0e080880eb5ae88fbba89d9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ade9a783c253062e5c0cb309d0f6d5260"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ade9a783c253062e5c0cb309d0f6d5260">m_sizes</a></td></tr>
-<tr class="separator:ade9a783c253062e5c0cb309d0f6d5260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec371680fdea575b791756292196e0c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a5ec371680fdea575b791756292196e0c">m_flows</a></td></tr>
-<tr class="separator:a5ec371680fdea575b791756292196e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6320b33df845ae9115812563b3ae0c08"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Time &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a6320b33df845ae9115812563b3ae0c08">m_times</a></td></tr>
-<tr class="separator:a6320b33df845ae9115812563b3ae0c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a326aadfdad2c1d5fcf04eda57a40d3d0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acc95a9b8cb17f5499d9c3c54fe07c57f">backward_kernel_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a326aadfdad2c1d5fcf04eda57a40d3d0">m_kernel</a></td></tr>
-<tr class="separator:a326aadfdad2c1d5fcf04eda57a40d3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea429df209784a867b382120d7b50aba"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ada795fcce1e0662f152c390e610c7d9c">flow_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aea429df209784a867b382120d7b50aba">m_flows</a></td></tr>
+<tr class="separator:aea429df209784a867b382120d7b50aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Space, typename Time, typename DispersalPolicy&gt;<br />
-class quetzal::demography::BaseHistory&lt; Space, Time, DispersalPolicy &gt;</h3>
+<div class="textblock"><h3>template&lt;typename Space, typename DispersalPolicy&gt;<br />
+class quetzal::demography::BaseHistory&lt; Space, DispersalPolicy &gt;</h3>
 
-<p>Base class for population history. Encpasulates backward migration logic. </p>
-<p>CRTP design pattern: this class has to be specialized (inherited from) to define <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">History</a> classes with different behaviors (eg mass-based, individual-based, or storage).</p>
+<p>Base class for simulating and recording spatial population history. It encpasulates backward migration logic. It makes use of the CRTP design pattern, meaning that this class has to be specialized to define <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">History</a> classes offering customized behaviors, like details of the demograhic algorithms (mass_based or individual_based) or storage aspects. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Space</td><td>Demes identifiers. </td></tr>
-    <tr><td class="paramname">Time</td><td>EqualityComparable, CopyConstructible. </td></tr>
     <tr><td class="paramname">DispersalPolicy</td><td>Policy use for populations dynamics simulation algorithms, see <a class="el" href="namespacequetzal_1_1demography_1_1dispersal__policy.html" title="Various implementations of dispersal process implementing an interface compatible with the requiremen...">dispersal_policy</a> </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="acc95a9b8cb17f5499d9c3c54fe07c57f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc95a9b8cb17f5499d9c3c54fe07c57f">&#9670;&nbsp;</a></span>backward_kernel_type</h2>
+<a id="acadafbb24147512fc5cc53230a28a81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadafbb24147512fc5cc53230a28a81d">&#9670;&nbsp;</a></span>coord_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acc95a9b8cb17f5499d9c3c54fe07c57f">backward_kernel_type</a> =  <a class="el" href="classquetzal_1_1random_1_1TransitionKernel.html">quetzal::random::TransitionKernel</a>&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#afc146f8922210ef828c03519ecfbf694">discrete_distribution_type</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> =  Space</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa7ea5df389142f6668e82b2c192fde58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7ea5df389142f6668e82b2c192fde58">&#9670;&nbsp;</a></span>coord_type</h2>
+<a id="a3105372283b3ca2bd83172d1e5cb3ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3105372283b3ca2bd83172d1e5cb3ee0">&#9670;&nbsp;</a></span>discrete_distribution_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> =  Space</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a3105372283b3ca2bd83172d1e5cb3ee0">discrete_distribution_type</a> =  <a class="el" href="classquetzal_1_1random_1_1DiscreteDistribution.html">quetzal::random::DiscreteDistribution</a>&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afc146f8922210ef828c03519ecfbf694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc146f8922210ef828c03519ecfbf694">&#9670;&nbsp;</a></span>discrete_distribution_type</h2>
+<a id="ac681a9a141c9adc150b7329fa28fb271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac681a9a141c9adc150b7329fa28fb271">&#9670;&nbsp;</a></span>dispersal_policy</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#afc146f8922210ef828c03519ecfbf694">discrete_distribution_type</a> =  <a class="el" href="classquetzal_1_1random_1_1DiscreteDistribution.html">quetzal::random::DiscreteDistribution</a>&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ac681a9a141c9adc150b7329fa28fb271">dispersal_policy</a> =  DispersalPolicy</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a078bda812970ee943bc4fb77cf09a946"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a078bda812970ee943bc4fb77cf09a946">&#9670;&nbsp;</a></span>dispersal_policy</h2>
+<a id="ada795fcce1e0662f152c390e610c7d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada795fcce1e0662f152c390e610c7d9c">&#9670;&nbsp;</a></span>flow_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a078bda812970ee943bc4fb77cf09a946">dispersal_policy</a> =  DispersalPolicy</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ada795fcce1e0662f152c390e610c7d9c">flow_type</a> =  <a class="el" href="classquetzal_1_1demography_1_1Flow.html">Flow</a>&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aafb25339b7696d49103d2f78d88f08d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb25339b7696d49103d2f78d88f08d2">&#9670;&nbsp;</a></span>flow_type</h2>
+<a id="ae57f52226b4189301c40d5ec94870799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57f52226b4189301c40d5ec94870799">&#9670;&nbsp;</a></span>pop_sizes_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a> =  <a class="el" href="classquetzal_1_1demography_1_1Flow.html">Flow</a>&lt;Space, Time, typename dispersal_policy::value_type&gt;</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57f52226b4189301c40d5ec94870799">pop_sizes_type</a> =  <a class="el" href="classquetzal_1_1demography_1_1PopulationSize.html">PopulationSize</a>&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a>, <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a79fc92b9a142673e9cb70ec1ad1c50ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79fc92b9a142673e9cb70ec1ad1c50ad">&#9670;&nbsp;</a></span>pop_sizes_type</h2>
+<a id="ae57087cadda44776038760b144850657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57087cadda44776038760b144850657">&#9670;&nbsp;</a></span>time_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a> =  <a class="el" href="classquetzal_1_1demography_1_1PopulationSize.html">PopulationSize</a>&lt;Space, Time, typename dispersal_policy::value_type&gt;</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> =  unsigned int</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a196a012ca019bd1ce06232f53d2200a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a196a012ca019bd1ce06232f53d2200a7">&#9670;&nbsp;</a></span>time_type</h2>
+<a id="a9f9852e655193cac31b08fc95fa9c3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9852e655193cac31b08fc95fa9c3c1">&#9670;&nbsp;</a></span>value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> =  Time</td>
+          <td class="memname">using <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a> =  dispersal_policy::value_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -310,34 +302,34 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1e0db53c80fbe4ca2c6cf6090807bd59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e0db53c80fbe4ca2c6cf6090807bd59">&#9670;&nbsp;</a></span>BaseHistory()</h2>
+<a id="a71fd7de80a26763b6b1b4d44f518dc5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fd7de80a26763b6b1b4d44f518dc5b">&#9670;&nbsp;</a></span>BaseHistory()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">BaseHistory</a> </td>
+          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">BaseHistory</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> const &amp;&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a>&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename dispersal_policy::value_type&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nb_generations</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -356,8 +348,8 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>the coordinate of introduction </td></tr>
-    <tr><td class="paramname">t</td><td>the introduction time </td></tr>
-    <tr><td class="paramname">N</td><td>the population size at coordinate x at time t </td></tr>
+    <tr><td class="paramname">N</td><td>the population size at coordinate x at time 0 </td></tr>
+    <tr><td class="paramname">nb_generations</td><td>the number of generations history is supposed to last </td></tr>
   </table>
   </dd>
 </dl>
@@ -365,13 +357,13 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5b77082451a07c5206be95d953b6877d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b77082451a07c5206be95d953b6877d">&#9670;&nbsp;</a></span>backward_kernel()</h2>
+<a id="a40af8bb0e080880eb5ae88fbba89d9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40af8bb0e080880eb5ae88fbba89d9b8">&#9670;&nbsp;</a></span>backward_kernel()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <div class="memtemplate">
 template&lt;typename Generator &gt; </div>
 <table class="mlabels">
@@ -379,15 +371,15 @@ template&lt;typename Generator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::backward_kernel </td>
+          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::backward_kernel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aa7ea5df389142f6668e82b2c192fde58">coord_type</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a>&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
@@ -414,21 +406,22 @@ template&lt;typename Generator &gt; </div>
 
 </div>
 </div>
-<a id="a961f3fc5b428a1c1fc737d7eaa7dafa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a961f3fc5b428a1c1fc737d7eaa7dafa7">&#9670;&nbsp;</a></span>first_time()</h2>
+<a id="a3ab33346bc77b02b9b4c85a017a548c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab33346bc77b02b9b4c85a017a548c2">&#9670;&nbsp;</a></span>distribution_area()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> const&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::first_time </td>
+          <td class="memname">auto <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::distribution_area </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -439,26 +432,66 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 </table>
 </div><div class="memdoc">
 
-<p>First time recorded in the foward-in-time database history. </p>
+<p>Retrieve demes where N &gt; 0 at time t. </p>
 
 </div>
 </div>
-<a id="a4b61b70160ffb2b9d045cc083cc53bd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b61b70160ffb2b9d045cc083cc53bd7">&#9670;&nbsp;</a></span>flows() <span class="overload">[1/2]</span></h2>
+<a id="a8c08d2a2b63df9f723981c546c3af446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c08d2a2b63df9f723981c546c3af446">&#9670;&nbsp;</a></span>get_functor_N()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a>&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::flows </td>
+          <td class="memname">auto <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::get_functor_N </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read-only functor. </p>
+
+</div>
+</div>
+<a id="a46420150958ee3053d512b8fa768419f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46420150958ee3053d512b8fa768419f">&#9670;&nbsp;</a></span>get_pop_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::get_pop_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -468,52 +501,23 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 </table>
 </div><div class="memdoc">
 
-<p>Read and write access to the demographic flows database. </p>
+<p>Read-only. </p>
 
 </div>
 </div>
-<a id="a1812894459d2b9f7feff04407d0707de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1812894459d2b9f7feff04407d0707de">&#9670;&nbsp;</a></span>flows() <span class="overload">[2/2]</span></h2>
+<a id="a7af389e3845a223878dd85729637259a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af389e3845a223878dd85729637259a">&#9670;&nbsp;</a></span>nb_generations()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a> const&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::flows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read-only access to the demographic flows database. </p>
-
-</div>
-</div>
-<a id="adde86032d962b88f12081c934522ca43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adde86032d962b88f12081c934522ca43">&#9670;&nbsp;</a></span>last_time()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a196a012ca019bd1ce06232f53d2200a7">time_type</a> const&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::last_time </td>
+          <td class="memname">unsigned int const&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::nb_generations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -530,22 +534,33 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 
 </div>
 </div>
-<a id="aeb0432d83050fdc5a76401f5ed561b03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0432d83050fdc5a76401f5ed561b03">&#9670;&nbsp;</a></span>pop_sizes() <span class="overload">[1/2]</span></h2>
+<a id="ab506bff2d1acbc453421e73200a88216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab506bff2d1acbc453421e73200a88216">&#9670;&nbsp;</a></span>pop_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a>&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::pop_sizes </td>
+          <td class="memname">auto&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::pop_size </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -555,26 +570,45 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 </table>
 </div><div class="memdoc">
 
-<p>Read-and-write access to the demographic sizes database. </p>
+<p>Population size at deme x at time t. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the value, initialized with value_type default constructor </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>operator allows for more expressive mathematical style in client code </dd></dl>
 
 </div>
 </div>
-<a id="a46040f486fcf50a7666020c353a5909e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46040f486fcf50a7666020c353a5909e">&#9670;&nbsp;</a></span>pop_sizes() <span class="overload">[2/2]</span></h2>
+<a id="a167786a9aa08b4b7170b3826100cb1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a167786a9aa08b4b7170b3826100cb1c9">&#9670;&nbsp;</a></span>set_pop_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a>&amp; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::pop_sizes </td>
+          <td class="memname">void <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::set_pop_size </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acadafbb24147512fc5cc53230a28a81d">coord_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ae57087cadda44776038760b144850657">time_type</a> const &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a9f9852e655193cac31b08fc95fa9c3c1">value_type</a>&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -584,97 +618,24 @@ template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div
 </table>
 </div><div class="memdoc">
 
-<p>Read-only access to the demographic sizes database. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Can be used for composition into time dependent growth functions. </dd></dl>
+<p>Used in derived class <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">History</a> to increment migrants. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5ec371680fdea575b791756292196e0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ec371680fdea575b791756292196e0c">&#9670;&nbsp;</a></span>m_flows</h2>
+<a id="aea429df209784a867b382120d7b50aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea429df209784a867b382120d7b50aba">&#9670;&nbsp;</a></span>m_flows</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
+template&lt;typename Space , typename DispersalPolicy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#aafb25339b7696d49103d2f78d88f08d2">flow_type</a>&gt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::m_flows</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a326aadfdad2c1d5fcf04eda57a40d3d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a326aadfdad2c1d5fcf04eda57a40d3d0">&#9670;&nbsp;</a></span>m_kernel</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#acc95a9b8cb17f5499d9c3c54fe07c57f">backward_kernel_type</a>&gt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::m_kernel</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade9a783c253062e5c0cb309d0f6d5260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9a783c253062e5c0cb309d0f6d5260">&#9670;&nbsp;</a></span>m_sizes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#a79fc92b9a142673e9cb70ec1ad1c50ad">pop_sizes_type</a>&gt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::m_sizes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6320b33df845ae9115812563b3ae0c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6320b33df845ae9115812563b3ae0c08">&#9670;&nbsp;</a></span>m_times</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Space , typename Time , typename DispersalPolicy &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;Time&gt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, Time, DispersalPolicy &gt;::m_times</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html#ada795fcce1e0662f152c390e610c7d9c">flow_type</a>&gt; <a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory</a>&lt; Space, DispersalPolicy &gt;::m_flows</td>
         </tr>
       </table>
   </td>

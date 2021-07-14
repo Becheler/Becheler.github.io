@@ -60,7 +60,7 @@ bool \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18
 \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a2f669a173e97698ef05cf032af08bf87}{reproject\+\_\+to\+\_\+centroid}} (\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geographic\+Coordinates}} const \&c) const
 \begin{DoxyCompactList}\small\item\em Coordinate of the centroid of the deme to which the given coordinate belongs. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename F , typename G $>$ }\\void \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a207ce3690a67dd04d75b5f2770a9ca97}{export\+\_\+to\+\_\+geotiff}} (F f, G g, \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ae6313561599df6df202c63e7af0ee795}{time\+\_\+type}} const \&t1, \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ae6313561599df6df202c63e7af0ee795}{time\+\_\+type}} const \&t2, std\+::string const \&filename) const
-\item 
+\begin{DoxyCompactList}\small\item\em Export \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{Environmental\+Quantity}} to Geo\+Tiff file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a00d7660b1c21995a098f7f08c78083e5}{export\+\_\+to\+\_\+shapefile}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}{coord\+\_\+type}}, unsigned int $>$ counts, std\+::string const \&filename) const
 \item 
 void \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a56c82382d574866b8424a31cd8931bee}{export\+\_\+to\+\_\+shapefile}} (std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}{coord\+\_\+type}} $>$ coords, std\+::string const \&filename) const
@@ -166,6 +166,23 @@ checks if the given time is in the temporal extent
 template$<$typename F , typename G $>$ \\
 void \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity}}$<$ Time $>$\+::export\+\_\+to\+\_\+geotiff (\begin{DoxyParamCaption}\item[{F}]{f,  }\item[{G}]{g,  }\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ae6313561599df6df202c63e7af0ee795}{time\+\_\+type}} const \&}]{t1,  }\item[{\mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ae6313561599df6df202c63e7af0ee795}{time\+\_\+type}} const \&}]{t2,  }\item[{std\+::string const \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Export \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{Environmental\+Quantity}} to Geo\+Tiff file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & functor giving the quantity to print. Signature equivalent to {\ttfamily double f(coord\+\_\+type, time\+\_\+type)} \\
+\hline
+{\em g} & functor giving the set of demes where f is defined at every time. Signature equivalent to {\ttfamily std\+::vector$<$coord\+\_\+type$>$ g(time\+\_\+type)} \\
+\hline
+{\em t1} & first time (first band) to print \\
+\hline
+{\em t2} & last time (last band) to print \\
+\hline
+{\em filename} & the file name where to save \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a00d7660b1c21995a098f7f08c78083e5}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a00d7660b1c21995a098f7f08c78083e5}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!export\_to\_shapefile@{export\_to\_shapefile}}
 \index{export\_to\_shapefile@{export\_to\_shapefile}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}

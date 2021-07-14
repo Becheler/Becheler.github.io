@@ -1,14 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#a4bc7aa4335b641c7ab6790de19b7b71e":[2,0,3,2,1,0],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#aac5b4eee65b41c6316cdf21526dace47":[2,0,3,2,1,2],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01compose__t_3_01Outer_00_01Inners_8_8_8_01_4_01_4.html#ac984a34bb924a52b9c93f25588a2f998":[2,0,3,2,1,1],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01make__expression__t_3_01F_01_4_01_4.html":[2,0,3,2,2],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01symetric__binop__t_3_01FL_00_01Operator_00_01FR_01_4_01_4.html":[2,0,3,2,6],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01symetric__binop__t_3_01FL_00_01Operator_00_01FR_01_4_01_4.html#abc110af12b59001c9d57da93dd1a3870":[2,0,3,2,6,1],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01symetric__binop__t_3_01FL_00_01Operator_00_01FR_01_4_01_4.html#ac86ca8a3222c2e91563022462a21cc48":[2,0,3,2,6,0],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01symetric__binop__t_3_01FL_00_01Operator_00_01FR_01_4_01_4.html#af45f285408ab9cdf7c43ed42d760fab5":[2,0,3,2,6,2],
-"structquetzal_1_1expressive_1_1Callable__traits_3_01unop__t_3_01Operator_00_01F_01_4_01_4.html":[2,0,3,2,7],
 "structquetzal_1_1expressive_1_1Callable__traits_3_01unop__t_3_01Operator_00_01F_01_4_01_4.html#a7cc4da97596aa969a441127bc1d6cb3b":[2,0,3,2,7,2],
 "structquetzal_1_1expressive_1_1Callable__traits_3_01unop__t_3_01Operator_00_01F_01_4_01_4.html#aa8cb087f31e487e77071af44f7c48373":[2,0,3,2,7,0],
 "structquetzal_1_1expressive_1_1Callable__traits_3_01unop__t_3_01Operator_00_01F_01_4_01_4.html#ae86c36f4a4a6ec066b290d54afc722eb":[2,0,3,2,7,1],

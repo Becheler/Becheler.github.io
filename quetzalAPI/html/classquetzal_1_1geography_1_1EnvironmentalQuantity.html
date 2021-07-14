@@ -177,6 +177,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f669a173e97698ef05cf032af08bf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207ce3690a67dd04d75b5f2770a9ca97"><td class="memTemplParams" colspan="2">template&lt;typename F , typename G &gt; </td></tr>
 <tr class="memitem:a207ce3690a67dd04d75b5f2770a9ca97"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a207ce3690a67dd04d75b5f2770a9ca97">export_to_geotiff</a> (F f, G g, <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#ae6313561599df6df202c63e7af0ee795">time_type</a> const &amp;t1, <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#ae6313561599df6df202c63e7af0ee795">time_type</a> const &amp;t2, std::string const &amp;filename) const</td></tr>
+<tr class="memdesc:a207ce3690a67dd04d75b5f2770a9ca97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html" title="Discretized representation of an ecological quantity that varies in space and time.">EnvironmentalQuantity</a> to GeoTiff file.  <a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a207ce3690a67dd04d75b5f2770a9ca97">More...</a><br /></td></tr>
 <tr class="separator:a207ce3690a67dd04d75b5f2770a9ca97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00d7660b1c21995a098f7f08c78083e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a00d7660b1c21995a098f7f08c78083e5">export_to_shapefile</a> (std::map&lt; <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#ab9dcd62c1ca8f368ece80072b054d48c">coord_type</a>, unsigned int &gt; counts, std::string const &amp;filename) const</td></tr>
 <tr class="separator:a00d7660b1c21995a098f7f08c78083e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,6 +461,18 @@ template&lt;typename F , typename G &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Export <a class="el" href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html" title="Discretized representation of an ecological quantity that varies in space and time.">EnvironmentalQuantity</a> to GeoTiff file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>functor giving the quantity to print. Signature equivalent to <code>double f(coord_type, time_type)</code> </td></tr>
+    <tr><td class="paramname">g</td><td>functor giving the set of demes where f is defined at every time. Signature equivalent to <code>std::vector&lt;coord_type&gt; g(time_type)</code> </td></tr>
+    <tr><td class="paramname">t1</td><td>first time (first band) to print </td></tr>
+    <tr><td class="paramname">t2</td><td>last time (last band) to print </td></tr>
+    <tr><td class="paramname">filename</td><td>the file name where to save </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@ var classquetzal_1_1geography_1_1DiscreteLandscape =
     [ "key_type", "classquetzal_1_1geography_1_1DiscreteLandscape.html#a24dae2e408f1448b21ba4f679182b516", null ],
     [ "time_type", "classquetzal_1_1geography_1_1DiscreteLandscape.html#a3a5153aa6a67bd390c1fe986030c0afc", null ],
     [ "DiscreteLandscape", "classquetzal_1_1geography_1_1DiscreteLandscape.html#ac8409e3905b9b3ed18bf7f1abf7a1650", null ],
-    [ "direct_neighbors", "classquetzal_1_1geography_1_1DiscreteLandscape.html#a0f3ea564667c8ce0c54fc3c44ad16bad", null ],
+    [ "direct_neighbors", "classquetzal_1_1geography_1_1DiscreteLandscape.html#a16c63f1469c535c66b1a86f83a0ea622", null ],
     [ "export_to_geotiff", "classquetzal_1_1geography_1_1DiscreteLandscape.html#a8858d75bafb293f958a206dc6e657563", null ],
     [ "export_to_shapefile", "classquetzal_1_1geography_1_1DiscreteLandscape.html#aeb54b428bf4891bf86ac33a472f1c5e7", null ],
     [ "export_to_shapefile", "classquetzal_1_1geography_1_1DiscreteLandscape.html#a48a76c171637c738f1d3df8f87dbf1db", null ],

@@ -112,15 +112,17 @@ $(document).ready(function(){initNavTree('BaseHistory_8h.html',''); initResizabl
 <div class="textblock"><code>#include &quot;<a class="el" href="random_8h_source.html">../random.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for BaseHistory.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="BaseHistory_8h__incl.png" border="0" usemap="#quetzal_2include_2quetzal_2demography_2BaseHistory_8h" alt=""/></div>
 <map name="quetzal_2include_2quetzal_2demography_2BaseHistory_8h" id="quetzal_2include_2quetzal_2demography_2BaseHistory_8h">
-<area shape="rect" title=" " alt="" coords="345,5,528,47"/>
+<area shape="rect" title=" " alt="" coords="381,5,564,47"/>
 <area shape="rect" href="random_8h.html" title=" " alt="" coords="258,95,346,121"/>
 <area shape="rect" title=" " alt="" coords="383,244,442,271"/>
 <area shape="rect" title=" " alt="" coords="474,95,543,121"/>
+<area shape="rect" title=" " alt="" coords="568,95,647,121"/>
 <area shape="rect" href="DiscreteDistribution_8h.html" title=" " alt="" coords="205,169,399,196"/>
 <area shape="rect" href="TransitionKernel_8h.html" title=" " alt="" coords="5,169,180,196"/>
 <area shape="rect" title=" " alt="" coords="174,244,243,271"/>
@@ -146,8 +148,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory&lt; Space, Time, DispersalPolicy &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for population history. Encpasulates backward migration logic.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquetzal_1_1demography_1_1BaseHistory.html">quetzal::demography::BaseHistory&lt; Space, DispersalPolicy &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for simulating and recording spatial population history. It encpasulates backward migration logic. It makes use of the CRTP design pattern, meaning that this class has to be specialized to define <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">History</a> classes offering customized behaviors, like details of the demograhic algorithms (mass_based or individual_based) or storage aspects.  <a href="classquetzal_1_1demography_1_1BaseHistory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

@@ -248,44 +248,45 @@ $(document).ready(function(){initNavTree('DiscreteLandscape_8h_source.html','');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> m_quantities.cbegin()-&gt;second.reproject_to_centroid(c);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a0f3ea564667c8ce0c54fc3c44ad16bad">  229</a></span>&#160;    std::vector&lt;coord_type&gt; <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a0f3ea564667c8ce0c54fc3c44ad16bad">direct_neighbors</a>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> <span class="keyword">const</span>&amp; x0)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        assert(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x0));</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">auto</span> res = <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a77bef36bfa68983914760e63d8e28e7d">resolution</a>();</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        std::vector&lt;coord_type&gt; v;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x1(x0);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        x1.lon() += res.lon();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x1))</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x1));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x2(x0);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        x2.lat() += res.lat();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x2))</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x2));</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x3(x0);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        x3.lon() -= res.lon();</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x3))</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x3));</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x4(x0);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        x4.lat() -= res.lat();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x4))</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x4));</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        assert(v.size() &gt;= 2);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        assert(v.size() &lt;= 4);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">return</span> v;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;} <span class="comment">// geography</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} <span class="comment">// quetzal</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a16c63f1469c535c66b1a86f83a0ea622">  229</a></span>&#160;    std::vector&lt;coord_type&gt; <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a16c63f1469c535c66b1a86f83a0ea622">direct_neighbors</a>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        assert(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x));</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        x = <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keyword">auto</span> res = <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a77bef36bfa68983914760e63d8e28e7d">resolution</a>();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        std::vector&lt;coord_type&gt; v;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x1(x);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        x1.lon() += res.lon();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x1))</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x1));</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x2(x);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        x2.lat() += res.lat();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x2))</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x2));</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x3(x);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        x3.lon() -= res.lon();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x3))</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x3));</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a">coord_type</a> x4(x);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        x4.lat() -= res.lat();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#aab14eed2715f5228def361e647a9ae0b">is_in_spatial_extent</a>(x4))</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            v.push_back(<a class="code" href="classquetzal_1_1geography_1_1DiscreteLandscape.html#afc48b0345d80fc266310133504bca884">reproject_to_centroid</a>(x4));</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        assert(v.size() &gt;= 2);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        assert(v.size() &lt;= 4);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordflow">return</span> v;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;};</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} <span class="comment">// geography</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;} <span class="comment">// quetzal</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a9cdefea47da6fc36bbccc7c26c3764de"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a9cdefea47da6fc36bbccc7c26c3764de">quetzal::geography::DiscreteLandscape::origin</a></div><div class="ttdeci">const coord_type &amp; origin() const</div><div class="ttdoc">Retrieves the geographic coordinate of the top left corner of the landscape.</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:183</div></div>
@@ -307,12 +308,12 @@ $(document).ready(function(){initNavTree('DiscreteLandscape_8h_source.html','');
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a48a76c171637c738f1d3df8f87dbf1db"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a48a76c171637c738f1d3df8f87dbf1db">quetzal::geography::DiscreteLandscape::export_to_shapefile</a></div><div class="ttdeci">void export_to_shapefile(std::vector&lt; coord_type &gt; points, std::string const &amp;filename) const</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:83</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a8858d75bafb293f958a206dc6e657563"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a8858d75bafb293f958a206dc6e657563">quetzal::geography::DiscreteLandscape::export_to_geotiff</a></div><div class="ttdeci">void export_to_geotiff(F f, time_type const &amp;t1, time_type const &amp;t2, G g, std::string const &amp;filename) const</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:75</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html">quetzal::geography::DiscreteLandscape</a></div><div class="ttdoc">Discretized representation of a landscape and its ecological quantities through time and space.</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:41</div></div>
-<div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a0f3ea564667c8ce0c54fc3c44ad16bad"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a0f3ea564667c8ce0c54fc3c44ad16bad">quetzal::geography::DiscreteLandscape::direct_neighbors</a></div><div class="ttdeci">std::vector&lt; coord_type &gt; direct_neighbors(coord_type const &amp;x0) const</div><div class="ttdoc">Get the four neighbors of a cell - or less if on the border of the grid.</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:229</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1EnvironmentalQuantity_html_a06fb8a24aba3823be38864b03930be51"><div class="ttname"><a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html#a06fb8a24aba3823be38864b03930be51">quetzal::geography::EnvironmentalQuantity::decimal_degree</a></div><div class="ttdeci">typename GeographicCoordinates::decimal_degree decimal_degree</div><div class="ttdef"><b>Definition:</b> EnvironmentalQuantity.h:51</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a3a5153aa6a67bd390c1fe986030c0afc"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a3a5153aa6a67bd390c1fe986030c0afc">quetzal::geography::DiscreteLandscape::time_type</a></div><div class="ttdeci">Time time_type</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:55</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_ac8409e3905b9b3ed18bf7f1abf7a1650"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#ac8409e3905b9b3ed18bf7f1abf7a1650">quetzal::geography::DiscreteLandscape::DiscreteLandscape</a></div><div class="ttdeci">DiscreteLandscape(std::map&lt; key_type, std::string &gt; const &amp;files, std::set&lt; Time &gt; const &amp;times)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:100</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a51dac772692d0a0acf9e6418023cd25e"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a51dac772692d0a0acf9e6418023cd25e">quetzal::geography::DiscreteLandscape::quantities_nbr</a></div><div class="ttdeci">auto quantities_nbr() const</div><div class="ttdoc">Retrieves the number of ecological quantities.</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:139</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1EnvironmentalQuantity_html"><div class="ttname"><a href="classquetzal_1_1geography_1_1EnvironmentalQuantity.html">quetzal::geography::EnvironmentalQuantity</a></div><div class="ttdoc">Discretized representation of an ecological quantity that varies in space and time.</div><div class="ttdef"><b>Definition:</b> EnvironmentalQuantity.h:38</div></div>
+<div class="ttc" id="aclassquetzal_1_1geography_1_1DiscreteLandscape_html_a16c63f1469c535c66b1a86f83a0ea622"><div class="ttname"><a href="classquetzal_1_1geography_1_1DiscreteLandscape.html#a16c63f1469c535c66b1a86f83a0ea622">quetzal::geography::DiscreteLandscape::direct_neighbors</a></div><div class="ttdeci">std::vector&lt; coord_type &gt; direct_neighbors(coord_type x) const</div><div class="ttdoc">Get the four neighbors of a cell - or less if on the border of the grid.</div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:229</div></div>
 <div class="ttc" id="aclassquetzal_1_1geography_1_1Extent_html"><div class="ttname"><a href="classquetzal_1_1geography_1_1Extent.html">quetzal::geography::Extent&lt; decimal_degree &gt;</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

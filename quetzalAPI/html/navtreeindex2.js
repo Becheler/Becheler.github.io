@@ -239,15 +239,15 @@ var NAVTREEINDEX2 =
 "expressive_8h.html":[3,0,0,1,0,12],
 "expressive_8h_source.html":[3,0,0,1,0,12],
 "files.html":[3,0],
-"functions.html":[2,3,0,0],
 "functions.html":[2,3,0],
+"functions.html":[2,3,0,0],
 "functions_a.html":[2,3,0,1],
 "functions_b.html":[2,3,0,2],
 "functions_c.html":[2,3,0,3],
 "functions_d.html":[2,3,0,4],
 "functions_e.html":[2,3,0,5],
 "functions_f.html":[2,3,0,6],
-"functions_func.html":[2,3,1,0],
 "functions_func.html":[2,3,1],
+"functions_func.html":[2,3,1,0],
 "functions_func_b.html":[2,3,1,1]
 };

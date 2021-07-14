@@ -1,15 +1,10 @@
-This section of the \href{../../../pages/quetzal/home}{\texttt{ Quetzal website}} is meant for C++ developers who want to include the library in their own code project.
-
-Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hypertarget{index_autotoc_md1}{}\doxysection{Mass based simulation with migration towards neighbors}\label{index_autotoc_md1}
+This section of the \href{../../../pages/quetzal/home}{\texttt{ Quetzal website}} is meant for C++ developers who want to include the library in their own code project. You can find on this page snippets of code that illustrate the use of Quetzal A\+PI.\hypertarget{index_autotoc_md1}{}\doxysection{Mass based simulation with migration towards neighbors}\label{index_autotoc_md1}
 
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{quetzal_8h}{quetzal/quetzal.h}}"}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <boost/math/special\_functions/binomial.hpp>} \textcolor{comment}{// binomial coefficient}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <random>} \textcolor{comment}{// rng}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <fstream>}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <algorithm>}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <cassert>}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <vector>}}
 \DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{// Namespace shortnames}}
@@ -24,6 +19,7 @@ Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hyper
 \DoxyCodeLine{  \textcolor{comment}{// Initalize random number generator}}
 \DoxyCodeLine{  std::random\_device rd;}
 \DoxyCodeLine{  std::mt19937 gen(rd());}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /******************************}}
 \DoxyCodeLine{\textcolor{comment}{  * Geospatial dataset}}
 \DoxyCodeLine{\textcolor{comment}{  *****************************/}}
@@ -145,12 +141,9 @@ Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hyper
 
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{quetzal_8h}{quetzal/quetzal.h}}"}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <boost/math/special\_functions/binomial.hpp>} \textcolor{comment}{// binomial coefficient}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <random>} \textcolor{comment}{// rng}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <fstream>}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <algorithm>}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include <cassert>}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <vector>}}
 \DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{// Namespace shortnames}}
@@ -162,6 +155,10 @@ Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hyper
 \DoxyCodeLine{\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}* argv[])}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"0 ... Reading "} << argc << \textcolor{stringliteral}{" input parameters"} << std::endl;}
+\DoxyCodeLine{  \textcolor{comment}{// Initalize RNG}}
+\DoxyCodeLine{  std::random\_device rd;}
+\DoxyCodeLine{  std::mt19937 gen(rd());}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /******************************}}
 \DoxyCodeLine{\textcolor{comment}{   * Geospatial dataset}}
 \DoxyCodeLine{\textcolor{comment}{   *****************************/}}
@@ -170,10 +167,12 @@ Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hyper
 \DoxyCodeLine{  \textcolor{keyword}{using} landscape\_type = geo::DiscreteLandscape<std::string,time\_type>;}
 \DoxyCodeLine{  \textcolor{keyword}{using} coord\_type = landscape\_type::coord\_type;}
 \DoxyCodeLine{  landscape\_type env( \{\{\textcolor{stringliteral}{"temp"}, argv[1]\}\},   \{time\_type(0)\} );}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /******************************}}
 \DoxyCodeLine{\textcolor{comment}{   * Simulator configuration}}
 \DoxyCodeLine{\textcolor{comment}{   *****************************/}}
 \DoxyCodeLine{   std::cout << \textcolor{stringliteral}{"2 ... Initializing spatial coalescence simulator"} << std::endl;}
+\DoxyCodeLine{   \textcolor{comment}{// Declaring simulation policies (policy-\/based design)}}
 \DoxyCodeLine{  \textcolor{keyword}{using} demographic\_policy = \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based}{quetzal::demography::dispersal\_policy::individual\_based}};}
 \DoxyCodeLine{  \textcolor{keyword}{using} coalescence\_policy = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1newick__with__distance__to__parent}{quetzal::coalescence::newick\_with\_distance\_to\_parent<coord\_type, time\_type>}};}
 \DoxyCodeLine{  \textcolor{keyword}{using} simulator\_type = \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal::ForwardBackwardSpatiallyExplicit<coord\_type, demographic\_policy, coalescence\_policy>}};}
@@ -189,8 +188,7 @@ Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hyper
 \DoxyCodeLine{  simulator\_type simulator(x\_0, N\_0, nb\_generations);}
 \DoxyCodeLine{  \textcolor{comment}{// Ancestral wright-\/fisher population size}}
 \DoxyCodeLine{  simulator.ancestral\_Wright\_Fisher\_N(N\_0);}
-\DoxyCodeLine{  \textcolor{comment}{// Sampling size}}
-\DoxyCodeLine{  \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} n = 50;}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /******************************}}
 \DoxyCodeLine{\textcolor{comment}{   * Niche and growth functions}}
 \DoxyCodeLine{\textcolor{comment}{   *****************************/}}
@@ -207,57 +205,68 @@ Here are two snippets of code that can illustrate the use of Quetzal A\+PI\hyper
 \DoxyCodeLine{  \textcolor{keyword}{auto} s = [temp](coord\_type x, time\_type)\{\textcolor{keywordflow}{return} temp(x, 0) >= 0.0 ? temp(x,0) : 0.0 ;\};}
 \DoxyCodeLine{  \textcolor{comment}{// Compose it to get a carrying capacity expression}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} K = \mbox{\hyperlink{namespacequetzal_1_1expressive_acdec2cd4ec959709f7a1891702c4d5dd}{use}}(s)*lit(5);}
-\DoxyCodeLine{  \textcolor{comment}{// Retrieve the population size function}}
+\DoxyCodeLine{  \textcolor{comment}{// Retrieve the population size functor}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} N = simulator.get\_functor\_N();}
 \DoxyCodeLine{  \textcolor{comment}{// Compose everything in a logistic growth expression}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} g = N * ( lit(1) + r ) / ( lit(1) + ( (r * N)/K ));}
+\DoxyCodeLine{  \textcolor{comment}{// Add random fluctuations}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} sim\_children = [g](\textcolor{keyword}{auto}\& gen, coord\_type \textcolor{keyword}{const}\&x, time\_type t)\{}
 \DoxyCodeLine{    std::poisson\_distribution<unsigned int> poisson(g(x,t));}
 \DoxyCodeLine{    \textcolor{keywordflow}{return} poisson(gen);}
 \DoxyCodeLine{  \};}
-\DoxyCodeLine{  \textcolor{comment}{// Initalize RNG}}
-\DoxyCodeLine{  std::random\_device rd;}
-\DoxyCodeLine{  std::mt19937 gen(rd());}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /******************}}
 \DoxyCodeLine{\textcolor{comment}{   * Dispersal}}
 \DoxyCodeLine{\textcolor{comment}{   ******************/}}
 \DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"4 ... Initializing dispersal kernel"} << std::endl;}
 \DoxyCodeLine{  \textcolor{comment}{// Retrieve the demic structure}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} \textcolor{keyword}{const}\& demes = env.geographic\_definition\_space();}
-\DoxyCodeLine{  \textcolor{comment}{// Build a dispersal kernel object}}
+\DoxyCodeLine{  \textcolor{comment}{// Build a gaussian dispersal kernel object: many others available}}
 \DoxyCodeLine{  \textcolor{keyword}{using} \mbox{\hyperlink{structquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian}{quetzal::demography::dispersal\_kernel::Gaussian}};}
 \DoxyCodeLine{  \textcolor{keyword}{auto} f = [](coord\_type \textcolor{keyword}{const}\& x, coord\_type \textcolor{keyword}{const}\& y)}
 \DoxyCodeLine{  \{}
 \DoxyCodeLine{    \textcolor{keywordflow}{return} Gaussian::pdf(x.great\_circle\_distance\_to(y), Gaussian::param\_type(100.0));}
 \DoxyCodeLine{  \};}
 \DoxyCodeLine{  \textcolor{keyword}{auto} dispersal = demographic\_policy::make\_distance\_based\_dispersal(demes, f);}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /**************************}}
 \DoxyCodeLine{\textcolor{comment}{  * Demographic expansion}}
 \DoxyCodeLine{\textcolor{comment}{  **************************/}}
 \DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"5 ... Simulating demographic expansion"} << std::endl;}
 \DoxyCodeLine{  simulator.simulate\_forward\_demography(sim\_children, dispersal, gen);}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /************************************************************}}
 \DoxyCodeLine{\textcolor{comment}{  *  Sample uniformely at random across the distribution area}}
 \DoxyCodeLine{\textcolor{comment}{  ************************************************************/}}
 \DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"6 ... Simulating sampling scheme"} << std::endl;}
+\DoxyCodeLine{  \textcolor{comment}{// Sampling size}}
+\DoxyCodeLine{  \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} n = 50;}
 \DoxyCodeLine{  \textcolor{comment}{// Retrieve the non-\/empty demes at sampling time}}
 \DoxyCodeLine{  std::vector<coord\_type> distribution\_area = simulator.distribution\_area(sampling\_time);}
-\DoxyCodeLine{  \textcolor{comment}{// Retrieve the last expression}}
+\DoxyCodeLine{  \textcolor{comment}{// Declare a functor to get the population size at sampling time}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} last\_N = [N, sampling\_time](coord\_type \textcolor{keyword}{const}\& x)\{\textcolor{keywordflow}{return} N(x, sampling\_time);\};}
+\DoxyCodeLine{  \textcolor{comment}{// Give the required information to the sampling scheme simulator}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} unif\_sampler = \mbox{\hyperlink{namespacequetzal_1_1sampling__scheme_a7bac808766a423246a21e1c3bfd35f6f}{quetzal::sampling\_scheme::make\_unif\_constrained\_sampler}}(distribution\_area, last\_N, n);}
+\DoxyCodeLine{  \textcolor{comment}{// Generate a random sample}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} sample = unif\_sampler(gen);}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /**********************}}
 \DoxyCodeLine{\textcolor{comment}{   *  Data visualization}}
 \DoxyCodeLine{\textcolor{comment}{   **********************/}}
 \DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"7 ... Exporting GIS data for visualization"} << std::endl;}
 \DoxyCodeLine{  std::string N\_filename = \textcolor{stringliteral}{"N.tif"};}
+\DoxyCodeLine{  \textcolor{comment}{// Make it easy to visualize using eg the R package raster}}
 \DoxyCodeLine{  env.export\_to\_geotiff(N, t\_0, sampling\_time, [\&simulator](time\_type \textcolor{keyword}{const}\& t)\{\textcolor{keywordflow}{return} simulator.distribution\_area(t);\}, N\_filename);}
+\DoxyCodeLine{  \textcolor{comment}{// Easy to visualize with eg readOGR R function}}
 \DoxyCodeLine{  env.export\_to\_shapefile(sample, \textcolor{stringliteral}{"sample.shp"});}
+\DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{comment}{  /**********************}}
 \DoxyCodeLine{\textcolor{comment}{   *  Coalescence}}
 \DoxyCodeLine{\textcolor{comment}{   **********************/}}
 \DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"8 ... Begining coalescence"} << std::endl;}
+\DoxyCodeLine{  \textcolor{comment}{// Coalesce sampled gene copies aaaaall the way to the MRCA}}
 \DoxyCodeLine{  \textcolor{keyword}{auto} results = simulator.coalesce\_to\_mrca<>(sample, sampling\_time, gen);}
+\DoxyCodeLine{  \textcolor{comment}{// Output trees newick formulas}}
 \DoxyCodeLine{  std::ofstream file;}
 \DoxyCodeLine{  file.open (\textcolor{stringliteral}{"trees.txt"});}
 \DoxyCodeLine{  file << results;}

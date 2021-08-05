@@ -1,10 +1,8 @@
 ---
 layout: blog
-title: Derek et Léonin Site Map
+title: Derek et Léonin Adventures
 description: software development concepts explained to the biologist.
 ---
-
-# Site Map
 
 <ul class="post-list">
     {% for post in site.posts %}

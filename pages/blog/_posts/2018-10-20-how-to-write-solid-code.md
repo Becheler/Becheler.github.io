@@ -1,29 +1,18 @@
 ---
 layout: blog
 title: How to write SOLID code?
+author: Arnaud Becheler
+featured_image: solid.jpg
 ---
-
-# How to write SOLID code?
-
-## Motivations
-
-### Embrace and face the change, or it will ruin your code anyway.
 
 One promise of [Computational Biology](http://www.cbd.cmu.edu/about-us/what-is-computational-biology/)
 is to develop reliable software of interest for a wide range of biological problems.
+But often in biology, each new problem is a bit different than the previous one, existing code has to evolve for various possible reasons: to adapt to **this new biological material**, to integrate **this new super-fast algorithm**, or to scale performance with **this huuuuge dataset**. It is safe to say that in science, like in industry requirements do and will change at some point.
+As soon as they do, the code has to adapt or it becomes outdated. And S.O.L.I.D. can help!
 
-Often in biology, each new problem is a bit different than the previous one, existing code has to evolve for various possible reasons:
+![lost in translation]({{ site.url }}/draw/solid.jpg)
 
-  * to adapt to **this new biological material**
-  * to account for **this new model assumption**
-  * to integrate **this new super-fast algorithm**
-  * to tackle **this super-modern data format**
-  * to scale performance with **this huge new database**.
-
-It is safe to say that in science, like in industry,
-[there is no such thing as frozen specifications]( {{ site.url }}/pages/under_construction.html); requirements do and will change very soon.
-
-As soon as requirements change, the code has to adapt or it becomes outdated.
+### We need a set of common sense guidelines
 
 Because updating code is (very) costly, changes in code requirements can cause the death of
 code bases that do not allow an easy integration of new and required extensions.
@@ -33,8 +22,6 @@ code bases that do not allow an easy integration of new and required extensions.
 
 Writing robust code has been widely discussed by software engineers in industry
 within the last decades. They have honed in on the principles of writing robust code: **S.O.L.I.D.** As scientists who write code, *we need to be aware of these solutions.*
-
-### We need this set of common sense guidelines
 
 S.O.L.I.D is an acronym for
 **five core principles in object-oriented programming**, largely considered as

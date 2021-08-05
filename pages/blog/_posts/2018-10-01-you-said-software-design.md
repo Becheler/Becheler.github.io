@@ -1,20 +1,16 @@
 ---
 layout: blog
-title: A new blog about coding, seriously?
+title: You said software design?
+featured_image: lost_in_translation.png
+author: Arnaud Becheler
 ---
 
-## A new blog about coding, seriously?
-
-Definitely!
-
+I know what you may be thinking: A new blog about coding, seriously? Yes! Definitely!
 But here you will not learn *just* about coding.
-
 If, like me, you come from an academic background like Ecology and Evolutionary Biology,
 perhaps you were not taught about **design** and **code principles**.
-
 We learned how to write 200-300 lines of code to analyze data, and most of the time
 it is sufficient to our needs.
-
 But not all code projects in science are that short,
 and unfortunately principles that work in developing short scripts do not scale with
 larger projects.

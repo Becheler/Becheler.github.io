@@ -2,6 +2,7 @@
 layout: blog
 title: Derek et Léonin Welcome page
 description: software development concepts explained to the biologist.
+featured_image: /draw/lets_go_exploring.png
 ---
 
 Welcome here random stranger!
@@ -63,4 +64,4 @@ with a new post each week (edit: one post a year would actually be quite not bad
 In addition and in contrast with my accent, my thoughts and opinions change from time to time. Any thoughts and opinions expressed within out-of-date posts may not be the same,
 nor even similar, to those I may hold today. I see you coming, random reader of 2035 visiting a long-forgotten blog ¬¬
 
-This blog disclaimer is subject to change at anytime: don't expect a warning, and yes, you can still [file a complaint]({{site.url}}/draw/public_relations.jpg).
+This blog disclaimer is subject to change at anytime: you can still [ask for all previous versions of the website]({{site.url}}/draw/public_relations.jpg).

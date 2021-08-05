@@ -1,30 +1,24 @@
 ---
 layout: blog
 title: Thoughts about languages
+author: Arnaud becheler
+featured_image: morning_coding.jpg
 ---
 
-# Thoughts about programming languages.
-
-## Why programming has to be so frustrating?
-
-Programming concepts can seem so arid when you come from the biological world!
-
+Why programming has to be so frustrating? Programming concepts can seem so arid when you come from the biological world!
 Technical aspects of programming languages are useless if you do not understand *why* the
 technique has been invented.
-
-The most complex features of modern languages (like for example [move semantics](https://stackoverflow.com/questions/3106110/what-are-move-semantics) in C++)
-obviously do not exist just for the pleasure to complicate our learning curve and
+The most complex, weirdest features of modern languages (like for example [move semantics](https://stackoverflow.com/questions/3106110/what-are-move-semantics) in C++) obviously do not exist just for the pleasure to steepen our learning curve and
 make us suffer (or do they?).
 
 These features exist because they allow us to clearly express in our code core ideas that
 would have been very tricky to express otherwise.
-
 So technique enables us to be **clear** and **precise**. Clear enough to be understood
 by the **human**, precise enough to be understood by the **machine**.
 
-This duality is at the heart of the programming activity.
+This duality is at the heart of the programming activity. And yes, sometimes, it hurts.
 
-![machine versus human languages]({{site.url}}/pictures/machine_vs_human_languages.jpg)
+![Leonin woke up early - for once](/draw/morning_coding.jpg)
 
 ## A more human perspective to programming
 
@@ -76,6 +70,8 @@ of our problems and solutions. Because it requires creativity and skills, it bec
 actually a very pleasant job!
 
 > "Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better." - Donald Knuth
+
+![I'm very serious about it]( /draw/knuth.jpg)
 
 ## Your job? Creating new words!
 

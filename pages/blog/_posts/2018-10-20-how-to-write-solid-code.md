@@ -3,7 +3,6 @@ layout: blog
 title: How to write SOLID code?
 author: Arnaud Becheler
 featured_image: solid.jpg
-excerpt_separator: <!--more-->
 ---
 
 One promise of [Computational Biology](http://www.cbd.cmu.edu/about-us/what-is-computational-biology/)

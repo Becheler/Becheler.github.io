@@ -38,7 +38,9 @@ You can get a more detailed [PDF version](../pdfs/cv.pdf).
 
 ## (Pre)publications
 
-* QUETZAL - an Open Source C++ Template Library for Coalescence. With Camille Coron and Stéphane Dupas.
+* Navascués, M., **Becheler, A.**, Gay, L., Ronfort, J., Loridon, K., & Vitalis, R. (2020). Power and limits of selection genome scans on temporal data from a selfing population. bioRxiv.
+* **Becheler, A.**, & Knowles, L. L. (2020). Occupancy spectrum distribution: application for coalescence simulation with generic mergers. Bioinformatics, 36(10), 3279-3280.
+* **Becheler, A.**, Coron, C., & Dupas, S. (2019). The Quetzal Coalescence template library: A C++ programmers resource for integrating distributional, demographic and coalescent models. Molecular ecology resources, 19(3), 788-793.
 
 **********************************
 

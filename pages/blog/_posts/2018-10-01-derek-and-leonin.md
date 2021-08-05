@@ -3,8 +3,6 @@ layout: blog
 title: A new blog about coding, seriously?
 ---
 
-{{ page.date | date: "%d %B %Y" }}
-
 ## A new blog about coding, seriously?
 
 Definitely!

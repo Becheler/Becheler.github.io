@@ -4,31 +4,34 @@ title: Derek et Léonin Welcome page
 description: software development concepts explained to the biologist.
 ---
 
-Welcome here!
+Welcome here random stranger!
 
 ## Few words about myself
 
-I am a [young biologist](../index.md) wanting to share
-about a core aspect of my research activity: [software design](https://en.wikipedia.org/wiki/Software_design)!
+I am a [young French biologist]({{site.url}}) who wants to share
+about a core aspect of my research activity: **software design**!
+And also (let's face it) have some fun in a quite unprofessional way (*if you are my boss or a recruiter, it's the moment to figure what ALT+LeftArrow does*) and share my silly doodles.
 
-[Software plays an important role in sustaining science](https://rse.ac.uk/about/why-research-needs-rses/),
+![Derek et Léonin - Seriously?]( {{site.url}}/draw/silly.jpg)
+
+So what's for you in there? Well, [software plays an important role in sustaining science](https://rse.ac.uk/about/why-research-needs-rses/),
 and code is often written by the biologist himself. Having a deep understanding of
-a problem surely helps a lot in coding its solution, but it is not straightfoward
-to find *how* to structure the code.
+a grasshopper's life surely helps a lot in coding anything about it, but it can still be a struggle to
+to find *how* to structure the code. Hopefully if I do my job properly (what is not a given)
+you should learn few things here.
 
-I have written code for science for a while, mostly in C++, and it took me
+Or maybe I will juste waste your time, in that case please let us know by [filing a complaint]({{site.url}}/draw/public_relations.jpg).
+
+If you are still with us at this point, just know I have written code for science for a while, mostly in C++, and it took me
 years to figure out how much **software engineering culture**
 could be beneficial to my coding activity!
 
 So I decided to share some of these ideas by writing a website, and to give a
-**gentle introduction** to various software development concepts for the coder biologist.
-
-![Programming can be for ecologists too]({{site.url}}/pictures/coding_nature.jpg)
-
+gentle introduction to various software development concepts for the coder biologist.
 Coding sometimes can be hard and discouraging, so I don't want this blog to be a
-supplementary *arid* and *technical* resource.
-
-I want it to be **biologist-oriented**, **instructive**, but also **funny**, **motivational** and somewhat **unconventional**.
+supplementary arid and technical resource. I want it to be **biologist-oriented**,
+**instructive**, but also **funny**, **motivational** and somewhat **unconventional**.
+Not sure I can make coding *that* fun, but it's worth a try!
 
 ## Derek and Léonin, the grumpy and the genuine
 
@@ -55,12 +58,9 @@ feel free to contact me for feedback!
 This is a personal weblog. The opinions expressed here represent my own and not those of my employer.
 
 As it is developed on my free-time, the posting pace may be slow, but I will try to come
-with a new post each week.
+with a new post each week (edit: one post a year would actually be quite not bad to begin with - oopsie daisy).
 
-In addition, my thoughts and opinions change from time to time: I consider this
-a necessary consequence of having an open mind.
+In addition and in contrast with my accent, my thoughts and opinions change from time to time. Any thoughts and opinions expressed within out-of-date posts may not be the same,
+nor even similar, to those I may hold today. I see you coming, random reader of 2035 visiting a long-forgotten blog ¬¬
 
-Any thoughts and opinions expressed within out-of-date posts may not be the same,
-nor even similar, to those I may hold today.
-
-This blog disclaimer is subject to change at anytime without notifications.
+This blog disclaimer is subject to change at anytime: don't expect a warning, and yes, you can still [file a complaint]({{site.url}}/draw/public_relations.jpg).

@@ -11,7 +11,8 @@ Welcome here random stranger!
 
 I am a [young French biologist]({{site.url}}) who wants to share
 about a core aspect of my research activity: **software design**!
-And also (let's face it) have some fun in a quite unprofessional way (*if you are my boss or a recruiter, it's the moment to figure what ALT+LeftArrow does*) and share my silly doodles.
+This blog also fives me the opportunity to have some fun learning the basics Jekyll/CSS/HTML
+in a non-professional setting and (let's face it) to share my silly doodles.
 
 ![Derek et Léonin - Seriously?]( {{site.url}}/draw/silly.jpg)
 

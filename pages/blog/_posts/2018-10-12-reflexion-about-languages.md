@@ -115,6 +115,8 @@ The urge to follow this principle of forgetting details is not new, and has been
 It's a core programming concept, but not very
 well understood by our research communities, so we will share *a lot* about that!
 
+![I'm very serious about it]( /draw/information_hiding.jpg)
+
 ## Benefits
 
 Thinking about programming languages as I think about natural languages encouraged

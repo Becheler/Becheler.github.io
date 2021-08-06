@@ -6,7 +6,7 @@ featured_image: code_surgery_front_desk_SRP.jpg
 ---
 
 
-The **Single Responsibility Principle** (one of the [5 SOLID principles](2018-10-20-how-to-write-solid-code.md)) states that *each class should do just one thing, but do it well.*
+The **Single Responsibility Principle** (one of the [5 SOLID principles](%post_url blog/2018-10-20-how-to-write-solid-code %)) states that *each class should do just one thing, but do it well.*
 Why so? Well, think about the way our body organs work together! Do we digest stuff
 at the exact same place we process cognition? Of course not! We evolved **differentiated organs** that are specialized for a
 **very small subset of related functions**.

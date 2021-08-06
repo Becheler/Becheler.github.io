@@ -29,8 +29,8 @@ To do *fast decision-making* right,
 it needs to process both *memories and emotional responses* so it can associate adverse
 experiences with negative feelings. Next time you encounter a situation that the amygdala
 considers as vaguely similar to a bad memory (let's say encounter with a tiger) it will fire
-the right decision in no time (that is ~~running of course~~ getting closer to properly document
-their stripe pattern - *you're a biologist after all*).
+the right decision in no time (that is, ~~running of course~~ getting closer to properly document
+their stripe pattern: **you're a biologist after all**).
 
 *Complexity is structured complications*.
 
@@ -41,13 +41,13 @@ the primordial soup of your code, try to follow these steps:
 
 1. **Think bigger! Think smaller! Think at the right level!**
 
-   Identify the responsibility of the piece of code you're working with: what is it supposed to do **conceptually**.
+   Identify the responsibility of the piece of code you're working with: what is it supposed to do **conceptually**?
 
    For example: *I want my class to read a tiger strip from a picture and match it to the tiger ID*.
 
    Don't think about *lists*, *pointers* or *arrays*. These are often **implementation details** that should
    be hidden behind a neat class interface. Find the right level of abstraction you're working with by naming
-   a **tiger strip** a `tiger_strip` in your code, not a `boost::matrix::<double>`!
+   a **tiger strip** a `tiger_strip` in your code, not a `boost::matrix<double>`!
 2. **Code surgery is easier when you operate on clearly delimited programmatic organs.**
 
    Establish a clear separation between what is the responsibility of one class and another.
@@ -55,7 +55,7 @@ the primordial soup of your code, try to follow these steps:
    Sometimes things are more easily said than done. When you look into the details, maybe you will
    discover that *matching a strip to a number* actually involves some pretty badass
    pattern recognition stuff that should become the responsibility of
-   another class.
+   another class!
 3. **A big bad code is better than no code at all**.
 
    Begin somewhere.
@@ -63,7 +63,7 @@ the primordial soup of your code, try to follow these steps:
    Even if you feel bad, or even if you don't know *yet* what your class is supposed to do.
    As long as you are intentional with the **S.R.P.**, it's fine! Even if you feel bad
    writing that awful blob of code at least you know when, where
-   and why you violated the *S.R.P*, what consequences it could have and what would be the solutions.
+   and why you violated the *S.R.P*, what are the possible consequences and what would be the solutions.
 
    But as you progress, don't hesitate to export responsibilities when your class becomes too big:
    a class that does too many things at the same time is impossible to test or debug.
@@ -76,5 +76,6 @@ the primordial soup of your code, try to follow these steps:
    with a scrawny class which only responsibility is to represent ... a boolean.
    That's useless, one class already does that perfectly: the boolean class.
    But at least you will be able to recognize the early stages of misusing the **Single Responsibility Principle**!
+   And that's fine - and fun. Léonin is still figuring this out!
 
 ![Léonin trying his best to apply the Single Responsibility Principle]({{ site.url }}/draw/SRP_application.jpg)

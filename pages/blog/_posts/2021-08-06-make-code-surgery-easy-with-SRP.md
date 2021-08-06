@@ -73,3 +73,5 @@ the primordial soup of your code, try to follow these steps:
    with a scrawny class which only responsibility is to represent ... a boolean.
    That's useless, one class already does that perfectly: the boolean class.
    But at least you will be able to recognize the early stages of misusing the **Single Responsibility Principle**!
+
+![Léonin trying his best to apply the Single Responsibility Principle]({{ site.url }}/draw/SRP_application.jpg)

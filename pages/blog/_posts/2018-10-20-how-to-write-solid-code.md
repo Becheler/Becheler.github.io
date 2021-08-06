@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 5 coding principles to write SOLID code
+title: 5 principles to write SOLID code
 author: Arnaud Becheler
 featured_image: solid.jpg
 ---

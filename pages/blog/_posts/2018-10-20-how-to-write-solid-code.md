@@ -75,6 +75,9 @@ Remark how clear structure makes surgeries surprisingly easy - or at least doabl
 and replace it with a healthy liver in 6 hours. Can you replace this slow and buggy
 piece of code written years ago with a more functional version in the same amount of time?
 
+![Single Responsibility Principle: make code surgery easy]({{ site.url }}/draw/scalpel.jpg)
+
+
 Objects in our code should ideally work in the same way organs do in a healthy body.
 Big organs with clearly separated functions, all in constant interaction. They produce, exchange,
 communicate, sometimes fail, but their structure is still striking and robust.

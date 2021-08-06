@@ -2,7 +2,7 @@
 layout: blog
 title: Make code surgery easy with the Single Responsibility Principle
 author: Arnaud Becheler
-featured_image: code_surgery_front_desk_SRP.jpg
+featured_image: scalpel.jpg
 ---
 
 

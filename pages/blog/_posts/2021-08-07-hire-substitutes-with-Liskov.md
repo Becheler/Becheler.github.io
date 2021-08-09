@@ -21,7 +21,7 @@ player will interact with its teammates in a way that is comparable with its anc
 This is generally enough to make sure that this change of player will not throw
 the entire computer play-field into disarray.
 
-![]({{ site.url }}/draw/LSP_basketball.jpg)
+![Léonin having some fun with the library guys]({{ site.url }}/draw/LSP_basketball.jpg)
 
 ### A bit of history
 
@@ -59,7 +59,7 @@ What Liskov tries to tell us here is that whenever you use inheritance, you shou
 to make sure that **any property of the ancestor class remains true in your derived class**. In other words, if you have a big game coming but that you need to replace your *injured center player*, you better make
 sure the new guy is at least as tall as their predecessor.
 
-![]({{ site.url }}/draw/LSP_knock_knock.jpg)
+![Derek comes with bad news - and a job]({{ site.url }}/draw/LSP_knock_knock.jpg)
 
 If you are familiar with Object-Oriented Programmming, an alternative formulation of the **L.S.P** that
 I find easier to understand is the one that Robert Martin gives:
@@ -84,7 +84,7 @@ is still up to you! And this uncertainty is not always a good thing because it m
 for mistakes, poor decision making and bad design. Well, with the **L.S.P**,
 we don't really have that much space to mess up: its formulations are actually pretty clear.
 
-![]({{ site.url }}/draw/LSP_guys.jpg)
+![Léonin being bullied by the code again]({{ site.url }}/draw/LSP_guys.jpg)
 
 ## An application example
 
@@ -173,6 +173,8 @@ importantly, your code is:
 * more **reusable**: *an external user will be able to reuse your algorithms with their own birds without having to modify the code you wrote*
 
 Thank you Liskov!
+
+![Léonin en route fo the cluster]({{ site.url }}/draw/LSP_tragic_mistake.jpg)
 
 ## Found on Derek and Léonin's bookshelf
 

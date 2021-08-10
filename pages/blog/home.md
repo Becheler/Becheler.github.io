@@ -3,6 +3,7 @@ layout: blog
 title: Derek et Léonin Welcome page
 description: software development concepts explained to the biologist.
 featured_image: /draw/lets_go_exploring.png
+redirect_from: /pages/site_map
 ---
 
 Welcome here random stranger!

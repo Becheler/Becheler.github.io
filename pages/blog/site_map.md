@@ -19,5 +19,6 @@ description: software development concepts explained to the biologist.
 
       {{ post.excerpt }}
       <a class="btn-default" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+      <hr />
     {% endfor %}
   </ul>

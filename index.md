@@ -21,3 +21,6 @@ the required software.
 
 As an illustration, I maintain [Quetzal](pages/quetzal/home), a C++ template library easing the development of
 population genetics simulators based on gene genealogies.
+
+One of my hobbies is drawing, and I ~~try to~~ maintain a [blog](pages/blog/home) using these doodles to 
+communicate about programming concepts.

@@ -18,3 +18,9 @@ mathjax: true
 github: [metadata]
 
 future: true
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

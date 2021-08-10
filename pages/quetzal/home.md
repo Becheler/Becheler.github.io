@@ -3,6 +3,7 @@ layout: quetzal
 title: Quetzal
 tagline: the C++ Coalescence Template Library
 description: home
+redirect_from: pages/quetzal
 ---
 
 ![Quetzal](/draw/logos/quetzal.png)

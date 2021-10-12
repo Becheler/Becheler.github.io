@@ -10,6 +10,8 @@ I am a French Postdoctoral Fellow at the
 [University of Michigan](https://lsa.umich.edu/eeb/people/postdoctoral-fellows/arnaud-becheler.html),
 mainly working on simulation models for population genetics and phylogeography.
 
+---------------------------
+
 I love to collaborate with a bunch of people:
 - **biologists** who come with some data and a broad question about Nature,
 - **mathematicians** who help to precise the question,
@@ -19,8 +21,16 @@ I love to collaborate with a bunch of people:
 My role is gathering information from these communities so I can implement
 the required software.
 
-As an illustration, I maintain [Quetzal](pages/quetzal/home), a C++ template library easing the development of
-population genetics simulators based on gene genealogies.
+-----------------------------
 
-One of my hobbies is drawing, and I ~~try to~~ maintain a [blog](pages/blog/home) using these doodles to 
-communicate about programming concepts.
+As an illustration, I maintain [Quetzal-CoalTL](pages/quetzal/home), a C++ template library easing the development of
+population genetics simulators based on gene genealogies. I also develop
+[Quetzal-EGGs](pages/quetzal-eggs/home), tiny simulators born from the former.
+
+------------------------------
+
+One of my hobbies is drawing, and I ~~try to~~ maintain a blog, [Derek and Léonin](pages/blog/site_map),
+where I use these doodles to communicate about programming concepts and culture.
+Don't judge too hard, it's mostly for fun, after all - and there are so many ways to have fun!
+
+![Léonin, the bog mascot](/draw/under_construction.png)

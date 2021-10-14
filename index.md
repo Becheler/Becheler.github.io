@@ -25,7 +25,7 @@ the required software.
 
 As an illustration, I maintain [Quetzal-CoalTL](pages/quetzal/home), a C++ template library easing the development of
 population genetics simulators based on gene genealogies. I also develop
-[Quetzal-EGGs](pages/quetzal-eggs/home), tiny simulators born from the former.
+[Quetzal-EGGs](pages/quetzal_eggs/home), tiny simulators born from the former.
 
 ------------------------------
 

@@ -1,5 +1,5 @@
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-hydure
 
 title : Arnaud Becheler
 description: PhD
@@ -20,7 +20,4 @@ github: [metadata]
 future: true
 
 plugins:
-  - jekyll-redirect-from
   - jekyll-sitemap
-whitelist:
-  - jekyll-redirect-from

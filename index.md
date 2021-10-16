@@ -2,10 +2,6 @@
 layout: home
 ---
 
-<p align="center">
-  <img src="/pictures/pic_me_eeb.png" alt="pic" width="150">
-</p>
-
 I am a French Postdoctoral Fellow at the
 [University of Michigan](https://lsa.umich.edu/eeb/people/postdoctoral-fellows/arnaud-becheler.html),
 mainly working on simulation models for population genetics and phylogeography.

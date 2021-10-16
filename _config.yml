@@ -1,5 +1,5 @@
 
-theme: jekyll-theme-hydure
+theme: jekyll-theme-cayman
 
 title : Arnaud Becheler
 description: PhD
@@ -21,4 +21,3 @@ future: true
 
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag

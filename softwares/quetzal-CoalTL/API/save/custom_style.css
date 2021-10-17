@@ -1,0 +1,93 @@
+
+div.image img[src="modules.png"]{
+    width:500px;
+}
+
+div.image img[src="quetzal_logo.png"]{
+    width:500px;
+}
+
+div.image img[src="basc_logo.png"]{
+    width:100px;
+}
+
+div.image img[src="github_logo.png"]{
+    width:50px;
+}
+
+a.githublogo{
+  //background: url('../resources/github_logo.png') no-repeat;
+  background-color:#525252;
+  width:500px;
+  min-height:100px;
+}
+
+pre.fragment {
+    border: 1px solid #C4CFE5;
+    background-color: #FBFCFD;
+    padding: 4px 6px;
+    margin: 4px 8px 4px 2px;
+    overflow: auto;
+    word-wrap: break-word;
+    font-size: 9pt;
+    line-height: 125%;
+    font-family: monospace, fixed;
+    font-size: 105%;
+    display:inline
+}
+
+body, table, div, p, dl {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  line-height: 1.5;
+  color: #606c71;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #159957;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+
+#titlearea {
+  overflow:hidden;
+  color: #fff;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+#projectname {
+  color: #F0FFFF;
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+#projectbrief {
+  color: #F0FFFF;
+  opacity: 0.7;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.navpath {
+  overflow: hidden;
+  color: #F0FFFF;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  text-align: right;
+}
+
+.footerinfo {
+  color: #F0FFFF;
+  font-size: small;
+  font-weight: bold;
+  padding-right: 20px;
+}

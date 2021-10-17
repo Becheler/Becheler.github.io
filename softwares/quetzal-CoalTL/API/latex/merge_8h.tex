@@ -1,0 +1,40 @@
+\hypertarget{merge_8h}{}\doxysection{quetzal/include/quetzal/coalescence/algorithms/merge.h File Reference}
+\label{merge_8h}\index{quetzal/include/quetzal/coalescence/algorithms/merge.h@{quetzal/include/quetzal/coalescence/algorithms/merge.h}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for merge.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{merge_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{merge_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacequetzal}{quetzal}}
+\item 
+ \mbox{\hyperlink{namespacequetzal_1_1coalescence}{quetzal\+::coalescence}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class T , class Binary\+Operation , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{namespacequetzal_1_1coalescence_a58ed2931bdac16146460718751d8647c}{quetzal\+::coalescence\+::binary\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, T init, Binary\+Operation op, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges 2 randomly selected elements in a range. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{namespacequetzal_1_1coalescence_a45cd8b6f39a5b41d4667f3bed3fc13fe}{quetzal\+::coalescence\+::binary\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges 2 randomly selected elements in a range, using sum operand between elements. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class T , class Binary\+Operation , class Occupancy\+Spectrum , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{namespacequetzal_1_1coalescence_ac90d96d04f0434b2a32417428b2c86ce}{quetzal\+::coalescence\+::simultaneous\+\_\+multiple\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, T init, Occupancy\+Spectrum const \&sp, Binary\+Operation op, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges randomly selected elements in a range according to an occupancy spectrum. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class Occupancy\+Spectrum , class Generator $>$ }\\Bidirectional\+Iterator \mbox{\hyperlink{namespacequetzal_1_1coalescence_ae87571745b7e6a24a1c75b4e7d8d6467}{quetzal\+::coalescence\+::simultaneous\+\_\+multiple\+\_\+merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, Occupancy\+Spectrum const \&sp, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges randomly selected elements in a range according to an occupancy spectrum. \end{DoxyCompactList}\end{DoxyCompactItemize}

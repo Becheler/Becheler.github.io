@@ -1,0 +1,89 @@
+\hypertarget{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{}\doxysection{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling$<$ X, N $>$ Class Template Reference}
+\label{classquetzal_1_1sampling__scheme_1_1constrained__sampling}\index{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}}
+
+
+Policy to sample coordinates at random in a space.  
+
+
+
+
+{\ttfamily \#include $<$sampling\+\_\+scheme.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_1_1param__type}{param\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e}{coord\+\_\+type}} = X
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename F1 $>$ }\\\mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_aa524dd8352bbd0057487c7497fc785b3}{constrained\+\_\+sampling}} (std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e}{coord\+\_\+type}} $>$ const \&space, F1 f, N pop\+\_\+size, unsigned int n)
+\item 
+\mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_1_1param__type}{param\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_afac905d6ed421333546230dbaabc2d8d}{param}} () const
+\item 
+void \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_af9cff1684dad68e1dd0212cdfe5a1d95}{param}} (unsigned int n)
+\item 
+{\footnotesize template$<$typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a31461f40a6cd6d89b5079d4782878fcd}{operator()}} (Generator \&gen) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename X, typename N$>$\newline
+class quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling$<$ X, N $>$}
+
+Policy to sample coordinates at random in a space. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e}\label{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e}} 
+\index{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename X , typename N $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling}}$<$ X, N $>$\+::\mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e}{coord\+\_\+type}} =  X}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1sampling__scheme_1_1constrained__sampling_aa524dd8352bbd0057487c7497fc785b3}\label{classquetzal_1_1sampling__scheme_1_1constrained__sampling_aa524dd8352bbd0057487c7497fc785b3}} 
+\index{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}!constrained\_sampling@{constrained\_sampling}}
+\index{constrained\_sampling@{constrained\_sampling}!quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}}
+\doxysubsubsection{\texorpdfstring{constrained\_sampling()}{constrained\_sampling()}}
+{\footnotesize\ttfamily template$<$typename X , typename N $>$ \\
+template$<$typename F1 $>$ \\
+\mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling}}$<$ X, N $>$\+::\mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{constrained\+\_\+sampling}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a5f92ab5efb18e14d1c05a331ade8364e}{coord\+\_\+type}} $>$ const \&}]{space,  }\item[{F1}]{f,  }\item[{N}]{pop\+\_\+size,  }\item[{unsigned int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a31461f40a6cd6d89b5079d4782878fcd}\label{classquetzal_1_1sampling__scheme_1_1constrained__sampling_a31461f40a6cd6d89b5079d4782878fcd}} 
+\index{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename X , typename N $>$ \\
+template$<$typename Generator $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling}}$<$ X, N $>$\+::operator() (\begin{DoxyParamCaption}\item[{Generator \&}]{gen }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1sampling__scheme_1_1constrained__sampling_afac905d6ed421333546230dbaabc2d8d}\label{classquetzal_1_1sampling__scheme_1_1constrained__sampling_afac905d6ed421333546230dbaabc2d8d}} 
+\index{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}!param@{param}}
+\index{param@{param}!quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}}
+\doxysubsubsection{\texorpdfstring{param()}{param()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename X , typename N $>$ \\
+\mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling_1_1param__type}{param\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling}}$<$ X, N $>$\+::param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1sampling__scheme_1_1constrained__sampling_af9cff1684dad68e1dd0212cdfe5a1d95}\label{classquetzal_1_1sampling__scheme_1_1constrained__sampling_af9cff1684dad68e1dd0212cdfe5a1d95}} 
+\index{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}!param@{param}}
+\index{param@{param}!quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$@{quetzal::sampling\_scheme::constrained\_sampling$<$ X, N $>$}}
+\doxysubsubsection{\texorpdfstring{param()}{param()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename X , typename N $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1sampling__scheme_1_1constrained__sampling}{quetzal\+::sampling\+\_\+scheme\+::constrained\+\_\+sampling}}$<$ X, N $>$\+::param (\begin{DoxyParamCaption}\item[{unsigned int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/utils/\mbox{\hyperlink{sampling__scheme_8h}{sampling\+\_\+scheme.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\hypertarget{group__geography}{}\doxysection{geography}
+\label{group__geography}\index{geography@{geography}}
+
+
+Template classes for building spatially explicit representations of spatio-\/temporal quantities.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1geography_1_1DiscreteLandscape}{quetzal\+::geography\+::\+Discrete\+Landscape$<$ Key, Time $>$}}
+\begin{DoxyCompactList}\small\item\em Discretized representation of a landscape and its ecological quantities through time and space. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity}{quetzal\+::geography\+::\+Environmental\+Quantity$<$ Time $>$}}
+\begin{DoxyCompactList}\small\item\em Discretized representation of an ecological quantity that varies in space and time. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{quetzal\+::geography\+::\+Extent$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Extent of a raster grid object \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{quetzal\+::geography\+::\+Geographic\+Coordinates}}
+\begin{DoxyCompactList}\small\item\em Geographic coordinates. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{quetzal\+::geography\+::\+Resolution$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Resolution of a spatial grid \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Template classes for building spatially explicit representations of spatio-\/temporal quantities. 
+
+\hypertarget{group__geography_autotoc_md1}{}\doxysubsubsection{Overview}\label{group__geography_autotoc_md1}
+These classes are designed to handle the geographical aspects of the spatially explicit simulations.
+
+\hypertarget{group__geography_autotoc_md2}{}\doxysubsubsection{G\+D\+A\+L core}\label{group__geography_autotoc_md2}
+Key features of \href{http://www.gdal.org/}{\texttt{ G\+D\+AL}} A\+PI are encapsulated in a mordern C++ wrapper class, the \mbox{\hyperlink{classgdalcpp_1_1Dataset}{gdalcpp\+::\+Dataset}} class, allowing to read data from raster files and perform basic operations. Geolocalization syntax is pixel-\/oriented (data are accessed by row and columns indices), which can can be confusing when manipulating spatial landscapes along with dispersal kernels (where distances need to be computed) and spatial genetic samples (where sampling coordinates are typically defined in latitude/longitude).\hypertarget{group__geography_autotoc_md3}{}\doxysubsubsection{Geography-\/friendly interfaces}\label{group__geography_autotoc_md3}
+For better harmonization with other features, Geographic\+Coordinates objects are used in classes interfaces to represent latitude and longitude in decimal degrees and to compute great-\/circle distances in kilometers between two points.\hypertarget{group__geography_autotoc_md4}{}\doxysubsubsection{Representing environmental quantities as functions of space and time.}\label{group__geography_autotoc_md4}
+The Environmental\+Quantity class adds a level of abstraction to \mbox{\hyperlink{classgdalcpp_1_1Dataset}{gdalcpp\+::\+Dataset}}, in order to represent a discrete function of space and time based on geographic coordinates. It allows to retrieve the coordinates of the cells centroids for which the value is defined at all times. This set can be used to represent the demic structure and to perform secured mathematical composition of ecological functions (for example using the expressive module).
+
+For example, the Discrete\+Landscape class template represents an arbitrary number of ecological quantities on a discrete geographic space. It allows to retrieve lightweight function-\/objects representing the underlying ecological quantities (candidates for function composition using expressive module). Similarly to the Environmental\+Quantity class template, it allows to retrieve a geographic definition space suited to modeling\+: the coordinates of the cells centroids for which a value is defined at all times for all quantities. 

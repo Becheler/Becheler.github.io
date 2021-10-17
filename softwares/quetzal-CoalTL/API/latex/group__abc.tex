@@ -1,0 +1,66 @@
+\hypertarget{group__abc}{}\doxysection{abc}
+\label{group__abc}\index{abc@{abc}}
+
+
+Template classes for embedding simulation model objects into an Approximate Bayesian Computation framework.  
+
+
+Template classes for embedding simulation model objects into an Approximate Bayesian Computation framework. 
+
+Defines template classes to embed simulation code into an Approximate Bayesian Computation framework framework. For now, only basics are implemented (Rubin rejection sample, Pritchard rejection sampler, generation of the reference table). Nevertheless, this allows to perform an open-\/ended number of important inference tasks, as the user can for example inject almost any kind of distance or summary statistics in the analysis of the reference table.\hypertarget{group__abc_autotoc_md12}{}\doxysubsubsection{C++ concept \+: Generative\+Model}\label{group__abc_autotoc_md12}
+The abc module relies heavily on the C++ concept of Generative\+Model, which defines the set of constraints that a simulation model object must have to interact with the abc module.
+
+The type {\ttfamily D} satisfies Generative\+Model if
+
+
+\begin{DoxyItemize}
+\item {\ttfamily D} satisfies \href{http://en.cppreference.com/w/cpp/concept/CopyConstructible}{\texttt{ Copy\+Constructible}}
+\item {\ttfamily D} satisfies \href{http://en.cppreference.com/w/cpp/concept/CopyAssignable}{\texttt{ Copy\+Assignable}}
+\end{DoxyItemize}
+
+Given
+
+
+\begin{DoxyItemize}
+\item {\ttfamily T}, the type named by {\ttfamily M\+::return\+\_\+type}
+\item {\ttfamily P}, the type named by {\ttfamily M\+::param\+\_\+type}, which\+:
+\begin{DoxyItemize}
+\item satisfies \href{http://en.cppreference.com/w/cpp/concept/CopyConstructible}{\texttt{ Copy\+Constructible}}
+\item satisfies \href{http://en.cppreference.com/w/cpp/concept/CopyAssignable}{\texttt{ Copy\+Assignable}}
+\item satisfies \href{http://en.cppreference.com/w/cpp/concept/EqualityComparable}{\texttt{ Equality\+Comparable}}
+\item has a constructor taking identical arguments as each of the constructors of {\ttfamily D} that take arguments corresponding to the model parameters.
+\item has a member function with the identical name, type, and semantics, as every member function of {\ttfamily D} that returns a parameter of the model
+\item declares a member typedef {\ttfamily using distribution\+\_\+type = D};
+\end{DoxyItemize}
+\item {\ttfamily d}, a value of type {\ttfamily D}
+\item {\ttfamily x}, a (possibly {\ttfamily const}) value of type {\ttfamily D}
+\item {\ttfamily p}, a (possibly {\ttfamily const}) value of type {\ttfamily P}
+\item {\ttfamily g}, a lvalue of a type satisfying the S\+TL \href{http://en.cppreference.com/w/cpp/concept/UniformRandomBitGenerator}{\texttt{ Uniform\+Random\+Bit\+Generator}} concept
+\end{DoxyItemize}
+
+The following expressions must be valid and have their specified effects \+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Expression }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Notes  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Expression }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Notes  }\\\cline{1-3}
+\endhead
+{\ttfamily D\+::result\+\_\+type} &{\ttfamily T} &the type of the simulated data  \\\cline{1-3}
+{\ttfamily D\+::param\+\_\+type} &{\ttfamily T} &\\\cline{1-3}
+{\ttfamily D()} &&creates a distribution indistinguishable from any other default-\/constructed {\ttfamily D}  \\\cline{1-3}
+{\ttfamily D(p)} &&creates a distribution indistinguishable from {\ttfamily D} constructed directly from the values used to construct {\ttfamily p}  \\\cline{1-3}
+{\ttfamily x.\+param()} &{\ttfamily P} &Returns {\ttfamily p} such that {\ttfamily D(p).param() == p}  \\\cline{1-3}
+{\ttfamily d.\+param(p)} &{\ttfamily void} &Postcondition\+: {\ttfamily d.\+param() == p}  \\\cline{1-3}
+{\ttfamily d(g)} &{\ttfamily T} &The sequence of data returned by successive invocations of this call with the same {\ttfamily g} are randomly distributed according to the distribution parametrized by {\ttfamily d.\+param()}  \\\cline{1-3}
+{\ttfamily d(g,p)} &{\ttfamily T} &The sequence of data returned by successive invocations of this call with the same {\ttfamily g} are randomly distributed according to the distribution parametrized by {\ttfamily p}  \\\cline{1-3}
+\end{longtabu}
+
+
+\begin{DoxyRemark}{Remarks}
+All types satisfying the requirements of the S\+TL \href{http://en.cppreference.com/w/cpp/concept/RandomNumberDistribution}{\texttt{ Random\+Number\+Distribution}} satisfy quetzal Generative\+Model concept. 
+\end{DoxyRemark}

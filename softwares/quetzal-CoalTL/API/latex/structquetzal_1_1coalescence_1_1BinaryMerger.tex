@@ -1,0 +1,101 @@
+\hypertarget{structquetzal_1_1coalescence_1_1BinaryMerger}{}\doxysection{quetzal\+::coalescence\+::Binary\+Merger Struct Reference}
+\label{structquetzal_1_1coalescence_1_1BinaryMerger}\index{quetzal::coalescence::BinaryMerger@{quetzal::coalescence::BinaryMerger}}
+
+
+Discrete generation binary merger.  
+
+
+
+
+{\ttfamily \#include $<$merger.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class T , class Binary\+Operation , class Generator $>$ }\\static auto \mbox{\hyperlink{structquetzal_1_1coalescence_1_1BinaryMerger_a4439fb546d92bb2ae951d5cddd18af94}{merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, unsigned int N, T init, Binary\+Operation const \&binop, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges 2 randomly selected elements in a range. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Bidirectional\+Iterator , class Generator $>$ }\\static auto \mbox{\hyperlink{structquetzal_1_1coalescence_1_1BinaryMerger_a4d16ea0f1e94e5a1733fa82b1880862b}{merge}} (Bidirectional\+Iterator first, Bidirectional\+Iterator last, unsigned int N, Generator \&g)
+\begin{DoxyCompactList}\small\item\em merges 2 randomly selected elements in a range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Discrete generation binary merger. 
+
+Defines a policy class to coalesce two nodes selected uniformely at random in a range, with a probability $1/N$. Its interface makes it exchangeable with other merger policies. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structquetzal_1_1coalescence_1_1BinaryMerger_a4d16ea0f1e94e5a1733fa82b1880862b}\label{structquetzal_1_1coalescence_1_1BinaryMerger_a4d16ea0f1e94e5a1733fa82b1880862b}} 
+\index{quetzal::coalescence::BinaryMerger@{quetzal::coalescence::BinaryMerger}!merge@{merge}}
+\index{merge@{merge}!quetzal::coalescence::BinaryMerger@{quetzal::coalescence::BinaryMerger}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Bidirectional\+Iterator , class Generator $>$ \\
+static auto quetzal\+::coalescence\+::\+Binary\+Merger\+::merge (\begin{DoxyParamCaption}\item[{Bidirectional\+Iterator}]{first,  }\item[{Bidirectional\+Iterator}]{last,  }\item[{unsigned int}]{N,  }\item[{Generator \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+merges 2 randomly selected elements in a range. 
+
+With a probability $1/N$, merges 2 elements selected uniformely at random in a range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & iterator at the begin of the range \\
+\hline
+{\em last} & iterator to the past-\/the-\/end element. \\
+\hline
+{\em N} & the number of individuals in the population \\
+\hline
+{\em g} & a random generator that must meet the requirements of Uniform\+Random\+Bit\+Generator concept. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the element that follows the last element of the nodes remaining after coalescence. The function cannot alter the properties of the object containing the range of elements (i.\+e., it cannot alter the size of an array or a container)\+: signaling the new size of the shortened range is done by returning an iterator to the element that should be considered its new past-\/the-\/end element. The range between first and this iterator includes all the remaining nodes in the sequence.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+the type {\ttfamily T} {\ttfamily Bidirectional\+Iterator\+::value\+\_\+type} must be defined. 
+
+the {\ttfamily T} default constructor is used to set the value at which the parent is initialized. 
+
+With {\ttfamily a} and {\ttfamily b} two objects of type {\ttfamily T}, the expression {\ttfamily a + B} must be defined. 
+
+Bidirectional\+Iterator must meet the requirements of Value\+Swappable and Random\+Access\+Iterator. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{structquetzal_1_1coalescence_1_1BinaryMerger_a4439fb546d92bb2ae951d5cddd18af94}\label{structquetzal_1_1coalescence_1_1BinaryMerger_a4439fb546d92bb2ae951d5cddd18af94}} 
+\index{quetzal::coalescence::BinaryMerger@{quetzal::coalescence::BinaryMerger}!merge@{merge}}
+\index{merge@{merge}!quetzal::coalescence::BinaryMerger@{quetzal::coalescence::BinaryMerger}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Bidirectional\+Iterator , class T , class Binary\+Operation , class Generator $>$ \\
+static auto quetzal\+::coalescence\+::\+Binary\+Merger\+::merge (\begin{DoxyParamCaption}\item[{Bidirectional\+Iterator}]{first,  }\item[{Bidirectional\+Iterator}]{last,  }\item[{unsigned int}]{N,  }\item[{T}]{init,  }\item[{Binary\+Operation const \&}]{binop,  }\item[{Generator \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+merges 2 randomly selected elements in a range. 
+
+With a probability $1/N$, merges 2 elements selected uniformely at random in a range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & iterator at the begin of the range \\
+\hline
+{\em last} & iterator to the past-\/the-\/end element. \\
+\hline
+{\em N} & the number of individuals in the population \\
+\hline
+{\em init} & the value at which parent is initialized \\
+\hline
+{\em op} & binary operation function object that will be applied for branching a child to its parent. The binary operator takes the parent value a (initialized to init) and the value of the child b. The signature of the function should be equivalent to the following\+: {\ttfamily Ret fun(const Type1 \&parent, const Type2 \&child);} \\
+\hline
+{\em g} & a random generator that must meet the requirements of Uniform\+Random\+Bit\+Generator concept. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the element that follows the last element of the nodes remaining after coalescence. The function cannot alter the properties of the object containing the range of elements (i.\+e., it cannot alter the size of an array or a container)\+: signaling the new size of the shortened range is done by returning an iterator to the element that should be considered its new past-\/the-\/end element. The range between first and this iterator includes all the remaining nodes in the sequence.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Bidirectional\+Iterator must meet the requirements of Value\+Swappable and Random\+Access\+Iterator. 
+\end{DoxyRemark}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/coalescence/policies/\mbox{\hyperlink{merger_8h}{merger.\+h}}\end{DoxyCompactItemize}

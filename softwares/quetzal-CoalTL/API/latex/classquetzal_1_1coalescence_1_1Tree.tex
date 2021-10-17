@@ -1,0 +1,411 @@
+\hypertarget{classquetzal_1_1coalescence_1_1Tree}{}\doxysection{quetzal\+::coalescence\+::Tree$<$ CellT $>$ Class Template Reference}
+\label{classquetzal_1_1coalescence_1_1Tree}\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+
+
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} topology where each node contains a data field.  
+
+
+
+
+{\ttfamily \#include $<$Tree.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a54c9fba09d8f4931301cbbedffd6c7fa}{Tree}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_aa0f997d37d0ba2d7ea1fef79a78c3fe7}{Tree}} (const CellT \&\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}{cell}})
+\begin{DoxyCompactList}\small\item\em Constructor with data copy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_ad6b19f57977b4bdf29fa1d0415959086}{Tree}} (CellT \&\&\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}{cell}}) noexcept
+\begin{DoxyCompactList}\small\item\em Constructor with data move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a5dd65e874bb9e179a3ceb1b589723e82}{Tree}} (const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_ad27d6e7ed82bf1835cc2bc9cdbfc378b}{Tree}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a6720bd03532b7adb135b09a7ea8bce73}{Tree}} (CellT \&\&\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}{cell}}, std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$$>$ \&\&children) noexcept
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a4e3f68d644c02491835e807644341c58}{operator=}} (const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_af75c033667bd2d0c27152c4f08397ae5}{operator=}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+const CellT \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}{cell}} () const
+\begin{DoxyCompactList}\small\item\em Cell accessor. \end{DoxyCompactList}\item 
+CellT \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a30c66e1e28aad7c8efdf671eb534e04b}{cell}} ()
+\begin{DoxyCompactList}\small\item\em Cell accessor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a3c36a2ae0b41e21d9ee907650aa7b231}{add\+\_\+child}} (const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&subtree)
+\begin{DoxyCompactList}\small\item\em Add a subtree to the children list of the tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a42f37a531054f5018a42905bfb695e57}{add\+\_\+child}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&\&subtree) noexcept
+\begin{DoxyCompactList}\small\item\em Add a subtree to the children list of the tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a24737de6f1ca4990ece7cdea45066418}{add\+\_\+child}} (CellT \&\&\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}{cell}}) noexcept
+\begin{DoxyCompactList}\small\item\em Add a subtree to the children list of the tree, initialize the tree. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a420f913c0921f7bc2caf4781c6a4732a}{has\+\_\+parent}} () const
+\begin{DoxyCompactList}\small\item\em Checks whether the tree has a parent. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a61af917e264a3b4a2b49bd613570b467}{has\+\_\+children}} () const
+\begin{DoxyCompactList}\small\item\em Checks whether the tree has one or more child. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Unary\+Operation $>$ }\\void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_abd7e506290632b0529b1eac06b018839}{visit\+\_\+cells\+\_\+by\+\_\+pre\+\_\+order\+\_\+\+D\+FS}} (Unary\+Operation op) const
+\begin{DoxyCompactList}\small\item\em Applies a function object to each node encountered in a depth first search algorithm. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Unary\+Operation $>$ }\\void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_ac43c096cd0fde71d8495696239da267a}{visit\+\_\+subtrees\+\_\+by\+\_\+pre\+\_\+order\+\_\+\+D\+FS}} (Unary\+Operation op)
+\item 
+{\footnotesize template$<$typename Op1 , typename Op2 , typename Op3 $>$ }\\void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a3744f84fe9d661e99849a8d2f7af345a}{visit\+\_\+subtrees\+\_\+by\+\_\+generic\+\_\+\+D\+FS}} (Op1 preorder, Op2 inorder, Op3 postorder)
+\item 
+auto \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_af184f998dcffb06e011f4507fe8b7dc8}{parent}} ()
+\item 
+auto const  \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_ab17685d71490471bdd9a8f648c6adbb5}{parent}} () const
+\item 
+unsigned int \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_ab81bdc547a7f2f258a72693e49ada8a0}{nb\+\_\+children}} () const
+\item 
+{\footnotesize template$<$typename Unary\+Operation $>$ }\\void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree_a9ea2cc358aed0bd329d2c170c7039586}{visit\+\_\+leaves\+\_\+cells\+\_\+by\+\_\+\+D\+FS}} (Unary\+Operation op) const
+\begin{DoxyCompactList}\small\item\em Applies a function object to each leave encountered in a depth first search algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class CellT$>$\newline
+class quetzal\+::coalescence\+::\+Tree$<$ Cell\+T $>$}
+
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} topology where each node contains a data field. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em CellT} & Cell type, ie the value of the node. The requirements that are imposed on CellT depend on the actual operations performed on Tree$<$\+Cell\+T$>$. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a54c9fba09d8f4931301cbbedffd6c7fa}\label{classquetzal_1_1coalescence_1_1Tree_a54c9fba09d8f4931301cbbedffd6c7fa}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!Tree@{Tree}}
+\index{Tree@{Tree}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}}
+
+
+
+Default constructor. 
+
+\begin{DoxyRemark}{Remarks}
+CellT must be default constructible 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_aa0f997d37d0ba2d7ea1fef79a78c3fe7}\label{classquetzal_1_1coalescence_1_1Tree_aa0f997d37d0ba2d7ea1fef79a78c3fe7}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!Tree@{Tree}}
+\index{Tree@{Tree}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} (\begin{DoxyParamCaption}\item[{const CellT \&}]{cell }\end{DoxyParamCaption})}
+
+
+
+Constructor with data copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the value of the tree cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+CellT must be copy constructible. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_ad6b19f57977b4bdf29fa1d0415959086}\label{classquetzal_1_1coalescence_1_1Tree_ad6b19f57977b4bdf29fa1d0415959086}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!Tree@{Tree}}
+\index{Tree@{Tree}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} (\begin{DoxyParamCaption}\item[{CellT \&\&}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Constructor with data move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the value of the tree cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+CellT must be move constructible. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a5dd65e874bb9e179a3ceb1b589723e82}\label{classquetzal_1_1coalescence_1_1Tree_a5dd65e874bb9e179a3ceb1b589723e82}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!Tree@{Tree}}
+\index{Tree@{Tree}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the tree to be constructed from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+CellT must be copy constructible. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_ad27d6e7ed82bf1835cc2bc9cdbfc378b}\label{classquetzal_1_1coalescence_1_1Tree_ad27d6e7ed82bf1835cc2bc9cdbfc378b}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!Tree@{Tree}}
+\index{Tree@{Tree}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the tree to be constructed from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+CellT must be move constructible. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a6720bd03532b7adb135b09a7ea8bce73}\label{classquetzal_1_1coalescence_1_1Tree_a6720bd03532b7adb135b09a7ea8bce73}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!Tree@{Tree}}
+\index{Tree@{Tree}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}} (\begin{DoxyParamCaption}\item[{CellT \&\&}]{cell,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$$>$ \&\&}]{children }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the value of the tree cell \\
+\hline
+{\em children} & a vector of subtrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+CellT must be move constructible. 
+\end{DoxyRemark}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a24737de6f1ca4990ece7cdea45066418}\label{classquetzal_1_1coalescence_1_1Tree_a24737de6f1ca4990ece7cdea45066418}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!add\_child@{add\_child}}
+\index{add\_child@{add\_child}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{add\_child()}{add\_child()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::add\+\_\+child (\begin{DoxyParamCaption}\item[{CellT \&\&}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Add a subtree to the children list of the tree, initialize the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the cell value of the subtree to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference on the new subtree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a3c36a2ae0b41e21d9ee907650aa7b231}\label{classquetzal_1_1coalescence_1_1Tree_a3c36a2ae0b41e21d9ee907650aa7b231}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!add\_child@{add\_child}}
+\index{add\_child@{add\_child}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{add\_child()}{add\_child()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::add\+\_\+child (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&}]{subtree }\end{DoxyParamCaption})}
+
+
+
+Add a subtree to the children list of the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subtree} & the subtree to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference on the new subtree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a42f37a531054f5018a42905bfb695e57}\label{classquetzal_1_1coalescence_1_1Tree_a42f37a531054f5018a42905bfb695e57}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!add\_child@{add\_child}}
+\index{add\_child@{add\_child}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{add\_child()}{add\_child()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::add\+\_\+child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&\&}]{subtree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Add a subtree to the children list of the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subtree} & the subtree to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference on the new subtree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a30c66e1e28aad7c8efdf671eb534e04b}\label{classquetzal_1_1coalescence_1_1Tree_a30c66e1e28aad7c8efdf671eb534e04b}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!cell@{cell}}
+\index{cell@{cell}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{cell()}{cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+CellT\& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cell accessor. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the tree cell 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Read-\/and-\/write data access 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}\label{classquetzal_1_1coalescence_1_1Tree_a42d8ad262481416f12254f11e2fd3b70}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!cell@{cell}}
+\index{cell@{cell}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{cell()}{cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+CellT \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::cell}
+
+
+
+Cell accessor. 
+
+\begin{DoxyReturn}{Returns}
+a const-\/reference to the tree cell 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Read-\/only data access 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a61af917e264a3b4a2b49bd613570b467}\label{classquetzal_1_1coalescence_1_1Tree_a61af917e264a3b4a2b49bd613570b467}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!has\_children@{has\_children}}
+\index{has\_children@{has\_children}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{has\_children()}{has\_children()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+bool \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::has\+\_\+children}
+
+
+
+Checks whether the tree has one or more child. 
+
+\begin{DoxyReturn}{Returns}
+Returns false if the tree has no child, else returns true. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a420f913c0921f7bc2caf4781c6a4732a}\label{classquetzal_1_1coalescence_1_1Tree_a420f913c0921f7bc2caf4781c6a4732a}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!has\_parent@{has\_parent}}
+\index{has\_parent@{has\_parent}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{has\_parent()}{has\_parent()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+bool \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::has\+\_\+parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks whether the tree has a parent. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if the tree has a parent, else returns false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_ab81bdc547a7f2f258a72693e49ada8a0}\label{classquetzal_1_1coalescence_1_1Tree_ab81bdc547a7f2f258a72693e49ada8a0}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!nb\_children@{nb\_children}}
+\index{nb\_children@{nb\_children}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{nb\_children()}{nb\_children()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+unsigned int \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::nb\+\_\+children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a4e3f68d644c02491835e807644341c58}\label{classquetzal_1_1coalescence_1_1Tree_a4e3f68d644c02491835e807644341c58}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+\begin{DoxyRemark}{Remarks}
+CellT must be copy constructible and move assignable. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_af75c033667bd2d0c27152c4f08397ae5}\label{classquetzal_1_1coalescence_1_1Tree_af75c033667bd2d0c27152c4f08397ae5}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{Tree}}$<$ CellT $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+\begin{DoxyRemark}{Remarks}
+CellT must be move assignable. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_af184f998dcffb06e011f4507fe8b7dc8}\label{classquetzal_1_1coalescence_1_1Tree_af184f998dcffb06e011f4507fe8b7dc8}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!parent@{parent}}
+\index{parent@{parent}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+auto\& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_ab17685d71490471bdd9a8f648c6adbb5}\label{classquetzal_1_1coalescence_1_1Tree_ab17685d71490471bdd9a8f648c6adbb5}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!parent@{parent}}
+\index{parent@{parent}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+auto const\& \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_abd7e506290632b0529b1eac06b018839}\label{classquetzal_1_1coalescence_1_1Tree_abd7e506290632b0529b1eac06b018839}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!visit\_cells\_by\_pre\_order\_DFS@{visit\_cells\_by\_pre\_order\_DFS}}
+\index{visit\_cells\_by\_pre\_order\_DFS@{visit\_cells\_by\_pre\_order\_DFS}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{visit\_cells\_by\_pre\_order\_DFS()}{visit\_cells\_by\_pre\_order\_DFS()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+template$<$typename Unary\+Operation $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::visit\+\_\+cells\+\_\+by\+\_\+pre\+\_\+order\+\_\+\+D\+FS (\begin{DoxyParamCaption}\item[{Unary\+Operation}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Applies a function object to each node encountered in a depth first search algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & unary operation function object that will be applied to the data member of the tree. The unary operator takes the cell as argument. The signature of the function should be equivalent to the following\+: {\ttfamily void op(const Cell\+T \& cell);}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a9ea2cc358aed0bd329d2c170c7039586}\label{classquetzal_1_1coalescence_1_1Tree_a9ea2cc358aed0bd329d2c170c7039586}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!visit\_leaves\_cells\_by\_DFS@{visit\_leaves\_cells\_by\_DFS}}
+\index{visit\_leaves\_cells\_by\_DFS@{visit\_leaves\_cells\_by\_DFS}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{visit\_leaves\_cells\_by\_DFS()}{visit\_leaves\_cells\_by\_DFS()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+template$<$typename Unary\+Operation $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::visit\+\_\+leaves\+\_\+cells\+\_\+by\+\_\+\+D\+FS (\begin{DoxyParamCaption}\item[{Unary\+Operation}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Applies a function object to each leave encountered in a depth first search algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & unary operation function object that will be applied to the data member of the tree. The unary operator takes the cell as argument. The signature of the function should be equivalent to the following\+: {\ttfamily void op(const Cell\+T \& cell);}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_a3744f84fe9d661e99849a8d2f7af345a}\label{classquetzal_1_1coalescence_1_1Tree_a3744f84fe9d661e99849a8d2f7af345a}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!visit\_subtrees\_by\_generic\_DFS@{visit\_subtrees\_by\_generic\_DFS}}
+\index{visit\_subtrees\_by\_generic\_DFS@{visit\_subtrees\_by\_generic\_DFS}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{visit\_subtrees\_by\_generic\_DFS()}{visit\_subtrees\_by\_generic\_DFS()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+template$<$typename Op1 , typename Op2 , typename Op3 $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::visit\+\_\+subtrees\+\_\+by\+\_\+generic\+\_\+\+D\+FS (\begin{DoxyParamCaption}\item[{Op1}]{preorder,  }\item[{Op2}]{inorder,  }\item[{Op3}]{postorder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1Tree_ac43c096cd0fde71d8495696239da267a}\label{classquetzal_1_1coalescence_1_1Tree_ac43c096cd0fde71d8495696239da267a}} 
+\index{quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}!visit\_subtrees\_by\_pre\_order\_DFS@{visit\_subtrees\_by\_pre\_order\_DFS}}
+\index{visit\_subtrees\_by\_pre\_order\_DFS@{visit\_subtrees\_by\_pre\_order\_DFS}!quetzal::coalescence::Tree$<$ CellT $>$@{quetzal::coalescence::Tree$<$ CellT $>$}}
+\doxysubsubsection{\texorpdfstring{visit\_subtrees\_by\_pre\_order\_DFS()}{visit\_subtrees\_by\_pre\_order\_DFS()}}
+{\footnotesize\ttfamily template$<$class CellT $>$ \\
+template$<$class Unary\+Operation $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ CellT $>$\+::visit\+\_\+subtrees\+\_\+by\+\_\+pre\+\_\+order\+\_\+\+D\+FS (\begin{DoxyParamCaption}\item[{Unary\+Operation}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/coalescence/containers/\mbox{\hyperlink{Tree_8h}{Tree.\+h}}\end{DoxyCompactItemize}

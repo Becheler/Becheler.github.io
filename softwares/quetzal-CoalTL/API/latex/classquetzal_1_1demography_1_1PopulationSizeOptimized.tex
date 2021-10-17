@@ -1,0 +1,164 @@
+\hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized}{}\doxysection{quetzal\+::demography\+::Population\+Size\+Optimized$<$ Space $>$ Class Template Reference}
+\label{classquetzal_1_1demography_1_1PopulationSizeOptimized}\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+
+
+Population size distribution in time and space.  
+
+
+
+
+{\ttfamily \#include $<$Population\+Size\+Optimized.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} = Space
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a577879a22fa3ead417c279e181e148c5}{point\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1utils_1_1PointWithId}{quetzal\+::utils\+::\+Point\+With\+Id}}$<$ Space $>$
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} = unsigned int
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} = double
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a77e961f2263b7d7e5460f47168b42724}{Population\+Size\+Optimized}} (unsigned int nb\+\_\+demes, unsigned int nb\+\_\+generations)
+\begin{DoxyCompactList}\small\item\em Distribution of population size in space and time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a0c23e84926f02b98356a8650e64d97a7}{get}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&t) const
+\begin{DoxyCompactList}\small\item\em Get population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a1b4b4c81680038addde66a15345c347e}{operator()}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&t) const
+\begin{DoxyCompactList}\small\item\em Get population size at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a1bfb78fe9e1c5349d1afad7705726ab0}{operator()}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&t)
+\begin{DoxyCompactList}\small\item\em Population size at deme x at time t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_af4aa6c9b4b498d970b3560a8894d86be}{set}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&t, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} N)
+\begin{DoxyCompactList}\small\item\em Set population size value at deme x at time t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Space$>$\newline
+class quetzal\+::demography\+::\+Population\+Size\+Optimized$<$ Space $>$}
+
+Population size distribution in time and space. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Space} & Demes identifier, usually Geographic\+Coordinates \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} =  Space}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a577879a22fa3ead417c279e181e148c5}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a577879a22fa3ead417c279e181e148c5}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!point\_type@{point\_type}}
+\index{point\_type@{point\_type}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{point\_type}{point\_type}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a577879a22fa3ead417c279e181e148c5}{point\+\_\+type}} =  \mbox{\hyperlink{classquetzal_1_1utils_1_1PointWithId}{quetzal\+::utils\+::\+Point\+With\+Id}}$<$Space$>$}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!time\_type@{time\_type}}
+\index{time\_type@{time\_type}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{time\_type}{time\_type}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} =  unsigned int}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} =  double}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a77e961f2263b7d7e5460f47168b42724}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a77e961f2263b7d7e5460f47168b42724}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!PopulationSizeOptimized@{PopulationSizeOptimized}}
+\index{PopulationSizeOptimized@{PopulationSizeOptimized}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{PopulationSizeOptimized()}{PopulationSizeOptimized()}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{Population\+Size\+Optimized}} (\begin{DoxyParamCaption}\item[{unsigned int}]{nb\+\_\+demes,  }\item[{unsigned int}]{nb\+\_\+generations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Distribution of population size in space and time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of demes in the landscape \\
+\hline
+{\em g} & number of generations simulation is supposed to run \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+pre-\/allocates a std\+::vector$<$double$>$ of n$\ast$g elements 
+\end{DoxyRemark}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a0c23e84926f02b98356a8650e64d97a7}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a0c23e84926f02b98356a8650e64d97a7}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!get@{get}}
+\index{get@{get}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get population size value at deme x at time t. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a1bfb78fe9e1c5349d1afad7705726ab0}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a1bfb78fe9e1c5349d1afad7705726ab0}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}}\& \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Population size at deme x at time t. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the value, initialized with value\+\_\+type default constructor 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+operator allows for more expressive mathematical style in client code 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_a1b4b4c81680038addde66a15345c347e}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_a1b4b4c81680038addde66a15345c347e}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get population size at deme x at time t. 
+
+\begin{DoxyRemark}{Remarks}
+operator allows for more expressive mathematical style in client code 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOptimized_af4aa6c9b4b498d970b3560a8894d86be}\label{classquetzal_1_1demography_1_1PopulationSizeOptimized_af4aa6c9b4b498d970b3560a8894d86be}} 
+\index{quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}!set@{set}}
+\index{set@{set}!quetzal::demography::PopulationSizeOptimized$<$ Space $>$@{quetzal::demography::PopulationSizeOptimized$<$ Space $>$}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized}{quetzal\+::demography\+::\+Population\+Size\+Optimized}}$<$ Space $>$\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a78e454cd1f255453f3eb098d230995cd}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a698b977a6bbb026463465db17fb1bcc0}{time\+\_\+type}} const \&}]{t,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOptimized_a4eb2822907f27e50d08f531cfd726426}{value\+\_\+type}}}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set population size value at deme x at time t. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/demography/\mbox{\hyperlink{PopulationSizeOptimized_8h}{Population\+Size\+Optimized.\+h}}\end{DoxyCompactItemize}

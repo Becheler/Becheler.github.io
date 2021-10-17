@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -r html
+doxygen Doxyfile
+git add --all
+git commit -am "html regenerated"

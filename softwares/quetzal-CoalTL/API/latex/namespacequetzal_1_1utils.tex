@@ -1,0 +1,54 @@
+\hypertarget{namespacequetzal_1_1utils}{}\doxysection{quetzal\+::utils Namespace Reference}
+\label{namespacequetzal_1_1utils}\index{quetzal::utils@{quetzal::utils}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1utils_1_1PointWithId}{Point\+With\+Id}}
+\begin{DoxyCompactList}\small\item\em Class to associate an indexing semantics to a collection of points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename matrix\+\_\+type $>$ }\\auto \mbox{\hyperlink{namespacequetzal_1_1utils_ad6f961b5433185acb088972f429de993}{divide\+\_\+terms\+\_\+by\+\_\+row\+\_\+sum}} (matrix\+\_\+type const \&A)
+\item 
+{\footnotesize template$<$typename T $>$ }\\auto \mbox{\hyperlink{namespacequetzal_1_1utils_a0c28f5f8b56b368e41c61001b30e03c6}{make\+\_\+neighboring\+\_\+cells\+\_\+functor}} (T const \&landscape)
+\item 
+{\footnotesize template$<$typename Point $>$ }\\size\+\_\+t \mbox{\hyperlink{namespacequetzal_1_1utils_af37479c505ea5f039f356beb790e617c}{get\+Index\+Of\+Point\+In\+Vector}} (Point const \&p, std\+::vector$<$ Point $>$ const \&vect)
+\begin{DoxyCompactList}\small\item\em Find the index of a point in a vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacequetzal_1_1utils_ad6f961b5433185acb088972f429de993}\label{namespacequetzal_1_1utils_ad6f961b5433185acb088972f429de993}} 
+\index{quetzal::utils@{quetzal::utils}!divide\_terms\_by\_row\_sum@{divide\_terms\_by\_row\_sum}}
+\index{divide\_terms\_by\_row\_sum@{divide\_terms\_by\_row\_sum}!quetzal::utils@{quetzal::utils}}
+\doxysubsubsection{\texorpdfstring{divide\_terms\_by\_row\_sum()}{divide\_terms\_by\_row\_sum()}}
+{\footnotesize\ttfamily template$<$typename matrix\+\_\+type $>$ \\
+auto quetzal\+::utils\+::divide\+\_\+terms\+\_\+by\+\_\+row\+\_\+sum (\begin{DoxyParamCaption}\item[{matrix\+\_\+type const \&}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacequetzal_1_1utils_af37479c505ea5f039f356beb790e617c}\label{namespacequetzal_1_1utils_af37479c505ea5f039f356beb790e617c}} 
+\index{quetzal::utils@{quetzal::utils}!getIndexOfPointInVector@{getIndexOfPointInVector}}
+\index{getIndexOfPointInVector@{getIndexOfPointInVector}!quetzal::utils@{quetzal::utils}}
+\doxysubsubsection{\texorpdfstring{getIndexOfPointInVector()}{getIndexOfPointInVector()}}
+{\footnotesize\ttfamily template$<$typename Point $>$ \\
+size\+\_\+t quetzal\+::utils\+::get\+Index\+Of\+Point\+In\+Vector (\begin{DoxyParamCaption}\item[{Point const \&}]{p,  }\item[{std\+::vector$<$ Point $>$ const \&}]{vect }\end{DoxyParamCaption})}
+
+
+
+Find the index of a point in a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to find \\
+\hline
+{\em vect} & the vector in points in which to search for the point index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the point in the vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacequetzal_1_1utils_a0c28f5f8b56b368e41c61001b30e03c6}\label{namespacequetzal_1_1utils_a0c28f5f8b56b368e41c61001b30e03c6}} 
+\index{quetzal::utils@{quetzal::utils}!make\_neighboring\_cells\_functor@{make\_neighboring\_cells\_functor}}
+\index{make\_neighboring\_cells\_functor@{make\_neighboring\_cells\_functor}!quetzal::utils@{quetzal::utils}}
+\doxysubsubsection{\texorpdfstring{make\_neighboring\_cells\_functor()}{make\_neighboring\_cells\_functor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto quetzal\+::utils\+::make\+\_\+neighboring\+\_\+cells\+\_\+functor (\begin{DoxyParamCaption}\item[{T const \&}]{landscape }\end{DoxyParamCaption})}
+

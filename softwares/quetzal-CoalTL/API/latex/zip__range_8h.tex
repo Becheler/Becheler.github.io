@@ -1,0 +1,37 @@
+\hypertarget{zip__range_8h}{}\doxysection{quetzal/include/quetzal/fuzzy\+\_\+transfer\+\_\+distance/zip\+\_\+range.h File Reference}
+\label{zip__range_8h}\index{quetzal/include/quetzal/fuzzy\_transfer\_distance/zip\_range.h@{quetzal/include/quetzal/fuzzy\_transfer\_distance/zip\_range.h}}
+{\ttfamily \#include $<$boost/range/iterator\+\_\+range.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/iterator/zip\+\_\+iterator.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/tuple/tuple.\+hpp$>$}\newline
+Include dependency graph for zip\+\_\+range.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{zip__range_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{zip__range_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Conts$>$ }\\auto \mbox{\hyperlink{zip__range_8h_a40f196e99816731d388caa787333b465}{zip\+\_\+range}} (Conts \&... conts) -\/$>$ decltype(boost\+::make\+\_\+iterator\+\_\+range(boost\+::make\+\_\+zip\+\_\+iterator(boost\+::make\+\_\+tuple(conts.\+begin()...)), boost\+::make\+\_\+zip\+\_\+iterator(boost\+::make\+\_\+tuple(conts.\+end()...))))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{zip__range_8h_a40f196e99816731d388caa787333b465}\label{zip__range_8h_a40f196e99816731d388caa787333b465}} 
+\index{zip\_range.h@{zip\_range.h}!zip\_range@{zip\_range}}
+\index{zip\_range@{zip\_range}!zip\_range.h@{zip\_range.h}}
+\doxysubsubsection{\texorpdfstring{zip\_range()}{zip\_range()}}
+{\footnotesize\ttfamily template$<$class... Conts$>$ \\
+auto zip\+\_\+range (\begin{DoxyParamCaption}\item[{Conts \&...}]{conts }\end{DoxyParamCaption}) -\/$>$ decltype(boost\+::make\+\_\+iterator\+\_\+range(
+  boost\+::make\+\_\+zip\+\_\+iterator(boost\+::make\+\_\+tuple(conts.\+begin()...)),
+  boost\+::make\+\_\+zip\+\_\+iterator(boost\+::make\+\_\+tuple(conts.\+end()...))))
+}
+

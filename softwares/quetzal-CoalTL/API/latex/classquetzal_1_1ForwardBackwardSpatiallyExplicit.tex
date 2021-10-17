@@ -1,0 +1,350 @@
+\hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{}\doxysection{quetzal\+::Forward\+Backward\+Spatially\+Explicit$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$ Class Template Reference}
+\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit}\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+
+
+Discrete-\/time coalescence simulator in a discrete spatially explicit landscape.  
+
+
+
+
+{\ttfamily \#include $<$Forward\+Backward\+Spatially\+Explicit.\+h$>$}
+
+
+
+Inheritance diagram for quetzal\+::Forward\+Backward\+Spatially\+Explicit$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classquetzal_1_1ForwardBackwardSpatiallyExplicit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for quetzal\+::Forward\+Backward\+Spatially\+Explicit$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classquetzal_1_1ForwardBackwardSpatiallyExplicit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}} = Space
+\item 
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a49023a7ad04ea771492d4b4a242542cf}{dispersal\+\_\+policy\+\_\+type}} = Dispersal\+Policy
+\item 
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_afddf8e6a67a0f0ff67a375ee751bbbf7}{N\+\_\+value\+\_\+type}} = typename Dispersal\+Policy\+::value\+\_\+type
+\item 
+{\footnotesize template$<$typename tree\+\_\+type $>$ }\\using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ade711a5ad258df0ee0fb58892dc54c8e}{forest\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{quetzal\+::coalescence\+::\+Forest}}$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, tree\+\_\+type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a0e608be7eb18963b13a3bcc94f7d188b}{Forward\+Backward\+Spatially\+Explicit}} (\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}} x\+\_\+0, \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_afddf8e6a67a0f0ff67a375ee751bbbf7}{N\+\_\+value\+\_\+type}} N\+\_\+0, unsigned int nb\+\_\+generations)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a5fd97f90892abc45309cf58061d0642e}{distribution\+\_\+area}} (unsigned int t) const
+\begin{DoxyCompactList}\small\item\em Return demes with non-\/zero population size. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a3117fa748bb54123b8e61980b87d0770}{get\+\_\+functor\+\_\+N}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Read-\/only access to the population size history. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Generator , typename Growth , typename Dispersal $>$ }\\void \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a3a889da50a792b6c3770b07d0f795aaf}{simulate\+\_\+forward\+\_\+demography}} (Growth growth, Dispersal kernel, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Simulate the forward-\/in-\/time demographic expansion. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger , typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a029038b5116813830d6ade3ba1f25dfc}{make\+\_\+forest\+\_\+and\+\_\+coalesce\+\_\+along\+\_\+spatial\+\_\+history}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$ sample, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Initlize a forest based on sample counts then coalesce the forest along the spatial history, then stops and return an incomplete forest. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger , typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8757fa90c8a30526b3a7a0c5f4d326b4}{make\+\_\+forest\+\_\+using\+\_\+sampling\+\_\+time\+\_\+and\+\_\+coalesce\+\_\+along\+\_\+spatial\+\_\+history}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$ sample, unsigned int sampling\+\_\+time, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Initialize a forest based on sample counts, forwarding the sampling time to the forest contructor. Then coalesce the forest along the spatial history, then stops and return a possibly incomplete forest. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger , typename Generator , typename F , typename Tree , typename U $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a477cce31b7836934d4a0989c2f70da3f}{coalesce\+\_\+along\+\_\+spatial\+\_\+history}} (\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ade711a5ad258df0ee0fb58892dc54c8e}{forest\+\_\+type}}$<$ Tree $>$ forest, F binary\+\_\+op, Generator \&gen, U make\+\_\+tree)
+\begin{DoxyCompactList}\small\item\em Coalesce a forest of nodes conditionally to the simulated demography. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8cc2477b8ea447814aa4d12c10d953f3}{coalesce\+\_\+to\+\_\+mrca}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$ sample, unsigned int sampling\+\_\+time, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Create a forest from a sample and coalesce it conditionally to the simulated demography. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a1dc72d956b63581f5f6e73bf8fcbbd2b}{coalesce\+\_\+to\+\_\+mrca}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$ sample, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Create a forest from a sample and coalesce it conditionally to the simulated demography. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Generator , typename F $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ac3344139e767459d2b86c795669c7b36}{coalesce\+\_\+to\+\_\+mrca}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$ sample, unsigned int sampling\+\_\+time, F leaf\+\_\+name, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Create a forest from a sample giving name to tips, then coalesce them conditionally to the simulated demography. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename T , typename F1 , typename F2 , typename Generator $>$ }\\auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ac88578e5f051bb16997e5bcbbd379c6b}{coalesce\+\_\+to\+\_\+mrca}} (std\+::vector$<$ T $>$ sample, unsigned int sampling\+\_\+time, F1 get\+\_\+location, F2 get\+\_\+name, Generator \&gen)
+\begin{DoxyCompactList}\small\item\em Create a forest from a sample then coalesce them conditionally to the simulated demography. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Space, typename Dispersal\+Policy, typename Coalescence\+Policy$>$\newline
+class quetzal\+::\+Forward\+Backward\+Spatially\+Explicit$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$}
+
+Discrete-\/time coalescence simulator in a discrete spatially explicit landscape. 
+
+This simulator consists in a forward demographic simulation of population growth and migration, after what a backward coalescent simulation is performed that traces back the ancestry of a sample of gene copies sampled in one or more populations. Most Recent Common ancestor is not always fond in the time span of the spatial history, so if the chosen Coalescence\+Policy implements the required behavior, ancestry can be simulated in the more distant past using another model like the \mbox{\hyperlink{classquetzal_1_1DiscreteTimeWrightFisher}{Discrete\+Time\+Wright\+Fisher}} model, to find the M\+R\+CA. Details concerning the mergers (binary mergers, simultaneous multiple mergers) can be controlled using the relevant Merger policy class when calling a coalescence function of the class interface. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Space} & deme identifiers (like the populations geographic coordinates) \\
+\hline
+{\em Strategy} & a template class argument (e.\+g. mass\+\_\+based, individual\+\_\+based) that indicates how dispersal should be defined in terms of demographic expansion algorithms. Strategy class implements the details (computing migrations probabilites as a function of the distance for example) whereas template specialization of the internal history\+\_\+type class defines different migration algorithms. \\
+\hline
+{\em Coalescence\+Policy} & a policy class for the demographic expansion. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}} =  Space}
+
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a49023a7ad04ea771492d4b4a242542cf}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a49023a7ad04ea771492d4b4a242542cf}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!dispersal\_policy\_type@{dispersal\_policy\_type}}
+\index{dispersal\_policy\_type@{dispersal\_policy\_type}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{dispersal\_policy\_type}{dispersal\_policy\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a49023a7ad04ea771492d4b4a242542cf}{dispersal\+\_\+policy\+\_\+type}} =  Dispersal\+Policy}
+
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ade711a5ad258df0ee0fb58892dc54c8e}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ade711a5ad258df0ee0fb58892dc54c8e}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!forest\_type@{forest\_type}}
+\index{forest\_type@{forest\_type}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{forest\_type}{forest\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename tree\+\_\+type $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ade711a5ad258df0ee0fb58892dc54c8e}{forest\+\_\+type}} =  \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{quetzal\+::coalescence\+::\+Forest}}$<$\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, tree\+\_\+type$>$}
+
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_afddf8e6a67a0f0ff67a375ee751bbbf7}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_afddf8e6a67a0f0ff67a375ee751bbbf7}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!N\_value\_type@{N\_value\_type}}
+\index{N\_value\_type@{N\_value\_type}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{N\_value\_type}{N\_value\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_afddf8e6a67a0f0ff67a375ee751bbbf7}{N\+\_\+value\+\_\+type}} =  typename Dispersal\+Policy\+::value\+\_\+type}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a0e608be7eb18963b13a3bcc94f7d188b}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a0e608be7eb18963b13a3bcc94f7d188b}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!ForwardBackwardSpatiallyExplicit@{ForwardBackwardSpatiallyExplicit}}
+\index{ForwardBackwardSpatiallyExplicit@{ForwardBackwardSpatiallyExplicit}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{ForwardBackwardSpatiallyExplicit()}{ForwardBackwardSpatiallyExplicit()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{Forward\+Backward\+Spatially\+Explicit}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}}]{x\+\_\+0,  }\item[{\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_afddf8e6a67a0f0ff67a375ee751bbbf7}{N\+\_\+value\+\_\+type}}}]{N\+\_\+0,  }\item[{unsigned int}]{nb\+\_\+generations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+0} & Initialization coordinate. \\
+\hline
+{\em N\+\_\+0} & Population size at intialization \\
+\hline
+{\em nb\+\_\+generations} & number of generations of the spatial process \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a477cce31b7836934d4a0989c2f70da3f}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a477cce31b7836934d4a0989c2f70da3f}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!coalesce\_along\_spatial\_history@{coalesce\_along\_spatial\_history}}
+\index{coalesce\_along\_spatial\_history@{coalesce\_along\_spatial\_history}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coalesce\_along\_spatial\_history()}{coalesce\_along\_spatial\_history()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger , typename Generator , typename F , typename Tree , typename U $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::coalesce\+\_\+along\+\_\+spatial\+\_\+history (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ade711a5ad258df0ee0fb58892dc54c8e}{forest\+\_\+type}}$<$ Tree $>$}]{forest,  }\item[{F}]{binary\+\_\+op,  }\item[{Generator \&}]{gen,  }\item[{U}]{make\+\_\+tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Coalesce a forest of nodes conditionally to the simulated demography. 
+
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a1dc72d956b63581f5f6e73bf8fcbbd2b}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a1dc72d956b63581f5f6e73bf8fcbbd2b}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!coalesce\_to\_mrca@{coalesce\_to\_mrca}}
+\index{coalesce\_to\_mrca@{coalesce\_to\_mrca}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coalesce\_to\_mrca()}{coalesce\_to\_mrca()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Generator $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::coalesce\+\_\+to\+\_\+mrca (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$}]{sample,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a forest from a sample and coalesce it conditionally to the simulated demography. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Merger} & a coalescence merger to use \\
+\hline
+{\em Generator} & a random number Generator\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & the number of gene copies at each location @gen a random number generator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ac3344139e767459d2b86c795669c7b36}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ac3344139e767459d2b86c795669c7b36}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!coalesce\_to\_mrca@{coalesce\_to\_mrca}}
+\index{coalesce\_to\_mrca@{coalesce\_to\_mrca}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coalesce\_to\_mrca()}{coalesce\_to\_mrca()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Generator , typename F $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::coalesce\+\_\+to\+\_\+mrca (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$}]{sample,  }\item[{unsigned int}]{sampling\+\_\+time,  }\item[{F}]{leaf\+\_\+name,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a forest from a sample giving name to tips, then coalesce them conditionally to the simulated demography. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Generator} & a random number Generator \\
+\hline
+{\em F} & a unary operation with signature equivalent to \textquotesingle{}std\+::string fun(coord\+\_\+type const\& x, unsigned int t)\textquotesingle{}\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & the number of gene copies at each location \\
+\hline
+{\em sampling\+\_\+time} & the time of sampling\+\_\+time \\
+\hline
+{\em leaf\+\_\+name} & a functor assigning a name to a tip as a function of its location and of sampling time. @gen a random number generator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8cc2477b8ea447814aa4d12c10d953f3}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8cc2477b8ea447814aa4d12c10d953f3}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!coalesce\_to\_mrca@{coalesce\_to\_mrca}}
+\index{coalesce\_to\_mrca@{coalesce\_to\_mrca}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coalesce\_to\_mrca()}{coalesce\_to\_mrca()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename Generator $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::coalesce\+\_\+to\+\_\+mrca (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$}]{sample,  }\item[{unsigned int}]{sampling\+\_\+time,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a forest from a sample and coalesce it conditionally to the simulated demography. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Merger} & a coalescence merger to use \\
+\hline
+{\em Generator} & a random number Generator\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & the number of gene copies at each location \\
+\hline
+{\em sampling\+\_\+time} & the time of sampling\+\_\+time to build the make\+\_\+forest coalescence policy function @gen a random number generator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ac88578e5f051bb16997e5bcbbd379c6b}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_ac88578e5f051bb16997e5bcbbd379c6b}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!coalesce\_to\_mrca@{coalesce\_to\_mrca}}
+\index{coalesce\_to\_mrca@{coalesce\_to\_mrca}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{coalesce\_to\_mrca()}{coalesce\_to\_mrca()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger  = quetzal\+::coalescence\+::\+Simultaneous\+Multiple\+Merger$<$quetzal\+::coalescence\+::occupancy\+\_\+spectrum\+::on\+\_\+the\+\_\+fly$>$, typename T , typename F1 , typename F2 , typename Generator $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::coalesce\+\_\+to\+\_\+mrca (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$}]{sample,  }\item[{unsigned int}]{sampling\+\_\+time,  }\item[{F1}]{get\+\_\+location,  }\item[{F2}]{get\+\_\+name,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a forest from a sample then coalesce them conditionally to the simulated demography. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type of an individual \\
+\hline
+{\em F1} & a unary operation with signature equivalent to \textquotesingle{}coord\+\_\+type fun(const T\& i)\textquotesingle{} \\
+\hline
+{\em F2} & a unary operation with signature equivalent to \textquotesingle{}std\+::string fun(const T\& i)\textquotesingle{} \\
+\hline
+{\em Generator} & a random number Generator\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & a collection of individuals (gene copies) \\
+\hline
+{\em sampling\+\_\+time} & the time of sampling\+\_\+time \\
+\hline
+{\em get\+\_\+location} & a unary operation taking a sampled individual of type T as an argument and returning its geographic location \\
+\hline
+{\em get\+\_\+name} & a functor taking a sampled individual of type T as an argument and returning an identifier @gen a random number generator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a5fd97f90892abc45309cf58061d0642e}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a5fd97f90892abc45309cf58061d0642e}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!distribution\_area@{distribution\_area}}
+\index{distribution\_area@{distribution\_area}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{distribution\_area()}{distribution\_area()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::distribution\+\_\+area (\begin{DoxyParamCaption}\item[{unsigned int}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return demes with non-\/zero population size. 
+
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a3117fa748bb54123b8e61980b87d0770}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a3117fa748bb54123b8e61980b87d0770}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!get\_functor\_N@{get\_functor\_N}}
+\index{get\_functor\_N@{get\_functor\_N}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{get\_functor\_N()}{get\_functor\_N()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::get\+\_\+functor\+\_\+N (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Read-\/only access to the population size history. 
+
+Designed to be used for composing growth expression. \begin{DoxyReturn}{Returns}
+a functor with signature {\ttfamily N\+\_\+value\+\_\+type fun(coord\+\_\+type const\& x, unsigned int t)} giving the population size in deme $x$ at time $t$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a029038b5116813830d6ade3ba1f25dfc}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a029038b5116813830d6ade3ba1f25dfc}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!make\_forest\_and\_coalesce\_along\_spatial\_history@{make\_forest\_and\_coalesce\_along\_spatial\_history}}
+\index{make\_forest\_and\_coalesce\_along\_spatial\_history@{make\_forest\_and\_coalesce\_along\_spatial\_history}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{make\_forest\_and\_coalesce\_along\_spatial\_history()}{make\_forest\_and\_coalesce\_along\_spatial\_history()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger , typename Generator $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::make\+\_\+forest\+\_\+and\+\_\+coalesce\+\_\+along\+\_\+spatial\+\_\+history (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$}]{sample,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initlize a forest based on sample counts then coalesce the forest along the spatial history, then stops and return an incomplete forest. 
+
+\begin{DoxyReturn}{Returns}
+A possibly incompletely coalesced forest. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8757fa90c8a30526b3a7a0c5f4d326b4}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a8757fa90c8a30526b3a7a0c5f4d326b4}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!make\_forest\_using\_sampling\_time\_and\_coalesce\_along\_spatial\_history@{make\_forest\_using\_sampling\_time\_and\_coalesce\_along\_spatial\_history}}
+\index{make\_forest\_using\_sampling\_time\_and\_coalesce\_along\_spatial\_history@{make\_forest\_using\_sampling\_time\_and\_coalesce\_along\_spatial\_history}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{make\_forest\_using\_sampling\_time\_and\_coalesce\_along\_spatial\_history()}{make\_forest\_using\_sampling\_time\_and\_coalesce\_along\_spatial\_history()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Merger , typename Generator $>$ \\
+auto \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::make\+\_\+forest\+\_\+using\+\_\+sampling\+\_\+time\+\_\+and\+\_\+coalesce\+\_\+along\+\_\+spatial\+\_\+history (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit_acee99ff569a1ecb73aef0a99a298f77c}{coord\+\_\+type}}, unsigned int $>$}]{sample,  }\item[{unsigned int}]{sampling\+\_\+time,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a forest based on sample counts, forwarding the sampling time to the forest contructor. Then coalesce the forest along the spatial history, then stops and return a possibly incomplete forest. 
+
+\begin{DoxyReturn}{Returns}
+A possibly incompletely coalesced forest. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a3a889da50a792b6c3770b07d0f795aaf}\label{classquetzal_1_1ForwardBackwardSpatiallyExplicit_a3a889da50a792b6c3770b07d0f795aaf}} 
+\index{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}!simulate\_forward\_demography@{simulate\_forward\_demography}}
+\index{simulate\_forward\_demography@{simulate\_forward\_demography}!quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$@{quetzal::ForwardBackwardSpatiallyExplicit$<$ Space, DispersalPolicy, CoalescencePolicy $>$}}
+\doxysubsubsection{\texorpdfstring{simulate\_forward\_demography()}{simulate\_forward\_demography()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Dispersal\+Policy , typename Coalescence\+Policy $>$ \\
+template$<$typename Generator , typename Growth , typename Dispersal $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1ForwardBackwardSpatiallyExplicit}{quetzal\+::\+Forward\+Backward\+Spatially\+Explicit}}$<$ Space, Dispersal\+Policy, Coalescence\+Policy $>$\+::simulate\+\_\+forward\+\_\+demography (\begin{DoxyParamCaption}\item[{Growth}]{growth,  }\item[{Dispersal}]{kernel,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Simulate the forward-\/in-\/time demographic expansion. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Growth} & a growth functor, see param growth for details. \\
+\hline
+{\em Dispersal} & a dispersal kernel, see param kernel for details. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em growth} & a functor simulating $\tilde{N}_{x}^{t}$. The functor can possibly make use of get\+\_\+functor\+\_\+N. The signature of the function should be equivalent to the following\+: {\ttfamily unsigned int sim\+\_\+growth(\+V \&gen, const coord\+\_\+type \&x, unsigned int t);} \\
+\hline
+{\em kernel} & a functor representing the dispersal location kernel that simulates the coordinate of the next location conditionally to the current location $x$. The signature should be equivalent to {\ttfamily coord\+\_\+type kernel(\+V \&gen, const coord\+\_\+type \&x, unsigned int t);} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/simulator/\mbox{\hyperlink{ForwardBackwardSpatiallyExplicit_8h}{Forward\+Backward\+Spatially\+Explicit.\+h}}\end{DoxyCompactItemize}

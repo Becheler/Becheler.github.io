@@ -1,0 +1,101 @@
+\hypertarget{structquetzal_1_1expressive_1_1compose__t}{}\doxysection{quetzal\+::expressive\+::compose\+\_\+t$<$ Outer, Inners $>$ Struct Template Reference}
+\label{structquetzal_1_1expressive_1_1compose__t}\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+
+
+{\ttfamily \#include $<$expressive.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_ad74d907e30b77f6d4be0d1b4693cfbdc}{base\+\_\+t}} = \mbox{\hyperlink{structquetzal_1_1expressive_1_1composite__functor}{composite\+\_\+functor}}$<$ Inners... $>$
+\item 
+using \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}{value\+\_\+type}} = \mbox{\hyperlink{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}{return\+\_\+type}}$<$ Outer $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_ac24a0de1c625441e090f4a9eb3162e09}{compose\+\_\+t}} (Outer \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_af9a0007b564bea86b63b979c739e17f8}{outer}}, Inners... inners)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}{value\+\_\+type}} \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a60f5a7e74bef9873419cb82891991a70}{operator()}} (Args... args) const
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t... Is, typename... Args$>$ }\\constexpr \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}{value\+\_\+type}} \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_ac518ac6f24284ec1a1c9f23889b65560}{impl}} (std\+::index\+\_\+sequence$<$ Is... $>$, Args... args) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t... Is$>$ }\\static constexpr bool \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a0a0993d79c513ef0a891c5af52b143fd}{composable\+\_\+check}} (std\+::index\+\_\+sequence$<$ Is... $>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Outer \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_af9a0007b564bea86b63b979c739e17f8}{outer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_ad74d907e30b77f6d4be0d1b4693cfbdc}\label{structquetzal_1_1expressive_1_1compose__t_ad74d907e30b77f6d4be0d1b4693cfbdc}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!base\_t@{base\_t}}
+\index{base\_t@{base\_t}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{base\_t}{base\_t}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+using \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::\mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_ad74d907e30b77f6d4be0d1b4693cfbdc}{base\+\_\+t}} =  \mbox{\hyperlink{structquetzal_1_1expressive_1_1composite__functor}{composite\+\_\+functor}}$<$Inners...$>$}
+
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}\label{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+using \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::\mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}{value\+\_\+type}} =  \mbox{\hyperlink{namespacequetzal_1_1expressive_a4c1431b2e3b1153daa66d3aebe0e900d}{return\+\_\+type}}$<$Outer$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_ac24a0de1c625441e090f4a9eb3162e09}\label{structquetzal_1_1expressive_1_1compose__t_ac24a0de1c625441e090f4a9eb3162e09}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!compose\_t@{compose\_t}}
+\index{compose\_t@{compose\_t}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{compose\_t()}{compose\_t()}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+constexpr \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::\mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{compose\+\_\+t}} (\begin{DoxyParamCaption}\item[{Outer}]{outer,  }\item[{Inners...}]{inners }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_a0a0993d79c513ef0a891c5af52b143fd}\label{structquetzal_1_1expressive_1_1compose__t_a0a0993d79c513ef0a891c5af52b143fd}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!composable\_check@{composable\_check}}
+\index{composable\_check@{composable\_check}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{composable\_check()}{composable\_check()}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+template$<$std\+::size\+\_\+t... Is$>$ \\
+static constexpr bool \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::composable\+\_\+check (\begin{DoxyParamCaption}\item[{std\+::index\+\_\+sequence$<$ Is... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_ac518ac6f24284ec1a1c9f23889b65560}\label{structquetzal_1_1expressive_1_1compose__t_ac518ac6f24284ec1a1c9f23889b65560}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!impl@{impl}}
+\index{impl@{impl}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{impl()}{impl()}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+template$<$std\+::size\+\_\+t... Is, typename... Args$>$ \\
+constexpr \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}{value\+\_\+type}} \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::impl (\begin{DoxyParamCaption}\item[{std\+::index\+\_\+sequence$<$ Is... $>$}]{,  }\item[{Args...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_a60f5a7e74bef9873419cb82891991a70}\label{structquetzal_1_1expressive_1_1compose__t_a60f5a7e74bef9873419cb82891991a70}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+template$<$typename... Args$>$ \\
+constexpr \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t_a224e08000198153b3df7ef021f3df856}{value\+\_\+type}} \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::operator() (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structquetzal_1_1expressive_1_1compose__t_af9a0007b564bea86b63b979c739e17f8}\label{structquetzal_1_1expressive_1_1compose__t_af9a0007b564bea86b63b979c739e17f8}} 
+\index{quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}!outer@{outer}}
+\index{outer@{outer}!quetzal::expressive::compose\_t$<$ Outer, Inners $>$@{quetzal::expressive::compose\_t$<$ Outer, Inners $>$}}
+\doxysubsubsection{\texorpdfstring{outer}{outer}}
+{\footnotesize\ttfamily template$<$typename Outer , typename... Inners$>$ \\
+Outer \mbox{\hyperlink{structquetzal_1_1expressive_1_1compose__t}{quetzal\+::expressive\+::compose\+\_\+t}}$<$ Outer, Inners $>$\+::outer}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/expressive/\mbox{\hyperlink{expressive_2expressive_8h}{expressive.\+h}}\end{DoxyCompactItemize}

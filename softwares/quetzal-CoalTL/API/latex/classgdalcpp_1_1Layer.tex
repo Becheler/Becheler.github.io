@@ -1,0 +1,92 @@
+\hypertarget{classgdalcpp_1_1Layer}{}\doxysection{gdalcpp\+::Layer Class Reference}
+\label{classgdalcpp_1_1Layer}\index{gdalcpp::Layer@{gdalcpp::Layer}}
+
+
+{\ttfamily \#include $<$gdalcpp.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Layer_a998314f5bdf2d5a832a843204f1bfa03}{Layer}} (\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \&\mbox{\hyperlink{classgdalcpp_1_1Layer_a84e26efba2db1046f74f47878b44075f}{dataset}}, const std\+::string \&layer\+\_\+name, O\+G\+Rwkb\+Geometry\+Type type, const std\+::vector$<$ std\+::string $>$ \&options=\{\})
+\item 
+O\+G\+R\+Layer \& \mbox{\hyperlink{classgdalcpp_1_1Layer_aca69702159bb847d3a09f1fb4b9e3b1e}{get}} ()
+\item 
+const O\+G\+R\+Layer \& \mbox{\hyperlink{classgdalcpp_1_1Layer_aa7421aa9068962f92cc7cd2722832e6a}{get}} () const
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \& \mbox{\hyperlink{classgdalcpp_1_1Layer_a84e26efba2db1046f74f47878b44075f}{dataset}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classgdalcpp_1_1Layer_ab547781e2f9e2b0dc5ebb79c3085fe0b}{name}} () const
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Layer}{Layer}} \& \mbox{\hyperlink{classgdalcpp_1_1Layer_a288267f597db1822c4d2733e98e332a6}{add\+\_\+field}} (const std\+::string \&field\+\_\+name, O\+G\+R\+Field\+Type type, int width, int precision=0)
+\item 
+void \mbox{\hyperlink{classgdalcpp_1_1Layer_aa772b76e80f1ea53a0776cf3e61fa3e1}{create\+\_\+feature}} (O\+G\+R\+Feature $\ast$feature)
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Layer}{Layer}} \& \mbox{\hyperlink{classgdalcpp_1_1Layer_af342168a7ca61c9f4735ad86ab297581}{start\+\_\+transaction}} ()
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Layer}{Layer}} \& \mbox{\hyperlink{classgdalcpp_1_1Layer_ad37b4d1de42ce46b46c227f2f6c247a9}{commit\+\_\+transaction}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_a998314f5bdf2d5a832a843204f1bfa03}\label{classgdalcpp_1_1Layer_a998314f5bdf2d5a832a843204f1bfa03}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!Layer@{Layer}}
+\index{Layer@{Layer}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{Layer()}{Layer()}}
+{\footnotesize\ttfamily gdalcpp\+::\+Layer\+::\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}} \&}]{dataset,  }\item[{const std\+::string \&}]{layer\+\_\+name,  }\item[{O\+G\+Rwkb\+Geometry\+Type}]{type,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_a288267f597db1822c4d2733e98e332a6}\label{classgdalcpp_1_1Layer_a288267f597db1822c4d2733e98e332a6}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!add\_field@{add\_field}}
+\index{add\_field@{add\_field}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{add\_field()}{add\_field()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Layer}{Layer}}\& gdalcpp\+::\+Layer\+::add\+\_\+field (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{field\+\_\+name,  }\item[{O\+G\+R\+Field\+Type}]{type,  }\item[{int}]{width,  }\item[{int}]{precision = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_ad37b4d1de42ce46b46c227f2f6c247a9}\label{classgdalcpp_1_1Layer_ad37b4d1de42ce46b46c227f2f6c247a9}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!commit\_transaction@{commit\_transaction}}
+\index{commit\_transaction@{commit\_transaction}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{commit\_transaction()}{commit\_transaction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Layer}{Layer}}\& gdalcpp\+::\+Layer\+::commit\+\_\+transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_aa772b76e80f1ea53a0776cf3e61fa3e1}\label{classgdalcpp_1_1Layer_aa772b76e80f1ea53a0776cf3e61fa3e1}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!create\_feature@{create\_feature}}
+\index{create\_feature@{create\_feature}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{create\_feature()}{create\_feature()}}
+{\footnotesize\ttfamily void gdalcpp\+::\+Layer\+::create\+\_\+feature (\begin{DoxyParamCaption}\item[{O\+G\+R\+Feature $\ast$}]{feature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_a84e26efba2db1046f74f47878b44075f}\label{classgdalcpp_1_1Layer_a84e26efba2db1046f74f47878b44075f}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!dataset@{dataset}}
+\index{dataset@{dataset}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{dataset()}{dataset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Dataset}{Dataset}}\& gdalcpp\+::\+Layer\+::dataset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_aca69702159bb847d3a09f1fb4b9e3b1e}\label{classgdalcpp_1_1Layer_aca69702159bb847d3a09f1fb4b9e3b1e}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!get@{get}}
+\index{get@{get}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily O\+G\+R\+Layer\& gdalcpp\+::\+Layer\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_aa7421aa9068962f92cc7cd2722832e6a}\label{classgdalcpp_1_1Layer_aa7421aa9068962f92cc7cd2722832e6a}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!get@{get}}
+\index{get@{get}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const O\+G\+R\+Layer\& gdalcpp\+::\+Layer\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_ab547781e2f9e2b0dc5ebb79c3085fe0b}\label{classgdalcpp_1_1Layer_ab547781e2f9e2b0dc5ebb79c3085fe0b}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!name@{name}}
+\index{name@{name}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const char$\ast$ gdalcpp\+::\+Layer\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Layer_af342168a7ca61c9f4735ad86ab297581}\label{classgdalcpp_1_1Layer_af342168a7ca61c9f4735ad86ab297581}} 
+\index{gdalcpp::Layer@{gdalcpp::Layer}!start\_transaction@{start\_transaction}}
+\index{start\_transaction@{start\_transaction}!gdalcpp::Layer@{gdalcpp::Layer}}
+\doxysubsubsection{\texorpdfstring{start\_transaction()}{start\_transaction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Layer}{Layer}}\& gdalcpp\+::\+Layer\+::start\+\_\+transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/geography/\mbox{\hyperlink{gdalcpp_8h}{gdalcpp.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4}{}\doxysection{quetzal\+::demography\+::History$<$ Space, dispersal\+\_\+policy\+::mass\+\_\+based $>$ Class Template Reference}
+\label{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4}\index{quetzal::demography::History$<$ Space, dispersal\_policy::mass\_based $>$@{quetzal::demography::History$<$ Space, dispersal\_policy::mass\_based $>$}}
+
+
+Partial specialization where populations levels are assumed high enough to be considered as divisible masses.  
+
+
+
+
+{\ttfamily \#include $<$History.\+h$>$}
+
+
+
+Inheritance diagram for quetzal\+::demography\+::History$<$ Space, dispersal\+\_\+policy\+::mass\+\_\+based $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for quetzal\+::demography\+::History$<$ Space, dispersal\+\_\+policy\+::mass\+\_\+based $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U , typename V $>$ }\\void \mbox{\hyperlink{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4_a7916ce5bbcd14ac7b573c91ff2019513}{simulate\+\_\+forward}} (T sim\+\_\+growth, U kernel, V \&gen)
+\begin{DoxyCompactList}\small\item\em Simulate forward the demographic history. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Space$>$\newline
+class quetzal\+::demography\+::\+History$<$ Space, dispersal\+\_\+policy\+::mass\+\_\+based $>$}
+
+Partial specialization where populations levels are assumed high enough to be considered as divisible masses. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Space} & Demes identifiers. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4_a7916ce5bbcd14ac7b573c91ff2019513}\label{classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_01_4_a7916ce5bbcd14ac7b573c91ff2019513}} 
+\index{quetzal::demography::History$<$ Space, dispersal\_policy::mass\_based $>$@{quetzal::demography::History$<$ Space, dispersal\_policy::mass\_based $>$}!simulate\_forward@{simulate\_forward}}
+\index{simulate\_forward@{simulate\_forward}!quetzal::demography::History$<$ Space, dispersal\_policy::mass\_based $>$@{quetzal::demography::History$<$ Space, dispersal\_policy::mass\_based $>$}}
+\doxysubsubsection{\texorpdfstring{simulate\_forward()}{simulate\_forward()}}
+{\footnotesize\ttfamily template$<$typename Space $>$ \\
+template$<$typename T , typename U , typename V $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{quetzal\+::demography\+::\+History}}$<$ Space, \mbox{\hyperlink{classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based}{dispersal\+\_\+policy\+::mass\+\_\+based}} $>$\+::simulate\+\_\+forward (\begin{DoxyParamCaption}\item[{T}]{sim\+\_\+growth,  }\item[{U}]{kernel,  }\item[{V \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Simulate forward the demographic history. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & a functor for representing the growth process. \\
+\hline
+{\em U} & a functor for representing the dispersal process. \\
+\hline
+{\em V} & a random number generator.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em sim\+\_\+growth} & a functor simulating $\tilde{N}_{x}^{t}$. The functor can possibly internally use a reference on the population sizes database to represent the time dependency. The signature of the function should be equivalent to the following\+: {\ttfamily unsigned int sim\+\_\+growth(\+V \&gen, const coord\+\_\+type \&x, unsigned int t);}. \\
+\hline
+{\em kernel} & a functor representing the dispersal transition matrix. The signature of the function should be equivalent to {\ttfamily double kernel( const coord\+\_\+type \& x, const coord\+\_\+type \&y);} and the function should return the probability for an individual to disperse from $x$ to $y$ at generation $t$. The expression {\ttfamily kernel.\+arrival\+\_\+state()} must be valid and returns an iterable container of geographic coordinates indicating the transition kernel state space. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/demography/\mbox{\hyperlink{History_8h}{History.\+h}}\end{DoxyCompactItemize}

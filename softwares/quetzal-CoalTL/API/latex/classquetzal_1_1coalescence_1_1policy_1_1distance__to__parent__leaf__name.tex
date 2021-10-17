@@ -1,0 +1,154 @@
+\hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}{}\doxysection{quetzal\+::coalescence\+::policy\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name$<$ Space, Time $>$ Class Template Reference}
+\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}\index{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_1_1cell__type}{cell\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Inner class defining what data type the tree stores. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_1_1treatment}{treatment}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_acc1a5818207ee07535dd921f9ca48a0f}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_acc1a5818207ee07535dd921f9ca48a0f}} 
+using \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_acc1a5818207ee07535dd921f9ca48a0f}{coord\+\_\+type}} = Space
+\begin{DoxyCompactList}\small\item\em Geographic coordinate type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}} 
+using \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}{time\+\_\+type}} = Time
+\begin{DoxyCompactList}\small\item\em Time type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}} 
+using \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}{tree\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Tree}{quetzal\+::coalescence\+::\+Tree}}$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_1_1cell__type}{cell\+\_\+type}} $>$
+\begin{DoxyCompactList}\small\item\em The type used to represent a genealogy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_aaef5f2357495288672a64d43d1d7755b}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_aaef5f2357495288672a64d43d1d7755b}} 
+using \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_aaef5f2357495288672a64d43d1d7755b}{forest\+\_\+type}} = \mbox{\hyperlink{classquetzal_1_1coalescence_1_1Forest}{quetzal\+::coalescence\+::\+Forest}}$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_acc1a5818207ee07535dd921f9ca48a0f}{coord\+\_\+type}}, \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}{tree\+\_\+type}} $>$
+\begin{DoxyCompactList}\small\item\em The type used to represent a spatial forest of genealogies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a39d019f1bbbf06af46b967f62956d39b}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a39d019f1bbbf06af46b967f62956d39b}} 
+void {\bfseries ancestral\+\_\+\+Wright\+\_\+\+Fisher\+\_\+N} (unsigned int value)
+\item 
+{\footnotesize template$<$typename Generator $>$ }\\\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}{tree\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a4caf5c09dab168a91cc2f651f7a857ed}{find\+\_\+mrca}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_aaef5f2357495288672a64d43d1d7755b}{forest\+\_\+type}} const \&forest, \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}{time\+\_\+type}} const \&first\+\_\+time, Generator \&gen) const
+\begin{DoxyCompactList}\small\item\em Coalesce the given forest into a discrete time Wright-\/\+Fisher model. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_add2e8e73ce18cdecccd7cb423a101ab1}{treat}} (\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}{tree\+\_\+type}} \&tree) const
+\begin{DoxyCompactList}\small\item\em Visit the whole tree and builds its Newick formula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename F $>$ }\\static auto \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a6347defda48a40e2ace8ecc868066809}{make\+\_\+forest}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_acc1a5818207ee07535dd921f9ca48a0f}{coord\+\_\+type}}, unsigned int $>$ const \&sample\+\_\+counts, \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}{time\+\_\+type}} const \&sampling\+\_\+time, F get\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Make a forest respecting the policy from a geographic sample. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a90d5b8147ae0e20d361fc9705dbd5976}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a90d5b8147ae0e20d361fc9705dbd5976}} 
+{\footnotesize template$<$typename T , typename F1 , typename F2 $>$ }\\static auto {\bfseries make\+\_\+forest} (std\+::vector$<$ T $>$ sample, \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}{time\+\_\+type}} const \&sampling\+\_\+time, F1 get\+\_\+location, F2 get\+\_\+name)
+\item 
+static auto \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_ad5a7aa8faa1c10da181e97b0105754df}{branch}} ()
+\begin{DoxyCompactList}\small\item\em Get the functor interface required to branch a parent node to a child node. \end{DoxyCompactList}\item 
+static auto \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a783c2fc8162c003f8a531cf8500970dc}{init}} ()
+\begin{DoxyCompactList}\small\item\em Get the functor interface required to initialize a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_ad5a7aa8faa1c10da181e97b0105754df}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_ad5a7aa8faa1c10da181e97b0105754df}} 
+\index{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}!branch@{branch}}
+\index{branch@{branch}!quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsubsection{\texorpdfstring{branch()}{branch()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time $>$ \\
+static auto \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}{quetzal\+::coalescence\+::policy\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name}}$<$ Space, Time $>$\+::branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the functor interface required to branch a parent node to a child node. 
+
+\begin{DoxyReturn}{Returns}
+A functor to forward to quetzal coalescence algorithms. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a4caf5c09dab168a91cc2f651f7a857ed}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a4caf5c09dab168a91cc2f651f7a857ed}} 
+\index{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}!find\_mrca@{find\_mrca}}
+\index{find\_mrca@{find\_mrca}!quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsubsection{\texorpdfstring{find\_mrca()}{find\_mrca()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time $>$ \\
+template$<$typename Generator $>$ \\
+\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}{tree\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}{quetzal\+::coalescence\+::policy\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name}}$<$ Space, Time $>$\+::find\+\_\+mrca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_aaef5f2357495288672a64d43d1d7755b}{forest\+\_\+type}} const \&}]{forest,  }\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}{time\+\_\+type}} const \&}]{first\+\_\+time,  }\item[{Generator \&}]{gen }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Coalesce the given forest into a discrete time Wright-\/\+Fisher model. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Generator} & The type of random generator. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em forest} & The forest to coalesce. \\
+\hline
+{\em first\+\_\+time} & The time at which coalescence begins \\
+\hline
+{\em gen} & The random generator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A single tree with root being the M\+R\+CA. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a783c2fc8162c003f8a531cf8500970dc}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a783c2fc8162c003f8a531cf8500970dc}} 
+\index{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}!init@{init}}
+\index{init@{init}!quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time $>$ \\
+static auto \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}{quetzal\+::coalescence\+::policy\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name}}$<$ Space, Time $>$\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the functor interface required to initialize a node. 
+
+\begin{DoxyReturn}{Returns}
+A functor to forward to quetzal coalescence algorithms. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a6347defda48a40e2ace8ecc868066809}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a6347defda48a40e2ace8ecc868066809}} 
+\index{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}!make\_forest@{make\_forest}}
+\index{make\_forest@{make\_forest}!quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsubsection{\texorpdfstring{make\_forest()}{make\_forest()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time $>$ \\
+template$<$typename F $>$ \\
+static auto \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}{quetzal\+::coalescence\+::policy\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name}}$<$ Space, Time $>$\+::make\+\_\+forest (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_acc1a5818207ee07535dd921f9ca48a0f}{coord\+\_\+type}}, unsigned int $>$ const \&}]{sample\+\_\+counts,  }\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a728bc23dfecd16532f8e063aa4ff6978}{time\+\_\+type}} const \&}]{sampling\+\_\+time,  }\item[{F}]{get\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Make a forest respecting the policy from a geographic sample. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample\+\_\+counts} & A map giving for each deme the number of sampled gene copies \\
+\hline
+{\em sampling\+\_\+time} & At what time the gene copies are sampled. \\
+\hline
+{\em get\+\_\+name} & functor fabricating a name for each tip node and according to two parameters\+: its deme location and the time of sampling. Signature should be equivalent to {\ttfamily std\+::string f(coord\+\_\+type const\& x, time\+\_\+type t)} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A forest compliant with the policy chosen. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_add2e8e73ce18cdecccd7cb423a101ab1}\label{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_add2e8e73ce18cdecccd7cb423a101ab1}} 
+\index{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}!treat@{treat}}
+\index{treat@{treat}!quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$@{quetzal::coalescence::policy::distance\_to\_parent\_leaf\_name$<$ Space, Time $>$}}
+\doxysubsubsection{\texorpdfstring{treat()}{treat()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time $>$ \\
+std\+::string \mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name}{quetzal\+::coalescence\+::policy\+::distance\+\_\+to\+\_\+parent\+\_\+leaf\+\_\+name}}$<$ Space, Time $>$\+::treat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1coalescence_1_1policy_1_1distance__to__parent__leaf__name_a23031b29368f4c7ced31b8c20b6eb233}{tree\+\_\+type}} \&}]{tree }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Visit the whole tree and builds its Newick formula. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree to visit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newick formula of the tree. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/coalescence/policies/distance\+\_\+to\+\_\+parent.\+h\end{DoxyCompactItemize}

@@ -1,8 +1,12 @@
 ---
 layout: post
-title: 5 principles to write SOLID code
-author: Arnaud Becheler
-featured_image: solid.jpg
+title: How write very SOLID code
+img: doodles/solid.jpg
+date: 2018-10-20 13:32:20 +0300
+description: How to write better code # Add post description (optional)
+img: doodles/solid.jpg # Add image post (optional)
+fig-caption: Derek, evil god of programming # Add figcaption (optional)
+tags: [programming, SOLID, biology, doodles, derek&léonin]
 ---
 
 One promise of [Computational Biology](http://www.cbd.cmu.edu/about-us/what-is-computational-biology/)
@@ -13,8 +17,6 @@ to integrate **this new super-fast algorithm**, or to scale performances with **
 It is safe to say that in science, like in industry, requirements do and will change *at some point*.
 But as soon as they do, the code has to adapt or it becomes outdated.
 And S.O.L.I.D. can help you!
-
-![lost in translation]({{ site.url }}/draw/solid.jpg)
 
 ### They are the set of common sense guidelines we need
 

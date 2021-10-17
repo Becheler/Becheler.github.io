@@ -1,8 +1,11 @@
 ---
 layout: post
-title: You said software design?
-featured_image: lost_in_translation.png
-author: Arnaud Becheler
+title: You said software design for ... ecology?
+date: 2018-10-07 13:32:20 +0300
+description: Why do we need to care about software design in Ecology and Evolution # Add post description (optional)
+img: doodles/lost_in_translation.png # Add image post (optional)
+fig-caption: Derek lost in software complexity # Add figcaption (optional)
+tags: [software, design, biology, derek&léonin]
 ---
 
 I know what you may be thinking: A new blog about coding, seriously? Yes! Definitely!
@@ -17,8 +20,6 @@ larger projects.
 
 It raises an important question familiar to software engineers:
 **How to not get lost in thousands of lines of code?**
-
-![lost in translation]({{ site.url }}/draw/lost_in_translation.png)
 
 As methods in Biology become more and more computational, the amount of code
 underlying modern research activity becomes actually *huge*.
@@ -40,7 +41,7 @@ In other words, it can help you avoid your code turning into a scary network of
 interdependent functions: I am of course talking about the well-known
 [spaghetti code syndrome](https://en.wikipedia.org/wiki/Spaghetti_code).
 
-![Leonin in spaghetti code]({{ site.url }}/draw/leonin_in_spaghetti_code.png)
+![Leonin in spaghetti code]({{site.baseurl}}/assets/img/doodles/leonin_in_spaghetti_code.png)
 
 Design was essential for me in building a code base solid enough to be
 extended or reused across multiple projects.
@@ -64,7 +65,7 @@ delete **everything** I had previously coded: thousands of code lines.
 
 Back to square one. That was not my best day.
 
-![this day leonin understood the term rigidity]( {{site.url}}/draw/this_day.png )
+![this day leonin understood the term rigidity]({{site.baseurl}}/assets/img/doodles/this_day.png )
 
 I understood the terms **rigidity** and **code dependency** the hard way!
 
@@ -100,7 +101,7 @@ This is exactly the purpose I want to give to these pages: contribute to bridgin
 this gap by presenting a number of facts and **design principles** that I should have known three
 years ago!
 
-![Leonin broke his code today]({{ site.url}}/draw/i_broke_my_code_today.png)
+![Leonin broke his code today]({{site.baseurl}}/assets/img/doodles/i_broke_my_code_today.png)
 
 ## Two hats, one head
 
@@ -116,4 +117,4 @@ have much fun in animating the speech.
 
 They use to have different views and priorities making their collaboration somewhat... fascinating.
 
-![Derek and Leonin collaborating]( {{site.url}}/draw/derekleonin.png)
+![Derek and Leonin collaborating]({{site.baseurl}}/assets/img/doodles/derekleonin.png)

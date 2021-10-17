@@ -1,11 +1,16 @@
 ---
 layout: post
-title: Thoughts about languages
-author: Arnaud becheler
-featured_image: morning_coding.jpg
+title: Biologists! coding does not have to be so frustrating!
+date: 2018-10-12 13:32:20 +0300
+description: Can we reframe programming as a natural language? # Add post description (optional)
+img: doodles/morning_coding.jpg # Add image post (optional)
+fig-caption: Léonin, god of bad programming # Add figcaption (optional)
+tags: [programming, natural language, fun, biology, doodles, derek&léonin]
 ---
 
-Why programming has to be so frustrating? Programming concepts can seem so arid when you come from the biological world!
+Why are we so often yelling at our compilers?
+
+Programming concepts can seem so arid when you come from the biological world!
 Technical aspects of programming languages are useless if you do not understand *why* the
 technique has been invented.
 The most complex, weirdest features of modern languages (like for example [move semantics](https://stackoverflow.com/questions/3106110/what-are-move-semantics) in C++) obviously do not exist just for the pleasure to steepen our learning curve and
@@ -14,11 +19,9 @@ make us suffer (or do they?).
 These features exist because they allow us to clearly express in our code core ideas that
 would have been very tricky to express otherwise.
 So technique enables us to be **clear** and **precise**. Clear enough to be understood
-by the **human**, precise enough to be understood by the **machine**.
+by the **human**, precise enough to be understood by our poor **machine**.
 
 This duality is at the heart of the programming activity. And yes, sometimes, it hurts.
-
-![Leonin woke up early - for once](/draw/morning_coding.jpg)
 
 ## A more human perspective to programming
 
@@ -43,7 +46,7 @@ from the paradigm switch.
 
 So let me present you coding as a literary, linguistic experience!
 
-![Derek over exagerating a bit]( {{site.url}}/draw/pure_poetry.png)
+![Derek over exagerating a bit]( {{site.baseurl}}/assets/img/doodles/pure_poetry.png){: width="500"}
 
 
 ## Reframing the programming activity
@@ -63,7 +66,7 @@ from natural languages in the sense that we can not pretend to remember all
 the details of our codes, so we **need** to build abstract words we can use
 to better communicate ideas to our pairs.
 
-We will see [which tools programming languages give us to do so]({{site.url }}/pages/under_construction.html).
+We will see [which tools programming languages give us to do so]({{site.baseurl}}/assets/img/doodles//under_construction.html).
 
 By expressing more **human** concepts in our code, we allow a concise description
 of our problems and solutions. Because it requires creativity and skills, it becomes
@@ -71,13 +74,15 @@ actually a very pleasant job!
 
 > "Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better." - Donald Knuth
 
-![I'm very serious about it]( /draw/knuth.jpg)
+![I'm very serious about it]( {{site.baseurl}}/assets/img/doodles/knuth.jpg)
 
 ## Your job? Creating new words!
 
 When you call a function, for example using R:
 
-`my_sample <- rnorm(sample_size, mean, square_deviation)`,
+{% highlight R %}
+my_sample <- rnorm(sample_size, mean, square_deviation)
+{% endhighlight %}
 
 you have to understand that your life has been here facilitated by *someone* who wrote hundreds
 (or thousands) of code lines so you can manipulate comfortably the rather abstract
@@ -115,7 +120,7 @@ The urge to follow this principle of forgetting details is not new, and has been
 It's a core programming concept, but not very
 well understood by our research communities, so we will share *a lot* about that!
 
-![I'm very serious about it]( /draw/information_hiding.jpg)
+![What information arre you hiding in this dark class room?]({{site.baseurl}}/assets/img/doodles/information_hiding.jpg)
 
 ## Benefits
 

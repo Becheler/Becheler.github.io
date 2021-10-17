@@ -1,28 +1,29 @@
-title: Hello, world! I'm Arnaud Becheler
+title: Arnaud Becheler - Personal website
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 permalink: ':title/'
-baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: https://Becheler.github.io # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Arnaud Becheler # add your name
 author-img: arnaud-becheler.png # add your photo
 about-author: A French postdoctoral Researcher always happy to learn about phylogeography and programming! # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
+#social-twitter: # add your Twitter handle
+#social-facebook: # add your Facebook handle
+#social-instagram:
 social-github: Becheler  # add your Github handle
 social-linkedin: linkedin.com/in/arnaud-becheler-246029172 # add your Linkedin handle
 social-email: abechele@umich.edu # add your Email address
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier: "arnaudbecheler" # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-106771332-1 # Google Analytics
 
 # Build Settings
 markdown: kramdown

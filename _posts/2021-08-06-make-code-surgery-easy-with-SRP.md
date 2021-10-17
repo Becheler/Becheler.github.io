@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Make code surgery easy with the Single Responsibility Principle
-author: Arnaud Becheler
-featured_image: scalpel.jpg
+title: Make code surgery easy with the SRP
+date: 2021-08-06 13:32:20 +0300
+description: How to write more modular code # Add post description (optional)
+img: doodles/scalpel.jpg # Add image post (optional)
+fig-caption: A code autopsy # Add figcaption (optional)
+tags: [programming, modular, SOLID, biology, doodles, derek&léonin]
 ---
-
 
 The **Single Responsibility Principle** (the **S** of the 5 [5 S.O.L.I.D. principles]({%post_url 2018-10-20-how-to-write-solid-code %})) states that *each class should do just one thing, but do it well.*
 Why so? Well, think about the way our body organs work together: do we digest stuff
@@ -17,7 +19,7 @@ Surgeons can remove a diseased liver
 and replace it with a healthy liver in 6 hours! Can you replace that old, slow and buggy
 code of yours with a healthier version in the same amount of time?
 
-![Single Responsibility Principle: make code surgery possible]({{ site.url }}/draw/code_surgery_front_desk_SRP.jpg)
+![Single Responsibility Principle: make code surgery possible]({{site.baseurl}}/assets/img/doodles/code_surgery_front_desk_SRP.jpg)
 
 Objects in our code should ideally work in the same way organs do in a healthy body.
 Big organs with clearly separated functions, all in constant interaction. They produce, exchange,
@@ -34,7 +36,7 @@ their stripe pattern: **you're a biologist after all**).
 
 *Complexity is structured complications*.
 
-![Single Responsibility Principle: make code surgery easy]({{ site.url }}/draw/scalpel.jpg)
+![Single Responsibility Principle: make code surgery easy]({{site.baseurl}}/assets/img/doodles/scalpel.jpg)
 
 If you want to see programmatic organs emerge from
 the primordial soup of your code, try to follow these steps:
@@ -79,4 +81,4 @@ the primordial soup of your code, try to follow these steps:
 
    And that's fine - and fun! Léonin is still figuring this out!
 
-![Léonin trying his best to apply the Single Responsibility Principle]({{ site.url }}/draw/SRP_application.jpg)
+![Léonin trying his best to apply the Single Responsibility Principle]({{site.baseurl}}/assets/img/doodles/SRP_application.jpg)

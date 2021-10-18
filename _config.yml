@@ -14,13 +14,13 @@ author-img: arnaud-becheler.png # add your photo
 about-author: A French postdoctoral Researcher, always happy to learn about phylogeography and programming! # add description
 #social-twitter: # add your Twitter handle
 #social-facebook: # add your Facebook handle
-#social-instagram:
+social-instagram: arnaud.becheler
 social-github: Becheler  # add your Github handle
 social-linkedin: linkedin.com/in/arnaud-becheler-246029172 # add your Linkedin handle
 social-email: abechele@umich.edu # add your Email address
 
 # Disqus
-discus-identifier: "arnaudbecheler" # add your discus identifier
+# discus-identifier: "arnaudbecheler" # add your discus identifier
 
 # Tracker
 analytics: UA-106771332-1 # Google Analytics

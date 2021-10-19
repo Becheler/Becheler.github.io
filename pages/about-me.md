@@ -1,20 +1,21 @@
 ---
 layout: post
+title: Presentations and seminars
 ---
 
 ## October 15th, 2021 - BrazWebinar
 
-**Simulating genetic diversity in heterogeneous landscapes: why, how, limits and perspectives**
+*Simulating genetic diversity in heterogeneous landscapes: why, how, limits and perspectives*
 
 [![Arnaud Becheler Brazwebinar](https://img.youtube.com/vi/o75wNVkUbHY/0.jpg)](https://www.youtube.com/watch?v=o75wNVkUbHY)
 
 I had the honor to be invited by [Cecilia Fiorini](https://ceciliafiorini.weebly.com/)
-for a talk for the [Brazilian Webinars on Bioinformatics](http://bioinfo.icb.ufmg.br/BrazWebinars/home/)
+for a talk for the [Brazilian Webinars on Bioinformatics](http://bioinfo.icb.ufmg.br/BrazWebinars/home/)!
 
 I had so much fun sharing about this field, and even more answering the audience about:
 - Environmental demogenetic simulation models for phylogeography
 - Approximated Bayesian Computation
-- And the simulation softwares I develop for the field
+- And the simulation softwares I develop for the field!
 
 Definitely a wonderful experience!
 

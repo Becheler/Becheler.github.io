@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How write very SOLID code
+title: How to write very SOLID code
 img: doodles/solid.jpg
 date: 2018-10-20 13:32:20 +0300
 description: How to write better code # Add post description (optional)

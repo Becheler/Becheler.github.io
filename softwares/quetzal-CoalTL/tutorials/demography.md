@@ -1,9 +1,9 @@
 ---
-layout: main
+layout: software
 title: Quetzal Tutorials
 tagline: the C++ Coalescence Template Library
 description: Forward-in-time demographic simulations tutorial
-use_math: true
+mathjax: true
 ---
 
 # Demographic simulation hypothesis

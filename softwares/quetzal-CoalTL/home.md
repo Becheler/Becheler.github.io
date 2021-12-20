@@ -21,7 +21,7 @@ Still with us? Fantastic! Let's get into it.
 
 ### Forward-in-time demographic simulations
 
-[How to use different strategies for simulating populations dispersal:](../tutorials/demography.md)
+[How to use different strategies for simulating populations dispersal:](/tutorials/demography.md)
 
 - Individual-based dispersal in small populations
 - Mass-based dispersal for large populations

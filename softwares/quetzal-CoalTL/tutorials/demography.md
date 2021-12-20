@@ -39,9 +39,9 @@ After the reproduction, the children dispersal is done by sampling their destina
 in a multinomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
 $x$ to $y$ at time $t$:
 
-\\(
+$$
   (\Phi_{x,y}^{t})_{y \in X} \sim M(\tilde{N}_{x}^{t},(m_{xy})_y) ~.
-\\)
+$$
 
 The term $ (m_{xy})_y $ denotes the parameters of the multinomial law
 giving for an individual in $x$ its proability to go to $y$.

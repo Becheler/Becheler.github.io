@@ -1248,6 +1248,13 @@ a.newer-posts:hover {
   height: 100%;
 }
 
+.software-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
 .page-footer {
   display: -webkit-box;
   display: -webkit-flex;

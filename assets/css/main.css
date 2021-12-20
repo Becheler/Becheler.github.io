@@ -1249,9 +1249,10 @@ a.newer-posts:hover {
 }
 
 .software-image {
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+  text-align:center;
+  width:30%;
+  display:block;
+  margin:auto;
 }
 
 .page-footer {

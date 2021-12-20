@@ -39,27 +39,27 @@ After the reproduction, the children dispersal is done by sampling their destina
 in a multinomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
 $x$ to $y$ at time $t$:
 
-$$
+\\(
   (\Phi_{x,y}^{t})_{y \in X} \sim M(\tilde{N}_{x}^{t},(m_{xy})_y) ~.
-$$
+\\)
 
 The term $ (m_{xy})_y $ denotes the parameters of the multinomial law
 giving for an individual in $x$ its proability to go to $y$.
 These probabilities are given by the dispersal law with parameter $\theta$:
 
-$$
+\\(
  \begin{array}{cclcl}
  m  & : &  X^2 & \mapsto & R_{+} \\
  &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
  \end{array}
-$$
+\\)
 
  After migration, the number of individuals in deme $x$ is defined by
  the total number of individuals converging to $x$:
 
- $$
+ \\(
   N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
- $$
+ \\)
 
 ### Step-by-step implementation
 
@@ -366,26 +366,26 @@ number of demes, this little excess is expected to have little impact.
  to their migration probabilities, defining
  $ \Phi_{x,y}^t $, the population flow going from $x$ to $y$ at time $t$:
 
- $$
+ \\(
  (\Phi_{x,y}^{t})_{y\in  X} =  ( \lceil \tilde{N}_{x}^{t} \times m_{xy} \rceil )_{y\in  X} ~.
- $$
+ \\)
 
  The term $ m_{xy} $ denotes the parameters of the transition kernel,
  giving for an individual in $x$ its probability to go to $y$.
  These probabilities are given by the dispersal law with parameter $\theta$:
 
- $$
+ \\(
  \begin{array}{cclcl}
  m  & : &  X^2 & \mapsto & R_{+} \\
  &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
  \end{array}
- $$
+ \\)
 
  After migration, the population size in deme $x$ is defined by the sum of population flows converging to $x$:
 
- $$
+ \\(
  N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
- $$
+ \\)
 
 ### Implementation
 

@@ -25,10 +25,10 @@ analytics: UA-106771332-1 # Google Analytics
 # Collections directory
 collections_dir: my_collections
 collections:
-  - quetzal-coaltl-tutorials
-    # - output: true
-    # - permalink: /software/quetzal-CoalTL/:collection/:name
-
+  quetzal-coaltl-tutorials:
+    output: true
+    permalink: /software/quetzal-CoalTL/tutorials/:name
+    
 # Build Settings
 markdown: kramdown
 plugins:

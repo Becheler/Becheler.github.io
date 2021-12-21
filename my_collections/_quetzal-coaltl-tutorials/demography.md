@@ -1,5 +1,5 @@
 ---
-layout: tutorial
+layout: tutorial_post
 title: Demographic algorithms
 tagline: the C++ Coalescence Template Library
 description: Forward-in-time demographic simulations tutorial
@@ -8,8 +8,8 @@ use_math: true
 
 You can think at least of two ways to simulate the expansion of populations of individuals
 in a discrete landscape:
-- [dispersing each individual separately according to a user-defined probability distribution.](#ind_based)
-- [splitting each population across space according to user-defined migration probabilities.](#mass_based)
+- dispersing each individual separately according to a user-defined probability distribution.
+- splitting each population across space according to user-defined migration probabilities.
 
 These two strategies can seem quite similar in theory, but their computational border-effects
 are quite distinct and are detailed below.

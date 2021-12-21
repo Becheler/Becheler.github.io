@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Include header -->
 {% include head.html %}
+
+*<!-- Mathjax support -->
 {% if page.use_math %}
 {% include mathjax_support.html %}
 {% endif %}
-<body>
 
+<!-- Default body -->
+<body>
+  
   <div class="wrapper">
     {{ content }}
   </div>
-
+  <!-- We want analytics -->
   {% include analytics.html %}
 </body>
+
 </html>

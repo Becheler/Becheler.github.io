@@ -37,25 +37,26 @@ After the reproduction, the children dispersal is done by sampling their destina
 in a multinomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
 $x$ to $y$ at time $t$:
 
-$$ (\Phi_{x,y}^{t})_{y \in X} \sim M(\tilde{N}_{x}^{t},(m_{xy})_y) $$
+\\[ ( \Phi_{x,y}^{t} )\_{y \in X} \sim M(\tilde{N}\_{x}^{t},(m_{xy})_y) \\]
+
 
 The term $ (m_{xy})_y $ denotes the parameters of the multinomial law
 giving for an individual in $x$ its proability to go to $y$.
 These probabilities are given by the dispersal law with parameter $\theta$:
 
-$$
+\\[
  \begin{array}{cclcl}
  m  & : &  X^2 & \mapsto & R_{+} \\
  &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
  \end{array}
-$$
+\\]
 
  After migration, the number of individuals in deme $x$ is defined by
  the total number of individuals converging to $x$:
 
- \\(
+ \\[
   N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
- \\)
+ \\]
 
 ### Step-by-step implementation
 

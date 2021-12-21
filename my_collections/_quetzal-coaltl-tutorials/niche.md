@@ -1,16 +1,12 @@
 ---
 layout: main
-title: Quetzal Tutorials
+title: Linking environmental heterogeneity to species ecology.
 tagline: the C++ Coalescence Template Library
 description: Defining niche functions
 use_math: true
 ---
 
-# Defining niche functions in the simulation model
-
-## Introduction
-
-By *niche functions*, we mean any model quantity that is linked to environmental
+By *niche functions*, we mean here any quantity of an ecological model that is linked to environmental
 quantities.
 
 For example the following function is what we would call a niche function: the growth rate

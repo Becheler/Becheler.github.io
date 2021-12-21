@@ -1,14 +1,12 @@
 ---
-layout: software
-title: Quetzal Tutorials
+layout: tutorial
+title: Demographic algorithms
 tagline: the C++ Coalescence Template Library
 description: Forward-in-time demographic simulations tutorial
-mathjax: true
+use_math: true
 ---
 
-# Demographic simulation hypothesis
-
-There are two main ways to simulate the expansion of populations of individuals
+You can think at least of two ways to simulate the expansion of populations of individuals
 in a discrete landscape:
 - [dispersing each individual separately according to a user-defined probability distribution.](#ind_based)
 - [splitting each population across space according to user-defined migration probabilities.](#mass_based)
@@ -39,20 +37,18 @@ After the reproduction, the children dispersal is done by sampling their destina
 in a multinomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
 $x$ to $y$ at time $t$:
 
-$$
-  (\Phi_{x,y}^{t})_{y \in X} \sim M(\tilde{N}_{x}^{t},(m_{xy})_y) ~.
-$$
+$$ (\Phi_{x,y}^{t})_{y \in X} \sim M(\tilde{N}_{x}^{t},(m_{xy})_y) $$
 
 The term $ (m_{xy})_y $ denotes the parameters of the multinomial law
 giving for an individual in $x$ its proability to go to $y$.
 These probabilities are given by the dispersal law with parameter $\theta$:
 
-\\(
+$$
  \begin{array}{cclcl}
  m  & : &  X^2 & \mapsto & R_{+} \\
  &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
  \end{array}
-\\)
+$$
 
  After migration, the number of individuals in deme $x$ is defined by
  the total number of individuals converging to $x$:

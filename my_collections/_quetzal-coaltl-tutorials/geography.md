@@ -1,12 +1,10 @@
 ---
 layout: main
-title: Quetzal Tutorials
+title: How to model landscape heterogeneity?
 tagline: the C++ Coalescence Template Library
 description: Integrating landscape heterogeneity
 use_math: true
 ---
-
-# Integrating spatially-explicit landscapes and environmental heterogeneity
 
 Quetzal is mainly designed to simulate discrete populations in a discrete space.
 Of course you can still manually define a couple of populations with no spatial structure

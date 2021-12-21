@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://Becheler.github.io # the base hostname & protocol for your site, e.g. http://example.com
+
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
@@ -18,11 +19,15 @@ social-github: Becheler  # add your Github handle
 social-linkedin: linkedin.com/in/arnaud-becheler-246029172 # add your Linkedin handle
 social-email: abechele@umich.edu # add your Email address
 
-# Disqus
-# discus-identifier: "arnaudbecheler" # add your discus identifier
-
 # Tracker
 analytics: UA-106771332-1 # Google Analytics
+
+# Collections directory
+collections_dir: my_collections
+collections:
+  - quetzal-coaltl-tutorials
+    # - output: true
+    # - permalink: /software/quetzal-CoalTL/:collection/:name
 
 # Build Settings
 markdown: kramdown

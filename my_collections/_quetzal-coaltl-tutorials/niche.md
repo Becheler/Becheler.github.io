@@ -1,6 +1,7 @@
 ---
-layout: main
-title: Linking environmental heterogeneity to species ecology.
+layout: tutorial_post
+img: schemes/decrypt_sampling_scheme.png
+title: Linking environments to species ecology
 tagline: the C++ Coalescence Template Library
 description: Defining niche functions
 use_math: true

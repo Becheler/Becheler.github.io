@@ -29,8 +29,11 @@ collections:
     output: true
     permalink: /software/quetzal-CoalTL/tutorials/:name
     order:
+      - goals.md
       - a-random-walker.md
       - many-lazy-walkers.md
+      - geography.md
+      - niche.md
 
 # Build Settings
 markdown: kramdown

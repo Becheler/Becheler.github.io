@@ -1,8 +1,9 @@
 ---
-layout: main
-title: How to model landscape heterogeneity?
+layout: tutorial_post
+title: Working with heterogeneous landscape
 tagline: the C++ Coalescence Template Library
 description: Integrating landscape heterogeneity
+img: schemes/decrypt_sampling_scheme.png
 use_math: true
 ---
 

@@ -1,10 +1,12 @@
 ---
-layout: main
+layout: software
 title: FAQ
 tagline: the C++ Coalescence Template Library FAQ
 description: Frequently Asked Questions
+img: logos/quetzal-coaltl-fa.svg
 ---
 
+-------------------
 ## Why this name?
 
 Quetzalcoatl, the Feathered Serpent, was a powerful divinity from Mesoamerica who created the world
@@ -18,15 +20,21 @@ conveniently fits to **Coa**lescence **T**emplate **L**ibrary.
 
 But the full name is quite difficult to pronounce, so feel free to focus on the glitter when you use **Quetzal**.
 
+---------------------
+
 ## Who maintains the library?
 
 **Maintainer:** [Arnaud Becheler](https://becheler.github.io/)
+
+------------------------
 
 ## How to cite?  
 
 **Founder article:** [Access on Wiley](https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.12992)
 
 **Citation:** Becheler, A, Coron, C, Dupas, S. The Quetzal Coalescence template library: A C++ programmers resource for integrating distributional, demographic and coalescent models. Mol Ecol Resour. 2019; 19: 788– 793. https://doi.org/10.1111/1755-0998.12992
+
+----------------------
 
 ## How to contribute?  
 
@@ -35,6 +43,8 @@ But the full name is quite difficult to pronounce, so feel free to focus on the 
 **Community:** IRC channel \#quetzal on [Freenode](https://webchat.freenode.net/)
 
 **Contribute:** Check [our Github repository](https://github.com/Becheler/quetzal) and use the [Pull Request system](https://help.github.com/articles/creating-a-pull-request/)
+
+-------------------------
 
 ## Why a library and not a program ?
 
@@ -60,6 +70,8 @@ to re-implement **everything**.
 to use a suitable level of abstraction supported by good libraries.
 > -Stroustrup
 
+--------------------------
+
 ## Wait, are you saying that programs are useless?
 
 Nooooo...  Programs are still very usefull and user-friendly, so we are currently using Quetzal
@@ -83,9 +95,13 @@ Research Software Engineer to code your model.
 
 Or you can use available [Quetzal-EGGS](/pages/quetzal_eggs/home)!
 
+-------------------------
+
 ## What is a Research Software Engineer?
 
 [You do not know if you are or not a RSE?](https://rse.ac.uk/who/)
+
+-------------------------
 
 ## I'm not sure if I should use Quetzal?
 
@@ -113,6 +129,8 @@ You will probably not find everything that you need.
 
 But you will surely spare time by **not re-inventing the wheel**.
 
+-----------------------
+
 ## I don't understand why the library components are so abstract?
 
 **Small components libraries allow to tailor the code to your needs**.
@@ -132,48 +150,8 @@ This is the meaning of a C++ template library: flexible, efficient, extensible.
 
 It's easier than you think: we designed Quetzal so the code can be very expressive and compact.
 
-## Can I have a quick demonstration of the program utility?
+--------------------
 
-### Step 1 - Design your own model
+## I have another question?
 
-The user can freely specify the demographic model that is used to simulate a
-demographic history in a discrete geographic space.
-
-For example, to simulate a fast demographic expansion in Western Europe, we will use
-here:
-* a nearest-neighbor migration process
-* a carrying capacity set as a function of the local rainfall values
-* a growth rate set to a constant
-
-Quetzal makes it easy to set and modify the details of this model and to add
-or remove some stochasticity.
-
-### Step 2 - Simulate a time-forward demographic history
-
-All the demographic events are recorded by the simulation, and
-the population sizes across the landscape can be simulated and exported in
-geospatial files for visualization:
-
-![Example of demographic expansion]( {{site.url}}/demo/model1/history.gif)
-
-### Step 3 - Simulate the gene genalogies backward in time
-
-#### Sampling scheme
-
-For data analysis, you would probably consider a real genetic dataset.
-For methodological exploration purpose you would
-want to specify a controlled sampling design: in this example the sampling of genetic material
-is simulated around two regions (Spain and Sicilia) only if the simulated local
-population size is high enough.
-
-![Sampling schemes]( {{site.url}}/demo/model1/sampling.png)
-
-#### Coalescence process
-
-Starting from this sampling scheme, Quetzal track the genes genealogies
-back in the demographic history, allowing to export relevant information to other frameworks.
-
-![Coalescent tree]( {{site.url}}/draw/demo/tree.png)
-
-Simulating these genealogies allows to efficiently simulate genetic diversity patterns,
-possibly using Quetzal or exporting the trees in Newick format to others simulators.
+Sure! Feel free to add a comment, I'll add your question to the list!

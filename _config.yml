@@ -28,7 +28,10 @@ collections:
   quetzal-coaltl-tutorials:
     output: true
     permalink: /software/quetzal-CoalTL/tutorials/:name
-    
+    order:
+      - a-random-walker.md
+      - many-lazy-walkers.md
+
 # Build Settings
 markdown: kramdown
 plugins:

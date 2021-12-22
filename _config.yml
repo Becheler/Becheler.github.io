@@ -30,6 +30,7 @@ collections:
     permalink: /software/quetzal-CoalTL/tutorials/:name
     order:
       - goals.md
+      - getting-started.md
       - a-random-walker.md
       - many-lazy-walkers.md
       - geography.md

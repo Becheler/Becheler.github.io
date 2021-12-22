@@ -45,6 +45,7 @@ docker run arnaudbecheler/quetzal-nest
 
 - You can look around by typing usual bash commands like `ls` or `mkdir` or even `./EGG1 --version` (yes! Quetzal-NEST comes with some ready-to-use simulators!)
 
+
 ## 3 - Celebrate!
 
 Rejoice, my friend, You have entered the nest!

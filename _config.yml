@@ -29,7 +29,7 @@ collections:
     output: true
     permalink: /software/quetzal-CoalTL/tutorials/:name
     order:
-      - goals.md
+      - foreword.md
       - getting-started.md
       - a-random-walker.md
       - many-lazy-walkers.md
@@ -38,6 +38,10 @@ collections:
 
 # Build Settings
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate

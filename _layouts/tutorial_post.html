@@ -26,14 +26,19 @@ layout: main
     <div class="wrap-content">
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
-        <!-- <section class="contact">
+        <section class="contact">
         <ul>
           <li><a href="{{site.baseurl}}/softwares/quetzal-CoalTL/home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-          <li><a href="{{site.baseurl}}/softwares/quetzal-CoalTL/API/html/index.html"><i class="fa fa-book" aria-hidden="true"></i></a></li>
+          <li><a href="{{site.baseurl}}/softwares/quetzal-CoalTL/tutorials"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+          <li><a href="{{site.baseurl}}/softwares/quetzal-CoalTL/FAQ"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+          <li><a href="{{site.baseurl}}/softwares/quetzal-CoalTL/API/html/index.html"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/Becheler/quetzal-CoalTL"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         </ul>
-        </section -->
+        </section
       </header>
+      <div style="text-align:left;">
       {{content | markdownify}}
+      </div>
       <div class="PageNavigation">
         {% if page.previous.url %}
           <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>

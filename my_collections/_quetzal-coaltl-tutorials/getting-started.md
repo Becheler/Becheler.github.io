@@ -2,8 +2,8 @@
 layout: tutorial_post
 title: Getting started
 tagline: the C++ Coalescence Template Library
-description: getting started
-img: schemes/decrypt_sampling_scheme.png
+description: getting started with Quetzal-NEST Docker container
+img: logos/quetzal-nest-thumbnail.png
 use_math: false
 ---
 

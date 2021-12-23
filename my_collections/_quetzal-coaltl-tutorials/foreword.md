@@ -1,6 +1,5 @@
 ---
 layout: tutorial_post
-img: schemes/decrypt_sampling_scheme.png
 title: Foreword
 tagline: the C++ Coalescence Template Library
 description: Defining the goals of the tutorial

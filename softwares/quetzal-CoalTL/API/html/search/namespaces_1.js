@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fuzzy_5ftransfer_5fdistance_613',['fuzzy_transfer_distance',['../namespacefuzzy__transfer__distance.html',1,'']]]
+  ['fuzzy_5ftransfer_5fdistance_610',['fuzzy_transfer_distance',['../namespacefuzzy__transfer__distance.html',1,'']]]
 ];

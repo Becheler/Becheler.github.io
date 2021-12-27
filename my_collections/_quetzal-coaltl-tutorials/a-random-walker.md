@@ -98,7 +98,7 @@ But baby steps, baby steps... :baby:
 
 ### The Quetzal demography module
 
-You open the big bad book, and look at the [*demography* chapter]().
+You open the big bad book, and look at the [*demography* chapter](/softwares/quetzal-CoalTL/API/html/namespacequetzal_1_1demography.html).
 
 ### Complete code solution
 

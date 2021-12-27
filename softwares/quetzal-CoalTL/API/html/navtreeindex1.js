@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classquetzal_1_1coalescence_1_1Forest.html#a881709fd9aa241a17b82f5c16103c722":[2,0,3,0,2,17],
-"classquetzal_1_1coalescence_1_1Forest.html#aabf247362d41417d575abaecf5311a5c":[2,0,3,0,2,1],
 "classquetzal_1_1coalescence_1_1Forest.html#aacc6483108823753b071ec137518030e":[2,0,3,0,2,7],
 "classquetzal_1_1coalescence_1_1Forest.html#ab01e7dc7931771156b70a954e4a03f21":[2,0,3,0,2,11],
 "classquetzal_1_1coalescence_1_1Forest.html#ab225661fff890d81b32b5f8be5accd0d":[2,0,3,0,2,0],
@@ -158,16 +156,6 @@ var NAVTREEINDEX1 =
 "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation.html#ad7067b6e79ea694566cd8c0773174c73":[2,0,3,1,9,0],
 "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation.html#ada8433aa962111059abcf5f7f44e1c15":[2,0,3,1,9,9],
 "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation.html#adcd1759c09bbcccd7cb72aea51629a56":[2,0,3,1,9,5],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html":[2,0,3,1,10],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#a15859ced98c7b30c6f4bad1c8338c960":[2,0,3,1,10,6],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#a253d7b7011634a7f28f60844112d6c05":[2,0,3,1,10,5],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#a3c3288add37d1a053529eac24e13e8d2":[2,0,3,1,10,4],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#a68b59600f3b5314d401615c251bd0664":[2,0,3,1,10,3],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#a70a962fa100fd86249617b3c49596bae":[2,0,3,1,10,7],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#aa1edfdac6e6cc564fa2a824eac8dd291":[2,0,3,1,10,2],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#aa6fd0d865f7ee20069b321deacbeb69c":[2,0,3,1,10,8],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#abe46a0a3c6b04485efef401dd0c47dfb":[2,0,3,1,10,1],
-"classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html#adb8f66a8dcaabd970d50dfa427b803b7":[2,0,3,1,10,0],
 "classquetzal_1_1demography_1_1dispersal__kernel_1_1ExponentialPower_1_1param__type.html":[2,0,3,1,0,0,0],
 "classquetzal_1_1demography_1_1dispersal__kernel_1_1ExponentialPower_1_1param__type.html#a51957393c1759d37a9723ab6023ad898":[2,0,3,1,0,0,0,3],
 "classquetzal_1_1demography_1_1dispersal__kernel_1_1ExponentialPower_1_1param__type.html#a87c74f59a57a7f6505ed1d34d04ce88f":[2,0,3,1,0,0,0,1],
@@ -249,5 +237,17 @@ var NAVTREEINDEX1 =
 "classquetzal_1_1genetics_1_1Loader.html#a3bb88ddd22644a084974855dd2ba53d5":[2,0,3,3,2,0],
 "classquetzal_1_1genetics_1_1Loader.html#a50c21f8141643326fb4194d622b53f12":[2,0,3,3,2,6],
 "classquetzal_1_1genetics_1_1Loader.html#a64d9d5c4a65739729760d391bb427235":[2,0,3,3,2,5],
-"classquetzal_1_1genetics_1_1Loader.html#a8ce0d3ae0a55f78815efa7c418b2d259":[2,0,3,3,2,3]
+"classquetzal_1_1genetics_1_1Loader.html#a8ce0d3ae0a55f78815efa7c418b2d259":[2,0,3,3,2,3],
+"classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c":[2,0,3,3,2,2],
+"classquetzal_1_1genetics_1_1Loader.html#ae74e065faf2279647795ccf0f58a4037":[2,0,3,3,2,4],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html":[2,0,3,3,4],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a0e24a3e974c82918b74f0fe7cc793066":[2,0,3,3,4,12],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a129cc3aef9b42b77ffe8c02690dd2c3e":[2,0,3,3,4,10],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a198c1a2ecb01017ad55ba88319a0ae8f":[2,0,3,3,4,6],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a21abab0e0d24c6ff72379912fc30a2b2":[2,0,3,3,4,4],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a26cb3ea8c02e2da534d2dc0d0d908df7":[2,0,3,3,4,0],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a2828686cd3a0133c606458cdfd0d23b9":[2,0,3,3,4,5],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a3a8c8b24b5bc6f1956d9606d10339613":[2,0,3,3,4,2],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a3bbb292ac2f55ea89b6e797bf0fc0ffe":[2,0,3,3,4,9],
+"classquetzal_1_1genetics_1_1SpatialGeneticSample.html#a3fc0a738bc92b44a633ee30f3d8f4143":[2,0,3,3,4,3]
 };

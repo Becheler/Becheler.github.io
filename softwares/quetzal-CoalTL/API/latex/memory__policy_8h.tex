@@ -4,16 +4,14 @@
 {\ttfamily \#include \char`\"{}Population\+Size\+On\+Disk\+Implementation.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Flow.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Flow\+On\+Disk\+Implementation.\+h\char`\"{}}\newline
-Include dependency graph for memory\+\_\+policy.\+h\+:
-\nopagebreak
+Include dependency graph for memory\+\_\+policy.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{memory__policy_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,14 +21,14 @@ This graph shows which files directly or indirectly include this file\+:
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structquetzal_1_1memory_1_1on__demand}{quetzal\+::memory\+::on\+\_\+demand}}
-\item 
+struct \mbox{\hyperlink{structquetzal_1_1memory_1_1on__RAM}{quetzal\+::memory\+::on\+\_\+\+R\+AM}}
+\begin{DoxyCompactList}\small\item\em Keep the demographic data on R\+AM. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structquetzal_1_1memory_1_1on__disk}{quetzal\+::memory\+::on\+\_\+disk}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Seialize the unused layes of demographic data on disk, and deserialize them when access is needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
  \mbox{\hyperlink{namespacequetzal}{quetzal}}
 \item 
  \mbox{\hyperlink{namespacequetzal_1_1memory}{quetzal\+::memory}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Policy classes customizing the memory behavior of the \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{quetzal\+::demography\+::\+History}} classes. \end{DoxyCompactList}\end{DoxyCompactItemize}

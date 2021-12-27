@@ -9,6 +9,5 @@ var namespacequetzal_1_1demography =
     [ "History< Space, dispersal_policy::individual_based, Memory >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_00_01Memory_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_00_01Memory_01_4" ],
     [ "History< Space, dispersal_policy::mass_based, Memory >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_00_01Memory_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_00_01Memory_01_4" ],
     [ "PopulationSizeHashMapImplementation", "classquetzal_1_1demography_1_1PopulationSizeHashMapImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeHashMapImplementation" ],
-    [ "PopulationSizeOnDiskImplementation", "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation" ],
-    [ "PopulationSizeVectorImplementation", "classquetzal_1_1demography_1_1PopulationSizeVectorImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeVectorImplementation" ]
+    [ "PopulationSizeOnDiskImplementation", "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation" ]
 ];

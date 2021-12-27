@@ -49,8 +49,6 @@ var NAVTREEINDEX0 =
 "PopulationSizeHashMapImplementation_8h_source.html":[3,0,0,1,0,2,7],
 "PopulationSizeOnDiskImplementation_8h.html":[3,0,0,1,0,2,8],
 "PopulationSizeOnDiskImplementation_8h_source.html":[3,0,0,1,0,2,8],
-"PopulationSizeVectorImplementation_8h.html":[3,0,0,1,0,2,9],
-"PopulationSizeVectorImplementation_8h_source.html":[3,0,0,1,0,2,9],
 "Resolution_8h.html":[3,0,0,1,0,6,5],
 "Resolution_8h_source.html":[3,0,0,1,0,6,5],
 "RestrictedGrowthString_8h.html":[3,0,0,1,0,4,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "classquetzal_1_1coalescence_1_1Forest.html#a6723a6f85f3aa93d0721db09123b4c01":[2,0,3,0,2,8],
 "classquetzal_1_1coalescence_1_1Forest.html#a794af66102f9c811ce3e93d7e63d8713":[2,0,3,0,2,4],
 "classquetzal_1_1coalescence_1_1Forest.html#a7b6d7ae99d2ba998aeaf16aa877eb216":[2,0,3,0,2,20],
-"classquetzal_1_1coalescence_1_1Forest.html#a7ed1b8b794e452a8f2288ca118b7dae3":[2,0,3,0,2,16]
+"classquetzal_1_1coalescence_1_1Forest.html#a7ed1b8b794e452a8f2288ca118b7dae3":[2,0,3,0,2,16],
+"classquetzal_1_1coalescence_1_1Forest.html#a881709fd9aa241a17b82f5c16103c722":[2,0,3,0,2,17],
+"classquetzal_1_1coalescence_1_1Forest.html#aabf247362d41417d575abaecf5311a5c":[2,0,3,0,2,1]
 };

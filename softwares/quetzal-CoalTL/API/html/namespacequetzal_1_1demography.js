@@ -2,6 +2,7 @@ var namespacequetzal_1_1demography =
 [
     [ "dispersal_kernel", "namespacequetzal_1_1demography_1_1dispersal__kernel.html", "namespacequetzal_1_1demography_1_1dispersal__kernel" ],
     [ "dispersal_policy", "namespacequetzal_1_1demography_1_1dispersal__policy.html", "namespacequetzal_1_1demography_1_1dispersal__policy" ],
+    [ "memory", "namespacequetzal_1_1demography_1_1memory.html", "namespacequetzal_1_1demography_1_1memory" ],
     [ "BaseHistory", "classquetzal_1_1demography_1_1BaseHistory.html", "classquetzal_1_1demography_1_1BaseHistory" ],
     [ "Flow", "classquetzal_1_1demography_1_1Flow.html", "classquetzal_1_1demography_1_1Flow" ],
     [ "FlowOnDiskImplementation", "classquetzal_1_1demography_1_1FlowOnDiskImplementation.html", "classquetzal_1_1demography_1_1FlowOnDiskImplementation" ],

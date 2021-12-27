@@ -7,7 +7,7 @@ var searchData=
   ['expressive_388',['expressive',['../namespacequetzal_1_1expressive.html',1,'quetzal']]],
   ['genetics_389',['genetics',['../namespacequetzal_1_1genetics.html',1,'quetzal']]],
   ['geography_390',['geography',['../namespacequetzal_1_1geography.html',1,'quetzal']]],
-  ['memory_391',['memory',['../namespacequetzal_1_1demography_1_1memory.html',1,'quetzal::demography']]],
+  ['memory_5fpolicy_391',['memory_policy',['../namespacequetzal_1_1demography_1_1memory__policy.html',1,'quetzal::demography']]],
   ['mutation_5fkernel_392',['mutation_kernel',['../namespacequetzal_1_1mutation__kernel.html',1,'quetzal']]],
   ['occupancy_5fspectrum_393',['occupancy_spectrum',['../namespacequetzal_1_1coalescence_1_1occupancy__spectrum.html',1,'quetzal::coalescence']]],
   ['quantities_5fnbr_394',['quantities_nbr',['../classquetzal_1_1geography_1_1DiscreteLandscape.html#a51dac772692d0a0acf9e6418023cd25e',1,'quetzal::geography::DiscreteLandscape']]],

@@ -102,8 +102,8 @@ var hierarchy =
     [ "quetzal::coalescence::newick_with_distance_to_parent< Space, Time >", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent.html", null ],
     [ "quetzal::coalescence::newick_with_distance_to_parent_and_leaf_name< Space, Time >", "classquetzal_1_1coalescence_1_1newick__with__distance__to__parent__and__leaf__name.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::OccupancySpectrumDistribution< UnaryPredicate, SpectrumHandler, Int, Float >", "classquetzal_1_1coalescence_1_1occupancy__spectrum_1_1OccupancySpectrumDistribution.html", null ],
-    [ "quetzal::demography::memory::on_disk", "structquetzal_1_1demography_1_1memory_1_1on__disk.html", null ],
-    [ "quetzal::demography::memory::on_RAM", "structquetzal_1_1demography_1_1memory_1_1on__RAM.html", null ],
+    [ "quetzal::demography::memory_policy::on_disk", "structquetzal_1_1demography_1_1memory__policy_1_1on__disk.html", null ],
+    [ "quetzal::demography::memory_policy::on_RAM", "structquetzal_1_1demography_1_1memory__policy_1_1on__RAM.html", null ],
     [ "quetzal::coalescence::occupancy_spectrum::on_the_fly", "structquetzal_1_1coalescence_1_1occupancy__spectrum_1_1on__the__fly.html", null ],
     [ "gdalcpp::detail::Options", "structgdalcpp_1_1detail_1_1Options.html", null ],
     [ "quetzal::sampling_scheme::param_base_class", "classquetzal_1_1sampling__scheme_1_1param__base__class.html", [

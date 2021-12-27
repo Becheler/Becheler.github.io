@@ -40,8 +40,8 @@ var dir_95cfde53510fd81ac0ff5912c91abc6e =
       [ "History< Space, dispersal_policy::mass_based, Memory >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_00_01Memory_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_00_01Memory_01_4" ]
     ] ],
     [ "memory_policy.h", "memory__policy_8h.html", [
-      [ "on_RAM", "structquetzal_1_1demography_1_1memory_1_1on__RAM.html", "structquetzal_1_1demography_1_1memory_1_1on__RAM" ],
-      [ "on_disk", "structquetzal_1_1demography_1_1memory_1_1on__disk.html", "structquetzal_1_1demography_1_1memory_1_1on__disk" ]
+      [ "on_RAM", "structquetzal_1_1demography_1_1memory__policy_1_1on__RAM.html", "structquetzal_1_1demography_1_1memory__policy_1_1on__RAM" ],
+      [ "on_disk", "structquetzal_1_1demography_1_1memory__policy_1_1on__disk.html", "structquetzal_1_1demography_1_1memory__policy_1_1on__disk" ]
     ] ],
     [ "PopulationSizeHashMapImplementation.h", "PopulationSizeHashMapImplementation_8h.html", [
       [ "PopulationSizeHashMapImplementation", "classquetzal_1_1demography_1_1PopulationSizeHashMapImplementation.html", "classquetzal_1_1demography_1_1PopulationSizeHashMapImplementation" ]

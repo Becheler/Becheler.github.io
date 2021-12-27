@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quetzal-CoalTL: quetzal::demography::memory::on_RAM Struct Reference</title>
+<title>Quetzal-CoalTL: quetzal::demography::memory_policy Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structquetzal_1_1demography_1_1memory_1_1on__RAM.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('namespacequetzal_1_1demography_1_1memory__policy.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,72 +103,33 @@ $(document).ready(function(){initNavTree('structquetzal_1_1demography_1_1memory_
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="structquetzal_1_1demography_1_1memory_1_1on__RAM-members.html">List of all members</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">quetzal::demography::memory::on_RAM Struct Reference</div>  </div>
+<div class="title">quetzal::demography::memory_policy Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Keep the demographic data on RAM.  
- <a href="structquetzal_1_1demography_1_1memory_1_1on__RAM.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="memory__policy_8h_source.html">memory_policy.h</a>&gt;</code></p>
+<p>Policy classes customizing the memory behavior of the classes that inherit from <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">quetzal::demography::History</a> .  
+<a href="namespacequetzal_1_1demography_1_1memory__policy.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aaa9db9406a5510f61aa0073a82db07e9"><td class="memTemplParams" colspan="2">template&lt;typename Space , typename Time , typename Value &gt; </td></tr>
-<tr class="memitem:aaa9db9406a5510f61aa0073a82db07e9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1memory_1_1on__RAM.html#aaa9db9406a5510f61aa0073a82db07e9">pop_sizes_type</a> = <a class="el" href="classquetzal_1_1demography_1_1PopulationSizeHashMapImplementation.html">quetzal::demography::PopulationSizeHashMapImplementation</a>&lt; Space, Time, Value &gt;</td></tr>
-<tr class="separator:aaa9db9406a5510f61aa0073a82db07e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6982041b6fbf2a22dea6a072baddaaaf"><td class="memTemplParams" colspan="2">template&lt;typename Space , typename Time , typename Value &gt; </td></tr>
-<tr class="memitem:a6982041b6fbf2a22dea6a072baddaaaf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1memory_1_1on__RAM.html#a6982041b6fbf2a22dea6a072baddaaaf">flow_type</a> = <a class="el" href="classquetzal_1_1demography_1_1Flow.html">quetzal::demography::Flow</a>&lt; Space, Time, Value &gt;</td></tr>
-<tr class="separator:a6982041b6fbf2a22dea6a072baddaaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1memory__policy_1_1on__disk.html">on_disk</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the unused layers of demographic data on disk, and deserialize them when access is needed.  <a href="structquetzal_1_1demography_1_1memory__policy_1_1on__disk.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structquetzal_1_1demography_1_1memory__policy_1_1on__RAM.html">on_RAM</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep the demographic data on RAM.  <a href="structquetzal_1_1demography_1_1memory__policy_1_1on__RAM.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Keep the demographic data on RAM. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a6982041b6fbf2a22dea6a072baddaaaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6982041b6fbf2a22dea6a072baddaaaf">&#9670;&nbsp;</a></span>flow_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Space , typename Time , typename Value &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="structquetzal_1_1demography_1_1memory_1_1on__RAM.html#a6982041b6fbf2a22dea6a072baddaaaf">quetzal::demography::memory::on_RAM::flow_type</a> =  <a class="el" href="classquetzal_1_1demography_1_1Flow.html">quetzal::demography::Flow</a>&lt;Space, Time, Value&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa9db9406a5510f61aa0073a82db07e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa9db9406a5510f61aa0073a82db07e9">&#9670;&nbsp;</a></span>pop_sizes_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Space , typename Time , typename Value &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="structquetzal_1_1demography_1_1memory_1_1on__RAM.html#aaa9db9406a5510f61aa0073a82db07e9">quetzal::demography::memory::on_RAM::pop_sizes_type</a> =  <a class="el" href="classquetzal_1_1demography_1_1PopulationSizeHashMapImplementation.html">quetzal::demography::PopulationSizeHashMapImplementation</a>&lt;Space, Time, Value&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>quetzal/include/quetzal/demography/<a class="el" href="memory__policy_8h_source.html">memory_policy.h</a></li>
-</ul>
-</div><!-- contents -->
+<div class="textblock"><p>Policy classes customizing the memory behavior of the classes that inherit from <a class="el" href="classquetzal_1_1demography_1_1History.html" title="Unspecialized class (CRTP design pattern)">quetzal::demography::History</a> . </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacequetzal.html">quetzal</a></li><li class="navelem"><a class="el" href="namespacequetzal_1_1demography.html">demography</a></li><li class="navelem"><a class="el" href="namespacequetzal_1_1demography_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="structquetzal_1_1demography_1_1memory_1_1on__RAM.html">on_RAM</a></li>
+    <li class="navelem"><a class="el" href="namespacequetzal.html">quetzal</a></li><li class="navelem"><a class="el" href="namespacequetzal_1_1demography.html">demography</a></li><li class="navelem"><a class="el" href="namespacequetzal_1_1demography_1_1memory__policy.html">memory_policy</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

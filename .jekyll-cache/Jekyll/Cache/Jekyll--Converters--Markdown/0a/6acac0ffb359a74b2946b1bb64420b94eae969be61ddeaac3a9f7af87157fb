@@ -1,0 +1,226 @@
+I"|I<p>By <em>niche functions</em>, we mean here any quantity of an ecological model that is linked to environmental
+quantities.</p>
+
+<p>For example the following function is what we would call a niche function: the growth rate
+is a function of the temperature.</p>
+
+<p><img src="http://localhost:4000/pictures/niche.png" alt="niche function" /></p>
+
+<p>Usually in demogenetic models, the “true” niche functions are not precisely known,
+so their forms have to be inferred. In the previous picture, we would typically try to estimate
+the parameters $T_{opt}$, $T_{min}$ and $T_{max}$.</p>
+
+<p>If you are reading this tutorial, it means that you are
+probably interested in simulation-based inference: in such frameworks a huge amount of simulations is needed to explore the parameters
+space. Quetzal allows to explore the parameter space of the niche functions with
+a priori better efficiency than achieved by previous simulation resources.</p>
+
+<blockquote>
+  <p>Why ?</p>
+</blockquote>
+
+<p>Typically, an ABC analysis would require:</p>
+<ul>
+  <li>the raw geographic dataset to be read and tranformed using an external software with a
+given set of parameters</li>
+  <li>The tranformed data to be written in memory</li>
+  <li>The transformed data to be read by the demogenetic program to run a simulation.</li>
+</ul>
+
+<p>And this <em>read-write-read</em> cycle would repeat <em>millions of times</em> as the parameters are resampled.</p>
+
+<p>We advocate that it is a <em>costly way to compute things</em>. Instead, we prefer to
+integrate the model choice into the demogenetic simulation program, so the data transformations
+are computed <em>on the fly</em> rather than written in memory. Plus, it fosters scientific reproducibility.</p>
+
+<p>As there are a open-ended number of possible models, and that their relevancy is
+very specific to the question at hand, we choose to
+leave the user free to define its own niche functions, and we give him the right
+tools to do so.</p>
+
+<h2 id="an-example-the-logistic-growth">An example: the logistic growth</h2>
+
+<p>For example, let’s consider the typical logistic function that is used in the literature
+to represent the local growth process, and let’s couple the growth rate and the carrying
+capacity to the environmental heterogeneity.</p>
+
+<p>The following picture illustrate a one-deme growing population size following a logistic growth,
+with carrying capacity $K=500$, for different values of $r$:</p>
+
+<p><img src="http://localhost:4000/pictures/logistic.png" alt="logistic growth" /></p>
+
+<h3 id="mathematical-description">Mathematical description</h3>
+
+<p>The number of descendants \(\tilde{N}_{x}^{t}\) in each deme can be sampled in a
+distribution conditionally to a function of the the local density of parents,
+for example</p>
+
+<p>\(\tilde{N}_{x}^{t} \sim Poisson(g(x,t))\),</p>
+
+<p>where $g$ can be for example a discrete version of the logistic growth:</p>
+
+\[\begin{array}{cc|ccc}
+    g &amp; : &amp; \mathbb{X}\times \mathbb{N} &amp; \mapsto &amp; \mathbb{R}^{+} \\
+      &amp;   &amp;          (x,t)               &amp; \mapsto &amp; \frac{N_{x}^{t}\times(1+r(x,t))}{1+\frac{r(x,t)\times N_{x}^{t}}{K(x,t)}}  ~. \\
+\end{array}\]
+
+<p>The $r$, respectively $k$, term is the growth rate, respectively the carrying capacity,
+defined as a function of the environmental quantities with parameter $\theta$:</p>
+
+\[\begin{array}{ccccl}
+K  &amp; : &amp; \mathbb{X}\times \mathbb{N} &amp; \mapsto &amp; \mathbb{R}^{+} \\
+   &amp;   &amp;    (x,t)       &amp; \mapsto &amp; f_{K}^{\theta}(E(x,t))~, \\
+\end{array}\]
+
+\[\begin{array}{ccccl}
+r  &amp; : &amp; \mathbb{X} &amp; \mapsto &amp; \mathbb{R} \\
+   &amp;   &amp;    (x,t)       &amp; \mapsto &amp; f_{r}^{\theta}(E(x,t)) ~. \\
+\end{array}\]
+
+<p>We will show how to implement this model with toy functions.</p>
+
+<h3 id="step-by-step-implementation">Step-by-step implementation</h3>
+
+<h4 id="about-the-need-to-build-callable-expressions">About the need to build callable expressions</h4>
+
+<p>So you learned in the <a href="tuto_geography">geography tutorial</a> how to retrieve the environmental functions:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+</code></pre></div></div>
+<blockquote>
+  <p><strong>Note:</strong> Remember that you can call <code class="language-plaintext highlighter-rouge">f</code> and <code class="language-plaintext highlighter-rouge">g</code> with space and time arguments
+by writing <code class="language-plaintext highlighter-rouge">f(x,t)</code> and <code class="language-plaintext highlighter-rouge">g(x,t)</code>.</p>
+</blockquote>
+
+<p>As the demographic expansion loop over space and time lays in the core of
+complex simulation objects, you do not want to pass each of these values one-by-one
+across the multiple layers of these objects: that would be very inefficient.</p>
+
+<p>Instead, it is better to give to the simulator the expression that it will call.</p>
+
+<p>You just need to code a function simulating the number of children in deme $x$
+at time $t$. Any expression would work: the core algorithm will deal with it if it
+has the right signature.</p>
+
+<p>In the <a href="tuto_demography#implementing-a-local-growth-process">demography tutorial</a>,
+you already learned how to build a very simple version of such expressions: it
+was simply twice the number of parents. Let’s remember this simple example code:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// access to the demographic history database</span>
+<span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+<span class="c1">// capture N in a lambda expression</span>
+<span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+</code></pre></div></div>
+<p>Here we will just learn how to define more complicated expressions that are
+mathematical compositions of the environmental functions.</p>
+
+<h3 id="composing-functions-of-space-and-time">Composing functions of space and time</h3>
+
+<p>What you want to do is to build an expression that is the result of composing other
+functions, and you expect this to be easy. You would actually expect to be able to write
+something like:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">h</span> <span class="o">=</span> <span class="n">f</span> <span class="o">+</span> <span class="n">g</span><span class="p">;</span> <span class="c1">// compilation error, undefined operator +</span>
+</code></pre></div></div>
+<p>This code would not compile, as C++ does not natively know what adding $f$ and $g$ mean.</p>
+
+<p>To enable the composition, you need to use the  <code class="language-plaintext highlighter-rouge">expressive</code> module.
+This module is actually a library written by <a href="https://github.com/ambre-m">Ambre Marques</a>,
+that allows to compose expressions at compile-time:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "my_path/quetzal/expressive.h"
+</span>
+<span class="c1">// ... some code to build the environment object env</span>
+
+<span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">use</span><span class="p">;</span>
+<span class="k">auto</span> <span class="n">h</span> <span class="o">=</span> <span class="n">use</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">use</span><span class="p">(</span><span class="n">g</span><span class="p">);</span> <span class="c1">// expressive automatically define the operator +</span>
+</code></pre></div></div>
+
+<p>In this code, <code class="language-plaintext highlighter-rouge">h</code> is a new object. Its type is automatically built by <code class="language-plaintext highlighter-rouge">expressive</code>
+and is unknown by the user: that is actually a good thing, as it can be very complicated.
+More importantly, as the <code class="language-plaintext highlighter-rouge">h</code> object is cheap to copy, it can be passed around the
+simulation context to the appropriate function where it will be called with spatio-temporal
+coordinates:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// file main.cpp</span>
+<span class="k">auto</span> <span class="n">h</span> <span class="o">=</span> <span class="n">use</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">use</span><span class="p">(</span><span class="n">g</span><span class="p">);</span>
+
+<span class="n">coord_type</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">time_type</span> <span class="n">t</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="composing-constant-functions">Composing constant functions</h3>
+
+<p>In the same way can not expect the following line to work:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">e</span> <span class="o">=</span> <span class="n">h</span> <span class="o">-</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// // compilation error, undefined operator -</span>
+</code></pre></div></div>
+<p>It is expected, as C++ does not natively know how to add an integer to a function.
+So first you have to transform the number 4 to a constant function of space and time:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">literal_factory</span><span class="p">;</span>
+<span class="c1">// a small object able to produce callables:</span>
+<span class="n">literal_factory</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="o">&gt;</span> <span class="n">lit</span><span class="p">;</span>
+<span class="k">auto</span> <span class="n">e</span> <span class="o">=</span> <span class="n">h</span> <span class="o">-</span> <span class="n">lit</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// now it works</span>
+</code></pre></div></div>
+
+<p>See ? You can actually freely compose any user-defined function.</p>
+
+<h2 id="coupling-environment-logistic-growth-model-and-stochastic-sampling">Coupling environment, logistic growth model and stochastic sampling:</h2>
+
+<p>Here are some code lines implementing a possible variant of the previously described
+mathematical model where the number of children is a function of the number of
+parents, of a constant growth rate, and where the carrying capacity is the mean
+of the environmental variables:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// ... build the environment before this</span>
+
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">literal_factory</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">use</span><span class="p">;</span>
+<span class="n">literal_factory</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="o">&gt;</span> <span class="n">lit</span><span class="p">;</span>
+
+<span class="c1">// constant growth rate</span>
+<span class="k">auto</span> <span class="n">r</span> <span class="o">=</span> <span class="n">lit</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+
+<span class="c1">// carrying capacity averging over rain and temperature</span>
+<span class="k">auto</span> <span class="n">K</span> <span class="o">=</span>  <span class="p">(</span> <span class="n">use</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">use</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="p">)</span> <span class="o">/</span> <span class="n">lit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">;</span>
+
+<span class="c1">// retrieving the population size history</span>
+<span class="k">auto</span> <span class="n">N_cref</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+
+<span class="c1">// Enabling its use with expressive:</span>
+<span class="k">auto</span> <span class="n">N_expr</span> <span class="o">=</span> <span class="n">use</span><span class="p">([</span><span class="n">N_cref</span><span class="p">](</span><span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span><span class="k">return</span> <span class="n">N_cref</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">);});</span>
+
+<span class="c1">// Making the logistic growth expression:</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">N_expr</span><span class="o">*</span><span class="p">(</span><span class="n">lit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="n">lit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">((</span><span class="n">r</span> <span class="o">*</span> <span class="n">N_expr</span><span class="p">)</span><span class="o">/</span><span class="n">K</span><span class="p">));</span>
+
+<span class="c1">// capturing g to build a sampling distribution</span>
+<span class="k">auto</span> <span class="n">sim_N_tilde</span> <span class="o">=</span> <span class="p">[</span><span class="n">g</span><span class="p">](</span><span class="n">generator_type</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">poisson_distribution</span><span class="o">&lt;</span><span class="n">history_type</span><span class="o">::</span><span class="n">N_type</span><span class="o">::</span><span class="n">value_type</span><span class="o">&gt;</span> <span class="n">poisson</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">));</span>
+  <span class="k">return</span> <span class="n">poisson</span><span class="p">(</span><span class="n">gen</span><span class="p">);</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+<p>Then you can pass the <code class="language-plaintext highlighter-rouge">sim_N_tilde</code> expression to a demographic simulator.
+ Remarkably, even if you change some lines you will always be able to pass
+ this expression to the demographic simulator
+ as long as you don’t modify its signature <code class="language-plaintext highlighter-rouge">(generator_type&amp; gen, coord_type x, time_type t)</code>.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Of course this niche model is not relevant: it’s a toy model. The main point is that it
+is very easy for the user to modify it.</p>
+
+<blockquote>
+  <p>But what if $r$ is unknown and you want to estimate it ?</p>
+</blockquote>
+
+<p>The ABC tutorial will give you insights on how manipulating the parameters of the
+niche functions in an ABC framework.</p>
+:ET

@@ -62,10 +62,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Allele_8h.html",
-"classquetzal_1_1coalescence_1_1Forest.html#abb429532d4cd1b5b06771f10c5dbf7b9",
-"classquetzal_1_1geography_1_1DiscreteLandscape.html#a422f508838180e37caf8610058bd869a",
-"functions_func_c.html",
-"structquetzal_1_1expressive_1_1Callable__traits_3_01symetric__binop__t_3_01FL_00_01Operator_00_01FR_01_4_01_4.html#af45f285408ab9cdf7c43ed42d760fab5"
+"classquetzal_1_1coalescence_1_1Forest.html#a881709fd9aa241a17b82f5c16103c722",
+"classquetzal_1_1genetics_1_1Loader.html#ae56c5259d619b4e7eb0b88c85a604c3c",
+"expressive_2expressive_8h.html#aae5b7976627bcf64e3dde600c868e70b",
+"structquetzal_1_1demography_1_1dispersal__kernel_1_1ExponentialPower.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

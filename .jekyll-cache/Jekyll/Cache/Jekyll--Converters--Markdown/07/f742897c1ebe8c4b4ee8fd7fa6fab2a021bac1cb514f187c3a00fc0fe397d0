@@ -1,0 +1,143 @@
+I"�<p>This part of the tutorial presents some basics for readers
+who would be unfamiliar with the coalescence process.</p>
+
+<h1 id="what-is-coalescence">What is coalescence?</h1>
+
+<p>Imagine a population of haploid individuals. They reproduce and die, and their children
+take their place. Even without considering natural selection, some individuals
+may randomly have few more children than others, transmitting a copy of their
+own genetic material to the following generation. Consequently, the genetic composition
+of the following generation may be slightly
+different from the previous one, even if no mutations happen. This is a well-known process
+that we intuitively understand forward in time:</p>
+
+<p><img src="http://localhost:4000/pictures/decrypt/fig1b.jpg" alt="" height="30%" width="30%" /></p>
+
+<p><em>Evolutionary process of whole population. Adapted from Irwin et al. (2016).</em></p>
+
+<blockquote>
+  <p><strong>Task</strong></p>
+  <ul>
+    <li>Take a look at the previous figure.</li>
+    <li>Does it look like a coalescent tree? What is different?</li>
+    <li>Reconstruct the distribution of the number of children for few generations.</li>
+    <li>How does it affect the genealogical process and the population diversity?</li>
+    <li>What population parameter would you change in this example to attenuate this effect?</li>
+  </ul>
+</blockquote>
+
+<p>Modeling a process forward in time is not always relevant. For example,
+think about simulating data: we would need to simulate a whole population of
+individuals and their genetic material in order to simply sample a small fraction of the
+whole population. It’s not very convenient.</p>
+
+<p>John Kingman developed the idea that it may actually be more elegant to track the
+lineages of a set of sampled gene copies <em>backward in time</em> until they find their common ancestor.
+The demographic processes (reproduction rate, migration…) stay the same, only the perspective changes: rather than
+following the genetic evolution of a whole population, we simply look at how the
+genetic diversity of the sample <em>only</em> has been shaped by the demographic history.</p>
+
+<p><strong>In this framework, a coalescence event is simply the replication of the DNA, viewed backward in time.</strong></p>
+
+<p>It means the two following views are equivalent:</p>
+<ul>
+  <li>imagining a parent making copies of its genes and sending them to an uncertain future, meaning that some lineages may die.</li>
+  <li>for a set a sampled gene copies, reconstructing the history of replications events (when and where the parental copies are found?)</li>
+</ul>
+
+<p>Instead of following all the lineages inside a population from the past to the present,
+we track the past history only of the lineages that we sampled: it gives a clearer picture
+of the lineages of interest:</p>
+
+<p><img src="http://localhost:4000/pictures/decrypt/fig1b_complete.jpg" alt="" height="40%" width="40%" /></p>
+
+<p><em>Evolutionary process of whole population. Adapted from Irwin et al. (2016).</em></p>
+
+<blockquote>
+  <p><strong>Task</strong></p>
+  <ul>
+    <li>Does this tree better match your expectation of a coalescent tree?</li>
+    <li>Look closer at the number of branches: why do you think that usually coalescent trees are represented as binary trees?</li>
+    <li>WHat assumption do you make by choosing to track only the sampled lineages and not even consider the others?</li>
+  </ul>
+</blockquote>
+
+<h1 id="fifty-shades-of-gene-trees">Fifty shades of gene trees</h1>
+
+<p>We are generally interested in characteristics of the lineages trees that are generated under
+such demographic processes:</p>
+<ul>
+  <li>number of branches in the tree</li>
+  <li>their lengths</li>
+  <li>the time to the root of the tree,</li>
+  <li>or also the number of merges (how many branches are connected to a same node).</li>
+</ul>
+
+<p>These quantities will be referred as <em>genealogical properties</em>: they are useful
+summaries of a genealogy (trees are quite complex structures when one thinks about it…)</p>
+
+<p>Because reproduction is stochastic, we may never generate twice the exact same tree. That is, the genealogical properties
+don’t have a fixed value under a model, and they are instead better described by probability distributions: under a given demographic history, some values of these quantities may be more likely than others.</p>
+
+<p>Along the years, mathematicians have produced a (large) number of formulas to describe these distributions
+(expected values and the dispersion around these values). Generally students are taught
+about the simplest models (<em>e.g.</em> Wright-Fisher with or without migration). It is important to
+keep in mind that a given formula (for example the expected time to the MRCA) is
+linked to a particular demographic model, that implies a number of assumptions.</p>
+
+<blockquote>
+  <p><strong>Task</strong></p>
+  <ul>
+    <li>List the formulas you learned in class.</li>
+    <li>What quantities do they describe?</li>
+    <li>From what model have they been derived? List its assumptions.</li>
+    <li>What could be the most important consequences of an unmet assumption?</li>
+  </ul>
+</blockquote>
+
+<h1 id="inference">Inference</h1>
+
+<p>Different demographic models may differ by their ability to produce different shapes of gene trees.</p>
+<ul>
+  <li>isolated population with constant size</li>
+  <li>demographic fluctutations in a population</li>
+  <li>network of sub-populations connected by migration</li>
+  <li>metapopulation in an heterogeneous landscape</li>
+</ul>
+
+<p>Model choice can be straightforward if the biological system is well-known.
+Sometimes it can also be unclear if one model should be preferred over another, and selecting
+the model that allows to best represent the data can then become an important part of the inference process
+(<a href="https://en.wikipedia.org/wiki/Model_selection"><em>model selection</em></a>).</p>
+
+<p>These models are generally parametrized, that is that slightly different parameter values
+(population size, migration rate, dispersal rate) may produce slightly different trees -
+different distributions of the genealogical properties. Such parameters are generally
+not known with precision, so identifying the parameters values that may have led to the observed
+genetic data become the main point of coalescence-based inference.</p>
+
+<p>This a feasible because the characteristics of gene trees generated by a model
+grandly affect the genetic patterns of the sample when mutations are superimposed
+on the genealogies.</p>
+
+<p><img src="http://localhost:4000/pictures/decrypt/parameter_estimation.gif" alt="" /></p>
+
+<p><em>Maximum Likelihood estimation of the mean parameter of a model. Modifying the parameter of a model modifies the distribution
+of the data that can be generated under this model. In a coalescence setting, modifying
+the growth rate of a spatially explicit demographic model modifies the genealogical properties
+and the sample genetic diversity that depends on these genealogies.
+Finding both the model and the parameter that allows to best match observed patterns is the purpose of inference.
+The <a href="https://en.wikipedia.org/wiki/Likelihood_function">likelihood function</a> is a way to describe the quality of the match. <a href="https://towardsdatascience.com/maximum-likelihood-estimation-984af2dcfcac">Animation borrowed from towardsdatascience.com</a>.</em></p>
+
+<blockquote>
+  <p><strong>Task</strong></p>
+  <ul>
+    <li>What other inference methods do you know?</li>
+    <li>In these methods, how is represented the match quality to the observations?</li>
+  </ul>
+</blockquote>
+
+<h1 id="references">References</h1>
+
+<p>Irwin, K., Laurent, S., Matuszewski, S. et al. On the importance of skewed offspring distributions and background selection in virus population genetics. Heredity 117, 393–399 (2016). https://doi.org/10.1038/hdy.2016.58</p>
+:ET

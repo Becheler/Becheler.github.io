@@ -1,0 +1,21 @@
+I"á<p><strong>Cryptic species or deep spatial structure?</strong></p>
+
+<p>Better inform your <strong>taxonomic changes</strong>.</p>
+
+<p>Test if your <strong>species delimitation</strong> is <strong>robust to spatial sampling</strong>.</p>
+
+<p><img src="/draw/logos/decrypt.png" alt="DECRYPT" /></p>
+
+<p>Decrypt is a tool allowing to shed light on systems where <strong>cryptic diversity</strong> and
+<strong>isolation by distance</strong> are two competing hypothesis. Decrypt can help understanding
+if the genetic structure detected under the <em>MultiSpecies Coalescent</em> (<strong>MSC</strong>) could possibly
+be explained by an intra-species spatial structure scenario.</p>
+
+<p>It can be seen as a way to automate MSC robustness analyses for different realistic demographic histories
+and spatial sampling schemes.</p>
+
+<p>The Decrypt C++ demogenetic simulation core has been developed using the <a href="/pages/quetzal">Quetzal library</a>.
+It generates a <strong>spatially explicit demographic history</strong> incorporating environmental
+heterogeneity. At sampling time, it simulates gene trees under different sampling schemes.
+Then, sequences are simulated along the gene trees, and BPP is run for <strong>species delimitation</strong>.</p>
+:ET

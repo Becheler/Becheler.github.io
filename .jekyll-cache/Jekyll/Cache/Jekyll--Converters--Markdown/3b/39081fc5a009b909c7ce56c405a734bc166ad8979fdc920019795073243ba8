@@ -1,0 +1,111 @@
+I"<p>One promise of <a href="http://www.cbd.cmu.edu/about-us/what-is-computational-biology/">Computational Biology</a>
+is to develop reliable software of interest for a wide range of biological problems.
+But often in biology, each new problem is a bit different than the previous one,
+existing code has to evolve for various possible reasons: to adapt to <strong>this new biological material</strong>,
+to integrate <strong>this new super-fast algorithm</strong>, or to scale performances with <strong>this huuuuge dataset</strong>.
+It is safe to say that in science, like in industry, requirements do and will change <em>at some point</em>.
+But as soon as they do, the code has to adapt or it becomes outdated.
+And S.O.L.I.D. can help you!</p>
+
+<h3 id="they-are-the-set-of-common-sense-guidelines-we-need">They are the set of common sense guidelines we need</h3>
+
+<p>Because updating code is (very) costly, changes in code requirements can cause the death of
+code bases that do not allow an easy integration of new and required extensions.</p>
+
+<blockquote>
+  <p>Rigid and outdated scientific code is dead code.
+Well-designed outdated code has at least a chance to survive by being updated.</p>
+</blockquote>
+
+<p>Writing robust code has been widely discussed by software engineers in industry
+within the last decades. They have honed in on the principles of writing robust code: <strong>S.O.L.I.D.</strong> As scientists who write code, <em>we need to be aware of these solutions.</em></p>
+
+<p>S.O.L.I.D is an acronym for
+<strong>five core principles in object-oriented programming</strong>, largely considered as
+one of the most important acronyms in object-oriented design.</p>
+
+<p>They have been initially identified by Robert Martin in the late
+1990s as pivotal to design sound code using classes. Together, they
+allow developers to identify problems more clearly and to reason and communicate their
+<strong>intuition regarding clean or bad code</strong>.</p>
+
+<p>When an application demonstrates <a href="http://localhost:4000/pages/under_construction.html">symptoms of bad design</a>
+(the code is hard to modify, hard to test, hard to fix, breaks everywhere all the time… yeah we’ve all been there), we generally
+have <strong>an intuition of the root of the problem</strong>:</p>
+<ul>
+  <li><em>Oh man, this class too big, I cannot understand how it works!</em></li>
+  <li><em>This code base is a total mess of interdependent modules, it’s impossible to debug!</em></li>
+  <li><em>Why the hell should I modify your source code to add my new feature? I don’t have time to understand your code!</em></li>
+</ul>
+
+<p>Yet we often <strong>don’t know how to act</strong>, as we don’t know how <strong>formalize</strong> these intuitions
+into a set of core rules that should be respected to make the code more robust.
+<strong>SOLID does exactly that for us.</strong></p>
+
+<p>When my code is hard to work with, it generally turns out that I violated several of these
+principles. Oopsie. But if I refactore the code to respect these principles,
+I generally feel much better about the code. I can understand it, isolate it, test it, update it.</p>
+
+<h2 id="the-five-principles"> The Five Principles</h2>
+<ul>
+  <li><a href="/make-code-surgery-easy-with-SRP/"><strong>S - Single Responsibility Principle, or S.R.P.</strong></a>
+Each class should do just one thing, but do it well.</li>
+  <li><a href="http://localhost:4000/pages/blog/under_construction.html"><strong>O - Open/Closed Principle</strong></a>:
+The code should be open to extensions, but closed to modifications</li>
+  <li><a href="http://localhost:4000/pages/blog/under_construction.html"><strong>L - Liskov Substitution Principle</strong></a>:
+If B is a sub-type of A, then it should be possible to replace any instance of A
+by an instance of B without ruining everything.</li>
+  <li><a href="http://localhost:4000/pages/blog/under_construction.html"><strong>I - Interface Segregation Principle</strong></a>:
+No code should depend on methods that it does not use.</li>
+  <li>
+    <p><a href="http://localhost:4000/pages/blog/under_construction.html"><strong>D - Dependency Inversion Principle</strong></a>
+We should depend on abstractions, not implementations.</p>
+
+    <p>These principles can seem a bit abstract at first
+and I don’t think it worthwhile to spend days in trying to fully understand them <em>theoretically</em>
+(I personally still struggle to understand the implications of the Dependency Inversion Principle).</p>
+
+    <p>But we should be aware of the core ideas SOLID expresses, so when faced with issues in our code we can analyze
+and react:</p>
+
+    <blockquote>
+      <p>“Oh, this mess is just me ignoring the Single Responsibility Principle again!
+  Let’s refactor the code to break down complexity and be able to commit a bug fix!”</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="does-it-work">Does it work?</h2>
+
+<p>There is no formal proof that these principles actually work, but
+accumulated experience within the developers community (including my own) shows that,
+<strong>better design and less problems result from writing code that respect S.O.L.I.D.</strong> principles.</p>
+
+<p>Consequently, these are absolute rules to follow at any cost, but are
+rather meant as good advice and practical heuristics:</p>
+
+<blockquote>
+  <p>They are common-sense solutions to common problems. They are
+common-sense disciplines that can help you stay out of trouble.
+<a href="https://sites.google.com/site/unclebobconsultingllc/getting-a-solid-start">Martin, 2009</a></p>
+</blockquote>
+
+<p>When an entire scientific community has achieved consensus on a solution, as researchers we can perhaps give them some credence.</p>
+
+<h2 id="the-dont-get-into-trouble-todo-list">The Don’t-Get-Into-Trouble-Todo-List</h2>
+
+<p>If you want to stay out of trouble and keep control of your code, I would advise to:</p>
+
+<ul>
+  <li>First, <strong>learn the SOLID principles</strong>. Try to build at least an intuition
+of the problem/solution they describe. We are half programmers, and SOLID is a
+<strong>basics</strong> of programming.</li>
+  <li>Next, learn to identify <strong>the moments when you are in difficulty</strong> and <strong>the reasons why</strong>:
+does your code suffer from bad-design symptoms? Is it <em>rigid</em>? <em>fragile</em>?</li>
+  <li>Try to link your problems and your gut feelings to a SOLID principle.</li>
+  <li>Plan the refactoring to fix your problem: for example if the D.I.P is not respected, divide
+this big ugly mammoth class into several smaller independent ones.</li>
+  <li>Ask for help: the online communities can be super helpful as you refactor code at minimal cost. And, exchanges on these platforms can build your programming confidence and help you make informed decisions!</li>
+  <li>Trust yourself: if you don’t think respecting SOLID is the best way to go, that’s okay. Don’t get discouraged!</li>
+</ul>
+:ET

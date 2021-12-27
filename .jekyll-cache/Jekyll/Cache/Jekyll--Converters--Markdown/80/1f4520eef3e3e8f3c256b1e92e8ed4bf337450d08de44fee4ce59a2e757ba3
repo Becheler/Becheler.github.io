@@ -1,0 +1,197 @@
+I"7<p>If you made good use of the <a href="2021-08-06-make-code-surgery-easy-with-SRP">Single Responsibility Principle</a>,
+your code should begin to look more and more like a <strong>team of independent but cooperating entities</strong>,
+each one having their specific role and their unique qualities. It’s actually not
+so different from a <strong>basketball team</strong>, where the position of a player on the court is associated to their individual
+behavior and qualities. The <em>point guard</em> position requires good leadership and considerable
+ball-handling skills. You generally want your <em>shooting guard</em> to be the best, most accurate
+long-distance shooter, your <em>small forward</em> to be aggressive, and the <em>center</em> to be
+the tallest of your team. Also, when one of your best player passes out during a game, you
+want to preserve the team alchemy by picking a substitute with similar responsibilities, qualities and behavior.
+Similarly in a code project, when one class has to be replaced, the <strong>Liskov Substitution Principle</strong>
+(the <strong>L</strong> of the <a href="2018-10-20-how-to-write-solid-code"> S.O.L.I.D. principles</a>)
+can make this step considerably more secured by guaranteeing that this new programmatic
+player will interact with its teammates in a way that is comparable with its ancestor.
+This is generally enough to make sure that this change will not throw
+the entire computer play-field into disarray.</p>
+
+<h3 id="a-bit-of-history">A bit of history</h3>
+
+<p>The L.S.P was introduced by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a>,
+one of the first American women to get a doctorate in computer science!
+She earned a BA in mathematics at Berkeley in 1961, where she had <strong>only one</strong> other female classmate!
+After her graduation she applied to mathematics programs at Berkeley and Princeton,
+but Princeton was not accepting female students in mathematics at this time - <em>sigh</em>.
+She went to Standford, where the topic of her Ph.D. thesis was to develop
+the <em>Huberman’s program</em> to play chess end games
+where few pieces play against a lone King. For this, she developed the Killer Heuristics
+(<em>a quite French way to bring down the chess patriarchy</em>).</p>
+
+<h3 id="definitions">Definitions</h3>
+
+<p>With <a href="https://en.wikipedia.org/wiki/Jeannette_Wing">Jeannette Wing</a>,
+Barbara Liskov developed a distinct definition of subtyping that can help programmers minimizing
+side-effects in our code: the <strong>Liskov Substitution Principle</strong>:</p>
+
+<blockquote>
+  <p><strong>Liskov Substitution Principle:</strong>
+Let  <em>A(x)</em> be a property provable about
+objects <em>x</em> of type <strong>T</strong>. Then <em>A(y)</em> should be true for objects <em>y</em> of type <strong>S</strong> where <strong>S</strong> is a
+subtype of <strong>T</strong> (Liskov and Wing, 1994).</p>
+</blockquote>
+
+<p>If you are like me and easily scared by maths, well, I can <strong>ensure</strong> you: there is
+nothing intimidating here! <strong>Subtyping</strong> is simply what happens every time you derive a
+class <strong>S</strong> from a class <strong>T</strong>.</p>
+
+<blockquote>
+  <p><em><a href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)">Derivation (or inheritance)</a></em> is
+the fundamental mechanism of Object-Oriented Programming that makes possible to reuse (not modify)
+old code and to build upon pre-existing classes, rather than entering a copy-pasting frenzy
+(what you generally want to avoid).</p>
+</blockquote>
+
+<p>What Liskov tries to tell us here is that whenever you use inheritance, you should pay extra-attention
+to make sure that <strong>any property of the ancestor class remains true in your derived class</strong>. In other words, if you have a big game coming but that you need to replace your <em>injured center player</em>, you better make
+sure the new guy is at least as tall as their predecessor.</p>
+
+<p><img src="/assets/img/doodles/LSP_knock_knock.jpg" alt="Derek comes with bad news - and a job" /></p>
+
+<p>If you are familiar with Object-Oriented Programmming, an alternative formulation of the <strong>L.S.P</strong> that
+I find easier to understand is the one that Robert Martin gives:</p>
+
+<blockquote>
+  <p>Functions that use pointers or references to base classes must be able to use
+objects of derived classes without knowing it (Martin, 1996c).</p>
+</blockquote>
+
+<p>This ensures that you can modify a part of your code and extend its functionalities
+without breaking the rest of the application every time you need to substitute an object
+by another.</p>
+
+<p><img src="/assets/img/doodles/LSP_anyone.jpg" alt="Derek asks for a Liskov substitute" width="300" /></p>
+
+<p>I find the <strong>Liskov Substitution Principle</strong> particularly elegant because it’s one of
+the few design principles that actually has a formal,
+logical definition. Think about how open to interpretation the
+<a href="2021-08-06-make-code-surgery-easy-with-SRP">Single Responsibility Principle</a> was: it
+does not constrain the <strong>definition</strong> of a responsibility, it only constrains the
+<strong>number</strong> of responsibilities a class should have. Even if you are <strong>seriously committed</strong> to giving one
+and only one responsibility to each class, the actual interpretation of a <em>responsibility</em>
+is still up to you! And this vagueness is not always a good thing because it leaves room
+for mistakes, poor decision making and bad design. Well, with the <strong>L.S.P</strong>,
+we don’t really have that much space to mess up: its formulations are actually pretty clear.</p>
+
+<p><img src="/assets/img/doodles/LSP_guys.jpg" alt="Léonin being bullied by the code again" /></p>
+
+<h2 id="an-application-example">An application example</h2>
+
+<h3 id="step-1-the-abstract-flock">Step 1: The abstract flock</h3>
+
+<p>Imagine you developed a library to simulate birds migration.
+You proudly declared a base class <code class="language-plaintext highlighter-rouge">Bird</code> to generalize the concept of bird, making your
+brilliant code applicable to any kind of bird:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">Bird</span><span class="p">{</span>
+    <span class="n">fly</span><span class="p">(){}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Somewhere else in your library, you can use this abstraction in a function
+to represent the dispersal of a population of birds towards new habitats.
+This generalizes the dispersal process to any kind of bird:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">function</span> <span class="nf">disperse_all</span><span class="p">(){</span>
+  <span class="k">for</span> <span class="n">each</span> <span class="n">bird</span> <span class="n">in</span> <span class="n">population</span><span class="p">){</span> <span class="c1">// where population is e.g. a list of Bird pointers</span>
+      <span class="n">bird</span><span class="p">.</span><span class="n">fly</span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Brilliant!</p>
+
+<h3 id="step-2-the-very-concrete-duck">Step 2: The very concrete Duck</h3>
+
+<p>But your research is not about <strong>abstract birds</strong> at all!</p>
+
+<p>Actually, your first project is about the very concrete, nomadic
+<a href="https://en.wikipedia.org/wiki/Pacific_black_duck">Pacific Black Duck</a>
+(<em>Anas superciliosa</em>).</p>
+
+<p>This duck has pretty weird dispersal patterns: individuals
+randomly disperse when there is a flood, but tend to stay sedentary on permanent waters.
+But in Northern Australia they tend to spend the dry season (winter and spring) on the coast,
+but then migrate inland when the summer monsoons come. In short, a pretty <del>undecisive</del> interesting bird you want
+to apply your code to!</p>
+
+<p>So you begin the code extension by deriving a class from the Bird base:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">public</span> <span class="k">class</span> <span class="nc">PacificBlackDuck</span> <span class="n">extends</span> <span class="n">Bird</span><span class="p">{}</span></code></pre></figure>
+
+<p>This brand new class gives you all the space you want to <strong>hide</strong> all the weird ecological details of the
+Pacific Black Bird: you will certainly add few data members to store the species ecological preferences and
+add some member functions to implement their <del>weird</del> unique quacking and mating behavior.</p>
+
+<p>And you run your code.</p>
+
+<p>Because  <code class="language-plaintext highlighter-rouge">PacificBlackDuck</code> is derived from <code class="language-plaintext highlighter-rouge">Bird</code>, it automatically inherits
+its public method <code class="language-plaintext highlighter-rouge">fly</code>: the function <code class="language-plaintext highlighter-rouge">disperse_all</code> has access to everything it needs when
+it calls <code class="language-plaintext highlighter-rouge">bird.fly()</code>. Your code executes perfectly: it prints some results in the terminal,
+and you walk with an <strong>immense pride</strong> towards your PI’s desk to show off your results.</p>
+
+<p>It was a very remarkable benefit of the <em>L.S.P</em>: <strong>Since the Pacific Black Duck IS a bird,
+whenever your code needed an abstract Bird it could also run properly with a Pacific Black Duck</strong>.</p>
+
+<h3 id="step-3-the-distracted-folk-fly-little--kiwi">Step 3: The distracted folk: “Fly little … kiwi?”</h3>
+
+<p>Imagine that after you published the study of the Pacific Black Duck, you are
+are now faced with conducting the same analysis with the <strong>Kiwi</strong> dataset (the bird, not the fruit).</p>
+
+<p>You follow the same logic and write:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">public</span> <span class="k">class</span> <span class="nc">Kiwi</span> <span class="n">extends</span> <span class="n">Bird</span><span class="p">{}</span></code></pre></figure>
+
+<p>Unfortunately, there is a big caveat here! The <code class="language-plaintext highlighter-rouge">Kiwi</code> class will inherit from
+the <code class="language-plaintext highlighter-rouge">fly method</code>. But trying to call <code class="language-plaintext highlighter-rouge">fly</code> on a <code class="language-plaintext highlighter-rouge">Kiwi</code> makes makes <strong>no sense</strong>
+since it’s a flightless creature! That so lame! In the present state,
+the logic of the code is actually ill-defined! Yeah I know, how disappointing. Let’s fix that.</p>
+
+<p>Of course your first instinct will be to test if the bird at hand is a <code class="language-plaintext highlighter-rouge">Kiwi</code>, and if
+so, to call the method <code class="language-plaintext highlighter-rouge">hop</code> rather than <code class="language-plaintext highlighter-rouge">fly</code> in the <code class="language-plaintext highlighter-rouge">disperse_all</code>. Well, I hope
+Derek did not hear you saying this. It’s called <a href="https://en.wikipedia.org/wiki/Run-time_type_information">Runtime Type Information (RTTI)</a>.
+and it’s generally <strong>NOT</strong> a good idea: trying to identify the real type of an object in order to call the appropriate function
+is a common violation of the <strong>LSP</strong>. It would also clearly violate the <a href="http://localhost:4000/pages/blog/under_construction.html"><strong>Open Closed Principle</strong></a>, since the <code class="language-plaintext highlighter-rouge">disperse_all</code> code would have to be modified each time that a new derived class (<em>e.g.,</em> a <code class="language-plaintext highlighter-rouge">Penguin</code>) is added.</p>
+
+<h3 id="step-4-the-tadaaaa">Step 4: The “tadaaaa”</h3>
+
+<p>What the <strong>L.S.P.</strong> says is that if you want to avoid big problems,
+you should instead refactor your code to preserve its conceptual integrity by
+defining a clear hierarchy of concepts!</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">Bird</span><span class="p">{}</span>
+<span class="k">class</span> <span class="nc">FlyingBirds</span> <span class="n">extends</span> <span class="n">Bird</span><span class="p">{</span>
+    <span class="n">fly</span><span class="p">(){}</span>
+<span class="p">}</span>
+<span class="k">class</span> <span class="nc">PacificBlackDuck</span> <span class="n">extends</span> <span class="n">FlyingBirds</span><span class="p">{}</span>
+<span class="k">class</span> <span class="nc">Kiwi</span> <span class="n">extends</span> <span class="n">Bird</span><span class="p">{}</span></code></pre></figure>
+
+<p>And tadaaaa ! You end up with few more classes, but a much more consistent logic. More
+importantly, your code is:</p>
+<ul>
+  <li>more <strong>robust</strong>: <em>it will not break when you will need a penguin</em></li>
+  <li>more <strong>maintainable</strong>: <em>you will not have to modify existing code every time you study a new bird</em></li>
+  <li>more <strong>reusable</strong>: <em>an external user will be able to reuse your algorithms with their own birds without having to modify the code you wrote</em></li>
+</ul>
+
+<p>Thank you Liskov!</p>
+
+<p><img src="/assets/img/doodles/LSP_tragic_mistake.jpg" alt="Léonin en route fo the cluster" /></p>
+
+<h2 id="found-on-derek-and-léonins-bookshelf">Found on Derek and Léonin’s bookshelf</h2>
+
+<ul>
+  <li>
+    <p><a href="http://staff.cs.utu.fi/staff/jouni.smed/doos_06/material/DesignPrinciplesAndPatterns.pdf">“Design principles and design patterns” - Martin, Robert C. (2000)</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.amazon.fr/Coder-efficacement-Bonnes-pratiques-erreurs/dp/2822701660">“Coder efficacement : Bonnes pratiques et erreurs à éviter (en c++)” - Philippe Dunski</a></p>
+  </li>
+</ul>
+:ET

@@ -1,0 +1,39 @@
+I"�<p>Welcome to the Quetzal-CoalTL tutorials! :wink:</p>
+
+<p>If you are here, then there is a good chance that you are interested in writing
+<em>complicated code</em> to simulate <em>complicated stuff</em> in <em>complicated landscapes</em>
+and you would like to understand how this library is <strong>ever</strong> going to
+simplify your life :laughing:</p>
+
+<p>Well, the problem with stacking up complications
+is that at the end it’s quite tricky to give you an overview of the library
+capabilities and possible extensions without having you running away in utter despair! :cold_sweat:</p>
+
+<p>So I will try to keep things simple. But even doing so, there will be problems
+along this bumpy road I’m trying to carve for us. So don’t get discouraged if
+something happens, and <strong>contact me to help you out</strong>:</p>
+<ul>
+  <li>:email: write me an email</li>
+  <li>:heavy_exclamation_mark: or open an issue on github!</li>
+  <li>:point_down: or much easier, just describe you problem in the comment sections!</li>
+</ul>
+
+<h1 id="whats-in-it-for-me">What’s in it for me?</h1>
+
+<p>The big goal of this series of tutorial is to have you be able to use the library
+to write your own Quetzal-EGG or to extend the library in the direction of your choice.</p>
+
+<p>But to do so you will have to understand a few concepts:</p>
+<ul>
+  <li>:microscope: some are <strong>scientific</strong> in nature
+(<em>e.g., how to model gene genealogies in landscapes</em>)</li>
+  <li>:computer: some are <strong>pure C++ concepts</strong> (<em>e.g., template programming, policy-based design</em>)</li>
+  <li>:snake: other are concepts that are <strong>specific to Quetzal-CoalTL</strong> (<em>e.g., what the library mean by “manipulating gene trees?”</em>).</li>
+</ul>
+
+<p>Consequently, we will begin with simplistic models and expectations, like <strong>simulating a gene copy walking in a straight line</strong>, or <strong>counting the increasing number of leaves in a coalescing tree</strong>.</p>
+
+<p>Not as fun as full blown Quetzal-EGGS, but assuredly more tractable!</p>
+
+<p>But no worries, at the end, we will tie everything together to come up with a customized, usable simulator! :egg: :egg: :egg:</p>
+:ET

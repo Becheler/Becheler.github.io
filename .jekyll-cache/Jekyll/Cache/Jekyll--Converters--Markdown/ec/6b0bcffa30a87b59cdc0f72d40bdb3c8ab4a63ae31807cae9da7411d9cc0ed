@@ -1,0 +1,545 @@
+I"��<p>Imagine you’re a phD student lost in the Kalahari desert with your trainee and one mission: studying a population of mosquitoes that thrive in two oasis in the middle of said desert. You have no mathematical skills, no internet, no phone, no PI: just a computer and the Quetzal documentation. How brave you are!</p>
+
+<p>In your infinite wisdom, you decide that a very first step in the right direction would be to <em>at least</em> come up with some simulation of the mosquitoes population. So you proceed to daub yourself with large amounts of insect repellent so you can observe these flying, biting buggers closer.</p>
+
+<p>It seems that the two oasis are similar in size and resources, separated by some distance, but still close enough to enable mosquitoes to move from one to the other in what seems to be a quite random pattern. By using your trainee as a living bait, you succeeded to capture several fecundated females, that laid on average 100 eggs each then dies.</p>
+
+<p>### Mathematical formalization of the biological process</p>
+
+<p>You have no idea what to do with this biological knowledge. You try to write some symbols on the sand, but they don’t make any more sense to you than to the vultures circling in the sky. You feel a cold sweat running down your back as you’re seized by the overwhelming sensation of a looming disaster: you hold your breath as if it could stop time and prevent your foreseeable academic failure. Suddenly, you hear a voice coming from behind your shoulder.</p>
+
+<blockquote>
+  <p>“Hey! Awww you’re doing math? That’s so cool! I majored in probability and statistics!”</p>
+</blockquote>
+
+<p>You turn so fast that you trip in the sand and fall on your knees: your trainee is smiling at you, proudly wearing on their skin the bumpy, inflamed marks of their dedication to the cause. Your savior. Your hero.</p>
+
+<h4 id="landscape">Landscape</h4>
+
+<p>After few hours of philosophical debate on the nature of space and time, you two decide to simplify the landscape to a set $X$ of 2 demes (the 2 oasis) connected by <em>some degree</em> of migration. You note the Eastern oasis $1$ and the Western oasis $-1$. As it’s getting dark already, you go to bed feeling much more hopeful about your obviously bright future.</p>
+
+<h4 id="reproduction">Reproduction</h4>
+
+<p>On the morning, you two sip your coffee while exchanging about mating ceremonials in the insect realm. Focusing the discussion on your biological system, you assume that the mosquitoes reproduction events are synchronized (no generation overlap), and that $\tilde{N}(x,t)$, the population size after reproduction in oasis $x$ at time $t$ is simply equal to the population size <em>before</em> reproduction times the fecundity <em>r</em>:</p>
+
+<p>\[
+  \tilde{N}(x,t) = r.N(x,t)
+\]</p>
+
+<h4 id="migration">Migration</h4>
+
+<p>You give some thoughts about migration patterns. From what you remember from your textbooks, you have no reason to believe that mosquitoes disperse in flocks, what simplifies things quite a bit if you can consider each individual movement independently.</p>
+
+<p>You begin to think of a demographic algorithm where the location of every individual after the dispersal event would be <em>somehow</em> sampled in a probability distribution.</p>
+
+<blockquote>
+  <p>“You see what I mean?” you ask your new maths guru.</p>
+
+  <p>“Yeah, but considering you have only 2 locations, I think you simply want to sample a binomial, right?”</p>
+</blockquote>
+
+<p>You deflect the question by pretending you are in a dire need for coffee, conveniently hiding your ignorance by letting the mathematician do their mathematical things. But when you cautiously come back, the sand is covered with mysterious notations. Without leaving you any time to escape, the trainee proceeds to explain the modelisation.</p>
+
+<p>After reproduction, the children dispersal is simulated by sampling their destination
+in a binomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
+$x$ to $y$ at time $t$:</p>
+
+<p>\[ ( \Phi_{x,y}^{t} )_{y \in X} \sim B(\tilde{N}_{x}^{t}, p) \]</p>
+
+<p>The term $ p $ is the parameter of the binomial distribution, giving for an individual in oasis $1$ its proability to go to the other oasis $-1$.
+These probabilities are given by the dispersal law with parameter $\theta$:</p>
+
+<p>\[
+ \begin{array}{cclcl}
+ m  &amp; : &amp;  X^2 &amp; \mapsto &amp; R_{+} <br />
+ &amp;   &amp;    (x,y)     &amp; \mapsto &amp; m^{\theta}(x,y)  ~. <br />
+ \end{array}
+\]</p>
+
+<p>After migration, the number of individuals in deme $x$ is defined by
+ the total number of individuals converging to $x$:</p>
+
+<p>\[
+  N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
+ \]</p>
+
+<h3 id="complete-code-solution">Complete code solution</h3>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "quetzal/demography.h"
+#include &lt;iostream&gt;
+#include &lt;random&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+
+  <span class="c1">// Here we simulate a population expansion through a 2 demes landscape.</span>
+
+  <span class="c1">// Use type aliasing for readability</span>
+  <span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">generator_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+
+  <span class="c1">// choose the strategy to be used</span>
+  <span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">strategy</span><span class="o">::</span><span class="n">individual_based</span><span class="p">;</span>
+
+  <span class="c1">// Initialize the history with 10 individuals introduced in deme x=1 at time t=2018</span>
+  <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">History</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="p">,</span> <span class="n">individual_based</span><span class="o">&gt;</span> <span class="n">history</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+
+  <span class="c1">// Get a reference on the population sizes database</span>
+  <span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+
+  <span class="c1">// Capture it with a lambda expression to build a growth function</span>
+  <span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+
+  <span class="c1">// Number of non-overlapping generations for the demographic simulation</span>
+  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nb_generations</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+
+  <span class="c1">// Random number generation</span>
+  <span class="n">generator_type</span> <span class="n">gen</span><span class="p">;</span>
+
+  <span class="c1">// Stochastic dispersal kernel, purposely very simple</span>
+  <span class="c1">// The geographic sampling space is {-1 , 1}, there is 50% chance to migrate</span>
+  <span class="k">auto</span> <span class="n">sample_location</span> <span class="o">=</span> <span class="p">[](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">bernoulli_distribution</span> <span class="n">d</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="p">(</span><span class="n">gen</span><span class="p">)){</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">x</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+  <span class="p">};</span>
+
+  <span class="n">history</span><span class="p">.</span><span class="n">expand</span><span class="p">(</span><span class="n">nb_generations</span><span class="p">,</span> <span class="n">growth</span><span class="p">,</span> <span class="n">sample_location</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Population flows from x to y at time t:</span><span class="se">\n\n</span><span class="s">"</span>
+            <span class="o">&lt;&lt;</span> <span class="n">history</span><span class="p">.</span><span class="n">flows</span><span class="p">()</span>
+            <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The output would be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Population flows from x to y at time t:
+
+time	from	to	flow
+2020	1	-1	17
+2020	1	1	25
+2020	-1	-1	21
+2018	1	1	12
+2020	-1	1	17
+2019	1	-1	12
+2019	-1	-1	7
+2018	1	-1	8
+2019	-1	1	9
+2019	1	1	12
+</code></pre></div></div>
+
+<h3 id="step-by-step-implementation">Step-by-step implementation</h3>
+
+<p>First create a new file <code class="language-plaintext highlighter-rouge">demo.cpp</code> to write the simulation code in.</p>
+
+<h4 id="including-the-required-features">Including the required features</h4>
+
+<p>First we need to include the files allowing to build a demographic expansion.
+This can be for example the <code class="language-plaintext highlighter-rouge">History</code> class, that is part of the <code class="language-plaintext highlighter-rouge">demography</code>
+module. So first make sure to include the demography module:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "quetzal/demography.h"
+</span></code></pre></div></div>
+
+<p>We will also need a couple of things:</p>
+<ul>
+  <li>print objects in the terminal</li>
+  <li>a random number generator for the simulation</li>
+  <li>a simple, standard bernoulli random distribution to representation migration between two demes</li>
+</ul>
+
+<p>To get these features we include some STL features:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;random&gt;
+</span></code></pre></div></div>
+
+<p>So now that we included the required pre-existing code, we can begin to write our own code
+in the main function of the program:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "quetzal/demography.h"
+#include &lt;iostream&gt;
+#include &lt;random&gt;
+</span>
+<span class="kt">int</span> <span class="n">main</span>
+<span class="p">{</span>
+
+  <span class="c1">// we will write things here</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h4 id="expliciting-the-simulation-model-framework-and-hypothesis">Expliciting the simulation model framework and hypothesis</h4>
+
+<p>A feature of Quetzal is that it makes no hypothesis about the space or the time representation.
+It is quite important to allow users to consider any way to represent space and time
+dimensions, using for example a geographic coordinates system.</p>
+
+<p>Here we keep things simple so we consider the time to be represented by integer years,
+and the space to be represented also by integers:</p>
+<ul>
+  <li>the number 1 representing the first deme</li>
+  <li>the number -1 representing the other deme.</li>
+</ul>
+
+<p>We specify these choices by defining some <strong>type aliases</strong> to keep things clear and
+to be able to later change more easily the types if needed:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>We also want to use a standard <strong>random number generator</strong>, the mersenne twister engine:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">generator_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>We choose the individual-base strategy. Again, a <strong>type alias</strong> is welcome here:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">strategy</span><span class="o">::</span><span class="n">individual_based</span><span class="p">;</span>
+</code></pre></div></div>
+<h4 id="demographic-history-initialization">Demographic history initialization</h4>
+<p>We want to initialize the demographic history with some individuals in deme 1 in year 2018.
+We use the <code class="language-plaintext highlighter-rouge">History</code> class, that is an implementation of a forward-in-time
+demographic simulator defined in the <code class="language-plaintext highlighter-rouge">demography</code> module.</p>
+
+<p>Using <strong>template arguments</strong>, we declare that this history has to be
+recorded using the <code class="language-plaintext highlighter-rouge">coord_type</code> coordinate system and <code class="language-plaintext highlighter-rouge">time_type</code> temporal points.
+We also need to specify that we need the special simulator version implemented with the <code class="language-plaintext highlighter-rouge">individual_based</code> strategy.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">History</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="p">,</span> <span class="n">individual_based</span><span class="o">&gt;</span> <span class="n">history</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+</code></pre></div></div>
+<h4 id="implementing-a-local-growth-process">Implementing a local growth process</h4>
+
+<p>Quetzal allow to represent the number of individuals in deme $x$ at time $t$ by
+any function of space and time: constant functions, uniform, stochastic or deterministic
+forms are all possible.</p>
+
+<p>However, most of the time, we would like some kind
+of temporal dependency. That is, we need to know the number of individuals at the previous
+generation to be able to define the number of children.</p>
+
+<p>We can retrieve this information using the following code line:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+</code></pre></div></div>
+<p>The use to <code class="language-plaintext highlighter-rouge">std::cref</code> is motivated by the fact we need a <strong>copiable reference</strong>
+to the population size history. This little trick allows to capture the history
+in a <strong>lambda expression</strong> encoding the growth process without having to copy the whole
+historical database.</p>
+
+<p>We can define the number of children as being deterministically twice the number of parents:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+</code></pre></div></div>
+<p>This little <strong>functor</strong> is very cheap to copy and can be freely passed around the
+simulation context.</p>
+
+<p>We could as well have used the random generator argument to define it as a stochastic process modeled by
+a Poisson distribution with mean parameter $\lambda = 2N(x,t)$:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">poisson_distribution</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">dist</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">));</span>
+  <span class="k">return</span> <span class="n">dist</span><span class="p">(</span><span class="n">gen</span><span class="p">);</span>
+ <span class="p">};</span>
+</code></pre></div></div>
+
+<h4 id="implementing-a-dispersal-location-kernel-">Implementing a dispersal location kernel <a name="dispersal_sampler"></a></h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">individual_based</code> strategy requires a specific type of dispersal function.
+Remember that for each individual, a post-dispersal location is sampled in a distribution.</p>
+
+<p>Complex distance-based location dispersal distribution can be constructed from a geographic support
+using Quetzal helper functions, but for now a very simple dispersal process will be sufficient to highlight
+the simulator behavior.</p>
+
+<p>Basically we need to construct a function that can be called with three arguments:</p>
+<ul>
+  <li>the random number generator for the random part of the process</li>
+  <li>a <code class="language-plaintext highlighter-rouge">coord_type</code> argument that gives the place where the individual is <em>before dispersal</em></li>
+  <li>a <code class="language-plaintext highlighter-rouge">time_type</code> argument giving the time at which the dispersal occurs.</li>
+</ul>
+
+<p>The temporal argument is generally useless for pure distance-based dispersal that are constant in time.
+However, this argument allows important extensions:</p>
+<ul>
+  <li>if the temporal scale is large enough, the dispersal parameters can vary through time.</li>
+  <li>if the landscape heterogeneity is assumed to impact dispersal, then one may have to account for temporal
+variations of the landscape.</li>
+</ul>
+
+<p>Here we define a very simple stochastic dispersal distribution, where the geographic
+sampling space is only the two considered demes ${-1 , 1}$ and with a 50% chance
+to disperse to the other deme:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">sample_location</span> <span class="o">=</span> <span class="p">[](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">bernoulli_distribution</span> <span class="n">d</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="p">(</span><span class="n">gen</span><span class="p">)){</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">x</span><span class="p">;</span> <span class="p">}</span>
+  <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h4 id="expanding-the-history">Expanding the history</h4>
+
+<p>We first define the number of non-overlapping generations to simulate, and we also initialize the
+random number generator:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nb_generations</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="n">generator_type</span> <span class="n">gen</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>We can finally expand the history through space and time, and print out the flows historical
+database for visual check:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">history</span><span class="p">.</span><span class="n">expand</span><span class="p">(</span><span class="n">nb_generations</span><span class="p">,</span> <span class="n">growth</span><span class="p">,</span> <span class="n">sample_location</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Population flows from x to y at time t:</span><span class="se">\n\n</span><span class="s">"</span>
+          <span class="o">&lt;&lt;</span> <span class="n">history</span><span class="p">.</span><span class="n">flows</span><span class="p">()</span>
+          <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="complete-script-and-compilation-options">Complete script and compilation options</h3>
+
+<h4 id="compilation-options">Compilation options</h4>
+
+<p>The complete <code class="language-plaintext highlighter-rouge">demo.cpp</code> script is given below.</p>
+
+<p>It compiles with the following terminal command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -Wall -std=c++14 demo.cpp
+</code></pre></div></div>
+<ul>
+  <li>the option <code class="language-plaintext highlighter-rouge">-Wall</code> enables all warnings</li>
+  <li>the option <code class="language-plaintext highlighter-rouge">-std=c++14</code> enables the C++14 standard compiler support</li>
+</ul>
+
+<p>Then you can run the program with the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./a.out
+</code></pre></div></div>
+
+<h2 id="mass-based-dispersal-for-big-populations-">Mass-based dispersal for big populations <a name="mass_based"></a></h2>
+
+<p>We can avoid the cost of having to disperse each individual of the landscape by
+considering a model where population masses would be split through the landscape
+according to migration probabilities: the model is deterministic
+in the sense that no random number is generated.</p>
+
+<h3 id="pros">Pros</h3>
+
+<p>This algorithm is more efficient as the computation time is now only related to
+the number of demes in the landscape. Consequently it allows to perform simulations
+with high number of individuals in a very reasonable amount of time</p>
+
+<h3 id="cons">Cons</h3>
+
+<p>Defining a strategy that is more efficient for high populations levels
+comes with the major drawback that it is unsuited whenever populations are too small:</p>
+<blockquote>
+  <p>What if 10 individuals are split across 1000 demes ?</p>
+</blockquote>
+
+<blockquote>
+  <p>What does 0.001 individual mean in terms of coalescence probability ?</p>
+</blockquote>
+
+<p>It could seem easy to ensure it never happens. Unfortunately, population levels
+are actually hard to control in an ABC simulation context where
+parameters are randomly sampled, so we can hardly guarantee that this situation will
+not arise.</p>
+
+<p>We avoid the problem with a computational little trick: when summing the population
+flows arriving to a same deme, the least integer greater or equal to the actual flow value
+is used.</p>
+
+<p>So when dispersing 2 individuals in a 4-demes landscape with equal migration
+probabilities, the simulation will end up with $\lceil 2 \times 0.25 \rceil = 1$ individual in each deme…</p>
+
+<p>That is, dispersing 2 individuals leads to having 4 individuals in the lanscape.</p>
+
+<p>Obviously this behavior is not satisfying if the high-population hypothesis is violated,
+but when the population size in each deme is of the order of the
+number of demes, this little excess is expected to have little impact.</p>
+
+<h3 id="mathematical-description">Mathematical description</h3>
+
+<p>The children dispersal is done by splitting the population masses according
+ to their migration probabilities, defining
+ $ \Phi_{x,y}^t $, the population flow going from $x$ to $y$ at time $t$:</p>
+
+<p>\(
+ (\Phi_{x,y}^{t})<em>{y\in  X} =  ( \lceil \tilde{N}</em>{x}^{t} \times m_{xy} \rceil )_{y\in  X} ~.
+ \)</p>
+
+<p>The term $ m_{xy} $ denotes the parameters of the transition kernel,
+ giving for an individual in $x$ its probability to go to $y$.
+ These probabilities are given by the dispersal law with parameter $\theta$:</p>
+
+<p>\(
+ \begin{array}{cclcl}
+ m  &amp; : &amp;  X^2 &amp; \mapsto &amp; R_{+} <br />
+ &amp;   &amp;    (x,y)     &amp; \mapsto &amp; m^{\theta}(x,y)  ~. <br />
+ \end{array}
+ \)</p>
+
+<p>After migration, the population size in deme $x$ is defined by the sum of population flows converging to $x$:</p>
+
+<p>\(
+ N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
+ \)</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>Most of the features are the same than for the <a href="#ind_based">individual_based</a> strategy.</p>
+
+<p>The only thing changing is the way to represent a dispersal kernel. For the individual-based
+strategy, we needed to <a href="#dispersal_sampler">sample a new location conditionally to the present location</a>.</p>
+
+<p>Now we just need a function that returns $m_{xy}$, the probability to move from
+$x$ to $y$ at time $t$. Basically, we need a transition matrix, not a random sampler.</p>
+
+<p>Note that we are not forced to use a matrix data structure: it is enough to implement
+a <strong>functor</strong> returning the migration rates, that is to define the member function
+<code class="language-plaintext highlighter-rouge">operator()(coord_type x, coord_type y, time_type t)</code>.</p>
+
+<p>Another important constraint is that we need this transition matrix to give the set
+ of inhabitable demes representing the landscape.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">struct</span> <span class="nc">transition_matrix</span> <span class="p">{</span>
+   <span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+   <span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+
+   <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="o">&gt;</span> <span class="n">state_space</span><span class="p">(</span><span class="n">time_type</span> <span class="n">t</span><span class="p">)</span>
+   <span class="p">{</span>
+     <span class="k">return</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
+   <span class="p">}</span>
+   <span class="c1">// 1/2 probability to change of location</span>
+   <span class="kt">double</span> <span class="k">operator</span><span class="p">()(</span><span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">y</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">)</span>
+   <span class="p">{</span>
+     <span class="k">return</span> <span class="mf">0.5</span><span class="p">;</span>
+   <span class="p">}</span>
+ <span class="p">};</span>
+</code></pre></div></div>
+
+<p>Here we assume that the spatial representation
+is constant through time so the temporal argument <code class="language-plaintext highlighter-rouge">time_type t</code> is not used in the
+body of the <code class="language-plaintext highlighter-rouge">state_space</code> function.</p>
+
+<p>It is however an important extension point. Indeed at large temporal
+scales we expect the landscape to go through some form of modification, for example
+contraction or expansion of the inhabitable areas due to sea-level rises  or glaciation.</p>
+
+<p>In this case we would be interested to use this time argument in the function implementation
+in order to implement this dynamic.</p>
+
+<p>For the rest it is totally similar with the individual based strategy.</p>
+
+<h3 id="complete-script-and-compilation-options-1">Complete script and compilation options</h3>
+
+<h4 id="compilation-options-1">Compilation options</h4>
+
+<p>The complete <code class="language-plaintext highlighter-rouge">demo.cpp</code> script is given below.</p>
+
+<p>It compiles with the following terminal command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -Wall -std=c++14 demo.cpp
+</code></pre></div></div>
+<ul>
+  <li>the option <code class="language-plaintext highlighter-rouge">-Wall</code> enables all warnings</li>
+  <li>the option <code class="language-plaintext highlighter-rouge">-std=c++14</code> enables the C++14 standard compiler support</li>
+</ul>
+
+<p>Then you can run the program with the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./a.out
+</code></pre></div></div>
+
+<h4 id="complete-script">Complete script</h4>
+
+<p>The complete
+code is given below. We changed the type of the demes identifiers - that have now
+names of cities, just to demonstrate that Quetzal functions are not linked to any
+precise geographical coordinate system.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "quetzal/demography.h"
+</span>
+<span class="cp">#include &lt;iostream&gt;
+#include &lt;random&gt;
+#include &lt;map&gt;
+</span>
+<span class="k">struct</span> <span class="nc">transition_matrix</span> <span class="p">{</span>
+
+	<span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="o">&gt;</span> <span class="n">state_space</span><span class="p">(</span><span class="n">time_type</span> <span class="n">t</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="p">{</span><span class="s">"Paris"</span><span class="p">,</span> <span class="s">"Ann Arbor"</span><span class="p">};</span>
+	<span class="p">}</span>
+
+	<span class="kt">double</span> <span class="k">operator</span><span class="p">()(</span><span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">y</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="mf">0.5</span><span class="p">;</span> <span class="c1">// 1/2 probability to change of location</span>
+	<span class="p">}</span>
+
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+
+	<span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">generator_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+
+	<span class="c1">// Initialize history: 100 individuals introduced at x=1, t=2018</span>
+	<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">strategy</span><span class="o">::</span><span class="n">mass_based</span><span class="p">;</span>
+	<span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">History</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="p">,</span> <span class="n">mass_based</span><span class="o">&gt;</span> <span class="n">history</span><span class="p">(</span><span class="s">"Paris"</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+
+	<span class="c1">// Growth function</span>
+	<span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+	<span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+
+	<span class="c1">// Number of non-overlapping generations for the demographic simulation</span>
+	<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nb_generations</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+
+	<span class="c1">// Random number generation</span>
+	<span class="n">generator_type</span> <span class="n">gen</span><span class="p">;</span>
+
+	<span class="n">transition_matrix</span> <span class="n">M</span><span class="p">;</span>
+
+	<span class="n">history</span><span class="p">.</span><span class="n">expand</span><span class="p">(</span><span class="n">nb_generations</span><span class="p">,</span> <span class="n">growth</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Population flows from x to y at time t:</span><span class="se">\n\n</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">history</span><span class="p">.</span><span class="n">flows</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The expected output is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Population flows from x to y at time t:
+
+time	from	to	flow
+2020	Ann Arbor	Ann Arbor	20
+2020	Paris	Paris	20
+2018	Paris	Ann Arbor	10
+2020	Ann Arbor	Paris	20
+2019	Ann Arbor	Ann Arbor	10
+2020	Paris	Ann Arbor	20
+2019	Paris	Paris	10
+2018	Paris	Paris	10
+2019	Paris	Ann Arbor	10
+2019	Ann Arbor	Paris	10
+</code></pre></div></div>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>You now know how to implement your own little demographic simulator.</p>
+
+<p>If you have very peculiar growth or dispersal model, this tutorial demonstrated that you can
+inject user-defined implementations into Quetzal components.</p>
+
+<p>However, you will surely not manually hard-code the migration rates between hundreds
+of demes in a landscape.</p>
+
+<p>You may find in Quetzal a way to automate the process of <a href="http://localhost:4000/pages/tuto_dispersal">constructing spatially explicit,
+distance-based dispersal kernels</a>.</p>
+
+<p>But before to compute probabilities across space, you first need to know more
+about <a href="http://localhost:4000/pages/tuto_geography">how to represent a spatially explicit landscape</a>!</p>
+:ET

@@ -1,12 +1,9 @@
 <map id="quetzal/include/quetzal/demography/BaseHistory.h" name="quetzal/include/quetzal/demography/BaseHistory.h">
-<area shape="rect" id="node1" title=" " alt="" coords="381,5,564,47"/>
-<area shape="rect" id="node2" href="$random_8h.html" title=" " alt="" coords="258,95,346,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="383,244,442,271"/>
-<area shape="rect" id="node9" title=" " alt="" coords="474,95,543,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="568,95,647,121"/>
-<area shape="rect" id="node3" href="$DiscreteDistribution_8h.html" title=" " alt="" coords="205,169,399,196"/>
-<area shape="rect" id="node7" href="$TransitionKernel_8h.html" title=" " alt="" coords="5,169,180,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="174,244,243,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="269,244,335,271"/>
-<area shape="rect" id="node8" title=" " alt="" coords="37,244,148,271"/>
+<area shape="rect" id="node1" title=" " alt="" coords="203,5,386,47"/>
+<area shape="rect" id="node2" href="$DiscreteDistribution_8h.html" title=" " alt="" coords="14,95,221,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="216,169,275,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="296,95,365,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="390,95,469,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,169,75,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="99,169,165,196"/>
 </map>

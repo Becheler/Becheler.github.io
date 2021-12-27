@@ -13,5 +13,6 @@ var classquetzal_1_1geography_1_1GeographicCoordinates =
     [ "lon", "classquetzal_1_1geography_1_1GeographicCoordinates.html#a7240e4d6b4a7d769a7275f5730d97738", null ],
     [ "operator!=", "classquetzal_1_1geography_1_1GeographicCoordinates.html#a42d427ac90087dfa12da7a1c776d2b53", null ],
     [ "operator<", "classquetzal_1_1geography_1_1GeographicCoordinates.html#a2bcaa9b2fd3738d1a3026ed6a2c4dd93", null ],
-    [ "operator==", "classquetzal_1_1geography_1_1GeographicCoordinates.html#a6a3e1e1a98c534c19ec2946f423b3583", null ]
+    [ "operator==", "classquetzal_1_1geography_1_1GeographicCoordinates.html#a6a3e1e1a98c534c19ec2946f423b3583", null ],
+    [ "boost::serialization::access", "classquetzal_1_1geography_1_1GeographicCoordinates.html#ac98d07dd8f7b70e16ccb9a01abf56b9c", null ]
 ];

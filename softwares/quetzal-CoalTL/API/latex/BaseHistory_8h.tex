@@ -1,10 +1,11 @@
 \hypertarget{BaseHistory_8h}{}\doxysection{quetzal/include/quetzal/demography/\+Base\+History.h File Reference}
 \label{BaseHistory_8h}\index{quetzal/include/quetzal/demography/BaseHistory.h@{quetzal/include/quetzal/demography/BaseHistory.h}}
-{\ttfamily \#include \char`\"{}../random.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../random/\+Discrete\+Distribution.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$memory$>$}\newline
 {\ttfamily \#include $<$functional$>$}\newline
-Include dependency graph for Base\+History.\+h\+:\nopagebreak
+Include dependency graph for Base\+History.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,7 +22,7 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History$<$ Space, Dispersal\+Policy $>$}}
+class \mbox{\hyperlink{classquetzal_1_1demography_1_1BaseHistory}{quetzal\+::demography\+::\+Base\+History$<$ Space, Dispersal\+Policy, Memory\+Policy $>$}}
 \begin{DoxyCompactList}\small\item\em Base class for simulating and recording spatial population history. It encpasulates backward migration logic. It makes use of the C\+R\+TP design pattern, meaning that this class has to be specialized to define \mbox{\hyperlink{classquetzal_1_1demography_1_1History}{History}} classes offering customized behaviors, like details of the demograhic algorithms (mass\+\_\+based or individual\+\_\+based) or storage aspects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}

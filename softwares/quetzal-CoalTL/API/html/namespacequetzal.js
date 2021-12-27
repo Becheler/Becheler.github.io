@@ -5,6 +5,7 @@ var namespacequetzal =
     [ "expressive", "namespacequetzal_1_1expressive.html", "namespacequetzal_1_1expressive" ],
     [ "genetics", "namespacequetzal_1_1genetics.html", "namespacequetzal_1_1genetics" ],
     [ "geography", "namespacequetzal_1_1geography.html", "namespacequetzal_1_1geography" ],
+    [ "memory", "namespacequetzal_1_1memory.html", "namespacequetzal_1_1memory" ],
     [ "mutation_kernel", "namespacequetzal_1_1mutation__kernel.html", "namespacequetzal_1_1mutation__kernel" ],
     [ "random", "namespacequetzal_1_1random.html", "namespacequetzal_1_1random" ],
     [ "sampling_scheme", "namespacequetzal_1_1sampling__scheme.html", "namespacequetzal_1_1sampling__scheme" ],

@@ -288,8 +288,8 @@ Individual based simulation with distance based (gaussian) kernel</h1>
 <div class="line">  demographic_policy::value_type N_0 = 100;</div>
 <div class="line">  <span class="comment">// Number of generations</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t_0 = 0;</div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_generations = 30;</div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sampling_time = 29;</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_generations = 10;</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sampling_time = 9;</div>
 <div class="line">  <span class="comment">// Simulator initialization</span></div>
 <div class="line">  simulator_type simulator(x_0, N_0, nb_generations);</div>
 <div class="line">  <span class="comment">// Ancestral wright-fisher population size</span></div>
@@ -346,7 +346,7 @@ Individual based simulation with distance based (gaussian) kernel</h1>
 <div class="line"><span class="comment">  ************************************************************/</span></div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;6 ... Simulating sampling scheme&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  <span class="comment">// Sampling size</span></div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = 50;</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = 5;</div>
 <div class="line">  <span class="comment">// Retrieve the non-empty demes at sampling time</span></div>
 <div class="line">  std::vector&lt;coord_type&gt; distribution_area = simulator.distribution_area(sampling_time);</div>
 <div class="line">  <span class="comment">// Declare a functor to get the population size at sampling time</span></div>
@@ -385,7 +385,7 @@ Individual based simulation with distance based (gaussian) kernel</h1>
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacequetzal_1_1geography_html"><div class="ttname"><a href="namespacequetzal_1_1geography.html">quetzal::geography</a></div><div class="ttdef"><b>Definition:</b> DiscreteLandscape.h:25</div></div>
 <div class="ttc" id="aclassquetzal_1_1ForwardBackwardSpatiallyExplicit_html"><div class="ttname"><a href="classquetzal_1_1ForwardBackwardSpatiallyExplicit.html">quetzal::ForwardBackwardSpatiallyExplicit</a></div><div class="ttdoc">Discrete-time coalescence simulator in a discrete spatially explicit landscape.</div><div class="ttdef"><b>Definition:</b> ForwardBackwardSpatiallyExplicit.h:50</div></div>
-<div class="ttc" id="aclassquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_html"><div class="ttname"><a href="classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html">quetzal::demography::dispersal_policy::mass_based</a></div><div class="ttdoc">Policy class to specialize the quetzal::demography::History class for simulation of population with l...</div><div class="ttdef"><b>Definition:</b> dispersal_policy.h:212</div></div>
+<div class="ttc" id="aclassquetzal_1_1demography_1_1dispersal__policy_1_1mass__based_html"><div class="ttname"><a href="classquetzal_1_1demography_1_1dispersal__policy_1_1mass__based.html">quetzal::demography::dispersal_policy::mass_based</a></div><div class="ttdoc">Policy class to specialize the quetzal::demography::History class for simulation of population with l...</div><div class="ttdef"><b>Definition:</b> dispersal_policy.h:214</div></div>
 <div class="ttc" id="astructquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian_html"><div class="ttname"><a href="structquetzal_1_1demography_1_1dispersal__kernel_1_1Gaussian.html">quetzal::demography::dispersal_kernel::Gaussian</a></div><div class="ttdoc">Gaussian kernel.</div><div class="ttdef"><b>Definition:</b> dispersal_kernel.h:28</div></div>
 <div class="ttc" id="anamespacequetzal_1_1expressive_html"><div class="ttname"><a href="namespacequetzal_1_1expressive.html">quetzal::expressive</a></div><div class="ttdef"><b>Definition:</b> expressive.h:42</div></div>
 <div class="ttc" id="aclassquetzal_1_1demography_1_1dispersal__policy_1_1individual__based_html"><div class="ttname"><a href="classquetzal_1_1demography_1_1dispersal__policy_1_1individual__based.html">quetzal::demography::dispersal_policy::individual_based</a></div><div class="ttdoc">Policy class to specialize the quetzal::demography::History class for expansion of populations with v...</div><div class="ttdef"><b>Definition:</b> dispersal_policy.h:44</div></div>

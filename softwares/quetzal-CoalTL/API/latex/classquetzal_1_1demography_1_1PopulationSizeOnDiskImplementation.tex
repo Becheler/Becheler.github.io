@@ -1,0 +1,178 @@
+\hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{}\doxysection{quetzal\+::demography\+::Population\+Size\+On\+Disk\+Implementation$<$ Space, Time, Value $>$ Class Template Reference}
+\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+
+
+Population size distribution in time and space, serialized in a sliding windows to limit R\+AM usage.  
+
+
+
+
+{\ttfamily \#include $<$Population\+Size\+On\+Disk\+Implementation.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} = Time
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} = Space
+\item 
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} = Value
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a4cdbff31b02b2326c9e23068c152b75e}{Population\+Size\+On\+Disk\+Implementation}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ada8433aa962111059abcf5f7f44e1c15}{set}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&t, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} N)
+\begin{DoxyCompactList}\small\item\em Set population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} \& \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a3bb1c91c5b3c05e4002b140e676c5ebb}{operator()}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&t)
+\begin{DoxyCompactList}\small\item\em Population size at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_adcd1759c09bbcccd7cb72aea51629a56}{get}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&t) const
+\begin{DoxyCompactList}\small\item\em Get population size value at deme x at time t. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a8399772e24533afbd4c70e47d9843f1d}{operator()}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&t) const
+\begin{DoxyCompactList}\small\item\em Get population size at deme x at time t. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} $>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a2f756ca203211f52a7b49fee10726d25}{definition\+\_\+space}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&t) const
+\begin{DoxyCompactList}\small\item\em Return the demes at which the population size was defined ($>$0) at time t. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ab0f1e9bbb835d4b127e5a2a5fd998f2f}{is\+\_\+defined}} (\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&x, \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&t) const
+\begin{DoxyCompactList}\small\item\em Checks if population size is defined at deme x at time t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Space, typename Time, typename Value$>$\newline
+class quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation$<$ Space, Time, Value $>$}
+
+Population size distribution in time and space, serialized in a sliding windows to limit R\+AM usage. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Space} & Demes identifiers. \\
+\hline
+{\em Time} & Equality\+Comparable, Copy\+Constructible. \\
+\hline
+{\em Value} & The type of the population size variable (int, unsigned int, double...) \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!coord\_type@{coord\_type}}
+\index{coord\_type@{coord\_type}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{coord\_type}{coord\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} =  Space}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!time\_type@{time\_type}}
+\index{time\_type@{time\_type}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{time\_type}{time\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} =  Time}
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+using \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} =  Value}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a4cdbff31b02b2326c9e23068c152b75e}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a4cdbff31b02b2326c9e23068c152b75e}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!PopulationSizeOnDiskImplementation@{PopulationSizeOnDiskImplementation}}
+\index{PopulationSizeOnDiskImplementation@{PopulationSizeOnDiskImplementation}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{PopulationSizeOnDiskImplementation()}{PopulationSizeOnDiskImplementation()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{Population\+Size\+On\+Disk\+Implementation}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a2f756ca203211f52a7b49fee10726d25}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a2f756ca203211f52a7b49fee10726d25}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!definition\_space@{definition\_space}}
+\index{definition\_space@{definition\_space}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{definition\_space()}{definition\_space()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}}$>$ \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::definition\+\_\+space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the demes at which the population size was defined ($>$0) at time t. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_adcd1759c09bbcccd7cb72aea51629a56}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_adcd1759c09bbcccd7cb72aea51629a56}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!get@{get}}
+\index{get@{get}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get population size value at deme x at time t. 
+
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ab0f1e9bbb835d4b127e5a2a5fd998f2f}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ab0f1e9bbb835d4b127e5a2a5fd998f2f}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!is\_defined@{is\_defined}}
+\index{is\_defined@{is\_defined}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{is\_defined()}{is\_defined()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+bool \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::is\+\_\+defined (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if population size is defined at deme x at time t. 
+
+\begin{DoxyReturn}{Returns}
+True if variable is defined, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a3bb1c91c5b3c05e4002b140e676c5ebb}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a3bb1c91c5b3c05e4002b140e676c5ebb}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}}\& \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Population size at deme x at time t. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the value, initialized with value\+\_\+type default constructor 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+operator allows for more expressive mathematical style in client code 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a8399772e24533afbd4c70e47d9843f1d}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a8399772e24533afbd4c70e47d9843f1d}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}} \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get population size at deme x at time t. 
+
+\begin{DoxyRemark}{Remarks}
+operator allows for more expressive mathematical style in client code 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ada8433aa962111059abcf5f7f44e1c15}\label{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ada8433aa962111059abcf5f7f44e1c15}} 
+\index{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}!set@{set}}
+\index{set@{set}!quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$@{quetzal::demography::PopulationSizeOnDiskImplementation$<$ Space, Time, Value $>$}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename Space , typename Time , typename Value $>$ \\
+void \mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation}{quetzal\+::demography\+::\+Population\+Size\+On\+Disk\+Implementation}}$<$ Space, Time, Value $>$\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ad7067b6e79ea694566cd8c0773174c73}{coord\+\_\+type}} const \&}]{x,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_a9736670e9c318fb711416dc7217dcd58}{time\+\_\+type}} const \&}]{t,  }\item[{\mbox{\hyperlink{classquetzal_1_1demography_1_1PopulationSizeOnDiskImplementation_ac1d16f064274e213ae42e965cac703a4}{value\+\_\+type}}}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set population size value at deme x at time t. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quetzal/include/quetzal/demography/\mbox{\hyperlink{PopulationSizeOnDiskImplementation_8h}{Population\+Size\+On\+Disk\+Implementation.\+h}}\end{DoxyCompactItemize}

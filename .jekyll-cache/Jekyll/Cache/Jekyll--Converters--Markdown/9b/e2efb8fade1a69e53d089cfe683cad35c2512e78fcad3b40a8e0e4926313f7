@@ -1,0 +1,12 @@
+I"ù<p><img src="/draw/logos/quetzal_crumbs.png" alt="Quetzal-CRUMBS" /></p>
+
+<p>Quetzal-CRUMBS gathers utility scripts that are transversal to other Quetzal-based projects
+(<a href="/pages/quetzal/home">Quetzal-CoalTL</a>, <a href="/pages/quetzal-eggs/home">Quetzal-EGGS</a> or <a href="/pages/decrypt/home">Decrypt</a>).</p>
+
+<p>This includes:</p>
+<ul>
+  <li>sampling parameters for ABC inference</li>
+  <li>generating sequences based on coalescence trees</li>
+  <li>computing summary statistics</li>
+</ul>
+:ET

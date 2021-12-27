@@ -7,11 +7,13 @@ use_math: true
 img: schemes/decrypt_sampling_scheme.png
 ---
 
-Imagine you're a phD student lost in the Kalahari desert with your trainee and one mission: studying a population of mosquitoes that thrive in two oasis in the middle of said desert. You have no mathematical skills, no internet, no phone, no PI: just a computer and the Quetzal documentation. How brave you are! :dromedary_camel::dromedary_camel::dromedary_camel:
+Imagine you're a phD student lost in the Kalahari desert with your trainee and one mission: studying a population of mosquitoes that thrive in two oasis in the middle of nowhere :dromedary_camel: :dromedary_camel: :dromedary_camel:
+
+You have no mathematical skills, no internet, no phone, no advisor: just a computer and the Quetzal documentation. How brave you are!
 
 In your infinite wisdom, you decide that a very first step in the right direction would be to *at least* come up with some simulation of the mosquitoes population. So you proceed to daub yourself with large amounts of insect repellent so you can give a closer look to these flying, biting buggers  :bee:
 
-It seems that the two oasis are similar in size and resources, separated by some distance, but still close enough to enable mosquitoes to move from one to the other in what seems to be a quite random pattern. By using your trainee as a living bait, you succeeded to capture several fecundated females, that laid on average 100 eggs each before they died. When the larva hatch, the newborns fly to one of the two oasis to look for mates. :palm_tree:
+It seems that the two oasis are similar in size and resources, separated by some distance, but still close enough to enable mosquitoes to move from one to the other in what seems to be a quite random pattern. By using your trainee as a living bait, you succeeded to capture several fecundated females, that laid on average 100 eggs each before they died. When the larva hatch, the newborns automatically fly to one of the two oasis to look for mates. :palm_tree:
 
 ## Mathematical formalization of the biological problem
 
@@ -24,7 +26,7 @@ Suddenly, you hear a voice coming from behind your shoulder.
 
 You turn so fast that you trip in the sand and fall on your knees: your trainee is smiling at you, proudly wearing on their skin the bumpy, inflamed marks of their dedication to the cause. Your savior. Your hero.
 
-### Landscape
+### Defining the landscape
 
 After few hours of philosophical debate on the nature of space and time, you two decide to simplify the landscape to a set $X$ of 2 demes (the two oasis) connected by *some degree* of migration.
 
@@ -37,7 +39,9 @@ As it's getting dark already, you go to bed feeling much more hopeful about a br
 
 ### Reproduction
 
-On the morning, you two sip your coffee while exchanging about mating ceremonials in the insect realm. Focusing the discussion on your biological system, you assume that the mosquitoes reproduction events are synchronized (no generation overlap), and that $\tilde{N}(x,t)$, the population size after reproduction in oasis $x$ at time $t$ is simply equal to the population size *before* reproduction times the fecundity *r*:
+On the morning, you sip your coffee while exchanging about mating ceremonials in the insect realm.
+
+Focusing the discussion on your biological system, you assume that the mosquitoes reproduction events are synchronized (no generation overlap), and that $\tilde{N}(x,t)$, the population size after reproduction in oasis $x$ at time $t$ is simply equal to the population size *before* reproduction times the fecundity *r*:
 
 \\[
   \tilde{N}(x,t) = r.N(x,t)
@@ -45,11 +49,13 @@ On the morning, you two sip your coffee while exchanging about mating ceremonial
 
 ### Migration
 
-You give some thoughts about migration patterns. From what you remember from your textbooks, you have no reason to believe that mosquitoes disperse in flocks, what simplifies things quite a bit if you can consider each individual movement independently.
+You also give some thoughts about migration patterns.
+
+From what you remember from your textbooks, you have no reason to believe that mosquitoes disperse in flocks, what simplifies things quite a bit if you can consider each individual movement independently.
 
 You begin to think of a demographic algorithm where the location of every individual after the dispersal event would be *somehow* sampled in a probability distribution.
 
-> "You see what I mean?" you ask your new maths guru :sweat_smile:
+> "You see what I mean?" you ask your new maths guru :persevere:
 >
 > "Yeah, but considering you have only 2 locations, I think you simply want to sample a binomial, right?"
 
@@ -75,11 +81,26 @@ N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
 
 > "You spent the whole flight sleeping on this big manual, you should have at least some idea of how to simulate this demographic model using Quetzal, right?"
 >
-> "Eeeeeh ... Ho look at the time! Let's make some coffee!" :trollface:
+> "Eeeeeh ... Huho look at the time! Let's go get some coffee..." :trollface:
 
 ## Simulation using Quetzal-CoalTL
 
-## Complete code solution
+Now that we have the ideas a bit more clear about the demographic model and the underlying assumptions, we want to write some code to simulate the process. Don't forget that we are not interested *only* by the demographic process: *in fine*, the whole goal of these tutorials is to use it to condition a coalescence process and simulate some genetic data!
+
+If you are a population geneticist, you are certainly thinking:
+
+>"wait a minute, we don't need that, this is a standard model with well-known solu..."
+>
+> "... ta ta ta taaa! I see you coming! Don't take the fun out of this tutorial. We were doing sooo well without you, reinventing the wheel and stuff!
+
+I agree. It's a dumb model :disappointed_relieved:
+But baby steps, baby steps... :baby:
+
+### The Quetzal demography module
+
+You open the big bad book, and look at the [*demography* chapter]().
+
+### Complete code solution
 
 ```cpp
 #include "quetzal/demography.h"

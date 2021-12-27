@@ -36,7 +36,7 @@ Go there and simply follow the instructions: [https://docs.docker.com/get-docker
 
 Working with Docker, you will bump into words like **images** and **containers**. They sound a bit similar, but it's quite important to know the difference between them.
 
-- A **Docker image** is like a recipe  (a template) for cooking an environment: it is read-only, it is inert, it has instructions. You will see that there are several *layers* in an image: these are just a bunch of read-only files that contain the recipe instruction.
+- A **Docker image** is like a recipe  (a template) for cooking an environment: it is read-only, it is inert, it has instructions. You will see that there are several *layers* in an image: these are just a bunch of read-only files that contain the recipe instructions.
 - A **Docker container** is like the cake you just take out of the oven: it is a virtualized runtime environment that is (to some extend) isolated from your system. Just as you can make several cakes using the same recipe, you can make several containers out of a Docker images: a container is  an *instance* of a Docker image.
 
 > Read more about the differences between Docker images and Docker containers [here](https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-images-vs-docker-containers/)
@@ -52,7 +52,7 @@ docker pull arnaudbecheler/quetzal-nest
 ```
 - Then, you want to run this environment by typing:
 ```bash
-docker run docker run -it --entrypoint bash arnaudbecheler/quetzal-nest
+docker run -it --entrypoint bash arnaudbecheler/quetzal-nest
 ```
 - You can look around by typing usual bash commands like `ls` or `mkdir`.
 - Try to create a folder in the `home` directory:

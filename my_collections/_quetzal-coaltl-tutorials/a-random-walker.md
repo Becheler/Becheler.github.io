@@ -7,57 +7,148 @@ use_math: true
 img: schemes/decrypt_sampling_scheme.png
 ---
 
-You can think at least of two ways to simulate the expansion of populations of individuals
-in a discrete landscape:
-- dispersing each individual separately according to a user-defined probability distribution.
-- splitting each population across space according to user-defined migration probabilities.
+Imagine you're a phD student lost in the Kalahari desert with your trainee and one mission: studying a population of mosquitoes that thrive in two oasis in the middle of said desert. You have no mathematical skills, no internet, no phone, no PI: just a computer and the Quetzal documentation. How brave you are! :dromedary_camel::dromedary_camel::dromedary_camel:
 
-These two strategies can seem quite similar in theory, but their computational border-effects
-are quite distinct and are detailed below.
+In your infinite wisdom, you decide that a very first step in the right direction would be to *at least* come up with some simulation of the mosquitoes population. So you proceed to daub yourself with large amounts of insect repellent so you can give a closer look to these flying, biting buggers  :bee:
 
-## Individual-based dispersal in small populations <a name="ind_based"></a>
+It seems that the two oasis are similar in size and resources, separated by some distance, but still close enough to enable mosquitoes to move from one to the other in what seems to be a quite random pattern. By using your trainee as a living bait, you succeeded to capture several fecundated females, that laid on average 100 eggs each before they died. When the larva hatch, the newborns fly to one of the two oasis to look for mates. :palm_tree:
 
-For the biologist, the most intuitive simulation behavior would be that each individual
-disperse independently. Accordingly, we defined a demographic expansion algorithm
-where the location of each individual after the dispersal event
-is sampled in a dispersal location kernel.
+## Mathematical formalization of the biological problem
 
-### Pros
-This is a comfortable simulation model, as it guarantees without computational tricks
-that the number of individual in a deme is always an integer: simulating the
-coalescence process is then straightforward.
+You have no idea what to do with this biological knowledge. You try to write some symbols on the sand, but they don't make any more sense to you than to the vultures circling in the sky. You feel a cold sweat running down your back as you're seized by the overwhelming sensation of a looming disaster: you hold your breath as if it could stop time and prevent your foreseeable academic failure
+:cold_sweat:
 
-### Cons
+Suddenly, you hear a voice coming from behind your shoulder.
 
-This solution is **computationally costly** whenever the number of individuals
-in the landscape is too high. Unfortunately, we typically have little control over this constraint, due to the
-ABC random sampling of parameters value.
+> "Hey! Awww you're doing math? That's so cool! I majored in probability and statistics!"
 
-### Mathematical description
-After the reproduction, the children dispersal is done by sampling their destination
-in a multinomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
-$x$ to $y$ at time $t$:
+You turn so fast that you trip in the sand and fall on your knees: your trainee is smiling at you, proudly wearing on their skin the bumpy, inflamed marks of their dedication to the cause. Your savior. Your hero.
 
-\\[ ( \Phi_{x,y}^{t} )\_{y \in X} \sim M(\tilde{N}\_{x}^{t},(m_{xy})_y) \\]
+### Landscape
 
+After few hours of philosophical debate on the nature of space and time, you two decide to simplify the landscape to a set $X$ of 2 demes (the two oasis) connected by *some degree* of migration.
 
-The term $ (m_{xy})_y $ denotes the parameters of the multinomial law
-giving for an individual in $x$ its proability to go to $y$.
-These probabilities are given by the dispersal law with parameter $\theta$:
+You decide that:
+
+- :palm_tree: the Eastern oasis will be encoded by $1$
+- :palm_tree: the Western oasis will be encoded by $-1$.
+
+As it's getting dark already, you go to bed feeling much more hopeful about a brighter future :crescent_moon:
+
+### Reproduction
+
+On the morning, you two sip your coffee while exchanging about mating ceremonials in the insect realm. Focusing the discussion on your biological system, you assume that the mosquitoes reproduction events are synchronized (no generation overlap), and that $\tilde{N}(x,t)$, the population size after reproduction in oasis $x$ at time $t$ is simply equal to the population size *before* reproduction times the fecundity *r*:
 
 \\[
- \begin{array}{cclcl}
- m  & : &  X^2 & \mapsto & R_{+} \\
- &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
- \end{array}
+  \tilde{N}(x,t) = r.N(x,t)
 \\]
 
- After migration, the number of individuals in deme $x$ is defined by
- the total number of individuals converging to $x$:
+### Migration
 
- \\[
-  N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
- \\]
+You give some thoughts about migration patterns. From what you remember from your textbooks, you have no reason to believe that mosquitoes disperse in flocks, what simplifies things quite a bit if you can consider each individual movement independently.
+
+You begin to think of a demographic algorithm where the location of every individual after the dispersal event would be *somehow* sampled in a probability distribution.
+
+> "You see what I mean?" you ask your new maths guru :sweat_smile:
+>
+> "Yeah, but considering you have only 2 locations, I think you simply want to sample a binomial, right?"
+
+You deflect the question by pretending you are in a dire need for coffee, conveniently hiding your ignorance by letting the mathematician do their mathematical things :coffee:
+
+But when you cautiously come back, the sand is covered with mysterious notations. Without leaving you any time to escape, the trainee proceeds to explain the modelisation :expressionless:
+
+After reproduction, the children dispersal is simulated by sampling their destination
+in a binomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
+$x$ to $y$ at time $t$:
+
+\\[
+( \Phi_{x,y}^{t} )\_{y \in X} \sim B(~\tilde{N}(x,t),~p)
+\\]
+
+The term $ p $ is the parameter of the binomial distribution, giving for a mosquitoe in oasis $1$ its probability to travel to the other oasis $-1$.
+
+After migration, the number of individuals in oasis $x$ is defined by  the total number of mosquitoes converging to $x$:
+
+\\[
+N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
+\\]
+
+> "You spent the whole flight sleeping on this big manual, you should have at least some idea of how to simulate this demographic model using Quetzal, right?"
+>
+> "Eeeeeh ... Ho look at the time! Let's make some coffee!" :trollface:
+
+## Simulation using Quetzal-CoalTL
+
+## Complete code solution
+
+```cpp
+#include "quetzal/demography.h"
+#include <iostream>
+#include <random>
+
+int main(){
+
+  // Here we simulate a population expansion through a 2 demes landscape.
+
+  // Use type aliasing for readability
+  using coord_type = int;
+  using time_type = unsigned int;
+  using generator_type = std::mt19937;
+
+  // choose the strategy to be used
+  using quetzal::demography::strategy::individual_based;
+
+  // Initialize the history with 10 individuals introduced in deme x=1 at time t=2018
+  quetzal::demography::History<coord_type, time_type, individual_based> history(1, 2018, 10);
+
+  // Get a reference on the population sizes database
+  auto N = std::cref(history.pop_sizes());
+
+  // Capture it with a lambda expression to build a growth function
+  auto growth = [N](auto& gen, coord_type x, time_type t){ return 2*N(x,t) ; };
+
+  // Number of non-overlapping generations for the demographic simulation
+  unsigned int nb_generations = 3;
+
+  // Random number generation
+  generator_type gen;
+
+  // Stochastic dispersal kernel, purposely very simple
+  // The geographic sampling space is {-1 , 1}, there is 50% chance to migrate
+  auto sample_location = [](auto& gen, coord_type x, time_type t){
+    std::bernoulli_distribution d(0.5);
+    if(d(gen)){ x = -x; }
+    return x;
+  };
+
+  history.expand(nb_generations, growth, sample_location, gen);
+
+  std::cout << "Population flows from x to y at time t:\n\n"
+            << history.flows()
+            << std::endl;
+}
+```
+
+The output would be:
+
+```
+Population flows from x to y at time t:
+
+time	from	to	flow
+2020	1	-1	17
+2020	1	1	25
+2020	-1	-1	21
+2018	1	1	12
+2020	-1	1	17
+2019	1	-1	12
+2019	-1	-1	7
+2018	1	-1	8
+2019	-1	1	9
+2019	1	1	12
+```
+
+
+
 
 ### Step-by-step implementation
 
@@ -251,73 +342,6 @@ Then you can run the program with the following command:
 ./a.out
 ```
 
-#### Complete script
-
-```cpp
-#include "quetzal/demography.h"
-#include <iostream>
-#include <random>
-
-int main(){
-
-  // Here we simulate a population expansion through a 2 demes landscape.
-
-  // Use type aliasing for readability
-  using coord_type = int;
-  using time_type = unsigned int;
-  using generator_type = std::mt19937;
-
-  // choose the strategy to be used
-  using quetzal::demography::strategy::individual_based;
-
-  // Initialize the history with 10 individuals introduced in deme x=1 at time t=2018
-  quetzal::demography::History<coord_type, time_type, individual_based> history(1, 2018, 10);
-
-  // Get a reference on the population sizes database
-  auto N = std::cref(history.pop_sizes());
-
-  // Capture it with a lambda expression to build a growth function
-  auto growth = [N](auto& gen, coord_type x, time_type t){ return 2*N(x,t) ; };
-
-  // Number of non-overlapping generations for the demographic simulation
-  unsigned int nb_generations = 3;
-
-  // Random number generation
-  generator_type gen;
-
-  // Stochastic dispersal kernel, purposely very simple
-  // The geographic sampling space is {-1 , 1}, there is 50% chance to migrate
-  auto sample_location = [](auto& gen, coord_type x, time_type t){
-    std::bernoulli_distribution d(0.5);
-    if(d(gen)){ x = -x; }
-    return x;
-  };
-
-  history.expand(nb_generations, growth, sample_location, gen);
-
-  std::cout << "Population flows from x to y at time t:\n\n"
-            << history.flows()
-            << std::endl;
-}
-```
-
-The output would be:
-
-```
-Population flows from x to y at time t:
-
-time	from	to	flow
-2020	1	-1	17
-2020	1	1	25
-2020	-1	-1	21
-2018	1	1	12
-2020	-1	1	17
-2019	1	-1	12
-2019	-1	-1	7
-2018	1	-1	8
-2019	-1	1	9
-2019	1	1	12
-```
 
 ## Mass-based dispersal for big populations <a name="mass_based"></a>
 

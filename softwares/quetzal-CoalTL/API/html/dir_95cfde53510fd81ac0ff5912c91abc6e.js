@@ -35,7 +35,7 @@ var dir_95cfde53510fd81ac0ff5912c91abc6e =
       [ "key_hash", "structquetzal_1_1demography_1_1FlowOnDiskImplementation_1_1key__hash.html", "structquetzal_1_1demography_1_1FlowOnDiskImplementation_1_1key__hash" ]
     ] ],
     [ "History.h", "History_8h.html", [
-      [ "History", "classquetzal_1_1demography_1_1History.html", null ],
+      [ "History", "classquetzal_1_1demography_1_1History.html", "classquetzal_1_1demography_1_1History" ],
       [ "History< Space, dispersal_policy::individual_based, Memory >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_00_01Memory_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1individual__based_00_01Memory_01_4" ],
       [ "History< Space, dispersal_policy::mass_based, Memory >", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_00_01Memory_01_4.html", "classquetzal_1_1demography_1_1History_3_01Space_00_01dispersal__policy_1_1mass__based_00_01Memory_01_4" ]
     ] ],

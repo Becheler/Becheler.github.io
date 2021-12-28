@@ -64,6 +64,40 @@ bool \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18
 void \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a00d7660b1c21995a098f7f08c78083e5}{export\+\_\+to\+\_\+shapefile}} (std\+::map$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}{coord\+\_\+type}}, unsigned int $>$ counts, std\+::string const \&filename) const
 \item 
 void \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_a56c82382d574866b8424a31cd8931bee}{export\+\_\+to\+\_\+shapefile}} (std\+::vector$<$ \mbox{\hyperlink{classquetzal_1_1geography_1_1EnvironmentalQuantity_ab9dcd62c1ca8f368ece80072b054d48c}{coord\+\_\+type}} $>$ coords, std\+::string const \&filename) const
+\item 
+unsigned int \mbox{\hyperlink{classgdalcpp_1_1Dataset_ad69a97a8c1df367c86643bf62e9b934d}{width}} () const
+\begin{DoxyCompactList}\small\item\em Fetch raster width in pixels. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classgdalcpp_1_1Dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d}{height}} () const
+\begin{DoxyCompactList}\small\item\em Fetch raster height in pixels. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classgdalcpp_1_1Dataset_a20b601d62b830103869b4950d4d84df4}{depth}} () const
+\begin{DoxyCompactList}\small\item\em Fetch the number of raster bands on this dataset. \end{DoxyCompactList}\item 
+auto \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a773642fddda3ecb3cbd30f4eab43feb0}{band}} (unsigned int i) const
+\begin{DoxyCompactList}\small\item\em Fetch a band object for a dataset, zeroth-\/based numbering. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classgdalcpp_1_1Dataset_a9923a081ecc1beec126d28bd53549a81}{affine\+\_\+transformation\+\_\+coefficients}} ()
+\begin{DoxyCompactList}\small\item\em Fetch the affine transformation coefficients. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a16c9be3f3d3f67a8d2a24c4ea322081c}{driver\+\_\+name}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_afb2a92cae082f5f232a43da5a3d58990}{dataset\+\_\+name}} () const
+\item 
+gdal\+\_\+dataset\+\_\+type \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_ac84a91fa4848148f5354dab33b7acad6}{get}} () const
+\item 
+S\+RS \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a41f8a3de96cb018cc53b8b2c269ad90f}{srs}} ()
+\item 
+void \mbox{\hyperlink{classgdalcpp_1_1Dataset_aafc9026e8b84ab2c32babfcd9ec4e3e1}{exec}} (const char $\ast$sql)
+\item 
+void \mbox{\hyperlink{classgdalcpp_1_1Dataset_a9702cf5df173764b009f4d28c37361f2}{exec}} (const std\+::string \&sql)
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}} \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a5e927830781e3a464c222c72760865a6}{start\+\_\+transaction}} ()
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}} \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a8fadc8448d3935142a828ca93c3ce3a4}{commit\+\_\+transaction}} ()
+\item 
+void \mbox{\hyperlink{classgdalcpp_1_1Dataset_a514db9a24b2cfa7e566dc91d9c376350}{prepare\+\_\+edit}} ()
+\item 
+void \mbox{\hyperlink{classgdalcpp_1_1Dataset_ab00e5dbd49ce59e9656e473bb6755002}{finalize\+\_\+edit}} ()
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}} \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_a89d2d7cae1e3227417c5bdf4019c6bd3}{enable\+\_\+auto\+\_\+transactions}} (uint64\+\_\+t edits=100000)
+\item 
+\mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}} \& \mbox{\hyperlink{classgdalcpp_1_1Dataset_abc28baecd7c9e1a414b4878a0f920e97}{disable\+\_\+auto\+\_\+transactions}} ()
 \end{DoxyCompactItemize}
 
 
@@ -142,6 +176,16 @@ values should be defined for same coordinates at all times"
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a9923a081ecc1beec126d28bd53549a81}\label{classgdalcpp_1_1Dataset_a9923a081ecc1beec126d28bd53549a81}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!affine\_transformation\_coefficients@{affine\_transformation\_coefficients}}
+\index{affine\_transformation\_coefficients@{affine\_transformation\_coefficients}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{affine\_transformation\_coefficients()}{affine\_transformation\_coefficients()}}
+{\footnotesize\ttfamily auto gdalcpp\+::\+Dataset\+::affine\+\_\+transformation\+\_\+coefficients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Fetch the affine transformation coefficients. 
+
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a041bf9db3953cb86fb7ff30a92404e3d}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a041bf9db3953cb86fb7ff30a92404e3d}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!at@{at}}
 \index{at@{at}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
@@ -158,6 +202,68 @@ possibly slow
 
 checks if the given time is in the temporal extent 
 \end{DoxyRemark}
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a773642fddda3ecb3cbd30f4eab43feb0}\label{classgdalcpp_1_1Dataset_a773642fddda3ecb3cbd30f4eab43feb0}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!band@{band}}
+\index{band@{band}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{band()}{band()}}
+{\footnotesize\ttfamily auto\& gdalcpp\+::\+Dataset\+::band (\begin{DoxyParamCaption}\item[{unsigned int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Fetch a band object for a dataset, zeroth-\/based numbering. 
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a8fadc8448d3935142a828ca93c3ce3a4}\label{classgdalcpp_1_1Dataset_a8fadc8448d3935142a828ca93c3ce3a4}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!commit\_transaction@{commit\_transaction}}
+\index{commit\_transaction@{commit\_transaction}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{commit\_transaction()}{commit\_transaction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}}\& gdalcpp\+::\+Dataset\+::commit\+\_\+transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_afb2a92cae082f5f232a43da5a3d58990}\label{classgdalcpp_1_1Dataset_afb2a92cae082f5f232a43da5a3d58990}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!dataset\_name@{dataset\_name}}
+\index{dataset\_name@{dataset\_name}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{dataset\_name()}{dataset\_name()}}
+{\footnotesize\ttfamily const std\+::string\& gdalcpp\+::\+Dataset\+::dataset\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a20b601d62b830103869b4950d4d84df4}\label{classgdalcpp_1_1Dataset_a20b601d62b830103869b4950d4d84df4}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!depth@{depth}}
+\index{depth@{depth}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{depth()}{depth()}}
+{\footnotesize\ttfamily unsigned int gdalcpp\+::\+Dataset\+::depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Fetch the number of raster bands on this dataset. 
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_abc28baecd7c9e1a414b4878a0f920e97}\label{classgdalcpp_1_1Dataset_abc28baecd7c9e1a414b4878a0f920e97}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!disable\_auto\_transactions@{disable\_auto\_transactions}}
+\index{disable\_auto\_transactions@{disable\_auto\_transactions}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{disable\_auto\_transactions()}{disable\_auto\_transactions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}}\& gdalcpp\+::\+Dataset\+::disable\+\_\+auto\+\_\+transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a16c9be3f3d3f67a8d2a24c4ea322081c}\label{classgdalcpp_1_1Dataset_a16c9be3f3d3f67a8d2a24c4ea322081c}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!driver\_name@{driver\_name}}
+\index{driver\_name@{driver\_name}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{driver\_name()}{driver\_name()}}
+{\footnotesize\ttfamily const std\+::string\& gdalcpp\+::\+Dataset\+::driver\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a89d2d7cae1e3227417c5bdf4019c6bd3}\label{classgdalcpp_1_1Dataset_a89d2d7cae1e3227417c5bdf4019c6bd3}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!enable\_auto\_transactions@{enable\_auto\_transactions}}
+\index{enable\_auto\_transactions@{enable\_auto\_transactions}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{enable\_auto\_transactions()}{enable\_auto\_transactions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}}\& gdalcpp\+::\+Dataset\+::enable\+\_\+auto\+\_\+transactions (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{edits = {\ttfamily 100000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_aafc9026e8b84ab2c32babfcd9ec4e3e1}\label{classgdalcpp_1_1Dataset_aafc9026e8b84ab2c32babfcd9ec4e3e1}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!exec@{exec}}
+\index{exec@{exec}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gdalcpp\+::\+Dataset\+::exec (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a9702cf5df173764b009f4d28c37361f2}\label{classgdalcpp_1_1Dataset_a9702cf5df173764b009f4d28c37361f2}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!exec@{exec}}
+\index{exec@{exec}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gdalcpp\+::\+Dataset\+::exec (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a207ce3690a67dd04d75b5f2770a9ca97}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a207ce3690a67dd04d75b5f2770a9ca97}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!export\_to\_geotiff@{export\_to\_geotiff}}
 \index{export\_to\_geotiff@{export\_to\_geotiff}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
@@ -208,6 +314,12 @@ const \mbox{\hyperlink{classquetzal_1_1geography_1_1Extent}{Extent}}$<$\mbox{\hy
 
 Gets the extent of the spatial grid. 
 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_ab00e5dbd49ce59e9656e473bb6755002}\label{classgdalcpp_1_1Dataset_ab00e5dbd49ce59e9656e473bb6755002}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!finalize\_edit@{finalize\_edit}}
+\index{finalize\_edit@{finalize\_edit}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{finalize\_edit()}{finalize\_edit()}}
+{\footnotesize\ttfamily void gdalcpp\+::\+Dataset\+::finalize\+\_\+edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_ac524710bfd17bcb26921dfc3d8ac39a8}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_ac524710bfd17bcb26921dfc3d8ac39a8}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!geographic\_definition\_space@{geographic\_definition\_space}}
 \index{geographic\_definition\_space@{geographic\_definition\_space}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
@@ -219,7 +331,23 @@ const std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCo
 
 The geographic coordinates of the centroids of the demes for which values are defined at all times. 
 
-Returns the geographic coordinates of the centroids of the demes for which values are defined at all times. Values can be read from other coordinates, but this function provides a natural way to construct the geographic support for a demic structure (for example for demographic simulations). \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}} 
+Returns the geographic coordinates of the centroids of the demes for which values are defined at all times. Values can be read from other coordinates, but this function provides a natural way to construct the geographic support for a demic structure (for example for demographic simulations). \mbox{\Hypertarget{classgdalcpp_1_1Dataset_ac84a91fa4848148f5354dab33b7acad6}\label{classgdalcpp_1_1Dataset_ac84a91fa4848148f5354dab33b7acad6}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!get@{get}}
+\index{get@{get}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily gdal\+\_\+dataset\+\_\+type\& gdalcpp\+::\+Dataset\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d}\label{classgdalcpp_1_1Dataset_a93c5f8ee3dd7e8be034d09a4eb4fc04d}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!height@{height}}
+\index{height@{height}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily unsigned int gdalcpp\+::\+Dataset\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Fetch raster height in pixels. 
+
+\mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a619e18963da66c8397f160c8277fc54e}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!is\_in\_spatial\_extent@{is\_in\_spatial\_extent}}
 \index{is\_in\_spatial\_extent@{is\_in\_spatial\_extent}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
 \doxysubsubsection{\texorpdfstring{is\_in\_spatial\_extent()}{is\_in\_spatial\_extent()}}
@@ -240,6 +368,12 @@ const \mbox{\hyperlink{classquetzal_1_1geography_1_1GeographicCoordinates}{Geogr
 
 
 Gets the origin of the spatial grid. 
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a514db9a24b2cfa7e566dc91d9c376350}\label{classgdalcpp_1_1Dataset_a514db9a24b2cfa7e566dc91d9c376350}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!prepare\_edit@{prepare\_edit}}
+\index{prepare\_edit@{prepare\_edit}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{prepare\_edit()}{prepare\_edit()}}
+{\footnotesize\ttfamily void gdalcpp\+::\+Dataset\+::prepare\+\_\+edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a2f669a173e97698ef05cf032af08bf87}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a2f669a173e97698ef05cf032af08bf87}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!reproject\_to\_centroid@{reproject\_to\_centroid}}
@@ -263,6 +397,18 @@ const \mbox{\hyperlink{classquetzal_1_1geography_1_1Resolution}{Resolution}}$<$\
 
 Gets the resolution of the spatial grid. 
 
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a41f8a3de96cb018cc53b8b2c269ad90f}\label{classgdalcpp_1_1Dataset_a41f8a3de96cb018cc53b8b2c269ad90f}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!srs@{srs}}
+\index{srs@{srs}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{srs()}{srs()}}
+{\footnotesize\ttfamily S\+RS\& gdalcpp\+::\+Dataset\+::srs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_a5e927830781e3a464c222c72760865a6}\label{classgdalcpp_1_1Dataset_a5e927830781e3a464c222c72760865a6}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!start\_transaction@{start\_transaction}}
+\index{start\_transaction@{start\_transaction}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{start\_transaction()}{start\_transaction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgdalcpp_1_1Dataset_a07c4e177a34134061672096af38c4cc1}{Dataset}}\& gdalcpp\+::\+Dataset\+::start\+\_\+transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
 \mbox{\Hypertarget{classquetzal_1_1geography_1_1EnvironmentalQuantity_a5cb1839a8ddb0993cf88896c0493b665}\label{classquetzal_1_1geography_1_1EnvironmentalQuantity_a5cb1839a8ddb0993cf88896c0493b665}} 
 \index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!temporal\_definition\_space@{temporal\_definition\_space}}
 \index{temporal\_definition\_space@{temporal\_definition\_space}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
@@ -273,6 +419,16 @@ const std\+::vector$<$\mbox{\hyperlink{classquetzal_1_1geography_1_1Environmenta
 
 
 read the times at which quantity is defined. 
+
+\mbox{\Hypertarget{classgdalcpp_1_1Dataset_ad69a97a8c1df367c86643bf62e9b934d}\label{classgdalcpp_1_1Dataset_ad69a97a8c1df367c86643bf62e9b934d}} 
+\index{quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}!width@{width}}
+\index{width@{width}!quetzal::geography::EnvironmentalQuantity$<$ Time $>$@{quetzal::geography::EnvironmentalQuantity$<$ Time $>$}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily unsigned int gdalcpp\+::\+Dataset\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Fetch raster width in pixels. 
 
 
 

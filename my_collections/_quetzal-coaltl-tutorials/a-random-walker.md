@@ -1,6 +1,6 @@
 ---
 layout: tutorial_post
-title: A random walker in a canyon
+title: Migration between two demes
 tagline: the C++ Coalescence Template Library
 description: Forward-in-time demographic simulations tutorial
 use_math: true
@@ -98,11 +98,46 @@ But baby steps, baby steps... :baby:
 
 ### The Quetzal demography module
 
-You open the big bad book, and look at the [*demography* chapter](/softwares/quetzal-CoalTL/API/html/namespacequetzal_1_1demography.html).
+You open the big bad book, and look at the [*demography* chapter](/softwares/quetzal-CoalTL/API/html/namespacequetzal_1_1demography.html). This page refers to everything (classes, functions, even other namespaces) that lives in the `quetzal::demography` namespace.
+
+Since the documentation is mostly targeted at the developers, there are plenty of
+details, and most of them are not very useful to you: you just want to simulate a demographic
+history. But it's still worth to have a look at the general content of the `demography` module. There are 3 principal sections:
+
+- **Namespaces** lists a bunch of namespaces. It's like opening a drawer
+  with more drawers inside!
+  - :small_airplane: In the `dispersal_kernel` drawer,
+  you find a bunch of standard dispersal probability distributions
+  - :computer: In the `dispersal_policy` drawer, I placed the policy classes that control the dispersal details
+    of the demographic algorithm (that is, what *moving stuff across demes* concretely means for the computer)
+  - :floppy_disk: In the `memory_policy` drawer, I threw the policy classes that control what the
+    computer is supposed to do with all these demographic data: keep them on RAM (hoping
+    they are not too heavy) or save them on disk?
+- **Classes** lists all the data structures that exists in the demographic modules.
+  They mostly belong to 3 groups:
+  - `Flow` to represent $\Phi(x,y,t)$: store, access and control demographic flows between discrete demes.
+  - `PopulationSize` to represent $N(x,t)$: store, access and control population sizes.
+  - `History` classes are your main interest: these classes harmonize the simulation by hiding the   access to `Flows` and `PopulationSize` objects. All `History` classes derive from a common `BaseHistory`
+  (to reuse shared functionalities), but they can be specialized to implement a particular
+  demographic algorithm (for example using a dispersal_policy).
+  - **Functions**: just some free function hanging out!
+
+You have everything you need to begin coding: you prepare two liter of very dark coffee,
+sit under a palm tree and begin to type in your IDE
 
 ### Complete code solution
 
+:v: Victooooire!
+
+It's almost night but you did it!
+
+Your first functional Quetzal code! The first EGG in a long line! :egg:
+
+#### Your beautiful main.cpp file
+
 ```cpp
+// file main.cpp
+
 #include "quetzal/demography.h"
 #include <iostream>
 #include <random>
@@ -117,7 +152,7 @@ int main(){
   using generator_type = std::mt19937;
 
   // choose the strategy to be used
-  using quetzal::demography::strategy::individual_based;
+  using quetzal::demography::dispersal_policy::individual_based;
 
   // Initialize the history with 10 individuals introduced in deme x=1 at time t=2018
   quetzal::demography::History<coord_type, time_type, individual_based> history(1, 2018, 10);
@@ -150,7 +185,31 @@ int main(){
 }
 ```
 
-The output would be:
+#### Compilation tiiime!
+
+With utter delight and excitement, you enter the quetzal-NEST container (see previous tutorial).
+Quetzal-NEST comes with pre-installed `vim` editor, that you can use to create text files.
+- `cd home`
+- `vim main.cpp`
+- copy and paste the code, then save and exit vim
+- compile with `g++ -Wall -std=c++17 main.cpp -o two_demes.exe`
+
+> Compiler options:
+- the option `-Wall` enables all warnings
+- the option `-std=c++17` enables the C++17 standard compiler support
+- the option `-o` renames the output
+
+A fast `ls` should show that a new file has been created: `two_demes.exe` !
+
+>  :boom: Any issue? Maybe this tutorial is outdated! Outrageous! Leave a comment so I can fix that :point_down:
+
+#### Run tiiime!
+
+Then you proceed to run the program with the following command:
+```
+./two_demes.exe
+```
+The output is (hopefully):
 
 ```
 Population flows from x to y at time t:
@@ -168,14 +227,16 @@ time	from	to	flow
 2019	1	1	12
 ```
 
+Glorious! Your first demographic simulation! You already want to turn the pages of the
+documentation to interface it with a coalescence simulation!
 
+But not so fast! What happens in this program?
 
-
-### Step-by-step implementation
+## Step-by-step implementation
 
 First create a new file ```demo.cpp``` to write the simulation code in.
 
-#### Including the required features
+### Including the required features
 
 First we need to include the files allowing to build a demographic expansion.
 This can be for example the ```History``` class, that is part of the ```demography```
@@ -213,7 +274,7 @@ int main
   return 0;
 }
 ```
-#### Expliciting the simulation model framework and hypothesis
+### Expliciting the simulation model framework and hypothesis
 
 A feature of Quetzal is that it makes no hypothesis about the space or the time representation.
 It is quite important to allow users to consider any way to represent space and time
@@ -242,7 +303,7 @@ We choose the individual-base strategy. Again, a **type alias** is welcome here:
 ```cpp
 using quetzal::demography::strategy::individual_based;
 ```
-#### Demographic history initialization
+### Demographic history initialization
 We want to initialize the demographic history with some individuals in deme 1 in year 2018.
 We use the ```History``` class, that is an implementation of a forward-in-time
 demographic simulator defined in the ```demography``` module.
@@ -254,7 +315,7 @@ We also need to specify that we need the special simulator version implemented w
 ```cpp
 quetzal::demography::History<coord_type, time_type, individual_based> history(1, 2018, 10);
 ```
-#### Implementing a local growth process
+### Implementing a local growth process
 
 Quetzal allow to represent the number of individuals in deme $x$ at time $t$ by
 any function of space and time: constant functions, uniform, stochastic or deterministic
@@ -292,7 +353,7 @@ auto growth = [N](auto& gen, coord_type x, time_type t){
  };
 ```
 
-#### Implementing a dispersal location kernel <a name="dispersal_sampler"></a>
+### Implementing a dispersal location kernel <a name="dispersal_sampler"></a>
 
 The ```individual_based``` strategy requires a specific type of dispersal function.
 Remember that for each individual, a post-dispersal location is sampled in a distribution.
@@ -324,7 +385,7 @@ auto sample_location = [](auto& gen, coord_type x, time_type t){
 };
 ```
 
-#### Expanding the history
+### Expanding the history
 
 We first define the number of non-overlapping generations to simulate, and we also initialize the
 random number generator:
@@ -343,236 +404,6 @@ history.expand(nb_generations, growth, sample_location, gen);
 std::cout << "Population flows from x to y at time t:\n\n"
           << history.flows()
           << std::endl;
-```
-
-### Complete script and compilation options
-
-#### Compilation options
-
-The complete `demo.cpp` script is given below.
-
-It compiles with the following terminal command:
-```
-g++ -Wall -std=c++14 demo.cpp
-```
-- the option `-Wall` enables all warnings
-- the option `-std=c++14` enables the C++14 standard compiler support
-
-Then you can run the program with the following command:
-```
-./a.out
-```
-
-
-## Mass-based dispersal for big populations <a name="mass_based"></a>
-
-We can avoid the cost of having to disperse each individual of the landscape by
-considering a model where population masses would be split through the landscape
-according to migration probabilities: the model is deterministic
-in the sense that no random number is generated.
-
-### Pros
-
-This algorithm is more efficient as the computation time is now only related to
-the number of demes in the landscape. Consequently it allows to perform simulations
-with high number of individuals in a very reasonable amount of time
-
-### Cons
-
-Defining a strategy that is more efficient for high populations levels
-comes with the major drawback that it is unsuited whenever populations are too small:
-> What if 10 individuals are split across 1000 demes ?
-
-> What does 0.001 individual mean in terms of coalescence probability ?
-
-It could seem easy to ensure it never happens. Unfortunately, population levels
-are actually hard to control in an ABC simulation context where
-parameters are randomly sampled, so we can hardly guarantee that this situation will
-not arise.
-
-We avoid the problem with a computational little trick: when summing the population
-flows arriving to a same deme, the least integer greater or equal to the actual flow value
-is used.
-
-So when dispersing 2 individuals in a 4-demes landscape with equal migration
-probabilities, the simulation will end up with $\lceil 2 \times 0.25 \rceil = 1$ individual in each deme...
-
-That is, dispersing 2 individuals leads to having 4 individuals in the lanscape.
-
-Obviously this behavior is not satisfying if the high-population hypothesis is violated,
-but when the population size in each deme is of the order of the
-number of demes, this little excess is expected to have little impact.
-
-### Mathematical description
-
- The children dispersal is done by splitting the population masses according
- to their migration probabilities, defining
- $ \Phi_{x,y}^t $, the population flow going from $x$ to $y$ at time $t$:
-
- \\(
- (\Phi_{x,y}^{t})_{y\in  X} =  ( \lceil \tilde{N}_{x}^{t} \times m_{xy} \rceil )_{y\in  X} ~.
- \\)
-
- The term $ m_{xy} $ denotes the parameters of the transition kernel,
- giving for an individual in $x$ its probability to go to $y$.
- These probabilities are given by the dispersal law with parameter $\theta$:
-
- \\(
- \begin{array}{cclcl}
- m  & : &  X^2 & \mapsto & R_{+} \\
- &   &    (x,y)     & \mapsto & m^{\theta}(x,y)  ~. \\
- \end{array}
- \\)
-
- After migration, the population size in deme $x$ is defined by the sum of population flows converging to $x$:
-
- \\(
- N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
- \\)
-
-### Implementation
-
-Most of the features are the same than for the [individual_based](#ind_based) strategy.
-
-The only thing changing is the way to represent a dispersal kernel. For the individual-based
-strategy, we needed to [sample a new location conditionally to the present location](#dispersal_sampler).
-
-Now we just need a function that returns $m_{xy}$, the probability to move from
-$x$ to $y$ at time $t$. Basically, we need a transition matrix, not a random sampler.
-
-Note that we are not forced to use a matrix data structure: it is enough to implement
-a **functor** returning the migration rates, that is to define the member function
-`operator()(coord_type x, coord_type y, time_type t)`.
-
-Another important constraint is that we need this transition matrix to give the set
- of inhabitable demes representing the landscape.
-
- ```cpp
- struct transition_matrix {
-   using coord_type = int;
-   using time_type = unsigned int;
-
-   std::vector<coord_type> state_space(time_type t)
-   {
-     return {-1, 1};
-   }
-   // 1/2 probability to change of location
-   double operator()(coord_type x, coord_type y, time_type t)
-   {
-     return 0.5;
-   }
- };
- ```
-
-Here we assume that the spatial representation
-is constant through time so the temporal argument `time_type t` is not used in the
-body of the `state_space` function.
-
-It is however an important extension point. Indeed at large temporal
-scales we expect the landscape to go through some form of modification, for example
-contraction or expansion of the inhabitable areas due to sea-level rises  or glaciation.
-
-In this case we would be interested to use this time argument in the function implementation
-in order to implement this dynamic.
-
-For the rest it is totally similar with the individual based strategy.
-
-### Complete script and compilation options
-
-#### Compilation options
-
-The complete `demo.cpp` script is given below.
-
-It compiles with the following terminal command:
-```
-g++ -Wall -std=c++14 demo.cpp
-```
-- the option `-Wall` enables all warnings
-- the option `-std=c++14` enables the C++14 standard compiler support
-
-Then you can run the program with the following command:
-```
-./a.out
-```
-
-#### Complete script
-
-The complete
-code is given below. We changed the type of the demes identifiers - that have now
-names of cities, just to demonstrate that Quetzal functions are not linked to any
-precise geographical coordinate system.
-
-
-```cpp
-#include "quetzal/demography.h"
-
-#include <iostream>
-#include <random>
-#include <map>
-
-struct transition_matrix {
-
-	using coord_type = std::string;
-	using time_type = unsigned int;
-
-	std::vector<coord_type> state_space(time_type t)
-	{
-		return {"Paris", "Ann Arbor"};
-	}
-
-	double operator()(coord_type x, coord_type y, time_type t)
-	{
-		return 0.5; // 1/2 probability to change of location
-	}
-
-};
-
-int main(){
-
-	using coord_type = std::string;
-	using time_type = unsigned int;
-	using generator_type = std::mt19937;
-
-	// Initialize history: 100 individuals introduced at x=1, t=2018
-	using quetzal::demography::strategy::mass_based;
-	quetzal::demography::History<coord_type, time_type, mass_based> history("Paris", 2018, 100);
-
-	// Growth function
-	auto N = std::cref(history.pop_sizes());
-	auto growth = [N](auto& gen, coord_type x, time_type t){ return 2*N(x,t) ; };
-
-	// Number of non-overlapping generations for the demographic simulation
-	unsigned int nb_generations = 3;
-
-	// Random number generation
-	generator_type gen;
-
-	transition_matrix M;
-
-	history.expand(nb_generations, growth, M, gen);
-
-	std::cout << "Population flows from x to y at time t:\n\n" << history.flows() << std::endl;
-
-	return 0;
-}
-```
-
-The expected output is:
-
-```
-Population flows from x to y at time t:
-
-time	from	to	flow
-2020	Ann Arbor	Ann Arbor	20
-2020	Paris	Paris	20
-2018	Paris	Ann Arbor	10
-2020	Ann Arbor	Paris	20
-2019	Ann Arbor	Ann Arbor	10
-2020	Paris	Ann Arbor	20
-2019	Paris	Paris	10
-2018	Paris	Paris	10
-2019	Paris	Ann Arbor	10
-2019	Ann Arbor	Paris	10
 ```
 
 # Conclusion

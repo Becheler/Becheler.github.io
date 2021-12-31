@@ -4,12 +4,15 @@ on:
   push:
     branches:
       - master # or main after October 2020
+  schedule:
+    - cron: "0 0 * * *" # build daily at midnight
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@v2
+      - uses: helaili/jekyll-action@v2.0.5
         with:
+          target_branch: 'gh-pages'
           token: ${{ secrets.GITHUB_TOKEN }}

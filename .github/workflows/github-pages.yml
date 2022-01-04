@@ -1,6 +1,7 @@
 name: Build and deploy Jekyll site to GitHub Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - develop # or main after October 2020

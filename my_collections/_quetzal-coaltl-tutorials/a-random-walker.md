@@ -135,7 +135,7 @@ Your first functional Quetzal code! The first EGG in a long line! :egg:
 
 #### Your beautiful main.cpp file
 
-\```cpp:quetzal-CoalTL/test/tutorials_test/tuto_1.cpp
+```cpp:quetzal-CoalTL/test/tutorials_test/tuto_1.cpp
 // file main.cpp
 
 #include "quetzal/demography.h"
@@ -183,7 +183,7 @@ int main(){
             << history.flows()
             << std::endl;
 }
-\```
+```
 
 #### Compilation tiiime!
 

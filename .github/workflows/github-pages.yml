@@ -19,7 +19,7 @@ jobs:
       - name: Download Quetzal-CoalTL
         run: git clone https://github.com/Becheler/quetzal-CoalTL.git
 
-      - uses: tokusumi/markdown-embed-code@main
+      - uses: tokusumi/markdown-embed-code@v1.0.0
         with:
           markdown: "/my_collections/_quetzal-coaltl-tutorials/a-random-walker.md"
           token: ${{ secrets.GITHUB_TOKEN }}

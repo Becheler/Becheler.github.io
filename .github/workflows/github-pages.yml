@@ -12,15 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Standard usage
-      - uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-  embed-code:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
 
       - name: Download Quetzal-CoalTL
         run: git clone https://github.com/Becheler/quetzal-CoalTL.git
@@ -30,4 +21,8 @@ jobs:
           markdown: "/my_collections/_quetzal-coaltl-tutorials-a-random-walker.md"
           token: ${{ secrets.GITHUB_TOKEN }}
           message: "synchronizing tutorial"
-          silent: true
+
+      # Standard usage
+      - uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

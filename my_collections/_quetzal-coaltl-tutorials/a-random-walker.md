@@ -135,7 +135,10 @@ Your first functional Quetzal code! The first EGG in a long line! :egg:
 
 #### Your beautiful main.cpp file
 
-```cpp:quetzal-CoalTL/test/tutorials_test/tuto_1.cpp
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+```cpp:
 // file main.cpp
 
 #include "quetzal/demography.h"

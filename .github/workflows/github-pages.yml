@@ -18,7 +18,7 @@ jobs:
 
       - uses: tokusumi/markdown-embed-code@main
         with:
-          markdown: "/my_collections/_quetzal-coaltl-tutorials-a-random-walker.md"
+          markdown: "/my_collections/_quetzal-coaltl-tutorials/a-random-walker.md"
           token: ${{ secrets.GITHUB_TOKEN }}
           message: "synchronizing tutorial"
 

@@ -32,7 +32,11 @@ But the full name is quite difficult to pronounce, so feel free to focus on the 
 
 **Founder article:** [Access on Wiley](https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.12992)
 
-**Citation:** Becheler, A, Coron, C, Dupas, S. The Quetzal Coalescence template library: A C++ programmers resource for integrating distributional, demographic and coalescent models. Mol Ecol Resour. 2019; 19: 788– 793. https://doi.org/10.1111/1755-0998.12992
+**Citation:**
+
+Becheler, A, Coron, C, Dupas, S. The Quetzal Coalescence template library: A C++ programmers resource for integrating distributional, demographic and coalescent models. Mol Ecol Resour. 2019; 19: 788– 793. https://doi.org/10.1111/1755-0998.12992
+
+Becheler, A., & Knowles, L. L. (2020). Occupancy spectrum distribution: application for coalescence simulation with generic mergers. Bioinformatics, 36(10), 3279-3280.
 
 ----------------------
 

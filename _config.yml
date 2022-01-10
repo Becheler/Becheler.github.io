@@ -31,9 +31,9 @@ collections:
     output: true
     permalink: /software/quetzal-CoalTL/tutorials/:name
     order:
-      - foreword.md
-      - getting-started.md
-      - a-random-walker.md
+      - 1-foreword.md
+      - 2-getting-started.md
+      - 3-migration-between-two-demes.md
       - many-lazy-walkers.md
       - geography.md
       - niche.md

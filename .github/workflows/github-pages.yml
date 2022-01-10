@@ -16,7 +16,7 @@ jobs:
 
       - uses: dineshsonachalam/markdown-autodocs@v1.0.4
         with:
-          output_file_paths: '[./my_collections/_quetzal-coaltl-tutorials/a-random-walker.md]'
+          output_file_paths: '[./my_collections/_quetzal-coaltl-tutorials/3-migration-between-two-demes.md]'
 
       # Standard usage
       - uses: helaili/jekyll-action@v2

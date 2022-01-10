@@ -9,7 +9,7 @@ img: doodles/tutorials/welcome.png
 
 Welcome to the Quetzal-CoalTL tutorials! :tada:
 
-These tutorials should help you have a better grasp of what this library can do for you (*spoiler: it will not solve you phd* :trollface:)
+These tutorials should help you have a better grasp of what this library can do for you (*spoiler: it will not solve you PhD* :trollface:)
 
 If you are here, then there is a good chance that you are interested in writing
 **complicated code** to simulate **complicated stuff** in **complicated landscapes**

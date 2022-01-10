@@ -341,7 +341,9 @@ recorded using our little ```coord_type``` *"coordinate system"* and ```time_typ
 
 ### Implementing a local growth process
 
-Quetzal allow to represent the number of individuals in deme $x$ at time $t$ by
+The Quetzal-CoalTL ```demography``` module allows to represent two quantities
+of importance for the coalescence process:
+- the number of individuals in deme $x$ at time $t$ by
 any function of space and time: constant functions, uniform, stochastic or deterministic
 forms are all possible.
 

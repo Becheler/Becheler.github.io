@@ -265,25 +265,13 @@ Second we want to use some tools present in the standard C++ toolbox:
 - a simple, standard bernoulli random distribution to representation migration between two demes we also find in ```random```
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=1-4) -->
-<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
-```cpp
-// file main.cpp
-
-#include "quetzal/demography.h"
-```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ### Enter the main function
 
 In C++, everything happens here:
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=6-9) -->
-<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
-```cpp
-#include <random>
-
-int main(){
-```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=5-6) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ### Type aliasing to explicit the simulation model framework and hypothesis
@@ -313,23 +301,7 @@ We specify these choices by defining some **type aliases** to keep things clear 
 to be able to later change more easily the types if needed: the demographic module will adapt!
 We also want to use a standard **random number generator**, the mersenne twister engine.
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=10-12) -->
-<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
-```cpp
-  // Here we simulate a population expansion through a 2 demes landscape.
-
-  // Use type aliasing for readability
-```
-<!-- MARKDOWN-AUTO-DOCS:END -->
-
-We also want to use a standard **random number generator**, the mersenne twister engine:
-
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=13-14) -->
-<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
-```cpp
-  using coord_type = int;
-  using time_type = unsigned int;
-```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=7-10) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 You can think of so many simulation algorithms for populations expansions!
@@ -346,15 +318,7 @@ And because everything will obviously fit on the RAM and we won't need to record
 the history on disk, we also explicit that by specifying the ```on_RAM``` memory
 management policy! Again, a **type alias** is welcome here to shorten these statement further in the code:
 
-Again, a **type alias** is welcome here to shorten these statement further in the code:
-
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=15-17) -->
-<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
-```cpp
-  using generator_type = std::mt19937;
-
-  // choose the strategy to be used
-```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=11-13) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 > :crystal_ball: One day maybe, you will simulate histories so long that RAM will be you main bottleneck.
@@ -367,26 +331,9 @@ demographic simulator defined in the ```demography``` module.
 
 > :books: if you need to have a look at the class documentation, [it's here!](https://becheler.github.io/quetzal-CoalTL/api/classquetzal_1_1demography_1_1History_3_01Space_00_01demographic__policy_1_1individual__based_00_01Memory_01_4.html) Take a deeep breath :scream_cat:
 
-Using **template arguments**, we declare that this history has to be
-recorded using our little *"coordinate system"* ```coord_type```  and ```time_type``` temporal points. We also specialize the ```History``` class by specifying that we need the special demographic algorithm ```individual_based```:
+Using **template arguments**, we declare that this history has to be recorded using our little *"coordinate system"* ```coord_type```  and ```time_type``` temporal points. We also specialize the ```History``` class by specifying that we need the special demographic algorithm ```individual_based```:
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=19-32) -->
-<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
-```cpp
-  using quetzal::demography::memory_policy::on_RAM;
-
-  // Random number generator
-  generator_type gen;
-
-  // Number of non-overlapping generations for the demographic simulation
-  int nb_generations = 3;
-
-  // Coordinate of the origin of introduction
-  coord_type x0 = 1;
-
-  // Number of individuals introduced
-  int N0 = 10;
-```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=14-23) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ### Implementing a local growth process

@@ -98,7 +98,7 @@ But baby steps, baby steps... :baby:
 
 ### The Quetzal demography module
 
-You open the big bad book, and look at the [*demography* chapter](/softwares/quetzal-CoalTL/API/html/namespacequetzal_1_1demography.html). This page refers to everything (classes, functions, even other namespaces) that lives in the `quetzal::demography` namespace.
+You open the big bad book, and look at the [*demography* chapter](https://becheler.github.io/quetzal-CoalTL/api/namespacequetzal_1_1demography.html). This page refers to everything (classes, functions, even other namespaces) that lives in the `quetzal::demography` namespace.
 
 Since the documentation is mostly targeted at the developers, there are plenty of
 details, and most of them are not very useful to you: you just want to simulate a demographic
@@ -106,26 +106,30 @@ history. But it's still worth to have a look at the general content of the `demo
 
 - **Namespaces** lists a bunch of namespaces. It's like opening a drawer
   with more drawers inside!
+
   - :small_airplane: In the `dispersal_kernel` drawer,
   you find a bunch of standard dispersal probability distributions
-  - :computer: In the `dispersal_policy` drawer, I placed the policy classes that control the dispersal details
-    of the demographic algorithm (that is, what *moving stuff across demes* concretely means for the computer)
-  - :floppy_disk: In the `memory_policy` drawer, I threw the policy classes that control what the
-    computer is supposed to do with all these demographic data: keep them on RAM (hoping
+
+  - :computer: In the `demographic_policy` drawer, I placed the policy classes that control the dispersal details of the demographic algorithm (that is, what *moving stuff across demes* concretely means for the computer)
+
+  - :floppy_disk: In the `memory_policy` drawer, I threw the policy classes that control what the computer is supposed to do with all these demographic data: keep them on RAM (hoping
     they are not too heavy) or save them on disk?
+
 - **Classes** lists all the data structures that exists in the demographic modules.
   They mostly belong to 3 groups:
+
   - `Flow` to represent $\Phi(x,y,t)$: store, access and control demographic flows between discrete demes.
+
   - `PopulationSize` to represent $N(x,t)$: store, access and control population sizes.
-  - `History` classes are your main interest: these classes harmonize the simulation by hiding the   access to `Flows` and `PopulationSize` objects. All `History` classes derive from a common `BaseHistory`
-  (to reuse shared functionalities), but they can be specialized to implement a particular
-  demographic algorithm (for example using a dispersal_policy).
-  - **Functions**: just some free function hanging out!
 
-You have everything you need to begin coding: you prepare two liter of very dark coffee,
-sit under a palm tree and begin to type in your IDE
+  - `History` classes are your main interest: these classes harmonize the simulation by hiding the   access to `Flows` and `PopulationSize` objects. All `History` classes derive from a common `BaseHistory` (to reuse shared functionalities), but they can be specialized to implement a particular demographic algorithm (for example using a `demographic_policy`).
 
-### Complete code solution
+  - **Functions**: just some free functions to help around!
+
+You have everything you need to begin coding: you prepare two liters of very dark coffee,
+sit under a palm tree and begin to type in your IDE.
+
+### Several hours later: complete code solution
 
 :v: Victooooire!
 
@@ -267,7 +271,7 @@ Second we want to use some tools present in the standard C++ toolbox:
 
 In C++, everything happens here:
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=6-9) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=5-6) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ### Type aliasing to explicit the simulation model framework and hypothesis
@@ -295,13 +299,9 @@ would just be one or two lines longer.
 
 We specify these choices by defining some **type aliases** to keep things clear and
 to be able to later change more easily the types if needed: the demographic module will adapt!
+We also want to use a standard **random number generator**, the mersenne twister engine.
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=10-12) -->
-<!-- MARKDOWN-AUTO-DOCS:END -->
-
-We also want to use a standard **random number generator**, the mersenne twister engine:
-
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=13-14) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=7-10) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 You can think of so many simulation algorithms for populations expansions!
@@ -312,125 +312,88 @@ In this very case, we will keep:
 
 Because we don't have many individuals to handle, we choose the ```individual-based``` demographic strategy (or policy, in C++ language), that moves individuals independently.
 
-> As opposed to the ```mass-based``` demographic policy, that considers populations large enough to be infinitely splittable :scissors:
+> :bulb: As opposed to the ```mass-based``` demographic policy, that considers populations large enough to be infinitely splittable :scissors:
 
 And because everything will obviously fit on the RAM and we won't need to record
-the history on disk, we explicit that too by expliciting the ```on_RAM``` memory
-management policy!
+the history on disk, we also explicit that by specifying the ```on_RAM``` memory
+management policy! Again, a **type alias** is welcome here to shorten these statement further in the code:
 
-> One day maybe, you will simulate histories so long that RAM will be you main bottleneck.
-That day, think about the alternative strategy  ```on_disk``` :floppy_disk:
-
-Again, a **type alias** is welcome here to shorten these statement further in the code:
-
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=15-17) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=11-13) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
+
+> :crystal_ball: One day maybe, you will simulate histories so long that RAM will be you main bottleneck.
+That day, think about the alternative strategy  ```on_disk``` :floppy_disk:
 
 ### Demographic history initialization
 
 We want to initialize the demographic history with some individuals in deme 1. We use the ```History``` class, that is an implementation of a forward-in-time
 demographic simulator defined in the ```demography``` module.
 
-> :books: if you need to have a look at the class documentation, [it's here!](https://becheler.github.io/quetzal-CoalTL/api/classquetzal_1_1demography_1_1History_3_01Space_00_01demographic__policy_1_1individual__based_00_01Memory_01_4.html) :scream_cat:
+> :books: if you need to have a look at the class documentation, [it's here!](https://becheler.github.io/quetzal-CoalTL/api/classquetzal_1_1demography_1_1History_3_01Space_00_01demographic__policy_1_1individual__based_00_01Memory_01_4.html) Take a deeep breath :scream_cat:
 
 Using **template arguments**, we declare that this history has to be
-recorded using our little ```coord_type``` *"coordinate system"* and ```time_type``` temporal points. We also specialize the ```History``` class by specifying that we need the special demographic algorithm ```individual_based```:
+recorded using our little *"coordinate system"* ```coord_type```  and ```time_type``` temporal points. We also specialize the ```History``` class by specifying that we need the special demographic algorithm ```individual_based```:
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=19-32) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=14-23) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ### Implementing a local growth process
 
-The Quetzal-CoalTL ```demography``` module allows to represent two quantities
-of importance for the coalescence process:
-- the number of individuals in deme $x$ at time $t$ by
-any function of space and time: constant functions, uniform, stochastic or deterministic
-forms are all possible.
+Now that we are ready to record the demographic history, we would like
+to define the population size with some kind of temporal dependency.
+That is, we need to know the number of individuals in the previous
+generation to be able to define the number of children in the new generation.
 
-However, most of the time, we would like some kind
-of temporal dependency. That is, we need to know the number of individuals at the previous
-generation to be able to define the number of children.
+Well, we can simply ask the `History` to provide us with a little accessor on this information:
 
-We can retrieve this information using the following code line:
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=24-25) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
-```cpp
-auto N = std::cref(history.pop_sizes());
-```
-The use to ```std::cref``` is motivated by the fact we need a **copiable reference**
-to the population size history. This little trick allows to capture the history
-in a **lambda expression** encoding the growth process without having to copy the whole
-historical database.
+> :wrench: This gives you a **copiable reference** to the population size history. This little trick allows to capture the history in a **lambda expression** encoding the growth process without having to copy around the whole historical database - what would be quite inefficient!
 
-We can define the number of children as being deterministically twice the number of parents:
+So now, we can define the number of children:
 
-```cpp
-auto growth = [N](auto& gen, coord_type x, time_type t){ return 2*N(x,t) ; };
-```
-This little **functor** is very cheap to copy and can be freely passed around the
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=26-29) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+> :wrench: This little **functor** is very cheap to copy and can be freely passed around the
 simulation context.
 
-We could as well have used the random generator argument to define it as a stochastic process modeled by
-a Poisson distribution with mean parameter $\lambda = 2N(x,t)$:
-
-```cpp
-auto growth = [N](auto& gen, coord_type x, time_type t){
-  std::poisson_distribution<unsigned int> dist(2*N(x,t));
-  return dist(gen);
- };
-```
+> :bulb: You could chose to represent the number of individuals in deme $x$ at time $t$ by any function of space and time: constant functions, uniform, stochastic or deterministic forms are all possible. We could have used the random generator argument to define a stochastic process modeled by a Poisson distribution with mean parameter $\lambda = 2N(x,t)$.
 
 ### Implementing a dispersal location kernel <a name="dispersal_sampler"></a>
 
 The ```individual_based``` strategy requires a specific type of dispersal function.
-Remember that for each individual, a post-dispersal location is sampled in a distribution.
+Remember that for each individual, a post-dispersal location must be sampled in a distribution.
 
-Complex distance-based location dispersal distribution can be constructed from a geographic support
+> :wrench: Complex distance-based location dispersal distribution can be constructed from a geographic support
 using Quetzal helper functions, but for now a very simple dispersal process will be sufficient to highlight
 the simulator behavior.
 
 Basically we need to construct a function that can be called with three arguments:
-- the random number generator for the random part of the process
-- a ```coord_type``` argument that gives the place where the individual is *before dispersal*
+- a random number generator for some entropy
+- ```coord_type``` argument that gives the place where the individual is *before dispersal*
 - a ```time_type``` argument giving the time at which the dispersal occurs.
 
-The temporal argument is generally useless for pure distance-based dispersal that are constant in time.
+> :bulb: The time parameter is generally useless for pure distance-based dispersal that are constant in time.
 However, this argument allows important extensions:
 - if the temporal scale is large enough, the dispersal parameters can vary through time.
-- if the landscape heterogeneity is assumed to impact dispersal, then one may have to account for temporal
-variations of the landscape.
+- if the landscape heterogeneity is assumed to impact dispersal (e.g., moving glacier margins ), then one may have to account for temporal variations in the landscape.
 
 Here we define a very simple stochastic dispersal distribution, where the geographic
 sampling space is only the two considered demes $\{-1 , 1\}$ and with a 50% chance
-to disperse to the other deme:
+to move to the other deme:
 
-```cpp
-auto sample_location = [](auto& gen, coord_type x, time_type t){
-  std::bernoulli_distribution d(0.5);
-  if(d(gen)){ x = -x; }
-  return x;
-};
-```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=30-37) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
-### Expanding the history
+### Forwaaaard!
 
-We first define the number of non-overlapping generations to simulate, and we also initialize the
-random number generator:
+We can finally expand the history through space and time, print out the flows historical
+database for visual check, and close the `main` function:
 
-```cpp
-unsigned int nb_generations = 3;
-generator_type gen;
-```
-
-We can finally expand the history through space and time, and print out the flows historical
-database for visual check:
-
-```cpp
-history.expand(nb_generations, growth, sample_location, gen);
-
-std::cout << "Population flows from x to y at time t:\n\n"
-          << history.flows()
-          << std::endl;
-```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=38-46) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 # Conclusion
 
@@ -442,8 +405,8 @@ inject user-defined implementations into Quetzal components.
 However, you will surely not manually hard-code the migration rates between hundreds
 of demes in a landscape.
 
-You may find in Quetzal a way to automate the process of [constructing spatially explicit,
-distance-based dispersal kernels]({{ site.url }}/pages/tuto_dispersal).
+You will find in Quetzal a way to automate the process of constructing spatially explicit,
+distance-based dispersal kernels.
 
 But before to compute probabilities across space, you first need to know more
-about [how to represent a spatially explicit landscape]({{ site.url }}/pages/tuto_geography)!
+about how to represent a spatially explicit heterogeneous landscape!

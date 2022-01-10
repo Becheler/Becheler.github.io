@@ -25,7 +25,7 @@ Still with us? Fantastic! Let's get into it! :raised_hands:
 
 - The C++ API documentation to get more detailed knowledge of the code :books:
 
-- A FAQ to answer questions, or as new ones! :question:
+- A FAQ to answer questions, or ask new ones! :question:
 
 ----------------------------
 

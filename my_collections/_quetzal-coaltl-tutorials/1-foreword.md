@@ -48,7 +48,7 @@ But no worries, at the end, we will tie everything together to come up with a cu
 
 :scream_cat: My time is limited. I know. It sucks, metaphysically speaking.
 
-But it also mean I may unfortunately not be able to give you a full course on C++ programming (I would love to, though). Fortunately, many resources out-there would do a much better job at it than I could ever do: find them! :1st_place_medal:
+But it also mean I may unfortunately not be able to give you a full course on C++ programming (I would love to, though). Fortunately, many resources out-there would do a much better job at it than I could ever do: go find them! :1st_place_medal:
 
 > I will always try to answer your questions and help you the best I can!
 **If you ask them!**  

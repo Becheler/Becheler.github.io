@@ -22,3 +22,11 @@
 .PageNavigation .next {
   text-align: right;
 }
+
+.poetry-line {
+    text-indent: -2em;
+    margin-left: 2em;
+    font-size: 34px;
+    font-style: italic;
+    font-family: 'Tangerine', cursive;
+}

@@ -6,6 +6,7 @@ description: Discover the Liskov Substition Principle # Add post description (op
 img: doodles/LSP_1_basketball.jpg # Add image post (optional)
 fig-caption: Léonin having some fun with the library guys # Add figcaption (optional)
 tags: [LSP, SOLID, Liskov]
+sticky: false
 ---
 
 If you made good use of the [Single Responsibility Principle](2021-08-06-make-code-surgery-easy-with-SRP),

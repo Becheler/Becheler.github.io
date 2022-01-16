@@ -7,6 +7,7 @@ description: How to write better code # Add post description (optional)
 img: doodles/solid.jpg # Add image post (optional)
 fig-caption: Derek, evil god of programming # Add figcaption (optional)
 tags: [programming, SOLID, biology, doodles, derek&léonin]
+sticky: false
 ---
 
 One promise of [Computational Biology](http://www.cbd.cmu.edu/about-us/what-is-computational-biology/)

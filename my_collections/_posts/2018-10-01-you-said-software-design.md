@@ -6,6 +6,7 @@ description: Why do we need to care about software design in Ecology and Evoluti
 img: doodles/lost_in_translation.png # Add image post (optional)
 fig-caption: Derek lost in software complexity # Add figcaption (optional)
 tags: [software, design, biology, derek&léonin]
+sticky: false
 ---
 
 I know what you may be thinking: A new blog about coding, seriously? Yes! Definitely!

@@ -6,6 +6,7 @@ description: How to write more modular code # Add post description (optional)
 img: doodles/scalpel.jpg # Add image post (optional)
 fig-caption: A code autopsy # Add figcaption (optional)
 tags: [programming, modular, SOLID, biology, doodles, derek&léonin]
+sticky: false
 ---
 
 The **Single Responsibility Principle** (the **S** of the 5 [5 S.O.L.I.D. principles]({%post_url 2018-10-20-how-to-write-solid-code %})) states that *each class should do just one thing, but do it well.*

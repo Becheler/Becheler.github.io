@@ -6,6 +6,7 @@ description: Can we reframe programming as a natural language? # Add post descri
 img: doodles/morning_coding.jpg # Add image post (optional)
 fig-caption: Léonin, god of bad programming # Add figcaption (optional)
 tags: [programming, natural language, fun, biology, doodles, derek&léonin]
+sticky: false
 ---
 
 Why are we so often yelling at our compilers?

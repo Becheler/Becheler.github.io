@@ -60,6 +60,7 @@ Between two waves of the sea. <br>
 My brain responds to this stanza with a multitude of colorful visions: the forever lost landscapes
 of *Vaalbara*, the Archean supercontinent at the beginning of time, the future and limits of science,
 the use and abuse of satellite images, the importance of mystery, its *sacredness*.
+
 In our modern world where social medias
 show us places we will never visit, have us listen to people we will never meet,
 when satellites show us every day every last bit of Earth,
@@ -102,7 +103,7 @@ Will not stay still. <br>
 </p>
 
 Genetic words are everything *but* still. Like a tumultuous swarm of
-young stirlings, they are fluid, chaotic, in constant metamorphosis, always recasted
+young stirlings, they are fluid, chaotic, in constant interactive metamorphosis, always recasted
 by random mutations that keep altering their initial meaning, pushing
 us away from other species, further away from LUCA.
 
@@ -118,36 +119,43 @@ a tale of its own words, and that with its own unit of time tells us, children o
 how long the road has been since we left our ancestral hydro-thermal shelters.
 The primal tale of the *hidden waterfall*, deep beneath the sea.
 
-## Population history, genetic patterns and mutations
+> Looking deep into present genetic data among species has been incredibly useful to understand the past
+history of Earth's biodiversity, allowing researchers to predict more accurately
+how species respond to environmental changes. But not every question has to go back to LUCA.
 
-using present genetic data has been incredibly useful to understand the past
-demographic history of species, allowing researchers to predict more accurately
-how species respond to environmental changes.
+## A people without history still has a tale to tell
 
-Indeed, the demographic history of species has left marks in their genes, and that
-is how present genetic data can then be linked to past ecological processes.
+Even among members of a same species, the same clock ticks. The more geographically
+distant two individuals are, the more distant in time their common ancestor was.
+And, decaying with imprecision, their genetic code begins to slowly diverge, and what
+made them similar then begins to fade. Tick by tick. Instant mutation by instant mutation.
+*Timeless moment* by *timeless moment*.
+
+In a way, subtle diverging tones in **my** genome and **your** genome whisper knowledge of
+how long ago we parted our ways, and of how much time was spent since your ancestors
+ceased to be my ancestors too.
+
+This is how present genetic patterns can be linked to past ecological processes, answering
+the oracular question asked in a rigid, reassuring statistical phrasing: *"what made them part ways?"*.
+
+Was it the emergence of a mountain range that separated us?
+Was it the overwhelming rising of oceanic waters that transformed our beautiful, unified land into smaller secluded islands?
+Or was it a freezing wind coming from the North
+that pushed us to warmer but faraway, isolated refugees?
+
+In what drop of time should the moment be remembered when
+your ancestor decided to turn West when my ancestor chose East?
 
 <p class="poetry-line"> <br>
 A people without history <br>
 Is not redeemed from time, for history is a pattern <br>
-Of timeless moments. <br>
+Of timeless moments.
 </p>
 
 ![Harmonic variation]({{site.baseurl}}/assets/img/doodles/harmonic_variation.png)
 <p align = "center"> Harmonic variations </p>
 
-## The children in the apple tree
-
-In my research, I study species history by coupling genetic and demographic models that react to spatial and temporal
-variations in the landscape the species inhabit.  
-
-The coalescence of two gene copies into a parent copy is simply the replication of
-the ADN viewed backward in time. The genealogy of the sampled genes copies can
-be defined backward in time conditionally to the demographic process which itself
-can be defined before tackling genetical aspects. This is an important theoretical link
-between a genetic sample and the historical processes that shaped it, and it can be
-used for constructing statistical models allowing to estimate properties of these past
-processes on the basis of the present sample.
+## The children coalescing in the apple tree
 
 <p class="poetry-line"> <br>
 What we call the beginning is often the end <br>
@@ -155,33 +163,40 @@ And to make an end is to make a beginning. <br>
 The end is where we start from. <br>
 </p>
 
-# Mathematical models
+This *drop of time* can actually be vaguely remembered, *estimated*, through
+the use of statistical methods.
 
-Will we ever know with certitude, *infer with precision*,
-what lay beneath the source of our planet's *longest river* : **Life**?
+When a word, a gene, is copied and passed to the next generation, it adds more embranchments
+to the long genealogy that links us all. This *longest river*, like any river, can be sailed two ways.
 
-<p class="poetry-line"> <br>
-What might have been is an abstraction <br>
-Remaining a perpetual possibility <br>
-Only in a world of speculation. <br>
-What might have been and what has been <br>
-Point to one end, which is always present. <br>
-</p>
+In its natural way, from the past to the present: we then look at organisms being born,
+growing old, having children to whom they passed a copy of their gene, maybe with some
+alterations, then die, and so on for thousands, millions of years. Because not everything that
+lived yesterday still has a descent today, this way shows numerous dead branches:
+all the organisms that thrived, but whose descendants, somehow, maybe sadly, did not make it.
 
-Will we ever be able to reach with certitude a final answer, a definitive narrative
-of Earth's boundless biological diversity? If our science allows us to rediscover
-what has been lost, to remember what has been forgotten, to remember the long lost places we have
-visited and left in our common distant past, will we
-find peace and meaning in this *end of all our exploring*?
-Or will we feel trapped
-and damned by time and causality?
-<p class="poetry-line"> <br>
-Time present and time past <br>
-Are both perhaps present in time future, <br>
-And time future contained in time past. <br>
-If all time is eternally present <br>
-All time is unredeemable. <br>
-</p>
+But we can also look at the flow of life from downstream to upstream:
+from the still living, isolated bits of DNA that we observe today to their amalgamation into
+their probable ancestors, their probable habitats, their probable journeys through
+geological times and geographical spaces, their probable history. This is what geneticists have called *coalescence* - a poetic name for
+a statistical way to describe what may have been, starting with the livings.
+
+And T.S. Eliot, I could swear, looked upon me through the tree of time when he chose to begin
+*Four Quartets* with an epigraph
+of Heraclitus: **The way upward and the way downward is one and the same**.
+
+And now I wonder: what did Heraclitus think when he wrote this. Could he
+imagine that these words would transcend millennia to finally rest in my eyes and
+find both an echo and a new meaning in my own work, giving to my research on coalescence a more tender, sensitive touch?
+
+> The coalescence of two gene copies into a parent copy is simply the replication of
+the ADN viewed backward in time. The genealogy of the sampled genes copies can
+be defined backward in time conditionally to a hypothetical demographic process.
+> Coalescence is an important theoretical link
+between a genetic sample and the historical processes that shaped it, and it can be
+used for constructing statistical models allowing to estimate properties of these past
+processes on the basis of the present sample.
+
 
 ## The value of patience
 
@@ -198,28 +213,46 @@ To build a **strong sense of the past**, I need to design a very *delicate, frag
 Sometimes, the apparatus breaks: I look at my mistake, try to understand its nature,
 gather the broken pieces of my work, mend them
 back into a new abstract construction, with new shapes, that fit together better this time. Maybe. And I do it again. And again. And again. Often I wonder if I'm doing things right, if I'm somehow *good enough* to
-deserve to play with these questions. The poem somehow foresees the ruminations
+deserve to play with these questions as big as time. The poem somehow foresees the ruminations
 of my impostor syndrome and gently soothes my doubts away with six simple words:
 <p class="poetry-line">
 Only through time time is conquered.
 </p>
 
-Welcoming the words into my mind, I breathe and look by the windows, appeased.
-I *am* enough. *You* are enough. We all are, always were, and always will be *enough*.
+Welcoming the words into my mind, I breathe and look by the windows, appeased:
+of course I *am* enough. *You* are enough. We all are, always were, and always will be *enough*.
+
+Things just take time, and time conquers all.
 
 ## Foreword
 
+Did T.S. Eliot think about all of this when he wrote *Four Quartets*?
+
+*Probably not*
+
+But I don't think there is a point in knowing exactly what he thought when he was laying
+these words on paper for posterity. Would he have wanted us to now, he would have
+told us in a clear form, closed to interpretation. And it would not have been a poem,
+and its words would not have reached posterity: who cares for the exact details of the inner
+life of a long dead man?
+
 Poetry, to me, is the art to tell and teach different things to different readers,
-or to the same reader at a different time of their life. Poems are not static
+or to the same reader at a different time of their life.
+Poems are not static
 statements of eternal and objective knowledge: they are fluid, ever-changing,
 always conjuring another word, another memory, with a slightly altered meaning,
 never walking twice the same path in the maze of our feelings and emotions.
 
-The metaphoric, associative nature of their words allows them to mirror different questions,
-offering different answers to who knows how to ask. In a way, and maybe like a good
-friend or a good therapist, they just echo the truth we already know within.
+That's what makes them so powerful.
+
+Maybe a bit like abstract theorems can be used on surprising new and unforeseen grounds,
+the metaphoric, volatile, associative nature of words allows poems to mirror different questions
+at different times in History, offering different answers to everyone of us. In a way, and maybe like a good
+friend or a good therapist, they just echo a truth we already know.
+
 But among the divergent, infinite interpretations of their same text, the poet knows how to
 have us look for a unifying truth: the secret meaning of the poem they want us to discover.
+And I have the feeling I barely touched it.
 
-![Hydrothermal remembrance]({{site.baseurl}}/assets/img/doodles/relatedness5.png)
+![Hydrothermal remembrance]({{site.baseurl}}/assets/img/doodles/relatedness.png)
 <p align = "center"> Relatedness </p>

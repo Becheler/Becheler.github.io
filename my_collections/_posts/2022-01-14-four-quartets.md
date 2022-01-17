@@ -131,6 +131,12 @@ And, decaying with imprecision, their genetic code begins to slowly diverge, and
 made them similar then begins to fade. Tick by tick. Instant mutation by instant mutation.
 *Timeless moment* by *timeless moment*.
 
+<p class="poetry-line"> <br>
+A people without history <br>
+Is not redeemed from time, for history is a pattern <br>
+Of timeless moments.
+</p>
+
 In a way, subtle diverging tones in **my** genome and **your** genome whisper knowledge of
 how long ago we parted our ways, and of how much time was spent since your ancestors
 ceased to be my ancestors too.
@@ -145,12 +151,6 @@ that pushed us to warmer but faraway, isolated refugees?
 
 In what drop of time should the moment be remembered when
 your ancestor decided to turn West when my ancestor chose East?
-
-<p class="poetry-line"> <br>
-A people without history <br>
-Is not redeemed from time, for history is a pattern <br>
-Of timeless moments.
-</p>
 
 ![Harmonic variation]({{site.baseurl}}/assets/img/doodles/harmonic_variation.png)
 <p align = "center"> Harmonic variations </p>

@@ -179,7 +179,7 @@ But we can also look at the flow of life from downstream to upstream:
 from the still living, isolated bits of DNA that we observe today to their amalgamation into
 their probable ancestors, their probable habitats, their probable journeys through
 geological times and geographical spaces, their probable history. This is what geneticists have called *coalescence* - a poetic name for
-a statistical way to describe what may have been, starting with the livings.
+a statistical way to describe what may have been, starting with the livings. *The end is where we start from.*
 
 And T.S. Eliot, I could swear, looked upon me through the tree of time when he chose to begin
 *Four Quartets* with an epigraph

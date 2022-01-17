@@ -214,7 +214,7 @@ Sometimes, the apparatus breaks: I look at my mistake, try to understand its nat
 gather the broken pieces of my work, mend them
 back into a new abstract construction, with new shapes, that fit together better this time. Maybe. And I do it again. And again. And again. Often I wonder if I'm doing things right, if I'm somehow *good enough* to
 deserve to play with these questions as big as time. The poem somehow foresees the ruminations
-of my impostor syndrome and gently soothes my doubts away with six simple words:
+of my impostor shadow and gently soothes my fears away with six simple words:
 <p class="poetry-line">
 Only through time time is conquered.
 </p>

@@ -14,7 +14,7 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Arnaud Becheler # add your name
 author-img: arnaud-becheler.png # add your photo
 about-author: A French postdoctoral Researcher, always happy to learn about phylogeography and programming! # add description
-#social-twitter: # add your Twitter handle
+social-twitter: a_becheler # add your Twitter handle
 #social-facebook: # add your Facebook handle
 social-instagram: arnaud.becheler
 social-github: Becheler  # add your Github handle

@@ -4,7 +4,7 @@ title: What this old poem wants you to know about me, evolution, the nature of t
 date: 2021-01-14 21:28
 description: A poetic introduction to my research
 #img: doodles/between_two_waves_of_the_sea.jpg # Add image post (optional)
-img: doodles/relatedness.png # Add image post (optional)
+img: doodles/hydrothermal_remembrance.png # Add image post (optional)
 fig-caption: Relatedness  # Add figcaption (optional)
 tags: [poetry, ecology, evolution, biogeography, coalescence]
 sticky: true

@@ -61,10 +61,10 @@ My brain responds to this stanza with a multitude of colorful visions: the forev
 of *Vaalbara*, the Archean supercontinent at the beginning of time, the future and limits of science,
 the use and abuse of satellite images, the importance of mystery, its *sacredness*.
 
-In our modern world where social medias
-show us places we will never visit, have us listen to people we will never meet,
-when satellites show us every day every last bit of Earth,
-and when our most powerful telescopes let us see so far away, so long ago, **the poem
+In our modern world where social media
+shows us places we will never visit and has us listen to people we will never meet,
+where satellites show us every day every last bit of Earth,
+and where our most powerful telescopes let us see so far away, so long ago, **the poem
 wonders with me:** is there still out-there at least one secret place left undiscovered?
 
 > A truly remarkable fact is
@@ -123,7 +123,7 @@ The primal tale of the *hidden waterfall*, deep beneath the sea.
 history of Earth's biodiversity, allowing researchers to predict more accurately
 how species respond to environmental changes. But not every question has to go back to LUCA.
 
-## A people without history still has a tale to tell
+## A people without history still have a tale to tell
 
 Even among members of a same species, the same clock ticks. The more geographically
 distant two individuals are, the more distant in time their common ancestor was.
@@ -231,7 +231,7 @@ Did T.S. Eliot think about all of this when he wrote *Four Quartets*?
 *Probably not*
 
 But I don't think there is a point in knowing exactly what he thought when he was laying
-these words on paper for posterity. Would he have wanted us to now, he would have
+these words on paper for posterity. Would he have wanted us to know, he would have
 told us in a clear form, closed to interpretation. And it would not have been a poem,
 and its words would not have reached posterity: who cares for the exact details of the inner
 life of a long dead man?
@@ -255,4 +255,4 @@ have us look for a unifying truth: the secret meaning of the poem they want us t
 And I have the feeling I barely touched it.
 
 ![Hydrothermal remembrance]({{site.baseurl}}/assets/img/doodles/relatedness.png)
-<p align = "center"> Relatedness </p>
+<p align = "center"> Relatedness, between two waves of the sea </p>

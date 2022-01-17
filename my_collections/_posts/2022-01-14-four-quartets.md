@@ -38,7 +38,7 @@ when, where, how did *they* start? What places, what landscapes did they visit a
 And beyond our ever-present distinctiveness, do we each remember at least a bit of
 what we used to be when we were all one and the same *"between two waves of the sea"*?
 
-> Our last universal common ancestor, LUCA, from which all living being descend, is estimated to have lived not so long after our moon was born,
+> Our last universal common ancestor, LUCA, from which all living beings descend, is estimated to have lived not so long after our moon was born,
 3 to 4.5 billions years ago, in the deep, dark sea near hydrothermal fissures. These hot waters in contact with magma
 were rich enough in dissolved minerals to sustain organisms able to use chemical
 compounds rather than light as a main source of energy.

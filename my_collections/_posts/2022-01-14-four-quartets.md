@@ -81,7 +81,7 @@ that still remembers a bit of what it was to be **at the source of the longest r
 It is still amazing to me how we can use present information to get a glimpse of
 a distant past. Because all the livings are related to LUCA, we do share some similarities.
 
-Some can obvious: most plants are green, while most animals breathe.
+Some can be obvious: most plants are green, while most animals breathe.
 Some are tricky: a whale has fins, like a salmon, but are warm blooded and produce milk, like us.
 
 Other similitudes, the most spellbinding to me, are invisible to the naked eye: some resemblance in the

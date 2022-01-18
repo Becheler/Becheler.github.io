@@ -1,6 +1,6 @@
 ---
 layout: tutorial_post
-img: doodles/under_construction_cropped.png
+img: doodles/under_construction_crop.png
 title: Linking environments to species ecology
 tagline: the C++ Coalescence Template Library
 description: Defining niche functions

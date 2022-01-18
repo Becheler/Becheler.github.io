@@ -4,7 +4,7 @@ title: Many lazy walkers at the beach
 tagline: the C++ Coalescence Template Library
 description: Forward-in-time demographic simulations tutorial
 use_math: true
-img: doodles/under_construction_cropped.png
+img: doodles/under_construction_crop.png
 ---
 
 You can think at least of two ways to simulate the expansion of populations of individuals

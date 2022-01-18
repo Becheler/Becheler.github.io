@@ -3,7 +3,7 @@ layout: tutorial_post
 title: Working with heterogeneous landscape
 tagline: the C++ Coalescence Template Library
 description: Integrating landscape heterogeneity
-img: doodles/under_construction_cropped.png
+img: doodles/under_construction_crop.png
 use_math: true
 ---
 

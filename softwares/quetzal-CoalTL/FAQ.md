@@ -4,6 +4,7 @@ title: FAQ
 tagline: the C++ Coalescence Template Library FAQ
 description: Frequently Asked Questions
 img: logos/quetzal-coaltl-fa.svg
+toc: true
 ---
 
 -------------------

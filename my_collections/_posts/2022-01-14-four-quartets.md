@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What this old poem wants you to know about me, evolution, the nature of time and of coalescence - and you
-date: 2021-01-14 21:28
+date: 2022-01-14 21:28
 description: A poetic introduction to my research
 #img: doodles/between_two_waves_of_the_sea.jpg # Add image post (optional)
 img: doodles/hydrothermal_remembrance.png # Add image post (optional)

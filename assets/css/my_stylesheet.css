@@ -34,6 +34,18 @@
 div.my_figure {
   float: right;
   display: block;
+  max-width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+div.my_big_figure {
+  float: right;
+  display: block;
   max-width: 40%;
   border: thin silver solid;
   margin: 0.5em;

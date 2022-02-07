@@ -32,7 +32,7 @@
 }
 
 div.my_figure {
-  float: none;
+  display: block;
   width: 30%;
   border: thin silver solid;
   margin: 0.5em;

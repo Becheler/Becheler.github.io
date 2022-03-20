@@ -37,6 +37,11 @@ collections:
       - many-lazy-walkers.md
       - geography.md
       - niche.md
+  quetzal-eggs-tutorials:
+    output: true
+    permalink: /software/quetzal-EGGS/tutorials/:name
+    order:
+      - user-manual.md
 
 # Build Settings
 markdown: kramdown

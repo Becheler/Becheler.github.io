@@ -1,8 +1,9 @@
 ---
-layout: main
-title: Quetzal-Eggs
+layout: software
+title: Quetzal-EGGS
 tagline: Simulation programs for spatial coalescence
 description: list of programs
+img: logos/quetzal-eggs-fa.svg
 use_math: false
 ---
 

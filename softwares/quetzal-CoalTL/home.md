@@ -1,6 +1,6 @@
 ---
 layout: software
-title: Quetzal-CoalTL
+title: Quetzal-CoaTL
 tagline: the C++ Coalescence Template Library
 description: Quetzal-CoalTL home
 img: logos/quetzal-coaltl-fa.svg

@@ -29,13 +29,13 @@ with a permission error, try `sudo docker pull arnaudbecheler/quetzal-nest`
 At this point, the EGGS should be locally built (meaning the binaries are present in the `build/src` folder)
 and the tests should be running and passing (meaning the binaries are running as expected).
 
-### Testing that EGGS are present system-wide
+### Testing that EGGS are present system-wide in the container
 
 In the previous section I made you build locally the EGGs binaries for testing purpose.
 But outside of testing, you don't want to do that. In the `quetzal-nest` docker image, all EGGs binaries come pre-installed in `usr/local/`.
 You should be able to call the eggs binaries from anywhere with for example `/usr/local/quetzal-EGGS/EGG1 --help`
 
-### Testing the EGGS on a local machine with custom files
+### Testing the CRUMBS and EGGS on a local machine with custom files
 
 iDDC is a computational intensive workflow, and most of the time you will need a
 cluster for the final analysis (for example, the Open Science Grid).
@@ -51,5 +51,45 @@ docker run --user $(id -u):$(id -g) --rm=true -it \
   arnaudbecheler/quetzal-nest:latest /bin/bash
 ```
 
-Then you can invoke the simulators with their respective configuration files and visualize
+This will *synchronize* (for lack of a better word) your project folder with the docker
+image: every modification from the container will be propagated to your local folder.
+
+Then you can invoke the crumbs or the simulators with their respective configuration files and visualize
 the output with the crumbs functionalities.
+
+#### Getting observational data from GBIF
+
+Assuming you have a spatial sample `sampling-points/sampling-points.shp` in your folder,
+you can run the following commands to retrieve 30 occurrences in a spatial box around your
+sampling points (plus a 2° margin). They generate shapefiles that are moved to a occurrences
+folder:
+
+```
+python3 -m crumbs.get_gbif \
+      --species "Heteronotia binoei" \
+      --points sampling-points/sampling-points.shp \
+      --limit 30 \
+      --year "1950,2022" \
+      --margin 2.0 \
+      --output occurrences.shp
+
+mkdir -p occurrences
+mv occurrences.* occurrences/
+```
+You can plot these points against modern elevational data with:
+
+```
+python3 -m crumbs.get_chelsa \
+      --points ../input-files/sampling-points/sampling-points.shp \
+      --variables "dem" \
+      --timesID "20" \
+      --margin 2.0
+
+python3 -m crumbs.animate chelsa_stack_dem.tif \
+      --gbif occurrences/occurrences.shp \
+      --no-DDD \
+      --output occurrences.gif
+```
+
+> :boom: 3D visualizations (option `--DDD`) work on local but not yet of Docker containers
+or Open Science Grid - working of a fix!

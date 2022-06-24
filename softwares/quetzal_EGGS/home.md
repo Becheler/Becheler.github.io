@@ -7,7 +7,7 @@ img: logos/quetzal-eggs-fa.svg
 use_math: false
 ---
 
-![Quetzal-EGGS](/draw/logos/quetzal_eggs.png)
+![Quetzal-EGGS](/draw/logos/quetzal-eggs.png)
 
 If the [Quetzal Coalescence Template Library](/pages/quetzal/home) is a mother toolbox,
 Quetzal-EGGS are her little programmatic children. Quetzal-EGGS is simply a **suit of small simulation programs**

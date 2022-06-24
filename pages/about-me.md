@@ -3,6 +3,18 @@ layout: post
 title: Presentations and seminars
 ---
 
+## December 1st, 2021 - Tskit-dev meeting
+
+*Simulating genetic diversity in heterogeneous landscapes: motivations, methods, tools.*
+
+[![Arnaud Becheler Brazwebinar]({{site.baseurl}}/assets/img/tskit-dev-thumbnail.png)](https://youtu.be/26-u1UaN5vA?t=635)
+
+I was happy to present my work during on of the weekly meeting of TSKIT-dev, the
+developers of the Tree Sequence Toolkit.
+
+It was precious to have the attention of an entire developpers community, and
+their feedback was very valuable! Long live tskit!
+
 ## October 15th, 2021 - BrazWebinar
 
 *Simulating genetic diversity in heterogeneous landscapes: why, how, limits and perspectives.*

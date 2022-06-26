@@ -1,27 +1,52 @@
 ---
 layout: post
-title: A modern C++ Newick formatter
+title: A modern C++ Newick tree formatter
 date: 2022-06-23 13:30
 description: Approaching population genetics with a modern C++ design
-img: doodles/i-aint-much.png # Add image post (optional)
+img: doodles/revolution_des_pointeurs.png # Add image post (optional)
 fig-caption: Back to the trees!  # Add figcaption (optional)
 tags: [ecology, evolution, biogeography, coalescence, quetzal, phylogeny, newick, C++]
 sticky: false
 use_math: true
 ---
 
-> :hourglass_flowing_sand: I know your time is precious!
->
-> If you are looking for the code, you can find it [here](https://godbolt.org/z/vnqc3hhTW).
->
-> I will surely update the code in the future, check for updates in my [Quetzal library](https://github.com/Becheler/quetzal-CoaTL).
->
-> If you find a bug :bug: or would like a new feature :rocket:, ask in the comment section :point_down:
+Recently, I began to work on a new project that requires to manipulate species trees,
+using Newick representation as input/output :seedling:
+
+In my [Quetzal library](https://becheler.github.io/softwares/quetzal-CoalTL/home/)
+where I try to gather reusable components for population genetics,
+I had to tackle similar problems to save genealogies simulated under different
+scenarios- and I was not too happy with the solution I had written at the time:
+it required to duplicate the code for every new use case! :disappointed:
+
+So for this new project, rather than quadruplicating the code, I decided it was
+time to do things well and come up with a unique, truly generic, reusable Newick formatter,
+and share it with the community :muscle:
+
+And also, because it's a learning process that deserves to be shared, I thought it
+could be a cool opportunity to show what software design rules guided my coding decisions :books:
+
+In this post, you will learn about:
+
+- the Newick format and its variants
+- the cost of not having a standard modern C++ library solution for population genetics
+- basic design concepts I found useful to achieve my goals
+- how test-driven development helped me enforcing modular design
+- how to use our new Newick tree formatter! :hugs:
+
+------------------------------------
+> I know your time is precious! :hourglass_flowing_sand:
+  * If you are just looking for the code, you can find it [here](https://godbolt.org/z/vnqc3hhTW).
+  * I will surely update the code in the future, check for updates in my
+ [Quetzal library](https://github.com/Becheler/quetzal-CoaTL).
+   * If you find a bug :bug:, have a suggestion, or would like a new feature :rocket:, ask in the comment section :point_down:
+
+------------------------------------------------------
 
 * TOC
 {:toc}
 
-## The existing situation
+## The current situation
 
 If you have been coding for population genetics, I guess you are familiar with the
 [Newick format](https://evolution.genetics.washington.edu/phylip/newicktree.html)
@@ -44,7 +69,13 @@ Here is the catch: there is **no** modern C++, generic, reusable, tested impleme
 
 ## The costs and risks of recoding
 
-Not having a standard tool to perform a standard task comes with a number of costs and risks.
+Not having a standard tool to perform a standard task comes with a number of costs and risks,
+that tend to be associated to *rather strong feelings* towards **ourself** ... and our compilers friends.
+
+![Unworthy!]({{site.baseurl}}/assets/img/doodles/unworthy.jpg#center)
+<p align="center" style="color:grey"> <i> Through your arrogance and stupidity, you've opened these peaceful realms<br> and innocent lives to the horror and desolation of war! You are unworthy of these realms,<br> you're unworthy of your title, you're unworthy... of the loved ones you have betrayed! </i></p>
+
+
 
 ### Time is money, researchers have none.
 
@@ -96,17 +127,20 @@ I just made a joke about climate change :no_mouth:
 
 ## It is actually a design problem
 
+![Buggy bloody battlefield!]({{site.baseurl}}/assets/img/doodles/solved_issues.png)
+
 #### The ebb and flaws of untestable research softwares
 
-:children_crossing: **Trigger warning:** to be fair it's okay if you get bugs because of a messy design:
+:children_crossing: To be fair it's okay if you get bugs because of a messy design:
 everybody knows our programs often look like a bloody battlefield where programmatic catapults, antique trebuchets
-and futuristic ovnis join the battle against the Cloud of Unknowing. Science is amazing :rocket:
+and futuristic ovnis join the battle against the Cloud of Unknowing.
+
+Science is amazing :rocket:
 
 > What is not ok is that you had to recode this feature by lack of a community standard.
 
 Modular design - that is, the art of programming truly independent and testable entities -
 is a complex matter, and its cost should be shared across academic communities.
-
 Here I show a way out.
 
 #### Why you should get familiar with software design culture
@@ -124,9 +158,9 @@ or you may underestimate the importance of a strong
 [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) in a software.
 They are **essential** to moving to the next stage of computational biology!
 
-So take your time, read about the [5 S.O.L.I.D. principles]({%post_url 2018-10-20-how-to-write-solid-code %}),
-read the 2000 papers of [Robert C. Martin, or “Uncle Bob”](http://principles-wiki.net/collections:robert_c._martin_s_principle_collection), know how to recognize bad
-smells in your code like [rigidity, fragility, viscosity, and immobility](https://medium.com/@trionamoynihan/solid-design-principles-eec367b2b8).
+So take your time, read about the [Five SOLID principles]({%post_url 2018-10-20-how-to-write-solid-code %}),
+read the papers of [Robert C. Martin, or “Uncle Bob”](http://principles-wiki.net/collections:robert_c._martin_s_principle_collection), and know how to recognize, name, and fix bad
+smells in your code: [rigidity, fragility, viscosity, and immobility](https://medium.com/@trionamoynihan/solid-design-principles-eec367b2b8).
 
 #### Acknowledge that there is a cultural problem too
 
@@ -188,7 +222,10 @@ The solution is going the other way around:
   members of the C++ standardization committee, famous authors, or developers of some of the most
   important tools we have out-there. Trust their feedback!
 
-## Let's code!
+## Diving into coding
+
+![Diving into coding]({{site.baseurl}}/assets/img/doodles/diving_into_coding.jpg)
+
 
 ### What we are aiming at :dart:
 
@@ -210,16 +247,18 @@ a `std::map` to store my objects or a STL algorithm like `std::accumulate` to su
 of an iterable, I never, *never*, **never** had to modify the STL source code.
 Absolutely reusable containers, algorithms, iterators and functors: this is
 absolute genius! :nerd_face:
+>
+> That's why the STL is now kinda synonym with modern C++: why would you code
+without this incredible resource?
+>
+> It's **light**, **efficient**, **flexible**, **extensible**, **reusable**, **testable**...
 
-That's why the STL is now kinda synonym with modern C++
-(that is *post-C++11*): why would you code without this incredible resource?
-It's **light**, **efficient**, **flexible**, **extensible**, **reusable**, **testable**...
+:dart: I'm looking for **this** kind of standard population genetics algorithms!
+**The gold standard of research software engineering.**
 
-I'm looking for **this** kind of standard population genetics algorithms!
+Let's try to go there together! :rocket:
 
-:dart: **The gold standard of research software engineering.** Let's try to go there! :rocket:
-
-### Diving into the code!
+### Let's code!
 
 As I was saying, I want the test to be minimal:
 
@@ -308,14 +347,14 @@ int main(){
   *        b    d   e
    */
 
-   Node a; a.data = 'a';
+   Node root; root.data = 'a';
    Node b; b.data = 'b';
    Node c; c.data = 'c';
    Node d; d.data = 'd';
    Node e; e.data = 'e';
 
-   a.left = &b ; b.parent = &a;
-   a.right = &c; c.parent = &a;
+   root.left = &b ; b.parent = &root;
+   root.right = &c; c.parent = &root;
    c.left = &d ; d.parent = &c;
    c.right = &e; e.parent = &c;
 
@@ -337,7 +376,7 @@ Our formatter's logic just needs 4 informations:
 > This feature allows to test at compile-time if a type fulfills the requirements we expect them to fulfill.
 > For example:
 > - To enforce the signature of a function evaluating a `Node` and returning a boolean, we can use a `std::predicate<Node>`.
-> - To enforce the signature of a function evaluating a `Node` and returning a type convertible to std::string, we
+> - To enforce the signature of a function evaluating a `Node` and returning a type convertible to `std::string`, we
 >   defined the `Formattable<Node>` concept.
 
 At this point, all non-formatting operations are defined out of the formatter class,
@@ -355,13 +394,12 @@ what makes it truly reusable:
   newick::Formattable<Node> auto no_branch_length = [](const Node& n){return "";};
 
   // Configure the formatter
-  auto formatter_1 = newick::make_formatter(has_parent, has_children, no_label, no_branch_length);
+  auto fmt = make_formatter(has_parent, has_children, no_label, no_branch_length);
   // Expose its interface to the arbitrary class-specific DFS algorithm
-  a.depth_first_search(formatter_1.pre_order(), formatter_1.in_order(), formatter_1.post_order());
+  root.depth_first_search(fmt.pre_order(), fmt.in_order(), fmt.post_order());
 
   // Retrieving the resulting string
-  std::string s = formatter_1.get();
-  assert(s  == "(,(,));");
+  assert(fmt.get()  == "(,(,));");
 ```
 
 #### Non-trivial data acquisition and formatting
@@ -378,7 +416,6 @@ and now you want to visualize it.
 Well, you can do that too with our new Formatter:
 
 ```cpp
-// Non-trivial data acquisition and formatting
 
 // Get a seed for the random number engine
 std::random_device rd;
@@ -393,11 +430,11 @@ auto branch_length = [&gen,&dis](const Node& n){return std::to_string(dis(gen));
 newick::Formattable<Node>
 auto label = [](const Node& n ){return std::string(1, n.data) + "[my[comment]]";};
 // Configure the formatter
-auto formatter_2 = newick::make_formatter(has_parent, has_children, label, branch_length);
+auto fmt = make_formatter(has_parent, has_children, label, branch_length);
 // Expose it to the DFS
-a.depth_first_search(formatter_2.pre_order(), formatter_2.in_order(), formatter_2.post_order());
+root.depth_first_search(fmt.pre_order(), fmt.in_order(), fmt.post_order());
 // Retrieve the Newick formula
-std::cout << formatter_2.get() << std::endl;
+std::cout << fmt.get() << std::endl;
 ```
 And as an output you obtain:
 
@@ -407,3 +444,89 @@ And as an output you obtain:
 Isn't life beautiful? :hugs:
 
 #### Even further customizations: policy classes!
+
+As we saw in the introduction, Newick format has a number of variants, as every
+program using it comes with its own assumptions on the format validity. For example,
+the `TreeAlign` program does not allow nested comments, and requires that the root
+branch is set to 0.0.
+
+How to allow users of our class to:
+1. specify what specific format to use
+2. while allowing the community to extend the Formatter behavior towards new variants
+3. without having them to recode the entire formatter?
+
+:tada: It's exactly what [policy-based design](https://en.wikipedia.org/wiki/Modern_C%2B%2B_Design)
+is for!
+
+> A **policy class** is a class that specify/isolates a set of behaviors that are orthogonal to the rest
+of the program.
+
+:seedling: Is it a bit abstract? Let's get a more concrete example: a `TreeAlign`
+policy does not require to redefine the entire behavior of the Formatter:
+rather, you just need to *somehow* tell the basic formatter that it may have to treat
+comments a bit differently, and that it may have to use a different way to treat a branch length when
+it finds a root node.
+
+The way to do that in the C++ implementation would be to write
+a dedicated `TreeAlign` structure which only responsibility is to encapsulate these behaviors (SRP):
+
+```cpp
+///
+/// @brief Set a root node branch length to zero. Remove all nested comments.
+///
+struct TreeAlign
+{
+  // Set explicit null branch length for root node
+  static inline std::string root_branch_length() { return ":0.0";}
+
+  // Remove comments that are nested, keep comments of depth 1
+  static inline std::string treat_comments(const std::string &s)
+  {
+    return remove_comments_of_depth<2>::edit(s);
+  }
+};
+```
+
+The Formatter, when it's called with the `TreeAlign` policy, will ask the structue
+to give it access to the right function
+at the right moment. For example, inside the Formatter class in the post-order
+operation code, you will find something along these lines:
+
+```cpp
+if( !node.has_parent())
+{
+  formula += get_label(node);
+  // returns "0.0" if policy_type = TreeAlign, or "" if a different type is used!
+  formula += policy_type::root_branch_length();
+}
+```
+
+The magic of policy-based design is that these decisions are actually formed
+**at compile-time!!!** So you're not trading flexibiity for efficiency: you are
+actually getting **both**! :moneybag:
+
+Even better, as a user of our Formatter class, you don't need to care about any of the above,
+you just need to pass the right policy to the formatter builder :moneybag::moneybag:
+
+```cpp
+// Writes a root node branch length with a value of 0.0 and disable nested comments
+using flavor = quetzal::format::newick::TreeAlign;
+using newick::make_formatter;
+
+auto fmt = make_formatter(has_parent, has_children, label, branch_length, flavor());
+
+a.depth_first_search(fmt.pre_order(), fmt.in_order(), fmt.post_order());
+
+std::cout << fmt.get() << std::endl;
+```
+
+> **Output:**
+>
+>`(b[my]:0.142450,(d[my]:0.224856,e[my]:1.019509)c[my]:1.720561)a[my]:0.0;`
+
+Isn't it absolutely delightful? :hugs:
+
+I *looove* modern C++: it allows us to encapsulate the details of our real-case troubles into shiny bubbles of
+beauty, simplicity and efficiency! Isn't it what code should be after all? :revolving_hearts:
+
+![Bubble double trouble]({{site.baseurl}}/assets/img/doodles/bubble_double_trouble.jpg#center)

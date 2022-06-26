@@ -58,3 +58,8 @@ div.my_big_figure {
 img.scaled {
   width: 100%;
 }
+
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}

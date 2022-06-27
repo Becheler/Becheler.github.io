@@ -539,6 +539,6 @@ std::cout << fmt.get() << std::endl;
 Isn't it absolutely delightful? :hugs:
 
 I *looove* modern C++: it allows us to encapsulate the details of our real-case troubles into shiny bubbles of
-beauty, simplicity and efficiency! Isn't it what code should be after all? :revolving_hearts:
+beauty, simplicity and efficiency! Isn't it what code should be after all? :blush:
 
 ![Bubble double trouble]({{site.baseurl}}/assets/img/doodles/bubble_double_trouble.jpg#center)

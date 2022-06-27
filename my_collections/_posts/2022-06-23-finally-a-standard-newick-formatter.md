@@ -71,7 +71,7 @@ Here is the catch: there is **no** modern C++, generic, reusable, tested impleme
 ## The costs and risks of recoding
 
 Not having a standard tool to perform a standard task comes with a number of costs and risks,
-that tend to be associated to *rather strong feelings* towards **ourself** ... and our compilers friends.
+that tend to be associated to *rather strong feelings* towards **ourself** ... and our unfortunate compilers friends.
 
 ![Unworthy!]({{site.baseurl}}/assets/img/doodles/unworthy.jpg#center)
 <p align="center" style="color:grey"> <i> Through your arrogance and stupidity, you've opened these peaceful realms<br> and innocent lives to the horror and desolation of war! You are unworthy of these realms,<br> you're unworthy of your title, you're unworthy... of the loved ones you have betrayed! </i></p>

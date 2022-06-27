@@ -11,8 +11,11 @@ sticky: false
 use_math: true
 ---
 
-Recently, I began to work on a new project that requires to manipulate species trees,
-using Newick representation as input/output :seedling:
+:seedling: Recently, I began to work on a new project that requires to manipulate species trees,
+using Newick representation as input/output. I was tying to track down a series of
+bugs in the legacy code, but my task was made utterly complex by uncooperative
+pointers who had invaded all interfaces, conquered the core of the code, and corrupted
+pretty much all classes who were maybe [a bit too friendly](https://softwareengineering.stackexchange.com/questions/132403/should-i-use-friend-classes-in-c-to-allow-access-to-hidden-members) with the invaders :guardsman:
 
 In my [Quetzal library](https://becheler.github.io/softwares/quetzal-CoalTL/home/)
 where I try to gather reusable components for population genetics,

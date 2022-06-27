@@ -25,7 +25,7 @@ it required to duplicate the code for every new use case! :disappointed:
 
 So for this new project, rather than quadruplicating the code, I decided it was
 time to do things well and come up with a unique, truly generic, reusable Newick formatter,
-and share it with the community :muscle:
+and share it with the community :muscle: Sharing is caring :kissing_heart:
 
 And also, because it's a learning process that deserves to be shared, I thought it
 could be a cool opportunity to show what software design rules guided my coding decisions :books:

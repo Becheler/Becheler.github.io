@@ -1,10 +1,11 @@
 ---
 layout: post
 title: A modern C++ Newick tree formatter
+subtitle: Ou la révolution des pointeurs
 date: 2022-06-23 13:30
 description: Approaching population genetics with a modern C++ design
 img: doodles/revolution_des_pointeurs.png # Add image post (optional)
-fig-caption: Back to the trees!  # Add figcaption (optional)
+fig-caption: (Fall) back to the trees!  # Add figcaption (optional)
 tags: [ecology, evolution, biogeography, coalescence, quetzal, phylogeny, newick, C++]
 sticky: false
 use_math: true
@@ -34,14 +35,14 @@ In this post, you will learn about:
 - how test-driven development helped me enforcing modular design
 - how to use our new Newick tree formatter! :hugs:
 
-------------------------------------
+---
 > I know your time is precious! :hourglass_flowing_sand:
   * If you are just looking for the code, you can find it [here](https://godbolt.org/z/vnqc3hhTW).
   * I will surely update the code in the future, check for updates in my
  [Quetzal library](https://github.com/Becheler/quetzal-CoaTL).
    * If you find a bug :bug:, have a suggestion, or would like a new feature :rocket:, ask in the comment section :point_down:
 
-------------------------------------------------------
+---
 
 * TOC
 {:toc}

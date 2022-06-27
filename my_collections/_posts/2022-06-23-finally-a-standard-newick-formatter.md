@@ -37,7 +37,7 @@ In this post, you will learn about:
 
 ---
 > I know your time is precious! :hourglass_flowing_sand:
-  * If you are just looking for the code, you can find it [here](https://godbolt.org/z/vnqc3hhTW).
+  * If you are just looking for the code, you can find it [on Compiler Explorer!](https://godbolt.org/z/6fbT93eTT).
   * I will surely update the code in the future, check for updates in my
  [Quetzal library](https://github.com/Becheler/quetzal-CoaTL).
    * If you find a bug :bug:, have a suggestion, or would like a new feature :rocket:, ask in the comment section :point_down:

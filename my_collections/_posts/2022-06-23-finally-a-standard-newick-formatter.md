@@ -276,15 +276,6 @@ As I was saying, I want the test to be minimal:
 Let's consider a very  basic node class, with a data field, a reference to the parent
 node (for backtracking) and two references on children nodes (implicit assumption of a binary tree).
 
-:no_entry: Please do NOT reuse this class in real-world projects! It's intentionally
-close to commonly found implementations, but it's **not** a good design! For example,
-you should avoid as much as possible raw pointers: they lack the syntax of [ownership](https://stackoverflow.com/questions/49024982/what-is-ownership-of-resources-or-pointers) (*that is, the responsibility for cleanup*).
-Instead, use [smart pointers](https://en.cppreference.com/w/cpp/memory/unique_ptr), they are so much safer!
-
-:biohazard: That being said, using raw pointers here serves the illustration by
-offering a syntax the readers are familiar with, and show that it is actually possible
-to contain the flood of pointers behind a strong-enough interface - and avoid them to contaminate the code further!
-
 ```cpp
 // Simplistic tree for testing
 struct Node
@@ -298,6 +289,16 @@ struct Node
 
 }; // end of class Node
 ```
+
+:no_entry: Please do NOT reuse this class in real-world projects! It's intentionally
+close to commonly found implementations, but it's **not** a good design! For example,
+you should avoid as much as possible raw pointers: they lack the syntax of [ownership](https://stackoverflow.com/questions/49024982/what-is-ownership-of-resources-or-pointers) (*that is, the responsibility for cleanup*).
+Instead, use [smart pointers](https://en.cppreference.com/w/cpp/memory/unique_ptr), they are so much safer!
+
+:biohazard: That being said, using raw pointers here serves the illustration by
+offering a syntax the readers are familiar with, and show that it is actually possible
+to contain the flood of pointers behind a strong-enough interface - and avoid them to contaminate the code further!
+
 
 #### The Depth-First Search Algorithm
 

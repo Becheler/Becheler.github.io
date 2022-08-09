@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Include header -->
+<head>
+	<meta charset="utf-8">
+	<title>Migration between two demes - Arnaud Becheler - Personal website</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Arnaud Becheler - Personal website" property="og:site_name">
+  
+    <meta content="Migration between two demes" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Forward-in-time demographic simulations tutorial" property="og:description">
+  
+  
+    <meta content="https://Becheler.github.io/software/quetzal-CoalTL/tutorials/3-migration-between-two-demes" property="og:url">
+  
+  
+    <meta content="2022-08-09T18:04:03+00:00" property="article:published_time">
+    <meta content="https://Becheler.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://Becheler.github.io/assets/img/doodles/tutorials/mosquitoland.png" property="og:image">
+  
+  
+    
+  
+  
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Migration between two demes">
+  
+  
+    <meta name="twitter:url" content="https://Becheler.github.io/software/quetzal-CoalTL/tutorials/3-migration-between-two-demes">
+  
+  
+    <meta name="twitter:description" content="Forward-in-time demographic simulations tutorial">
+  
+  
+    <meta name="twitter:image:src" content="https://Becheler.github.io/assets/img/doodles/tutorials/mosquitoland.png">
+  
+
+	<meta name="description" content="Forward-in-time demographic simulations tutorial">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/my-softwares.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/my_stylesheet.css">
+	<!-- Tangerine font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+</head>
+
+
+*<!-- Mathjax support -->
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+<!-- Default body -->
+<body>
+  
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/arnaud-becheler.png" alt="Arnaud Becheler"></a>
+      </div>
+      <div class="author-name">Arnaud Becheler</div>
+      <p>A French Software Engineer, always happy to learn about phylogeography and programming!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Softwares</h3>
+      <ul>
+        <li><a href="https://github.com/Becheler/quetzal-EGGS" target="_blank"><i class="icon icon-quetzal-eggs--fa" title="Quetzal-EGGS" aria-hidden="true"></i></a></li>
+        <li><a href="/softwares/quetzal-CoalTL/home" target="_blank"><i class="icon icon-quetzal-coaltl-fa" title="Quetzal-CoalTL" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/quetzal-CRUMBS" target="_blank"><i class="icon icon-quetzal-crumbs-fa" title="Quetzal-CRUMBS" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/decrypt" target="_blank"><i class="icon icon-decrypt_fa" title="Decrypt" aria-hidden="true"></i></a></li>
+      </ul>
+      <section class="contact">
+        <h3 class="contact-title"> About me </h3>
+        <ul>
+          <li><a href="/pages/about-me/index.html" target="_blank"><i class="fa fa-youtube-play" title="Presentations" aria-hidden="true"></i></a></li>
+          <li><a href="/assets/pdfs/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" title="CV" aria-hidden="true"></i></a></li>
+          <li><a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&amp;hl=en&amp;oi=ao" target="_blank"><i class="fa fa-graduation-cap" title="My Google Scholar" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </section> <!-- End Section Resume -->
+    <section class="contact">
+      <h3 class="contact-title">Find me on</h3>
+      <ul>
+        
+        
+        
+        
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2022 © Arnaud Becheler</p>
+    </div>
+  </section></footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="software-image" src="/assets/img/doodles/tutorials/mosquitoland.png" alt="Migration between two demes">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="PageNavigation">
+      
+        <a class="prev" href="/software/quetzal-CoalTL/tutorials/2-getting-started">« Getting started</a>
+      
+      
+        <a class="next" href="/software/quetzal-CoalTL/tutorials/many-lazy-walkers">Many lazy walkers at the beach »</a>
+      
+    </div>
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Migration between two demes</h1>
+        <section class="contact">
+        <ul>
+          <li><a href="/softwares/quetzal-CoalTL/home"><i class="fa fa-home" aria-hidden="true" title="Home"></i></a></li>
+          <li><a href="/softwares/quetzal-CoalTL/tutorials"><i class="fa fa-code" title="Tutorials" aria-hidden="true"></i></a></li>
+          <li><a href="/quetzal-CoalTL"><i class="fa fa-wrench" title="C++ API" aria-hidden="true"></i></a></li>
+          <li><a href="/softwares/quetzal-CoalTL/FAQ"><i class="fa fa-question-circle" title="FAQ" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/Becheler/quetzal-CoalTL"><i class="fa fa-github" title="Github Repo" aria-hidden="true"></i></a></li>
+        </ul>
+        </section>
+      <div style="text-align:left;">
+      <p>Imagine you’re a phD student lost in the Kalahari desert with your trainee and one mission: studying a population of mosquitoes that thrive in two oasis in the middle of nowhere <img class="emoji" title=":dromedary_camel:" alt=":dromedary_camel:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42a.png" height="20" width="20"> <img class="emoji" title=":dromedary_camel:" alt=":dromedary_camel:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42a.png" height="20" width="20"> <img class="emoji" title=":dromedary_camel:" alt=":dromedary_camel:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42a.png" height="20" width="20"></p>
+
+<p>You have no mathematical skills, no internet, no phone, no advisor: just a computer and the Quetzal documentation. How brave you are!</p>
+
+<p>In your infinite wisdom, you decide that a very first step in the right direction would be to <em>at least</em> come up with some simulation of the mosquitoes population. So you proceed to daub yourself with large amounts of insect repellent so you can give a closer look to these flying, biting buggers  <img class="emoji" title=":bee:" alt=":bee:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f41d.png" height="20" width="20"></p>
+
+<p>It seems that the two oasis are similar in size and resources, separated by some distance, but still close enough to enable mosquitoes to move from one to the other in what seems to be a quite random pattern. By using your trainee as a living bait, you succeeded to capture several fecundated females, that laid on average 100 eggs each before they died. When the larva hatch, the newborns automatically fly to one of the two oasis to look for mates. <img class="emoji" title=":palm_tree:" alt=":palm_tree:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png" height="20" width="20"></p>
+
+<h2 id="mathematical-formalization-of-the-biological-problem">Mathematical formalization of the biological problem</h2>
+
+<p>You have no idea what to do with this biological knowledge. You try to write some symbols on the sand, but they don’t make any more sense to you than to the vultures circling in the sky. You feel a cold sweat running down your back as you’re seized by the overwhelming sensation of a looming disaster: you hold your breath as if it could stop time and prevent your foreseeable academic failure
+<img class="emoji" title=":cold_sweat:" alt=":cold_sweat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f630.png" height="20" width="20"></p>
+
+<p>Suddenly, you hear a voice coming from behind your shoulder.</p>
+
+<blockquote>
+  <p>“Hey! Awww you’re doing math? That’s so cool! I majored in probability and statistics!”</p>
+</blockquote>
+
+<p>You turn so fast that you trip in the sand and fall on your knees: your trainee is smiling at you, proudly wearing on their skin the bumpy, inflamed marks of their dedication to the cause. Your savior. Your hero.</p>
+
+<h3 id="defining-the-landscape">Defining the landscape</h3>
+
+<p>After few hours of philosophical debate on the nature of space and time, you two decide to simplify the landscape to a set $X$ of 2 demes (the two oasis) connected by <em>some degree</em> of migration.</p>
+
+<p>You decide that:</p>
+
+<ul>
+  <li>
+<img class="emoji" title=":palm_tree:" alt=":palm_tree:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png" height="20" width="20"> the Eastern oasis will be encoded by $1$</li>
+  <li>
+<img class="emoji" title=":palm_tree:" alt=":palm_tree:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png" height="20" width="20"> the Western oasis will be encoded by $-1$.</li>
+</ul>
+
+<p>As it’s getting dark already, you go to bed feeling much more hopeful about a brighter future <img class="emoji" title=":crescent_moon:" alt=":crescent_moon:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f319.png" height="20" width="20"></p>
+
+<h3 id="reproduction">Reproduction</h3>
+
+<p>On the morning, you sip your coffee while exchanging about mating ceremonials in the insect realm.</p>
+
+<p>Focusing the discussion on your biological system, you assume that the mosquitoes reproduction events are synchronized (no generation overlap), and that $\tilde{N}(x,t)$, the population size after reproduction in oasis $x$ at time $t$ is simply equal to the population size <em>before</em> reproduction times the fecundity <em>r</em>:</p>
+
+<p>\[
+  \tilde{N}(x,t) = r.N(x,t)
+\]</p>
+
+<h3 id="migration">Migration</h3>
+
+<p>You also give some thoughts about migration patterns.</p>
+
+<p>From what you remember from your textbooks, you have no reason to believe that mosquitoes disperse in flocks, what simplifies things quite a bit if you can consider each individual movement independently.</p>
+
+<p>You begin to think of a demographic algorithm where the location of every individual after the dispersal event would be <em>somehow</em> sampled in a probability distribution.</p>
+
+<blockquote>
+  <p>“You see what I mean?” you ask your new maths guru <img class="emoji" title=":persevere:" alt=":persevere:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f623.png" height="20" width="20"></p>
+
+  <p>“Yeah, but considering you have only 2 locations, I think you simply want to sample a binomial, right?”</p>
+</blockquote>
+
+<p>You deflect the question by pretending you are in a dire need for coffee, conveniently hiding your ignorance by letting the mathematician do their mathematical things <img class="emoji" title=":coffee:" alt=":coffee:" src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png" height="20" width="20"></p>
+
+<p>But when you cautiously come back, the sand is covered with mysterious notations. Without leaving you any time to escape, the trainee proceeds to explain the modelisation <img class="emoji" title=":expressionless:" alt=":expressionless:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f611.png" height="20" width="20"></p>
+
+<p>After reproduction, the children dispersal is simulated by sampling their destination
+in a binomial law, that defines $ \Phi_{x,y}^t $, the number of individuals going from
+$x$ to $y$ at time $t$:</p>
+
+<p>\[
+( \Phi_{x,y}^{t} )_{y \in X} \sim B(~\tilde{N}(x,t),~p)
+\]</p>
+
+<p>The term $ p $ is the parameter of the binomial distribution, giving for a mosquitoe in oasis $1$ its probability to travel to the other oasis $-1$.</p>
+
+<p>After migration, the number of individuals in oasis $x$ is defined by  the total number of mosquitoes converging to $x$:</p>
+
+<p>\[
+N(x,t+1) = \displaystyle \sum_{i\in X} \Phi_{i,x}^{t}~.
+\]</p>
+
+<blockquote>
+  <p>“You spent the whole flight sleeping on this big manual, you should have at least some idea of how to simulate this demographic model using Quetzal, right?”</p>
+
+  <p>“Eeeeeh … Huho look at the time! Let’s go get some coffee…” <img class="emoji" title=":trollface:" alt=":trollface:" src="https://github.githubassets.com/images/icons/emoji/trollface.png" height="20" width="20"></p>
+</blockquote>
+
+<h2 id="simulation-using-quetzal-coaltl">Simulation using Quetzal-CoalTL</h2>
+
+<p>Now that we have the ideas a bit more clear about the demographic model and the underlying assumptions, we want to write some code to simulate the process. Don’t forget that we are not interested <em>only</em> by the demographic process: <em>in fine</em>, the whole goal of these tutorials is to use it to condition a coalescence process and simulate some genetic data!</p>
+
+<p>If you are a population geneticist, you are certainly thinking:</p>
+
+<blockquote>
+  <p>“wait a minute, we don’t need that, this is a standard model with well-known solu…”</p>
+
+  <p>“… ta ta ta taaa! I see you coming! Don’t take the fun out of this tutorial. We were doing sooo well without you, reinventing the wheel and stuff!</p>
+</blockquote>
+
+<p>I agree. It’s a dumb model <img class="emoji" title=":disappointed_relieved:" alt=":disappointed_relieved:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f625.png" height="20" width="20">
+But baby steps, baby steps… <img class="emoji" title=":baby:" alt=":baby:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f476.png" height="20" width="20"></p>
+
+<h3 id="the-quetzal-demography-module">The Quetzal demography module</h3>
+
+<p>You open the big bad book, and look at the <a href="https://becheler.github.io/quetzal-CoalTL/api/namespacequetzal_1_1demography.html"><em>demography</em> chapter</a>. This page refers to everything (classes, functions, even other namespaces) that lives in the <code class="language-plaintext highlighter-rouge">quetzal::demography</code> namespace.</p>
+
+<p>Since the documentation is mostly targeted at the developers, there are plenty of
+details, and most of them are not very useful to you: you just want to simulate a demographic
+history. But it’s still worth to have a look at the general content of the <code class="language-plaintext highlighter-rouge">demography</code> module. There are 3 principal sections:</p>
+
+<ul>
+  <li>
+    <p><strong>Namespaces</strong> lists a bunch of namespaces. It’s like opening a drawer
+with more drawers inside!</p>
+
+    <ul>
+      <li>
+        <p><img class="emoji" title=":small_airplane:" alt=":small_airplane:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e9.png" height="20" width="20"> In the <code class="language-plaintext highlighter-rouge">dispersal_kernel</code> drawer,
+you find a bunch of standard dispersal probability distributions</p>
+      </li>
+      <li>
+        <p><img class="emoji" title=":computer:" alt=":computer:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" height="20" width="20"> In the <code class="language-plaintext highlighter-rouge">demographic_policy</code> drawer, I placed the policy classes that control the dispersal details of the demographic algorithm (that is, what <em>moving stuff across demes</em> concretely means for the computer)</p>
+      </li>
+      <li>
+        <p><img class="emoji" title=":floppy_disk:" alt=":floppy_disk:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4be.png" height="20" width="20"> In the <code class="language-plaintext highlighter-rouge">memory_policy</code> drawer, I threw the policy classes that control what the computer is supposed to do with all these demographic data: keep them on RAM (hoping
+they are not too heavy) or save them on disk?</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Classes</strong> lists all the data structures that exists in the demographic modules.
+They mostly belong to 3 groups:</p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">Flow</code> to represent $\Phi(x,y,t)$: store, access and control demographic flows between discrete demes.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">PopulationSize</code> to represent $N(x,t)$: store, access and control population sizes.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">History</code> classes are your main interest: these classes harmonize the simulation by hiding the   access to <code class="language-plaintext highlighter-rouge">Flows</code> and <code class="language-plaintext highlighter-rouge">PopulationSize</code> objects. All <code class="language-plaintext highlighter-rouge">History</code> classes derive from a common <code class="language-plaintext highlighter-rouge">BaseHistory</code> (to reuse shared functionalities), but they can be specialized to implement a particular demographic algorithm (for example using a <code class="language-plaintext highlighter-rouge">demographic_policy</code>).</p>
+      </li>
+      <li>
+        <p><strong>Functions</strong>: just some free functions to help around!</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>You have everything you need to begin coding: you prepare two liters of very dark coffee,
+sit under a palm tree and begin to type in your IDE.</p>
+
+<h3 id="several-hours-later-complete-code-solution">Several hours later: complete code solution</h3>
+
+<p><img class="emoji" title=":v:" alt=":v:" src="https://github.githubassets.com/images/icons/emoji/unicode/270c.png" height="20" width="20"> Victooooire!</p>
+
+<p>It’s almost night but you did it!</p>
+
+<p>Your first functional Quetzal code! The first EGG in a long line! <img class="emoji" title=":egg:" alt=":egg:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f95a.png" height="20" width="20"></p>
+
+<h4 id="your-beautiful-maincpp-file">Your beautiful main.cpp file</h4>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// file main.cpp</span>
+<span class="cp">#include "quetzal/demography.h"
+#include &lt;iostream&gt;
+#include &lt;random&gt;
+</span><span class="c1">// Here we simulate a population expansion through a 2 demes landscape.</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="c1">// Use type aliasing for readability</span>
+  <span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">generator_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+  <span class="c1">// choose the strategy to be used</span>
+  <span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">demographic_policy</span><span class="o">::</span><span class="n">individual_based</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">memory_policy</span><span class="o">::</span><span class="n">on_RAM</span><span class="p">;</span>
+  <span class="c1">// Random number generator</span>
+  <span class="n">generator_type</span> <span class="n">gen</span><span class="p">;</span>
+  <span class="c1">// Number of non-overlapping generations for the demographic simulation</span>
+  <span class="kt">int</span> <span class="n">nb_generations</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="c1">// Coordinate of the origin of introduction</span>
+  <span class="n">coord_type</span> <span class="n">x0</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="c1">// Number of individuals introduced</span>
+  <span class="kt">int</span> <span class="n">N0</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="c1">// Initialize the history:</span>
+  <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">History</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">individual_based</span><span class="p">,</span> <span class="n">on_RAM</span><span class="o">&gt;</span> <span class="n">history</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">N0</span><span class="p">,</span> <span class="n">nb_generations</span><span class="p">);</span>
+  <span class="c1">// Get a light callable object that behaves as a function of space and time</span>
+  <span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">history</span><span class="p">.</span><span class="n">get_functor_N</span><span class="p">();</span>
+  <span class="c1">// Constant growth rate</span>
+  <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="c1">// Capture it with a lambda expression to build a growth function</span>
+  <span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">,</span><span class="n">r</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="n">r</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+  <span class="c1">// Stochastic dispersal lambda function, purposely very simple</span>
+  <span class="k">auto</span> <span class="n">sample_location</span> <span class="o">=</span> <span class="p">[](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">){</span>
+    <span class="c1">// 50% chance to move to the other deme</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">bernoulli_distribution</span> <span class="n">d</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+    <span class="c1">// The geographic sampling space is {-1 , 1}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="p">(</span><span class="n">gen</span><span class="p">)){</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">x</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="c1">// run the simulation</span>
+  <span class="n">history</span><span class="p">.</span><span class="n">simulate_forward</span><span class="p">(</span><span class="n">growth</span><span class="p">,</span> <span class="n">sample_location</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+  <span class="c1">// Output</span>
+  <span class="n">time_type</span> <span class="n">t</span> <span class="o">=</span> <span class="n">nb_generations</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="n">x</span> <span class="o">:</span> <span class="n">history</span><span class="p">.</span><span class="n">distribution_area</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+  <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"N("</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">","</span> <span class="o">&lt;&lt;</span> <span class="n">nb_generations</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="s">") = "</span> <span class="o">&lt;&lt;</span> <span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="c1">// end main</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<h4 id="compilation-tiiime">Compilation tiiime!</h4>
+
+<p>With utter delight and excitement, you enter the quetzal-NEST container (see previous tutorial).
+Quetzal-NEST comes with pre-installed <code class="language-plaintext highlighter-rouge">vim</code> editor, that you can use to create text files.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">cd home</code></li>
+  <li><code class="language-plaintext highlighter-rouge">vim main.cpp</code></li>
+  <li>copy and paste the code, then save and exit vim</li>
+  <li>compile with <code class="language-plaintext highlighter-rouge">g++ -Wall -std=c++17 main.cpp -o two_demes.exe</code>
+</li>
+</ul>
+
+<blockquote>
+  <p>Compiler options:</p>
+  <ul>
+    <li>the option <code class="language-plaintext highlighter-rouge">-Wall</code> enables all warnings</li>
+    <li>the option <code class="language-plaintext highlighter-rouge">-std=c++17</code> enables the C++17 standard compiler support</li>
+    <li>the option <code class="language-plaintext highlighter-rouge">-o</code> renames the output</li>
+  </ul>
+</blockquote>
+
+<p>A fast <code class="language-plaintext highlighter-rouge">ls</code> should show that a new file has been created: <code class="language-plaintext highlighter-rouge">two_demes.exe</code> !</p>
+
+<blockquote>
+  <p><img class="emoji" title=":boom:" alt=":boom:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png" height="20" width="20"> Any issue? Maybe this tutorial is outdated! Outrageous! Leave a comment so I can fix that <img class="emoji" title=":point_down:" alt=":point_down:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f447.png" height="20" width="20"></p>
+</blockquote>
+
+<h4 id="run-tiiime">Run tiiime!</h4>
+
+<p>Then you proceed to run the program with the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./two_demes.exe
+</code></pre></div></div>
+<p>The output is (hopefully):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Population flows from x to y at time t:
+
+time	from	to	flow
+2020	1	-1	17
+2020	1	1	25
+2020	-1	-1	21
+2018	1	1	12
+2020	-1	1	17
+2019	1	-1	12
+2019	-1	-1	7
+2018	1	-1	8
+2019	-1	1	9
+2019	1	1	12
+</code></pre></div></div>
+
+<p>Glorious! Your first demographic simulation! You already want to turn the pages of the
+documentation to interface it with a coalescence simulation!</p>
+
+<p>But not so fast! What happens in this program?</p>
+
+<h2 id="step-by-step-implementation">Step-by-step implementation</h2>
+
+<p>First create a new file <code class="language-plaintext highlighter-rouge">main.cpp</code> to write the simulation code in.</p>
+
+<h3 id="includes-to-import-the-code-we-need">Includes to import the code we need</h3>
+
+<p>First we need to include the files of code that allow to build a demographic
+process: you do so by including the quetzal demography module with a <code class="language-plaintext highlighter-rouge">include</code> directive.</p>
+
+<p>Second we want to use some tools present in the standard C++ toolbox:</p>
+<ul>
+  <li>some utilities to print objects in the terminal we find in <code class="language-plaintext highlighter-rouge">iostream</code>
+</li>
+  <li>a random number generator for the simulation we find in <code class="language-plaintext highlighter-rouge">random</code>
+</li>
+  <li>a simple, standard bernoulli random distribution to representation migration between two demes we also find in <code class="language-plaintext highlighter-rouge">random</code>
+</li>
+</ul>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=1-4) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// file main.cpp</span>
+<span class="cp">#include "quetzal/demography.h"
+#include &lt;iostream&gt;
+#include &lt;random&gt;
+</span></code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<h3 id="enter-the-main-function">Enter the main function</h3>
+
+<p>In C++, everything happens here:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=5-6) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Here we simulate a population expansion through a 2 demes landscape.</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<h3 id="type-aliasing-to-explicit-the-simulation-model-framework-and-hypothesis">Type aliasing to explicit the simulation model framework and hypothesis</h3>
+
+<p>A feature of Quetzal-CoalTL is that most of the modules make very little assumptions around the geographic space representation.</p>
+
+<p>This has sometimes some conceptual cost about the nature of space and time <img class="emoji" title=":dizzy_face:" alt=":dizzy_face:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f635.png" height="20" width="20">, but it allows users to consider quite arbitrary ways to represent space and time dimensions, while still being able to adapt most of the library modules.</p>
+
+<blockquote>
+  <p>In other words, that would need some testing but I’m pretty sure you can adapt the library to a range of geographic supports including</p>
+  <ul>
+    <li>few points on a plane <img class="emoji" title=":hole:" alt=":hole:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f573.png" height="20" width="20"> <img class="emoji" title=":hole:" alt=":hole:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f573.png" height="20" width="20"> <img class="emoji" title=":hole:" alt=":hole:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f573.png" height="20" width="20">
+</li>
+    <li>a large grid <img class="emoji" title=":world_map:" alt=":world_map:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f5fa.png" height="20" width="20">
+</li>
+    <li>3D surfaces <img class="emoji" title=":mountain:" alt=":mountain:" src="https://github.githubassets.com/images/icons/emoji/unicode/26f0.png" height="20" width="20">
+</li>
+    <li>an orange <img class="emoji" title=":globe_with_meridians:" alt=":globe_with_meridians:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f310.png" height="20" width="20">
+</li>
+    <li>or a doughnut <img class="emoji" title=":doughnut:" alt=":doughnut:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f369.png" height="20" width="20">
+</li>
+  </ul>
+</blockquote>
+
+<p>In the present case we only have two oasis (or populations, or demes). We don’t not need a
+complex spatial grid or a cubersome coordinate system. We can keep things very
+simple by considering the time to be represented by integer years,
+and the space to be represented also by integers:</p>
+<ul>
+  <li>the number 1 representing the first deme</li>
+  <li>the number -1 representing the other deme.</li>
+</ul>
+
+<blockquote>
+  <p>We could absolutely chose to represent demes by two string “A” and “B”, the code
+would just be one or two lines longer.</p>
+</blockquote>
+
+<p>We specify these choices by defining some <strong>type aliases</strong> to keep things clear and
+to be able to later change more easily the types if needed: the demographic module will adapt!
+We also want to use a standard <strong>random number generator</strong>, the mersenne twister engine.</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=7-10) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// Use type aliasing for readability</span>
+  <span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">generator_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<p>You can think of so many simulation algorithms for populations expansions!
+In this very case, we will keep:</p>
+<ul>
+  <li>the growth rate low</li>
+  <li>the number of founders small</li>
+  <li>the number of generations short</li>
+</ul>
+
+<p>Because we don’t have many individuals to handle, we choose the <code class="language-plaintext highlighter-rouge">individual-based</code> demographic strategy (or policy, in C++ language), that moves individuals independently.</p>
+
+<blockquote>
+  <p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> As opposed to the <code class="language-plaintext highlighter-rouge">mass-based</code> demographic policy, that considers populations large enough to be infinitely splittable <img class="emoji" title=":scissors:" alt=":scissors:" src="https://github.githubassets.com/images/icons/emoji/unicode/2702.png" height="20" width="20"></p>
+</blockquote>
+
+<p>And because everything will obviously fit on the RAM and we won’t need to record
+the history on disk, we also explicit that by specifying the <code class="language-plaintext highlighter-rouge">on_RAM</code> memory
+management policy! Again, a <strong>type alias</strong> is welcome here to shorten these statement further in the code:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=11-13) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// choose the strategy to be used</span>
+  <span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">demographic_policy</span><span class="o">::</span><span class="n">individual_based</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">memory_policy</span><span class="o">::</span><span class="n">on_RAM</span><span class="p">;</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<blockquote>
+  <p><img class="emoji" title=":crystal_ball:" alt=":crystal_ball:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png" height="20" width="20"> One day maybe, you will simulate histories so long that RAM will be you main bottleneck.
+That day, think about the alternative strategy  <code class="language-plaintext highlighter-rouge">on_disk</code> <img class="emoji" title=":floppy_disk:" alt=":floppy_disk:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4be.png" height="20" width="20"></p>
+</blockquote>
+
+<h3 id="demographic-history-initialization">Demographic history initialization</h3>
+
+<p>We want to initialize the demographic history with some individuals in deme 1. We use the <code class="language-plaintext highlighter-rouge">History</code> class, that is an implementation of a forward-in-time
+demographic simulator defined in the <code class="language-plaintext highlighter-rouge">demography</code> module.</p>
+
+<blockquote>
+  <p><img class="emoji" title=":books:" alt=":books:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png" height="20" width="20"> if you need to have a look at the class documentation, <a href="https://becheler.github.io/quetzal-CoalTL/api/classquetzal_1_1demography_1_1History_3_01Space_00_01demographic__policy_1_1individual__based_00_01Memory_01_4.html">it’s here!</a> Take a deeep breath <img class="emoji" title=":scream_cat:" alt=":scream_cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f640.png" height="20" width="20"></p>
+</blockquote>
+
+<p>Using <strong>template arguments</strong>, we declare that this history has to be recorded using our little <em>“coordinate system”</em> <code class="language-plaintext highlighter-rouge">coord_type</code>  and <code class="language-plaintext highlighter-rouge">time_type</code> temporal points. We also specialize the <code class="language-plaintext highlighter-rouge">History</code> class by specifying that we need the special demographic algorithm <code class="language-plaintext highlighter-rouge">individual_based</code>:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=14-23) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// Random number generator</span>
+  <span class="n">generator_type</span> <span class="n">gen</span><span class="p">;</span>
+  <span class="c1">// Number of non-overlapping generations for the demographic simulation</span>
+  <span class="kt">int</span> <span class="n">nb_generations</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="c1">// Coordinate of the origin of introduction</span>
+  <span class="n">coord_type</span> <span class="n">x0</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="c1">// Number of individuals introduced</span>
+  <span class="kt">int</span> <span class="n">N0</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="c1">// Initialize the history:</span>
+  <span class="n">quetzal</span><span class="o">::</span><span class="n">demography</span><span class="o">::</span><span class="n">History</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">individual_based</span><span class="p">,</span> <span class="n">on_RAM</span><span class="o">&gt;</span> <span class="n">history</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">N0</span><span class="p">,</span> <span class="n">nb_generations</span><span class="p">);</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<h3 id="implementing-a-local-growth-process">Implementing a local growth process</h3>
+
+<p>Now that we are ready to record the demographic history, we would like
+to define the population size with some kind of temporal dependency.
+That is, we need to know the number of individuals in the previous
+generation to be able to define the number of children in the new generation.</p>
+
+<p>Well, we can simply ask the <code class="language-plaintext highlighter-rouge">History</code> to provide us with a little accessor on this information:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=24-25) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// Get a light callable object that behaves as a function of space and time</span>
+  <span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">history</span><span class="p">.</span><span class="n">get_functor_N</span><span class="p">();</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<blockquote>
+  <p><img class="emoji" title=":wrench:" alt=":wrench:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png" height="20" width="20"> This gives you a <strong>copiable reference</strong> to the population size history. This little trick allows to capture the history in a <strong>lambda expression</strong> encoding the growth process without having to copy around the whole historical database - what would be quite inefficient!</p>
+</blockquote>
+
+<p>So now, we can define the number of children:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=26-29) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// Constant growth rate</span>
+  <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="c1">// Capture it with a lambda expression to build a growth function</span>
+  <span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">,</span><span class="n">r</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="n">r</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<blockquote>
+  <p><img class="emoji" title=":wrench:" alt=":wrench:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png" height="20" width="20"> This little <strong>functor</strong> is very cheap to copy and can be freely passed around the
+simulation context.</p>
+</blockquote>
+
+<blockquote>
+  <p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> You could chose to represent the number of individuals in deme $x$ at time $t$ by any function of space and time: constant functions, uniform, stochastic or deterministic forms are all possible. We could have used the random generator argument to define a stochastic process modeled by a Poisson distribution with mean parameter $\lambda = 2N(x,t)$.</p>
+</blockquote>
+
+<h3 id="implementing-a-dispersal-location-kernel-">Implementing a dispersal location kernel <a name="dispersal_sampler"></a>
+</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">individual_based</code> strategy requires a specific type of dispersal function.
+Remember that for each individual, a post-dispersal location must be sampled in a distribution.</p>
+
+<blockquote>
+  <p><img class="emoji" title=":wrench:" alt=":wrench:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png" height="20" width="20"> Complex distance-based location dispersal distribution can be constructed from a geographic support
+using Quetzal helper functions, but for now a very simple dispersal process will be sufficient to highlight
+the simulator behavior.</p>
+</blockquote>
+
+<p>Basically we need to construct a function that can be called with three arguments:</p>
+<ul>
+  <li>a random number generator for some entropy</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">coord_type</code> argument that gives the place where the individual is <em>before dispersal</em>
+</li>
+  <li>a <code class="language-plaintext highlighter-rouge">time_type</code> argument giving the time at which the dispersal occurs.</li>
+</ul>
+
+<blockquote>
+  <p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> The time parameter is generally useless for pure distance-based dispersal that are constant in time.
+However, this argument allows important extensions:</p>
+  <ul>
+    <li>if the temporal scale is large enough, the dispersal parameters can vary through time.</li>
+    <li>if the landscape heterogeneity is assumed to impact dispersal (e.g., moving glacier margins ), then one may have to account for temporal variations in the landscape.</li>
+  </ul>
+</blockquote>
+
+<p>Here we define a very simple stochastic dispersal distribution, where the geographic
+sampling space is only the two considered demes ${-1 , 1}$ and with a 50% chance
+to move to the other deme:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=30-37) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// Stochastic dispersal lambda function, purposely very simple</span>
+  <span class="k">auto</span> <span class="n">sample_location</span> <span class="o">=</span> <span class="p">[](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">){</span>
+    <span class="c1">// 50% chance to move to the other deme</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">bernoulli_distribution</span> <span class="n">d</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+    <span class="c1">// The geographic sampling space is {-1 , 1}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="p">(</span><span class="n">gen</span><span class="p">)){</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">x</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+  <span class="p">};</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<h3 id="forwaaaard">Forwaaaard!</h3>
+
+<p>We can finally expand the history through space and time, print out the flows historical
+database for visual check, and close the <code class="language-plaintext highlighter-rouge">main</code> function:</p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp&lines=38-46) -->
+<!-- The below code snippet is automatically added from https://raw.githubusercontent.com/Becheler/quetzal-CoalTL/master/test/tutorials_test/tuto_1.cpp -->
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// run the simulation</span>
+  <span class="n">history</span><span class="p">.</span><span class="n">simulate_forward</span><span class="p">(</span><span class="n">growth</span><span class="p">,</span> <span class="n">sample_location</span><span class="p">,</span> <span class="n">gen</span><span class="p">);</span>
+  <span class="c1">// Output</span>
+  <span class="n">time_type</span> <span class="n">t</span> <span class="o">=</span> <span class="n">nb_generations</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="n">x</span> <span class="o">:</span> <span class="n">history</span><span class="p">.</span><span class="n">distribution_area</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+  <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"N("</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">","</span> <span class="o">&lt;&lt;</span> <span class="n">nb_generations</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="s">") = "</span> <span class="o">&lt;&lt;</span> <span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">}</span> <span class="c1">// end main</span>
+</code></pre></div></div>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>You now know how to implement your own little demographic simulator.</p>
+
+<p>If you have very peculiar growth or dispersal model, this tutorial demonstrated that you can
+inject user-defined implementations into Quetzal components.</p>
+
+<p>However, you will surely not manually hard-code the migration rates between hundreds
+of demes in a landscape.</p>
+
+<p>You will find in Quetzal a way to automate the process of constructing spatially explicit,
+distance-based dispersal kernels.</p>
+
+<p>But before to compute probabilities across space, you first need to know more
+about how to represent a spatially explicit heterogeneous landscape!</p>
+
+      </div>
+      <div class="PageNavigation">
+        
+          <a class="prev" href="/software/quetzal-CoalTL/tutorials/2-getting-started">« Getting started</a>
+        
+        
+          <a class="next" href="/software/quetzal-CoalTL/tutorials/many-lazy-walkers">Many lazy walkers at the beach »</a>
+        
+      </div>
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Migration%20between%20two%20demes&amp;url=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/3-migration-between-two-demes" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/3-migration-between-two-demes" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/3-migration-between-two-demes" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+        </div>
+      </div>
+      <!-- Enables support for commenting posts and articles -->
+<script src="https://utteranc.es/client.js" repo="Becheler/Becheler.github.io" issue-term="pathname" label="blog" theme="github-light" crossorigin="anonymous" async>
+</script>
+
+    </header>
+</div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  <!-- We want analytics -->
+  <!-- Enables suupport for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+
+</html>

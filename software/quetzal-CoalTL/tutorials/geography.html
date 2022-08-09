@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Include header -->
+<head>
+	<meta charset="utf-8">
+	<title>Working with heterogeneous landscape - Arnaud Becheler - Personal website</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Arnaud Becheler - Personal website" property="og:site_name">
+  
+    <meta content="Working with heterogeneous landscape" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Integrating landscape heterogeneity" property="og:description">
+  
+  
+    <meta content="https://Becheler.github.io/software/quetzal-CoalTL/tutorials/geography" property="og:url">
+  
+  
+    <meta content="2022-08-09T18:04:03+00:00" property="article:published_time">
+    <meta content="https://Becheler.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://Becheler.github.io/assets/img/doodles/under_construction_crop.png" property="og:image">
+  
+  
+    
+  
+  
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Working with heterogeneous landscape">
+  
+  
+    <meta name="twitter:url" content="https://Becheler.github.io/software/quetzal-CoalTL/tutorials/geography">
+  
+  
+    <meta name="twitter:description" content="Integrating landscape heterogeneity">
+  
+  
+    <meta name="twitter:image:src" content="https://Becheler.github.io/assets/img/doodles/under_construction_crop.png">
+  
+
+	<meta name="description" content="Integrating landscape heterogeneity">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/my-softwares.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/my_stylesheet.css">
+	<!-- Tangerine font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+</head>
+
+
+*<!-- Mathjax support -->
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+<!-- Default body -->
+<body>
+  
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/arnaud-becheler.png" alt="Arnaud Becheler"></a>
+      </div>
+      <div class="author-name">Arnaud Becheler</div>
+      <p>A French Software Engineer, always happy to learn about phylogeography and programming!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Softwares</h3>
+      <ul>
+        <li><a href="https://github.com/Becheler/quetzal-EGGS" target="_blank"><i class="icon icon-quetzal-eggs--fa" title="Quetzal-EGGS" aria-hidden="true"></i></a></li>
+        <li><a href="/softwares/quetzal-CoalTL/home" target="_blank"><i class="icon icon-quetzal-coaltl-fa" title="Quetzal-CoalTL" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/quetzal-CRUMBS" target="_blank"><i class="icon icon-quetzal-crumbs-fa" title="Quetzal-CRUMBS" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/decrypt" target="_blank"><i class="icon icon-decrypt_fa" title="Decrypt" aria-hidden="true"></i></a></li>
+      </ul>
+      <section class="contact">
+        <h3 class="contact-title"> About me </h3>
+        <ul>
+          <li><a href="/pages/about-me/index.html" target="_blank"><i class="fa fa-youtube-play" title="Presentations" aria-hidden="true"></i></a></li>
+          <li><a href="/assets/pdfs/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" title="CV" aria-hidden="true"></i></a></li>
+          <li><a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-graduation-cap" title="My Google Scholar" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </section> <!-- End Section Resume -->
+    <section class="contact">
+      <h3 class="contact-title">Find me on</h3>
+      <ul>
+        
+        
+        
+        
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2022 &copy; Arnaud Becheler</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="software-image" src=/assets/img/doodles/under_construction_crop.png alt="Working with heterogeneous landscape">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="PageNavigation">
+      
+        <a class="prev" href="/software/quetzal-CoalTL/tutorials/many-lazy-walkers">&laquo; Many lazy walkers at the beach</a>
+      
+      
+        <a class="next" href="/software/quetzal-CoalTL/tutorials/niche">Linking environments to species ecology &raquo;</a>
+      
+    </div>
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Working with heterogeneous landscape</h1>
+        <section class="contact">
+        <ul>
+          <li><a href="/softwares/quetzal-CoalTL/home"><i class="fa fa-home" aria-hidden="true" title="Home"></i></a></li>
+          <li><a href="/softwares/quetzal-CoalTL/tutorials"><i class="fa fa-code" title="Tutorials" aria-hidden="true"></i></a></li>
+          <li><a href="/quetzal-CoalTL"><i class="fa fa-wrench" title="C++ API" aria-hidden="true"></i></a></li>
+          <li><a href="/softwares/quetzal-CoalTL/FAQ"><i class="fa fa-question-circle" title="FAQ" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/Becheler/quetzal-CoalTL"><i class="fa fa-github" title="Github Repo" aria-hidden="true"></i></a></li>
+        </ul>
+        </section
+      </header>
+      <div style="text-align:left;">
+      <p>Quetzal is mainly designed to simulate discrete populations in a discrete space.
+Of course you can still manually define a couple of populations with no spatial structure
+like in <a href="tuto_demography.md">this tutorial</a>. You could add to these populations a
+<em>certain form</em> of spatial structure when defining
+the migration rates between them. This can work for a reasonable number of populations.</p>
+
+<p>However, <strong>a large number of populations is cumbersome to define and to manipulate.</strong></p>
+
+<p>And you certainly consider to <strong>define some model quantities as functions of the environment</strong>.</p>
+
+<p>So what you actually need is:</p>
+<ul>
+  <li>tools that ease the definition/manipulation of a high number of populations.</li>
+  <li>to read some data files containing the relevant environmental information</li>
+  <li>an easy way to retrieve and to manipulate the environmental information across the simulation.</li>
+</ul>
+
+<p>Quetzal features were designed to answer these needs.</p>
+
+<h2 id="download-geographic-datasets">Download geographic datasets</h2>
+
+<p>First you will need a geographic dataset to read. <a href="http://worldclim.org/version2">Go to worldclim</a>
+and download the 10-minutes average temperature. We will focus here on the January month data file.</p>
+
+<blockquote>
+  <p><strong>Important:</strong> Quetzal does not aim to be another GIS software. It aims at easing
+your life concerning spatial coalescence softwares. For this reason, it supports only
+GeoTiff files that meet the worldclim standard. Contact us if you have any trouble.</p>
+</blockquote>
+
+<blockquote>
+  <p>GeoTiff is a public standard that allows to describe cartographic information,
+like map projection coordinate systems, ellipsoids, datum, that is associated to
+TIFF pictures like satellite imagery, elevation maps, climate data…</p>
+</blockquote>
+
+<h2 id="prepare-your-script">Prepare your script</h2>
+
+<p>So open a new text file, give it a nice name like <code class="language-plaintext highlighter-rouge">tuto_geo.cpp</code> and let’s write
+some code!</p>
+
+<p>First you need to include the <code class="language-plaintext highlighter-rouge">geography</code> module and the STL input/output support
+before to declare the main function where we will write our code:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "path_to_quetzal_directory/quetzal/geography.h"
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+</span>
+<span class="kt">int</span> <span class="n">main</span>
+<span class="p">{</span>
+  <span class="c1">// write things here</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="read-an-environmental-quantity">Read an environmental quantity</h2>
+
+<h3 id="about-the-temporal-dimension">About the temporal dimension</h3>
+
+<p>In Quetzal geographic classes, the temporal dimension is represented by the depth
+of the dataset. That is, when we have $t$ layers in the GeoTiff file, the first layer
+represents the oldest data, and the last layer the most recent data.</p>
+
+<p>The dataset we uploaded from worldclim has only one layer of data,
+because it represents “present” quantities for each month, averaged over 1970-2000.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> If you want to concatenate these 12 months-data to build a 12-layers deep dataset
+that could represent a year, do it using another software. The raster package in R will
+be perfectly suited.</p>
+</blockquote>
+
+<p>So we can represent this singular time-point by anything (an integer, a hash …) but for sake of clarity,
+we will here use a simple string and name the time-point <code class="language-plaintext highlighter-rouge">january_present</code>
+We use a type aliases to make this choice clear:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="construct-your-spatial-object">Construct your spatial object</h3>
+
+<p>Then we want to use a Quetzal tool that allows to represent this geospatial data.
+We can use the <code class="language-plaintext highlighter-rouge">EnvironmentalQuantity</code> class. It takes as a template parameter
+the type you want to use to represent the temporal dimension (that is, in this example,
+  a <code class="language-plaintext highlighter-rouge">std::string</code>, or equivalently a <code class="language-plaintext highlighter-rouge">time_type</code>). Let’s make things clear:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">quantity_type</span> <span class="o">=</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">geography</span><span class="o">::</span><span class="n">EnvironmentalQuantity</span><span class="o">&lt;</span><span class="n">time_type</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">quantity_type</span><span class="o">::</span><span class="n">coord_type</span><span class="p">;</span>
+</code></pre></div></div>
+<p>The second line automatically retrieves the type used in Quetzal to represent
+geographic coordinates and assign a new type alias. This type
+encapsulates a lot a troubles, like projection system, great circle distance computation…</p>
+
+<p>After these definitions, you can finally build your quantity, giving to the constructor</p>
+<ul>
+  <li>the path to the data</li>
+  <li>a vector of ordered time points for each layer, from the oldest to the most recent</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">quantity_type</span> <span class="nf">my_quantity</span><span class="p">(</span> <span class="s">"my_file"</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">time_type</span><span class="o">&gt;</span><span class="p">{</span><span class="s">"january_present"</span><span class="p">}</span> <span class="p">);</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note</strong> here we use only one point time. In another setting, you would probably
+want to write things like this:</p>
+  <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">quantity_type</span> <span class="nf">my_quantity</span><span class="p">(</span> <span class="s">"my_file"</span><span class="p">,</span> <span class="p">{</span><span class="mi">2001</span><span class="p">,</span><span class="mi">2002</span><span class="p">,</span><span class="mi">2003</span><span class="p">,</span><span class="mi">2004</span><span class="p">,</span><span class="mi">2005</span><span class="p">,</span><span class="mi">2006</span><span class="p">,</span><span class="mi">2007</span><span class="p">,</span><span class="mi">2008</span><span class="p">,</span><span class="mi">2009</span><span class="p">,</span><span class="mi">2010</span><span class="p">}</span> <span class="p">);</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="retrieve-the-set-of-inhabitable-demes">Retrieve the set of inhabitable demes</h3>
+
+<p>When considering a spatial grid, it is quite usual to consider that each cell
+of the grid is a deme. So to represent each deme with a unique identifier,
+we can use the centroids of each cell.</p>
+
+<blockquote>
+  <p><strong>Note</strong>: we could use the raw/column indices of the spatial grid as indices
+of the demes, but doing so we would be putting too much emphasis on the grid
+representation and loosing the geographic intuition. Emphasizing details is
+typically what should be avoided in software design.</p>
+</blockquote>
+
+<p>Moreover, we are generally interested in representing only demes that are inhabitable.
+Typically we do not want to pay for representing ocean cells in the simulation context.
+In worldclim datasets, oceans environmental values are undefined, so to get the continental
+demes we have to retrieve only the centroids of the cells for which the environmental data is defined.</p>
+
+<p>This is exactly the purpose of the <code class="language-plaintext highlighter-rouge">geographic_definition_space</code> function:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">space</span> <span class="o">=</span> <span class="n">my_quantity</span><span class="p">.</span><span class="n">geographic_definition_space</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>We can iterate over this geographic space. The following lines prints out the
+geographic coordinates of the continental demes:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">it</span> <span class="o">:</span> <span class="n">space</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Importantly, this collection of inhabitable demes is typically what you need to
+<a href="tuto_dispersal.md">construct dispersal models</a> for spatially-explicit simulations.</p>
+
+<p>Similarly, you can retrieve at any time the time steps related to the dataset
+and iterate over it:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">times</span> <span class="o">=</span> <span class="n">my_quantity</span><span class="p">.</span><span class="n">temporal_definition_space</span><span class="p">();</span>
+<span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">it</span> <span class="o">:</span> <span class="n">times</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="read-the-data-inside">Read the data inside</h3>
+
+<p>To retrieve the quantity value at deme $x$ at time $t$,
+use the following function by passing the right arguments:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">t</span> <span class="o">:</span> <span class="n">times</span><span class="p">){</span>
+  <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">x</span> <span class="o">:</span> <span class="n">space</span><span class="p">){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">t</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">my_quantity</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>An that’s it !</p>
+
+<h3 id="complete-script-and-compilation">Complete script and compilation</h3>
+
+<p>The complete script is given below. Make sure gou give the right paths
+on your own system.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "my_path/quetzal/geography.h"
+#include &lt;iostream&gt;
+#include &lt;assert.h&gt;
+#include &lt;string&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+
+	<span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">quantity_type</span> <span class="o">=</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">geography</span><span class="o">::</span><span class="n">EnvironmentalQuantity</span><span class="o">&lt;</span><span class="n">time_type</span><span class="o">&gt;</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">coord_type</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">quantity_type</span><span class="o">::</span><span class="n">coord_type</span><span class="p">;</span>
+
+	<span class="n">quantity_type</span> <span class="n">my_quantity</span><span class="p">(</span> <span class="s">"my_file.tif"</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">time_type</span><span class="o">&gt;</span><span class="p">{</span><span class="s">"january_present"</span><span class="p">}</span> <span class="p">);</span>
+
+	<span class="k">auto</span> <span class="n">times</span> <span class="o">=</span> <span class="n">my_quantity</span><span class="p">.</span><span class="n">temporal_definition_space</span><span class="p">();</span>
+	<span class="k">auto</span> <span class="n">space</span> <span class="o">=</span> <span class="n">my_quantity</span><span class="p">.</span><span class="n">geographic_definition_space</span><span class="p">();</span>
+
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Demic structure for demographic simulation"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">it</span> <span class="o">:</span> <span class="n">space</span><span class="p">)</span>
+  <span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">t</span> <span class="o">:</span> <span class="n">times</span><span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">x</span> <span class="o">:</span> <span class="n">space</span><span class="p">){</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">t</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">my_quantity</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When you compile it, make sure that you link to the <a href="getting_started#install-gdal">gdal library</a> :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -Wall -std=c++14 tuto_geo.cpp -I/usr/include/gdal  -L/usr/lib/ -lgdal
+</code></pre></div></div>
+
+<p>Then run the script with <code class="language-plaintext highlighter-rouge">./a.out</code></p>
+
+<h2 id="constructing-a-multi-variate-environment">Constructing a multi-variate environment</h2>
+
+<p>The joint manipulation of multiple environmental dataset can be tricky: the system has to
+guarantee a common geographic subset for which all environmental quantities are defined,
+that the temporal ranges of each variable are consistent, that resolutions are identical
+across files…</p>
+
+<p>Using multiple EnvironmentalQuantity objects is error-prone, and you should
+prefer instead the use of the DiscreteLandscape classm that secures the construction
+of a multivariate, temporal, spatial grid.</p>
+
+<p>Most of the concepts are similar to those previously exposed so just read the following code
+as an illustration.</p>
+
+<p>Some precisions however:</p>
+<ul>
+  <li>You have to give identifiers to the quantities, so you can retrieve them later. These
+identifiers can be of any user-defined type: integers, strings …</li>
+  <li>The quantities retrieved from a DiscreteLandscape have the semantic of a function
+of space and time.</li>
+  <li>If you want to run the following script, make sure that your TIFF files are consistent with the
+temporal range given in the demonstration code.</li>
+  <li>Reprojecting <code class="language-plaintext highlighter-rouge">coord_type</code> objects to the nearest cell centroid is a precious feature when
+incorporating genetic dataset in the spatial analysis, because it allows you to easily
+reproject your sample in the demic structure.</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "my_path/quetzal/geography.h"
+#include &lt;iostream&gt;   // std::cout
+#include &lt;string&gt;
+</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span><span class="n">bio12</span>
+<span class="p">{</span>
+  <span class="k">using</span> <span class="n">ID_type</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">time_type</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">int</span><span class="p">;</span>
+	<span class="k">using</span> <span class="n">landscape_type</span> <span class="o">=</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">geography</span><span class="o">::</span><span class="n">DiscreteLandscape</span><span class="o">&lt;</span><span class="n">ID_type</span><span class="p">,</span> <span class="n">time_type</span><span class="o">&gt;</span><span class="p">;</span>
+	<span class="n">landscape_type</span> <span class="n">env</span><span class="p">(</span> <span class="p">{</span> <span class="p">{</span><span class="s">"rain"</span><span class="p">,</span><span class="s">"my_file.tif"</span><span class="p">},</span>
+                        <span class="p">{</span><span class="s">"temperature"</span><span class="p">,</span><span class="s">"other_file.tif"</span><span class="p">}</span>
+                      <span class="p">},</span>
+	                    <span class="p">{</span><span class="mi">2001</span><span class="p">,</span><span class="mi">2002</span><span class="p">,</span><span class="mi">2003</span><span class="p">,</span><span class="mi">2004</span><span class="p">,</span><span class="mi">2005</span><span class="p">,</span><span class="mi">2006</span><span class="p">,</span><span class="mi">2007</span><span class="p">,</span><span class="mi">2008</span><span class="p">,</span><span class="mi">2009</span><span class="p">,</span><span class="mi">2010</span><span class="p">}</span> <span class="p">);</span>
+
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">env</span><span class="p">.</span><span class="n">quantities_nbr</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">" quantities read from files"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+  <span class="n">landscape_type</span><span class="o">::</span><span class="n">coord_type</span> <span class="n">Bordeaux</span><span class="p">(</span><span class="mf">44.5</span><span class="p">,</span> <span class="mf">0.34</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">env</span><span class="p">.</span><span class="n">is_in_spatial_extent</span><span class="p">(</span><span class="n">Bordeaux</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Centroid: "</span> <span class="o">&lt;&lt;</span> <span class="n">env</span><span class="p">.</span><span class="n">reproject_to_centroid</span><span class="p">(</span><span class="n">Bordeaux</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Retrieve environmental functions</span>
+  <span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+  <span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+
+  <span class="k">auto</span> <span class="n">times</span> <span class="o">=</span> <span class="n">env</span><span class="p">.</span><span class="n">temporal_definition_space</span><span class="p">();</span>
+  <span class="k">auto</span> <span class="n">space</span> <span class="o">=</span> <span class="n">env</span><span class="p">.</span><span class="n">geographic_definition_space</span><span class="p">();</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">t</span> <span class="o">:</span> <span class="n">times</span><span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">x</span> <span class="o">:</span> <span class="n">space</span><span class="p">){</span>
+      <span class="k">if</span><span class="p">(</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">200.</span> <span class="o">&amp;&amp;</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">600.</span><span class="p">){</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">t</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+      </div>
+      <div class="PageNavigation">
+        
+          <a class="prev" href="/software/quetzal-CoalTL/tutorials/many-lazy-walkers">&laquo; Many lazy walkers at the beach</a>
+        
+        
+          <a class="next" href="/software/quetzal-CoalTL/tutorials/niche">Linking environments to species ecology &raquo;</a>
+        
+      </div>
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Working with heterogeneous landscape&url=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/geography" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/geography" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/geography" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+        </div>
+      </div>
+      <!-- Enables support for commenting posts and articles -->
+<script src="https://utteranc.es/client.js"
+        repo="Becheler/Becheler.github.io"
+        issue-term="pathname"
+        label="blog"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  <!-- We want analytics -->
+  <!-- Enables suupport for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+
+</html>

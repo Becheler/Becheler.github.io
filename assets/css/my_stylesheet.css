@@ -1,0 +1,65 @@
+.software-image {
+  text-align:center;
+  width:30%;
+  display:block;
+  margin:auto;
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+.poetry-line {
+    text-indent: -2em;
+    margin-left: 2em;
+    font-size: 34px;
+    font-style: italic;
+    font-family: 'Tangerine', cursive;
+}
+
+div.my_figure {
+  float: right;
+  display: block;
+  max-width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+div.my_big_figure {
+  float: right;
+  display: block;
+  max-width: 40%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}

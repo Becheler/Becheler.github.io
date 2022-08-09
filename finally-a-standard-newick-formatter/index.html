@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Include header -->
+<head>
+	<meta charset="utf-8">
+	<title>A modern C++ Newick tree formatter - Arnaud Becheler - Personal website</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Arnaud Becheler - Personal website" property="og:site_name">
+  
+    <meta content="A modern C++ Newick tree formatter" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Approaching population genetics with a modern C++ design" property="og:description">
+  
+  
+    <meta content="https://Becheler.github.io/finally-a-standard-newick-formatter/" property="og:url">
+  
+  
+    <meta content="2022-06-23T13:30:00+00:00" property="article:published_time">
+    <meta content="https://Becheler.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://Becheler.github.io/assets/img/doodles/revolution_des_pointeurs.png" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="ecology" property="article:tag">
+    
+    <meta content="evolution" property="article:tag">
+    
+    <meta content="biogeography" property="article:tag">
+    
+    <meta content="coalescence" property="article:tag">
+    
+    <meta content="quetzal" property="article:tag">
+    
+    <meta content="phylogeny" property="article:tag">
+    
+    <meta content="newick" property="article:tag">
+    
+    <meta content="C++" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="A modern C++ Newick tree formatter">
+  
+  
+    <meta name="twitter:url" content="https://Becheler.github.io/finally-a-standard-newick-formatter/">
+  
+  
+    <meta name="twitter:description" content="Approaching population genetics with a modern C++ design">
+  
+  
+    <meta name="twitter:image:src" content="https://Becheler.github.io/assets/img/doodles/revolution_des_pointeurs.png">
+  
+
+	<meta name="description" content="Approaching population genetics with a modern C++ design">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/my-softwares.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/my_stylesheet.css">
+	<!-- Tangerine font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+</head>
+
+
+*<!-- Mathjax support -->
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+<!-- Default body -->
+<body>
+  
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/arnaud-becheler.png" alt="Arnaud Becheler"></a>
+      </div>
+      <div class="author-name">Arnaud Becheler</div>
+      <p>A French Software Engineer, always happy to learn about phylogeography and programming!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Softwares</h3>
+      <ul>
+        <li><a href="https://github.com/Becheler/quetzal-EGGS" target="_blank"><i class="icon icon-quetzal-eggs--fa" title="Quetzal-EGGS" aria-hidden="true"></i></a></li>
+        <li><a href="/softwares/quetzal-CoalTL/home" target="_blank"><i class="icon icon-quetzal-coaltl-fa" title="Quetzal-CoalTL" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/quetzal-CRUMBS" target="_blank"><i class="icon icon-quetzal-crumbs-fa" title="Quetzal-CRUMBS" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/decrypt" target="_blank"><i class="icon icon-decrypt_fa" title="Decrypt" aria-hidden="true"></i></a></li>
+      </ul>
+      <section class="contact">
+        <h3 class="contact-title"> About me </h3>
+        <ul>
+          <li><a href="/pages/about-me/index.html" target="_blank"><i class="fa fa-youtube-play" title="Presentations" aria-hidden="true"></i></a></li>
+          <li><a href="/assets/pdfs/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" title="CV" aria-hidden="true"></i></a></li>
+          <li><a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&amp;hl=en&amp;oi=ao" target="_blank"><i class="fa fa-graduation-cap" title="My Google Scholar" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </section> <!-- End Section Resume -->
+    <section class="contact">
+      <h3 class="contact-title">Find me on</h3>
+      <ul>
+        
+        
+        
+        
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2022 © Arnaud Becheler</p>
+    </div>
+  </section></footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/assets/img/doodles/revolution_des_pointeurs.png" alt="A modern C++ Newick tree formatter">
+        
+          <figcaption>(Fall) back to the trees!</figcaption>
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="PageNavigation">
+      
+        <a class="prev" href="/who-am-i/">« My softwares for statistical phylogeography</a>
+      
+      
+    </div>
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">A modern C++ Newick tree formatter</h1>
+        
+        <h2 class="page-title">Ou la révolution des pointeurs</h2>
+        
+        <div class="page-date"><span>2022, Jun 23    </span></div>
+      </header>
+      <p><img class="emoji" title=":seedling:" alt=":seedling:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f331.png" height="20" width="20"> Recently, I began to work on a new project that requires to manipulate species trees,
+using Newick representation as input/output. I was tying to track down a series of
+bugs in the legacy code, but my task was made utterly complex by uncooperative
+pointers who had invaded all interfaces, conquered the core of the code, and corrupted
+pretty much all classes who were maybe <a href="https://softwareengineering.stackexchange.com/questions/132403/should-i-use-friend-classes-in-c-to-allow-access-to-hidden-members">a bit too friendly</a> with the invaders <img class="emoji" title=":guardsman:" alt=":guardsman:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f482.png" height="20" width="20"></p>
+
+<p>In my <a href="https://becheler.github.io/softwares/quetzal-CoalTL/home/">Quetzal library</a>
+where I try to gather reusable components for population genetics,
+I had to tackle similar problems to save genealogies simulated under different
+scenarios- and I was not too happy with the solution I had written at the time:
+it required to duplicate the code for every new use case! <img class="emoji" title=":disappointed:" alt=":disappointed:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png" height="20" width="20"></p>
+
+<p>So for this new project, rather than quadruplicating the code, I decided it was
+time to do things well and come up with a unique, truly generic, reusable Newick formatter,
+and share it with the community <img class="emoji" title=":muscle:" alt=":muscle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png" height="20" width="20"> Sharing is caring <img class="emoji" title=":kissing_heart:" alt=":kissing_heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f618.png" height="20" width="20"></p>
+
+<p>And also, because it’s a learning process that deserves to be shared, I thought it
+could be a cool opportunity to show what software design rules guided my coding decisions <img class="emoji" title=":books:" alt=":books:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png" height="20" width="20"></p>
+
+<p>In this post, you will learn about:</p>
+
+<ul>
+  <li>the Newick format and its variants</li>
+  <li>the cost of not having a standard modern C++ library solution for population genetics</li>
+  <li>basic design concepts I found useful to achieve my goals</li>
+  <li>how test-driven development helped me enforcing modular design</li>
+  <li>how to use our new Newick tree formatter! <img class="emoji" title=":hugs:" alt=":hugs:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f917.png" height="20" width="20">
+</li>
+</ul>
+
+<hr>
+
+<blockquote>
+  <p>I know your time is precious! <img class="emoji" title=":hourglass_flowing_sand:" alt=":hourglass_flowing_sand:" src="https://github.githubassets.com/images/icons/emoji/unicode/23f3.png" height="20" width="20"></p>
+  <ul>
+    <li>If you are just looking for the code, you can find it <a href="https://godbolt.org/z/6fbT93eTT">on Compiler Explorer!</a>.</li>
+    <li>I will surely update the code in the future, check for updates in my
+ <a href="https://github.com/Becheler/quetzal-CoaTL">Quetzal library</a>.</li>
+    <li>If you find a bug <img class="emoji" title=":bug:" alt=":bug:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png" height="20" width="20">, have a suggestion, or would like a new feature <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20">, ask in the comment section <img class="emoji" title=":point_down:" alt=":point_down:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f447.png" height="20" width="20">
+</li>
+  </ul>
+</blockquote>
+
+<hr>
+
+<ul id="markdown-toc">
+  <li><a href="#the-current-situation" id="markdown-toc-the-current-situation">The current situation</a></li>
+  <li><a href="#the-problem" id="markdown-toc-the-problem">The problem</a></li>
+  <li>
+<a href="#the-costs-and-risks-of-recoding" id="markdown-toc-the-costs-and-risks-of-recoding">The costs and risks of recoding</a>    <ul>
+      <li><a href="#time-is-money-researchers-have-none" id="markdown-toc-time-is-money-researchers-have-none">Time is money, researchers have none.</a></li>
+      <li><a href="#high-chance-to-introduce-new-bugs" id="markdown-toc-high-chance-to-introduce-new-bugs">High chance to introduce new bugs</a></li>
+      <li><a href="#small-bug-can-have-real-world-impacts" id="markdown-toc-small-bug-can-have-real-world-impacts">Small bug can have real-world impacts</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#it-is-actually-a-design-problem" id="markdown-toc-it-is-actually-a-design-problem">It is actually a design problem</a>    <ul>
+      <li><a href="#the-ebb-and-flaws-of-untestable-research-softwares" id="markdown-toc-the-ebb-and-flaws-of-untestable-research-softwares">The ebb and flaws of untestable research softwares</a></li>
+      <li><a href="#why-you-should-get-familiar-with-software-design-culture" id="markdown-toc-why-you-should-get-familiar-with-software-design-culture">Why you should get familiar with software design culture</a></li>
+      <li><a href="#acknowledge-that-there-is-a-cultural-problem-too" id="markdown-toc-acknowledge-that-there-is-a-cultural-problem-too">Acknowledge that there is a cultural problem too</a></li>
+      <li><a href="#learn-to-recognize-the-smell-of-poor-design" id="markdown-toc-learn-to-recognize-the-smell-of-poor-design">Learn to recognize the smell of poor design…</a></li>
+      <li><a href="#instead-maybe-try-" id="markdown-toc-instead-maybe-try-">Instead, maybe try …</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#diving-into-coding" id="markdown-toc-diving-into-coding">Diving into coding</a>    <ul>
+      <li><a href="#what-we-are-aiming-at-dart" id="markdown-toc-what-we-are-aiming-at-dart">What we are aiming at <img class="emoji" title=":dart:" alt=":dart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" height="20" width="20"></a></li>
+      <li>
+<a href="#lets-code" id="markdown-toc-lets-code">Let’s code!</a>        <ul>
+          <li><a href="#the-node-class" id="markdown-toc-the-node-class">The Node class</a></li>
+          <li><a href="#the-depth-first-search-algorithm" id="markdown-toc-the-depth-first-search-algorithm">The Depth-First Search Algorithm</a></li>
+          <li><a href="#building-a-test-topology" id="markdown-toc-building-a-test-topology">Building a test topology</a></li>
+          <li><a href="#testing-the-formatter-with-the-simplest-case" id="markdown-toc-testing-the-formatter-with-the-simplest-case">Testing the formatter with the simplest case</a></li>
+          <li><a href="#non-trivial-data-acquisition-and-formatting" id="markdown-toc-non-trivial-data-acquisition-and-formatting">Non-trivial data acquisition and formatting</a></li>
+          <li><a href="#even-further-customizations-policy-classes" id="markdown-toc-even-further-customizations-policy-classes">Even further customizations: policy classes!</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-current-situation">The current situation</h2>
+
+<p>If you have been coding for population genetics, I guess you are familiar with the
+<a href="https://evolution.genetics.washington.edu/phylip/newicktree.html">Newick format</a>
+to describe trees using nested parentheses. If a parent node <em>A</em> has to children <em>B</em>
+and <em>C</em>, then its (non-unique) Newick formula is <code class="language-plaintext highlighter-rouge">(B,C)A;</code>. Easy. The format
+comes with a number of variants:</p>
+<ul>
+  <li>with branch length annoted: <code class="language-plaintext highlighter-rouge">(B;20,C:10)A;</code>
+</li>
+  <li>with anonymous nodes <code class="language-plaintext highlighter-rouge">(,);</code>
+</li>
+  <li>with root branch length specified: <code class="language-plaintext highlighter-rouge">(B:20,C:10)A:0.0;</code>
+</li>
+  <li>and other variants (PAUP, TreeAlign, PHYLIP …) like <code class="language-plaintext highlighter-rouge">(B:20,C:10)A[with a [nested comment]]:0.0;</code>
+</li>
+</ul>
+
+<h2 id="the-problem">The problem</h2>
+
+<p>Here is the catch: there is <strong>no</strong> modern C++, generic, reusable, tested implementation available, even if:</p>
+
+<ul>
+  <li>this format has been around since <strong>1986</strong> (<em>before I was even born!</em> :<img class="emoji" title=":neckbeard:" alt=":neckbeard:" src="https://github.githubassets.com/images/icons/emoji/neckbeard.png" height="20" width="20">:)</li>
+  <li>it is the most readable format (although not the most efficient)</li>
+  <li>is widely popular among researchers in phylogenetics</li>
+  <li>it is widely used in research programs</li>
+</ul>
+
+<h2 id="the-costs-and-risks-of-recoding">The costs and risks of recoding</h2>
+
+<p>Not having a standard tool to perform a standard task comes with a number of costs and risks,
+that tend to be associated to <em>rather strong feelings</em> towards <strong>ourself</strong> … and our unfortunate compilers friends.</p>
+
+<p><img src="/assets/img/doodles/unworthy.jpg#center" alt="Unworthy!"></p>
+<p align="center" style="color:grey"> <i> Through your arrogance and stupidity, you've opened these peaceful realms<br> and innocent lives to the horror and desolation of war! You are unworthy of these realms,<br> you're unworthy of your title, you're unworthy... of the loved ones you have betrayed! </i></p>
+
+<h3 id="time-is-money-researchers-have-none">Time is money, researchers have none.</h3>
+
+<p>If you want to save or load trees in the newick format, you would have to recode</p>
+<ol>
+  <li>the node data access logic <em>(how do you access data in your Tree class)</em>
+</li>
+  <li>the recursion logic <em>(how you traverse your tree from the root to the tips)</em>
+</li>
+  <li>the formatting logic <em>(the grammar - what is the correspondence between the tree topology and the Newick string characters)</em>
+</li>
+</ol>
+
+<p>In short: You. Have. To. Freaking. <strong>Recode. Everything</strong> <img class="emoji" title=":weary:" alt=":weary:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f629.png" height="20" width="20"> Probably like a
+gazillion of C++/bio researchers before you <img class="emoji" title=":grimacing:" alt=":grimacing:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f62c.png" height="20" width="20"></p>
+
+<p>Well. That’s <em>really bad</em>. At the scale of our academic community, it is a lot
+of cumulated time that has been lost in reinventing the wheel. And time is money.</p>
+
+<h3 id="high-chance-to-introduce-new-bugs">High chance to introduce new bugs</h3>
+
+<p>You may think <em>it’s okaaay, it’s easy to recode anyway</em> <img class="emoji" title=":angel:" alt=":angel:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f47c.png" height="20" width="20"></p>
+
+<p>And you would be right! You can surely find a way to dump a bunch of
+nested parenthesis, letters and number in a stream! <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+
+<p><img class="emoji" title=":ambulance:" alt=":ambulance:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f691.png" height="20" width="20"> But have you though about everything that can (and will!)
+go wrong?</p>
+<ul>
+  <li>Unbalanced parentheses</li>
+  <li>Unbalanced comment brackets</li>
+  <li>Conflicts between format flavors (some flavors allow nested comments, other not)</li>
+  <li>Floating number precision</li>
+  <li>Labels containing forbidden characters like <code class="language-plaintext highlighter-rouge">)</code>,<code class="language-plaintext highlighter-rouge">]</code>, <code class="language-plaintext highlighter-rouge">,</code> …</li>
+</ul>
+
+<p><a href="https://scholarworks.alaska.edu/handle/11122/10178">A recent work</a> showed that out
+of 4 popular genetic simulators only one performed correctly, the 3 others had
+statistical errors in their simulated distributions. Nobody knows where the
+bugs are. All programs happen to read, write and manipulate trees <img class="emoji" title=":thinking:" alt=":thinking:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png" height="20" width="20"> Suspiciouuus. Could the
+bug be hidden in their tree formatting code? <img class="emoji" title=":detective:" alt=":detective:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f575.png" height="20" width="20"> That will be difficult
+to test and tell if the formatter code is embedded within the rest of the software
+and can not be tested in isolation! <img class="emoji" title=":boom:" alt=":boom:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png" height="20" width="20"></p>
+
+<p>Still thinking we don’t need a standard, generic, thoroughly tested implementation? <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+
+<h3 id="small-bug-can-have-real-world-impacts">Small bug can have real-world impacts</h3>
+
+<p>Our programs don’t exist in a cloud <img class="emoji" title=":nerd_face:" alt=":nerd_face:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f913.png" height="20" width="20"> <img class="emoji" title=":unamused:" alt=":unamused:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f612.png" height="20" width="20"></p>
+
+<p>Science projects have real-world applications and any errors that goes around the
+code comes around <em>at some point</em>. Programs that use Newick format tend to care about the formation and delimitation of species, and their conclusions can inform the status of <strong>endangered species</strong>, <strong>provide guidelines to decision-makers</strong> and help decide on how to <strong>use taxpayer’s money</strong>.</p>
+
+<p>You better get it right and bug-free if you want to save the arctic <img class="emoji" title=":penguin:" alt=":penguin:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f427.png" height="20" width="20"> Yes,
+I just made a joke about climate change <img class="emoji" title=":no_mouth:" alt=":no_mouth:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f636.png" height="20" width="20"></p>
+
+<h2 id="it-is-actually-a-design-problem">It is actually a design problem</h2>
+
+<p><img src="/assets/img/doodles/solved_issues.png" alt="Buggy bloody battlefield!"></p>
+
+<h4 id="the-ebb-and-flaws-of-untestable-research-softwares">The ebb and flaws of untestable research softwares</h4>
+
+<p><img class="emoji" title=":children_crossing:" alt=":children_crossing:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6b8.png" height="20" width="20"> To be fair it’s okay if you get bugs because of a messy design:
+everybody knows our programs often look like a bloody battlefield where programmatic catapults, antique trebuchets
+and futuristic ovnis join the battle against the Cloud of Unknowing.</p>
+
+<p>Science is amazing <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20"></p>
+
+<blockquote>
+  <p>What is not ok is that you had to recode this feature by lack of a community standard.</p>
+</blockquote>
+
+<p>Modular design - that is, the art of programming truly independent and testable entities -
+is a complex matter, and its cost should be shared across academic communities.
+Here I show a way out.</p>
+
+<h4 id="why-you-should-get-familiar-with-software-design-culture">Why you should get familiar with software design culture</h4>
+
+<p>Sources of error in a hand-coded Newick formatter will surely get
+compounded with bugs from other classes that exist <em>a bit too close</em> from the
+formatter’s code. Learning how to disentangle this blob will require at least
+some familiarity with design concepts.</p>
+
+<p>If you are not into modern C++ or software design,
+(what I can understand <img class="emoji" title=":face_with_head_bandage:" alt=":face_with_head_bandage:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f915.png" height="20" width="20">),
+then you may not have heard of the
+<a href="/make-code-surgery-easy-with-SRP/">Single Responsibility Principle</a>
+or you may underestimate the importance of a strong
+<a href="https://en.wikipedia.org/wiki/Separation_of_concerns">separation of concerns</a> in a software.
+They are <strong>essential</strong> to moving to the next stage of computational biology!</p>
+
+<p>So take your time, read about the <a href="/how-to-write-solid-code/">Five SOLID principles</a>,
+read the papers of <a href="http://principles-wiki.net/collections:robert_c._martin_s_principle_collection">Robert C. Martin, or “Uncle Bob”</a>, and know how to recognize, name, and fix bad
+smells in your code: <a href="https://medium.com/@trionamoynihan/solid-design-principles-eec367b2b8">rigidity, fragility, viscosity, and immobility</a>.</p>
+
+<h4 id="acknowledge-that-there-is-a-cultural-problem-too">Acknowledge that there is a cultural problem too</h4>
+
+<p>The unfair truth is that I really don’t think it’s the fault of the programmer
+(usually an over-worked, stressed and underpaid PhD student <img class="emoji" title=":tired_face:" alt=":tired_face:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f62b.png" height="20" width="20">) if there is a
+bug in the matrix: our <strong>entire community</strong> has been unable to generate the
+reusable code solutions the programmer could have used.</p>
+
+<blockquote>
+  <p><em>When most of our C/C++
+programs do very similar things, isn’t it intriguing that we don’t we have shared, reusable
+libraries yet?</em></p>
+</blockquote>
+
+<p>Why is this? From my perspective, it’s because these reusable solutions generally
+rely on higher degrees of abstraction, and researchers tend to be uncomfortable
+around such code as:</p>
+
+<ul>
+  <li>it requires some knowledge of modern (post-C++11) C++ <em>(smart pointers, templates)</em>
+</li>
+  <li>learning modern C++ takes time <em>(steep learning curve)</em>
+</li>
+  <li>code abstractions are sadly perceived as far off the biological case at
+hand <em>(eg, the species <img class="emoji" title=":penguin:" alt=":penguin:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f427.png" height="20" width="20">)</em> and as such deemed undesirable.</li>
+</ul>
+
+<p>You see the vicious circle?</p>
+
+<ol>
+  <li>We use the biological argument (<em>we need to focus on the biological reality</em>)</li>
+  <li>to dismiss a common engineering solution (<em>we need reusable and testable code absractions</em>)</li>
+  <li>to a well-known problem (<em>we have too many buggy duplicated untested codebases</em>)</li>
+  <li>but doing so we actually reinforce the biological crisis (<em>buggy code can’t help endangered species</em>) that we used as an excuse (<em>back to 1</em>).</li>
+</ol>
+
+<p>So, how do we short-circuit this circular problem? With modern C++ design, of course <img class="emoji" title=":smiling_imp:" alt=":smiling_imp:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f608.png" height="20" width="20"></p>
+
+<h4 id="learn-to-recognize-the-smell-of-poor-design">Learn to recognize the smell of poor design…</h4>
+
+<p>Counter-intuitively, a lack of abstraction has rather concrete ways to manifest itself into the code:</p>
+
+<ul>
+  <li>Raw pointers haunting the interfaces (e.g. a function signature close to <code class="language-plaintext highlighter-rouge">*Node my_function(Node&amp; n)</code>)</li>
+  <li>Access to member functions or variables classes (e.g. <code class="language-plaintext highlighter-rouge">node-&gt;left</code>) <em>from inside</em> the Newick grammar logic</li>
+  <li>And <em>proooobably</em> a debugging phase involving lots of segmentation faults (<code class="language-plaintext highlighter-rouge">core dumped</code>) if you are lucky …</li>
+  <li>… or invisible errors if you’re unlucky <img class="emoji" title=":poop:" alt=":poop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a9.png" height="20" width="20">
+</li>
+  <li>And to make the debugging worse, the surest sign of a lack of design is that
+since the code is now a big blob of pointers and friend classes, there is no identifiable component
+to isolate in a test unit <img class="emoji" title=":see_no_evil:" alt=":see_no_evil:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f648.png" height="20" width="20">
+</li>
+</ul>
+
+<p>Sounds familiar? <img class="emoji" title=":rofl:" alt=":rofl:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f923.png" height="20" width="20"> We’ve all been there <img class="emoji" title=":hugs:" alt=":hugs:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f917.png" height="20" width="20"></p>
+
+<h4 id="instead-maybe-try-">Instead, maybe try …</h4>
+
+<p>The solution is going the other way around:</p>
+
+<ul>
+  <li>Begin with writing the unit tests: they should only test the Newick formatter.</li>
+  <li>It means that the formatter <strong>can not</strong> include or interact with your real <code class="language-plaintext highlighter-rouge">Node</code> class:
+<strong>instead</strong>, define a minimalist class in the unit test.</li>
+  <li>It means that the formatter code that you will have to write will <strong>necessary</strong>
+be more abstract than what you are used to, and you may feel a bit lost or not
+know where to go: don’t flinch here!</li>
+  <li>Use online communities like Stack-overflow
+(or <a href="https://www.developpez.net/forums/f19/c-cpp/cpp/">developpez.net</a> if you’re
+a french-speaker) to present your test code and share what you want to achieve.</li>
+  <li>Thanks to these communities I could have feedback from seasoned experts who in real life were
+members of the C++ standardization committee, famous authors, or developers of some of the most
+important tools we have out-there. Trust their feedback!</li>
+</ul>
+
+<h2 id="diving-into-coding">Diving into coding</h2>
+
+<p><img src="/assets/img/doodles/diving_into_coding.jpg" alt="Diving into coding"></p>
+
+<h3 id="what-we-are-aiming-at-dart">What we are aiming at <img class="emoji" title=":dart:" alt=":dart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" height="20" width="20">
+</h3>
+
+<p>When I have a new feature to implement, I look online to see if some code already exists
+so I don’t reinvent the wheel. However, my ability to find and reuse such feature
+depends heavily on <em>how</em> it was initially coded. What I’m looking for is a carefully
+crafted, self-contained algorithm (or a class) that embeds its essential responsibilities
+but abstracts all non-essential aspects of the problem.</p>
+
+<p>If you want more details about the why, check <a href="/make-code-surgery-easy-with-SRP/">my article on the Single Resonsability Principle</a>.</p>
+
+<p>In a few words, I’m looking for a code with a <strong>satisfying level of abstraction</strong>
+that allows me to simply copy-paste the code and inject my own context-specific
+details into it without modification.</p>
+
+<blockquote>
+  <p>The <a href="https://en.cppreference.com/w/cpp">C++ Standard Template Library</a> is a
+brilliant example of such components: whatever I’m doing when I’m using STL containers like a <code class="language-plaintext highlighter-rouge">std::vector</code> or
+a <code class="language-plaintext highlighter-rouge">std::map</code> to store my objects or a STL algorithm like <code class="language-plaintext highlighter-rouge">std::accumulate</code> to sum the element
+of an iterable, I never, <em>never</em>, <strong>never</strong> had to modify the STL source code.
+Absolutely reusable containers, algorithms, iterators and functors: this is
+absolute genius! <img class="emoji" title=":nerd_face:" alt=":nerd_face:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f913.png" height="20" width="20"></p>
+
+  <p>That’s why the STL is now kinda synonym with modern C++: why would you code
+without this incredible resource?</p>
+
+  <p>It’s <strong>light</strong>, <strong>efficient</strong>, <strong>flexible</strong>, <strong>extensible</strong>, <strong>reusable</strong>, <strong>testable</strong>…</p>
+</blockquote>
+
+<p><img class="emoji" title=":dart:" alt=":dart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" height="20" width="20"> I’m looking for <strong>this</strong> kind of standard population genetics algorithms!
+<strong>The gold standard of research software engineering.</strong></p>
+
+<p>Let’s try to go there together! <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20"></p>
+
+<h3 id="lets-code">Let’s code!</h3>
+
+<p>As I was saying, I want the test to be minimal:</p>
+
+<ol>
+  <li>Create a dumb topology with a (poorely designed) Node class</li>
+  <li>Configure the formatter to be able to access this class interface</li>
+  <li>Expose the formatter interface to the depth first search algorithm</li>
+  <li>Compute and retrieve the formula.</li>
+</ol>
+
+<h4 id="the-node-class">The Node class</h4>
+
+<p>Let’s consider a very  basic node class, with a data field, a reference to the parent
+node (for backtracking) and two references on children nodes (implicit assumption of a binary tree).</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Simplistic tree for testing</span>
+<span class="k">struct</span> <span class="nc">Node</span>
+<span class="p">{</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">parent</span><span class="p">;</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">left</span><span class="p">;</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">right</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">data</span><span class="p">;</span>
+
+  <span class="c1">// the DFS algorithm</span>
+
+<span class="p">};</span> <span class="c1">// end of class Node</span>
+</code></pre></div></div>
+
+<p><img class="emoji" title=":no_entry:" alt=":no_entry:" src="https://github.githubassets.com/images/icons/emoji/unicode/26d4.png" height="20" width="20"> Please do NOT reuse this class in real-world projects! It’s intentionally
+close to commonly found implementations, but it’s <strong>not</strong> a good design! For example,
+you should avoid as much as possible raw pointers: they lack the syntax of <a href="https://stackoverflow.com/questions/49024982/what-is-ownership-of-resources-or-pointers">ownership</a> (<em>that is, the responsibility for cleanup</em>).
+Instead, use <a href="https://en.cppreference.com/w/cpp/memory/unique_ptr">smart pointers</a>, they are so much safer!</p>
+
+<p><img class="emoji" title=":biohazard:" alt=":biohazard:" src="https://github.githubassets.com/images/icons/emoji/unicode/2623.png" height="20" width="20"> That being said, using raw pointers here serves the illustration by
+offering a syntax the readers are familiar with, and show that it is actually possible
+to contain the flood of pointers behind a strong-enough interface - and avoid them to contaminate the code further!</p>
+
+<h4 id="the-depth-first-search-algorithm">The Depth-First Search Algorithm</h4>
+
+<p>The reason to implement the DFS <em>outside</em> of the Newick Formatter is that with the current
+standard of the language (C++20) it is not possible to offer a DFS that will work
+for any client class:</p>
+<ul>
+  <li>some programmer may store children of a parent <code class="language-plaintext highlighter-rouge">Node</code> in an iterable collection (like <code class="language-plaintext highlighter-rouge">std::vector&lt;Node&gt;</code>)</li>
+  <li>others may implement instead two data members to store the kiddos (<code class="language-plaintext highlighter-rouge">this-&gt;left</code> and <code class="language-plaintext highlighter-rouge">this-&gt;right</code>)</li>
+  <li>since C++ lacks <a href="https://stackoverflow.com/questions/359237/why-does-c-not-have-reflection">reflection</a>,
+it is impossible to have iterators on the members of a class, and so it’s impossible
+to have a consistent syntax for both cases.</li>
+  <li>At the end, it is simply not the responsibility of the Formatter to chose what syntax should work for
+iterating on the children of a node (<a href="/make-code-surgery-easy-with-SRP/">Single Responsibility Principle</a>), and so this syntax should
+be exported outside of the Formatter class (<a href="https://deviq.com/principles/dependency-inversion-principle">Dependency Inversion Principle</a>).</li>
+</ul>
+
+<p>In clear, we will build a formatter to be able to access the member data of our <code class="language-plaintext highlighter-rouge">Node</code>
+class, and then we will expose the formatting operations through 3 functors (callable objects):</p>
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">post-order()</code>,</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">pre-order()</code>,</li>
+  <li><code class="language-plaintext highlighter-rouge">in-order()</code></li>
+</ul>
+
+<p>and pass these functors to our DFS who <em>knows exactly</em> when it is supposed to call them when
+iterating on a node’s children.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">Node</span>
+<span class="p">{</span>
+  <span class="c1">// ...</span>
+
+  <span class="c1">// The DFS with 3 generic callable parameters</span>
+  <span class="k">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">Op1</span><span class="p">,</span> <span class="k">class</span> <span class="nc">Op2</span><span class="p">,</span> <span class="k">class</span> <span class="nc">Op3</span><span class="p">&gt;</span>
+  <span class="kt">void</span> <span class="n">depth_first_search</span><span class="p">(</span><span class="n">Op1</span> <span class="n">pre_order</span><span class="p">,</span> <span class="n">Op2</span> <span class="n">in_order</span><span class="p">,</span> <span class="n">Op3</span> <span class="n">post_order</span><span class="p">){</span>
+    <span class="n">pre_order</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">!=</span> <span class="nb">nullptr</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">this</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">-&gt;</span><span class="n">depth_first_search</span><span class="p">(</span><span class="n">pre_order</span><span class="p">,</span> <span class="n">in_order</span><span class="p">,</span> <span class="n">post_order</span><span class="p">);</span>
+      <span class="n">in_order</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+      <span class="k">this</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">-&gt;</span><span class="n">depth_first_search</span><span class="p">(</span><span class="n">pre_order</span><span class="p">,</span> <span class="n">in_order</span><span class="p">,</span> <span class="n">post_order</span><span class="p">);</span>
+      <span class="n">in_order</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">post_order</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="p">;</span>
+</code></pre></div></div>
+
+<h4 id="building-a-test-topology">Building a test topology</h4>
+
+<p>Since we have our dummy class, we can build a dummy topology to play with:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+
+  <span class="cm">/* Build the topology :
+  *             a
+  *           /  \
+  *          /    c
+  *         /    / \
+  *        b    d   e
+   */</span>
+
+   <span class="n">Node</span> <span class="n">root</span><span class="p">;</span> <span class="n">root</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+   <span class="n">Node</span> <span class="n">b</span><span class="p">;</span> <span class="n">b</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="sc">'b'</span><span class="p">;</span>
+   <span class="n">Node</span> <span class="n">c</span><span class="p">;</span> <span class="n">c</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="sc">'c'</span><span class="p">;</span>
+   <span class="n">Node</span> <span class="n">d</span><span class="p">;</span> <span class="n">d</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="sc">'d'</span><span class="p">;</span>
+   <span class="n">Node</span> <span class="n">e</span><span class="p">;</span> <span class="n">e</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="sc">'e'</span><span class="p">;</span>
+
+   <span class="n">root</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">b</span> <span class="p">;</span> <span class="n">b</span><span class="p">.</span><span class="n">parent</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">root</span><span class="p">;</span>
+   <span class="n">root</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">;</span> <span class="n">c</span><span class="p">.</span><span class="n">parent</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">root</span><span class="p">;</span>
+   <span class="n">c</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">d</span> <span class="p">;</span> <span class="n">d</span><span class="p">.</span><span class="n">parent</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">;</span>
+   <span class="n">c</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">e</span><span class="p">;</span> <span class="n">e</span><span class="p">.</span><span class="n">parent</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">;</span>
+
+   <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="testing-the-formatter-with-the-simplest-case">Testing the formatter with the simplest case</h4>
+
+<p>Our formatter’s logic just needs 4 informations:</p>
+
+<ul>
+  <li>check if a node has a parent</li>
+  <li>check if a node has children</li>
+  <li>what label to print for a given node</li>
+  <li>what number to print as the branch length for a given node</li>
+</ul>
+
+<blockquote>
+  <p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> We use C++20 <a href="https://en.cppreference.com/w/cpp/language/constraints">concepts!</a></p>
+
+  <p>This feature allows to test at compile-time if a type fulfills the requirements we expect them to fulfill.
+For example:</p>
+  <ul>
+    <li>To enforce the signature of a function evaluating a <code class="language-plaintext highlighter-rouge">Node</code> and returning a boolean, we can use a <code class="language-plaintext highlighter-rouge">std::predicate&lt;Node&gt;</code>.</li>
+    <li>To enforce the signature of a function evaluating a <code class="language-plaintext highlighter-rouge">Node</code> and returning a type convertible to <code class="language-plaintext highlighter-rouge">std::string</code>, we
+defined the <code class="language-plaintext highlighter-rouge">Formattable&lt;Node&gt;</code> concept.</li>
+  </ul>
+</blockquote>
+
+<p>At this point, all non-formatting operations are defined out of the formatter class,
+what makes it truly reusable:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// in main ...</span>
+
+  <span class="c1">// These functors interface the formatter with arbitrary user tree types</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">predicate</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="k">auto</span> <span class="n">has_parent</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">n</span><span class="p">){</span><span class="k">return</span> <span class="n">n</span><span class="p">.</span><span class="n">parent</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">;};</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">predicate</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="k">auto</span> <span class="n">has_children</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">n</span><span class="p">){</span><span class="k">return</span> <span class="n">n</span><span class="p">.</span><span class="n">left</span> <span class="o">!=</span> <span class="nb">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">n</span><span class="p">.</span><span class="n">right</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">;};</span>
+
+  <span class="c1">// These functors are the simplest case of formatting and will just print the topology</span>
+  <span class="n">newick</span><span class="o">::</span><span class="n">Formattable</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="k">auto</span> <span class="n">no_label</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">n</span> <span class="p">){</span><span class="k">return</span> <span class="s">""</span><span class="p">;};</span>
+  <span class="n">newick</span><span class="o">::</span><span class="n">Formattable</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="k">auto</span> <span class="n">no_branch_length</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">n</span><span class="p">){</span><span class="k">return</span> <span class="s">""</span><span class="p">;};</span>
+
+  <span class="c1">// Configure the formatter</span>
+  <span class="k">auto</span> <span class="n">fmt</span> <span class="o">=</span> <span class="n">make_formatter</span><span class="p">(</span><span class="n">has_parent</span><span class="p">,</span> <span class="n">has_children</span><span class="p">,</span> <span class="n">no_label</span><span class="p">,</span> <span class="n">no_branch_length</span><span class="p">);</span>
+  <span class="c1">// Expose its interface to the arbitrary class-specific DFS algorithm</span>
+  <span class="n">root</span><span class="p">.</span><span class="n">depth_first_search</span><span class="p">(</span><span class="n">fmt</span><span class="p">.</span><span class="n">pre_order</span><span class="p">(),</span> <span class="n">fmt</span><span class="p">.</span><span class="n">in_order</span><span class="p">(),</span> <span class="n">fmt</span><span class="p">.</span><span class="n">post_order</span><span class="p">());</span>
+
+  <span class="c1">// Retrieving the resulting string</span>
+  <span class="n">assert</span><span class="p">(</span><span class="n">fmt</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>  <span class="o">==</span> <span class="s">"(,(,));"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="non-trivial-data-acquisition-and-formatting">Non-trivial data acquisition and formatting</h4>
+
+<p>At this point you may consider actually printing useful information <img class="emoji" title=":rofl:" alt=":rofl:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f923.png" height="20" width="20"></p>
+
+<p>Good news: you can actually define the formatter labels <strong>as you see fit</strong>. As long as they take
+a <code class="language-plaintext highlighter-rouge">Node</code> as a argument and return something convertible to a <code class="language-plaintext highlighter-rouge">std::string</code>, it’s <em>fiiine</em>! <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
+
+<p>So here I emulated what generally happens in a real population genetics simulator:
+you simulated quantities and branch lengths under an arbitrarily complex random distribution,
+and now you want to visualize it.</p>
+
+<p>Well, you can do that too with our new Formatter:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1">// Get a seed for the random number engine</span>
+<span class="n">std</span><span class="o">::</span><span class="n">random_device</span> <span class="n">rd</span><span class="p">;</span>
+<span class="c1">// Standard mersenne_twister_engine seeded with rd()</span>
+<span class="n">std</span><span class="o">::</span><span class="n">mt19937</span> <span class="nf">gen</span><span class="p">(</span><span class="n">rd</span><span class="p">());</span>
+<span class="c1">// Arbitrary branch length distribution</span>
+<span class="n">std</span><span class="o">::</span><span class="n">uniform_real_distribution</span><span class="o">&lt;&gt;</span> <span class="n">dis</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">);</span>
+<span class="c1">// Random data generator, capturing the RNG and the distribution</span>
+<span class="n">newick</span><span class="o">::</span><span class="n">Formattable</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span>
+<span class="k">auto</span> <span class="n">branch_length</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="n">gen</span><span class="p">,</span><span class="o">&amp;</span><span class="n">dis</span><span class="p">](</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">n</span><span class="p">){</span><span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">dis</span><span class="p">(</span><span class="n">gen</span><span class="p">));};</span>
+<span class="c1">// More sophisticated label formatting</span>
+<span class="n">newick</span><span class="o">::</span><span class="n">Formattable</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span>
+<span class="k">auto</span> <span class="n">label</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">n</span> <span class="p">){</span><span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">.</span><span class="n">data</span><span class="p">)</span> <span class="o">+</span> <span class="s">"[my[comment]]"</span><span class="p">;};</span>
+<span class="c1">// Configure the formatter</span>
+<span class="k">auto</span> <span class="n">fmt</span> <span class="o">=</span> <span class="n">make_formatter</span><span class="p">(</span><span class="n">has_parent</span><span class="p">,</span> <span class="n">has_children</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">branch_length</span><span class="p">);</span>
+<span class="c1">// Expose it to the DFS</span>
+<span class="n">root</span><span class="p">.</span><span class="n">depth_first_search</span><span class="p">(</span><span class="n">fmt</span><span class="p">.</span><span class="n">pre_order</span><span class="p">(),</span> <span class="n">fmt</span><span class="p">.</span><span class="n">in_order</span><span class="p">(),</span> <span class="n">fmt</span><span class="p">.</span><span class="n">post_order</span><span class="p">());</span>
+<span class="c1">// Retrieve the Newick formula</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">fmt</span><span class="p">.</span><span class="n">get</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+<p>And as an output you obtain:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(b[my[comment]]:1.733647,(d[my[comment]]:1.572409,e[my[comment]]:0.929093)c[my[comment]]:1.475975)a[my[comment]];
+</code></pre></div></div>
+<p>Isn’t life beautiful? <img class="emoji" title=":hugs:" alt=":hugs:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f917.png" height="20" width="20"></p>
+
+<h4 id="even-further-customizations-policy-classes">Even further customizations: policy classes!</h4>
+
+<p>As we saw in the introduction, Newick format has a number of variants, as every
+program using it comes with its own assumptions on the format validity. For example,
+the <code class="language-plaintext highlighter-rouge">TreeAlign</code> program does not allow nested comments, and requires that the root
+branch is set to 0.0.</p>
+
+<p>How to allow users of our class to:</p>
+<ol>
+  <li>specify what specific format to use</li>
+  <li>while allowing the community to extend the Formatter behavior towards new variants</li>
+  <li>without having them to recode the entire formatter?</li>
+</ol>
+
+<p><img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20"> It’s exactly what <a href="https://en.wikipedia.org/wiki/Modern_C%2B%2B_Design">policy-based design</a>
+is for!</p>
+
+<blockquote>
+  <p>A <strong>policy class</strong> is a class that specify/isolates a set of behaviors that are orthogonal to the rest
+of the program.</p>
+</blockquote>
+
+<p><img class="emoji" title=":seedling:" alt=":seedling:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f331.png" height="20" width="20"> Is it a bit abstract? Let’s get a more concrete example: a <code class="language-plaintext highlighter-rouge">TreeAlign</code>
+policy does not require to redefine the entire behavior of the Formatter:
+rather, you just need to <em>somehow</em> tell the basic formatter that it may have to treat
+comments a bit differently, and that it may have to use a different way to treat a branch length when
+it finds a root node.</p>
+
+<p>The way to do that in the C++ implementation would be to write
+a dedicated <code class="language-plaintext highlighter-rouge">TreeAlign</code> structure which only responsibility is to encapsulate these behaviors (SRP):</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">///</span>
+<span class="c1">/// @brief Set a root node branch length to zero. Remove all nested comments.</span>
+<span class="c1">///</span>
+<span class="k">struct</span> <span class="nc">TreeAlign</span>
+<span class="p">{</span>
+  <span class="c1">// Set explicit null branch length for root node</span>
+  <span class="k">static</span> <span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">root_branch_length</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">":0.0"</span><span class="p">;}</span>
+
+  <span class="c1">// Remove comments that are nested, keep comments of depth 1</span>
+  <span class="k">static</span> <span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">treat_comments</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">return</span> <span class="n">remove_comments_of_depth</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;::</span><span class="n">edit</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>The Formatter, when it’s called with the <code class="language-plaintext highlighter-rouge">TreeAlign</code> policy, will ask the structue
+to give it access to the right function
+at the right moment. For example, inside the Formatter class in the post-order
+operation code, you will find something along these lines:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="n">node</span><span class="p">.</span><span class="n">has_parent</span><span class="p">())</span>
+<span class="p">{</span>
+  <span class="n">formula</span> <span class="o">+=</span> <span class="n">get_label</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+  <span class="c1">// returns "0.0" if policy_type = TreeAlign, or "" if a different type is used!</span>
+  <span class="n">formula</span> <span class="o">+=</span> <span class="n">policy_type</span><span class="o">::</span><span class="n">root_branch_length</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The magic of policy-based design is that these decisions are actually formed
+<strong>at compile-time!!!</strong> So you’re not trading flexibiity for efficiency: you are
+actually getting <strong>both</strong>! <img class="emoji" title=":moneybag:" alt=":moneybag:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png" height="20" width="20"></p>
+
+<p>Even better, as a user of our Formatter class, you don’t need to care about any of the above,
+you just need to pass the right policy to the formatter builder <img class="emoji" title=":moneybag:" alt=":moneybag:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png" height="20" width="20"><img class="emoji" title=":moneybag:" alt=":moneybag:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png" height="20" width="20"></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Writes a root node branch length with a value of 0.0 and disable nested comments</span>
+<span class="k">using</span> <span class="n">flavor</span> <span class="o">=</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">format</span><span class="o">::</span><span class="n">newick</span><span class="o">::</span><span class="n">TreeAlign</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">newick</span><span class="o">::</span><span class="n">make_formatter</span><span class="p">;</span>
+
+<span class="k">auto</span> <span class="n">fmt</span> <span class="o">=</span> <span class="n">make_formatter</span><span class="p">(</span><span class="n">has_parent</span><span class="p">,</span> <span class="n">has_children</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">branch_length</span><span class="p">,</span> <span class="n">flavor</span><span class="p">());</span>
+
+<span class="n">a</span><span class="p">.</span><span class="n">depth_first_search</span><span class="p">(</span><span class="n">fmt</span><span class="p">.</span><span class="n">pre_order</span><span class="p">(),</span> <span class="n">fmt</span><span class="p">.</span><span class="n">in_order</span><span class="p">(),</span> <span class="n">fmt</span><span class="p">.</span><span class="n">post_order</span><span class="p">());</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">fmt</span><span class="p">.</span><span class="n">get</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Output:</strong></p>
+
+  <p><code class="language-plaintext highlighter-rouge">(b[my]:0.142450,(d[my]:0.224856,e[my]:1.019509)c[my]:1.720561)a[my]:0.0;</code></p>
+</blockquote>
+
+<p>Isn’t it absolutely delightful? <img class="emoji" title=":hugs:" alt=":hugs:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f917.png" height="20" width="20"></p>
+
+<p>I <em>looove</em> modern C++: it allows us to encapsulate the details of our real-case troubles into shiny bubbles of
+beauty, simplicity and efficiency! Isn’t it what code should be after all? <img class="emoji" title=":blush:" alt=":blush:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20"></p>
+
+<p><img src="/assets/img/doodles/bubble_double_trouble.jpg#center" alt="Bubble double trouble"></p>
+
+      <div class="page-footer">
+        <div class="PageNavigation">
+          
+            <a class="prev" href="/who-am-i/">« My softwares for statistical phylogeography</a>
+          
+          
+        </div>
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=A%20modern%20C++%20Newick%20tree%20formatter&amp;url=https://Becheler.github.io/finally-a-standard-newick-formatter/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=https://Becheler.github.io/finally-a-standard-newick-formatter/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://Becheler.github.io/finally-a-standard-newick-formatter/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#ecology" class="tag"># ecology</a>
+          
+            <a href="/tags#evolution" class="tag"># evolution</a>
+          
+            <a href="/tags#biogeography" class="tag"># biogeography</a>
+          
+            <a href="/tags#coalescence" class="tag"># coalescence</a>
+          
+            <a href="/tags#quetzal" class="tag"># quetzal</a>
+          
+            <a href="/tags#phylogeny" class="tag"># phylogeny</a>
+          
+            <a href="/tags#newick" class="tag"># newick</a>
+          
+            <a href="/tags#C++" class="tag"># C++</a>
+          
+        </div>
+      </div>
+      <!-- Enables support for commenting posts and articles -->
+<script src="https://utteranc.es/client.js" repo="Becheler/Becheler.github.io" issue-term="pathname" label="blog" theme="github-light" crossorigin="anonymous" async>
+</script>
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  <!-- We want analytics -->
+  <!-- Enables suupport for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+
+</html>

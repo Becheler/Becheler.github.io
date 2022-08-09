@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Include header -->
+<head>
+	<meta charset="utf-8">
+	<title>Make code surgery easy with the SRP - Arnaud Becheler - Personal website</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Arnaud Becheler - Personal website" property="og:site_name">
+  
+    <meta content="Make code surgery easy with the SRP" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="How to write more modular code" property="og:description">
+  
+  
+    <meta content="https://Becheler.github.io/make-code-surgery-easy-with-SRP/" property="og:url">
+  
+  
+    <meta content="2021-08-06T10:32:20+00:00" property="article:published_time">
+    <meta content="https://Becheler.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://Becheler.github.io/assets/img/doodles/scalpel.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="programming" property="article:tag">
+    
+    <meta content="modular" property="article:tag">
+    
+    <meta content="SOLID" property="article:tag">
+    
+    <meta content="biology" property="article:tag">
+    
+    <meta content="doodles" property="article:tag">
+    
+    <meta content="derek&léonin" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Make code surgery easy with the SRP">
+  
+  
+    <meta name="twitter:url" content="https://Becheler.github.io/make-code-surgery-easy-with-SRP/">
+  
+  
+    <meta name="twitter:description" content="How to write more modular code">
+  
+  
+    <meta name="twitter:image:src" content="https://Becheler.github.io/assets/img/doodles/scalpel.jpg">
+  
+
+	<meta name="description" content="How to write more modular code">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/my-softwares.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/my_stylesheet.css">
+	<!-- Tangerine font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+</head>
+
+
+*<!-- Mathjax support -->
+
+
+<!-- Default body -->
+<body>
+  
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/arnaud-becheler.png" alt="Arnaud Becheler"></a>
+      </div>
+      <div class="author-name">Arnaud Becheler</div>
+      <p>A French Software Engineer, always happy to learn about phylogeography and programming!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Softwares</h3>
+      <ul>
+        <li><a href="https://github.com/Becheler/quetzal-EGGS" target="_blank"><i class="icon icon-quetzal-eggs--fa" title="Quetzal-EGGS" aria-hidden="true"></i></a></li>
+        <li><a href="/softwares/quetzal-CoalTL/home" target="_blank"><i class="icon icon-quetzal-coaltl-fa" title="Quetzal-CoalTL" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/quetzal-CRUMBS" target="_blank"><i class="icon icon-quetzal-crumbs-fa" title="Quetzal-CRUMBS" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/decrypt" target="_blank"><i class="icon icon-decrypt_fa" title="Decrypt" aria-hidden="true"></i></a></li>
+      </ul>
+      <section class="contact">
+        <h3 class="contact-title"> About me </h3>
+        <ul>
+          <li><a href="/pages/about-me/index.html" target="_blank"><i class="fa fa-youtube-play" title="Presentations" aria-hidden="true"></i></a></li>
+          <li><a href="/assets/pdfs/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" title="CV" aria-hidden="true"></i></a></li>
+          <li><a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-graduation-cap" title="My Google Scholar" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </section> <!-- End Section Resume -->
+    <section class="contact">
+      <h3 class="contact-title">Find me on</h3>
+      <ul>
+        
+        
+        
+        
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2022 &copy; Arnaud Becheler</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/doodles/scalpel.jpg alt="Make code surgery easy with the SRP">
+        
+          <figcaption>A code autopsy</figcaption>
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="PageNavigation">
+      
+        <a class="prev" href="/how-to-write-solid-code/">&laquo; How to write very SOLID code</a>
+      
+      
+        <a class="next" href="/easily-pick-substitues-with-the-LSP/">Easily pick substitutes with the LSP &raquo;</a>
+      
+    </div>
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Make code surgery easy with the SRP</h1>
+        
+        <div class="page-date"><span>2021, Aug 06&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>The <strong>Single Responsibility Principle</strong> (the <strong>S</strong> of the 5 <a href="/how-to-write-solid-code/">5 S.O.L.I.D. principles</a>) states that <em>each class should do just one thing, but do it well.</em>
+Why so? Well, think about the way our body organs work together: do we digest stuff
+at the exact same place we process cognition? Of course not! We evolved <strong>differentiated organs</strong> that are specialized for a
+<strong>very small subset of related functions</strong>.
+For example, the main responsibility of <em>eyes</em> is to perceive <em>light</em>.
+The <em>liver</em> has been blessed with the <em>detoxification</em> responsibility.
+Remark how <strong>clear structure</strong> of human body organs makes <strong>surgeries surprisingly easy</strong> - or at least doable.
+Surgeons can remove a diseased liver
+and replace it with a healthy liver in 6 hours! Can you replace that old, slow and buggy
+code of yours with a healthier version in the same amount of time?</p>
+
+<p><img src="/assets/img/doodles/code_surgery_front_desk_SRP.jpg" alt="Single Responsibility Principle: make code surgery possible" /></p>
+
+<p>Objects in our code should ideally work in the same way organs do in a healthy body.
+Big organs with clearly separated functions, all in constant interaction. They produce, exchange,
+communicate, sometimes fail, but their <strong>structure</strong> is still <strong>striking and robust</strong>.</p>
+
+<p>Of course, it happens often that to perform one task very well one has to do a lot
+behind the curtain: take for example the <strong>amygdala</strong>, this structure near the base of your brain.
+To do <em>fast decision-making</em> right,
+it needs to process both <em>memories and emotional responses</em> so it can associate adverse
+experiences with negative feelings. Next time you encounter a situation that the amygdala
+considers as vaguely similar to a bad memory (let’s say encounter with a tiger) it will fire
+the right decision in no time (that is, <del>running of course</del> getting closer to properly document
+their stripe pattern: <strong>you’re a biologist after all</strong>).</p>
+
+<p><em>Complexity is structured complications</em>.</p>
+
+<p><img src="/assets/img/doodles/scalpel.jpg" alt="Single Responsibility Principle: make code surgery easy" /></p>
+
+<p>If you want to see programmatic organs emerge from
+the primordial soup of your code, try to follow these steps:</p>
+
+<ol>
+  <li>
+    <p><strong>Think bigger! Think smaller! Think at the right level!</strong></p>
+
+    <p>Identify the responsibility of the piece of code you’re working with: what is it supposed to do <strong>conceptually</strong>?</p>
+
+    <p>For example: <em>I want my class to read a tiger strip from a picture and match it to the tiger ID</em>.</p>
+
+    <p>Don’t think about <em>lists</em>, <em>pointers</em> or <em>arrays</em>. These are often <strong>implementation details</strong> that should
+be hidden behind a neat class interface. Find the right level of abstraction you’re working with by naming
+a <strong>tiger strip</strong> a <code class="language-plaintext highlighter-rouge">tiger_strip</code> in your code, not a <code class="language-plaintext highlighter-rouge">boost::matrix&lt;double&gt;</code>!</p>
+  </li>
+  <li>
+    <p><strong>Code surgery is easier when you operate on clearly delimited programmatic organs.</strong></p>
+
+    <p>Establish a clear separation between what is the responsibility of one class and another.</p>
+
+    <p>Sometimes things are more easily said than done. When you look into the details, maybe you will
+discover that <em>matching a strip to a number</em> actually involves some pretty badass
+pattern recognition stuff that should become the responsibility of
+another class!</p>
+  </li>
+  <li>
+    <p><strong>A big bad code is better than no code at all</strong>.</p>
+
+    <p>Begin somewhere.</p>
+
+    <p>Even if you feel bad, or even if you don’t know <em>yet</em> what your class is supposed to do.
+As long as you are intentional with the <strong>S.R.P.</strong>, it’s fine! Even if you feel bad
+writing that awful blob of code at least you know when, where
+and why you violated the <em>S.R.P</em>, what are the possible consequences and what would be the solutions.</p>
+
+    <p>But as you progress, don’t hesitate to export responsibilities when your class becomes too big:
+a class that does too many things at the same time is impossible to test or debug.</p>
+  </li>
+  <li>
+    <p><strong>Find the balance between the mammoth and the atom</strong>.</p>
+
+    <p>You will overuse the <strong>S.R.P</strong> it. Don’t. But you will. That’s how you learn!</p>
+
+    <p>When you will have exported aaaaall
+responsibilities of this big mammoth class to hundreds of smaller and smaller other classes, you will be left
+with a scrawny class which only responsibility is to represent … a boolean.
+That’s useless, one class already does that perfectly: the boolean class.
+But at least you will be able to recognize the early stages of misusing the <strong>Single Responsibility Principle</strong>!</p>
+
+    <p>And that’s fine - and fun! Léonin is still figuring this out!</p>
+  </li>
+</ol>
+
+<p><img src="/assets/img/doodles/SRP_application.jpg" alt="Léonin trying his best to apply the Single Responsibility Principle" /></p>
+
+      <div class="page-footer">
+        <div class="PageNavigation">
+          
+            <a class="prev" href="/how-to-write-solid-code/">&laquo; How to write very SOLID code</a>
+          
+          
+            <a class="next" href="/easily-pick-substitues-with-the-LSP/">Easily pick substitutes with the LSP &raquo;</a>
+          
+        </div>
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Make code surgery easy with the SRP&url=https://Becheler.github.io/make-code-surgery-easy-with-SRP/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=https://Becheler.github.io/make-code-surgery-easy-with-SRP/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://Becheler.github.io/make-code-surgery-easy-with-SRP/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#programming" class="tag">&#35; programming</a>
+          
+            <a href="/tags#modular" class="tag">&#35; modular</a>
+          
+            <a href="/tags#SOLID" class="tag">&#35; SOLID</a>
+          
+            <a href="/tags#biology" class="tag">&#35; biology</a>
+          
+            <a href="/tags#doodles" class="tag">&#35; doodles</a>
+          
+            <a href="/tags#derek&léonin" class="tag">&#35; derek&léonin</a>
+          
+        </div>
+      </div>
+      <!-- Enables support for commenting posts and articles -->
+<script src="https://utteranc.es/client.js"
+        repo="Becheler/Becheler.github.io"
+        issue-term="pathname"
+        label="blog"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  <!-- We want analytics -->
+  <!-- Enables suupport for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+
+</html>

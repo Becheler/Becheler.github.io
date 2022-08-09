@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Include header -->
+<head>
+	<meta charset="utf-8">
+	<title>Linking environments to species ecology - Arnaud Becheler - Personal website</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Arnaud Becheler - Personal website" property="og:site_name">
+  
+    <meta content="Linking environments to species ecology" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Defining niche functions" property="og:description">
+  
+  
+    <meta content="https://Becheler.github.io/software/quetzal-CoalTL/tutorials/niche" property="og:url">
+  
+  
+    <meta content="2022-08-09T18:04:03+00:00" property="article:published_time">
+    <meta content="https://Becheler.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://Becheler.github.io/assets/img/doodles/under_construction_crop.png" property="og:image">
+  
+  
+    
+  
+  
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Linking environments to species ecology">
+  
+  
+    <meta name="twitter:url" content="https://Becheler.github.io/software/quetzal-CoalTL/tutorials/niche">
+  
+  
+    <meta name="twitter:description" content="Defining niche functions">
+  
+  
+    <meta name="twitter:image:src" content="https://Becheler.github.io/assets/img/doodles/under_construction_crop.png">
+  
+
+	<meta name="description" content="Defining niche functions">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/my-softwares.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/my_stylesheet.css">
+	<!-- Tangerine font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+</head>
+
+
+*<!-- Mathjax support -->
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+<!-- Default body -->
+<body>
+  
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/arnaud-becheler.png" alt="Arnaud Becheler"></a>
+      </div>
+      <div class="author-name">Arnaud Becheler</div>
+      <p>A French Software Engineer, always happy to learn about phylogeography and programming!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Softwares</h3>
+      <ul>
+        <li><a href="https://github.com/Becheler/quetzal-EGGS" target="_blank"><i class="icon icon-quetzal-eggs--fa" title="Quetzal-EGGS" aria-hidden="true"></i></a></li>
+        <li><a href="/softwares/quetzal-CoalTL/home" target="_blank"><i class="icon icon-quetzal-coaltl-fa" title="Quetzal-CoalTL" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/quetzal-CRUMBS" target="_blank"><i class="icon icon-quetzal-crumbs-fa" title="Quetzal-CRUMBS" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Becheler/decrypt" target="_blank"><i class="icon icon-decrypt_fa" title="Decrypt" aria-hidden="true"></i></a></li>
+      </ul>
+      <section class="contact">
+        <h3 class="contact-title"> About me </h3>
+        <ul>
+          <li><a href="/pages/about-me/index.html" target="_blank"><i class="fa fa-youtube-play" title="Presentations" aria-hidden="true"></i></a></li>
+          <li><a href="/assets/pdfs/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" title="CV" aria-hidden="true"></i></a></li>
+          <li><a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-graduation-cap" title="My Google Scholar" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </section> <!-- End Section Resume -->
+    <section class="contact">
+      <h3 class="contact-title">Find me on</h3>
+      <ul>
+        
+        
+        
+        
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2022 &copy; Arnaud Becheler</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="software-image" src=/assets/img/doodles/under_construction_crop.png alt="Linking environments to species ecology">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="PageNavigation">
+      
+        <a class="prev" href="/software/quetzal-CoalTL/tutorials/geography">&laquo; Working with heterogeneous landscape</a>
+      
+      
+    </div>
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Linking environments to species ecology</h1>
+        <section class="contact">
+        <ul>
+          <li><a href="/softwares/quetzal-CoalTL/home"><i class="fa fa-home" aria-hidden="true" title="Home"></i></a></li>
+          <li><a href="/softwares/quetzal-CoalTL/tutorials"><i class="fa fa-code" title="Tutorials" aria-hidden="true"></i></a></li>
+          <li><a href="/quetzal-CoalTL"><i class="fa fa-wrench" title="C++ API" aria-hidden="true"></i></a></li>
+          <li><a href="/softwares/quetzal-CoalTL/FAQ"><i class="fa fa-question-circle" title="FAQ" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/Becheler/quetzal-CoalTL"><i class="fa fa-github" title="Github Repo" aria-hidden="true"></i></a></li>
+        </ul>
+        </section
+      </header>
+      <div style="text-align:left;">
+      <p>By <em>niche functions</em>, we mean here any quantity of an ecological model that is linked to environmental
+quantities.</p>
+
+<p>For example the following function is what we would call a niche function: the growth rate
+is a function of the temperature.</p>
+
+<p><img src="https://Becheler.github.io/pictures/niche.png" alt="niche function" /></p>
+
+<p>Usually in demogenetic models, the “true” niche functions are not precisely known,
+so their forms have to be inferred. In the previous picture, we would typically try to estimate
+the parameters $T_{opt}$, $T_{min}$ and $T_{max}$.</p>
+
+<p>If you are reading this tutorial, it means that you are
+probably interested in simulation-based inference: in such frameworks a huge amount of simulations is needed to explore the parameters
+space. Quetzal allows to explore the parameter space of the niche functions with
+a priori better efficiency than achieved by previous simulation resources.</p>
+
+<blockquote>
+  <p>Why ?</p>
+</blockquote>
+
+<p>Typically, an ABC analysis would require:</p>
+<ul>
+  <li>the raw geographic dataset to be read and tranformed using an external software with a
+given set of parameters</li>
+  <li>The tranformed data to be written in memory</li>
+  <li>The transformed data to be read by the demogenetic program to run a simulation.</li>
+</ul>
+
+<p>And this <em>read-write-read</em> cycle would repeat <em>millions of times</em> as the parameters are resampled.</p>
+
+<p>We advocate that it is a <em>costly way to compute things</em>. Instead, we prefer to
+integrate the model choice into the demogenetic simulation program, so the data transformations
+are computed <em>on the fly</em> rather than written in memory. Plus, it fosters scientific reproducibility.</p>
+
+<p>As there are a open-ended number of possible models, and that their relevancy is
+very specific to the question at hand, we choose to
+leave the user free to define its own niche functions, and we give him the right
+tools to do so.</p>
+
+<h2 id="an-example-the-logistic-growth">An example: the logistic growth</h2>
+
+<p>For example, let’s consider the typical logistic function that is used in the literature
+to represent the local growth process, and let’s couple the growth rate and the carrying
+capacity to the environmental heterogeneity.</p>
+
+<p>The following picture illustrate a one-deme growing population size following a logistic growth,
+with carrying capacity $K=500$, for different values of $r$:</p>
+
+<p><img src="https://Becheler.github.io/pictures/logistic.png" alt="logistic growth" /></p>
+
+<h3 id="mathematical-description">Mathematical description</h3>
+
+<p>The number of descendants \(\tilde{N}_{x}^{t}\) in each deme can be sampled in a
+distribution conditionally to a function of the the local density of parents,
+for example</p>
+
+<p>\(\tilde{N}_{x}^{t} \sim Poisson(g(x,t))\),</p>
+
+<p>where $g$ can be for example a discrete version of the logistic growth:</p>
+
+<p>[\begin{array}{cc|ccc}
+    g &amp; : &amp; \mathbb{X}\times \mathbb{N} &amp; \mapsto &amp; \mathbb{R}^{+} <br />
+      &amp;   &amp;          (x,t)               &amp; \mapsto &amp; \frac{N_{x}^{t}\times(1+r(x,t))}{1+\frac{r(x,t)\times N_{x}^{t}}{K(x,t)}}  ~. <br />
+\end{array}]</p>
+
+<p>The $r$, respectively $k$, term is the growth rate, respectively the carrying capacity,
+defined as a function of the environmental quantities with parameter $\theta$:</p>
+
+<p>[\begin{array}{ccccl}
+K  &amp; : &amp; \mathbb{X}\times \mathbb{N} &amp; \mapsto &amp; \mathbb{R}^{+} <br />
+   &amp;   &amp;    (x,t)       &amp; \mapsto &amp; f_{K}^{\theta}(E(x,t))~, <br />
+\end{array}]</p>
+
+<p>[\begin{array}{ccccl}
+r  &amp; : &amp; \mathbb{X} &amp; \mapsto &amp; \mathbb{R} <br />
+   &amp;   &amp;    (x,t)       &amp; \mapsto &amp; f_{r}^{\theta}(E(x,t)) ~. <br />
+\end{array}]</p>
+
+<p>We will show how to implement this model with toy functions.</p>
+
+<h3 id="step-by-step-implementation">Step-by-step implementation</h3>
+
+<h4 id="about-the-need-to-build-callable-expressions">About the need to build callable expressions</h4>
+
+<p>So you learned in the <a href="tuto_geography">geography tutorial</a> how to retrieve the environmental functions:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+</code></pre></div></div>
+<blockquote>
+  <p><strong>Note:</strong> Remember that you can call <code class="language-plaintext highlighter-rouge">f</code> and <code class="language-plaintext highlighter-rouge">g</code> with space and time arguments
+by writing <code class="language-plaintext highlighter-rouge">f(x,t)</code> and <code class="language-plaintext highlighter-rouge">g(x,t)</code>.</p>
+</blockquote>
+
+<p>As the demographic expansion loop over space and time lays in the core of
+complex simulation objects, you do not want to pass each of these values one-by-one
+across the multiple layers of these objects: that would be very inefficient.</p>
+
+<p>Instead, it is better to give to the simulator the expression that it will call.</p>
+
+<p>You just need to code a function simulating the number of children in deme $x$
+at time $t$. Any expression would work: the core algorithm will deal with it if it
+has the right signature.</p>
+
+<p>In the <a href="tuto_demography#implementing-a-local-growth-process">demography tutorial</a>,
+you already learned how to build a very simple version of such expressions: it
+was simply twice the number of parents. Let’s remember this simple example code:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// access to the demographic history database</span>
+<span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+<span class="c1">// capture N in a lambda expression</span>
+<span class="k">auto</span> <span class="n">growth</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span> <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span> <span class="p">};</span>
+</code></pre></div></div>
+<p>Here we will just learn how to define more complicated expressions that are
+mathematical compositions of the environmental functions.</p>
+
+<h3 id="composing-functions-of-space-and-time">Composing functions of space and time</h3>
+
+<p>What you want to do is to build an expression that is the result of composing other
+functions, and you expect this to be easy. You would actually expect to be able to write
+something like:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">h</span> <span class="o">=</span> <span class="n">f</span> <span class="o">+</span> <span class="n">g</span><span class="p">;</span> <span class="c1">// compilation error, undefined operator +</span>
+</code></pre></div></div>
+<p>This code would not compile, as C++ does not natively know what adding $f$ and $g$ mean.</p>
+
+<p>To enable the composition, you need to use the  <code class="language-plaintext highlighter-rouge">expressive</code> module.
+This module is actually a library written by <a href="https://github.com/ambre-m">Ambre Marques</a>,
+that allows to compose expressions at compile-time:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "my_path/quetzal/expressive.h"
+</span>
+<span class="c1">// ... some code to build the environment object env</span>
+
+<span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"rain"</span><span class="p">];</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">];</span>
+
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">use</span><span class="p">;</span>
+<span class="k">auto</span> <span class="n">h</span> <span class="o">=</span> <span class="n">use</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">use</span><span class="p">(</span><span class="n">g</span><span class="p">);</span> <span class="c1">// expressive automatically define the operator +</span>
+</code></pre></div></div>
+
+<p>In this code, <code class="language-plaintext highlighter-rouge">h</code> is a new object. Its type is automatically built by <code class="language-plaintext highlighter-rouge">expressive</code>
+and is unknown by the user: that is actually a good thing, as it can be very complicated.
+More importantly, as the <code class="language-plaintext highlighter-rouge">h</code> object is cheap to copy, it can be passed around the
+simulation context to the appropriate function where it will be called with spatio-temporal
+coordinates:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// file main.cpp</span>
+<span class="k">auto</span> <span class="n">h</span> <span class="o">=</span> <span class="n">use</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">use</span><span class="p">(</span><span class="n">g</span><span class="p">);</span>
+
+<span class="n">coord_type</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">time_type</span> <span class="n">t</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="composing-constant-functions">Composing constant functions</h3>
+
+<p>In the same way can not expect the following line to work:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">e</span> <span class="o">=</span> <span class="n">h</span> <span class="o">-</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// // compilation error, undefined operator -</span>
+</code></pre></div></div>
+<p>It is expected, as C++ does not natively know how to add an integer to a function.
+So first you have to transform the number 4 to a constant function of space and time:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">literal_factory</span><span class="p">;</span>
+<span class="c1">// a small object able to produce callables:</span>
+<span class="n">literal_factory</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="o">&gt;</span> <span class="n">lit</span><span class="p">;</span>
+<span class="k">auto</span> <span class="n">e</span> <span class="o">=</span> <span class="n">h</span> <span class="o">-</span> <span class="n">lit</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// now it works</span>
+</code></pre></div></div>
+
+<p>See ? You can actually freely compose any user-defined function.</p>
+
+<h2 id="coupling-environment-logistic-growth-model-and-stochastic-sampling">Coupling environment, logistic growth model and stochastic sampling:</h2>
+
+<p>Here are some code lines implementing a possible variant of the previously described
+mathematical model where the number of children is a function of the number of
+parents, of a constant growth rate, and where the carrying capacity is the mean
+of the environmental variables:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// ... build the environment before this</span>
+
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">literal_factory</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">quetzal</span><span class="o">::</span><span class="n">expressive</span><span class="o">::</span><span class="n">use</span><span class="p">;</span>
+<span class="n">literal_factory</span><span class="o">&lt;</span><span class="n">coord_type</span><span class="p">,</span> <span class="n">time_type</span><span class="o">&gt;</span> <span class="n">lit</span><span class="p">;</span>
+
+<span class="c1">// constant growth rate</span>
+<span class="k">auto</span> <span class="n">r</span> <span class="o">=</span> <span class="n">lit</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+
+<span class="c1">// carrying capacity averging over rain and temperature</span>
+<span class="k">auto</span> <span class="n">K</span> <span class="o">=</span>  <span class="p">(</span> <span class="n">use</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">use</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="p">)</span> <span class="o">/</span> <span class="n">lit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">;</span>
+
+<span class="c1">// retrieving the population size history</span>
+<span class="k">auto</span> <span class="n">N_cref</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">cref</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">pop_sizes</span><span class="p">());</span>
+
+<span class="c1">// Enabling its use with expressive:</span>
+<span class="k">auto</span> <span class="n">N_expr</span> <span class="o">=</span> <span class="n">use</span><span class="p">([</span><span class="n">N_cref</span><span class="p">](</span><span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span><span class="k">return</span> <span class="n">N_cref</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">);});</span>
+
+<span class="c1">// Making the logistic growth expression:</span>
+<span class="k">auto</span> <span class="n">g</span> <span class="o">=</span> <span class="n">N_expr</span><span class="o">*</span><span class="p">(</span><span class="n">lit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="n">lit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">((</span><span class="n">r</span> <span class="o">*</span> <span class="n">N_expr</span><span class="p">)</span><span class="o">/</span><span class="n">K</span><span class="p">));</span>
+
+<span class="c1">// capturing g to build a sampling distribution</span>
+<span class="k">auto</span> <span class="n">sim_N_tilde</span> <span class="o">=</span> <span class="p">[</span><span class="n">g</span><span class="p">](</span><span class="n">generator_type</span><span class="o">&amp;</span> <span class="n">gen</span><span class="p">,</span> <span class="n">coord_type</span> <span class="n">x</span><span class="p">,</span> <span class="n">time_type</span> <span class="n">t</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">poisson_distribution</span><span class="o">&lt;</span><span class="n">history_type</span><span class="o">::</span><span class="n">N_type</span><span class="o">::</span><span class="n">value_type</span><span class="o">&gt;</span> <span class="n">poisson</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">));</span>
+  <span class="k">return</span> <span class="n">poisson</span><span class="p">(</span><span class="n">gen</span><span class="p">);</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+<p>Then you can pass the <code class="language-plaintext highlighter-rouge">sim_N_tilde</code> expression to a demographic simulator.
+ Remarkably, even if you change some lines you will always be able to pass
+ this expression to the demographic simulator
+ as long as you don’t modify its signature <code class="language-plaintext highlighter-rouge">(generator_type&amp; gen, coord_type x, time_type t)</code>.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Of course this niche model is not relevant: it’s a toy model. The main point is that it
+is very easy for the user to modify it.</p>
+
+<blockquote>
+  <p>But what if $r$ is unknown and you want to estimate it ?</p>
+</blockquote>
+
+<p>The ABC tutorial will give you insights on how manipulating the parameters of the
+niche functions in an ABC framework.</p>
+
+      </div>
+      <div class="PageNavigation">
+        
+          <a class="prev" href="/software/quetzal-CoalTL/tutorials/geography">&laquo; Working with heterogeneous landscape</a>
+        
+        
+      </div>
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Linking environments to species ecology&url=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/niche" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/niche" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://Becheler.github.io/software/quetzal-CoalTL/tutorials/niche" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+        </div>
+      </div>
+      <!-- Enables support for commenting posts and articles -->
+<script src="https://utteranc.es/client.js"
+        repo="Becheler/Becheler.github.io"
+        issue-term="pathname"
+        label="blog"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  <!-- We want analytics -->
+  <!-- Enables suupport for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-106771332-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+
+</html>

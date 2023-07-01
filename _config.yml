@@ -14,6 +14,8 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Arnaud Becheler # add your name
 author-img: arnaud-becheler.png # add your photo
 about-author: A French Software Engineer, always happy to learn about phylogeography and programming! # add description
+social-instagram: @foxi.foxa
+social-twitter: FoxiFoxa
 
 # Tracker
 analytics: UA-106771332-1 # Google Analytics

@@ -76,4 +76,7 @@ To find fragility in symmetry, unity in oddity, universal adaptation through sta
 
 Throw the silt into the wind, others calling for a simoun may need it and dawn has to come. But keep one grain, one grain only, and murmur to it: words that heal, words that revive, words that remember, words that relate and retale, words that count and recount, that multiply, that grow, that flow, that flower, that power. Words to rebuild, to extend, to reach out, branch out, connect, coalesce, merge, mesh, cement, bridge, bridges, rivers, seas, cities, skylines, sky, universe, universities, knowledge, language, heritage. Life.
 
+![Compassion]({{site.baseurl}}/assets/img/doodles/compassion.png)
+<p align = "center"> Calling for a simoun. </p>
+
 You can forever hate the world for your infinite loss, little poppy, it is okay. Just know you can also hope, and dream with us through other's night: only then and together will we break the mad wolf’s curse. By the wolfsbane or the nightshade, dawn has to come. Little poppy.

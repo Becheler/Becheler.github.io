@@ -31,8 +31,8 @@ Familiar smells in my home, new flavors in your dish, a strange accent of them c
 
 Can you feel them burning?
 
-![Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere.]({{site.baseurl}}/assets/img/doodles/hydrothermal_remembrance.png)
-<p align = "center"> Hydrothermal remembrance </p>
+![Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere.]({{site.baseurl}}/assets/img/doodles/genocide.png)
+<p align = "center"> Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere. </p>
 
 In Gaza, clans and families used to weave a precious tapestry. Intertwined generational histories, lineages diving deep in time, but surfacing together, burgeoning in bunches closely connected in space. Generational blossoms, floral evocations of a long tree manifested in places, places as small as a village, a camp, a building. The [Mousa lineage](https://www.telegraph.co.uk/global-health/terror-and-security/gaza-palestinian-deaths-destruction-israel-hamas-war/) traced its roots back to the ancient village of Aqir. Aqir, Akir, Akkur: mutated names for an immutable locus. From potteries to glasses, two millennia of histories. Memories. Feelings. People. The medieval [Palestinian geographer](Al-Maqsidi) used to say one could find in Aqir the best artisans and the best bread. I wished I could have seen it. Do you?
 

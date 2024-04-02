@@ -4,7 +4,7 @@ title: To be a geneticist in a time of genocide ...
 subtitle:  ... and an engineer in a time of destruction
 date: 2024-04-01 5:30
 description: using my voice for Palestine
-img: doodles/genocide.png # Add image post (optional)
+img: doodles/all_is_withering.png # Add image post (optional)
 fig-caption: (Fall) back to the trees!  # Add figcaption (optional)
 tags: [palestine, ecology, evolution, gaza, genocide,]
 sticky: false

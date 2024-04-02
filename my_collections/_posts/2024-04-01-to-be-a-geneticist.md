@@ -6,9 +6,8 @@ date: 2024-04-01 5:30
 description: using my voice for Palestine
 img: doodles/genocide.png # Add image post (optional)
 fig-caption: (Fall) back to the trees!  # Add figcaption (optional)
-tags: [ecology, evolution, biogeography, coalescence, quetzal, phylogeny, newick, C++]
+tags: [palestine, ecology, evolution, gaza, genocide,]
 sticky: false
-use_math: true
 ---
 
 Feelings always find their way to our surface. From the core and to the eyes, through the fissures and through the cracks. They may not show up at a convenient time, nevermind. At least they will show up, and they will do so with the full strength of a typhoon: in the deafening silence of our time, they will make sure to not go unnoticed. Like an ice cold body of water that we kept buried, pressured, subdued under our feet, they have been calling and knocking from under the rubble for so long, pleading to finally run wild and free from the river to the sea, and for what? To be heard ? To be seen ? To exist ? Oh for god's sake, in this hurricane and by my gaze will you hear our world soul’s ache  ?

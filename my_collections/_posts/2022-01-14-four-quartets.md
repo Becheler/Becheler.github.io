@@ -7,7 +7,7 @@ description: A poetic introduction to my research
 img: doodles/hydrothermal_remembrance.png # Add image post (optional)
 fig-caption: Relatedness  # Add figcaption (optional)
 tags: [poetry, ecology, evolution, biogeography, coalescence]
-sticky: true
+sticky: false
 ---
 
 *"We shall not cease from exploration"* writes T.S. Eliot in his long meditative poem Four Quartets,

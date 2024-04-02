@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To be a Geneticist in a Time of Genocide ...
-subtitle:  ... and an Engineer in a Time of Destruction
+subtitle:  ... and an engineer in a time of destruction
 date: 2024-04-01 5:30
 description: Using my voice to raise awareness about the plight of Palestinians.
 img: doodles/all_is_withering.png

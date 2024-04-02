@@ -67,10 +67,10 @@ Below my two feet was a small stream, barely a ditch really, and among the grass
 
 God knows what memory unfolded that night, what ancestral knowledge was whispered from the breadth of my lineage, but I want to think it was a lesson.
 
-Violence will never be the answer, in words or in actions. It never was. Leaning into violence is just turning from child to wolf to become trapped again, mutated roles in the same old cave.
+Violence will never be the answer, in words or in actions. It never was. Leaning into violence is just turning from child to wolf to become trapped again, mutated roles in the same old cave. In our history of violence, we're not confined. Waning crescents. Shifting tides. Embrace change as we embrace water: the only thing that should be permanent is a universal cease fire.
 
 ![Cease fire]({{site.baseurl}}/assets/img/doodles/ceasefire.png)
-<p align = "center"> In our history of violence, we're not confined. Embrace change as you embrace water: the only thing that should be permanent is a universal cease fire. </p>
+<p align = "center"> Ceasefire now </p>
 
 To find fragility in symmetry, unity in oddity, universal adaptation through stable harmonization: this is our only path to salvation. A sensible evolution. Hurting together, but staying connected. Dissonant but persistent. We are strong. We are united and related. We have been linked through times so ancient and lands so immense that your pain became my pain, your loss became my loss, this is why from clay to flesh we were allowed to feel: so I can hear deep under our three skins, the same molecules panicking. To hear their shared rhythm and love the world more for it. Not to beat it. No teeth, no claws, no fear or maws, just small gills to breathe under wide open eyes. So we may look at a reality we may not like: are you the horror or are you the mirror? Deep dive in connection. And from the muddy trench of human emotion to bring back a handful of clear sand: compassion.
 

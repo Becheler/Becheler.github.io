@@ -48,8 +48,11 @@ Traumas are like nightmares, you may wake up at dawn thinking it's all over but 
 
 And the frost found them on October 25th 2023: Bahaa, 10 months old, Jamal, six years old, Ghady, 10 years old, Ahmed, 35, Asma 34, their children Muhammad, 6 years old, Alma, five years, Youssef, one month old. Sila, five years old. All wiped out in an indiscriminate bombing of their shelter. In the heart of a Palestinian refugee camp, ten promising flowers that were on average 12 years old suddenly withered on our human tree. For nothing: half of the bombs used by Israel are dumb bombs without strategic values or military targets.  By February 2024, 51 more relatives of the lineage had been killed. So many voices have since been lost and entire lineages wiped out. Not only individuals. Not only families. Not only extended families: lineages.
 
-![Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere.]({{site.baseurl}}/assets/img/doodles/genocide.png)
-<p align = "center"> Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere. </p>
+<figure>
+    <img src="{{site.baseurl}}/assets/img/doodles/genocide.png" alt="Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere.">
+    <figcaption class="poetry-line" align="center">Silenced voices, exterminated bodies, eradicated gene trees. On the path to extinction, soul to nowwhere.</figcaption>
+</figure>
+
 
 Half Gazans are children. As of February 29th 2024, according to the Gaza Health Ministry, the number of Palestinian casualties stands at a minimum of 30,000 deaths, with over 10,000 of them being children. Additionally, more than 70,000 individuals have been wounded, and 10,000 are unaccounted for under the rubble. This amounts to over 110,000 casualties, representing approximately 5% of Gaza's population of 2.3 million. Five percent: in France that would represent 3 millions casualties, 1 million children.
 
@@ -73,8 +76,10 @@ God knows what memory unfolded that night, what ancestral knowledge was whispere
 
 Violence will never be the answer, in words or in actions. It never was. Leaning into violence is just turning from child to wolf to become trapped again, mutated roles in the same old cave. In our history of violence, we're not confined. Waning crescents. Shifting tides. Embrace change as we embrace water: the only thing that should be permanent is a universal cease fire.
 
-![Cease fire]({{site.baseurl}}/assets/img/doodles/ceasefire.png)
-<p align = "center"> Ceasefire now </p>
+<figure>
+    <img src="{{site.baseurl}}/assets/img/doodles/ceasefire.png" alt="Cease fire">
+    <figcaption class="poetry-line" align="center">Hush the drums of conflict, let silence reign: it's time for peace.</figcaption>
+</figure>
 
 To find fragility in symmetry, unity in oddity, universal adaptation through stable harmonization: this is our only path to salvation. A sensible evolution. Hurting together, but staying connected. Dissonant but persistent. We are strong. We are united and related. We have been linked through times so ancient and lands so immense that your pain became my pain, your loss became my loss, this is why from clay to flesh we were allowed to feel: so I can hear deep under our three skins, the same molecules panicking. To hear their shared rhythm and love the world more for it. Not to beat it. No teeth, no claws, no fear or maws, just small gills to breathe under wide open eyes. So we may look at a reality we may not like: are you the horror or are you the mirror? Deep dive in connection. And from the muddy trench of human emotion to bring back a handful of clear sand: compassion.
 
@@ -82,5 +87,7 @@ Throw the silt into the wind, others calling for a simoun may need it and dawn h
 
 You can forever hate the world for your infinite loss, little poppy, it is okay. Just know you can also hope, and dream with us through other's night: only then and together will we break the mad wolf’s curse. By the wolfsbane or the nightshade, dawn has to come. Little poppy.
 
-![Compassion]({{site.baseurl}}/assets/img/doodles/compassion.png)
-<p align = "center"> Calling for a simoun. </p>
+<figure>
+    <img src="{{site.baseurl}}/assets/img/doodles/compassion.png" alt="Compassion">
+    <figcaption class="poetry-line" align="center">Calling for a simoun</figcaption>
+</figure>

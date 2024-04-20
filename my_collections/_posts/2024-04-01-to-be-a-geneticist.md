@@ -19,7 +19,7 @@ How can something as small as a DNA strand span its wings as far back as 4 billi
 
 Lineages mean so much to us. Through their veins they carry our history, our language, our past customs and future prospects. Through them we inherit our values and meaning, we contemplate our time through the lenses of tradition, and to them we entrust our legends and wisdoms, stories and rites, joys and pains, traumas and lessons, and in absolute faith we do so, for we will never get to see if or how the seeds we sow make it down from the branches to the sea. And because lineages branch out of love, they carry our hopes, our children, our dreams, our tomorrow.
 
-![Genes in a bottle]({{site.baseurl}}/assets/img/doodles/genes_in_a_bottle.png)
+![Genes in a bottle]({{site.baseurl}}/assets/img/doodles/genes_in_a_bottle.png){: .responsive-image }
 <p align = "center"> Genes in a bottle. </p>
 
 The small bottle spins too damn fast for us to even dare dreaming of permanence so we learned to mutate in variations and endure through alterations: lineages carry this potential to change, to adapt, to transform, to inherit something, to make it our own, to make it better, and to pass it down.

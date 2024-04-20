@@ -63,3 +63,18 @@ img[src*='#center'] {
     display: block;
     margin: auto;
 }
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .responsive-image {
+    max-width: none;
+    height: 100%;
+    width: auto;
+  }
+}

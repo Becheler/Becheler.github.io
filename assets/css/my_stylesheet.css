@@ -23,12 +23,19 @@
   text-align: right;
 }
 
+/* Poetry line */
 .poetry-line {
-    text-indent: -2em;
-    margin-left: 2em;
-    font-size: 34px;
-    font-style: italic;
-    font-family: 'Tangerine', cursive;
+  text-indent: -2em;
+  margin-left: 2em;
+  font-size: 34px;
+  font-style: italic;
+  font-family: 'Tangerine', cursive;
+}
+
+@media (max-width: 767px) {
+  .poetry-line {
+      font-size: 24px; /* Adjust this value as needed for smaller screens */
+  }
 }
 
 div.my_figure {

@@ -25,22 +25,6 @@ analytics: UA-106771332-1 # Google Analytics
 
 # Collections directory
 collections_dir: my_collections
-collections:
-  quetzal-coaltl-tutorials:
-    output: true
-    permalink: /software/quetzal-CoalTL/tutorials/:name
-    order:
-      - 1-foreword.md
-      - 2-getting-started.md
-      - 3-migration-between-two-demes.md
-      - many-lazy-walkers.md
-      - geography.md
-      - niche.md
-  quetzal-eggs-tutorials:
-    output: true
-    permalink: /software/quetzal-EGGS/tutorials/:name
-    order:
-      - user-manual.md
 
 # Build Settings
 markdown: kramdown

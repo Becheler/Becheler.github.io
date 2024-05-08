@@ -66,6 +66,10 @@ I withheld the spell for months unsure of what I wanted to unleash, in me or in 
 
 When you feel stuck, look deeper.
 
+<figure>
+    <img src="{{site.baseurl}}/assets/img/doodles/wolf.png" alt="Wolf">
+s</figure>s
+
 In my nightmare last night I was a child cornered under the rubble, encased in stones and dust, watching a mad werewolf carve its way through the sole opening of the cave, eyes gleaming with homicidal rage, teeth frothered in blood, claws pushing, scratching. Powerlessness is a feeling, a certainty, like sudden doom being slowly chiseled  on a surrendered body. I can recall the taste of dirt in my mouth as I realized I was dying. 
 
 When you feel stuck, look deeper. 
@@ -78,7 +82,6 @@ Violence will never be the answer, in words or in actions. It never was. Leaning
 
 <figure>
     <img src="{{site.baseurl}}/assets/img/doodles/ceasefire.png" alt="Cease fire">
-    <figcaption class="poetry-line" align="center">Hush the drums of conflict, let silence reign: it's time for peace.</figcaption>
 </figure>
 
 To find fragility in symmetry, unity in oddity, universal adaptation through stable harmonization: this is our only path to salvation. A sensible evolution. Hurting together, but staying connected. Dissonant but persistent. We are strong. We are united and related. We have been linked through times so ancient and lands so immense that your pain became my pain, your loss became my loss, this is why from clay to flesh we were allowed to feel: so I can hear deep under our three skins, the same molecules panicking. To hear their shared rhythm and love the world more for it. Not to beat it. No teeth, no claws, no fear or maws, just small gills to breathe under wide open eyes. So we may look at a reality we may not like: are you the horror or are you the mirror? Deep dive in connection. And from the muddy trench of human emotion to bring back a handful of clear sand: compassion.

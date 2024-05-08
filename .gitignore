@@ -6,3 +6,4 @@ _site
 yarn.lock
 Gemfile.lock
 package-lock.json
+*.DS_Store

@@ -68,7 +68,7 @@ When you feel stuck, look deeper.
 
 <figure>
     <img src="{{site.baseurl}}/assets/img/doodles/wolf.png" alt="Wolf">
-s</figure>s
+</figure>
 
 In my nightmare last night I was a child cornered under the rubble, encased in stones and dust, watching a mad werewolf carve its way through the sole opening of the cave, eyes gleaming with homicidal rage, teeth frothered in blood, claws pushing, scratching. Powerlessness is a feeling, a certainty, like sudden doom being slowly chiseled  on a surrendered body. I can recall the taste of dirt in my mouth as I realized I was dying. 
 

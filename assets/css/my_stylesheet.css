@@ -34,7 +34,7 @@
 
 @media (max-width: 767px) {
   .poetry-line {
-      font-size: 18spx; /* Adjust this value as needed for smaller screens */
+      font-size: 12px; /* Adjust this value as needed for smaller screens */
   }
 }
 

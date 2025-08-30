@@ -1,3 +1,14 @@
+---
+layout: post
+title: How to Be an Effective Boost Review Manager
+subtitle: Escaped Academia, Caught by Bloom: Peer Review Never Dies
+date: 2025-08-39 5:30
+description: Being an effective Review Manager for Boost Libraries
+img: doodles/all_is_withering.png
+tags: [boost, bloom, filters, C++, review,]
+sticky: false
+---
+
 # How to Be an Effective Boost Review Manager
 
 ## Introduction

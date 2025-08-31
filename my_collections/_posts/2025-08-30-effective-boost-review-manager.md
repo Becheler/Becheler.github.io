@@ -9,8 +9,6 @@ tags: [boost, bloom, filters, C++, review,]
 sticky: false
 ---
 
-## Introduction
-
 Escaped Academia but Caught by Boost...
 
 Boost is one of the most influential projects in the C++ world.  

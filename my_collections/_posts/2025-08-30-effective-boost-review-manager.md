@@ -53,32 +53,34 @@ This message sets the tone for the review: it tells the community *what* is bein
 
 ### ✉️ Template: Review Announcement Email
 
-    Subject: [<short lib name>] Review Announcement: <Library Name> (<start date>–<end date>)
+```
+Subject: [<short lib name>] Review Announcement: <Library Name> (<start date>–<end date>)
 
-    Dear Boost community,
+Dear Boost community,
 
-    The review of the <Library Name> library begins on <start date> and will run through <end date>.
+The review of the <Library Name> library begins on <start date> and will run through <end date>.
 
-    <Library Name> is a <header-only/compiled> C++ library written by <Author Name>, providing <short description>. 
-    <Add 2–3 sentences of context about the problem the library solves, and what makes it stand out.>
+<Library Name> is a <header-only/compiled> C++ library written by <Author Name>, providing <short description>. 
+<Add 2–3 sentences of context about the problem the library solves, and what makes it stand out.>
 
-    You can find the library here:
-        - Repo: <url>
-        - Documentation: <url>
+You can find the library here:
+    - Repo: <url>
+    - Documentation: <url>
 
-    <Explain briefly where this type of library is useful — include 2–3 concrete scenarios or applications.>
+<Explain briefly where this type of library is useful — include 2–3 concrete scenarios or applications.>
 
-    As always, we welcome all reviews — from quick impressions to detailed analysis. 
-    Your feedback helps ensure that the library meets Boost's high standards in terms of correctness, performance, documentation, and design. 
-    If you’re interested in contributing a review, please post to the Boost mailing list during the review period.
+As always, we welcome all reviews — from quick impressions to detailed analysis. 
+Your feedback helps ensure that the library meets Boost's high standards in terms of correctness, performance, documentation, and design. 
+If you’re interested in contributing a review, please post to the Boost mailing list during the review period.
 
-    <Optional notes: e.g., broken links, build caveats, or special instructions.>
+<Optional notes: e.g., broken links, build caveats, or special instructions.>
 
-    Thank you in advance for your time and insights!
+Thank you in advance for your time and insights!
 
-    Best regards,  
-    <Your Name>  
-    Review Manager, <Library Name>
+Best regards,  
+<Your Name>  
+Review Manager, <Library Name>
+```
 
 ### 📌 Example: Boost.Bloom Review Announcement Email
 

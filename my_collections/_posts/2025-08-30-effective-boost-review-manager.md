@@ -349,8 +349,6 @@ The challenging part of this role is not just counting how many reviewers say �
 
 A good way to think of it is like being a **journal editor or a judge**: you don’t decide by tallying up “yes” and “no,” but by looking at the strength and clarity of the arguments. The Review Manager’s task is to listen to all perspectives, recognize which concerns are critical versus which are minor preferences, and then synthesize these into a fair and balanced conclusion. The goal is not only to serve the library author but also to uphold the long-term quality and integrity of Boost as a whole.
 
----
-
 ### ✉️ Template: Final Decision Email
 
     Subject: [<boost>] [<short lib name>] Peer Review Conclusion
@@ -408,8 +406,6 @@ A good way to think of it is like being a **journal editor or a judge**: you don
     Thank you <Author Name> for this amazing library,  
     <Your Name>  
     Review Manager, <Library Name>
-
----
 
 ### 📌 Example: Boost.Bloom Final Decision Email
 

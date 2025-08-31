@@ -118,12 +118,12 @@ Here is the exact email I sent when announcing the review of **Boost.Bloom**:
 
 ## The Official Start Email: "Review Begins"
 
-Once the review period arrives, the Review Manager sends a **“Review Begins Now” email**.  
+Once the review period arrives, the Review Manager sends a **“Review Begins Today” email**.  
 This is the formal kickoff: it marks the exact opening date, reminds the community of the review period, and encourages active participation. Unlike the earlier *announcement* (sent in advance to raise awareness), this one emphasizes *action* — it asks people to read, test, and submit their reviews.  
 
 It also usually includes **guiding questions** so reviewers know what to look for, which lowers the barrier for participation.
 
-### ✉️ Template: "Review Starts Now" Email
+### ✉️ Template: "Review Begins Today" Email
 
     Subject: [<short lib name>] Review of <Library Name> begins today (<start date>–<end date>)
 
@@ -164,7 +164,7 @@ It also usually includes **guiding questions** so reviewers know what to look fo
     Review Manager, <Library Name>
 
 
-### 📌 Example: Boost.Bloom "Review Starts Now" Email
+### 📌 Example: Boost.Bloom "Review Begin Today" Email
 
 Here is the exact email I sent when officially starting the review of **Boost.Bloom**:  
 
@@ -342,6 +342,12 @@ This email is critical for three reasons:
 1. **Transparency** — it documents the community’s feedback and the Review Manager’s reasoning.  
 2. **Accountability** — it ensures the decision is not arbitrary, but grounded in the review discussion.  
 3. **Record keeping** — it becomes the canonical reference when the library’s history is revisited years later.  
+
+It is important to emphasize that the Boost Review Process is **not a simple vote**. While community input is essential, the final responsibility lies with the Review Manager, who must make the acceptance decision and define any conditions for it.  
+
+The challenging part of this role is not just counting how many reviewers say “accept” versus “reject,” but rather carefully **weighing the substance of the reviews**. Some reviewers bring deep domain expertise, others provide valuable user-level feedback, and sometimes opinions may even conflict.
+
+A good way to think of it is like being a **journal editor or a judge**: you don’t decide by tallying up “yes” and “no,” but by looking at the strength and clarity of the arguments. The Review Manager’s task is to listen to all perspectives, recognize which concerns are critical versus which are minor preferences, and then synthesize these into a fair and balanced conclusion. The goal is not only to serve the library author but also to uphold the long-term quality and integrity of Boost as a whole.
 
 ---
 
@@ -549,7 +555,8 @@ This email is critical for three reasons:
 
 
 👉 This **final report** is the anchor point for the whole review.  
-It closes the loop, provides historical record, and gives the library author clear recognition and a roadmap forward.
+It closes the loop, provides a historical record, and gives the library author clear recognition and a roadmap forward.  
+More than that, it also serves as a reference for future Review Managers and contributors: years from now, people may look back at this report to understand the rationale behind Boost.Bloom’s acceptance, the kinds of feedback that shaped it, and the standards expected of any new Boost library. Writing a fair, detailed, and transparent report is therefore one of the Review Manager’s most important responsibilities — it preserves the integrity of the process and strengthens the community’s trust in Boost as a whole.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Be an Effective Boost Review Manager
-subtitle: Escaped Academia but Caught by Bloom Peer Review Never Dies
+subtitle: Peer Review Never Dies
 date: 2025-08-30 23:30
 description: Being an effective Review Manager for Boost Libraries
 img: doodles/all_is_withering.png
@@ -9,9 +9,9 @@ tags: [boost, bloom, filters, C++, review,]
 sticky: false
 ---
 
-# How to Be an Effective Boost Review Manager
-
 ## Introduction
+
+Escaped Academia but Caught by Boost...
 
 Boost is one of the most influential projects in the C++ world.  
 It is a collection of peer-reviewed, open source libraries that extend the capabilities of the C++ standard library. Many parts of Boost — such as smart pointers, regular expressions, or unordered containers — have directly influenced or been adopted into the C++ standard itself. What makes Boost unique is its rigorous **peer review process**, where each new library is openly evaluated by the community for design quality, documentation, portability, and long-term maintainability before being accepted.

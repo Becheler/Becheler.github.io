@@ -46,38 +46,36 @@ Think of yourself as part *host*, part *editor*, and part *judge*. You don’t n
 The very first email you send as Review Manager is the **review announcement**.  
 This message sets the tone for the review: it tells the community *what* is being reviewed, *when* the review will take place, *where* to find the library and documentation, and *why* the library is useful.  
 
-⚠️ Important nuance: this “announcement” email is typically sent **~1 month before** the review actually starts. On the first day of the review, a second email (“Review Starts Now”) is usually sent to mark the official opening.  
+⚠️ Important nuance: this “announcement” email is typically sent **~1 month before** the review actually starts. On the first day of the review, a second email is usually sent to mark the official opening.  
 
 ### ✉️ Template: Review Announcement Email
 
-```
-Subject: [<short lib name>] Review Announcement: <Library Name> (<start date>–<end date>)
-
-Dear Boost community,
-
-The review of the <Library Name> library begins on <start date> and will run through <end date>.
-
-<Library Name> is a <header-only/compiled> C++ library written by <Author Name>, providing <short description>. 
-<Add 2–3 sentences of context about the problem the library solves, and what makes it stand out.>
-
-You can find the library here:
-    - Repo: <url>
-    - Documentation: <url>
-
-<Explain briefly where this type of library is useful — include 2–3 concrete scenarios or applications.>
-
-As always, we welcome all reviews — from quick impressions to detailed analysis. 
-Your feedback helps ensure that the library meets Boost's high standards in terms of correctness, performance, documentation, and design. 
-If you’re interested in contributing a review, please post to the Boost mailing list during the review period.
-
-<Optional notes: e.g., broken links, build caveats, or special instructions.>
-
-Thank you in advance for your time and insights!
-
-Best regards,  
-<Your Name>  
-Review Manager, <Library Name>
-```
+    Subject: [<short lib name>] Review Announcement: <Library Name> (<start date>–<end date>)
+    
+    Dear Boost community,
+    
+    The review of the <Library Name> library begins on <start date> and will run through <end date>.
+    
+    <Library Name> is a <header-only/compiled> C++ library written by <Author Name>, providing <short description>. 
+    <Add 2–3 sentences of context about the problem the library solves, and what makes it stand out.>
+    
+    You can find the library here:
+        - Repo: <url>
+        - Documentation: <url>
+    
+    <Explain briefly where this type of library is useful — include 2–3 concrete scenarios or applications.>
+    
+    As always, we welcome all reviews — from quick impressions to detailed analysis. 
+    Your feedback helps ensure that the library meets Boost's high standards in terms of correctness, performance, documentation, and design. 
+    If you’re interested in contributing a review, please post to the Boost mailing list during the review period.
+    
+    <Optional notes: e.g., broken links, build caveats, or special instructions.>
+    
+    Thank you in advance for your time and insights!
+    
+    Best regards,  
+    <Your Name>  
+    Review Manager, <Library Name>
 
 ### 📌 Example: Boost.Bloom Review Announcement Email
 
@@ -114,14 +112,13 @@ Here is the exact email I sent when announcing the review of **Boost.Bloom**:
     Arnaud Becheler  
     Review Manager, Boost.Bloom
 
-👉 This first email is about **setting expectations** and **raising awareness**. The official “Review Starts” email will follow at the actual beginning of the review period, serving as a reminder and a more formal kickoff.
- 
+👉 This first email is about **setting expectations** and **raising awareness**. The official “Review Begins” email will follow at the actual beginning of the review period, serving as a reminder and a more formal kickoff. Since the quality of the review process depends heavily on the quantity and quality of reviewers, it is a good idea to remind that all forms of feedback are welcome and encouraged: even experts benefit from fresh perspectives, and even a short note from a newcomer can provide valuable insight. I typically forward those Review Announcement Emails to colleagues, friends and my C++ meetup attendees.
 
 ---
 
 ## The Official Start Email: "Review Begins"
 
-Once the review period arrives, the Review Manager sends a **“Review Starts Now” email**.  
+Once the review period arrives, the Review Manager sends a **“Review Begins Now” email**.  
 This is the formal kickoff: it marks the exact opening date, reminds the community of the review period, and encourages active participation. Unlike the earlier *announcement* (sent in advance to raise awareness), this one emphasizes *action* — it asks people to read, test, and submit their reviews.  
 
 It also usually includes **guiding questions** so reviewers know what to look for, which lowers the barrier for participation.
@@ -213,7 +210,13 @@ Here is the exact email I sent when officially starting the review of **Boost.Bl
     Review Manager, Boost.Bloom
 
 
-👉 Compared to the *announcement*, this email is more **directive**: it asks reviewers to participate, provides structured guiding questions, and officially marks the review as open.
+👉 Compared to the *announcement*, this email is more **directive**: it asks reviewers to participate, provides structured guiding questions, and officially marks the review as open. Starting from then, reviewers will chime in during the review period, and the authors will answer their questions.  
+
+As Review Manager, I decided to let discussions flourish as long as they remain peaceful and productive. The Boost mailing list is a passionate community, and debates can sometimes become a bit heated. No one enjoys dealing with negativity in their free time — especially when all participants are volunteering their energy and expertise. That’s why, if any frustration or tension arises, it is part of the Review Manager’s responsibility to gently step in and bring the focus back to constructive dialogue. A calm and non-violent message helps de-escalate without shutting down the exchange, for example:
+
+> “Thank you both for your perspectives — I can see that you are approaching the problem from different angles. Let’s remember that our shared goal here is to evaluate Boost.Bloom constructively and fairly. Could I suggest that we focus on clarifying the specific technical concerns raised, so that the author and others can respond directly? This way we keep the discussion useful for everyone following along.”  
+
+The goal is not to police or silence, but to *remind participants of the common purpose* and to invite them back into a respectful, technical frame of mind.
 
 ---
 

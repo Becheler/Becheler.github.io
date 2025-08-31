@@ -581,5 +581,14 @@ Combined with an AI summarizer, it helps navigate viewpoints quickly when prepar
 ---
 
 ## 🌟 Closing Thought
+
+## 🌟 Closing Thought
+
 Being a Review Manager is less about being an expert and more about being a good facilitator.  
-Your effort ensures Boost libraries remain among the best in the C++ ecosystem.
+The role is about creating the conditions for constructive dialogue, keeping the process fair, and making sure every voice is heard. By doing so, you help ensure that Boost libraries remain among the best in the C++ ecosystem.
+
+On a personal note, I felt proud and excited to be trusted with this responsibility. It was also a moment of recognition for my expertise and a real sense of inclusion in the Boost community. I gave my best effort to keep the process running smoothly, but of course not everyone always agreed — some reviewers had different opinions, and a few minor conflicts did arise. Still, those moments were valuable learning opportunities about communication and moderation.  
+
+The human aspect mattered as much as the technical one: I came closer to many individuals in the community, I was invited to CppCon2025 in Denver and even had the chance to meet Matt Borland in Paris last week — we visited the Louvre together and shared a meal at a (very) French restaurant. Experiences like that reminded me that open-source is not just about code, but also about people and connections. People are amazing.
+
+So the time spent was far from useless: I deepened my understanding of Bloom filters, gained insights into the art of managing reviews, and built stronger ties with the Boost community. Plus, I can admit it — it feels pretty good to show off at work that I had the privilege of managing a Boost peer review. Reviewing for Boost doesn’t just make the libraries better, I think it makes us better too.

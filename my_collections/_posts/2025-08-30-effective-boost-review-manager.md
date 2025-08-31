@@ -9,7 +9,7 @@ tags: [boost, bloom, filters, C++, review,]
 sticky: false
 ---
 
-Escaped Academia but Caught by Boost...
+Escaped Academia but caught by Boost... What was I thinking?
 
 Boost is one of the most influential projects in the C++ world.  
 It is a collection of peer-reviewed, open source libraries that extend the capabilities of the C++ standard library. Many parts of Boost — such as smart pointers, regular expressions, or unordered containers — have directly influenced or been adopted into the C++ standard itself. What makes Boost unique is its rigorous **peer review process**, where each new library is openly evaluated by the community for design quality, documentation, portability, and long-term maintainability before being accepted.

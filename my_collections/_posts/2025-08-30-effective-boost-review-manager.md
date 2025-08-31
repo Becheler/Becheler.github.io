@@ -582,7 +582,8 @@ Combined with an AI summarizer, it helps navigate viewpoints quickly when prepar
 
 ## 🌟 Closing Thought
 
-Being a Review Manager is less about being an expert and more about being a good facilitator.  
+Being a Review Manager is less about being an **expert** and more about being a good **facilitator**.
+
 The role is about creating the conditions for constructive dialogue, keeping the process fair, and making sure every voice is heard. By doing so, you help ensure that Boost libraries remain among the best in the C++ ecosystem.
 
 On a personal note, I felt proud and excited to be trusted with this responsibility. It was also a moment of **recognition** for my expertise and a real sense of **inclusion** in the Boost community. I gave my best effort to keep the process running smoothly, but of course not everyone always agreed — some reviewers had different opinions, and a few minor conflicts did arise. Still, those moments were valuable learning opportunities about **communication** and **moderation**.  

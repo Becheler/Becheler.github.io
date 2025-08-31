@@ -16,12 +16,9 @@ It is a collection of peer-reviewed, open source libraries that extend the capab
 
 At the center of each peer review is the **Review Manager**. This role is not about being the ultimate authority on the library’s technical domain, but about ensuring the process is fair, structured, and productive. The Review Manager announces the review, encourages participation, tracks feedback, and finally summarizes the outcome with a recommendation for acceptance (or rejection).
 
-Recently, Matt Borland from the **C++ Alliance** contacted me to act as Review Manager for **Boost.Bloom**, a new library by Joaquín Muñoz.  
-Boost.Bloom provides an efficient implementation of **Bloom filters**, a well-known probabilistic data structure for fast membership testing, widely used in applications like databases, distributed systems, and caches.  
+Recently, Matt Borland from the **C++ Alliance** contacted me to act as Review Manager for **Boost.Bloom**, a new library by  Joaquín M López Muñoz. [Boost.Bloom](https://www.boost.org/doc/libs/1_89_0/libs/bloom/doc/html/bloom.html) provides an efficient implementation of **Bloom filters**, a well-known probabilistic data structure for fast membership testing, widely used in applications like databases, distributed systems, and caches.  
 
-On a personal note, I saw this invitation as both a responsibility and a privilege.  
-Having used and taught modern C++ for years, I know how much Boost has shaped the way we write code today. Acting as a Review Manager was exciting but also a little intimidating: I wanted to do justice to both the library and the community. While Joaquín and Matt were extremely supportive and helped me through the process, I realized that there aren’t many clear guidelines for new Review Managers. That’s why I decided to write this article — to share my experience and provide practical material that I wish I had when I started.
-
+I saw this invitation as both a responsibility and a privilege. Having used and taught modern C++ for years, I know how much Boost has shaped the way we write code today. Acting as a Review Manager was exciting but also a little intimidating: I wanted to do justice to both the library and the community. While Joaquín and Matt were extremely supportive and helped me through the process, I realized that there aren’t many clear guidelines for new Review Managers. That’s why I decided to write this article — to share my experience and provide practical material that I wish I had when I started.
 
 ---
 

@@ -4,7 +4,7 @@ title: How to Be an Effective Boost Review Manager
 subtitle: Peer Review Never Dies
 date: 2025-08-30 23:30
 description: Being an effective Review Manager for Boost Libraries
-img: doodles/all_is_withering.png
+img: doodles/review_manager.png
 tags: [boost, bloom, filters, C++, review,]
 sticky: false
 ---

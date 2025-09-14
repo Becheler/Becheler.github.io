@@ -12,7 +12,7 @@ sticky: false
 Escaped Academia but caught by Boost... What was I thinking?
 
 Boost is one of the most influential projects in the C++ world.  
-It is a collection of peer-reviewed, open source libraries that extend the capabilities of the C++ standard library. Many parts of Boost — such as smart pointers, regular expressions, or unordered containers — have directly influenced or been adopted into the C++ standard itself. What makes Boost unique is its rigorous **peer review process**, where each new library is openly evaluated by the community for design quality, documentation, portability, and long-term maintainability before being accepted.
+It is a collection of peer-reviewed, open source libraries that extend the capabilities of the C++ standard library. [Many parts of Boost](https://bannalia.blogspot.com/2024/05/wg21-boost-and-ways-of-standardization.html?m=1#golden-era-1998-2011) — such as smart pointers, regular expressions, chrono and random utilities, tuple, threads — have directly influenced or been adopted into the C++ standard itself. What makes Boost unique is its rigorous **peer review process**, where each new library is openly evaluated by the community for design quality, documentation, portability, and long-term maintainability before being accepted.
 
 At the center of each peer review is the **Review Manager**. This role is not about being the ultimate authority on the library’s technical domain, but about ensuring the process is fair, structured, and productive. The Review Manager announces the review, encourages participation, tracks feedback, and finally summarizes the outcome with a recommendation for acceptance (or rejection).
 
@@ -558,14 +558,85 @@ More than that, it also serves as a reference for future Review Managers and con
 
 ## 📊 Review Email Tracking Table
 
-Use this table to capture the flow of emails during the review.  
-Combined with an AI summarizer, it helps navigate viewpoints quickly when preparing the final decision email and the GitHub PR for peer review.
+This table is designed to capture and organize the flow of reviewer emails throughout the review process. It serves as a central place to:
+
+- **Track personal follow-ups:** I used it to log when I sent each reviewer a personalized thank-you email, along with a short summary of their feedback and a gentle request to confirm details such as their recommendation or institutional affiliation. This helped ensure I fully understood their position.
+- **Summarize reviewer perspectives:** By condensing lengthy email threads into concise feedback notes, the table makes it easier to compare viewpoints at a glance. It also helps writing Github Issues after the review closes.
+- **Support decision-making:** When preparing the final decision email or compiling the peer review summary on GitHub, this record provides a quick reference to who said what and when.
+
+Combined with an AI summarizer, this approach is especially powerful for navigating complex or lengthy reviewer exchanges. For example, I’ve often prompted an LLM with questions like: “Who raised a concern about performance on ARM, and who later responded to it?” Since discussions can span multiple overlapping threads, it’s easy to lose track — and AI can be a very effective assistant in surfacing these connections. (Of course, always double-check and verify AI outputs before relying on them.)
 
 | Author       | Date       | Time  | Full Text | Summarized Feedback | Recommended Acceptance | Recommended Actions | Thanked Status | Affiliation |
 |--------------|-----------|-------|-----------|---------------------|------------------------|--------------------|----------------|-------------|
 | John Smith   | 2025-09-01| 10:14 | [link]    | Docs are excellent, API intuitive | Yes | Minor rename suggestions | Yes | Independent |
 | Jane Doe     | 2025-09-02| 15:47 | [link]    | Concern about performance on ARM | No  | Optimize allocator | Pending | University |
 | …            | …         | …     | …         | …                   | …                      | …                  | …              | …           |
+
+I found this table particularly useful when opening a series of [peer-review related issues on Boost.Bloom Github](https://github.com/boostorg/bloom/issues?q=is%3Aissue%20state%3Aclosed%20%5Bpeer-review%5D). The main idea was to relieve the library author from having to dig through scattered review emails or Slack threads, and instead let them focus on the actual coding. Each issue clearly documented:
+
+- What aspect of the library reviewers suggested changing
+- Who raised the point
+- Where and when it was discussed
+
+This way, the rationale behind a proposed change was transparent and traceable. Admittedly, I might have been a bit overzealous, but I imagined that in 10 years, future contributors (or users) would appreciate having access to the historical reasons behind API design decisions.
+
+For me, this approach also acted as a safeguard: each issue I created was firmly anchored in documented reviewer feedback. That way, I wasn’t inventing requests, but faithfully translating the community’s input into actionable GitHub issues.
+
+Including a Background section was equally important — it gave me the chance to restate the problem in beginner-friendly terms. Since I wasn’t a Bloom Filter specialist myself, this step was reassuring: it confirmed that I truly understood the motivation behind the issue and wasn’t just copying feedback blindly.
+
+This is the kind of template I followed for opening a peer-review issue:
+
+    ---
+    name: "Peer Review Feedback"
+    about: "File an issue based on peer-review feedback (email, Slack, or GitHub discussion)."
+    title: "[peer-review] <Short Summary>"
+    labels: ["peer-review"]
+    assignees: []
+    ---
+    
+    ## 📌 Description
+    <!-- Concise explanation of the requested change or addition -->
+    <Provide a short, clear description of what this issue is about.>
+    
+    ---
+    
+    ## 💬 Reviewer Quotes
+    <!-- Attribute feedback to reviewers, with source and date -->
+    > “<Direct quote from reviewer>”  
+    > — <Reviewer Name> (Email/Slack/GitHub, Date)
+    
+    > “<Other supporting quotes if available>”  
+    > — <Reviewer Name> (Source, Date)
+    
+    ---
+    
+    ## 📚 Background (Beginner-Friendly)
+    <!-- Explain the technical concept in simple terms, so newcomers (or yourself) can follow the motivation -->
+    <Provide a short explanation of what the concept is, why it matters, and what problem it solves.>
+    
+    ---
+    
+    ## ❓ Discussion Points
+    <!-- List questions or decisions maintainers need to consider -->
+    - Should we provide a helper function `X`?
+    - Should the function return `Y` or `Z`?
+    - What’s the cleanest API surface for this feature?
+    
+    ---
+    
+    ## 💻 Example Usage
+    <!-- Minimal but illustrative code snippet -->
+    ```cpp
+    // Example of proposed usage
+    auto bytes = bloom_required_bytes(1'000'000, 7);
+    alignas(bloom_alignment(1'000'000, 7)) 
+    char buffer[bytes];
+    bloom_filter f(buffer, bytes);
+
+This will give you a structured issue template every time, ensuring:  
+- traceability of *who said what and when*  
+- clarity for maintainers and contributors (now and years later)  
+- a consistent tone across all peer-review–based issues
 
 ---
 

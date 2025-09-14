@@ -564,7 +564,9 @@ This table is designed to capture and organize the flow of reviewer emails throu
 - **Summarize reviewer perspectives:** By condensing lengthy email threads into concise feedback notes, the table makes it easier to compare viewpoints at a glance. It also helps writing Github Issues after the review closes.
 - **Support decision-making:** When preparing the final decision email or compiling the peer review summary on GitHub, this record provides a quick reference to who said what and when.
 
-Combined with an AI summarizer, this approach is especially powerful for navigating complex or lengthy reviewer exchanges. For example, I’ve often prompted an LLM with questions like: “Who raised a concern about performance on ARM, and who later responded to it?” Since discussions can span multiple overlapping threads, it’s easy to lose track — and AI can be a very effective assistant in surfacing these connections. (Of course, always double-check and verify AI outputs before relying on them.)
+Combined with an AI summarizer, this approach is especially powerful for navigating complex or lengthy reviewer exchanges. For example, I’ve often prompted an LLM with questions like: *“Who raised a concern about performance on ARM, and who later responded to it?”* 
+
+Since discussions can span multiple overlapping threads, it’s easy to lose track — and AI can be a very effective assistant in surfacing these connections. Of course, always double-check and verify AI outputs before relying on them - but it nicely complements a CTRL+F!
 
 | Author       | Date       | Time  | Full Text | Summarized Feedback | Recommended Acceptance | Recommended Actions | Thanked Status | Affiliation |
 |--------------|-----------|-------|-----------|---------------------|------------------------|--------------------|----------------|-------------|

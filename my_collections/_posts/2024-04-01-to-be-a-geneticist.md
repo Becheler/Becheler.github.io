@@ -9,6 +9,8 @@ tags: [palestine, ecology, evolution, gaza, genocide,]
 sticky: false
 ---
 
+> Edit: By April 2025, an estimated 680,000 Gazans — about one-third of the population — may have died when both violent and deprivation-related deaths are counted. The figure is based on Devi Sridhar’s Guardian analysis and UNHCR-documented ratios of indirect-to-direct deaths applied to casualty data from Gaza’s Ministry of Health and The Lancet.
+
 Feelings always find their way to our surface. From the core and to the eyes, through the fissures and through the cracks. They may not show up at a convenient time, nevermind. At least they will show up, and they will do so with the full strength of a typhoon: in the deafening silence of our time, they will make sure to not go unnoticed. Like an ice cold body of water that we kept buried, pressured, subdued under our feet, they have been calling and knocking from under the rubble for so long, pleading to finally run wild and free from the river to the sea, and for what? To be heard ? To be seen ? To exist ? Oh for god's sake, in this hurricane and by my gaze will you hear our world soul’s ache  ?
 
 To be a geneticist is to care about lineages, and through them to find grounding and meaning in a world that seems out of reach. Lineages reach far, they run wild through time and space, they take root in secret places and leave us in the here and the known, sometimes lost but never alone as we remain connected and related at the most atomic level of our genetic components. 

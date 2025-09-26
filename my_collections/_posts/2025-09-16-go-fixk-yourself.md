@@ -4,7 +4,7 @@ title: Dear English Reader, go fixk yourself
 subtitle: Or how not to be an asshole while being good at your own language
 date: 2025-09-16 1:22
 description: Not Being An Asshole
-img: doodles/ai_gross.jpg
+img: doodles/gross_ai.jpg
 sticky: false
 ---
 

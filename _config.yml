@@ -13,7 +13,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Arnaud Becheler # add your name
 author-img: arnaud-becheler.png # add your photo
-about-author: A French Software Engineer, always happy to learn about phylogeography and programming! # add description
+about-author: C++ trainer and software engineer, building open-source libraries for computational biology. # add description
 social-github: Becheler
 social-stackoverflow: 10360134/waterfox
 social-meetup: 367637136

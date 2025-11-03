@@ -4,7 +4,6 @@ title: You said software design for ... ecology?
 date: 2018-10-07 13:32:20 +0300
 description: Why do we need to care about software design in Ecology and Evolution # Add post description (optional)
 img: doodles/lost_in_translation.png # Add image post (optional)
-fig-caption: Derek lost in software complexity # Add figcaption (optional)
 tags: [software, design, biology, derek&léonin]
 sticky: false
 ---

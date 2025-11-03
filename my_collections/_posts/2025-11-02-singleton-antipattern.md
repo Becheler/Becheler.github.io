@@ -5,7 +5,6 @@ subtitle: Only if you abuse this pattern
 date: 2025-11-02 14:00
 description: Understanding the Singleton pattern's original intentions and why it frequently becomes an anti-pattern that harms testability, maintainability, and code coupling.
 img: doodles/singleton.png
-fig-caption: Design patterns should heal, not hurt your codebase
 tags: [C++, design-patterns, architecture, testing, SOLID, singleton, anti-pattern]
 sticky: false
 use_math: false

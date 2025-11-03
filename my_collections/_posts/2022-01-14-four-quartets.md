@@ -4,7 +4,6 @@ title: What this old poem wants you to know about me, evolution, the nature of t
 date: 2022-01-14 21:28
 description: A poetic introduction to my research
 img: doodles/hydrothermal_remembrance.png # Add image post (optional)
-fig-caption: Relatedness  # Add figcaption (optional)
 tags: [poetry, ecology, evolution, biogeography, coalescence]
 sticky: false
 ---

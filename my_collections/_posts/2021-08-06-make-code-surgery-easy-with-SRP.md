@@ -4,7 +4,6 @@ title: Make code surgery easy with the SRP
 date: 2021-08-06 13:32:20 +0300
 description: How to write more modular code # Add post description (optional)
 img: doodles/scalpel.jpg # Add image post (optional)
-fig-caption: A code autopsy # Add figcaption (optional)
 tags: [programming, modular, SOLID, biology, doodles, derek&léonin]
 sticky: false
 ---

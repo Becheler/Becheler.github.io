@@ -4,7 +4,6 @@ title: Easily pick substitutes with the LSP
 date: 2021-08-07 13:32:20 +0300
 description: Discover the Liskov Substition Principle # Add post description (optional)
 img: doodles/LSP_1_basketball.jpg # Add image post (optional)
-fig-caption: Léonin having some fun with the library guys # Add figcaption (optional)
 tags: [LSP, SOLID, Liskov]
 sticky: false
 ---

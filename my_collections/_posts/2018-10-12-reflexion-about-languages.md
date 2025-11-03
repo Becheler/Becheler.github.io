@@ -4,7 +4,6 @@ title: Biologists! coding does not have to be so frustrating!
 date: 2018-10-12 13:32:20 +0300
 description: Can we reframe programming as a natural language? # Add post description (optional)
 img: doodles/morning_coding.jpg # Add image post (optional)
-fig-caption: Léonin, god of bad programming # Add figcaption (optional)
 tags: [programming, natural language, fun, biology, doodles, derek&léonin]
 sticky: false
 ---

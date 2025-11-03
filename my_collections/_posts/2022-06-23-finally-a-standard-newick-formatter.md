@@ -5,7 +5,6 @@ subtitle: Ou la révolution des pointeurs
 date: 2022-06-23 13:30
 description: Approaching population genetics with a modern C++ design
 img: doodles/revolution_des_pointeurs.png # Add image post (optional)
-fig-caption: (Fall) back to the trees!  # Add figcaption (optional)
 tags: [ecology, evolution, biogeography, coalescence, quetzal, phylogeny, newick, C++]
 sticky: false
 use_math: true

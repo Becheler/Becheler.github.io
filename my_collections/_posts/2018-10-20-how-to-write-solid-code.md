@@ -5,7 +5,6 @@ img: doodles/solid.jpg
 date: 2018-10-20 13:32:20 +0300
 description: How to write better code # Add post description (optional)
 img: doodles/solid.jpg # Add image post (optional)
-fig-caption: Derek, evil god of programming # Add figcaption (optional)
 tags: [programming, SOLID, biology, doodles, derek&léonin]
 sticky: false
 ---

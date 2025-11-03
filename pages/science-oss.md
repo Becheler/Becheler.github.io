@@ -7,7 +7,7 @@ description: Arnaud Becheler's scientific research, presentations, and open-sour
 
 <style>
 .icon-link {
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: transform 0.2s ease-in-out;
   display: inline-block;
   margin-right: 15px;
@@ -16,7 +16,7 @@ description: Arnaud Becheler's scientific research, presentations, and open-sour
   text-decoration: none;
 }
 .icon-link.quetzal-icon {
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 .icon-link:hover {
   transform: scale(1.2);

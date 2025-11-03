@@ -7,11 +7,13 @@ description: Arnaud Becheler's scientific research, presentations, and open-sour
 
 <style>
 .icon-link {
-  font-size: 2em;
+  font-size: 1em;
   transition: transform 0.2s ease-in-out;
   display: inline-block;
   margin-right: 15px;
   vertical-align: middle;
+  color: inherit;
+  text-decoration: none;
 }
 .icon-link:hover {
   transform: scale(1.2);
@@ -28,18 +30,6 @@ description: Arnaud Becheler's scientific research, presentations, and open-sour
 </style>
 
 # Science & Open Source Software
-
-## Research & Presentations
-
-<div class="project-item">
-  <a href="{{site.baseurl}}/pages/code-labs/" class="icon-link" title="Presentations & Seminars"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-  <span class="project-description">Technical talks on C++, software design, and computational biology</span>
-</div>
-
-<div class="project-item">
-  <a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link" title="Google Scholar"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-  <span class="project-description">Publications and research contributions</span>
-</div>
 
 ## Open Source Software
 
@@ -63,6 +53,18 @@ A comprehensive C++ framework for ecological and evolutionary modeling:
 <div class="project-item">
   <a href="https://github.com/Becheler/decrypt" target="_blank" class="icon-link" title="Decrypt"><i class="icon icon-decrypt_fa" aria-hidden="true"></i></a>
   <span class="project-description">Decrypt - Modern C++ tools for cryptographic operations</span>
+</div>
+
+## Research & Presentations
+
+<div class="project-item">
+  <a href="{{site.baseurl}}/pages/code-labs/" class="icon-link" title="Presentations & Seminars"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+  <span class="project-description">Technical talks on C++, software design, and computational biology</span>
+</div>
+
+<div class="project-item">
+  <a href="https://scholar.google.fr/citations?user=zEwT-zUAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link" title="Google Scholar"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+  <span class="project-description">Publications and research contributions</span>
 </div>
 
 ---

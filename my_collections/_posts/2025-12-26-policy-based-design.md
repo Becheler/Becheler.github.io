@@ -86,7 +86,7 @@ Both approaches suffer from the same fundamental problem: the dimensions are not
 
 Remember linear algebra. With only orthogonal vectors in 3D space, any point can be expressed as a linear combination of those three vectors. You don't need to define every possible point explicitly: you just need to combine the base vectors:
 
-$$\vec{P} = a\vec{u} + b\vec{v} + c\vec{w}$$
+$\vec{P} = a\vec{u} + b\vec{v} + c\vec{w}$
 
 The key insight is: three orthogonal vectors give you access to infinite points in 3D space through composition, not enumeration. Software design works the same way, as each behavioral dimension should be:
 

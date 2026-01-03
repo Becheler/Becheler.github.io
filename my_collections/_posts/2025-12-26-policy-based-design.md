@@ -2,9 +2,9 @@
 layout: post
 title: Policy-Based Design
 subtitle: Don't let combinatorial chaos win!
-date: 2024-04-25 13:30
+date: 2025-12-26 13:30
 description: How compile-time strategies save you from exponential nightmares
-img: doodles/revolution_des_pointeurs.png
+img: doodles/under_construction.png
 tags: [C++, design, templates, policy-based-design, quetzal, modern-cpp]
 sticky: false
 use_math: true
@@ -131,7 +131,7 @@ auto result = format_message(Format::JSON, "Hello");
 
 This can work, but it comes with drawbacks:
 - Adding a variant requires updating both the enum and the switch (possibly in different files), increasing merge conflict risks
-- All branches must return the same or convertible type (here an `int`), locking in the signature
+- All branches must return the same or convertible type (here an `int`), locking in the signature. This matters because JSONObject can have methods for manipulation that strings lack.
 - Client code cannot inject external behaviors unknown to your library
 - The dispatch happens at runtime even when the choice is known at compile time
 

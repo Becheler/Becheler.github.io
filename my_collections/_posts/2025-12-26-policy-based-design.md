@@ -313,9 +313,47 @@ The compiler is your friend. Give it the information it needs (via templates) an
 
 So next time you're facing a combinatorial explosion of behaviors, don't reach for inheritance and virtual functions. Don't resign yourself to copy-pasting code. Reach for policies, let the compiler do the heavy lifting, and get back to solving your actual problem.
 
+## Real-world example: Boost.Bloom
+
+[Boost.Bloom](https://www.boost.org/doc/libs/latest/libs/bloom/doc/html/bloom.html), authored by Joaquín M López Muñoz, implements Bloom filters: space-efficient probabilistic data structures analogous to compressed databases, useful for fast membership testing. Full disclosure: I served as Review Manager when this library was accepted into Boost. 
+
+Bloom filters work by hashing elements and setting specific bits in an array. The hash function determines which bits get marked, and its quality affects the filter's accuracy. A poor hash function causes collisions and false positives and a good one distributes bits uniformly. But users might bring domain-specific hashes, legacy code hashes, standard library hashes of varying quality, so the library can't force one "good-enough" implementation on everybody.
+
+**The domain problem**: Hash functions vary wildly in quality: high-quality ones produce well-distributed values that work great as-is, but poor-quality ones need additional bit mixing to avoid collisions.
+
+**The user's need**: Users with good hash functions shouldn't pay for mixing they don't need. Users with poor hash functions should get automatic enhancement. Checking hash quality at runtime would add overhead to every operation.
+
+**The developer's solution**: A policy family that the compiler selects based on hash traits:
+
+```cpp
+struct no_mix_policy {
+  static uint64_t mix(const Hash& h, const T& x) {
+    return (uint64_t)h(x);
+  }
+};
+
+struct mulx64_mix_policy {
+  static uint64_t mix(const Hash& h, const T& x) {
+    return mulx64((uint64_t)h(x));  // Applies bit mixing
+  }
+};
+```
+
+The library selects the appropriate policy at compile time based on hash function traits:
+
+```cpp
+using mix_policy = typename std::conditional<
+  unordered::hash_is_avalanching<Hash>::value,  // Avalanching (small input changes → large output changes) ensures uniform bit distribution
+  no_mix_policy,      // Good hash: no mixing needed
+  mulx64_mix_policy   // Poor hash: apply mixing
+>::type;
+```
+
+**The result**: Users with good hash functions pay zero cost. Users with poor hash functions get automatic enhancement. No runtime checks, no virtual calls, no wasted cycles. The right strategy for your situation, decided at compile time.
+
 ---
 
-Want to see more? Check out [Andrei Alexandrescu's "Modern C++ Design"](https://en.wikipedia.org/wiki/Modern_C%2B%2B_Design) for the definitive treatment of policy-based design. Or explore my [Quetzal library](https://github.com/Becheler/quetzal-CoaTL) to see these ideas applied in a different domain.
+Want to see more? Check out [Andrei Alexandrescu's "Modern C++ Design"](https://en.wikipedia.org/wiki/Modern_C%2B%2B_Design) for the definitive treatment of policy-based design. Or explore [Boost.Bloom](https://www.boost.org/doc/libs/latest/libs/bloom/doc/html/bloom.html) to see policies in action, and my [Quetzal library](https://github.com/Becheler/quetzal-CoaTL) to see these ideas applied in a different domain.
 
 
 

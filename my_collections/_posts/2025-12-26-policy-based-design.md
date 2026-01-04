@@ -5,7 +5,7 @@ subtitle: Dependency injection that doesn't lock you in
 date: 2025-12-26 13:30
 description: How compile-time strategies save you from exponential nightmares
 img: doodles/policy_family.png
-tags: [C++, design, templates, policy-based-design, quetzal, modern-cpp]
+tags: [C++, architecture, template, policy-based-design, boost, bloom-filters]
 sticky: false
 use_math: true
 ---

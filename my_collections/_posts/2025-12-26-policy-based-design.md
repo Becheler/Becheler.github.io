@@ -104,7 +104,7 @@ For example, if you were to add caching strategies with 3 options:
 - **Orthogonal Design** has you write 1 new component (total: 8 components for 36 combinations)
 - **Coupled Design** has you write 24 new switch branches or classes (total: 36 implementations)
 
-That's the power of orthogonality: you escape combinatorial hell by making your dimensions truly independent. It's a good, SOLID ariane thread to follow. But there are so many ways to extract, apply and compose components. How to chose?
+That's the power of orthogonality: you escape combinatorial hell by making your dimensions truly independent. It's a good, SOLID Ariadne's thread to follow. But there are so many ways to extract, apply and compose components. How to chose?
 
 ## Quick and Dirty approach: enums and switch
 
@@ -150,21 +150,28 @@ Assuming C++17 is available to you, a slight design variation could be to use `i
 enum class Format {PlainText, JSON, XML};
 
 template<Format F>
-auto format_message(const std::string& message) {
-    if constexpr (F == Format::PlainText) {
-        return message;  // Returns std::string
-    } else if constexpr (F == Format::JSON) {
-        return JSONObject{{"message", message}};  // Returns JSONObject
-    } else if constexpr (F == Format::XML) {
-        return XMLDocument{"<message>" + message + "</message>"};  // Returns XMLDocument
+class Logger {
+public:
+    void log(const std::string& message) {
+        if constexpr (F == Format::PlainText) {
+            std::cout << message << std::endl;
+        } else if constexpr (F == Format::JSON) {
+            JSONObject obj{{"message", message}};
+            std::cout << obj.serialize() << std::endl;
+        } else if constexpr (F == Format::XML) {
+            std::cout << "<message>" << message << "</message>" << std::endl;
+        }
     }
-}
+};
 
-// Usage: each call gets a different return type
-auto plain = format_message<Format::PlainText>("Hello");     // std::string
-auto json = format_message<Format::JSON>("Hello");           // JSONObject
-auto xml = format_message<Format::XML>("Hello");             // XMLDocument
+// Usage: each Logger type is specialized at compile-time
+Logger<Format::PlainText> plain_logger;
+plain_logger.log("Hello");  // std::string handling
+
+Logger<Format::JSON> json_logger;
+json_logger.log("Hello");   // JSONObject handling
 ```
+[See on Compiler Explorer](https://godbolt.org/z/bE6nP1zG1)
 [See on Compiler Explorer](https://godbolt.org/z/bE6nP1zG1)
 
 This approach solves two of the previous drawbacks:
@@ -181,6 +188,8 @@ Both the runtime switch and `if constexpr` approaches share a fundamental limita
 Policy-based design solves this by turning behaviors into independent types rather than enum values. Each behavior becomes a self-contained class. Users can provide their own types without modifying your library. The host class takes template parameters and composes them. The compiler generates a specialized version for each combination you actually use—zero runtime overhead, full extensibility.
 
 The actual cost of such decoupling is obviously less cohesion: it can be harder to find the relationship between a policy class and its host class. Concepts in C++20 help a bit to tighten them together.
+
+You've been using policy-based design without realizing it. STL containers take allocators for custom memory management, `std::basic_string` takes `std::char_traits` (that's how you'd implement case-insensitive strings), `std::map` takes custom comparison functions, and `std::unordered_map` takes custom hash functions and equality predicates. The standard library proves the design works in a user-friendly way.
 
 Let's revisit our logging system with a policy-based approach:
 
@@ -278,7 +287,7 @@ Like any powerful tool, policy-based design has its place. Don't use it when:
 - **The policies are large and complex**: If a "policy" is several thousand lines of code, it's probably not a policy
 - **You need runtime configuration**: If users choose behavior at runtime based on config files or user input, runtime polymorphism is more appropriate. Beware: you can almost always mistakenly think a compile-time choice is a runtime one. Be aware of the difference.
 - **You're sharing interfaces across DLL boundaries**: Template classes can't cross DLL boundaries easily
-- **Binary size matters more than speed**: Each policy combination generates a separate class. But often you won't need to instantiate many combinations anyway
+- **Code bloat is a concern**: Each policy combination generates a separate template instantiation in your binary. For example, `Logger<JSON, File>` and `Logger<XML, File>` create two complete class definitions. If you instantiate many combinations, binary size can balloon. This is why C++17 introduced `std::pmr::polymorphic_allocator` and `std::pmr::memory_resource`: they use runtime polymorphism (virtual functions) to avoid generating dozens of `std::vector` instantiations for different allocators, trading some performance for smaller binaries.
 - **Compilation time is already problematic**: Template-heavy code can slow down compilation.
 
 ## Why not just use OOP?
@@ -295,17 +304,21 @@ class Logger {
 };
 ```
 
-Runtime polymorphism works great when you genuinely need runtime flexibility—like a plugin system where third-party DLLs get loaded at startup. But if your behavior choices are known at compile-time, you pay unnecessary costs:
+Runtime polymorphism works great when you genuinely need runtime flexibility—like a plugin system where third-party DLLs get loaded at startup. It's also the right choice when code bloat becomes a problem. The standard library itself demonstrates this trade-off: C++17 introduced `std::pmr::polymorphic_allocator` and `std::pmr::memory_resource` specifically to avoid generating dozens of `std::vector` instantiations for every allocator combination. They use virtual functions to trade a bit of performance for significantly smaller binaries.
+
+But if your behavior choices are known at compile-time and binary size isn't an issue, policy-based design avoids unnecessary costs:
 
 **Performance overhead**: Virtual calls prevent inlining and block compiler optimizations. In high-throughput systems (web servers, message queues), this can be the difference between 10,000 and 50,000 requests per second.
 
-**Type information loss**: With virtual functions, all formatters must return the same type. Your `JSONFormatter` can't return a rich `JSONObject`—it's forced to flatten everything to strings to match the base class interface.
+**Type information loss**: With virtual functions, all formatters must return the same type. Your `JSONFormatter` can't return a rich `JSONObject`: it's forced to flatten everything to strings to match the base class interface.
+
+The key is choosing the right tool: policies when you know the strategy at compile-time and performance matters, OOP when you need runtime flexibility or want to control binary size.
 
 ## Conclusion: freedom without fear
 
 Policy-Based Design offers an important capability in software engineering: the ability to be flexible without paying for it. Also, keep in mind policies are unitary testable, and very mobile: I pasted them along with their tests across several projects. The atomicity of a policy compared to the complexity of an entire enum based switch is a blessing for reusability.
 
-Whether you're building web services, data processing pipelines, game engines, or embedded systems, you often need to explore different strategies, test different approaches, and combine behaviors in novel ways. This flexibility is essential. But your code also needs to be fast. You can't afford to pay for flexibility you don't use.
+Whether you're building data processing pipelines, game engines, or embedded systems, you often need to explore different strategies, test different approaches, and combine behaviors in novel ways. This flexibility is essential. But your code also needs to be fast. You can't afford to pay for flexibility you don't use.
 
 Policy-Based Design is a way to get both.
 

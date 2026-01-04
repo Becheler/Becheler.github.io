@@ -4,7 +4,7 @@ title: Policy-Based Design
 subtitle: Don't let combinatorial chaos win!
 date: 2025-12-26 13:30
 description: How compile-time strategies save you from exponential nightmares
-img: doodles/under_construction.png
+img: doodles/policy_family.png
 tags: [C++, design, templates, policy-based-design, quetzal, modern-cpp]
 sticky: false
 use_math: true

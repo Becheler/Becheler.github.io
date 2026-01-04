@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Policy-Based Design
-subtitle: Don't let combinatorial chaos win!
+title: Policy-Based Design versus Combinatorial Hell
+subtitle: Dependency injection that doesn't lock you in
 date: 2025-12-26 13:30
 description: How compile-time strategies save you from exponential nightmares
 img: doodles/policy_family.png

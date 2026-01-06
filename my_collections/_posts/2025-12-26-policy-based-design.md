@@ -184,7 +184,7 @@ plain_logger.log("Hello");  // std::string handling
 Logger<Format::JSON> json_logger;
 json_logger.log("Hello");   // JSONObject handling
 ```
-[See on Compiler Explorer](https://godbolt.org/z/bE6nP1zG1)
+[See on Compiler Explorer](https://godbolt.org/z/sW7jv6v7Y)
 
 This approach solves two of the previous drawbacks:
 

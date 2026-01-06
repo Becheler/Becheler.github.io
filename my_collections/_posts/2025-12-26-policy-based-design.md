@@ -22,41 +22,45 @@ Let's say you're building a logging system. You need to support three different 
 
 ### The "just use a function" trap
 
-How many times did I hear managers, juniors, coworkers alike say things like "Easy, just make one function with parameters":
+How many times did I hear managers, juniors, coworkers alike say things like "Easy, just make one class with parameters":
 
 ```cpp
-void log(const std::string& message, 
-         Format format, 
-         Destination dest, 
-         Threading threading) {
-    // ... handle all combinations
-}
+class Logger {
+    Format format_;
+    Destination dest_;
+    Threading threading_;
+public:
+    Logger(Format format, Destination dest, Threading threading)
+        : format_(format), dest_(dest), threading_(threading) {}
+    
+    void log(const std::string& message);
+};
 ```
 
-Neat. What they don't see is that you still need to implement all the logic for every combination. Inside that function, you'll end up with nested switches or if-statements:
+Neat. What they don't see is that you still need to implement all the logic for every combination. Inside that method, you'll end up with nested switches or if-statements:
 
 ```cpp
-void log(const std::string& message, Format format, Destination dest, Threading threading) {
+void Logger::log(const std::string& message) {
     std::string formatted;
     
     // First switch for formatting
-    switch(format) {
+    switch(format_) {
         case Format::PlainText: formatted = format_plain(message); break;
         case Format::JSON: formatted = format_json(message); break;
         case Format::XML: formatted = format_xml(message); break;
     }
     
     // Second switch for destination
-    switch(dest) {
+    switch(dest_) {
         case Destination::Console: 
             // Third switch for threading
-            switch(threading) {
+            switch(threading_) {
                 case Threading::Sync: write_console_sync(formatted); break;
                 case Threading::Async: write_console_async(formatted); break;
             }
             break;
         case Destination::File:
-            switch(threading) {
+            switch(threading_) {
                 case Threading::Sync: write_file_sync(formatted); break;
                 case Threading::Async: write_file_async(formatted); break;
             }
@@ -108,30 +112,39 @@ That's the power of orthogonality: you escape combinatorial hell by making your 
 
 ## Quick and Dirty approach: enums and switch
 
-You could simply pass options (as strings or, better, enums) to a function that wraps a switch statement:
+You could simply pass options (as strings or, better, enums) to a class constructor that wraps a switch statement:
 
 ```cpp
 enum class Format {PlainText, JSON, XML};
 
-std::string format_message(Format fmt, const std::string& message) {
-    switch(fmt) {
-        case Format::PlainText: 
-            return message;
-        case Format::JSON: 
-            return "{\"message\": \"" + message + "\"}";
-        case Format::XML: 
-            return "<message>" + message + "</message>";
+class Logger {
+    Format format_;
+public:
+    Logger(Format format) : format_(format) {}
+    
+    void log(const std::string& message) {
+        switch(format_) {
+            case Format::PlainText: 
+                std::cout << message << std::endl;
+                break;
+            case Format::JSON: 
+                std::cout << "{\"message\": \"" << message << "\"}" << std::endl;
+                break;
+            case Format::XML: 
+                std::cout << "<message>" << message << "</message>" << std::endl;
+                break;
+        }
     }
-    throw std::invalid_argument("Unknown format");
-}
+};
 
 // Usage
-auto result = format_message(Format::JSON, "Hello");
+Logger json_logger(Format::JSON);
+json_logger.log("Hello");
 ```
 
 This can work, but it comes with drawbacks:
 - Adding a variant requires updating both the enum and the switch (possibly in different files), increasing merge conflict risks
-- All branches must return the same or convertible type (here an `int`), locking in the signature. This matters because JSONObject can have methods for manipulation that strings lack.
+- All branches must return the same or convertible type, locking in the signature. This matters because JSONObject can have methods for manipulation that strings lack.
 - Client code cannot inject external behaviors unknown to your library
 - The dispatch happens at runtime even when the choice is known at compile time
 
@@ -172,7 +185,6 @@ Logger<Format::JSON> json_logger;
 json_logger.log("Hello");   // JSONObject handling
 ```
 [See on Compiler Explorer](https://godbolt.org/z/bE6nP1zG1)
-[See on Compiler Explorer](https://godbolt.org/z/bE6nP1zG1)
 
 This approach solves two of the previous drawbacks:
 
@@ -186,6 +198,8 @@ Both the runtime switch and `if constexpr` approaches share a fundamental limita
 ## Enter Policy-Based Design
 
 Policy-based design solves this by turning behaviors into independent types rather than enum values. Each behavior becomes a self-contained class. Users can provide their own types without modifying your library. The host class takes template parameters and composes them. The compiler generates a specialized version for each combination you actually use—zero runtime overhead, full extensibility.
+
+Why use a class to host policies rather than template functions? Classes own policy state (file handles, buffers, configuration), compose multiple policies together, and support RAII for resource cleanup. Template functions would require passing policy instances on every call, losing these benefits.
 
 The actual cost of such decoupling is obviously less cohesion: it can be harder to find the relationship between a policy class and its host class. Concepts in C++20 help a bit to tighten them together.
 

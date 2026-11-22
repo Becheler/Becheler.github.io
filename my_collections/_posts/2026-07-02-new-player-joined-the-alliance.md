@@ -4,7 +4,7 @@ title: New Player Joined the Alliance
 subtitle: How a frustrated user ended up revitalizing Boost.Graph
 date: 2026-07-02 13:30
 description: From cursing at Boost.Graph at 2am to joining the C++ Alliance to revitalize it... the contributor journey nobody puts in the bio.
-img: doodles/new_player.jpg
+img: doodles/new_player.png
 tags: [C++, boost, open-source, career]
 sticky: false
 ---

@@ -1,7 +1,75 @@
 ---
 layout: post
-title: Presentations and seminars
+title: "Talks & interviews"
 ---
+
+## November 2026 - Engineering In Public
+
+*How Unit Testing Really Began (And the Refactoring Trap That Followed), with Dave Steffen.*
+
+[![How Unit Testing Really Began with Dave Steffen](https://img.youtube.com/vi/-wmFm4lb2Xo/0.jpg)](https://www.youtube.com/watch?v=-wmFm4lb2Xo)
+
+I interview Dave Steffen for *Engineering In Public*, the interview series of the Boost C++ Libraries channel.
+
+-----------------------------------------------------------------
+
+## November 2026 - Engineering In Public
+
+*Demystifying Modern C++ for Embedded Systems, with Andreas Fertig.*
+
+[![Demystifying Modern C++ for Embedded Systems with Andreas Fertig](https://img.youtube.com/vi/SR6vdOLM0GY/0.jpg)](https://www.youtube.com/watch?v=SR6vdOLM0GY)
+
+I interview Andreas Fertig for *Engineering In Public*, the interview series of the Boost C++ Libraries channel.
+
+-----------------------------------------------------------------
+
+## October 2026 - CppCon 2026
+
+*The Barrier Is a Myth: How to Start Contributing to Boost C++.*
+
+[![Arnaud Becheler CppCon 2026](https://img.youtube.com/vi/Nr7iV9w28cA/0.jpg)](https://www.youtube.com/watch?v=Nr7iV9w28cA)
+
+-----------------------------------------------------------------
+
+## September 2026 - C++ Alliance
+
+*Modernizing Boost.Graph for Science & Community.*
+
+[![Arnaud Becheler Modernizing Boost.Graph](https://img.youtube.com/vi/d66V9BRGAwY/0.jpg)](https://www.youtube.com/watch?v=d66V9BRGAwY)
+
+-----------------------------------------------------------------
+
+## June 2026 - C++ Alliance
+
+*From Genetics to Graphs: Arnaud Becheler on Boost.Graph & the C++ Community.*
+
+[![Arnaud Becheler From Genetics to Graphs](https://img.youtube.com/vi/M66aqsQavf0/0.jpg)](https://www.youtube.com/watch?v=M66aqsQavf0)
+
+-----------------------------------------------------------------
+
+## June 2026 - C++ French User Group #65
+
+*Shape the future of Boost.Graph.*
+
+[![Arnaud Becheler CppFrUG 65](https://img.youtube.com/vi/SKH8-Z4RSls/0.jpg)](https://www.youtube.com/watch?v=SKH8-Z4RSls)
+
+-----------------------------------------------------------------
+
+## April 2026 - C++ French User Group #64
+
+*Un algorithme de Louvain générique pour la Boost Graph Library.*
+
+[![Arnaud Becheler CppFrUG 64](https://img.youtube.com/vi/-OVvzRFiYLU/0.jpg)](https://www.youtube.com/watch?v=-OVvzRFiYLU)
+
+-----------------------------------------------------------------
+
+## January 2026 - Human Coders podcast
+
+*Le C++ en 2026 - FAQ #2.*
+
+[![Human Coders Le C++ en 2026](https://img.youtube.com/vi/sNrPrLNqZvk/0.jpg)](https://www.youtube.com/watch?v=sNrPrLNqZvk)
+
+-----------------------------------------------------------------
 
 ## December 1st, 2021 - Tskit-dev meeting
 

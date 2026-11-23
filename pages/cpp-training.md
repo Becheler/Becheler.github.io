@@ -1,14 +1,27 @@
 ---
 layout: post
-title: Professional C++ Training Services
-subtitle: Modern design and architecture for real-world C++ teams
-description: Hands-on C++ training focused on architecture, design, and modern best practices. Available in French and English.
+title: Freelance C++ Development & Training
+subtitle: Contract work, architecture and training for real-world C++ teams
+description: Arnaud Becheler, freelance C++ engineer near Paris. Contract development, library design, legacy modernization and hands-on C++ training, in French and English.
 ---
 
-I'm **Arnaud Becheler**, PhD in Computational Biology, C++ developer for 12+ years and maintainer of the Boost Graph Library.  
-I deliver **practical C++ architecture and design training** for teams who want code that's maintainable, testable, and efficient.
+I'm **Arnaud Becheler**, a **freelance C++ engineer** based near Paris: PhD in Computational Biology, C++ developer for 12+ years and maintainer of the Boost Graph Library.  
+I work with teams in two ways: **contract C++ development** and **practical architecture and design training**, for code that's maintainable, testable, and efficient.
 
-**Sessions available in French and English.**
+**Available for contracts and training, in French and English.** [Get in touch](#get-in-touch).
+
+---
+
+## Contract C++ Development
+
+I take on freelance missions as an independent consultant (Becheler Code Labs), remote or on site in the Paris area:
+
+- Library and API design, generic programming  
+- Modernizing legacy codebases without breaking their users  
+- Performance work  
+- Architecture reviews, tooling and CI (CMake, sanitizers, coverage)  
+
+This is what I do daily on [Boost.Graph]({{site.baseurl}}/pages/science-oss/) for the C++ Alliance.
 
 ---
 

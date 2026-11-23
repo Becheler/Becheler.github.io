@@ -13,7 +13,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Arnaud Becheler # add your name
-author-img: arnaud-becheler.png # add your photo
+author-img: arnaud-becheler.jpg # add your photo
 about-author: Freelance C++ engineer and trainer. Boost Graph Library maintainer (C++ Alliance), WG21 member, PhD in computational biology. # add description
 social-github: Becheler
 social-linkedin: arnaud-becheler-8902313a1

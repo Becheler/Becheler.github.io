@@ -6,7 +6,6 @@ _site/
 
 # Ruby / Bundler (gems are installed in vendor/bundle, see .bundle/config)
 /vendor/
-Gemfile.lock
 .ruby-lsp/
 .ruby-version
 
@@ -40,3 +39,12 @@ desktop.ini
 
 # GIMP working files for doodles (export PNGs instead)
 *.xcf
+
+# LaTeX build files for the CV (keep cv/cv.tex, publish assets/pdfs/cv.pdf)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
+cv/*.synctex.gz
+cv/*.fls
+cv/*.fdb_latexmk

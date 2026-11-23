@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Build:  pdflatex cv.tex   then copy cv.pdf to ../assets/pdfs/cv.pdf
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage[left=0.5in, right=0.5in, bottom=0.5in, top=0.5in]{geometry}
+
+\pagenumbering{gobble}
+
+\newcommand{\cpp}{C\texttt{++}}
+% Width of the right-hand column
+\newcommand{\rcol}[1]{\parbox{5.6in}{#1}}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent \LARGE{\textbf{Arnaud Becheler - Freelance \cpp{} Engineer \& Trainer}} \\
+\vspace{-2ex}
+
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{tabular}{l l l}
+{\Large \faEnvelope} \, \href{mailto:arnaud.becheler@gmail.com}{arnaud.becheler@gmail.com}
+    & {\Large \faHome} \, \href{https://becheler.github.io}{becheler.github.io}
+    & {\Large \faGithub} \, \href{https://github.com/Becheler}{github.com/Becheler} \\
+{\Large \faLinkedin} \, \href{https://www.linkedin.com/in/arnaud-becheler-8902313a1/}{LinkedIn}
+    & {\Large \faMapMarker} \, Paris area, France
+    & {\Large \faGraduationCap} \, Ph.D. \\
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%% PAGE 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent \begin{tabular}{@{} l l}
+\Large{Industry}   & \textbf{Boost Graph Library Maintainer (freelance).} January 2026 -- Present. \\
+\Large{Experience} & The \cpp{} Alliance (remote). \\
+    & \rcol{\textit{Modernizing the Boost Graph Library toward \cpp{}17 without breaking its users: 110+ pull requests merged in 2026.}} \\
+    & \rcol{\textit{New Louvain community detection algorithm, shipped in Boost 1.92.}} \\
+    & \rcol{\textit{Member of WG21, the ISO \cpp{} committee. Boost Review Manager.}} \\
+    & \\
+    & \textbf{\cpp{} Trainer.} 2024 -- Present. \\
+    & Human Coders and independent (Becheler Code Labs). \\
+    & \rcol{\textit{Modern \cpp{}23, \cpp{} fundamentals, testing, AI coding assistants for developers, Green IT. In French and English.}} \\
+    & \\
+    & \textbf{Senior Software Consultant.} February 2024 -- January 2026. \\
+    & KickMaker (Paris Metropolitan Area, France). \\
+    & \rcol{\textit{Software for medical devices: architecture, tooling, benchmarks} \textbf{(\cpp{}23)}} \\
+    & \rcol{\textit{CAN bus reverse engineering for smart video display and lights control} \textbf{(Py)}} \\
+    & \rcol{\textit{AI-enabled sensor-fed predictions for exoskeleton assistance} \textbf{(Py)}} \\
+    & \\
+    & \textbf{Software Engineer (Genetics).} July 2022 -- May 2023. \\
+    & Irreverent Labs (Bellevue, WA, USA). \\
+    & \rcol{\textit{Designing a synthetic genetic system to enable breeding of in-game artificial-intelligent characters with unique personality, genome, bionics, colors and complexion.}} \\
+    & \\
+    & \\
+\Large{Research}   & \textbf{Post-doctoral contract.} July 2018 -- July 2022. \\
+\Large{Experience} & University of Michigan (Ann Arbor, MI, USA). \\
+    & PI: Dr. Lacey Knowles (Ecology and Evolutionary Biology Department). \\
+    & \rcol{\textit{Does genetic structure detected under the Multi-Species Coalescent Model reflect cryptic species divergence or population structure in geographically widespread putative taxa?}} \\
+    & \\
+    & \textbf{Ph.D. Student.} December 2014 -- June 2018. \\
+    & Supervisor: Dr. St\'ephane Dupas (Laboratory EGCE, Gif-sur-Yvette, France). \\
+    & Co-supervisor: Dr. Camille Coron (Laboratoire de Math\'ematiques d'Orsay). \\
+    & \rcol{\textit{Environmental demogenetic models for biological invasion processes, application to the invasion of Vespa velutina.}} \\
+    & \\
+    & \\
+\Large{Open Source} & \textit{Boost.Graph - Generic graph data structures and algorithms for \cpp{}.} \\
+    & Maintainer. \, \faGithub \, \href{https://github.com/boostorg/graph}{boostorg/graph} \\
+    & \\
+    & \textit{The Quetzal framework - Tools for spatial coalescence simulations.} \\
+    & Author and maintainer. \, \faGithub \, \href{https://github.com/Quetzal-framework}{Quetzal-framework} \\
+    & \rcol{\cpp{} template library, \cpp{} programs and Python library for simulation of genetic data in spatially explicit landscapes.} \\
+\end{tabular}
+\newpage
+
+%%%%%%%%%%%%%%%%% PAGE 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent \begin{tabular}{@{} l l}
+\Large{Education} & \textbf{Universit\'e Paris-Sud, Paris-Saclay, France} \\
+    & Ph.D., Population Genetics (December 2014 -- June 2018) \\
+    & Fields: Genetics and Coalescence Theory, Applied Mathematics, Statistics. \\
+    & \\
+    & \textbf{Universit\'e de Montpellier, France} \\
+    & MSc, Biodiversity, Ecology and Evolution (2013/2014) \\
+    & \\
+    & \textbf{Universidad de Salamanca, Spain} \\
+    & MSc, Biodiversity and Terrestrial Ecosystems (2012/2013) \\
+    & \\
+    & \textbf{Universit\'e de Bordeaux, France} \\
+    & BSc, Biodiversity of Organisms and Ecosystems (2011/2012) \\
+    & \textit{Ranked first in class} \\
+    & \\
+    & \\
+\Large{Talks} & \rcol{\textit{The Barrier Is a Myth: How to Start Contributing to Boost \cpp{}.}} \\
+    & CppCon 2026. \\
+    & \\
+    & \rcol{\textit{Shape the future of Boost.Graph.}} \\
+    & \cpp{} French User Group \#65, 2026. \\
+    & \\
+    & \rcol{\textit{Un algorithme de Louvain g\'en\'erique pour la Boost Graph Library.}} \\
+    & \cpp{} French User Group \#64, 2026. \\
+    & \\
+    & {\Large \faYoutubePlay} \, \href{https://becheler.github.io/pages/seminars/}{All talks and interviews.} \\
+    & \\
+    & \\
+\Large{Publications} & de Navascu\'es, M., \textbf{Becheler, A.}, Gay, L., Ronfort, J., Loridon, K., Vitalis, R. (2021). \\
+    & \rcol{Power and limits of selection genome scans on temporal data from a selfing population. \textit{Peer Community Journal}.} \\[0.6ex]
+    & {\Large \faFilePdfO} \, \href{https://peercommunityjournal.org/articles/10.24072/pcjournal.47/}{Access the article.} \\
+    & \\
+    & \textbf{Becheler, A.}, \& Knowles, L. L. (2020). \\
+    & \rcol{Occupancy spectrum distribution: application for coalescence simulation with generic mergers. \textit{Bioinformatics}.} \\[0.6ex]
+    & {\Large \faFilePdfO} \, \href{https://academic.oup.com/bioinformatics/article-abstract/36/10/3279/5734642}{Access the article.} \\
+    & \\
+    & \textbf{Becheler, A.}, Coron, C., \& Dupas, S. (2019). \\
+    & \rcol{The Quetzal Coalescence Template Library: A \cpp{} programmers resource for integrating distributional, demographic and coalescent models. \textit{Molecular Ecology Resources}.} \\[0.6ex]
+    & {\Large \faFilePdfO} \, \href{https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.12992}{Access the article.} \\
+    & \\
+    & \\
+\Large{Organization} & \textit{Boost.Graph Workshop.} Paris, 2026. \\
+    & \textit{Species delimitation.} Workshop, University of Michigan, 2020. \\
+    & \rcol{\textit{Ecosystems dynamics: Stakes, data and models.} Research program, Pascal Institute, Universit\'e Paris-Saclay, 2019.} \\
+    & \\
+    & \\
+\Large{Languages} & French (native), English (fluent), Spanish (advanced), German (basic). \\
+\Large{\& Skills} & \rcol{\cpp{}14 to \cpp{}23, generic programming, library and API design, CMake, CI, sanitizers, Python, R, Docker, Git.} \\
+\end{tabular}
+
+\end{document}

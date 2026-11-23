@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-vscode-remote.remote-containers",
+    "sissel.shopify-liquid",
+    "yzhang.markdown-all-in-one",
+    "redhat.vscode-yaml",
+    "bierner.markdown-preview-github-styles",
+    "davidanson.vscode-markdownlint",
+    "James-Yu.latex-workshop"
+  ]
+}

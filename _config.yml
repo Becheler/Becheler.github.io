@@ -1,9 +1,10 @@
 # The current theme is flexible-jekyll, from https://github.com/artemsheludko/flexible-jekyll
 
-title: Arnaud Becheler - Personal website
+title: Arnaud Becheler - C++ engineer, Boost.Graph maintainer
 description: > # this means to ignore newlines until "baseurl:"
-  Arnaud Becheler's personal website, where I share about my research
-  and about programming concept in a blog called Derek et Léonin.
+  Arnaud Becheler, freelance C++ engineer and trainer near Paris. Maintainer of the
+  Boost Graph Library for the C++ Alliance, WG21 member, PhD in computational biology.
+  I write about C++ design in a blog called Derek et Léonin.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://Becheler.github.io # the base hostname & protocol for your site, e.g. http://example.com
@@ -13,8 +14,9 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Arnaud Becheler # add your name
 author-img: arnaud-becheler.png # add your photo
-about-author: C++ trainer and software engineer, building open-source libraries for computational biology. # add description
+about-author: Freelance C++ engineer and trainer. Boost Graph Library maintainer (C++ Alliance), WG21 member, PhD in computational biology. # add description
 social-github: Becheler
+social-linkedin: arnaud-becheler-8902313a1
 social-stackoverflow: 10360134/waterfox
 social-meetup: 367637136
 

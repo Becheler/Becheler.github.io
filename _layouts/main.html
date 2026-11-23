@@ -44,7 +44,11 @@ layout: default
       <h3 class="contact-title">Find me on</h3>
       <ul>
         {% if site.social-github %}
-          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="github"><a href="https://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% endif %}
+
+        {% if site.social-linkedin %}
+          <li><a href="https://www.linkedin.com/in/{{ site.social-linkedin }}/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         {% endif %}
 
         {% if site.social-stackoverflow %}

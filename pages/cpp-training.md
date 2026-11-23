@@ -5,7 +5,7 @@ subtitle: Modern design and architecture for real-world C++ teams
 description: Hands-on C++ training focused on architecture, design, and modern best practices. Available in French and English.
 ---
 
-I'm **Arnaud Becheler**, PhD in Computational Biology and C++ developer with 10 years of experience.  
+I'm **Arnaud Becheler**, PhD in Computational Biology, C++ developer for 12+ years and maintainer of the Boost Graph Library.  
 I deliver **practical C++ architecture and design training** for teams who want code that's maintainable, testable, and efficient.
 
 **Sessions available in French and English.**
@@ -36,7 +36,7 @@ I teach as an **independent consultant (auto-entrepreneur Becheler Code Labs)** 
   - [C++ Fundamentals](https://www.humancoders.com/formations/cpp-fondamentaux) — 3 days  
   - [Modern C++ 23](https://www.humancoders.com/formations/cpp-23) — 2 days  
 
-> ⭐ **Rated 5 / 5 by participants on [Human Coders](https://www.humancoders.com/formations/cpp-23#quotes)**  
+> ⭐ **Rated 4.9 / 5 by participants on [Human Coders](https://www.humancoders.com/formations/cpp-23#quotes)**  
 > _"Very well-designed course: the content is complex, but the instructor presents it with clarity and strong teaching skills, striking a good balance between theory and hands-on practice. It provides many tools to produce high-quality, efficient, and modern code. A solid foundation in C++ and prior programming experience are essential to get the most out of this training."_
 
 ---
@@ -53,7 +53,9 @@ I teach as an **independent consultant (auto-entrepreneur Becheler Code Labs)** 
 ## Background
 
 - PhD – Computational Biology (C++ template libraries for genetic simulations)  
-- 10 + years of C++ development and architecture  
+- 12+ years of C++ development and architecture  
+- Maintainer of the [Boost Graph Library](https://www.boost.org/library/latest/graph/) for the C++ Alliance, WG21 member  
+- Speaker at CppCon 2026 ([talks]({{site.baseurl}}/pages/seminars/))  
 - Trainer with [Human Coders](https://www.humancoders.com/formateurs/arnaud-becheler)  
 - Active in the C++ community (meetups, Boost, modern C++ advocacy)
 
